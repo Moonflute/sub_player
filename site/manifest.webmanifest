@@ -1,0 +1,16 @@
+{
+  "name": "JLPT Subtitle Player",
+  "short_name": "JLPT Player",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f5efdf",
+  "theme_color": "#c54a29",
+  "icons": [
+    {
+      "src": "./assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
