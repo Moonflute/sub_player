@@ -1,0 +1,366 @@
+const state = {
+  library: [],
+  currentShow: null,
+  currentTime: 0,
+  isPlaying: false,
+  isRotated: false,
+  tickHandle: null,
+};
+
+const els = {
+  libraryScreen: document.getElementById("library-screen"),
+  playerScreen: document.getElementById("player-screen"),
+  libraryList: document.getElementById("library-list"),
+  backButton: document.getElementById("back-button"),
+  playToggle: document.getElementById("play-toggle"),
+  playIcon: document.getElementById("play-icon"),
+  seekBackward: document.getElementById("seek-backward"),
+  seekForward: document.getElementById("seek-forward"),
+  rotateToggle: document.getElementById("rotate-toggle"),
+  playerStage: document.getElementById("player-stage"),
+  saveSync: document.getElementById("save-sync"),
+  syncInput: document.getElementById("sync-input"),
+  showTitle: document.getElementById("show-title"),
+  currentTime: document.getElementById("current-time"),
+  currentSentence: document.getElementById("current-sentence"),
+  currentTranslation: document.getElementById("current-translation"),
+  currentVocab: document.getElementById("current-vocab"),
+  currentGrammar: document.getElementById("current-grammar"),
+  nextCountdown: document.getElementById("next-countdown"),
+  nextPreview: document.getElementById("next-preview"),
+  timeline: document.getElementById("timeline"),
+  timelinePosition: document.getElementById("timeline-position"),
+  timelineDuration: document.getElementById("timeline-duration"),
+  saveHint: document.getElementById("save-hint"),
+};
+
+function formatTime(totalSeconds) {
+  const value = Math.max(0, Math.floor(totalSeconds));
+  const hours = String(Math.floor(value / 3600)).padStart(2, "0");
+  const minutes = String(Math.floor((value % 3600) / 60)).padStart(2, "0");
+  const seconds = String(value % 60).padStart(2, "0");
+  return `${hours}:${minutes}:${seconds}`;
+}
+
+function escapeHtml(text) {
+  return String(text ?? "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;");
+}
+
+function syncStorageKey(showId) {
+  return `jlpt-subtitle-sync:${showId}`;
+}
+
+function effectiveSyncOffset(show) {
+  if (!show) return 0;
+  const saved = localStorage.getItem(syncStorageKey(show.id));
+  if (saved === null) {
+    return Number(show.base_sync_offset_seconds || 0);
+  }
+  return Number(saved || 0);
+}
+
+function activeSyncOffset(show) {
+  if (!show) return 0;
+  if (state.currentShow?.id === show.id) {
+    return Number(els.syncInput.value || effectiveSyncOffset(show));
+  }
+  return effectiveSyncOffset(show);
+}
+
+function setScreen(mode) {
+  const isPlayer = mode === "player";
+  els.libraryScreen.classList.toggle("is-hidden", isPlayer);
+  els.playerScreen.classList.toggle("is-hidden", !isPlayer);
+}
+
+function setPlayVisual(isPlaying) {
+  els.playIcon.textContent = isPlaying ? "❚❚" : "▶";
+  els.playToggle.classList.toggle("is-pause", isPlaying);
+  els.playToggle.setAttribute("aria-label", isPlaying ? "일시정지" : "재생");
+}
+
+function buildHighlightMap(sentence) {
+  if (!sentence) return [];
+
+  const highlights = [];
+  for (const item of sentence.vocab_matches || []) {
+    const text = item.surface_in_sentence || item.surface;
+    if (!text) continue;
+    highlights.push({
+      text,
+      className: `hl-vocab-${(item.level || "n5").toLowerCase()}`,
+    });
+  }
+  for (const item of sentence.grammar_matches || []) {
+    for (const text of item.matched_texts || []) {
+      if (!text) continue;
+      highlights.push({
+        text,
+        className: `hl-grammar-${(item.level || "n5").toLowerCase()}`,
+      });
+    }
+  }
+
+  highlights.sort((a, b) => b.text.length - a.text.length);
+  return highlights;
+}
+
+function buildHighlightRanges(sentence) {
+  const text = sentence?.text || "";
+  const marks = buildHighlightMap(sentence);
+  const ranges = [];
+
+  for (const mark of marks) {
+    let cursor = 0;
+    while (cursor < text.length) {
+      const index = text.indexOf(mark.text, cursor);
+      if (index === -1) break;
+      const end = index + mark.text.length;
+      const overlaps = ranges.some((range) => !(end <= range.start || index >= range.end));
+      if (!overlaps) {
+        ranges.push({ start: index, end, className: mark.className });
+      }
+      cursor = index + Math.max(1, mark.text.length);
+    }
+  }
+
+  ranges.sort((a, b) => a.start - b.start);
+  return ranges;
+}
+
+function renderHighlightedSentence(sentence) {
+  if (!sentence) {
+    return "재생할 문장이 없습니다.";
+  }
+
+  const text = sentence.text || "";
+  const ranges = buildHighlightRanges(sentence);
+  if (ranges.length === 0) {
+    return escapeHtml(text);
+  }
+
+  let cursor = 0;
+  const parts = [];
+  for (const range of ranges) {
+    if (cursor < range.start) {
+      parts.push(escapeHtml(text.slice(cursor, range.start)));
+    }
+    parts.push(`<span class="${range.className}">${escapeHtml(text.slice(range.start, range.end))}</span>`);
+    cursor = range.end;
+  }
+  if (cursor < text.length) {
+    parts.push(escapeHtml(text.slice(cursor)));
+  }
+  return parts.join("");
+}
+
+function findCurrentSentence(show, currentTime) {
+  if (!show) return null;
+  const offset = activeSyncOffset(show);
+  return show.sentences.find((sentence) => {
+    const start = sentence.start_seconds + offset;
+    const end = sentence.end_seconds + offset;
+    return currentTime >= start && currentTime <= end;
+  }) || null;
+}
+
+function findUpcomingPoint(show, currentTime) {
+  if (!show) return null;
+  const offset = activeSyncOffset(show);
+  return show.sentences.find(
+    (sentence) => sentence.has_jlpt && sentence.start_seconds + offset > currentTime,
+  ) || null;
+}
+
+function renderList(container, items, formatter) {
+  if (!items || items.length === 0) {
+    container.innerHTML = '<div class="empty-copy">표시할 내용이 없습니다.</div>';
+    return;
+  }
+  container.innerHTML = items.map(formatter).join("");
+}
+
+function renderCurrentState() {
+  const show = state.currentShow;
+  const currentSentence = findCurrentSentence(show, state.currentTime);
+
+  els.showTitle.textContent = show ? show.title : "작품";
+  els.currentTime.textContent = formatTime(state.currentTime);
+  els.timelinePosition.textContent = formatTime(state.currentTime);
+  els.currentSentence.innerHTML = renderHighlightedSentence(currentSentence);
+  els.currentTranslation.textContent = currentSentence?.translation || "";
+
+  renderList(els.currentVocab, currentSentence?.vocab_matches, (item) => {
+    const reading = item.reading ? ` (${escapeHtml(item.reading)})` : "";
+    return `<div class="match-entry">${escapeHtml(item.surface)}${reading} - ${escapeHtml(item.meaning)}</div>`;
+  });
+
+  renderList(els.currentGrammar, currentSentence?.grammar_matches, (item) => (
+    `<div class="match-entry">${escapeHtml(item.label)} - ${escapeHtml(item.meaning)} | ${escapeHtml(item.category)}</div>`
+  ));
+
+  const upcoming = findUpcomingPoint(show, state.currentTime);
+  if (upcoming) {
+    const secondsLeft = upcoming.start_seconds + activeSyncOffset(show) - state.currentTime;
+    els.nextCountdown.textContent = `${Math.max(0, Math.ceil(secondsLeft))}초 뒤`;
+    els.nextPreview.textContent = upcoming.text;
+  } else {
+    els.nextCountdown.textContent = "마지막";
+    els.nextPreview.textContent = "이후에는 새 JLPT 포인트가 없습니다.";
+  }
+}
+
+function renderLibrary() {
+  els.libraryList.innerHTML = state.library.map((item) => `
+    <button class="show-item" data-show-id="${item.id}" type="button">
+      <span class="show-title">${escapeHtml(item.title)}</span>
+      <span class="show-meta">
+        <span>문장 ${item.sentence_count || 0}</span>
+        <span>포인트 ${item.relevant_sentence_count || 0}</span>
+      </span>
+    </button>
+  `).join("");
+
+  for (const button of els.libraryList.querySelectorAll("[data-show-id]")) {
+    button.addEventListener("click", async () => {
+      await loadShow(button.dataset.showId);
+    });
+  }
+}
+
+function syncTimelineBounds() {
+  const show = state.currentShow;
+  const duration = show ? Number(show.duration_seconds || 0) + Math.max(0, activeSyncOffset(show)) : 0;
+  els.timeline.max = String(duration);
+  els.timeline.value = String(Math.floor(state.currentTime));
+  els.timelineDuration.textContent = formatTime(duration);
+}
+
+function stopPlayback() {
+  state.isPlaying = false;
+  if (state.tickHandle) {
+    window.clearInterval(state.tickHandle);
+    state.tickHandle = null;
+  }
+  setPlayVisual(false);
+}
+
+function startPlayback() {
+  if (!state.currentShow) return;
+  stopPlayback();
+  state.isPlaying = true;
+  setPlayVisual(true);
+  state.tickHandle = window.setInterval(() => {
+    state.currentTime += 0.25;
+    const limit = Number(els.timeline.max || 0);
+    if (state.currentTime >= limit) {
+      state.currentTime = limit;
+      stopPlayback();
+    }
+    els.timeline.value = String(Math.floor(state.currentTime));
+    renderCurrentState();
+  }, 250);
+}
+
+function jumpBy(delta) {
+  const limit = Number(els.timeline.max || 0);
+  state.currentTime = Math.max(0, Math.min(limit, state.currentTime + delta));
+  els.timeline.value = String(Math.floor(state.currentTime));
+  renderCurrentState();
+}
+
+async function fetchJson(url) {
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error(`데이터를 불러오지 못했습니다: ${url}`);
+  }
+  return await response.json();
+}
+
+async function loadLibrary() {
+  const payload = await fetchJson("./data/library.json");
+  state.library = payload.items || [];
+  renderLibrary();
+}
+
+async function loadShow(showId) {
+  stopPlayback();
+  els.currentSentence.textContent = "작품 데이터를 불러오는 중입니다.";
+  setScreen("player");
+
+  const payload = await fetchJson(`./data/shows/${showId}.json`);
+  state.currentShow = payload;
+  state.currentTime = 0;
+  els.syncInput.value = String(effectiveSyncOffset(payload));
+  els.saveHint.textContent = "이 기기 브라우저에 저장됩니다.";
+  syncTimelineBounds();
+  renderCurrentState();
+}
+
+function saveSync() {
+  if (!state.currentShow) return;
+  const offsetSeconds = Number(els.syncInput.value || 0);
+  localStorage.setItem(syncStorageKey(state.currentShow.id), String(offsetSeconds));
+  els.saveHint.textContent = `${offsetSeconds >= 0 ? "+" : ""}${offsetSeconds}초로 저장했습니다.`;
+  syncTimelineBounds();
+  renderCurrentState();
+}
+
+function bindEvents() {
+  els.backButton.addEventListener("click", () => {
+    stopPlayback();
+    setScreen("library");
+  });
+
+  els.playToggle.addEventListener("click", () => {
+    if (!state.currentShow) return;
+    if (state.isPlaying) {
+      stopPlayback();
+    } else {
+      startPlayback();
+    }
+  });
+
+  els.seekBackward.addEventListener("click", () => jumpBy(-5));
+  els.seekForward.addEventListener("click", () => jumpBy(5));
+
+  els.rotateToggle.addEventListener("click", () => {
+    state.isRotated = !state.isRotated;
+    els.playerStage.classList.toggle("is-rotated", state.isRotated);
+  });
+
+  els.timeline.addEventListener("input", () => {
+    state.currentTime = Number(els.timeline.value || 0);
+    renderCurrentState();
+  });
+
+  for (const button of document.querySelectorAll(".sync-adjust")) {
+    button.addEventListener("click", () => {
+      const delta = Number(button.dataset.delta || 0);
+      els.syncInput.value = String(Number(els.syncInput.value || 0) + delta);
+      syncTimelineBounds();
+      renderCurrentState();
+    });
+  }
+
+  els.syncInput.addEventListener("input", () => {
+    syncTimelineBounds();
+    renderCurrentState();
+  });
+
+  els.saveSync.addEventListener("click", saveSync);
+}
+
+async function main() {
+  setPlayVisual(false);
+  bindEvents();
+  await loadLibrary();
+}
+
+main().catch((error) => {
+  console.error(error);
+  els.currentSentence.textContent = error.message;
+});

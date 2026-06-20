@@ -1,0 +1,5 @@
+output_pdf/
+sync check/
+__pycache__/
+web_data/
+_N3/jlpt_n3_cache.sqlite3

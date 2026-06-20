@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>JLPT Subtitle Player</title>
+  <link rel="stylesheet" href="./assets/app.css">
+</head>
+<body>
+  <main class="app-root">
+    <section id="library-screen" class="screen screen-library">
+      <header class="library-header">
+        <p class="eyebrow">JLPT N5-N3 Subtitle Study</p>
+        <h1 class="library-title">보고 싶은 작품을 고르세요</h1>
+        <p class="library-copy">클릭하면 재생 화면으로 들어가고, 문장과 해석이 시간에 맞춰 크게 표시됩니다.</p>
+      </header>
+      <div id="library-list" class="library-list"></div>
+    </section>
+
+    <section id="player-screen" class="screen screen-player is-hidden">
+      <div id="player-stage" class="player-stage">
+        <header class="player-topbar">
+          <button id="back-button" class="icon-button text-button" type="button" aria-label="목록으로 돌아가기">
+            <span class="icon-button__icon">←</span>
+            <span class="text-button__label">목록</span>
+          </button>
+          <div class="player-topbar__center">
+            <div id="show-title" class="player-title">작품</div>
+            <div id="current-time" class="player-time">00:00:00</div>
+          </div>
+          <button id="rotate-toggle" class="icon-button" type="button" aria-label="90도 회전">
+            <span class="icon-button__icon">⤾</span>
+          </button>
+        </header>
+
+        <div class="sentence-panel">
+          <div id="current-sentence" class="current-sentence">작품을 선택하면 문장이 여기 표시됩니다.</div>
+          <div id="current-translation" class="current-translation"></div>
+          <div class="next-point-inline">
+            <span id="next-countdown" class="next-point-inline__time">-</span>
+            <span id="next-preview" class="next-point-inline__preview"></span>
+          </div>
+        </div>
+
+        <div class="details-grid">
+          <section class="detail-card">
+            <div class="detail-card__label">단어</div>
+            <div id="current-vocab" class="detail-card__content"></div>
+          </section>
+          <section class="detail-card">
+            <div class="detail-card__label">문법 / 문형</div>
+            <div id="current-grammar" class="detail-card__content"></div>
+          </section>
+        </div>
+
+        <div class="controls-wrap">
+          <div class="controls-main">
+            <button id="seek-backward" class="transport-button" type="button" aria-label="5초 뒤로">
+              <span class="transport-button__icon">↺</span>
+              <span class="transport-button__meta">5s</span>
+            </button>
+            <button id="play-toggle" class="play-button" type="button" aria-label="재생">
+              <span id="play-icon" class="play-button__icon">▶</span>
+            </button>
+            <button id="seek-forward" class="transport-button" type="button" aria-label="5초 앞으로">
+              <span class="transport-button__icon">↻</span>
+              <span class="transport-button__meta">5s</span>
+            </button>
+          </div>
+
+          <div class="timeline-wrap">
+            <input id="timeline" type="range" min="0" max="0" value="0">
+            <div class="timeline-meta">
+              <span id="timeline-position">00:00:00</span>
+              <span id="timeline-duration">00:00:00</span>
+            </div>
+          </div>
+
+          <div class="sync-wrap">
+            <label class="sync-wrap__label" for="sync-input">Sync</label>
+            <button class="sync-adjust" data-delta="-5" type="button">-5</button>
+            <button class="sync-adjust" data-delta="-1" type="button">-1</button>
+            <input id="sync-input" type="number" step="1" value="0">
+            <button class="sync-adjust" data-delta="1" type="button">+1</button>
+            <button class="sync-adjust" data-delta="5" type="button">+5</button>
+            <button id="save-sync" class="sync-save" type="button">저장</button>
+          </div>
+          <div id="save-hint" class="save-hint">이 기기 브라우저에 저장됩니다.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="./assets/app.js"></script>
+</body>
+</html>
