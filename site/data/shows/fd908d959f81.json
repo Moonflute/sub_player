@@ -10,7 +10,7 @@
     {
       "index": 1,
       "text": "(園児)か~くれんぼする人 この指 とまれ♪",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:00:00",
       "end_time": "00:00:03",
       "start_seconds": 0,
@@ -32,7 +32,7 @@
     {
       "index": 2,
       "text": "(園児たち)やる~!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:00:03",
       "end_time": "00:00:04",
       "start_seconds": 3,
@@ -44,7 +44,7 @@
     {
       "index": 3,
       "text": "(ひとり)私なんかが あの指に とまっていいのかな...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:00:04",
       "end_time": "00:00:08",
       "start_seconds": 4,
@@ -97,7 +97,7 @@
     {
       "index": 4,
       "text": "(園児たちの笑い声) (園児)私も~!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:00:08",
       "end_time": "00:00:10",
       "start_seconds": 8,
@@ -109,7 +109,7 @@
     {
       "index": 5,
       "text": "そう悩んでるうちに乗り遅れて",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:00:10",
       "end_time": "00:00:12",
       "start_seconds": 10,
@@ -153,7 +153,7 @@
     {
       "index": 6,
       "text": "気付いたら ひとりぼっちな子",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:00:13",
       "end_time": "00:00:16",
       "start_seconds": 13,
@@ -188,7 +188,7 @@
     {
       "index": 7,
       "text": "遠足のときに...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:00:17",
       "end_time": "00:00:18",
       "start_seconds": 17,
@@ -200,7 +200,7 @@
     {
       "index": 8,
       "text": "(先生)どうぞ",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:00:19",
       "end_time": "00:00:19",
       "start_seconds": 19,
@@ -235,7 +235,7 @@
     {
       "index": 9,
       "text": "(ひとり)先生とお弁当のおかずを 交換していた ひとりぼっちな子",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:00:19",
       "end_time": "00:00:24",
       "start_seconds": 19,
@@ -297,7 +297,7 @@
     {
       "index": 10,
       "text": "(ひとり)ただいま",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:00:28",
       "end_time": "00:00:29",
       "start_seconds": 28,
@@ -309,7 +309,7 @@
     {
       "index": 11,
       "text": "(ひとり) 部活も入らず 放課後は即帰宅",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:00:30",
       "end_time": "00:00:33",
       "start_seconds": 30,
@@ -331,7 +331,7 @@
     {
       "index": 12,
       "text": "(ひとり)スマホに届くのは",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:00:35",
       "end_time": "00:00:36",
       "start_seconds": 35,
@@ -353,7 +353,7 @@
     {
       "index": 13,
       "text": "親からのメッセージか クーポンのお知らせだけ",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:00:37",
       "end_time": "00:00:41",
       "start_seconds": 37,
@@ -393,7 +393,7 @@
     {
       "index": 14,
       "text": "それが私",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:00:41",
       "end_time": "00:00:42",
       "start_seconds": 41,
@@ -405,7 +405,7 @@
     {
       "index": 15,
       "text": "後藤(ごとう)ひとり 中学1年生",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:00:43",
       "end_time": "00:00:46",
       "start_seconds": 43,
@@ -417,7 +417,7 @@
     {
       "index": 16,
       "text": "たま~に思う",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:00:47",
       "end_time": "00:00:48",
       "start_seconds": 47,
@@ -429,7 +429,7 @@
     {
       "index": 17,
       "text": "このままで いいんだろうかって",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:00:49",
       "end_time": "00:00:51",
       "start_seconds": 49,
@@ -454,7 +454,7 @@
     {
       "index": 18,
       "text": "でも 私 話す前に “あっ”って言っちゃうし",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:00:52",
       "end_time": "00:00:56",
       "start_seconds": 52,
@@ -498,7 +498,7 @@
     {
       "index": 19,
       "text": "目 合わすのも苦手だし",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:00:56",
       "end_time": "00:00:59",
       "start_seconds": 56,
@@ -510,7 +510,7 @@
     {
       "index": 20,
       "text": "“THE 陰キャ”のような日々が 身の丈に合って...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:00:59",
       "end_time": "00:01:02",
       "start_seconds": 59,
@@ -532,7 +532,7 @@
     {
       "index": 21,
       "text": "(直樹)これ見てる?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:01:02",
       "end_time": "00:01:03",
       "start_seconds": 62,
@@ -544,7 +544,7 @@
     {
       "index": 22,
       "text": "(ひとり)ううん",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:01:04",
       "end_time": "00:01:05",
       "start_seconds": 64,
@@ -556,7 +556,7 @@
     {
       "index": 23,
       "text": "(バンドマン) 学生のころは 教室の隅っこで",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:01:06",
       "end_time": "00:01:09",
       "start_seconds": 66,
@@ -578,7 +578,7 @@
     {
       "index": 24,
       "text": "本読んでるふりしてるヤツでした",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:01:09",
       "end_time": "00:01:11",
       "start_seconds": 69,
@@ -609,7 +609,7 @@
     {
       "index": 25,
       "text": "友達いなくて",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:01:11",
       "end_time": "00:01:12",
       "start_seconds": 71,
@@ -644,7 +644,7 @@
     {
       "index": 26,
       "text": "(ひとり)あっ",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:01:13",
       "end_time": "00:01:13",
       "start_seconds": 73,
@@ -656,7 +656,7 @@
     {
       "index": 27,
       "text": "(インタビュアー)それが今では",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:01:13",
       "end_time": "00:01:14",
       "start_seconds": 73,
@@ -668,7 +668,7 @@
     {
       "index": 28,
       "text": "若者に絶大な人気を誇る バンドになったと",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:01:15",
       "end_time": "00:01:18",
       "start_seconds": 75,
@@ -690,7 +690,7 @@
     {
       "index": 29,
       "text": "(バンドマン)まあ バンドは陰キャでも輝けるんで",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:01:18",
       "end_time": "00:01:21",
       "start_seconds": 78,
@@ -702,7 +702,7 @@
     {
       "index": 30,
       "text": "(インタビュアー) そうなんですね~!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:01:21",
       "end_time": "00:01:24",
       "start_seconds": 81,
@@ -714,7 +714,7 @@
     {
       "index": 31,
       "text": "それでは お聴きください",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:01:24",
       "end_time": "00:01:26",
       "start_seconds": 84,
@@ -751,7 +751,7 @@
     {
       "index": 32,
       "text": "インストームスで“引き金”",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:01:26",
       "end_time": "00:01:28",
       "start_seconds": 86,
@@ -763,7 +763,7 @@
     {
       "index": 33,
       "text": "(直樹)おっ どうした?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:01:34",
       "end_time": "00:01:35",
       "start_seconds": 94,
@@ -775,7 +775,7 @@
     {
       "index": 34,
       "text": "お... お父さん ギター貸して",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:01:36",
       "end_time": "00:01:38",
       "start_seconds": 96,
@@ -797,7 +797,7 @@
     {
       "index": 35,
       "text": "(直樹)えっ?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:01:38",
       "end_time": "00:01:39",
       "start_seconds": 98,
@@ -809,7 +809,7 @@
     {
       "index": 36,
       "text": "いいよ",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:01:38",
       "end_time": "00:01:39",
       "start_seconds": 98,
@@ -821,7 +821,7 @@
     {
       "index": 37,
       "text": "(ひとり)あ... ありがとう!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:01:40",
       "end_time": "00:01:41",
       "start_seconds": 100,
@@ -833,7 +833,7 @@
     {
       "index": 38,
       "text": "(直樹)そうか ひとりも ついにギターに興味を",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:01:43",
       "end_time": "00:01:46",
       "start_seconds": 103,
@@ -877,7 +877,7 @@
     {
       "index": 39,
       "text": "(ふたり)ん?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:01:46",
       "end_time": "00:01:47",
       "start_seconds": 106,
@@ -889,7 +889,7 @@
     {
       "index": 40,
       "text": "(ひとり)バンド組んだら",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:01:49",
       "end_time": "00:01:50",
       "start_seconds": 109,
@@ -920,7 +920,7 @@
     {
       "index": 41,
       "text": "私みたいな人間でも もしかしたら 輝ける?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:01:50",
       "end_time": "00:01:54",
       "start_seconds": 110,
@@ -969,7 +969,7 @@
     {
       "index": 42,
       "text": "んっ ん...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:01:58",
       "end_time": "00:02:00",
       "start_seconds": 118,
@@ -981,7 +981,7 @@
     {
       "index": 43,
       "text": "おお~",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:02:03",
       "end_time": "00:02:05",
       "start_seconds": 123,
@@ -993,7 +993,7 @@
     {
       "index": 44,
       "text": "あは~",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:02:06",
       "end_time": "00:02:08",
       "start_seconds": 126,
@@ -1005,7 +1005,7 @@
     {
       "index": 45,
       "text": "(ひとり) 決めた!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:02:08",
       "end_time": "00:02:11",
       "start_seconds": 128,
@@ -1036,7 +1036,7 @@
     {
       "index": 46,
       "text": "ギターうまくなる!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:02:08",
       "end_time": "00:02:11",
       "start_seconds": 128,
@@ -1058,7 +1058,7 @@
     {
       "index": 47,
       "text": "で 学校でバンド組んで...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:02:11",
       "end_time": "00:02:14",
       "start_seconds": 131,
@@ -1098,7 +1098,7 @@
     {
       "index": 48,
       "text": "(ひとり)“E A G”...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:02:14",
       "end_time": "00:02:17",
       "start_seconds": 134,
@@ -1110,7 +1110,7 @@
     {
       "index": 49,
       "text": "なんで突然 英語?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:02:17",
       "end_time": "00:02:18",
       "start_seconds": 137,
@@ -1141,7 +1141,7 @@
     {
       "index": 50,
       "text": "(ひとり) それで 文化祭でライブして",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:02:23",
       "end_time": "00:02:25",
       "start_seconds": 143,
@@ -1176,7 +1176,7 @@
     {
       "index": 51,
       "text": "みんなから ちやほやされるんだ!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:02:26",
       "end_time": "00:02:29",
       "start_seconds": 146,
@@ -1201,7 +1201,7 @@
     {
       "index": 52,
       "text": "(直樹たち)はあ...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:02:31",
       "end_time": "00:02:32",
       "start_seconds": 151,
@@ -1213,7 +1213,7 @@
     {
       "index": 53,
       "text": "(ひとり)ちや... ほや?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:02:52",
       "end_time": "00:02:53",
       "start_seconds": 172,
@@ -1225,7 +1225,7 @@
     {
       "index": 54,
       "text": "(ひとり) ♪ 人様の前で演奏出来るように",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:04:29",
       "end_time": "00:04:31",
       "start_seconds": 269,
@@ -1260,7 +1260,7 @@
     {
       "index": 55,
       "text": "♪ 毎日6時間練習を続けた結果...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:04:31",
       "end_time": "00:04:34",
       "start_seconds": 271,
@@ -1309,7 +1309,7 @@
     {
       "index": 56,
       "text": "♪ いつの間にか中学終わってた!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:04:35",
       "end_time": "00:04:38",
       "start_seconds": 275,
@@ -1331,7 +1331,7 @@
     {
       "index": 57,
       "text": "♪ ライブ出れなかった",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:04:39",
       "end_time": "00:04:40",
       "start_seconds": 279,
@@ -1343,7 +1343,7 @@
     {
       "index": 58,
       "text": "(卒業生一同)文化祭!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:04:40",
       "end_time": "00:04:41",
       "start_seconds": 280,
@@ -1365,7 +1365,7 @@
     {
       "index": 59,
       "text": "(ひとり)♪ 集められなかった",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:04:41",
       "end_time": "00:04:43",
       "start_seconds": 281,
@@ -1387,7 +1387,7 @@
     {
       "index": 60,
       "text": "(卒業生一同)バンドメンバー!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:04:43",
       "end_time": "00:04:44",
       "start_seconds": 283,
@@ -1399,7 +1399,7 @@
     {
       "index": 61,
       "text": "(ひとり)♪ そもそも友達 一人もできなかった",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:04:44",
       "end_time": "00:04:47",
       "start_seconds": 284,
@@ -1421,7 +1421,7 @@
     {
       "index": 62,
       "text": "(卒業生一同)3年間!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:04:47",
       "end_time": "00:04:48",
       "start_seconds": 287,
@@ -1433,7 +1433,7 @@
     {
       "index": 63,
       "text": "(ひとり)♪ 高校こそは...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:04:48",
       "end_time": "00:04:50",
       "start_seconds": 288,
@@ -1445,7 +1445,7 @@
     {
       "index": 64,
       "text": "♪ 高校になったら 絶対バンドやるんだぁ!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:04:50",
       "end_time": "00:04:55",
       "start_seconds": 290,
@@ -1480,7 +1480,7 @@
     {
       "index": 65,
       "text": "♪ と 決意した高校生活も 始まって早一ヵ月",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:04:56",
       "end_time": "00:05:00",
       "start_seconds": 296,
@@ -1511,7 +1511,7 @@
     {
       "index": 66,
       "text": "♪ 心の拠(よ)り所はギターだけ",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:05:00",
       "end_time": "00:05:02",
       "start_seconds": 300,
@@ -1533,7 +1533,7 @@
     {
       "index": 67,
       "text": "♪ ひきこもり一歩手前ですぅー",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:05:02",
       "end_time": "00:05:06",
       "start_seconds": 302,
@@ -1545,7 +1545,7 @@
     {
       "index": 68,
       "text": "(ひとり)作詞作曲 私 “押し入れより愛をこめて”",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:05:08",
       "end_time": "00:05:13",
       "start_seconds": 308,
@@ -1576,7 +1576,7 @@
     {
       "index": 69,
       "text": "って 真夜中に 私のクソなオリジナル曲で",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:05:14",
       "end_time": "00:05:17",
       "start_seconds": 314,
@@ -1588,7 +1588,7 @@
     {
       "index": 70,
       "text": "ご近所トラブル起こす前に",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:05:17",
       "end_time": "00:05:19",
       "start_seconds": 317,
@@ -1613,7 +1613,7 @@
     {
       "index": 71,
       "text": "人気バンドのカバー動画 アップしなきゃ",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:05:19",
       "end_time": "00:05:21",
       "start_seconds": 319,
@@ -1657,7 +1657,7 @@
     {
       "index": 72,
       "text": "お父さんに勧められて",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:05:22",
       "end_time": "00:05:24",
       "start_seconds": 322,
@@ -1679,7 +1679,7 @@
     {
       "index": 73,
       "text": "ギターヒーロー名義で 弾いてみた動画 上げだして",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:05:24",
       "end_time": "00:05:27",
       "start_seconds": 324,
@@ -1714,7 +1714,7 @@
     {
       "index": 74,
       "text": "結構たつけど",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:05:27",
       "end_time": "00:05:29",
       "start_seconds": 327,
@@ -1745,7 +1745,7 @@
     {
       "index": 75,
       "text": "(ひとり) あっ この前の動画",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:05:29",
       "end_time": "00:05:31",
       "start_seconds": 329,
@@ -1757,7 +1757,7 @@
     {
       "index": 76,
       "text": "もう こんな コメントついてる",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:05:31",
       "end_time": "00:05:33",
       "start_seconds": 331,
@@ -1769,7 +1769,7 @@
     {
       "index": 77,
       "text": "(ひとり)フッ... フフフフ",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:05:34",
       "end_time": "00:05:35",
       "start_seconds": 334,
@@ -1781,7 +1781,7 @@
     {
       "index": 78,
       "text": "最近は再生数も結構あるし",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:05:35",
       "end_time": "00:05:38",
       "start_seconds": 335,
@@ -1812,7 +1812,7 @@
     {
       "index": 79,
       "text": "うまいって言われるし",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:05:38",
       "end_time": "00:05:40",
       "start_seconds": 338,
@@ -1856,7 +1856,7 @@
     {
       "index": 80,
       "text": "そうだよ 現実が つらくても大丈夫",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:05:40",
       "end_time": "00:05:43",
       "start_seconds": 340,
@@ -1924,7 +1924,7 @@
     {
       "index": 81,
       "text": "ネットには 私に反応してくれる人が",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:05:43",
       "end_time": "00:05:45",
       "start_seconds": 343,
@@ -1973,7 +1973,7 @@
     {
       "index": 82,
       "text": "たくさん いるもん",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:05:45",
       "end_time": "00:05:46",
       "start_seconds": 345,
@@ -1985,7 +1985,7 @@
     {
       "index": 83,
       "text": "ここには 私と同じ 根暗コミュ症が あふれて...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:05:46",
       "end_time": "00:05:49",
       "start_seconds": 346,
@@ -2016,7 +2016,7 @@
     {
       "index": 84,
       "text": "(男子の声)“この曲 バンド組んで文化祭で弾きま”...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:05:50",
       "end_time": "00:05:51",
       "start_seconds": 350,
@@ -2056,7 +2056,7 @@
     {
       "index": 85,
       "text": "(ひとり)ぐっ!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:05:51",
       "end_time": "00:05:52",
       "start_seconds": 351,
@@ -2068,7 +2068,7 @@
     {
       "index": 86,
       "text": "(ひとり)私だって努力はした",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:05:56",
       "end_time": "00:05:58",
       "start_seconds": 356,
@@ -2103,7 +2103,7 @@
     {
       "index": 87,
       "text": "CD持っていって 机に置いたり",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:05:58",
       "end_time": "00:06:01",
       "start_seconds": 358,
@@ -2125,7 +2125,7 @@
     {
       "index": 88,
       "text": "(ひとり)話しかけて...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:06:01",
       "end_time": "00:06:03",
       "start_seconds": 361,
@@ -2147,7 +2147,7 @@
     {
       "index": 89,
       "text": "(ひとり)バンドグッズ持って アピールしたり",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:06:03",
       "end_time": "00:06:05",
       "start_seconds": 363,
@@ -2159,7 +2159,7 @@
     {
       "index": 90,
       "text": "(ひとり)話しかけて~",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:06:05",
       "end_time": "00:06:06",
       "start_seconds": 365,
@@ -2181,7 +2181,7 @@
     {
       "index": 91,
       "text": "(ひとり) お昼のリクエストソングで...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:06:07",
       "end_time": "00:06:09",
       "start_seconds": 367,
@@ -2193,7 +2193,7 @@
     {
       "index": 92,
       "text": "(校内放送:女子)次の曲は",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:06:09",
       "end_time": "00:06:10",
       "start_seconds": 369,
@@ -2215,7 +2215,7 @@
     {
       "index": 93,
       "text": "2年A組 後藤さんの リクエストです",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:06:10",
       "end_time": "00:06:12",
       "start_seconds": 370,
@@ -2227,7 +2227,7 @@
     {
       "index": 94,
       "text": "(ひとり)当時 ハマってた デスメタル 流して...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:06:13",
       "end_time": "00:06:16",
       "start_seconds": 373,
@@ -2239,7 +2239,7 @@
     {
       "index": 95,
       "text": "♪ お前の頭蓋骨を粉砕して",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:06:16",
       "end_time": "00:06:18",
       "start_seconds": 376,
@@ -2251,7 +2251,7 @@
     {
       "index": 96,
       "text": "ぼえええ~!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:06:18",
       "end_time": "00:06:19",
       "start_seconds": 378,
@@ -2263,7 +2263,7 @@
     {
       "index": 97,
       "text": "(ひとりの絶叫) (ジミヘン)クン クウ~ン",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:06:20",
       "end_time": "00:06:21",
       "start_seconds": 380,
@@ -2275,7 +2275,7 @@
     {
       "index": 98,
       "text": "(ひとり)フラッシュバックが~!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:06:22",
       "end_time": "00:06:23",
       "start_seconds": 382,
@@ -2287,7 +2287,7 @@
     {
       "index": 99,
       "text": "ぐうっ 忘れろ 忘れろ!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:06:23",
       "end_time": "00:06:25",
       "start_seconds": 383,
@@ -2309,7 +2309,7 @@
     {
       "index": 100,
       "text": "(ひとり)ぐっ... ハア",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:06:25",
       "end_time": "00:06:28",
       "start_seconds": 385,
@@ -2321,7 +2321,7 @@
     {
       "index": 101,
       "text": "いいな... ライブ",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:06:33",
       "end_time": "00:06:35",
       "start_seconds": 393,
@@ -2333,7 +2333,7 @@
     {
       "index": 102,
       "text": "(ひとり)そっ...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:06:44",
       "end_time": "00:06:45",
       "start_seconds": 404,
@@ -2345,7 +2345,7 @@
     {
       "index": 103,
       "text": "その手があったか!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:06:45",
       "end_time": "00:06:47",
       "start_seconds": 405,
@@ -2357,7 +2357,7 @@
     {
       "index": 104,
       "text": "(ひとり)かっ... かっこいい~!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:06:59",
       "end_time": "00:07:02",
       "start_seconds": 419,
@@ -2388,7 +2388,7 @@
     {
       "index": 105,
       "text": "一気にバンド女子だ",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:07:02",
       "end_time": "00:07:04",
       "start_seconds": 422,
@@ -2400,7 +2400,7 @@
     {
       "index": 106,
       "text": "ただ者じゃない感が半端ない",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:07:04",
       "end_time": "00:07:06",
       "start_seconds": 424,
@@ -2412,7 +2412,7 @@
     {
       "index": 107,
       "text": "存在感すごい!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:07:06",
       "end_time": "00:07:07",
       "start_seconds": 426,
@@ -2434,7 +2434,7 @@
     {
       "index": 108,
       "text": "(生徒たちの話し声) (ひとり)これは...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:07:09",
       "end_time": "00:07:11",
       "start_seconds": 429,
@@ -2446,7 +2446,7 @@
     {
       "index": 109,
       "text": "絶対 誰か話しかけてくれるはず",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:07:11",
       "end_time": "00:07:14",
       "start_seconds": 431,
@@ -2514,7 +2514,7 @@
     {
       "index": 110,
       "text": "今年の文化祭は忙しくなるぞ!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:07:14",
       "end_time": "00:07:18",
       "start_seconds": 434,
@@ -2545,7 +2545,7 @@
     {
       "index": 111,
       "text": "(男子)だから そのコギ尻が...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:07:33",
       "end_time": "00:07:35",
       "start_seconds": 453,
@@ -2570,7 +2570,7 @@
     {
       "index": 112,
       "text": "(女子)次 移動教室?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:07:35",
       "end_time": "00:07:37",
       "start_seconds": 455,
@@ -2601,7 +2601,7 @@
     {
       "index": 113,
       "text": "(女子)理科室B",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:07:35",
       "end_time": "00:07:37",
       "start_seconds": 455,
@@ -2613,7 +2613,7 @@
     {
       "index": 114,
       "text": "(女子) このあとさ~ カラオケとかさ",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:07:37",
       "end_time": "00:07:39",
       "start_seconds": 457,
@@ -2625,7 +2625,7 @@
     {
       "index": 115,
       "text": "(女子)フフッ それいいね",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:07:39",
       "end_time": "00:07:41",
       "start_seconds": 459,
@@ -2637,7 +2637,7 @@
     {
       "index": 116,
       "text": "(ひとり)あれ~?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:07:46",
       "end_time": "00:07:48",
       "start_seconds": 466,
@@ -2649,7 +2649,7 @@
     {
       "index": 117,
       "text": "(ひとり)深夜テンションのまま 暴走し過ぎた?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:07:51",
       "end_time": "00:07:54",
       "start_seconds": 471,
@@ -2680,7 +2680,7 @@
     {
       "index": 118,
       "text": "こんなに分かりやすいほど バンド少女感 出してるのに",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:07:54",
       "end_time": "00:07:57",
       "start_seconds": 474,
@@ -2715,7 +2715,7 @@
     {
       "index": 119,
       "text": "あっ あえて 話しかけてこない という可能性は...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:07:57",
       "end_time": "00:08:00",
       "start_seconds": 477,
@@ -2771,7 +2771,7 @@
     {
       "index": 120,
       "text": "ないないない 精神崩壊する!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:08:00",
       "end_time": "00:08:03",
       "start_seconds": 480,
@@ -2783,7 +2783,7 @@
     {
       "index": 121,
       "text": "(女子1) うわっ ちょっと 見て見て!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:08:03",
       "end_time": "00:08:04",
       "start_seconds": 483,
@@ -2805,7 +2805,7 @@
     {
       "index": 122,
       "text": "(ひとり) い... 今 笑われようものなら",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:08:04",
       "end_time": "00:08:06",
       "start_seconds": 484,
@@ -2817,7 +2817,7 @@
     {
       "index": 123,
       "text": "精神崩壊どころか 消滅してしまう~!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:08:06",
       "end_time": "00:08:09",
       "start_seconds": 486,
@@ -2852,7 +2852,7 @@
     {
       "index": 124,
       "text": "(女子1)ヤバい!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:08:09",
       "end_time": "00:08:12",
       "start_seconds": 489,
@@ -2864,7 +2864,7 @@
     {
       "index": 125,
       "text": "かわい過ぎて笑っちゃう",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:08:09",
       "end_time": "00:08:12",
       "start_seconds": 489,
@@ -2904,7 +2904,7 @@
     {
       "index": 126,
       "text": "(喜多(きた))ギター?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:08:12",
       "end_time": "00:08:15",
       "start_seconds": 492,
@@ -2916,7 +2916,7 @@
     {
       "index": 127,
       "text": "(女子2)癒やされる~",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:08:12",
       "end_time": "00:08:15",
       "start_seconds": 492,
@@ -2941,7 +2941,7 @@
     {
       "index": 128,
       "text": "(女子2)ね~ 喜多ちゃん",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:08:15",
       "end_time": "00:08:16",
       "start_seconds": 495,
@@ -2953,7 +2953,7 @@
     {
       "index": 129,
       "text": "喜多ちゃん?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:08:17",
       "end_time": "00:08:17",
       "start_seconds": 497,
@@ -2965,7 +2965,7 @@
     {
       "index": 130,
       "text": "あっ ごめんごめん なになに?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:08:17",
       "end_time": "00:08:21",
       "start_seconds": 497,
@@ -2977,7 +2977,7 @@
     {
       "index": 131,
       "text": "(ひとり)いや 分かってますよ",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:08:25",
       "end_time": "00:08:26",
       "start_seconds": 505,
@@ -2989,7 +2989,7 @@
     {
       "index": 132,
       "text": "他力本願で 物事うまくいくはずないって",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:08:27",
       "end_time": "00:08:30",
       "start_seconds": 507,
@@ -3011,7 +3011,7 @@
     {
       "index": 133,
       "text": "ここに集う人たちは 私と同じで 孤独を抱えてるんだ",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:08:33",
       "end_time": "00:08:37",
       "start_seconds": 513,
@@ -3023,7 +3023,7 @@
     {
       "index": 134,
       "text": "あの人は きっと家庭内別...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:08:37",
       "end_time": "00:08:39",
       "start_seconds": 517,
@@ -3067,7 +3067,7 @@
     {
       "index": 135,
       "text": "(娘)パパ!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:08:39",
       "end_time": "00:08:40",
       "start_seconds": 519,
@@ -3089,7 +3089,7 @@
     {
       "index": 136,
       "text": "(ひとり)え?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:08:39",
       "end_time": "00:08:40",
       "start_seconds": 519,
@@ -3101,7 +3101,7 @@
     {
       "index": 137,
       "text": "(娘)エヘッ (妻)ごめんね 遅れちゃって",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:08:41",
       "end_time": "00:08:43",
       "start_seconds": 521,
@@ -3150,7 +3150,7 @@
     {
       "index": 138,
       "text": "(男性)いいって いいって",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:08:43",
       "end_time": "00:08:44",
       "start_seconds": 523,
@@ -3162,7 +3162,7 @@
     {
       "index": 139,
       "text": "(ひとり) 絵に描いたような家族団欒(だんらん)!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:08:44",
       "end_time": "00:08:48",
       "start_seconds": 524,
@@ -3184,7 +3184,7 @@
     {
       "index": 140,
       "text": "すいません 勝手に“私と同じ”とか言って",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:08:48",
       "end_time": "00:08:51",
       "start_seconds": 528,
@@ -3206,7 +3206,7 @@
     {
       "index": 141,
       "text": "あ... 登録者数3万 超えてる",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:08:53",
       "end_time": "00:08:56",
       "start_seconds": 533,
@@ -3228,7 +3228,7 @@
     {
       "index": 142,
       "text": "うん そうだよ 私の居場所はネットだけ",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:08:57",
       "end_time": "00:09:01",
       "start_seconds": 537,
@@ -3277,7 +3277,7 @@
     {
       "index": 143,
       "text": "もう 学校 行きたくないな...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:09:02",
       "end_time": "00:09:05",
       "start_seconds": 542,
@@ -3299,7 +3299,7 @@
     {
       "index": 144,
       "text": "(虹夏(にじか))あっ!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:09:06",
       "end_time": "00:09:07",
       "start_seconds": 546,
@@ -3311,7 +3311,7 @@
     {
       "index": 145,
       "text": "(ひとり)ハッ",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:09:06",
       "end_time": "00:09:07",
       "start_seconds": 546,
@@ -3323,7 +3323,7 @@
     {
       "index": 146,
       "text": "(虹夏)ギター!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:09:07",
       "end_time": "00:09:09",
       "start_seconds": 547,
@@ -3335,7 +3335,7 @@
     {
       "index": 147,
       "text": "(ひとり)うわああ...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:09:11",
       "end_time": "00:09:12",
       "start_seconds": 551,
@@ -3347,7 +3347,7 @@
     {
       "index": 148,
       "text": "(虹夏)それ ギターだよね?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:09:12",
       "end_time": "00:09:13",
       "start_seconds": 552,
@@ -3359,7 +3359,7 @@
     {
       "index": 149,
       "text": "(ひとり)あっ あっ... (虹夏)弾けるの?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:09:13",
       "end_time": "00:09:14",
       "start_seconds": 553,
@@ -3371,7 +3371,7 @@
     {
       "index": 150,
       "text": "(ひとり)あっ ああっ (虹夏)あ...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:09:14",
       "end_time": "00:09:16",
       "start_seconds": 554,
@@ -3383,7 +3383,7 @@
     {
       "index": 151,
       "text": "(虹夏)お~い?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:09:17",
       "end_time": "00:09:18",
       "start_seconds": 557,
@@ -3395,7 +3395,7 @@
     {
       "index": 152,
       "text": "(ひとり)しゃ... しゃべるの 久しぶりすぎて 声が...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:09:18",
       "end_time": "00:09:21",
       "start_seconds": 558,
@@ -3426,7 +3426,7 @@
     {
       "index": 153,
       "text": "あっ いきなり ごめんね",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:09:21",
       "end_time": "00:09:23",
       "start_seconds": 561,
@@ -3457,7 +3457,7 @@
     {
       "index": 154,
       "text": "あたし 下北沢(しもきたざわ)高校2年 伊地知(いじち)虹夏",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:09:23",
       "end_time": "00:09:26",
       "start_seconds": 563,
@@ -3488,7 +3488,7 @@
     {
       "index": 155,
       "text": "あっ 後藤ひとり 秀華(しゅうか)高校1年です",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:09:27",
       "end_time": "00:09:30",
       "start_seconds": 567,
@@ -3500,7 +3500,7 @@
     {
       "index": 156,
       "text": "(虹夏) ちなみに ひとりちゃんはさ...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:09:30",
       "end_time": "00:09:31",
       "start_seconds": 570,
@@ -3512,7 +3512,7 @@
     {
       "index": 157,
       "text": "(ひとり)いきなり名前呼び!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:09:31",
       "end_time": "00:09:33",
       "start_seconds": 571,
@@ -3543,7 +3543,7 @@
     {
       "index": 158,
       "text": "ギター どのくらい弾ける?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:09:33",
       "end_time": "00:09:35",
       "start_seconds": 573,
@@ -3568,7 +3568,7 @@
     {
       "index": 159,
       "text": "あっ そこそこかと",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:09:35",
       "end_time": "00:09:37",
       "start_seconds": 575,
@@ -3580,7 +3580,7 @@
     {
       "index": 160,
       "text": "そっか!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:09:37",
       "end_time": "00:09:38",
       "start_seconds": 577,
@@ -3592,7 +3592,7 @@
     {
       "index": 161,
       "text": "あ... あのさ ちょっと今 困ってて",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:09:38",
       "end_time": "00:09:41",
       "start_seconds": 578,
@@ -3623,7 +3623,7 @@
     {
       "index": 162,
       "text": "無理だったら 大丈夫なんだけど",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:09:41",
       "end_time": "00:09:43",
       "start_seconds": 581,
@@ -3658,7 +3658,7 @@
     {
       "index": 163,
       "text": "大丈夫なんだけど 困ってて...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:09:43",
       "end_time": "00:09:45",
       "start_seconds": 583,
@@ -3680,7 +3680,7 @@
     {
       "index": 164,
       "text": "(ひとり) 絶対 だいじょばないやつ!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:09:45",
       "end_time": "00:09:47",
       "start_seconds": 585,
@@ -3702,7 +3702,7 @@
     {
       "index": 165,
       "text": "(虹夏) うん 思い切って言っちゃおう!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:09:47",
       "end_time": "00:09:49",
       "start_seconds": 587,
@@ -3724,7 +3724,7 @@
     {
       "index": 166,
       "text": "お願い!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:09:50",
       "end_time": "00:09:50",
       "start_seconds": 590,
@@ -3746,7 +3746,7 @@
     {
       "index": 167,
       "text": "あたしのバンドで 今日だけ サポートギターしてくれないかな!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:09:51",
       "end_time": "00:09:55",
       "start_seconds": 591,
@@ -3777,7 +3777,7 @@
     {
       "index": 168,
       "text": "(ひとり)バンド?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:09:56",
       "end_time": "00:09:57",
       "start_seconds": 596,
@@ -3789,7 +3789,7 @@
     {
       "index": 169,
       "text": "これからライブなのに ギターの子が突然 辞めちゃって",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:09:57",
       "end_time": "00:10:01",
       "start_seconds": 597,
@@ -3820,7 +3820,7 @@
     {
       "index": 170,
       "text": "(虹夏)ある程度 弾ける人なら... (ひとり)これから?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:10:01",
       "end_time": "00:10:04",
       "start_seconds": 601,
@@ -3832,7 +3832,7 @@
     {
       "index": 171,
       "text": "ライブ?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:10:01",
       "end_time": "00:10:04",
       "start_seconds": 601,
@@ -3844,7 +3844,7 @@
     {
       "index": 172,
       "text": "(虹夏)なにとぞ~",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:10:04",
       "end_time": "00:10:05",
       "start_seconds": 604,
@@ -3856,7 +3856,7 @@
     {
       "index": 173,
       "text": "あっ や...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:10:06",
       "end_time": "00:10:07",
       "start_seconds": 606,
@@ -3868,7 +3868,7 @@
     {
       "index": 174,
       "text": "(ひとり)ええ~っ!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:10:07",
       "end_time": "00:10:10",
       "start_seconds": 607,
@@ -3880,7 +3880,7 @@
     {
       "index": 175,
       "text": "(虹夏)ありがとう!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:10:10",
       "end_time": "00:10:13",
       "start_seconds": 610,
@@ -3892,7 +3892,7 @@
     {
       "index": 176,
       "text": "早速 ライブハウスへ ゴー!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:10:10",
       "end_time": "00:10:13",
       "start_seconds": 610,
@@ -3914,7 +3914,7 @@
     {
       "index": 177,
       "text": "(ひとり)まだ何も言ってない!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:10:13",
       "end_time": "00:10:15",
       "start_seconds": 613,
@@ -3936,7 +3936,7 @@
     {
       "index": 178,
       "text": "(ひとり)来てしまった...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:10:17",
       "end_time": "00:10:19",
       "start_seconds": 617,
@@ -3971,7 +3971,7 @@
     {
       "index": 179,
       "text": "ひとりちゃんは下北(しもきた)は よく来る?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:10:19",
       "end_time": "00:10:22",
       "start_seconds": 619,
@@ -3983,7 +3983,7 @@
     {
       "index": 180,
       "text": "あっ いや...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:10:22",
       "end_time": "00:10:23",
       "start_seconds": 622,
@@ -3995,7 +3995,7 @@
     {
       "index": 181,
       "text": "(ひとり)こんな 個性みなぎる おしゃれタウンに 来れるわけない",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:10:23",
       "end_time": "00:10:27",
       "start_seconds": 623,
@@ -4030,7 +4030,7 @@
     {
       "index": 182,
       "text": "ライブハウス もうちょいだから",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:10:27",
       "end_time": "00:10:29",
       "start_seconds": 627,
@@ -4055,7 +4055,7 @@
     {
       "index": 183,
       "text": "(ひとり) 虹夏ちゃんは おしゃれだな~",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:10:31",
       "end_time": "00:10:33",
       "start_seconds": 631,
@@ -4067,7 +4067,7 @@
     {
       "index": 184,
       "text": "これこそバンド女子って感じ",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:10:33",
       "end_time": "00:10:36",
       "start_seconds": 633,
@@ -4079,7 +4079,7 @@
     {
       "index": 185,
       "text": "それに比べて私は 芋ジャージだし クマすごいし 猫背だし...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:10:36",
       "end_time": "00:10:41",
       "start_seconds": 636,
@@ -4135,7 +4135,7 @@
     {
       "index": 186,
       "text": "あっ 私 かび臭いかも いつも押し入れにいるから",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:10:41",
       "end_time": "00:10:45",
       "start_seconds": 641,
@@ -4179,7 +4179,7 @@
     {
       "index": 187,
       "text": "いや 防虫剤のにおいだ",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:10:45",
       "end_time": "00:10:47",
       "start_seconds": 645,
@@ -4201,7 +4201,7 @@
     {
       "index": 188,
       "text": "それにひきかえ 虹夏ちゃん めっちゃ いいにおい",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:10:48",
       "end_time": "00:10:52",
       "start_seconds": 648,
@@ -4236,7 +4236,7 @@
     {
       "index": 189,
       "text": "(においを嗅ぐ音) (ひとり)本来あるべき",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:10:52",
       "end_time": "00:10:53",
       "start_seconds": 652,
@@ -4248,7 +4248,7 @@
     {
       "index": 190,
       "text": "女子高生の香りだ~",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:10:53",
       "end_time": "00:10:55",
       "start_seconds": 653,
@@ -4279,7 +4279,7 @@
     {
       "index": 191,
       "text": "歩くペース早い?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:10:55",
       "end_time": "00:10:56",
       "start_seconds": 655,
@@ -4301,7 +4301,7 @@
     {
       "index": 192,
       "text": "いっ... いえ",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:10:57",
       "end_time": "00:10:57",
       "start_seconds": 657,
@@ -4313,7 +4313,7 @@
     {
       "index": 193,
       "text": "(虹夏) 今日 出演するライブハウスは",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:10:57",
       "end_time": "00:10:59",
       "start_seconds": 657,
@@ -4325,7 +4325,7 @@
     {
       "index": 194,
       "text": "STARRY(スターリー)っていうんだけどね",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:10:59",
       "end_time": "00:11:02",
       "start_seconds": 659,
@@ -4337,7 +4337,7 @@
     {
       "index": 195,
       "text": "(虹夏)あたしのお姉ちゃんが... (ひとり)出演するライブハウス",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:11:02",
       "end_time": "00:11:04",
       "start_seconds": 662,
@@ -4349,7 +4349,7 @@
     {
       "index": 196,
       "text": "(ひとり)なんか ぽい響き",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:11:04",
       "end_time": "00:11:07",
       "start_seconds": 664,
@@ -4374,7 +4374,7 @@
     {
       "index": 197,
       "text": "(鼓動) (ひとり)あれ なんか心臓ヤバい",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:11:07",
       "end_time": "00:11:09",
       "start_seconds": 667,
@@ -4399,7 +4399,7 @@
     {
       "index": 198,
       "text": "(虹夏)でね!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:11:09",
       "end_time": "00:11:10",
       "start_seconds": 669,
@@ -4411,7 +4411,7 @@
     {
       "index": 199,
       "text": "あっ",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:11:09",
       "end_time": "00:11:10",
       "start_seconds": 669,
@@ -4423,7 +4423,7 @@
     {
       "index": 200,
       "text": "あたし そこでバイトしてて...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:11:11",
       "end_time": "00:11:13",
       "start_seconds": 671,
@@ -4448,7 +4448,7 @@
     {
       "index": 201,
       "text": "あ...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:11:14",
       "end_time": "00:11:15",
       "start_seconds": 674,
@@ -4460,7 +4460,7 @@
     {
       "index": 202,
       "text": "ひとりちゃん 実は結構 運動できる?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:11:16",
       "end_time": "00:11:19",
       "start_seconds": 676,
@@ -4495,7 +4495,7 @@
     {
       "index": 203,
       "text": "(ひとり)いえ あっ でも ドッジボールだけは",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:11:19",
       "end_time": "00:11:21",
       "start_seconds": 679,
@@ -4517,7 +4517,7 @@
     {
       "index": 204,
       "text": "なぜか いつも 最後まで残ってました",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:11:21",
       "end_time": "00:11:24",
       "start_seconds": 681,
@@ -4579,7 +4579,7 @@
     {
       "index": 205,
       "text": "(虹夏)そ... そっか",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:11:24",
       "end_time": "00:11:25",
       "start_seconds": 684,
@@ -4591,7 +4591,7 @@
     {
       "index": 206,
       "text": "(鼓動) (ひとり)私がライブハウスで演奏",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:11:25",
       "end_time": "00:11:28",
       "start_seconds": 685,
@@ -4613,7 +4613,7 @@
     {
       "index": 207,
       "text": "あっ ああ... ダメダメ 今 弱気になっちゃ",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:11:28",
       "end_time": "00:11:31",
       "start_seconds": 688,
@@ -4625,7 +4625,7 @@
     {
       "index": 208,
       "text": "思い出せ 妄想で毎日した文化祭ライブを!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:11:32",
       "end_time": "00:11:35",
       "start_seconds": 692,
@@ -4656,7 +4656,7 @@
     {
       "index": 209,
       "text": "そして 初のワンマン",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:11:36",
       "end_time": "00:11:37",
       "start_seconds": 696,
@@ -4681,7 +4681,7 @@
     {
       "index": 210,
       "text": "Zepp(ゼップ)!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:11:38",
       "end_time": "00:11:38",
       "start_seconds": 698,
@@ -4693,7 +4693,7 @@
     {
       "index": 211,
       "text": "(歓声) (ひとり)スーパーアリーナ!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:11:38",
       "end_time": "00:11:40",
       "start_seconds": 698,
@@ -4705,7 +4705,7 @@
     {
       "index": 212,
       "text": "(観客たち) ひとり!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:11:40",
       "end_time": "00:11:43",
       "start_seconds": 700,
@@ -4727,7 +4727,7 @@
     {
       "index": 213,
       "text": "ひとり!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:11:40",
       "end_time": "00:11:43",
       "start_seconds": 700,
@@ -4739,7 +4739,7 @@
     {
       "index": 214,
       "text": "ひとり...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:11:40",
       "end_time": "00:11:43",
       "start_seconds": 700,
@@ -4751,7 +4751,7 @@
     {
       "index": 215,
       "text": "(ひとり) 私は武道館(ぶどうかん)をも埋めた女...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:11:44",
       "end_time": "00:11:46",
       "start_seconds": 704,
@@ -4786,7 +4786,7 @@
     {
       "index": 216,
       "text": "(虹夏)えっ?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:11:46",
       "end_time": "00:11:48",
       "start_seconds": 706,
@@ -4798,7 +4798,7 @@
     {
       "index": 217,
       "text": "(ひとり)あっ いや...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:11:46",
       "end_time": "00:11:48",
       "start_seconds": 706,
@@ -4810,7 +4810,7 @@
     {
       "index": 218,
       "text": "(虹夏)アハハ...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:11:48",
       "end_time": "00:11:49",
       "start_seconds": 708,
@@ -4822,7 +4822,7 @@
     {
       "index": 219,
       "text": "(ひとり)頼む相手 間違った って思われてませんように!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:11:49",
       "end_time": "00:11:53",
       "start_seconds": 709,
@@ -4875,7 +4875,7 @@
     {
       "index": 220,
       "text": "(虹夏)頼む相手 間違えたか?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:11:53",
       "end_time": "00:11:55",
       "start_seconds": 713,
@@ -4915,7 +4915,7 @@
     {
       "index": 221,
       "text": "着いた!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:11:56",
       "end_time": "00:11:58",
       "start_seconds": 716,
@@ -4937,7 +4937,7 @@
     {
       "index": 222,
       "text": "ここだよ~",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:11:56",
       "end_time": "00:11:58",
       "start_seconds": 716,
@@ -4949,7 +4949,7 @@
     {
       "index": 223,
       "text": "(ひとり)ま... 魔境?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:12:00",
       "end_time": "00:12:02",
       "start_seconds": 720,
@@ -4961,7 +4961,7 @@
     {
       "index": 224,
       "text": "(虹夏)おっはようございま~す!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:12:03",
       "end_time": "00:12:05",
       "start_seconds": 723,
@@ -4973,7 +4973,7 @@
     {
       "index": 225,
       "text": "(ひとり)初ライブハウス",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:12:08",
       "end_time": "00:12:10",
       "start_seconds": 728,
@@ -4985,7 +4985,7 @@
     {
       "index": 226,
       "text": "この暗さ 圧迫感...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:12:10",
       "end_time": "00:12:13",
       "start_seconds": 730,
@@ -4997,7 +4997,7 @@
     {
       "index": 227,
       "text": "お... 落ち着く~",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:12:13",
       "end_time": "00:12:16",
       "start_seconds": 733,
@@ -5028,7 +5028,7 @@
     {
       "index": 228,
       "text": "ひとりちゃん 大丈夫?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:12:16",
       "end_time": "00:12:17",
       "start_seconds": 736,
@@ -5040,7 +5040,7 @@
     {
       "index": 229,
       "text": "わ... 私の家",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:12:17",
       "end_time": "00:12:18",
       "start_seconds": 737,
@@ -5052,7 +5052,7 @@
     {
       "index": 230,
       "text": "違うよ?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:12:19",
       "end_time": "00:12:19",
       "start_seconds": 739,
@@ -5074,7 +5074,7 @@
     {
       "index": 231,
       "text": "(女性)今回もPAさんに...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:12:19",
       "end_time": "00:12:21",
       "start_seconds": 739,
@@ -5086,7 +5086,7 @@
     {
       "index": 232,
       "text": "(虹夏)今日 共演する...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:12:21",
       "end_time": "00:12:22",
       "start_seconds": 741,
@@ -5098,7 +5098,7 @@
     {
       "index": 233,
       "text": "(ひとり)バンドって どうしても 怖そうなイメージあるけど",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:12:22",
       "end_time": "00:12:25",
       "start_seconds": 742,
@@ -5151,7 +5151,7 @@
     {
       "index": 234,
       "text": "所詮 インドアの集まり",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:12:25",
       "end_time": "00:12:26",
       "start_seconds": 745,
@@ -5163,7 +5163,7 @@
     {
       "index": 235,
       "text": "影の者 陰キャの集団 みんな 私と同じ",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:12:26",
       "end_time": "00:12:30",
       "start_seconds": 746,
@@ -5175,7 +5175,7 @@
     {
       "index": 236,
       "text": "(虹夏)そこにいるのがPAさん",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:12:30",
       "end_time": "00:12:31",
       "start_seconds": 750,
@@ -5197,7 +5197,7 @@
     {
       "index": 237,
       "text": "(PA) おはようございます",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:12:33",
       "end_time": "00:12:34",
       "start_seconds": 753,
@@ -5209,7 +5209,7 @@
     {
       "index": 238,
       "text": "いいい... イキって すみません",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:12:34",
       "end_time": "00:12:36",
       "start_seconds": 754,
@@ -5231,7 +5231,7 @@
     {
       "index": 239,
       "text": "(虹夏)急に どうした!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:12:36",
       "end_time": "00:12:37",
       "start_seconds": 756,
@@ -5243,7 +5243,7 @@
     {
       "index": 240,
       "text": "(リョウ)やっと帰ってきた (虹夏)おっ リョウ",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:12:38",
       "end_time": "00:12:40",
       "start_seconds": 758,
@@ -5274,7 +5274,7 @@
     {
       "index": 241,
       "text": "(虹夏)この子 後藤ひとりちゃん",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:12:41",
       "end_time": "00:12:43",
       "start_seconds": 761,
@@ -5286,7 +5286,7 @@
     {
       "index": 242,
       "text": "奇跡的に公園にいた ギタリストだよ",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:12:43",
       "end_time": "00:12:46",
       "start_seconds": 763,
@@ -5308,7 +5308,7 @@
     {
       "index": 243,
       "text": "(リョウ)へえ~",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:12:46",
       "end_time": "00:12:47",
       "start_seconds": 766,
@@ -5320,7 +5320,7 @@
     {
       "index": 244,
       "text": "(ひとり)怖っ!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:12:47",
       "end_time": "00:12:49",
       "start_seconds": 767,
@@ -5342,7 +5342,7 @@
     {
       "index": 245,
       "text": "にらまれてる?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:12:47",
       "end_time": "00:12:49",
       "start_seconds": 767,
@@ -5354,7 +5354,7 @@
     {
       "index": 246,
       "text": "(虹夏) この子は ベースの山田(やまだ)リョウだよ",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:12:49",
       "end_time": "00:12:51",
       "start_seconds": 769,
@@ -5366,7 +5366,7 @@
     {
       "index": 247,
       "text": "(ひとり)ごご... 後藤ひとりです 大変 申し訳ございません!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:12:51",
       "end_time": "00:12:54",
       "start_seconds": 771,
@@ -5378,7 +5378,7 @@
     {
       "index": 248,
       "text": "えっ ちょっ...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:12:54",
       "end_time": "00:12:55",
       "start_seconds": 774,
@@ -5390,7 +5390,7 @@
     {
       "index": 249,
       "text": "大丈夫だから リョウは表情が出にくいだけ",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:12:55",
       "end_time": "00:12:59",
       "start_seconds": 775,
@@ -5437,7 +5437,7 @@
     {
       "index": 250,
       "text": "“変人”って言ったら喜ぶよ~",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:12:59",
       "end_time": "00:13:01",
       "start_seconds": 779,
@@ -5472,7 +5472,7 @@
     {
       "index": 251,
       "text": "(リョウ)うれしくないし",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:13:01",
       "end_time": "00:13:03",
       "start_seconds": 781,
@@ -5494,7 +5494,7 @@
     {
       "index": 252,
       "text": "(ひとり)うれしそうだ",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:13:03",
       "end_time": "00:13:04",
       "start_seconds": 783,
@@ -5553,7 +5553,7 @@
     {
       "index": 253,
       "text": "(リョウ)そういえば 店長が... (虹夏)えっ?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:13:04",
       "end_time": "00:13:06",
       "start_seconds": 784,
@@ -5597,7 +5597,7 @@
     {
       "index": 254,
       "text": "(リョウ)時間まで練習しとけって",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:13:06",
       "end_time": "00:13:08",
       "start_seconds": 786,
@@ -5628,7 +5628,7 @@
     {
       "index": 255,
       "text": "あと 虹夏が勝手に ライブハウス抜け出したこと",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:13:08",
       "end_time": "00:13:11",
       "start_seconds": 788,
@@ -5640,7 +5640,7 @@
     {
       "index": 256,
       "text": "怒りながら買い出し行った",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:13:11",
       "end_time": "00:13:13",
       "start_seconds": 791,
@@ -5677,7 +5677,7 @@
     {
       "index": 257,
       "text": "ひい~ ウソ!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:13:13",
       "end_time": "00:13:16",
       "start_seconds": 793,
@@ -5689,7 +5689,7 @@
     {
       "index": 258,
       "text": "帰ってくる前に スタジオ行こう",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:13:13",
       "end_time": "00:13:16",
       "start_seconds": 793,
@@ -5724,7 +5724,7 @@
     {
       "index": 259,
       "text": "(虹夏)ひとりちゃんも (ひとり)あっ",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:13:17",
       "end_time": "00:13:18",
       "start_seconds": 797,
@@ -5736,7 +5736,7 @@
     {
       "index": 260,
       "text": "ほら!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:13:18",
       "end_time": "00:13:19",
       "start_seconds": 798,
@@ -5748,7 +5748,7 @@
     {
       "index": 261,
       "text": "は... はい!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:13:20",
       "end_time": "00:13:21",
       "start_seconds": 800,
@@ -5760,7 +5760,7 @@
     {
       "index": 262,
       "text": "(ひとり)現実は怖い",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:13:22",
       "end_time": "00:13:23",
       "start_seconds": 802,
@@ -5791,7 +5791,7 @@
     {
       "index": 263,
       "text": "でも これから楽しいことが たくさん待っている気がする",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:13:24",
       "end_time": "00:13:29",
       "start_seconds": 804,
@@ -5847,7 +5847,7 @@
     {
       "index": 264,
       "text": "(虹夏)これ 今日のセットリストとスコア",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:13:30",
       "end_time": "00:13:33",
       "start_seconds": 810,
@@ -5869,7 +5869,7 @@
     {
       "index": 265,
       "text": "(ひとり)あっ あの...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:13:33",
       "end_time": "00:13:34",
       "start_seconds": 813,
@@ -5881,7 +5881,7 @@
     {
       "index": 266,
       "text": "(ベースを鳴らす音) (ひとり)バンドメンバーは?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:13:34",
       "end_time": "00:13:36",
       "start_seconds": 814,
@@ -5893,7 +5893,7 @@
     {
       "index": 267,
       "text": "これで全員だよ",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:13:36",
       "end_time": "00:13:37",
       "start_seconds": 816,
@@ -5905,7 +5905,7 @@
     {
       "index": 268,
       "text": "あたしたち 今回は インストバンドだから",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:13:37",
       "end_time": "00:13:39",
       "start_seconds": 817,
@@ -5930,7 +5930,7 @@
     {
       "index": 269,
       "text": "(ひとり)うん この曲ならいける",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:13:40",
       "end_time": "00:13:43",
       "start_seconds": 820,
@@ -5942,7 +5942,7 @@
     {
       "index": 270,
       "text": "でも ボーカルいない分 演奏 頑張らないと",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:13:43",
       "end_time": "00:13:46",
       "start_seconds": 823,
@@ -5986,7 +5986,7 @@
     {
       "index": 271,
       "text": "(ひとり) 私 ギターうまいらしいし",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:13:47",
       "end_time": "00:13:48",
       "start_seconds": 827,
@@ -6045,7 +6045,7 @@
     {
       "index": 272,
       "text": "やれる やれるはず!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:13:48",
       "end_time": "00:13:50",
       "start_seconds": 828,
@@ -6070,7 +6070,7 @@
     {
       "index": 273,
       "text": "(ひとり) フンフン フンフン フン...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:13:50",
       "end_time": "00:13:53",
       "start_seconds": 830,
@@ -6082,7 +6082,7 @@
     {
       "index": 274,
       "text": "(リョウ)ゴリラ?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:13:53",
       "end_time": "00:13:54",
       "start_seconds": 833,
@@ -6094,7 +6094,7 @@
     {
       "index": 275,
       "text": "(ひとり)フンフン!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:13:53",
       "end_time": "00:13:54",
       "start_seconds": 833,
@@ -6106,7 +6106,7 @@
     {
       "index": 276,
       "text": "(ひとり) 演奏聴いたら 2人とも驚くかも",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:13:57",
       "end_time": "00:14:00",
       "start_seconds": 837,
@@ -6150,7 +6150,7 @@
     {
       "index": 277,
       "text": "だって ネットだと結構... いや わりと評判いいし",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:14:00",
       "end_time": "00:14:04",
       "start_seconds": 840,
@@ -6185,7 +6185,7 @@
     {
       "index": 278,
       "text": "登録者数3万人だし",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:14:05",
       "end_time": "00:14:07",
       "start_seconds": 845,
@@ -6207,7 +6207,7 @@
     {
       "index": 279,
       "text": "よし やってやる!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:14:07",
       "end_time": "00:14:09",
       "start_seconds": 847,
@@ -6219,7 +6219,7 @@
     {
       "index": 280,
       "text": "(虹夏)それじゃ いくよ!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:14:09",
       "end_time": "00:14:10",
       "start_seconds": 849,
@@ -6231,7 +6231,7 @@
     {
       "index": 281,
       "text": "(リョウ)ふ~ん",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:14:21",
       "end_time": "00:14:22",
       "start_seconds": 861,
@@ -6262,7 +6262,7 @@
     {
       "index": 282,
       "text": "うん",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:14:24",
       "end_time": "00:14:25",
       "start_seconds": 864,
@@ -6274,7 +6274,7 @@
     {
       "index": 283,
       "text": "(虹夏)ド下手だ (リョウ)プッ",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:14:26",
       "end_time": "00:14:27",
       "start_seconds": 866,
@@ -6286,7 +6286,7 @@
     {
       "index": 284,
       "text": "(ひとり)ええ~っ!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:14:27",
       "end_time": "00:14:29",
       "start_seconds": 867,
@@ -6298,7 +6298,7 @@
     {
       "index": 285,
       "text": "(ひとり)ななな... なんで?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:14:29",
       "end_time": "00:14:30",
       "start_seconds": 869,
@@ -6310,7 +6310,7 @@
     {
       "index": 286,
       "text": "(虹夏)あっ ウソウソ",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:14:29",
       "end_time": "00:14:30",
       "start_seconds": 869,
@@ -6322,7 +6322,7 @@
     {
       "index": 287,
       "text": "(ひとり) 私 ギターヒーローなのに",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:14:30",
       "end_time": "00:14:32",
       "start_seconds": 870,
@@ -6334,7 +6334,7 @@
     {
       "index": 288,
       "text": "登録者3万人なのに~?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:14:32",
       "end_time": "00:14:34",
       "start_seconds": 872,
@@ -6356,7 +6356,7 @@
     {
       "index": 289,
       "text": "(ギタ男)説明しよう!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:14:34",
       "end_time": "00:14:36",
       "start_seconds": 874,
@@ -6378,7 +6378,7 @@
     {
       "index": 290,
       "text": "(ひとり)えっ?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:14:34",
       "end_time": "00:14:36",
       "start_seconds": 874,
@@ -6390,7 +6390,7 @@
     {
       "index": 291,
       "text": "(ギタ男)バンドは 生身の人間と",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:14:36",
       "end_time": "00:14:38",
       "start_seconds": 876,
@@ -6402,7 +6402,7 @@
     {
       "index": 292,
       "text": "呼吸を合わせることが とっても重要だけど",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:14:38",
       "end_time": "00:14:41",
       "start_seconds": 878,
@@ -6446,7 +6446,7 @@
     {
       "index": 293,
       "text": "コミュ症の ひとりは 目すら合わせられないので",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:14:41",
       "end_time": "00:14:43",
       "start_seconds": 881,
@@ -6468,7 +6468,7 @@
     {
       "index": 294,
       "text": "突っ走る演奏をする!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:14:43",
       "end_time": "00:14:45",
       "start_seconds": 883,
@@ -6490,7 +6490,7 @@
     {
       "index": 295,
       "text": "ソロ弾きは最強でも",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:14:46",
       "end_time": "00:14:47",
       "start_seconds": 886,
@@ -6502,7 +6502,7 @@
     {
       "index": 296,
       "text": "バンドになるとミジンコ以下",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:14:47",
       "end_time": "00:14:49",
       "start_seconds": 887,
@@ -6524,7 +6524,7 @@
     {
       "index": 297,
       "text": "最弱になるのだ!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:14:50",
       "end_time": "00:14:51",
       "start_seconds": 890,
@@ -6536,7 +6536,7 @@
     {
       "index": 298,
       "text": "(ひとり) どうも プランクトン後藤で~す",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:14:51",
       "end_time": "00:14:54",
       "start_seconds": 891,
@@ -6561,7 +6561,7 @@
     {
       "index": 299,
       "text": "売れないお笑い芸人みたいな人 出てきた!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:14:54",
       "end_time": "00:14:57",
       "start_seconds": 894,
@@ -6596,7 +6596,7 @@
     {
       "index": 300,
       "text": "(ひとり) こうして 後藤ひとりは灰となり",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:14:57",
       "end_time": "00:14:59",
       "start_seconds": 897,
@@ -6608,7 +6608,7 @@
     {
       "index": 301,
       "text": "もう二度とギターを持つことは なかったのでした",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:14:59",
       "end_time": "00:15:02",
       "start_seconds": 899,
@@ -6620,7 +6620,7 @@
     {
       "index": 302,
       "text": "(虹夏) ちょちょ... ちょちょ!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:15:09",
       "end_time": "00:15:10",
       "start_seconds": 909,
@@ -6632,7 +6632,7 @@
     {
       "index": 303,
       "text": "ねえ 出てきて~",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:15:11",
       "end_time": "00:15:12",
       "start_seconds": 911,
@@ -6644,7 +6644,7 @@
     {
       "index": 304,
       "text": "本番 始まっちゃうよ",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:15:12",
       "end_time": "00:15:14",
       "start_seconds": 912,
@@ -6666,7 +6666,7 @@
     {
       "index": 305,
       "text": "(ひとり)やっ ややや... やっぱり できません!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:15:14",
       "end_time": "00:15:16",
       "start_seconds": 914,
@@ -6678,7 +6678,7 @@
     {
       "index": 306,
       "text": "(虹夏)しょうがないよ 即席バンドなんだし",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:15:16",
       "end_time": "00:15:19",
       "start_seconds": 916,
@@ -6690,7 +6690,7 @@
     {
       "index": 307,
       "text": "あたしだって そんな うまくないし",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:15:19",
       "end_time": "00:15:21",
       "start_seconds": 919,
@@ -6725,7 +6725,7 @@
     {
       "index": 308,
       "text": "(リョウ)私は うまい",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:15:21",
       "end_time": "00:15:22",
       "start_seconds": 921,
@@ -6747,7 +6747,7 @@
     {
       "index": 309,
       "text": "(ひとり)ヘッ... ヘヘヘヘ",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:15:22",
       "end_time": "00:15:24",
       "start_seconds": 922,
@@ -6759,7 +6759,7 @@
     {
       "index": 310,
       "text": "(虹夏) とりあえず こっち向いて!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:15:24",
       "end_time": "00:15:26",
       "start_seconds": 924,
@@ -6781,7 +6781,7 @@
     {
       "index": 311,
       "text": "現実逃避しないで~",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:15:26",
       "end_time": "00:15:27",
       "start_seconds": 926,
@@ -6816,7 +6816,7 @@
     {
       "index": 312,
       "text": "(ひとり)あっ エ... MCでも 全くお役に立てないですし",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:15:27",
       "end_time": "00:15:32",
       "start_seconds": 927,
@@ -6841,7 +6841,7 @@
     {
       "index": 313,
       "text": "ア... アハハハ 私の命をもって ハラキリショーでも...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:15:32",
       "end_time": "00:15:36",
       "start_seconds": 932,
@@ -6853,7 +6853,7 @@
     {
       "index": 314,
       "text": "バ... バンド名くらい 覚えて帰ってもらえるはず...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:15:36",
       "end_time": "00:15:39",
       "start_seconds": 936,
@@ -6915,7 +6915,7 @@
     {
       "index": 315,
       "text": "(ひとり)ド下手で すみません!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:15:39",
       "end_time": "00:15:40",
       "start_seconds": 939,
@@ -6927,7 +6927,7 @@
     {
       "index": 316,
       "text": "(虹夏)ロックすぎる!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:15:40",
       "end_time": "00:15:41",
       "start_seconds": 940,
@@ -6962,7 +6962,7 @@
     {
       "index": 317,
       "text": "大丈夫",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:15:41",
       "end_time": "00:15:43",
       "start_seconds": 941,
@@ -6974,7 +6974,7 @@
     {
       "index": 318,
       "text": "ひとりがヤジられたら 私がベースで ポムッてするから",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:15:43",
       "end_time": "00:15:47",
       "start_seconds": 943,
@@ -6999,7 +6999,7 @@
     {
       "index": 319,
       "text": "(ひとり)べ... ベース そんなファンシーな音しますかね",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:15:47",
       "end_time": "00:15:50",
       "start_seconds": 947,
@@ -7011,7 +7011,7 @@
     {
       "index": 320,
       "text": "流血沙汰もロックだから",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:15:50",
       "end_time": "00:15:52",
       "start_seconds": 950,
@@ -7036,7 +7036,7 @@
     {
       "index": 321,
       "text": "ロックだから",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:15:52",
       "end_time": "00:15:53",
       "start_seconds": 952,
@@ -7061,7 +7061,7 @@
     {
       "index": 322,
       "text": "(ひとり)ロック 免罪符すぎる!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:15:53",
       "end_time": "00:15:55",
       "start_seconds": 953,
@@ -7096,7 +7096,7 @@
     {
       "index": 323,
       "text": "それに うちのバンド見に来るの 多分 あたしの友達だけだし",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:15:55",
       "end_time": "00:15:59",
       "start_seconds": 955,
@@ -7164,7 +7164,7 @@
     {
       "index": 324,
       "text": "(ひとり)え?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:16:00",
       "end_time": "00:16:00",
       "start_seconds": 960,
@@ -7176,7 +7176,7 @@
     {
       "index": 325,
       "text": "私 友達 虹夏だけだから",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:16:00",
       "end_time": "00:16:03",
       "start_seconds": 960,
@@ -7223,7 +7223,7 @@
     {
       "index": 326,
       "text": "普通の女子高生に 演奏の よしあしとか 分かんないって",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:16:03",
       "end_time": "00:16:07",
       "start_seconds": 963,
@@ -7254,7 +7254,7 @@
     {
       "index": 327,
       "text": "(ひとり)炎上しそうな発言",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:16:07",
       "end_time": "00:16:09",
       "start_seconds": 967,
@@ -7266,7 +7266,7 @@
     {
       "index": 328,
       "text": "(虹夏)ねっ?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:16:10",
       "end_time": "00:16:12",
       "start_seconds": 970,
@@ -7288,7 +7288,7 @@
     {
       "index": 329,
       "text": "だから安心せい!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:16:10",
       "end_time": "00:16:12",
       "start_seconds": 970,
@@ -7313,7 +7313,7 @@
     {
       "index": 330,
       "text": "(ひとり)と... 言われても",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:16:13",
       "end_time": "00:16:14",
       "start_seconds": 973,
@@ -7335,7 +7335,7 @@
     {
       "index": 331,
       "text": "(リョウ) 私は よしあし分かるけど",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:16:14",
       "end_time": "00:16:16",
       "start_seconds": 974,
@@ -7347,7 +7347,7 @@
     {
       "index": 332,
       "text": "(虹夏)リョウは普通じゃないから (リョウ)えっ... エヘヘヘヘ",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:16:16",
       "end_time": "00:16:19",
       "start_seconds": 976,
@@ -7369,7 +7369,7 @@
     {
       "index": 333,
       "text": "(虹夏)いや 喜ぶな 喜ぶな",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:16:19",
       "end_time": "00:16:21",
       "start_seconds": 979,
@@ -7381,7 +7381,7 @@
     {
       "index": 334,
       "text": "(ひとり)ごめんなさい",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:16:21",
       "end_time": "00:16:23",
       "start_seconds": 981,
@@ -7393,7 +7393,7 @@
     {
       "index": 335,
       "text": "けど...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:16:23",
       "end_time": "00:16:24",
       "start_seconds": 983,
@@ -7405,7 +7405,7 @@
     {
       "index": 336,
       "text": "無理強いするもんじゃない",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:16:24",
       "end_time": "00:16:26",
       "start_seconds": 984,
@@ -7417,7 +7417,7 @@
     {
       "index": 337,
       "text": "だよね",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:16:27",
       "end_time": "00:16:28",
       "start_seconds": 987,
@@ -7429,7 +7429,7 @@
     {
       "index": 338,
       "text": "無理なお願いして ごめん",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:16:29",
       "end_time": "00:16:30",
       "start_seconds": 989,
@@ -7460,7 +7460,7 @@
     {
       "index": 339,
       "text": "(ひとり)あっ いや そこは!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:16:30",
       "end_time": "00:16:32",
       "start_seconds": 990,
@@ -7482,7 +7482,7 @@
     {
       "index": 340,
       "text": "(虹夏たち)ん?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:16:30",
       "end_time": "00:16:32",
       "start_seconds": 990,
@@ -7494,7 +7494,7 @@
     {
       "index": 341,
       "text": "(ひとり)あっ ほ... 本当に うれしかったんです",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:16:33",
       "end_time": "00:16:35",
       "start_seconds": 993,
@@ -7516,7 +7516,7 @@
     {
       "index": 342,
       "text": "声かけられて",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:16:35",
       "end_time": "00:16:37",
       "start_seconds": 995,
@@ -7528,7 +7528,7 @@
     {
       "index": 343,
       "text": "バンドは ずっと 組みたいと思ってたから",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:16:37",
       "end_time": "00:16:40",
       "start_seconds": 997,
@@ -7572,7 +7572,7 @@
     {
       "index": 344,
       "text": "で... でも メンバー集まらなくて",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:16:40",
       "end_time": "00:16:43",
       "start_seconds": 1000,
@@ -7597,7 +7597,7 @@
     {
       "index": 345,
       "text": "だから ふだんは カバー曲 ネットに上げたり",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:16:43",
       "end_time": "00:16:46",
       "start_seconds": 1003,
@@ -7641,7 +7641,7 @@
     {
       "index": 346,
       "text": "ふだんは何弾くの?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:16:46",
       "end_time": "00:16:48",
       "start_seconds": 1006,
@@ -7663,7 +7663,7 @@
     {
       "index": 347,
       "text": "(ひとり)あっ 結成したとき すぐ対応できるように",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:16:48",
       "end_time": "00:16:51",
       "start_seconds": 1008,
@@ -7700,7 +7700,7 @@
     {
       "index": 348,
       "text": "ここ数年の 売れ線バンドの曲は大体...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:16:51",
       "end_time": "00:16:54",
       "start_seconds": 1011,
@@ -7749,7 +7749,7 @@
     {
       "index": 349,
       "text": "えっ すご!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:16:54",
       "end_time": "00:16:54",
       "start_seconds": 1014,
@@ -7761,7 +7761,7 @@
     {
       "index": 350,
       "text": "(ひとり)いや 全然",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:16:55",
       "end_time": "00:16:56",
       "start_seconds": 1015,
@@ -7783,7 +7783,7 @@
     {
       "index": 351,
       "text": "結局 こんな感じになって",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:16:56",
       "end_time": "00:16:58",
       "start_seconds": 1016,
@@ -7805,7 +7805,7 @@
     {
       "index": 352,
       "text": "やっぱり 私には 誰かとバンド組むなんて...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:16:59",
       "end_time": "00:17:02",
       "start_seconds": 1019,
@@ -7849,7 +7849,7 @@
     {
       "index": 353,
       "text": "売れ線のカバーばっか...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:17:03",
       "end_time": "00:17:05",
       "start_seconds": 1023,
@@ -7889,7 +7889,7 @@
     {
       "index": 354,
       "text": "なんか ギターヒーローさんみたいだね",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:17:05",
       "end_time": "00:17:07",
       "start_seconds": 1025,
@@ -7926,7 +7926,7 @@
     {
       "index": 355,
       "text": "って 知ってる?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:17:07",
       "end_time": "00:17:08",
       "start_seconds": 1027,
@@ -7948,7 +7948,7 @@
     {
       "index": 356,
       "text": "(ひとり)ギターヒーロー",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:17:09",
       "end_time": "00:17:11",
       "start_seconds": 1029,
@@ -7960,7 +7960,7 @@
     {
       "index": 357,
       "text": "えっ!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:17:11",
       "end_time": "00:17:12",
       "start_seconds": 1031,
@@ -7972,7 +7972,7 @@
     {
       "index": 358,
       "text": "私?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:17:11",
       "end_time": "00:17:12",
       "start_seconds": 1031,
@@ -7984,7 +7984,7 @@
     {
       "index": 359,
       "text": "(虹夏) 知らないなら あとでURL送るよ",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:17:13",
       "end_time": "00:17:15",
       "start_seconds": 1033,
@@ -8015,7 +8015,7 @@
     {
       "index": 360,
       "text": "もう最高に うまいから 聴いてみて!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:17:15",
       "end_time": "00:17:18",
       "start_seconds": 1035,
@@ -8046,7 +8046,7 @@
     {
       "index": 361,
       "text": "(ひとり)最高?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:17:18",
       "end_time": "00:17:20",
       "start_seconds": 1038,
@@ -8068,7 +8068,7 @@
     {
       "index": 362,
       "text": "(リョウ)私も オススメに 何度も上がってくるから",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:17:20",
       "end_time": "00:17:22",
       "start_seconds": 1040,
@@ -8099,7 +8099,7 @@
     {
       "index": 363,
       "text": "見たことあるけど すごく うまかった",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:17:22",
       "end_time": "00:17:25",
       "start_seconds": 1042,
@@ -8121,7 +8121,7 @@
     {
       "index": 364,
       "text": "(虹夏)ねっ!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:17:25",
       "end_time": "00:17:25",
       "start_seconds": 1045,
@@ -8143,7 +8143,7 @@
     {
       "index": 365,
       "text": "ネーミングセンスは ちょっと痛いけど...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:17:26",
       "end_time": "00:17:28",
       "start_seconds": 1046,
@@ -8174,7 +8174,7 @@
     {
       "index": 366,
       "text": "(ひとり)痛いの?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:17:28",
       "end_time": "00:17:29",
       "start_seconds": 1048,
@@ -8196,7 +8196,7 @@
     {
       "index": 367,
       "text": "あたし フォローして 新着通知もオンにしてるんだ~",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:17:29",
       "end_time": "00:17:33",
       "start_seconds": 1049,
@@ -8218,7 +8218,7 @@
     {
       "index": 368,
       "text": "いつか 一緒に演奏してみたいな",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:17:33",
       "end_time": "00:17:35",
       "start_seconds": 1053,
@@ -8277,7 +8277,7 @@
     {
       "index": 369,
       "text": "(ひとり)今 したんですけどね",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:17:35",
       "end_time": "00:17:37",
       "start_seconds": 1055,
@@ -8289,7 +8289,7 @@
     {
       "index": 370,
       "text": "え~っとね 何が言いたいかっていうと",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:17:37",
       "end_time": "00:17:41",
       "start_seconds": 1057,
@@ -8324,7 +8324,7 @@
     {
       "index": 371,
       "text": "うまくて話題の人もね 私たちが見てないところで",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:17:41",
       "end_time": "00:17:44",
       "start_seconds": 1061,
@@ -8371,7 +8371,7 @@
     {
       "index": 372,
       "text": "たっくさん たっくさん ギターを弾いてきたんだろうなって",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:17:44",
       "end_time": "00:17:48",
       "start_seconds": 1064,
@@ -8415,7 +8415,7 @@
     {
       "index": 373,
       "text": "ハッ",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:17:48",
       "end_time": "00:17:49",
       "start_seconds": 1068,
@@ -8427,7 +8427,7 @@
     {
       "index": 374,
       "text": "(虹夏)あとで見てみて 動画見てると伝わってくるから",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:17:49",
       "end_time": "00:17:53",
       "start_seconds": 1069,
@@ -8449,7 +8449,7 @@
     {
       "index": 375,
       "text": "あ...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:17:53",
       "end_time": "00:17:53",
       "start_seconds": 1073,
@@ -8461,7 +8461,7 @@
     {
       "index": 376,
       "text": "(ひとり)現実世界の人たちは",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:17:54",
       "end_time": "00:17:56",
       "start_seconds": 1074,
@@ -8483,7 +8483,7 @@
     {
       "index": 377,
       "text": "誰も 私なんか 興味ないと思ってた",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:17:56",
       "end_time": "00:18:00",
       "start_seconds": 1076,
@@ -8530,7 +8530,7 @@
     {
       "index": 378,
       "text": "(虹夏)今日がダメだからって バンド 諦めるのは早いって",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:18:02",
       "end_time": "00:18:05",
       "start_seconds": 1082,
@@ -8574,7 +8574,7 @@
     {
       "index": 379,
       "text": "あたしたちが アレなだけかもだし",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:18:05",
       "end_time": "00:18:08",
       "start_seconds": 1085,
@@ -8586,7 +8586,7 @@
     {
       "index": 380,
       "text": "(リョウ)アレ?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:18:08",
       "end_time": "00:18:09",
       "start_seconds": 1088,
@@ -8598,7 +8598,7 @@
     {
       "index": 381,
       "text": "(ひとり)ううっ...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:18:08",
       "end_time": "00:18:09",
       "start_seconds": 1088,
@@ -8610,7 +8610,7 @@
     {
       "index": 382,
       "text": "ひとりちゃん?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:18:10",
       "end_time": "00:18:11",
       "start_seconds": 1090,
@@ -8622,7 +8622,7 @@
     {
       "index": 383,
       "text": "(ひとり)けど こんな優しい人が ずっと見ていてくれて",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:18:11",
       "end_time": "00:18:14",
       "start_seconds": 1091,
@@ -8662,7 +8662,7 @@
     {
       "index": 384,
       "text": "私なんかに声をかけてくれた",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:18:14",
       "end_time": "00:18:17",
       "start_seconds": 1094,
@@ -8706,7 +8706,7 @@
     {
       "index": 385,
       "text": "(虹夏)あっ (リョウ)あっ 立った",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:18:17",
       "end_time": "00:18:18",
       "start_seconds": 1097,
@@ -8718,7 +8718,7 @@
     {
       "index": 386,
       "text": "(ひとり) こんな奇跡 多分 一生 起こらない",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:18:18",
       "end_time": "00:18:21",
       "start_seconds": 1098,
@@ -8753,7 +8753,7 @@
     {
       "index": 387,
       "text": "絶対 ムダにしちゃダメだ!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:18:22",
       "end_time": "00:18:25",
       "start_seconds": 1102,
@@ -8775,7 +8775,7 @@
     {
       "index": 388,
       "text": "わ... 私 その...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:18:25",
       "end_time": "00:18:27",
       "start_seconds": 1105,
@@ -8787,7 +8787,7 @@
     {
       "index": 389,
       "text": "もしかして 出てくれる気になったとか?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:18:28",
       "end_time": "00:18:31",
       "start_seconds": 1108,
@@ -8848,7 +8848,7 @@
     {
       "index": 390,
       "text": "(ひとり)うう...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:18:31",
       "end_time": "00:18:32",
       "start_seconds": 1111,
@@ -8860,7 +8860,7 @@
     {
       "index": 391,
       "text": "ひ... ひとりちゃん?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:18:33",
       "end_time": "00:18:34",
       "start_seconds": 1113,
@@ -8882,7 +8882,7 @@
     {
       "index": 392,
       "text": "(ひとり)頭では分かってる でも やっぱり怖い",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:18:34",
       "end_time": "00:18:37",
       "start_seconds": 1114,
@@ -8904,7 +8904,7 @@
     {
       "index": 393,
       "text": "お客さんの目線も 耐えられるわけが...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:18:37",
       "end_time": "00:18:40",
       "start_seconds": 1117,
@@ -8939,7 +8939,7 @@
     {
       "index": 394,
       "text": "怖いなら これに入って演奏したら?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:18:40",
       "end_time": "00:18:43",
       "start_seconds": 1120,
@@ -8983,7 +8983,7 @@
     {
       "index": 395,
       "text": "(ひとり)あっ (虹夏)ん?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:18:43",
       "end_time": "00:18:44",
       "start_seconds": 1123,
@@ -8995,7 +8995,7 @@
     {
       "index": 396,
       "text": "(ひとり)いっ い... いつも弾いてる環境と同じです~",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:18:44",
       "end_time": "00:18:48",
       "start_seconds": 1124,
@@ -9057,7 +9057,7 @@
     {
       "index": 397,
       "text": "(虹夏)どんな所に住んでるの?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:18:49",
       "end_time": "00:18:51",
       "start_seconds": 1129,
@@ -9069,7 +9069,7 @@
     {
       "index": 398,
       "text": "(ひとり)皆さん 下北 盛り上げていきましょう!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:18:51",
       "end_time": "00:18:54",
       "start_seconds": 1131,
@@ -9091,7 +9091,7 @@
     {
       "index": 399,
       "text": "(リョウ)少し気が大きくなった",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:18:54",
       "end_time": "00:18:56",
       "start_seconds": 1134,
@@ -9135,7 +9135,7 @@
     {
       "index": 400,
       "text": "そういえば ライブで なんて紹介すればいい?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:18:56",
       "end_time": "00:18:59",
       "start_seconds": 1136,
@@ -9182,7 +9182,7 @@
     {
       "index": 401,
       "text": "ひとりちゃん?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:18:59",
       "end_time": "00:19:02",
       "start_seconds": 1139,
@@ -9194,7 +9194,7 @@
     {
       "index": 402,
       "text": "本名でいいかな?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:18:59",
       "end_time": "00:19:02",
       "start_seconds": 1139,
@@ -9206,7 +9206,7 @@
     {
       "index": 403,
       "text": "い... いや それは...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:19:02",
       "end_time": "00:19:03",
       "start_seconds": 1142,
@@ -9218,7 +9218,7 @@
     {
       "index": 404,
       "text": "じゃあ あだ名とかはないの?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:19:03",
       "end_time": "00:19:05",
       "start_seconds": 1143,
@@ -9230,7 +9230,7 @@
     {
       "index": 405,
       "text": "ちゅ... 中学では “あの~”とか“おい”とか",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:19:05",
       "end_time": "00:19:09",
       "start_seconds": 1145,
@@ -9252,7 +9252,7 @@
     {
       "index": 406,
       "text": "それ あだ名じゃなくない?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:19:09",
       "end_time": "00:19:10",
       "start_seconds": 1149,
@@ -9274,7 +9274,7 @@
     {
       "index": 407,
       "text": "(ひとり) あああ... あだ名で呼び合うほど",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:19:10",
       "end_time": "00:19:12",
       "start_seconds": 1150,
@@ -9296,7 +9296,7 @@
     {
       "index": 408,
       "text": "親しい交友関係は 持ったことが...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:19:12",
       "end_time": "00:19:14",
       "start_seconds": 1152,
@@ -9327,7 +9327,7 @@
     {
       "index": 409,
       "text": "ひとり... ひとりぼっち...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:19:14",
       "end_time": "00:19:17",
       "start_seconds": 1154,
@@ -9349,7 +9349,7 @@
     {
       "index": 410,
       "text": "ぼっちちゃんは?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:19:17",
       "end_time": "00:19:19",
       "start_seconds": 1157,
@@ -9371,7 +9371,7 @@
     {
       "index": 411,
       "text": "うっ またデリケートなところを",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:19:19",
       "end_time": "00:19:21",
       "start_seconds": 1159,
@@ -9383,7 +9383,7 @@
     {
       "index": 412,
       "text": "ぼぼぼ... ぼっちです!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:19:21",
       "end_time": "00:19:23",
       "start_seconds": 1161,
@@ -9405,7 +9405,7 @@
     {
       "index": 413,
       "text": "(虹夏)喜んでるし",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:19:23",
       "end_time": "00:19:24",
       "start_seconds": 1163,
@@ -9417,7 +9417,7 @@
     {
       "index": 414,
       "text": "あだ名とか初めてで",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:19:24",
       "end_time": "00:19:26",
       "start_seconds": 1164,
@@ -9429,7 +9429,7 @@
     {
       "index": 415,
       "text": "うう~ なんか 涙出てきた",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:19:26",
       "end_time": "00:19:28",
       "start_seconds": 1166,
@@ -9464,7 +9464,7 @@
     {
       "index": 416,
       "text": "あっ まだ バンド名 聞いてなかったです",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:19:28",
       "end_time": "00:19:30",
       "start_seconds": 1168,
@@ -9486,7 +9486,7 @@
     {
       "index": 417,
       "text": "(虹夏)うっ",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:19:30",
       "end_time": "00:19:31",
       "start_seconds": 1170,
@@ -9508,7 +9508,7 @@
     {
       "index": 418,
       "text": "(ひとり)え?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:19:31",
       "end_time": "00:19:32",
       "start_seconds": 1171,
@@ -9520,7 +9520,7 @@
     {
       "index": 419,
       "text": "結束(けっそく)バンドだよ",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:19:33",
       "end_time": "00:19:34",
       "start_seconds": 1173,
@@ -9532,7 +9532,7 @@
     {
       "index": 420,
       "text": "(虹夏)ハア~",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:19:35",
       "end_time": "00:19:36",
       "start_seconds": 1175,
@@ -9544,7 +9544,7 @@
     {
       "index": 421,
       "text": "(ひとり)結束バンド...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:19:37",
       "end_time": "00:19:38",
       "start_seconds": 1177,
@@ -9556,7 +9556,7 @@
     {
       "index": 422,
       "text": "結束バンド?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:19:39",
       "end_time": "00:19:40",
       "start_seconds": 1179,
@@ -9568,7 +9568,7 @@
     {
       "index": 423,
       "text": "(リョウ)プッ 傑作",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:19:40",
       "end_time": "00:19:42",
       "start_seconds": 1180,
@@ -9580,7 +9580,7 @@
     {
       "index": 424,
       "text": "寒いし 絶対 変えるから~!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:19:42",
       "end_time": "00:19:44",
       "start_seconds": 1182,
@@ -9602,7 +9602,7 @@
     {
       "index": 425,
       "text": "(リョウ)なんで?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:19:44",
       "end_time": "00:19:46",
       "start_seconds": 1184,
@@ -9614,7 +9614,7 @@
     {
       "index": 426,
       "text": "かわいいよね",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:19:44",
       "end_time": "00:19:46",
       "start_seconds": 1184,
@@ -9626,7 +9626,7 @@
     {
       "index": 427,
       "text": "(ひとり)あっ はい (虹夏)うああ~!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:19:46",
       "end_time": "00:19:48",
       "start_seconds": 1186,
@@ -9638,7 +9638,7 @@
     {
       "index": 428,
       "text": "(虹夏)バンド名は後回しで そろそろ出番だよ!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:19:48",
       "end_time": "00:19:51",
       "start_seconds": 1188,
@@ -9673,7 +9673,7 @@
     {
       "index": 429,
       "text": "(ひとり)あっ ああ~",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:19:51",
       "end_time": "00:19:53",
       "start_seconds": 1191,
@@ -9685,7 +9685,7 @@
     {
       "index": 430,
       "text": "(虹夏)大丈夫 (ひとり)あっ",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:19:53",
       "end_time": "00:19:54",
       "start_seconds": 1193,
@@ -9697,7 +9697,7 @@
     {
       "index": 431,
       "text": "下手でも 楽しく弾くことだけは 心掛けよう",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:19:54",
       "end_time": "00:19:58",
       "start_seconds": 1194,
@@ -9732,7 +9732,7 @@
     {
       "index": 432,
       "text": "音って ものすごく 感情が表れやすいから",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:19:58",
       "end_time": "00:20:01",
       "start_seconds": 1198,
@@ -9757,7 +9757,7 @@
     {
       "index": 433,
       "text": "は... はい",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:20:02",
       "end_time": "00:20:03",
       "start_seconds": 1202,
@@ -9769,7 +9769,7 @@
     {
       "index": 434,
       "text": "技術を求めていくのは 次からで 全然いいよ",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:20:03",
       "end_time": "00:20:07",
       "start_seconds": 1203,
@@ -9822,7 +9822,7 @@
     {
       "index": 435,
       "text": "(リョウ)うん",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:20:07",
       "end_time": "00:20:07",
       "start_seconds": 1207,
@@ -9834,7 +9834,7 @@
     {
       "index": 436,
       "text": "(ひとり)“次”って...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:20:08",
       "end_time": "00:20:09",
       "start_seconds": 1208,
@@ -9846,7 +9846,7 @@
     {
       "index": 437,
       "text": "(虹夏)よし 行こう!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:20:09",
       "end_time": "00:20:11",
       "start_seconds": 1209,
@@ -9858,7 +9858,7 @@
     {
       "index": 438,
       "text": "(リョウ)うん",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:20:09",
       "end_time": "00:20:11",
       "start_seconds": 1209,
@@ -9870,7 +9870,7 @@
     {
       "index": 439,
       "text": "(ひとり)私...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:20:12",
       "end_time": "00:20:13",
       "start_seconds": 1212,
@@ -9882,7 +9882,7 @@
     {
       "index": 440,
       "text": "次も いていいんだ",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:20:13",
       "end_time": "00:20:15",
       "start_seconds": 1213,
@@ -9894,7 +9894,7 @@
     {
       "index": 441,
       "text": "はじめまして!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:20:19",
       "end_time": "00:20:21",
       "start_seconds": 1219,
@@ -9906,7 +9906,7 @@
     {
       "index": 442,
       "text": "結束バンドで~す!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:20:19",
       "end_time": "00:20:21",
       "start_seconds": 1219,
@@ -9918,7 +9918,7 @@
     {
       "index": 443,
       "text": "今日は みんなも多分 知ってる曲を何曲か やるので",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:20:22",
       "end_time": "00:20:25",
       "start_seconds": 1222,
@@ -9962,7 +9962,7 @@
     {
       "index": 444,
       "text": "聴いてください!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:20:25",
       "end_time": "00:20:26",
       "start_seconds": 1225,
@@ -9974,7 +9974,7 @@
     {
       "index": 445,
       "text": "(星歌(せいか))んだ?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:20:26",
       "end_time": "00:20:27",
       "start_seconds": 1226,
@@ -10005,7 +10005,7 @@
     {
       "index": 446,
       "text": "あれ",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:20:26",
       "end_time": "00:20:27",
       "start_seconds": 1226,
@@ -10017,7 +10017,7 @@
     {
       "index": 447,
       "text": "(ひとり)いつもの実力 出せなくて 最悪だけど",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:20:37",
       "end_time": "00:20:41",
       "start_seconds": 1237,
@@ -10082,7 +10082,7 @@
     {
       "index": 448,
       "text": "バンド組んで 誰かと演奏するのって",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:20:41",
       "end_time": "00:20:44",
       "start_seconds": 1241,
@@ -10122,7 +10122,7 @@
     {
       "index": 449,
       "text": "こんな楽しいんだ!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:20:44",
       "end_time": "00:20:46",
       "start_seconds": 1244,
@@ -10144,7 +10144,7 @@
     {
       "index": 450,
       "text": "私 今日 最高に輝いて...",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:20:48",
       "end_time": "00:20:52",
       "start_seconds": 1248,
@@ -10175,7 +10175,7 @@
     {
       "index": 451,
       "text": "ない!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:20:52",
       "end_time": "00:20:53",
       "start_seconds": 1252,
@@ -10187,7 +10187,7 @@
     {
       "index": 452,
       "text": "むしろ人生で 一番みじめかも!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:20:53",
       "end_time": "00:20:56",
       "start_seconds": 1253,
@@ -10209,7 +10209,7 @@
     {
       "index": 453,
       "text": "ミスりまくった~",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:21:00",
       "end_time": "00:21:02",
       "start_seconds": 1260,
@@ -10221,7 +10221,7 @@
     {
       "index": 454,
       "text": "(リョウ)MC スベってたね (虹夏)エヘッ",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:21:02",
       "end_time": "00:21:04",
       "start_seconds": 1262,
@@ -10252,7 +10252,7 @@
     {
       "index": 455,
       "text": "(ひとり)あっ あの!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:21:04",
       "end_time": "00:21:05",
       "start_seconds": 1264,
@@ -10264,7 +10264,7 @@
     {
       "index": 456,
       "text": "(虹夏たち)ん?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:21:04",
       "end_time": "00:21:05",
       "start_seconds": 1264,
@@ -10276,7 +10276,7 @@
     {
       "index": 457,
       "text": "(虹夏)何?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:21:07",
       "end_time": "00:21:08",
       "start_seconds": 1267,
@@ -10288,7 +10288,7 @@
     {
       "index": 458,
       "text": "(ひとり)つつ つつつ... (虹夏)何?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:21:08",
       "end_time": "00:21:11",
       "start_seconds": 1268,
@@ -10300,7 +10300,7 @@
     {
       "index": 459,
       "text": "怖いんだけど!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:21:08",
       "end_time": "00:21:11",
       "start_seconds": 1268,
@@ -10322,7 +10322,7 @@
     {
       "index": 460,
       "text": "次のライブまでには クラスメイトに",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:21:12",
       "end_time": "00:21:14",
       "start_seconds": 1272,
@@ -10347,7 +10347,7 @@
     {
       "index": 461,
       "text": "挨拶できるくらいには なっておきます!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:21:14",
       "end_time": "00:21:16",
       "start_seconds": 1274,
@@ -10396,7 +10396,7 @@
     {
       "index": 462,
       "text": "(虹夏)なんの宣言?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:21:17",
       "end_time": "00:21:18",
       "start_seconds": 1277,
@@ -10408,7 +10408,7 @@
     {
       "index": 463,
       "text": "(リョウ)目覚ましい成長",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:21:18",
       "end_time": "00:21:20",
       "start_seconds": 1278,
@@ -10430,7 +10430,7 @@
     {
       "index": 464,
       "text": "でも そっか... うん!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:21:20",
       "end_time": "00:21:22",
       "start_seconds": 1280,
@@ -10442,7 +10442,7 @@
     {
       "index": 465,
       "text": "よ~し じゃあ今から",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:21:22",
       "end_time": "00:21:23",
       "start_seconds": 1282,
@@ -10454,7 +10454,7 @@
     {
       "index": 466,
       "text": "ぼっちちゃん歓迎会 兼 ライブの反省会だ~",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:21:23",
       "end_time": "00:21:26",
       "start_seconds": 1283,
@@ -10494,7 +10494,7 @@
     {
       "index": 467,
       "text": "あっ 今日は人と話し過ぎて 疲れたので帰りま~す",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:21:26",
       "end_time": "00:21:30",
       "start_seconds": 1286,
@@ -10561,7 +10561,7 @@
     {
       "index": 468,
       "text": "(虹夏)え?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:21:30",
       "end_time": "00:21:31",
       "start_seconds": 1290,
@@ -10573,7 +10573,7 @@
     {
       "index": 469,
       "text": "(リョウ)ごめん 眠い",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:21:30",
       "end_time": "00:21:31",
       "start_seconds": 1290,
@@ -10585,7 +10585,7 @@
     {
       "index": 470,
       "text": "(虹夏)えっ?",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:21:31",
       "end_time": "00:21:32",
       "start_seconds": 1291,
@@ -10597,7 +10597,7 @@
     {
       "index": 471,
       "text": "(ひとり)しし... 失礼します!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:21:32",
       "end_time": "00:21:33",
       "start_seconds": 1292,
@@ -10619,7 +10619,7 @@
     {
       "index": 472,
       "text": "(走り去る音) (虹夏)あっ... ええっ!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:21:33",
       "end_time": "00:21:34",
       "start_seconds": 1293,
@@ -10631,7 +10631,7 @@
     {
       "index": 473,
       "text": "(虹夏)結束力 全然ないっ!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:21:38",
       "end_time": "00:21:41",
       "start_seconds": 1298,
@@ -10662,7 +10662,7 @@
     {
       "index": 474,
       "text": "(ひとり)絶対 コミュ症 治して",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:21:49",
       "end_time": "00:21:51",
       "start_seconds": 1309,
@@ -10693,7 +10693,7 @@
     {
       "index": 475,
       "text": "ギターヒーローの私としての 力を発揮するんだ",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:21:51",
       "end_time": "00:21:54",
       "start_seconds": 1311,
@@ -10718,7 +10718,7 @@
     {
       "index": 476,
       "text": "虹夏ちゃん リョウさん 結束バンドのために!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:21:56",
       "end_time": "00:22:01",
       "start_seconds": 1316,
@@ -10755,7 +10755,7 @@
     {
       "index": 477,
       "text": "(ひとり)すす... すいません!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:22:02",
       "end_time": "00:22:04",
       "start_seconds": 1322,
@@ -10767,7 +10767,7 @@
     {
       "index": 478,
       "text": "すいません!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:22:02",
       "end_time": "00:22:04",
       "start_seconds": 1322,
@@ -10779,7 +10779,7 @@
     {
       "index": 479,
       "text": "(ひとり)見てください!",
-      "translation": "(자동 번역 실패: ConnectionError)",
+      "translation": "(번역 비활성화)",
       "start_time": "00:23:38",
       "end_time": "00:23:39",
       "start_seconds": 1418,
