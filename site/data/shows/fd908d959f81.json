@@ -2,15 +2,14 @@
   "id": "fd908d959f81",
   "title": "Bocchi the Rock! - S01E01",
   "file_name": "Bocchi the Rock! - S01E01.srt",
-  "base_sync_offset_seconds": 0,
   "duration_seconds": 1419,
-  "sentence_count": 479,
-  "relevant_sentence_count": 247,
+  "sentence_count": 478,
+  "relevant_sentence_count": 240,
   "sentences": [
     {
       "index": 1,
-      "text": "(園児)か~くれんぼする人 この指 とまれ♪",
-      "translation": "(번역 비활성화)",
+      "text": "か~くれんぼする人 この指 とまれ♪",
+      "translation": "",
       "start_time": "00:00:00",
       "end_time": "00:00:03",
       "start_seconds": 0,
@@ -31,8 +30,8 @@
     },
     {
       "index": 2,
-      "text": "(園児たち)やる~!",
-      "translation": "(번역 비활성화)",
+      "text": "やる~!",
+      "translation": "",
       "start_time": "00:00:03",
       "end_time": "00:00:04",
       "start_seconds": 3,
@@ -43,8 +42,8 @@
     },
     {
       "index": 3,
-      "text": "(ひとり)私なんかが あの指に とまっていいのかな...",
-      "translation": "(번역 비활성화)",
+      "text": "私なんかが あの指に とまっていいのかな...",
+      "translation": "",
       "start_time": "00:00:04",
       "end_time": "00:00:08",
       "start_seconds": 4,
@@ -96,8 +95,8 @@
     },
     {
       "index": 4,
-      "text": "(園児たちの笑い声) (園児)私も~!",
-      "translation": "(번역 비활성화)",
+      "text": "私も~!",
+      "translation": "",
       "start_time": "00:00:08",
       "end_time": "00:00:10",
       "start_seconds": 8,
@@ -109,7 +108,7 @@
     {
       "index": 5,
       "text": "そう悩んでるうちに乗り遅れて",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:00:10",
       "end_time": "00:00:12",
       "start_seconds": 10,
@@ -153,7 +152,7 @@
     {
       "index": 6,
       "text": "気付いたら ひとりぼっちな子",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:00:13",
       "end_time": "00:00:16",
       "start_seconds": 13,
@@ -188,7 +187,7 @@
     {
       "index": 7,
       "text": "遠足のときに...",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:00:17",
       "end_time": "00:00:18",
       "start_seconds": 17,
@@ -199,24 +198,14 @@
     },
     {
       "index": 8,
-      "text": "(先生)どうぞ",
-      "translation": "(번역 비활성화)",
+      "text": "どうぞ",
+      "translation": "",
       "start_time": "00:00:19",
       "end_time": "00:00:19",
       "start_seconds": 19,
       "end_seconds": 19,
       "has_jlpt": true,
-      "vocab_matches": [
-        {
-          "surface": "先生",
-          "reading": "せんせい",
-          "meaning": "선생님",
-          "level": "N3",
-          "surface_in_sentence": "先生",
-          "base_form": "先生",
-          "pos": "명사"
-        }
-      ],
+      "vocab_matches": [],
       "grammar_matches": [
         {
           "label": "どうぞ",
@@ -234,8 +223,8 @@
     },
     {
       "index": 9,
-      "text": "(ひとり)先生とお弁当のおかずを 交換していた ひとりぼっちな子",
-      "translation": "(번역 비활성화)",
+      "text": "先生とお弁当のおかずを 交換していた ひとりぼっちな子",
+      "translation": "",
       "start_time": "00:00:19",
       "end_time": "00:00:24",
       "start_seconds": 19,
@@ -296,8 +285,8 @@
     },
     {
       "index": 10,
-      "text": "(ひとり)ただいま",
-      "translation": "(번역 비활성화)",
+      "text": "ただいま",
+      "translation": "",
       "start_time": "00:00:28",
       "end_time": "00:00:29",
       "start_seconds": 28,
@@ -308,8 +297,8 @@
     },
     {
       "index": 11,
-      "text": "(ひとり) 部活も入らず 放課後は即帰宅",
-      "translation": "(번역 비활성화)",
+      "text": "部活も入らず 放課後は即帰宅",
+      "translation": "",
       "start_time": "00:00:30",
       "end_time": "00:00:33",
       "start_seconds": 30,
@@ -330,8 +319,8 @@
     },
     {
       "index": 12,
-      "text": "(ひとり)スマホに届くのは",
-      "translation": "(번역 비활성화)",
+      "text": "スマホに届くのは",
+      "translation": "",
       "start_time": "00:00:35",
       "end_time": "00:00:36",
       "start_seconds": 35,
@@ -353,7 +342,7 @@
     {
       "index": 13,
       "text": "親からのメッセージか クーポンのお知らせだけ",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:00:37",
       "end_time": "00:00:41",
       "start_seconds": 37,
@@ -393,7 +382,7 @@
     {
       "index": 14,
       "text": "それが私",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:00:41",
       "end_time": "00:00:42",
       "start_seconds": 41,
@@ -405,7 +394,7 @@
     {
       "index": 15,
       "text": "後藤(ごとう)ひとり 中学1年生",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:00:43",
       "end_time": "00:00:46",
       "start_seconds": 43,
@@ -417,7 +406,7 @@
     {
       "index": 16,
       "text": "たま~に思う",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:00:47",
       "end_time": "00:00:48",
       "start_seconds": 47,
@@ -429,7 +418,7 @@
     {
       "index": 17,
       "text": "このままで いいんだろうかって",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:00:49",
       "end_time": "00:00:51",
       "start_seconds": 49,
@@ -454,7 +443,7 @@
     {
       "index": 18,
       "text": "でも 私 話す前に “あっ”って言っちゃうし",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:00:52",
       "end_time": "00:00:56",
       "start_seconds": 52,
@@ -498,7 +487,7 @@
     {
       "index": 19,
       "text": "目 合わすのも苦手だし",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:00:56",
       "end_time": "00:00:59",
       "start_seconds": 56,
@@ -510,7 +499,7 @@
     {
       "index": 20,
       "text": "“THE 陰キャ”のような日々が 身の丈に合って...",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:00:59",
       "end_time": "00:01:02",
       "start_seconds": 59,
@@ -531,8 +520,8 @@
     },
     {
       "index": 21,
-      "text": "(直樹)これ見てる?",
-      "translation": "(번역 비활성화)",
+      "text": "これ見てる?",
+      "translation": "",
       "start_time": "00:01:02",
       "end_time": "00:01:03",
       "start_seconds": 62,
@@ -543,8 +532,8 @@
     },
     {
       "index": 22,
-      "text": "(ひとり)ううん",
-      "translation": "(번역 비활성화)",
+      "text": "ううん",
+      "translation": "",
       "start_time": "00:01:04",
       "end_time": "00:01:05",
       "start_seconds": 64,
@@ -555,8 +544,8 @@
     },
     {
       "index": 23,
-      "text": "(バンドマン) 学生のころは 教室の隅っこで",
-      "translation": "(번역 비활성화)",
+      "text": "学生のころは 教室の隅っこで",
+      "translation": "",
       "start_time": "00:01:06",
       "end_time": "00:01:09",
       "start_seconds": 66,
@@ -578,7 +567,7 @@
     {
       "index": 24,
       "text": "本読んでるふりしてるヤツでした",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:01:09",
       "end_time": "00:01:11",
       "start_seconds": 69,
@@ -609,7 +598,7 @@
     {
       "index": 25,
       "text": "友達いなくて",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:01:11",
       "end_time": "00:01:12",
       "start_seconds": 71,
@@ -643,8 +632,8 @@
     },
     {
       "index": 26,
-      "text": "(ひとり)あっ",
-      "translation": "(번역 비활성화)",
+      "text": "あっ",
+      "translation": "",
       "start_time": "00:01:13",
       "end_time": "00:01:13",
       "start_seconds": 73,
@@ -655,8 +644,8 @@
     },
     {
       "index": 27,
-      "text": "(インタビュアー)それが今では",
-      "translation": "(번역 비활성화)",
+      "text": "それが今では",
+      "translation": "",
       "start_time": "00:01:13",
       "end_time": "00:01:14",
       "start_seconds": 73,
@@ -668,7 +657,7 @@
     {
       "index": 28,
       "text": "若者に絶大な人気を誇る バンドになったと",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:01:15",
       "end_time": "00:01:18",
       "start_seconds": 75,
@@ -689,8 +678,8 @@
     },
     {
       "index": 29,
-      "text": "(バンドマン)まあ バンドは陰キャでも輝けるんで",
-      "translation": "(번역 비활성화)",
+      "text": "まあ バンドは陰キャでも輝けるんで",
+      "translation": "",
       "start_time": "00:01:18",
       "end_time": "00:01:21",
       "start_seconds": 78,
@@ -701,8 +690,8 @@
     },
     {
       "index": 30,
-      "text": "(インタビュアー) そうなんですね~!",
-      "translation": "(번역 비활성화)",
+      "text": "そうなんですね~!",
+      "translation": "",
       "start_time": "00:01:21",
       "end_time": "00:01:24",
       "start_seconds": 81,
@@ -714,7 +703,7 @@
     {
       "index": 31,
       "text": "それでは お聴きください",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:01:24",
       "end_time": "00:01:26",
       "start_seconds": 84,
@@ -751,7 +740,7 @@
     {
       "index": 32,
       "text": "インストームスで“引き金”",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:01:26",
       "end_time": "00:01:28",
       "start_seconds": 86,
@@ -762,8 +751,8 @@
     },
     {
       "index": 33,
-      "text": "(直樹)おっ どうした?",
-      "translation": "(번역 비활성화)",
+      "text": "おっ どうした?",
+      "translation": "",
       "start_time": "00:01:34",
       "end_time": "00:01:35",
       "start_seconds": 94,
@@ -775,7 +764,7 @@
     {
       "index": 34,
       "text": "お... お父さん ギター貸して",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:01:36",
       "end_time": "00:01:38",
       "start_seconds": 96,
@@ -796,8 +785,8 @@
     },
     {
       "index": 35,
-      "text": "(直樹)えっ?",
-      "translation": "(번역 비활성화)",
+      "text": "えっ?",
+      "translation": "",
       "start_time": "00:01:38",
       "end_time": "00:01:39",
       "start_seconds": 98,
@@ -809,7 +798,7 @@
     {
       "index": 36,
       "text": "いいよ",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:01:38",
       "end_time": "00:01:39",
       "start_seconds": 98,
@@ -820,8 +809,8 @@
     },
     {
       "index": 37,
-      "text": "(ひとり)あ... ありがとう!",
-      "translation": "(번역 비활성화)",
+      "text": "あ... ありがとう!",
+      "translation": "",
       "start_time": "00:01:40",
       "end_time": "00:01:41",
       "start_seconds": 100,
@@ -832,8 +821,8 @@
     },
     {
       "index": 38,
-      "text": "(直樹)そうか ひとりも ついにギターに興味を",
-      "translation": "(번역 비활성화)",
+      "text": "そうか ひとりも ついにギターに興味を",
+      "translation": "",
       "start_time": "00:01:43",
       "end_time": "00:01:46",
       "start_seconds": 103,
@@ -876,8 +865,8 @@
     },
     {
       "index": 39,
-      "text": "(ふたり)ん?",
-      "translation": "(번역 비활성화)",
+      "text": "ん?",
+      "translation": "",
       "start_time": "00:01:46",
       "end_time": "00:01:47",
       "start_seconds": 106,
@@ -888,8 +877,8 @@
     },
     {
       "index": 40,
-      "text": "(ひとり)バンド組んだら",
-      "translation": "(번역 비활성화)",
+      "text": "バンド組んだら",
+      "translation": "",
       "start_time": "00:01:49",
       "end_time": "00:01:50",
       "start_seconds": 109,
@@ -920,7 +909,7 @@
     {
       "index": 41,
       "text": "私みたいな人間でも もしかしたら 輝ける?",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:01:50",
       "end_time": "00:01:54",
       "start_seconds": 110,
@@ -969,7 +958,7 @@
     {
       "index": 42,
       "text": "んっ ん...",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:01:58",
       "end_time": "00:02:00",
       "start_seconds": 118,
@@ -981,7 +970,7 @@
     {
       "index": 43,
       "text": "おお~",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:02:03",
       "end_time": "00:02:05",
       "start_seconds": 123,
@@ -993,7 +982,7 @@
     {
       "index": 44,
       "text": "あは~",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:02:06",
       "end_time": "00:02:08",
       "start_seconds": 126,
@@ -1004,8 +993,8 @@
     },
     {
       "index": 45,
-      "text": "(ひとり) 決めた!",
-      "translation": "(번역 비활성화)",
+      "text": "決めた!",
+      "translation": "",
       "start_time": "00:02:08",
       "end_time": "00:02:11",
       "start_seconds": 128,
@@ -1036,7 +1025,7 @@
     {
       "index": 46,
       "text": "ギターうまくなる!",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:02:08",
       "end_time": "00:02:11",
       "start_seconds": 128,
@@ -1058,7 +1047,7 @@
     {
       "index": 47,
       "text": "で 学校でバンド組んで...",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:02:11",
       "end_time": "00:02:14",
       "start_seconds": 131,
@@ -1097,8 +1086,8 @@
     },
     {
       "index": 48,
-      "text": "(ひとり)“E A G”...",
-      "translation": "(번역 비활성화)",
+      "text": "“E A G”...",
+      "translation": "",
       "start_time": "00:02:14",
       "end_time": "00:02:17",
       "start_seconds": 134,
@@ -1110,7 +1099,7 @@
     {
       "index": 49,
       "text": "なんで突然 英語?",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:02:17",
       "end_time": "00:02:18",
       "start_seconds": 137,
@@ -1140,8 +1129,8 @@
     },
     {
       "index": 50,
-      "text": "(ひとり) それで 文化祭でライブして",
-      "translation": "(번역 비활성화)",
+      "text": "それで 文化祭でライブして",
+      "translation": "",
       "start_time": "00:02:23",
       "end_time": "00:02:25",
       "start_seconds": 143,
@@ -1176,7 +1165,7 @@
     {
       "index": 51,
       "text": "みんなから ちやほやされるんだ!",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:02:26",
       "end_time": "00:02:29",
       "start_seconds": 146,
@@ -1200,8 +1189,8 @@
     },
     {
       "index": 52,
-      "text": "(直樹たち)はあ...",
-      "translation": "(번역 비활성화)",
+      "text": "はあ...",
+      "translation": "",
       "start_time": "00:02:31",
       "end_time": "00:02:32",
       "start_seconds": 151,
@@ -1212,8 +1201,8 @@
     },
     {
       "index": 53,
-      "text": "(ひとり)ちや... ほや?",
-      "translation": "(번역 비활성화)",
+      "text": "ちや... ほや?",
+      "translation": "",
       "start_time": "00:02:52",
       "end_time": "00:02:53",
       "start_seconds": 172,
@@ -1224,8 +1213,8 @@
     },
     {
       "index": 54,
-      "text": "(ひとり) ♪ 人様の前で演奏出来るように",
-      "translation": "(번역 비활성화)",
+      "text": "♪ 人様の前で演奏出来るように",
+      "translation": "",
       "start_time": "00:04:29",
       "end_time": "00:04:31",
       "start_seconds": 269,
@@ -1260,7 +1249,7 @@
     {
       "index": 55,
       "text": "♪ 毎日6時間練習を続けた結果...",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:04:31",
       "end_time": "00:04:34",
       "start_seconds": 271,
@@ -1309,7 +1298,7 @@
     {
       "index": 56,
       "text": "♪ いつの間にか中学終わってた!",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:04:35",
       "end_time": "00:04:38",
       "start_seconds": 275,
@@ -1331,7 +1320,7 @@
     {
       "index": 57,
       "text": "♪ ライブ出れなかった",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:04:39",
       "end_time": "00:04:40",
       "start_seconds": 279,
@@ -1342,8 +1331,8 @@
     },
     {
       "index": 58,
-      "text": "(卒業生一同)文化祭!",
-      "translation": "(번역 비활성화)",
+      "text": "文化祭!",
+      "translation": "",
       "start_time": "00:04:40",
       "end_time": "00:04:41",
       "start_seconds": 280,
@@ -1364,8 +1353,8 @@
     },
     {
       "index": 59,
-      "text": "(ひとり)♪ 集められなかった",
-      "translation": "(번역 비활성화)",
+      "text": "♪ 集められなかった",
+      "translation": "",
       "start_time": "00:04:41",
       "end_time": "00:04:43",
       "start_seconds": 281,
@@ -1386,8 +1375,8 @@
     },
     {
       "index": 60,
-      "text": "(卒業生一同)バンドメンバー!",
-      "translation": "(번역 비활성화)",
+      "text": "バンドメンバー!",
+      "translation": "",
       "start_time": "00:04:43",
       "end_time": "00:04:44",
       "start_seconds": 283,
@@ -1398,8 +1387,8 @@
     },
     {
       "index": 61,
-      "text": "(ひとり)♪ そもそも友達 一人もできなかった",
-      "translation": "(번역 비활성화)",
+      "text": "♪ そもそも友達 一人もできなかった",
+      "translation": "",
       "start_time": "00:04:44",
       "end_time": "00:04:47",
       "start_seconds": 284,
@@ -1420,8 +1409,8 @@
     },
     {
       "index": 62,
-      "text": "(卒業生一同)3年間!",
-      "translation": "(번역 비활성화)",
+      "text": "3年間!",
+      "translation": "",
       "start_time": "00:04:47",
       "end_time": "00:04:48",
       "start_seconds": 287,
@@ -1432,8 +1421,8 @@
     },
     {
       "index": 63,
-      "text": "(ひとり)♪ 高校こそは...",
-      "translation": "(번역 비활성화)",
+      "text": "♪ 高校こそは...",
+      "translation": "",
       "start_time": "00:04:48",
       "end_time": "00:04:50",
       "start_seconds": 288,
@@ -1445,7 +1434,7 @@
     {
       "index": 64,
       "text": "♪ 高校になったら 絶対バンドやるんだぁ!",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:04:50",
       "end_time": "00:04:55",
       "start_seconds": 290,
@@ -1480,7 +1469,7 @@
     {
       "index": 65,
       "text": "♪ と 決意した高校生活も 始まって早一ヵ月",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:04:56",
       "end_time": "00:05:00",
       "start_seconds": 296,
@@ -1511,7 +1500,7 @@
     {
       "index": 66,
       "text": "♪ 心の拠(よ)り所はギターだけ",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:05:00",
       "end_time": "00:05:02",
       "start_seconds": 300,
@@ -1533,7 +1522,7 @@
     {
       "index": 67,
       "text": "♪ ひきこもり一歩手前ですぅー",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:05:02",
       "end_time": "00:05:06",
       "start_seconds": 302,
@@ -1544,8 +1533,8 @@
     },
     {
       "index": 68,
-      "text": "(ひとり)作詞作曲 私 “押し入れより愛をこめて”",
-      "translation": "(번역 비활성화)",
+      "text": "作詞作曲 私 “押し入れより愛をこめて”",
+      "translation": "",
       "start_time": "00:05:08",
       "end_time": "00:05:13",
       "start_seconds": 308,
@@ -1576,7 +1565,7 @@
     {
       "index": 69,
       "text": "って 真夜中に 私のクソなオリジナル曲で",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:05:14",
       "end_time": "00:05:17",
       "start_seconds": 314,
@@ -1588,7 +1577,7 @@
     {
       "index": 70,
       "text": "ご近所トラブル起こす前に",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:05:17",
       "end_time": "00:05:19",
       "start_seconds": 317,
@@ -1613,7 +1602,7 @@
     {
       "index": 71,
       "text": "人気バンドのカバー動画 アップしなきゃ",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:05:19",
       "end_time": "00:05:21",
       "start_seconds": 319,
@@ -1657,7 +1646,7 @@
     {
       "index": 72,
       "text": "お父さんに勧められて",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:05:22",
       "end_time": "00:05:24",
       "start_seconds": 322,
@@ -1679,7 +1668,7 @@
     {
       "index": 73,
       "text": "ギターヒーロー名義で 弾いてみた動画 上げだして",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:05:24",
       "end_time": "00:05:27",
       "start_seconds": 324,
@@ -1714,7 +1703,7 @@
     {
       "index": 74,
       "text": "結構たつけど",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:05:27",
       "end_time": "00:05:29",
       "start_seconds": 327,
@@ -1744,8 +1733,8 @@
     },
     {
       "index": 75,
-      "text": "(ひとり) あっ この前の動画",
-      "translation": "(번역 비활성화)",
+      "text": "あっ この前の動画",
+      "translation": "",
       "start_time": "00:05:29",
       "end_time": "00:05:31",
       "start_seconds": 329,
@@ -1757,7 +1746,7 @@
     {
       "index": 76,
       "text": "もう こんな コメントついてる",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:05:31",
       "end_time": "00:05:33",
       "start_seconds": 331,
@@ -1768,8 +1757,8 @@
     },
     {
       "index": 77,
-      "text": "(ひとり)フッ... フフフフ",
-      "translation": "(번역 비활성화)",
+      "text": "フッ... フフフフ",
+      "translation": "",
       "start_time": "00:05:34",
       "end_time": "00:05:35",
       "start_seconds": 334,
@@ -1781,7 +1770,7 @@
     {
       "index": 78,
       "text": "最近は再生数も結構あるし",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:05:35",
       "end_time": "00:05:38",
       "start_seconds": 335,
@@ -1812,7 +1801,7 @@
     {
       "index": 79,
       "text": "うまいって言われるし",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:05:38",
       "end_time": "00:05:40",
       "start_seconds": 338,
@@ -1856,7 +1845,7 @@
     {
       "index": 80,
       "text": "そうだよ 現実が つらくても大丈夫",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:05:40",
       "end_time": "00:05:43",
       "start_seconds": 340,
@@ -1924,7 +1913,7 @@
     {
       "index": 81,
       "text": "ネットには 私に反応してくれる人が",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:05:43",
       "end_time": "00:05:45",
       "start_seconds": 343,
@@ -1973,7 +1962,7 @@
     {
       "index": 82,
       "text": "たくさん いるもん",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:05:45",
       "end_time": "00:05:46",
       "start_seconds": 345,
@@ -1985,7 +1974,7 @@
     {
       "index": 83,
       "text": "ここには 私と同じ 根暗コミュ症が あふれて...",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:05:46",
       "end_time": "00:05:49",
       "start_seconds": 346,
@@ -2015,8 +2004,8 @@
     },
     {
       "index": 84,
-      "text": "(男子の声)“この曲 バンド組んで文化祭で弾きま”...",
-      "translation": "(번역 비활성화)",
+      "text": "“この曲 バンド組んで文化祭で弾きま”...",
+      "translation": "",
       "start_time": "00:05:50",
       "end_time": "00:05:51",
       "start_seconds": 350,
@@ -2055,8 +2044,8 @@
     },
     {
       "index": 85,
-      "text": "(ひとり)ぐっ!",
-      "translation": "(번역 비활성화)",
+      "text": "ぐっ!",
+      "translation": "",
       "start_time": "00:05:51",
       "end_time": "00:05:52",
       "start_seconds": 351,
@@ -2067,8 +2056,8 @@
     },
     {
       "index": 86,
-      "text": "(ひとり)私だって努力はした",
-      "translation": "(번역 비활성화)",
+      "text": "私だって努力はした",
+      "translation": "",
       "start_time": "00:05:56",
       "end_time": "00:05:58",
       "start_seconds": 356,
@@ -2103,7 +2092,7 @@
     {
       "index": 87,
       "text": "CD持っていって 机に置いたり",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:05:58",
       "end_time": "00:06:01",
       "start_seconds": 358,
@@ -2124,8 +2113,8 @@
     },
     {
       "index": 88,
-      "text": "(ひとり)話しかけて...",
-      "translation": "(번역 비활성화)",
+      "text": "話しかけて...",
+      "translation": "",
       "start_time": "00:06:01",
       "end_time": "00:06:03",
       "start_seconds": 361,
@@ -2146,8 +2135,8 @@
     },
     {
       "index": 89,
-      "text": "(ひとり)バンドグッズ持って アピールしたり",
-      "translation": "(번역 비활성화)",
+      "text": "バンドグッズ持って アピールしたり",
+      "translation": "",
       "start_time": "00:06:03",
       "end_time": "00:06:05",
       "start_seconds": 363,
@@ -2158,8 +2147,8 @@
     },
     {
       "index": 90,
-      "text": "(ひとり)話しかけて~",
-      "translation": "(번역 비활성화)",
+      "text": "話しかけて~",
+      "translation": "",
       "start_time": "00:06:05",
       "end_time": "00:06:06",
       "start_seconds": 365,
@@ -2180,8 +2169,8 @@
     },
     {
       "index": 91,
-      "text": "(ひとり) お昼のリクエストソングで...",
-      "translation": "(번역 비활성화)",
+      "text": "お昼のリクエストソングで...",
+      "translation": "",
       "start_time": "00:06:07",
       "end_time": "00:06:09",
       "start_seconds": 367,
@@ -2192,30 +2181,20 @@
     },
     {
       "index": 92,
-      "text": "(校内放送:女子)次の曲は",
-      "translation": "(번역 비활성화)",
+      "text": "次の曲は",
+      "translation": "",
       "start_time": "00:06:09",
       "end_time": "00:06:10",
       "start_seconds": 369,
       "end_seconds": 370,
-      "has_jlpt": true,
-      "vocab_matches": [
-        {
-          "surface": "放送",
-          "reading": "ほうそう",
-          "meaning": "방송",
-          "level": "N3",
-          "surface_in_sentence": "放送",
-          "base_form": "放送",
-          "pos": "명사"
-        }
-      ],
+      "has_jlpt": false,
+      "vocab_matches": [],
       "grammar_matches": []
     },
     {
       "index": 93,
       "text": "2年A組 後藤さんの リクエストです",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:06:10",
       "end_time": "00:06:12",
       "start_seconds": 370,
@@ -2226,8 +2205,8 @@
     },
     {
       "index": 94,
-      "text": "(ひとり)当時 ハマってた デスメタル 流して...",
-      "translation": "(번역 비활성화)",
+      "text": "当時 ハマってた デスメタル 流して...",
+      "translation": "",
       "start_time": "00:06:13",
       "end_time": "00:06:16",
       "start_seconds": 373,
@@ -2239,7 +2218,7 @@
     {
       "index": 95,
       "text": "♪ お前の頭蓋骨を粉砕して",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:06:16",
       "end_time": "00:06:18",
       "start_seconds": 376,
@@ -2251,7 +2230,7 @@
     {
       "index": 96,
       "text": "ぼえええ~!",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:06:18",
       "end_time": "00:06:19",
       "start_seconds": 378,
@@ -2262,8 +2241,8 @@
     },
     {
       "index": 97,
-      "text": "(ひとりの絶叫) (ジミヘン)クン クウ~ン",
-      "translation": "(번역 비활성화)",
+      "text": "クン クウ~ン",
+      "translation": "",
       "start_time": "00:06:20",
       "end_time": "00:06:21",
       "start_seconds": 380,
@@ -2274,8 +2253,8 @@
     },
     {
       "index": 98,
-      "text": "(ひとり)フラッシュバックが~!",
-      "translation": "(번역 비활성화)",
+      "text": "フラッシュバックが~!",
+      "translation": "",
       "start_time": "00:06:22",
       "end_time": "00:06:23",
       "start_seconds": 382,
@@ -2287,7 +2266,7 @@
     {
       "index": 99,
       "text": "ぐうっ 忘れろ 忘れろ!",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:06:23",
       "end_time": "00:06:25",
       "start_seconds": 383,
@@ -2308,8 +2287,8 @@
     },
     {
       "index": 100,
-      "text": "(ひとり)ぐっ... ハア",
-      "translation": "(번역 비활성화)",
+      "text": "ぐっ... ハア",
+      "translation": "",
       "start_time": "00:06:25",
       "end_time": "00:06:28",
       "start_seconds": 385,
@@ -2321,7 +2300,7 @@
     {
       "index": 101,
       "text": "いいな... ライブ",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:06:33",
       "end_time": "00:06:35",
       "start_seconds": 393,
@@ -2332,8 +2311,8 @@
     },
     {
       "index": 102,
-      "text": "(ひとり)そっ...",
-      "translation": "(번역 비활성화)",
+      "text": "そっ...",
+      "translation": "",
       "start_time": "00:06:44",
       "end_time": "00:06:45",
       "start_seconds": 404,
@@ -2345,7 +2324,7 @@
     {
       "index": 103,
       "text": "その手があったか!",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:06:45",
       "end_time": "00:06:47",
       "start_seconds": 405,
@@ -2356,39 +2335,20 @@
     },
     {
       "index": 104,
-      "text": "(ひとり)かっ... かっこいい~!",
-      "translation": "(번역 비활성화)",
+      "text": "かっ... かっこいい~!",
+      "translation": "",
       "start_time": "00:06:59",
       "end_time": "00:07:02",
       "start_seconds": 419,
       "end_seconds": 422,
-      "has_jlpt": true,
-      "vocab_matches": [
-        {
-          "surface": "買う",
-          "reading": "かう",
-          "meaning": "사다",
-          "level": "N3",
-          "surface_in_sentence": "かっ",
-          "base_form": "かう",
-          "pos": "동사"
-        },
-        {
-          "surface": "飼う",
-          "reading": "かう",
-          "meaning": "키우다, 기르다",
-          "level": "N3",
-          "surface_in_sentence": "かっ",
-          "base_form": "かう",
-          "pos": "동사"
-        }
-      ],
+      "has_jlpt": false,
+      "vocab_matches": [],
       "grammar_matches": []
     },
     {
       "index": 105,
       "text": "一気にバンド女子だ",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:07:02",
       "end_time": "00:07:04",
       "start_seconds": 422,
@@ -2400,7 +2360,7 @@
     {
       "index": 106,
       "text": "ただ者じゃない感が半端ない",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:07:04",
       "end_time": "00:07:06",
       "start_seconds": 424,
@@ -2412,7 +2372,7 @@
     {
       "index": 107,
       "text": "存在感すごい!",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:07:06",
       "end_time": "00:07:07",
       "start_seconds": 426,
@@ -2433,8 +2393,8 @@
     },
     {
       "index": 108,
-      "text": "(生徒たちの話し声) (ひとり)これは...",
-      "translation": "(번역 비활성화)",
+      "text": "これは...",
+      "translation": "",
       "start_time": "00:07:09",
       "end_time": "00:07:11",
       "start_seconds": 429,
@@ -2446,7 +2406,7 @@
     {
       "index": 109,
       "text": "絶対 誰か話しかけてくれるはず",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:07:11",
       "end_time": "00:07:14",
       "start_seconds": 431,
@@ -2514,7 +2474,7 @@
     {
       "index": 110,
       "text": "今年の文化祭は忙しくなるぞ!",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:07:14",
       "end_time": "00:07:18",
       "start_seconds": 434,
@@ -2544,8 +2504,8 @@
     },
     {
       "index": 111,
-      "text": "(男子)だから そのコギ尻が...",
-      "translation": "(번역 비활성화)",
+      "text": "だから そのコギ尻が...",
+      "translation": "",
       "start_time": "00:07:33",
       "end_time": "00:07:35",
       "start_seconds": 453,
@@ -2569,8 +2529,8 @@
     },
     {
       "index": 112,
-      "text": "(女子)次 移動教室?",
-      "translation": "(번역 비활성화)",
+      "text": "次 移動教室?",
+      "translation": "",
       "start_time": "00:07:35",
       "end_time": "00:07:37",
       "start_seconds": 455,
@@ -2600,8 +2560,8 @@
     },
     {
       "index": 113,
-      "text": "(女子)理科室B",
-      "translation": "(번역 비활성화)",
+      "text": "理科室B",
+      "translation": "",
       "start_time": "00:07:35",
       "end_time": "00:07:37",
       "start_seconds": 455,
@@ -2612,8 +2572,8 @@
     },
     {
       "index": 114,
-      "text": "(女子) このあとさ~ カラオケとかさ",
-      "translation": "(번역 비활성화)",
+      "text": "このあとさ~ カラオケとかさ",
+      "translation": "",
       "start_time": "00:07:37",
       "end_time": "00:07:39",
       "start_seconds": 457,
@@ -2624,8 +2584,8 @@
     },
     {
       "index": 115,
-      "text": "(女子)フフッ それいいね",
-      "translation": "(번역 비활성화)",
+      "text": "フフッ それいいね",
+      "translation": "",
       "start_time": "00:07:39",
       "end_time": "00:07:41",
       "start_seconds": 459,
@@ -2636,8 +2596,8 @@
     },
     {
       "index": 116,
-      "text": "(ひとり)あれ~?",
-      "translation": "(번역 비활성화)",
+      "text": "あれ~?",
+      "translation": "",
       "start_time": "00:07:46",
       "end_time": "00:07:48",
       "start_seconds": 466,
@@ -2648,8 +2608,8 @@
     },
     {
       "index": 117,
-      "text": "(ひとり)深夜テンションのまま 暴走し過ぎた?",
-      "translation": "(번역 비활성화)",
+      "text": "深夜テンションのまま 暴走し過ぎた?",
+      "translation": "",
       "start_time": "00:07:51",
       "end_time": "00:07:54",
       "start_seconds": 471,
@@ -2680,7 +2640,7 @@
     {
       "index": 118,
       "text": "こんなに分かりやすいほど バンド少女感 出してるのに",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:07:54",
       "end_time": "00:07:57",
       "start_seconds": 474,
@@ -2715,7 +2675,7 @@
     {
       "index": 119,
       "text": "あっ あえて 話しかけてこない という可能性は...",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:07:57",
       "end_time": "00:08:00",
       "start_seconds": 477,
@@ -2771,7 +2731,7 @@
     {
       "index": 120,
       "text": "ないないない 精神崩壊する!",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:08:00",
       "end_time": "00:08:03",
       "start_seconds": 480,
@@ -2782,8 +2742,8 @@
     },
     {
       "index": 121,
-      "text": "(女子1) うわっ ちょっと 見て見て!",
-      "translation": "(번역 비활성화)",
+      "text": "うわっ ちょっと 見て見て!",
+      "translation": "",
       "start_time": "00:08:03",
       "end_time": "00:08:04",
       "start_seconds": 483,
@@ -2804,8 +2764,8 @@
     },
     {
       "index": 122,
-      "text": "(ひとり) い... 今 笑われようものなら",
-      "translation": "(번역 비활성화)",
+      "text": "い... 今 笑われようものなら",
+      "translation": "",
       "start_time": "00:08:04",
       "end_time": "00:08:06",
       "start_seconds": 484,
@@ -2817,7 +2777,7 @@
     {
       "index": 123,
       "text": "精神崩壊どころか 消滅してしまう~!",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:08:06",
       "end_time": "00:08:09",
       "start_seconds": 486,
@@ -2851,8 +2811,8 @@
     },
     {
       "index": 124,
-      "text": "(女子1)ヤバい!",
-      "translation": "(번역 비활성화)",
+      "text": "ヤバい!",
+      "translation": "",
       "start_time": "00:08:09",
       "end_time": "00:08:12",
       "start_seconds": 489,
@@ -2864,7 +2824,7 @@
     {
       "index": 125,
       "text": "かわい過ぎて笑っちゃう",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:08:09",
       "end_time": "00:08:12",
       "start_seconds": 489,
@@ -2903,8 +2863,8 @@
     },
     {
       "index": 126,
-      "text": "(喜多(きた))ギター?",
-      "translation": "(번역 비활성화)",
+      "text": ")ギター?",
+      "translation": "",
       "start_time": "00:08:12",
       "end_time": "00:08:15",
       "start_seconds": 492,
@@ -2915,8 +2875,8 @@
     },
     {
       "index": 127,
-      "text": "(女子2)癒やされる~",
-      "translation": "(번역 비활성화)",
+      "text": "癒やされる~",
+      "translation": "",
       "start_time": "00:08:12",
       "end_time": "00:08:15",
       "start_seconds": 492,
@@ -2940,8 +2900,8 @@
     },
     {
       "index": 128,
-      "text": "(女子2)ね~ 喜多ちゃん",
-      "translation": "(번역 비활성화)",
+      "text": "ね~ 喜多ちゃん",
+      "translation": "",
       "start_time": "00:08:15",
       "end_time": "00:08:16",
       "start_seconds": 495,
@@ -2953,7 +2913,7 @@
     {
       "index": 129,
       "text": "喜多ちゃん?",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:08:17",
       "end_time": "00:08:17",
       "start_seconds": 497,
@@ -2965,7 +2925,7 @@
     {
       "index": 130,
       "text": "あっ ごめんごめん なになに?",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:08:17",
       "end_time": "00:08:21",
       "start_seconds": 497,
@@ -2976,8 +2936,8 @@
     },
     {
       "index": 131,
-      "text": "(ひとり)いや 分かってますよ",
-      "translation": "(번역 비활성화)",
+      "text": "いや 分かってますよ",
+      "translation": "",
       "start_time": "00:08:25",
       "end_time": "00:08:26",
       "start_seconds": 505,
@@ -2989,7 +2949,7 @@
     {
       "index": 132,
       "text": "他力本願で 物事うまくいくはずないって",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:08:27",
       "end_time": "00:08:30",
       "start_seconds": 507,
@@ -3011,7 +2971,7 @@
     {
       "index": 133,
       "text": "ここに集う人たちは 私と同じで 孤独を抱えてるんだ",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:08:33",
       "end_time": "00:08:37",
       "start_seconds": 513,
@@ -3023,7 +2983,7 @@
     {
       "index": 134,
       "text": "あの人は きっと家庭内別...",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:08:37",
       "end_time": "00:08:39",
       "start_seconds": 517,
@@ -3066,30 +3026,20 @@
     },
     {
       "index": 135,
-      "text": "(娘)パパ!",
-      "translation": "(번역 비활성화)",
+      "text": "パパ!",
+      "translation": "",
       "start_time": "00:08:39",
       "end_time": "00:08:40",
       "start_seconds": 519,
       "end_seconds": 520,
-      "has_jlpt": true,
-      "vocab_matches": [
-        {
-          "surface": "娘",
-          "reading": "むすめ",
-          "meaning": "딸",
-          "level": "N3",
-          "surface_in_sentence": "娘",
-          "base_form": "娘",
-          "pos": "명사"
-        }
-      ],
+      "has_jlpt": false,
+      "vocab_matches": [],
       "grammar_matches": []
     },
     {
       "index": 136,
-      "text": "(ひとり)え?",
-      "translation": "(번역 비활성화)",
+      "text": "え?",
+      "translation": "",
       "start_time": "00:08:39",
       "end_time": "00:08:40",
       "start_seconds": 519,
@@ -3100,8 +3050,8 @@
     },
     {
       "index": 137,
-      "text": "(娘)エヘッ (妻)ごめんね 遅れちゃって",
-      "translation": "(번역 비활성화)",
+      "text": "エヘッ (妻)ごめんね 遅れちゃって",
+      "translation": "",
       "start_time": "00:08:41",
       "end_time": "00:08:43",
       "start_seconds": 521,
@@ -3115,15 +3065,6 @@
           "level": "N3",
           "surface_in_sentence": "妻",
           "base_form": "妻",
-          "pos": "명사"
-        },
-        {
-          "surface": "娘",
-          "reading": "むすめ",
-          "meaning": "딸",
-          "level": "N3",
-          "surface_in_sentence": "娘",
-          "base_form": "娘",
           "pos": "명사"
         },
         {
@@ -3149,8 +3090,8 @@
     },
     {
       "index": 138,
-      "text": "(男性)いいって いいって",
-      "translation": "(번역 비활성화)",
+      "text": "いいって いいって",
+      "translation": "",
       "start_time": "00:08:43",
       "end_time": "00:08:44",
       "start_seconds": 523,
@@ -3161,8 +3102,8 @@
     },
     {
       "index": 139,
-      "text": "(ひとり) 絵に描いたような家族団欒(だんらん)!",
-      "translation": "(번역 비활성화)",
+      "text": "絵に描いたような家族団欒(だんらん)!",
+      "translation": "",
       "start_time": "00:08:44",
       "end_time": "00:08:48",
       "start_seconds": 524,
@@ -3184,7 +3125,7 @@
     {
       "index": 140,
       "text": "すいません 勝手に“私と同じ”とか言って",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:08:48",
       "end_time": "00:08:51",
       "start_seconds": 528,
@@ -3206,7 +3147,7 @@
     {
       "index": 141,
       "text": "あ... 登録者数3万 超えてる",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:08:53",
       "end_time": "00:08:56",
       "start_seconds": 533,
@@ -3228,7 +3169,7 @@
     {
       "index": 142,
       "text": "うん そうだよ 私の居場所はネットだけ",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:08:57",
       "end_time": "00:09:01",
       "start_seconds": 537,
@@ -3277,7 +3218,7 @@
     {
       "index": 143,
       "text": "もう 学校 行きたくないな...",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:09:02",
       "end_time": "00:09:05",
       "start_seconds": 542,
@@ -3298,8 +3239,8 @@
     },
     {
       "index": 144,
-      "text": "(虹夏(にじか))あっ!",
-      "translation": "(번역 비활성화)",
+      "text": ")あっ!",
+      "translation": "",
       "start_time": "00:09:06",
       "end_time": "00:09:07",
       "start_seconds": 546,
@@ -3310,8 +3251,8 @@
     },
     {
       "index": 145,
-      "text": "(ひとり)ハッ",
-      "translation": "(번역 비활성화)",
+      "text": "ハッ",
+      "translation": "",
       "start_time": "00:09:06",
       "end_time": "00:09:07",
       "start_seconds": 546,
@@ -3322,8 +3263,8 @@
     },
     {
       "index": 146,
-      "text": "(虹夏)ギター!",
-      "translation": "(번역 비활성화)",
+      "text": "ギター!",
+      "translation": "",
       "start_time": "00:09:07",
       "end_time": "00:09:09",
       "start_seconds": 547,
@@ -3334,8 +3275,8 @@
     },
     {
       "index": 147,
-      "text": "(ひとり)うわああ...",
-      "translation": "(번역 비활성화)",
+      "text": "うわああ...",
+      "translation": "",
       "start_time": "00:09:11",
       "end_time": "00:09:12",
       "start_seconds": 551,
@@ -3346,8 +3287,8 @@
     },
     {
       "index": 148,
-      "text": "(虹夏)それ ギターだよね?",
-      "translation": "(번역 비활성화)",
+      "text": "それ ギターだよね?",
+      "translation": "",
       "start_time": "00:09:12",
       "end_time": "00:09:13",
       "start_seconds": 552,
@@ -3358,8 +3299,8 @@
     },
     {
       "index": 149,
-      "text": "(ひとり)あっ あっ... (虹夏)弾けるの?",
-      "translation": "(번역 비활성화)",
+      "text": "あっ あっ... (虹夏)弾けるの?",
+      "translation": "",
       "start_time": "00:09:13",
       "end_time": "00:09:14",
       "start_seconds": 553,
@@ -3370,8 +3311,8 @@
     },
     {
       "index": 150,
-      "text": "(ひとり)あっ ああっ (虹夏)あ...",
-      "translation": "(번역 비활성화)",
+      "text": "あっ ああっ (虹夏)あ...",
+      "translation": "",
       "start_time": "00:09:14",
       "end_time": "00:09:16",
       "start_seconds": 554,
@@ -3382,8 +3323,8 @@
     },
     {
       "index": 151,
-      "text": "(虹夏)お~い?",
-      "translation": "(번역 비활성화)",
+      "text": "お~い?",
+      "translation": "",
       "start_time": "00:09:17",
       "end_time": "00:09:18",
       "start_seconds": 557,
@@ -3394,8 +3335,8 @@
     },
     {
       "index": 152,
-      "text": "(ひとり)しゃ... しゃべるの 久しぶりすぎて 声が...",
-      "translation": "(번역 비활성화)",
+      "text": "しゃ... しゃべるの 久しぶりすぎて 声が...",
+      "translation": "",
       "start_time": "00:09:18",
       "end_time": "00:09:21",
       "start_seconds": 558,
@@ -3426,7 +3367,7 @@
     {
       "index": 153,
       "text": "あっ いきなり ごめんね",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:09:21",
       "end_time": "00:09:23",
       "start_seconds": 561,
@@ -3457,7 +3398,7 @@
     {
       "index": 154,
       "text": "あたし 下北沢(しもきたざわ)高校2年 伊地知(いじち)虹夏",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:09:23",
       "end_time": "00:09:26",
       "start_seconds": 563,
@@ -3488,7 +3429,7 @@
     {
       "index": 155,
       "text": "あっ 後藤ひとり 秀華(しゅうか)高校1年です",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:09:27",
       "end_time": "00:09:30",
       "start_seconds": 567,
@@ -3499,8 +3440,8 @@
     },
     {
       "index": 156,
-      "text": "(虹夏) ちなみに ひとりちゃんはさ...",
-      "translation": "(번역 비활성화)",
+      "text": "ちなみに ひとりちゃんはさ...",
+      "translation": "",
       "start_time": "00:09:30",
       "end_time": "00:09:31",
       "start_seconds": 570,
@@ -3511,8 +3452,8 @@
     },
     {
       "index": 157,
-      "text": "(ひとり)いきなり名前呼び!",
-      "translation": "(번역 비활성화)",
+      "text": "いきなり名前呼び!",
+      "translation": "",
       "start_time": "00:09:31",
       "end_time": "00:09:33",
       "start_seconds": 571,
@@ -3543,7 +3484,7 @@
     {
       "index": 158,
       "text": "ギター どのくらい弾ける?",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:09:33",
       "end_time": "00:09:35",
       "start_seconds": 573,
@@ -3568,7 +3509,7 @@
     {
       "index": 159,
       "text": "あっ そこそこかと",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:09:35",
       "end_time": "00:09:37",
       "start_seconds": 575,
@@ -3580,7 +3521,7 @@
     {
       "index": 160,
       "text": "そっか!",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:09:37",
       "end_time": "00:09:38",
       "start_seconds": 577,
@@ -3592,7 +3533,7 @@
     {
       "index": 161,
       "text": "あ... あのさ ちょっと今 困ってて",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:09:38",
       "end_time": "00:09:41",
       "start_seconds": 578,
@@ -3623,7 +3564,7 @@
     {
       "index": 162,
       "text": "無理だったら 大丈夫なんだけど",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:09:41",
       "end_time": "00:09:43",
       "start_seconds": 581,
@@ -3658,7 +3599,7 @@
     {
       "index": 163,
       "text": "大丈夫なんだけど 困ってて...",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:09:43",
       "end_time": "00:09:45",
       "start_seconds": 583,
@@ -3679,8 +3620,8 @@
     },
     {
       "index": 164,
-      "text": "(ひとり) 絶対 だいじょばないやつ!",
-      "translation": "(번역 비활성화)",
+      "text": "絶対 だいじょばないやつ!",
+      "translation": "",
       "start_time": "00:09:45",
       "end_time": "00:09:47",
       "start_seconds": 585,
@@ -3701,8 +3642,8 @@
     },
     {
       "index": 165,
-      "text": "(虹夏) うん 思い切って言っちゃおう!",
-      "translation": "(번역 비활성화)",
+      "text": "うん 思い切って言っちゃおう!",
+      "translation": "",
       "start_time": "00:09:47",
       "end_time": "00:09:49",
       "start_seconds": 587,
@@ -3724,7 +3665,7 @@
     {
       "index": 166,
       "text": "お願い!",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:09:50",
       "end_time": "00:09:50",
       "start_seconds": 590,
@@ -3746,7 +3687,7 @@
     {
       "index": 167,
       "text": "あたしのバンドで 今日だけ サポートギターしてくれないかな!",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:09:51",
       "end_time": "00:09:55",
       "start_seconds": 591,
@@ -3776,8 +3717,8 @@
     },
     {
       "index": 168,
-      "text": "(ひとり)バンド?",
-      "translation": "(번역 비활성화)",
+      "text": "バンド?",
+      "translation": "",
       "start_time": "00:09:56",
       "end_time": "00:09:57",
       "start_seconds": 596,
@@ -3789,7 +3730,7 @@
     {
       "index": 169,
       "text": "これからライブなのに ギターの子が突然 辞めちゃって",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:09:57",
       "end_time": "00:10:01",
       "start_seconds": 597,
@@ -3819,8 +3760,8 @@
     },
     {
       "index": 170,
-      "text": "(虹夏)ある程度 弾ける人なら... (ひとり)これから?",
-      "translation": "(번역 비활성화)",
+      "text": "ある程度 弾ける人なら... (ひとり)これから?",
+      "translation": "",
       "start_time": "00:10:01",
       "end_time": "00:10:04",
       "start_seconds": 601,
@@ -3832,7 +3773,7 @@
     {
       "index": 171,
       "text": "ライブ?",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:10:01",
       "end_time": "00:10:04",
       "start_seconds": 601,
@@ -3843,8 +3784,8 @@
     },
     {
       "index": 172,
-      "text": "(虹夏)なにとぞ~",
-      "translation": "(번역 비활성화)",
+      "text": "なにとぞ~",
+      "translation": "",
       "start_time": "00:10:04",
       "end_time": "00:10:05",
       "start_seconds": 604,
@@ -3856,7 +3797,7 @@
     {
       "index": 173,
       "text": "あっ や...",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:10:06",
       "end_time": "00:10:07",
       "start_seconds": 606,
@@ -3867,8 +3808,8 @@
     },
     {
       "index": 174,
-      "text": "(ひとり)ええ~っ!",
-      "translation": "(번역 비활성화)",
+      "text": "ええ~っ!",
+      "translation": "",
       "start_time": "00:10:07",
       "end_time": "00:10:10",
       "start_seconds": 607,
@@ -3879,8 +3820,8 @@
     },
     {
       "index": 175,
-      "text": "(虹夏)ありがとう!",
-      "translation": "(번역 비활성화)",
+      "text": "ありがとう!",
+      "translation": "",
       "start_time": "00:10:10",
       "end_time": "00:10:13",
       "start_seconds": 610,
@@ -3892,7 +3833,7 @@
     {
       "index": 176,
       "text": "早速 ライブハウスへ ゴー!",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:10:10",
       "end_time": "00:10:13",
       "start_seconds": 610,
@@ -3913,8 +3854,8 @@
     },
     {
       "index": 177,
-      "text": "(ひとり)まだ何も言ってない!",
-      "translation": "(번역 비활성화)",
+      "text": "まだ何も言ってない!",
+      "translation": "",
       "start_time": "00:10:13",
       "end_time": "00:10:15",
       "start_seconds": 613,
@@ -3935,8 +3876,8 @@
     },
     {
       "index": 178,
-      "text": "(ひとり)来てしまった...",
-      "translation": "(번역 비활성화)",
+      "text": "来てしまった...",
+      "translation": "",
       "start_time": "00:10:17",
       "end_time": "00:10:19",
       "start_seconds": 617,
@@ -3971,7 +3912,7 @@
     {
       "index": 179,
       "text": "ひとりちゃんは下北(しもきた)は よく来る?",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:10:19",
       "end_time": "00:10:22",
       "start_seconds": 619,
@@ -3983,7 +3924,7 @@
     {
       "index": 180,
       "text": "あっ いや...",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:10:22",
       "end_time": "00:10:23",
       "start_seconds": 622,
@@ -3994,8 +3935,8 @@
     },
     {
       "index": 181,
-      "text": "(ひとり)こんな 個性みなぎる おしゃれタウンに 来れるわけない",
-      "translation": "(번역 비활성화)",
+      "text": "こんな 個性みなぎる おしゃれタウンに 来れるわけない",
+      "translation": "",
       "start_time": "00:10:23",
       "end_time": "00:10:27",
       "start_seconds": 623,
@@ -4030,7 +3971,7 @@
     {
       "index": 182,
       "text": "ライブハウス もうちょいだから",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:10:27",
       "end_time": "00:10:29",
       "start_seconds": 627,
@@ -4054,8 +3995,8 @@
     },
     {
       "index": 183,
-      "text": "(ひとり) 虹夏ちゃんは おしゃれだな~",
-      "translation": "(번역 비활성화)",
+      "text": "虹夏ちゃんは おしゃれだな~",
+      "translation": "",
       "start_time": "00:10:31",
       "end_time": "00:10:33",
       "start_seconds": 631,
@@ -4067,7 +4008,7 @@
     {
       "index": 184,
       "text": "これこそバンド女子って感じ",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:10:33",
       "end_time": "00:10:36",
       "start_seconds": 633,
@@ -4079,7 +4020,7 @@
     {
       "index": 185,
       "text": "それに比べて私は 芋ジャージだし クマすごいし 猫背だし...",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:10:36",
       "end_time": "00:10:41",
       "start_seconds": 636,
@@ -4135,7 +4076,7 @@
     {
       "index": 186,
       "text": "あっ 私 かび臭いかも いつも押し入れにいるから",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:10:41",
       "end_time": "00:10:45",
       "start_seconds": 641,
@@ -4179,7 +4120,7 @@
     {
       "index": 187,
       "text": "いや 防虫剤のにおいだ",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:10:45",
       "end_time": "00:10:47",
       "start_seconds": 645,
@@ -4201,7 +4142,7 @@
     {
       "index": 188,
       "text": "それにひきかえ 虹夏ちゃん めっちゃ いいにおい",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:10:48",
       "end_time": "00:10:52",
       "start_seconds": 648,
@@ -4235,8 +4176,8 @@
     },
     {
       "index": 189,
-      "text": "(においを嗅ぐ音) (ひとり)本来あるべき",
-      "translation": "(번역 비활성화)",
+      "text": "本来あるべき",
+      "translation": "",
       "start_time": "00:10:52",
       "end_time": "00:10:53",
       "start_seconds": 652,
@@ -4248,7 +4189,7 @@
     {
       "index": 190,
       "text": "女子高生の香りだ~",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:10:53",
       "end_time": "00:10:55",
       "start_seconds": 653,
@@ -4279,7 +4220,7 @@
     {
       "index": 191,
       "text": "歩くペース早い?",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:10:55",
       "end_time": "00:10:56",
       "start_seconds": 655,
@@ -4301,7 +4242,7 @@
     {
       "index": 192,
       "text": "いっ... いえ",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:10:57",
       "end_time": "00:10:57",
       "start_seconds": 657,
@@ -4312,8 +4253,8 @@
     },
     {
       "index": 193,
-      "text": "(虹夏) 今日 出演するライブハウスは",
-      "translation": "(번역 비활성화)",
+      "text": "今日 出演するライブハウスは",
+      "translation": "",
       "start_time": "00:10:57",
       "end_time": "00:10:59",
       "start_seconds": 657,
@@ -4325,7 +4266,7 @@
     {
       "index": 194,
       "text": "STARRY(スターリー)っていうんだけどね",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:10:59",
       "end_time": "00:11:02",
       "start_seconds": 659,
@@ -4336,8 +4277,8 @@
     },
     {
       "index": 195,
-      "text": "(虹夏)あたしのお姉ちゃんが... (ひとり)出演するライブハウス",
-      "translation": "(번역 비활성화)",
+      "text": "あたしのお姉ちゃんが... (ひとり)出演するライブハウス",
+      "translation": "",
       "start_time": "00:11:02",
       "end_time": "00:11:04",
       "start_seconds": 662,
@@ -4348,8 +4289,8 @@
     },
     {
       "index": 196,
-      "text": "(ひとり)なんか ぽい響き",
-      "translation": "(번역 비활성화)",
+      "text": "なんか ぽい響き",
+      "translation": "",
       "start_time": "00:11:04",
       "end_time": "00:11:07",
       "start_seconds": 664,
@@ -4373,8 +4314,8 @@
     },
     {
       "index": 197,
-      "text": "(鼓動) (ひとり)あれ なんか心臓ヤバい",
-      "translation": "(번역 비활성화)",
+      "text": "あれ なんか心臓ヤバい",
+      "translation": "",
       "start_time": "00:11:07",
       "end_time": "00:11:09",
       "start_seconds": 667,
@@ -4398,8 +4339,8 @@
     },
     {
       "index": 198,
-      "text": "(虹夏)でね!",
-      "translation": "(번역 비활성화)",
+      "text": "でね!",
+      "translation": "",
       "start_time": "00:11:09",
       "end_time": "00:11:10",
       "start_seconds": 669,
@@ -4411,7 +4352,7 @@
     {
       "index": 199,
       "text": "あっ",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:11:09",
       "end_time": "00:11:10",
       "start_seconds": 669,
@@ -4423,7 +4364,7 @@
     {
       "index": 200,
       "text": "あたし そこでバイトしてて...",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:11:11",
       "end_time": "00:11:13",
       "start_seconds": 671,
@@ -4448,7 +4389,7 @@
     {
       "index": 201,
       "text": "あ...",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:11:14",
       "end_time": "00:11:15",
       "start_seconds": 674,
@@ -4460,7 +4401,7 @@
     {
       "index": 202,
       "text": "ひとりちゃん 実は結構 運動できる?",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:11:16",
       "end_time": "00:11:19",
       "start_seconds": 676,
@@ -4494,30 +4435,20 @@
     },
     {
       "index": 203,
-      "text": "(ひとり)いえ あっ でも ドッジボールだけは",
-      "translation": "(번역 비활성화)",
+      "text": "いえ あっ でも ドッジボールだけは",
+      "translation": "",
       "start_time": "00:11:19",
       "end_time": "00:11:21",
       "start_seconds": 679,
       "end_seconds": 681,
-      "has_jlpt": true,
-      "vocab_matches": [
-        {
-          "surface": "言う",
-          "reading": "いう",
-          "meaning": "말하다",
-          "level": "N3",
-          "surface_in_sentence": "いえ",
-          "base_form": "いう",
-          "pos": "동사"
-        }
-      ],
+      "has_jlpt": false,
+      "vocab_matches": [],
       "grammar_matches": []
     },
     {
       "index": 204,
       "text": "なぜか いつも 最後まで残ってました",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:11:21",
       "end_time": "00:11:24",
       "start_seconds": 681,
@@ -4578,8 +4509,8 @@
     },
     {
       "index": 205,
-      "text": "(虹夏)そ... そっか",
-      "translation": "(번역 비활성화)",
+      "text": "そ... そっか",
+      "translation": "",
       "start_time": "00:11:24",
       "end_time": "00:11:25",
       "start_seconds": 684,
@@ -4590,8 +4521,8 @@
     },
     {
       "index": 206,
-      "text": "(鼓動) (ひとり)私がライブハウスで演奏",
-      "translation": "(번역 비활성화)",
+      "text": "私がライブハウスで演奏",
+      "translation": "",
       "start_time": "00:11:25",
       "end_time": "00:11:28",
       "start_seconds": 685,
@@ -4613,7 +4544,7 @@
     {
       "index": 207,
       "text": "あっ ああ... ダメダメ 今 弱気になっちゃ",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:11:28",
       "end_time": "00:11:31",
       "start_seconds": 688,
@@ -4625,7 +4556,7 @@
     {
       "index": 208,
       "text": "思い出せ 妄想で毎日した文化祭ライブを!",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:11:32",
       "end_time": "00:11:35",
       "start_seconds": 692,
@@ -4656,7 +4587,7 @@
     {
       "index": 209,
       "text": "そして 初のワンマン",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:11:36",
       "end_time": "00:11:37",
       "start_seconds": 696,
@@ -4681,7 +4612,7 @@
     {
       "index": 210,
       "text": "Zepp(ゼップ)!",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:11:38",
       "end_time": "00:11:38",
       "start_seconds": 698,
@@ -4692,8 +4623,8 @@
     },
     {
       "index": 211,
-      "text": "(歓声) (ひとり)スーパーアリーナ!",
-      "translation": "(번역 비활성화)",
+      "text": "スーパーアリーナ!",
+      "translation": "",
       "start_time": "00:11:38",
       "end_time": "00:11:40",
       "start_seconds": 698,
@@ -4704,30 +4635,20 @@
     },
     {
       "index": 212,
-      "text": "(観客たち) ひとり!",
-      "translation": "(번역 비활성화)",
+      "text": "ひとり!",
+      "translation": "",
       "start_time": "00:11:40",
       "end_time": "00:11:43",
       "start_seconds": 700,
       "end_seconds": 703,
-      "has_jlpt": true,
-      "vocab_matches": [
-        {
-          "surface": "観客",
-          "reading": "かんきゃく",
-          "meaning": "관객",
-          "level": "N3",
-          "surface_in_sentence": "観客",
-          "base_form": "観客",
-          "pos": "명사"
-        }
-      ],
+      "has_jlpt": false,
+      "vocab_matches": [],
       "grammar_matches": []
     },
     {
       "index": 213,
-      "text": "ひとり!",
-      "translation": "(번역 비활성화)",
+      "text": "ひとり...",
+      "translation": "",
       "start_time": "00:11:40",
       "end_time": "00:11:43",
       "start_seconds": 700,
@@ -4738,20 +4659,8 @@
     },
     {
       "index": 214,
-      "text": "ひとり...",
-      "translation": "(번역 비활성화)",
-      "start_time": "00:11:40",
-      "end_time": "00:11:43",
-      "start_seconds": 700,
-      "end_seconds": 703,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 215,
-      "text": "(ひとり) 私は武道館(ぶどうかん)をも埋めた女...",
-      "translation": "(번역 비활성화)",
+      "text": "私は武道館(ぶどうかん)をも埋めた女...",
+      "translation": "",
       "start_time": "00:11:44",
       "end_time": "00:11:46",
       "start_seconds": 704,
@@ -4784,9 +4693,21 @@
       ]
     },
     {
+      "index": 215,
+      "text": "えっ?",
+      "translation": "",
+      "start_time": "00:11:46",
+      "end_time": "00:11:48",
+      "start_seconds": 706,
+      "end_seconds": 708,
+      "has_jlpt": false,
+      "vocab_matches": [],
+      "grammar_matches": []
+    },
+    {
       "index": 216,
-      "text": "(虹夏)えっ?",
-      "translation": "(번역 비활성화)",
+      "text": "あっ いや...",
+      "translation": "",
       "start_time": "00:11:46",
       "end_time": "00:11:48",
       "start_seconds": 706,
@@ -4797,20 +4718,8 @@
     },
     {
       "index": 217,
-      "text": "(ひとり)あっ いや...",
-      "translation": "(번역 비활성화)",
-      "start_time": "00:11:46",
-      "end_time": "00:11:48",
-      "start_seconds": 706,
-      "end_seconds": 708,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 218,
-      "text": "(虹夏)アハハ...",
-      "translation": "(번역 비활성화)",
+      "text": "アハハ...",
+      "translation": "",
       "start_time": "00:11:48",
       "end_time": "00:11:49",
       "start_seconds": 708,
@@ -4820,9 +4729,9 @@
       "grammar_matches": []
     },
     {
-      "index": 219,
-      "text": "(ひとり)頼む相手 間違った って思われてませんように!",
-      "translation": "(번역 비활성화)",
+      "index": 218,
+      "text": "頼む相手 間違った って思われてませんように!",
+      "translation": "",
       "start_time": "00:11:49",
       "end_time": "00:11:53",
       "start_seconds": 709,
@@ -4873,9 +4782,9 @@
       ]
     },
     {
-      "index": 220,
-      "text": "(虹夏)頼む相手 間違えたか?",
-      "translation": "(번역 비활성화)",
+      "index": 219,
+      "text": "頼む相手 間違えたか?",
+      "translation": "",
       "start_time": "00:11:53",
       "end_time": "00:11:55",
       "start_seconds": 713,
@@ -4913,9 +4822,9 @@
       "grammar_matches": []
     },
     {
-      "index": 221,
+      "index": 220,
       "text": "着いた!",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:11:56",
       "end_time": "00:11:58",
       "start_seconds": 716,
@@ -4935,9 +4844,9 @@
       "grammar_matches": []
     },
     {
-      "index": 222,
+      "index": 221,
       "text": "ここだよ~",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:11:56",
       "end_time": "00:11:58",
       "start_seconds": 716,
@@ -4947,9 +4856,9 @@
       "grammar_matches": []
     },
     {
-      "index": 223,
-      "text": "(ひとり)ま... 魔境?",
-      "translation": "(번역 비활성화)",
+      "index": 222,
+      "text": "ま... 魔境?",
+      "translation": "",
       "start_time": "00:12:00",
       "end_time": "00:12:02",
       "start_seconds": 720,
@@ -4959,9 +4868,9 @@
       "grammar_matches": []
     },
     {
-      "index": 224,
-      "text": "(虹夏)おっはようございま~す!",
-      "translation": "(번역 비활성화)",
+      "index": 223,
+      "text": "おっはようございま~す!",
+      "translation": "",
       "start_time": "00:12:03",
       "end_time": "00:12:05",
       "start_seconds": 723,
@@ -4971,9 +4880,9 @@
       "grammar_matches": []
     },
     {
-      "index": 225,
-      "text": "(ひとり)初ライブハウス",
-      "translation": "(번역 비활성화)",
+      "index": 224,
+      "text": "初ライブハウス",
+      "translation": "",
       "start_time": "00:12:08",
       "end_time": "00:12:10",
       "start_seconds": 728,
@@ -4983,9 +4892,9 @@
       "grammar_matches": []
     },
     {
-      "index": 226,
+      "index": 225,
       "text": "この暗さ 圧迫感...",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:12:10",
       "end_time": "00:12:13",
       "start_seconds": 730,
@@ -4995,9 +4904,9 @@
       "grammar_matches": []
     },
     {
-      "index": 227,
+      "index": 226,
       "text": "お... 落ち着く~",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:12:13",
       "end_time": "00:12:16",
       "start_seconds": 733,
@@ -5026,9 +4935,9 @@
       "grammar_matches": []
     },
     {
-      "index": 228,
+      "index": 227,
       "text": "ひとりちゃん 大丈夫?",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:12:16",
       "end_time": "00:12:17",
       "start_seconds": 736,
@@ -5038,9 +4947,9 @@
       "grammar_matches": []
     },
     {
-      "index": 229,
+      "index": 228,
       "text": "わ... 私の家",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:12:17",
       "end_time": "00:12:18",
       "start_seconds": 737,
@@ -5050,9 +4959,9 @@
       "grammar_matches": []
     },
     {
-      "index": 230,
+      "index": 229,
       "text": "違うよ?",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:12:19",
       "end_time": "00:12:19",
       "start_seconds": 739,
@@ -5072,9 +4981,9 @@
       "grammar_matches": []
     },
     {
-      "index": 231,
-      "text": "(女性)今回もPAさんに...",
-      "translation": "(번역 비활성화)",
+      "index": 230,
+      "text": "今回もPAさんに...",
+      "translation": "",
       "start_time": "00:12:19",
       "end_time": "00:12:21",
       "start_seconds": 739,
@@ -5084,9 +4993,9 @@
       "grammar_matches": []
     },
     {
-      "index": 232,
-      "text": "(虹夏)今日 共演する...",
-      "translation": "(번역 비활성화)",
+      "index": 231,
+      "text": "今日 共演する...",
+      "translation": "",
       "start_time": "00:12:21",
       "end_time": "00:12:22",
       "start_seconds": 741,
@@ -5096,9 +5005,9 @@
       "grammar_matches": []
     },
     {
-      "index": 233,
-      "text": "(ひとり)バンドって どうしても 怖そうなイメージあるけど",
-      "translation": "(번역 비활성화)",
+      "index": 232,
+      "text": "バンドって どうしても 怖そうなイメージあるけど",
+      "translation": "",
       "start_time": "00:12:22",
       "end_time": "00:12:25",
       "start_seconds": 742,
@@ -5149,9 +5058,9 @@
       ]
     },
     {
-      "index": 234,
+      "index": 233,
       "text": "所詮 インドアの集まり",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:12:25",
       "end_time": "00:12:26",
       "start_seconds": 745,
@@ -5161,9 +5070,9 @@
       "grammar_matches": []
     },
     {
-      "index": 235,
+      "index": 234,
       "text": "影の者 陰キャの集団 みんな 私と同じ",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:12:26",
       "end_time": "00:12:30",
       "start_seconds": 746,
@@ -5173,9 +5082,9 @@
       "grammar_matches": []
     },
     {
-      "index": 236,
-      "text": "(虹夏)そこにいるのがPAさん",
-      "translation": "(번역 비활성화)",
+      "index": 235,
+      "text": "そこにいるのがPAさん",
+      "translation": "",
       "start_time": "00:12:30",
       "end_time": "00:12:31",
       "start_seconds": 750,
@@ -5195,9 +5104,9 @@
       "grammar_matches": []
     },
     {
-      "index": 237,
-      "text": "(PA) おはようございます",
-      "translation": "(번역 비활성화)",
+      "index": 236,
+      "text": "おはようございます",
+      "translation": "",
       "start_time": "00:12:33",
       "end_time": "00:12:34",
       "start_seconds": 753,
@@ -5207,9 +5116,9 @@
       "grammar_matches": []
     },
     {
-      "index": 238,
+      "index": 237,
       "text": "いいい... イキって すみません",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:12:34",
       "end_time": "00:12:36",
       "start_seconds": 754,
@@ -5229,9 +5138,9 @@
       "grammar_matches": []
     },
     {
-      "index": 239,
-      "text": "(虹夏)急に どうした!",
-      "translation": "(번역 비활성화)",
+      "index": 238,
+      "text": "急に どうした!",
+      "translation": "",
       "start_time": "00:12:36",
       "end_time": "00:12:37",
       "start_seconds": 756,
@@ -5241,9 +5150,9 @@
       "grammar_matches": []
     },
     {
-      "index": 240,
-      "text": "(リョウ)やっと帰ってきた (虹夏)おっ リョウ",
-      "translation": "(번역 비활성화)",
+      "index": 239,
+      "text": "やっと帰ってきた (虹夏)おっ リョウ",
+      "translation": "",
       "start_time": "00:12:38",
       "end_time": "00:12:40",
       "start_seconds": 758,
@@ -5272,9 +5181,9 @@
       "grammar_matches": []
     },
     {
-      "index": 241,
-      "text": "(虹夏)この子 後藤ひとりちゃん",
-      "translation": "(번역 비활성화)",
+      "index": 240,
+      "text": "この子 後藤ひとりちゃん",
+      "translation": "",
       "start_time": "00:12:41",
       "end_time": "00:12:43",
       "start_seconds": 761,
@@ -5284,9 +5193,9 @@
       "grammar_matches": []
     },
     {
-      "index": 242,
+      "index": 241,
       "text": "奇跡的に公園にいた ギタリストだよ",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:12:43",
       "end_time": "00:12:46",
       "start_seconds": 763,
@@ -5306,9 +5215,9 @@
       "grammar_matches": []
     },
     {
-      "index": 243,
-      "text": "(リョウ)へえ~",
-      "translation": "(번역 비활성화)",
+      "index": 242,
+      "text": "へえ~",
+      "translation": "",
       "start_time": "00:12:46",
       "end_time": "00:12:47",
       "start_seconds": 766,
@@ -5318,9 +5227,9 @@
       "grammar_matches": []
     },
     {
-      "index": 244,
-      "text": "(ひとり)怖っ!",
-      "translation": "(번역 비활성화)",
+      "index": 243,
+      "text": "怖っ!",
+      "translation": "",
       "start_time": "00:12:47",
       "end_time": "00:12:49",
       "start_seconds": 767,
@@ -5340,9 +5249,9 @@
       "grammar_matches": []
     },
     {
-      "index": 245,
+      "index": 244,
       "text": "にらまれてる?",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:12:47",
       "end_time": "00:12:49",
       "start_seconds": 767,
@@ -5352,9 +5261,9 @@
       "grammar_matches": []
     },
     {
-      "index": 246,
-      "text": "(虹夏) この子は ベースの山田(やまだ)リョウだよ",
-      "translation": "(번역 비활성화)",
+      "index": 245,
+      "text": "この子は ベースの山田(やまだ)リョウだよ",
+      "translation": "",
       "start_time": "00:12:49",
       "end_time": "00:12:51",
       "start_seconds": 769,
@@ -5364,9 +5273,9 @@
       "grammar_matches": []
     },
     {
-      "index": 247,
-      "text": "(ひとり)ごご... 後藤ひとりです 大変 申し訳ございません!",
-      "translation": "(번역 비활성화)",
+      "index": 246,
+      "text": "ごご... 後藤ひとりです 大変 申し訳ございません!",
+      "translation": "",
       "start_time": "00:12:51",
       "end_time": "00:12:54",
       "start_seconds": 771,
@@ -5376,9 +5285,9 @@
       "grammar_matches": []
     },
     {
-      "index": 248,
+      "index": 247,
       "text": "えっ ちょっ...",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:12:54",
       "end_time": "00:12:55",
       "start_seconds": 774,
@@ -5388,9 +5297,9 @@
       "grammar_matches": []
     },
     {
-      "index": 249,
+      "index": 248,
       "text": "大丈夫だから リョウは表情が出にくいだけ",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:12:55",
       "end_time": "00:12:59",
       "start_seconds": 775,
@@ -5435,9 +5344,9 @@
       ]
     },
     {
-      "index": 250,
+      "index": 249,
       "text": "“変人”って言ったら喜ぶよ~",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:12:59",
       "end_time": "00:13:01",
       "start_seconds": 779,
@@ -5470,9 +5379,9 @@
       ]
     },
     {
-      "index": 251,
-      "text": "(リョウ)うれしくないし",
-      "translation": "(번역 비활성화)",
+      "index": 250,
+      "text": "うれしくないし",
+      "translation": "",
       "start_time": "00:13:01",
       "end_time": "00:13:03",
       "start_seconds": 781,
@@ -5492,9 +5401,9 @@
       "grammar_matches": []
     },
     {
-      "index": 252,
-      "text": "(ひとり)うれしそうだ",
-      "translation": "(번역 비활성화)",
+      "index": 251,
+      "text": "うれしそうだ",
+      "translation": "",
       "start_time": "00:13:03",
       "end_time": "00:13:04",
       "start_seconds": 783,
@@ -5551,9 +5460,9 @@
       ]
     },
     {
-      "index": 253,
-      "text": "(リョウ)そういえば 店長が... (虹夏)えっ?",
-      "translation": "(번역 비활성화)",
+      "index": 252,
+      "text": "そういえば 店長が... (虹夏)えっ?",
+      "translation": "",
       "start_time": "00:13:04",
       "end_time": "00:13:06",
       "start_seconds": 784,
@@ -5595,9 +5504,9 @@
       ]
     },
     {
-      "index": 254,
-      "text": "(リョウ)時間まで練習しとけって",
-      "translation": "(번역 비활성화)",
+      "index": 253,
+      "text": "時間まで練習しとけって",
+      "translation": "",
       "start_time": "00:13:06",
       "end_time": "00:13:08",
       "start_seconds": 786,
@@ -5626,9 +5535,9 @@
       "grammar_matches": []
     },
     {
-      "index": 255,
+      "index": 254,
       "text": "あと 虹夏が勝手に ライブハウス抜け出したこと",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:13:08",
       "end_time": "00:13:11",
       "start_seconds": 788,
@@ -5638,9 +5547,9 @@
       "grammar_matches": []
     },
     {
-      "index": 256,
+      "index": 255,
       "text": "怒りながら買い出し行った",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:13:11",
       "end_time": "00:13:13",
       "start_seconds": 791,
@@ -5675,9 +5584,9 @@
       ]
     },
     {
-      "index": 257,
+      "index": 256,
       "text": "ひい~ ウソ!",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:13:13",
       "end_time": "00:13:16",
       "start_seconds": 793,
@@ -5687,9 +5596,9 @@
       "grammar_matches": []
     },
     {
-      "index": 258,
+      "index": 257,
       "text": "帰ってくる前に スタジオ行こう",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:13:13",
       "end_time": "00:13:16",
       "start_seconds": 793,
@@ -5722,9 +5631,9 @@
       ]
     },
     {
-      "index": 259,
-      "text": "(虹夏)ひとりちゃんも (ひとり)あっ",
-      "translation": "(번역 비활성화)",
+      "index": 258,
+      "text": "ひとりちゃんも (ひとり)あっ",
+      "translation": "",
       "start_time": "00:13:17",
       "end_time": "00:13:18",
       "start_seconds": 797,
@@ -5734,9 +5643,9 @@
       "grammar_matches": []
     },
     {
-      "index": 260,
+      "index": 259,
       "text": "ほら!",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:13:18",
       "end_time": "00:13:19",
       "start_seconds": 798,
@@ -5746,9 +5655,9 @@
       "grammar_matches": []
     },
     {
-      "index": 261,
+      "index": 260,
       "text": "は... はい!",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:13:20",
       "end_time": "00:13:21",
       "start_seconds": 800,
@@ -5758,9 +5667,9 @@
       "grammar_matches": []
     },
     {
-      "index": 262,
-      "text": "(ひとり)現実は怖い",
-      "translation": "(번역 비활성화)",
+      "index": 261,
+      "text": "現実は怖い",
+      "translation": "",
       "start_time": "00:13:22",
       "end_time": "00:13:23",
       "start_seconds": 802,
@@ -5789,9 +5698,9 @@
       "grammar_matches": []
     },
     {
-      "index": 263,
+      "index": 262,
       "text": "でも これから楽しいことが たくさん待っている気がする",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:13:24",
       "end_time": "00:13:29",
       "start_seconds": 804,
@@ -5845,9 +5754,9 @@
       ]
     },
     {
-      "index": 264,
-      "text": "(虹夏)これ 今日のセットリストとスコア",
-      "translation": "(번역 비활성화)",
+      "index": 263,
+      "text": "これ 今日のセットリストとスコア",
+      "translation": "",
       "start_time": "00:13:30",
       "end_time": "00:13:33",
       "start_seconds": 810,
@@ -5867,9 +5776,9 @@
       "grammar_matches": []
     },
     {
-      "index": 265,
-      "text": "(ひとり)あっ あの...",
-      "translation": "(번역 비활성화)",
+      "index": 264,
+      "text": "あっ あの...",
+      "translation": "",
       "start_time": "00:13:33",
       "end_time": "00:13:34",
       "start_seconds": 813,
@@ -5879,9 +5788,9 @@
       "grammar_matches": []
     },
     {
-      "index": 266,
-      "text": "(ベースを鳴らす音) (ひとり)バンドメンバーは?",
-      "translation": "(번역 비활성화)",
+      "index": 265,
+      "text": "バンドメンバーは?",
+      "translation": "",
       "start_time": "00:13:34",
       "end_time": "00:13:36",
       "start_seconds": 814,
@@ -5891,9 +5800,9 @@
       "grammar_matches": []
     },
     {
-      "index": 267,
+      "index": 266,
       "text": "これで全員だよ",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:13:36",
       "end_time": "00:13:37",
       "start_seconds": 816,
@@ -5903,9 +5812,9 @@
       "grammar_matches": []
     },
     {
-      "index": 268,
+      "index": 267,
       "text": "あたしたち 今回は インストバンドだから",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:13:37",
       "end_time": "00:13:39",
       "start_seconds": 817,
@@ -5928,9 +5837,9 @@
       ]
     },
     {
-      "index": 269,
-      "text": "(ひとり)うん この曲ならいける",
-      "translation": "(번역 비활성화)",
+      "index": 268,
+      "text": "うん この曲ならいける",
+      "translation": "",
       "start_time": "00:13:40",
       "end_time": "00:13:43",
       "start_seconds": 820,
@@ -5940,9 +5849,9 @@
       "grammar_matches": []
     },
     {
-      "index": 270,
+      "index": 269,
       "text": "でも ボーカルいない分 演奏 頑張らないと",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:13:43",
       "end_time": "00:13:46",
       "start_seconds": 823,
@@ -5984,9 +5893,9 @@
       ]
     },
     {
-      "index": 271,
-      "text": "(ひとり) 私 ギターうまいらしいし",
-      "translation": "(번역 비활성화)",
+      "index": 270,
+      "text": "私 ギターうまいらしいし",
+      "translation": "",
       "start_time": "00:13:47",
       "end_time": "00:13:48",
       "start_seconds": 827,
@@ -6043,9 +5952,9 @@
       ]
     },
     {
-      "index": 272,
+      "index": 271,
       "text": "やれる やれるはず!",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:13:48",
       "end_time": "00:13:50",
       "start_seconds": 828,
@@ -6068,9 +5977,9 @@
       ]
     },
     {
-      "index": 273,
-      "text": "(ひとり) フンフン フンフン フン...",
-      "translation": "(번역 비활성화)",
+      "index": 272,
+      "text": "フンフン フンフン フン...",
+      "translation": "",
       "start_time": "00:13:50",
       "end_time": "00:13:53",
       "start_seconds": 830,
@@ -6080,9 +5989,21 @@
       "grammar_matches": []
     },
     {
+      "index": 273,
+      "text": "ゴリラ?",
+      "translation": "",
+      "start_time": "00:13:53",
+      "end_time": "00:13:54",
+      "start_seconds": 833,
+      "end_seconds": 834,
+      "has_jlpt": false,
+      "vocab_matches": [],
+      "grammar_matches": []
+    },
+    {
       "index": 274,
-      "text": "(リョウ)ゴリラ?",
-      "translation": "(번역 비활성화)",
+      "text": "フンフン!",
+      "translation": "",
       "start_time": "00:13:53",
       "end_time": "00:13:54",
       "start_seconds": 833,
@@ -6093,20 +6014,8 @@
     },
     {
       "index": 275,
-      "text": "(ひとり)フンフン!",
-      "translation": "(번역 비활성화)",
-      "start_time": "00:13:53",
-      "end_time": "00:13:54",
-      "start_seconds": 833,
-      "end_seconds": 834,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 276,
-      "text": "(ひとり) 演奏聴いたら 2人とも驚くかも",
-      "translation": "(번역 비활성화)",
+      "text": "演奏聴いたら 2人とも驚くかも",
+      "translation": "",
       "start_time": "00:13:57",
       "end_time": "00:14:00",
       "start_seconds": 837,
@@ -6148,9 +6057,9 @@
       ]
     },
     {
-      "index": 277,
+      "index": 276,
       "text": "だって ネットだと結構... いや わりと評判いいし",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:14:00",
       "end_time": "00:14:04",
       "start_seconds": 840,
@@ -6183,9 +6092,9 @@
       ]
     },
     {
-      "index": 278,
+      "index": 277,
       "text": "登録者数3万人だし",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:14:05",
       "end_time": "00:14:07",
       "start_seconds": 845,
@@ -6205,9 +6114,9 @@
       "grammar_matches": []
     },
     {
-      "index": 279,
+      "index": 278,
       "text": "よし やってやる!",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:14:07",
       "end_time": "00:14:09",
       "start_seconds": 847,
@@ -6217,9 +6126,9 @@
       "grammar_matches": []
     },
     {
-      "index": 280,
-      "text": "(虹夏)それじゃ いくよ!",
-      "translation": "(번역 비활성화)",
+      "index": 279,
+      "text": "それじゃ いくよ!",
+      "translation": "",
       "start_time": "00:14:09",
       "end_time": "00:14:10",
       "start_seconds": 849,
@@ -6229,9 +6138,9 @@
       "grammar_matches": []
     },
     {
-      "index": 281,
-      "text": "(リョウ)ふ~ん",
-      "translation": "(번역 비활성화)",
+      "index": 280,
+      "text": "ふ~ん",
+      "translation": "",
       "start_time": "00:14:21",
       "end_time": "00:14:22",
       "start_seconds": 861,
@@ -6260,9 +6169,9 @@
       "grammar_matches": []
     },
     {
-      "index": 282,
+      "index": 281,
       "text": "うん",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:14:24",
       "end_time": "00:14:25",
       "start_seconds": 864,
@@ -6272,9 +6181,9 @@
       "grammar_matches": []
     },
     {
-      "index": 283,
-      "text": "(虹夏)ド下手だ (リョウ)プッ",
-      "translation": "(번역 비활성화)",
+      "index": 282,
+      "text": "ド下手だ (リョウ)プッ",
+      "translation": "",
       "start_time": "00:14:26",
       "end_time": "00:14:27",
       "start_seconds": 866,
@@ -6284,9 +6193,9 @@
       "grammar_matches": []
     },
     {
-      "index": 284,
-      "text": "(ひとり)ええ~っ!",
-      "translation": "(번역 비활성화)",
+      "index": 283,
+      "text": "ええ~っ!",
+      "translation": "",
       "start_time": "00:14:27",
       "end_time": "00:14:29",
       "start_seconds": 867,
@@ -6296,9 +6205,21 @@
       "grammar_matches": []
     },
     {
+      "index": 284,
+      "text": "ななな... なんで?",
+      "translation": "",
+      "start_time": "00:14:29",
+      "end_time": "00:14:30",
+      "start_seconds": 869,
+      "end_seconds": 870,
+      "has_jlpt": false,
+      "vocab_matches": [],
+      "grammar_matches": []
+    },
+    {
       "index": 285,
-      "text": "(ひとり)ななな... なんで?",
-      "translation": "(번역 비활성화)",
+      "text": "あっ ウソウソ",
+      "translation": "",
       "start_time": "00:14:29",
       "end_time": "00:14:30",
       "start_seconds": 869,
@@ -6309,20 +6230,8 @@
     },
     {
       "index": 286,
-      "text": "(虹夏)あっ ウソウソ",
-      "translation": "(번역 비활성화)",
-      "start_time": "00:14:29",
-      "end_time": "00:14:30",
-      "start_seconds": 869,
-      "end_seconds": 870,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 287,
-      "text": "(ひとり) 私 ギターヒーローなのに",
-      "translation": "(번역 비활성화)",
+      "text": "私 ギターヒーローなのに",
+      "translation": "",
       "start_time": "00:14:30",
       "end_time": "00:14:32",
       "start_seconds": 870,
@@ -6332,9 +6241,9 @@
       "grammar_matches": []
     },
     {
-      "index": 288,
+      "index": 287,
       "text": "登録者3万人なのに~?",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:14:32",
       "end_time": "00:14:34",
       "start_seconds": 872,
@@ -6354,9 +6263,9 @@
       "grammar_matches": []
     },
     {
-      "index": 289,
-      "text": "(ギタ男)説明しよう!",
-      "translation": "(번역 비활성화)",
+      "index": 288,
+      "text": "説明しよう!",
+      "translation": "",
       "start_time": "00:14:34",
       "end_time": "00:14:36",
       "start_seconds": 874,
@@ -6376,9 +6285,9 @@
       "grammar_matches": []
     },
     {
-      "index": 290,
-      "text": "(ひとり)えっ?",
-      "translation": "(번역 비활성화)",
+      "index": 289,
+      "text": "えっ?",
+      "translation": "",
       "start_time": "00:14:34",
       "end_time": "00:14:36",
       "start_seconds": 874,
@@ -6388,9 +6297,9 @@
       "grammar_matches": []
     },
     {
-      "index": 291,
-      "text": "(ギタ男)バンドは 生身の人間と",
-      "translation": "(번역 비활성화)",
+      "index": 290,
+      "text": "バンドは 生身の人間と",
+      "translation": "",
       "start_time": "00:14:36",
       "end_time": "00:14:38",
       "start_seconds": 876,
@@ -6400,9 +6309,9 @@
       "grammar_matches": []
     },
     {
-      "index": 292,
+      "index": 291,
       "text": "呼吸を合わせることが とっても重要だけど",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:14:38",
       "end_time": "00:14:41",
       "start_seconds": 878,
@@ -6444,9 +6353,9 @@
       ]
     },
     {
-      "index": 293,
+      "index": 292,
       "text": "コミュ症の ひとりは 目すら合わせられないので",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:14:41",
       "end_time": "00:14:43",
       "start_seconds": 881,
@@ -6466,9 +6375,9 @@
       "grammar_matches": []
     },
     {
-      "index": 294,
+      "index": 293,
       "text": "突っ走る演奏をする!",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:14:43",
       "end_time": "00:14:45",
       "start_seconds": 883,
@@ -6488,9 +6397,9 @@
       "grammar_matches": []
     },
     {
-      "index": 295,
+      "index": 294,
       "text": "ソロ弾きは最強でも",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:14:46",
       "end_time": "00:14:47",
       "start_seconds": 886,
@@ -6500,9 +6409,9 @@
       "grammar_matches": []
     },
     {
-      "index": 296,
+      "index": 295,
       "text": "バンドになるとミジンコ以下",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:14:47",
       "end_time": "00:14:49",
       "start_seconds": 887,
@@ -6522,9 +6431,9 @@
       "grammar_matches": []
     },
     {
-      "index": 297,
+      "index": 296,
       "text": "最弱になるのだ!",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:14:50",
       "end_time": "00:14:51",
       "start_seconds": 890,
@@ -6534,9 +6443,9 @@
       "grammar_matches": []
     },
     {
-      "index": 298,
-      "text": "(ひとり) どうも プランクトン後藤で~す",
-      "translation": "(번역 비활성화)",
+      "index": 297,
+      "text": "どうも プランクトン後藤で~す",
+      "translation": "",
       "start_time": "00:14:51",
       "end_time": "00:14:54",
       "start_seconds": 891,
@@ -6559,9 +6468,9 @@
       ]
     },
     {
-      "index": 299,
+      "index": 298,
       "text": "売れないお笑い芸人みたいな人 出てきた!",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:14:54",
       "end_time": "00:14:57",
       "start_seconds": 894,
@@ -6594,9 +6503,9 @@
       ]
     },
     {
-      "index": 300,
-      "text": "(ひとり) こうして 後藤ひとりは灰となり",
-      "translation": "(번역 비활성화)",
+      "index": 299,
+      "text": "こうして 後藤ひとりは灰となり",
+      "translation": "",
       "start_time": "00:14:57",
       "end_time": "00:14:59",
       "start_seconds": 897,
@@ -6606,9 +6515,9 @@
       "grammar_matches": []
     },
     {
-      "index": 301,
+      "index": 300,
       "text": "もう二度とギターを持つことは なかったのでした",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:14:59",
       "end_time": "00:15:02",
       "start_seconds": 899,
@@ -6618,9 +6527,9 @@
       "grammar_matches": []
     },
     {
-      "index": 302,
-      "text": "(虹夏) ちょちょ... ちょちょ!",
-      "translation": "(번역 비활성화)",
+      "index": 301,
+      "text": "ちょちょ... ちょちょ!",
+      "translation": "",
       "start_time": "00:15:09",
       "end_time": "00:15:10",
       "start_seconds": 909,
@@ -6630,9 +6539,9 @@
       "grammar_matches": []
     },
     {
-      "index": 303,
+      "index": 302,
       "text": "ねえ 出てきて~",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:15:11",
       "end_time": "00:15:12",
       "start_seconds": 911,
@@ -6642,9 +6551,9 @@
       "grammar_matches": []
     },
     {
-      "index": 304,
+      "index": 303,
       "text": "本番 始まっちゃうよ",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:15:12",
       "end_time": "00:15:14",
       "start_seconds": 912,
@@ -6664,9 +6573,9 @@
       "grammar_matches": []
     },
     {
-      "index": 305,
-      "text": "(ひとり)やっ ややや... やっぱり できません!",
-      "translation": "(번역 비활성화)",
+      "index": 304,
+      "text": "やっ ややや... やっぱり できません!",
+      "translation": "",
       "start_time": "00:15:14",
       "end_time": "00:15:16",
       "start_seconds": 914,
@@ -6676,9 +6585,9 @@
       "grammar_matches": []
     },
     {
-      "index": 306,
-      "text": "(虹夏)しょうがないよ 即席バンドなんだし",
-      "translation": "(번역 비활성화)",
+      "index": 305,
+      "text": "しょうがないよ 即席バンドなんだし",
+      "translation": "",
       "start_time": "00:15:16",
       "end_time": "00:15:19",
       "start_seconds": 916,
@@ -6688,9 +6597,9 @@
       "grammar_matches": []
     },
     {
-      "index": 307,
+      "index": 306,
       "text": "あたしだって そんな うまくないし",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:15:19",
       "end_time": "00:15:21",
       "start_seconds": 919,
@@ -6723,9 +6632,9 @@
       ]
     },
     {
-      "index": 308,
-      "text": "(リョウ)私は うまい",
-      "translation": "(번역 비활성화)",
+      "index": 307,
+      "text": "私は うまい",
+      "translation": "",
       "start_time": "00:15:21",
       "end_time": "00:15:22",
       "start_seconds": 921,
@@ -6745,9 +6654,9 @@
       "grammar_matches": []
     },
     {
-      "index": 309,
-      "text": "(ひとり)ヘッ... ヘヘヘヘ",
-      "translation": "(번역 비활성화)",
+      "index": 308,
+      "text": "ヘッ... ヘヘヘヘ",
+      "translation": "",
       "start_time": "00:15:22",
       "end_time": "00:15:24",
       "start_seconds": 922,
@@ -6757,9 +6666,9 @@
       "grammar_matches": []
     },
     {
-      "index": 310,
-      "text": "(虹夏) とりあえず こっち向いて!",
-      "translation": "(번역 비활성화)",
+      "index": 309,
+      "text": "とりあえず こっち向いて!",
+      "translation": "",
       "start_time": "00:15:24",
       "end_time": "00:15:26",
       "start_seconds": 924,
@@ -6779,9 +6688,9 @@
       "grammar_matches": []
     },
     {
-      "index": 311,
+      "index": 310,
       "text": "現実逃避しないで~",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:15:26",
       "end_time": "00:15:27",
       "start_seconds": 926,
@@ -6814,9 +6723,9 @@
       ]
     },
     {
-      "index": 312,
-      "text": "(ひとり)あっ エ... MCでも 全くお役に立てないですし",
-      "translation": "(번역 비활성화)",
+      "index": 311,
+      "text": "あっ エ... MCでも 全くお役に立てないですし",
+      "translation": "",
       "start_time": "00:15:27",
       "end_time": "00:15:32",
       "start_seconds": 927,
@@ -6839,9 +6748,9 @@
       ]
     },
     {
-      "index": 313,
+      "index": 312,
       "text": "ア... アハハハ 私の命をもって ハラキリショーでも...",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:15:32",
       "end_time": "00:15:36",
       "start_seconds": 932,
@@ -6851,9 +6760,9 @@
       "grammar_matches": []
     },
     {
-      "index": 314,
+      "index": 313,
       "text": "バ... バンド名くらい 覚えて帰ってもらえるはず...",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:15:36",
       "end_time": "00:15:39",
       "start_seconds": 936,
@@ -6913,9 +6822,9 @@
       ]
     },
     {
-      "index": 315,
-      "text": "(ひとり)ド下手で すみません!",
-      "translation": "(번역 비활성화)",
+      "index": 314,
+      "text": "ド下手で すみません!",
+      "translation": "",
       "start_time": "00:15:39",
       "end_time": "00:15:40",
       "start_seconds": 939,
@@ -6925,9 +6834,9 @@
       "grammar_matches": []
     },
     {
-      "index": 316,
-      "text": "(虹夏)ロックすぎる!",
-      "translation": "(번역 비활성화)",
+      "index": 315,
+      "text": "ロックすぎる!",
+      "translation": "",
       "start_time": "00:15:40",
       "end_time": "00:15:41",
       "start_seconds": 940,
@@ -6960,9 +6869,9 @@
       ]
     },
     {
-      "index": 317,
+      "index": 316,
       "text": "大丈夫",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:15:41",
       "end_time": "00:15:43",
       "start_seconds": 941,
@@ -6972,9 +6881,9 @@
       "grammar_matches": []
     },
     {
-      "index": 318,
+      "index": 317,
       "text": "ひとりがヤジられたら 私がベースで ポムッてするから",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:15:43",
       "end_time": "00:15:47",
       "start_seconds": 943,
@@ -6997,9 +6906,9 @@
       ]
     },
     {
-      "index": 319,
-      "text": "(ひとり)べ... ベース そんなファンシーな音しますかね",
-      "translation": "(번역 비활성화)",
+      "index": 318,
+      "text": "べ... ベース そんなファンシーな音しますかね",
+      "translation": "",
       "start_time": "00:15:47",
       "end_time": "00:15:50",
       "start_seconds": 947,
@@ -7009,9 +6918,9 @@
       "grammar_matches": []
     },
     {
-      "index": 320,
+      "index": 319,
       "text": "流血沙汰もロックだから",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:15:50",
       "end_time": "00:15:52",
       "start_seconds": 950,
@@ -7034,9 +6943,9 @@
       ]
     },
     {
-      "index": 321,
+      "index": 320,
       "text": "ロックだから",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:15:52",
       "end_time": "00:15:53",
       "start_seconds": 952,
@@ -7059,9 +6968,9 @@
       ]
     },
     {
-      "index": 322,
-      "text": "(ひとり)ロック 免罪符すぎる!",
-      "translation": "(번역 비활성화)",
+      "index": 321,
+      "text": "ロック 免罪符すぎる!",
+      "translation": "",
       "start_time": "00:15:53",
       "end_time": "00:15:55",
       "start_seconds": 953,
@@ -7094,9 +7003,9 @@
       ]
     },
     {
-      "index": 323,
+      "index": 322,
       "text": "それに うちのバンド見に来るの 多分 あたしの友達だけだし",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:15:55",
       "end_time": "00:15:59",
       "start_seconds": 955,
@@ -7162,9 +7071,9 @@
       ]
     },
     {
-      "index": 324,
-      "text": "(ひとり)え?",
-      "translation": "(번역 비활성화)",
+      "index": 323,
+      "text": "え?",
+      "translation": "",
       "start_time": "00:16:00",
       "end_time": "00:16:00",
       "start_seconds": 960,
@@ -7174,9 +7083,9 @@
       "grammar_matches": []
     },
     {
-      "index": 325,
+      "index": 324,
       "text": "私 友達 虹夏だけだから",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:16:00",
       "end_time": "00:16:03",
       "start_seconds": 960,
@@ -7221,9 +7130,9 @@
       ]
     },
     {
-      "index": 326,
+      "index": 325,
       "text": "普通の女子高生に 演奏の よしあしとか 分かんないって",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:16:03",
       "end_time": "00:16:07",
       "start_seconds": 963,
@@ -7252,9 +7161,9 @@
       "grammar_matches": []
     },
     {
-      "index": 327,
-      "text": "(ひとり)炎上しそうな発言",
-      "translation": "(번역 비활성화)",
+      "index": 326,
+      "text": "炎上しそうな発言",
+      "translation": "",
       "start_time": "00:16:07",
       "end_time": "00:16:09",
       "start_seconds": 967,
@@ -7264,9 +7173,9 @@
       "grammar_matches": []
     },
     {
-      "index": 328,
-      "text": "(虹夏)ねっ?",
-      "translation": "(번역 비활성화)",
+      "index": 327,
+      "text": "ねっ?",
+      "translation": "",
       "start_time": "00:16:10",
       "end_time": "00:16:12",
       "start_seconds": 970,
@@ -7286,9 +7195,9 @@
       "grammar_matches": []
     },
     {
-      "index": 329,
+      "index": 328,
       "text": "だから安心せい!",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:16:10",
       "end_time": "00:16:12",
       "start_seconds": 970,
@@ -7311,9 +7220,9 @@
       ]
     },
     {
-      "index": 330,
-      "text": "(ひとり)と... 言われても",
-      "translation": "(번역 비활성화)",
+      "index": 329,
+      "text": "と... 言われても",
+      "translation": "",
       "start_time": "00:16:13",
       "end_time": "00:16:14",
       "start_seconds": 973,
@@ -7333,9 +7242,9 @@
       "grammar_matches": []
     },
     {
-      "index": 331,
-      "text": "(リョウ) 私は よしあし分かるけど",
-      "translation": "(번역 비활성화)",
+      "index": 330,
+      "text": "私は よしあし分かるけど",
+      "translation": "",
       "start_time": "00:16:14",
       "end_time": "00:16:16",
       "start_seconds": 974,
@@ -7345,9 +7254,9 @@
       "grammar_matches": []
     },
     {
-      "index": 332,
-      "text": "(虹夏)リョウは普通じゃないから (リョウ)えっ... エヘヘヘヘ",
-      "translation": "(번역 비활성화)",
+      "index": 331,
+      "text": "リョウは普通じゃないから (リョウ)えっ... エヘヘヘヘ",
+      "translation": "",
       "start_time": "00:16:16",
       "end_time": "00:16:19",
       "start_seconds": 976,
@@ -7367,9 +7276,9 @@
       "grammar_matches": []
     },
     {
-      "index": 333,
-      "text": "(虹夏)いや 喜ぶな 喜ぶな",
-      "translation": "(번역 비활성화)",
+      "index": 332,
+      "text": "いや 喜ぶな 喜ぶな",
+      "translation": "",
       "start_time": "00:16:19",
       "end_time": "00:16:21",
       "start_seconds": 979,
@@ -7379,9 +7288,9 @@
       "grammar_matches": []
     },
     {
-      "index": 334,
-      "text": "(ひとり)ごめんなさい",
-      "translation": "(번역 비활성화)",
+      "index": 333,
+      "text": "ごめんなさい",
+      "translation": "",
       "start_time": "00:16:21",
       "end_time": "00:16:23",
       "start_seconds": 981,
@@ -7391,9 +7300,9 @@
       "grammar_matches": []
     },
     {
-      "index": 335,
+      "index": 334,
       "text": "けど...",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:16:23",
       "end_time": "00:16:24",
       "start_seconds": 983,
@@ -7403,9 +7312,9 @@
       "grammar_matches": []
     },
     {
-      "index": 336,
+      "index": 335,
       "text": "無理強いするもんじゃない",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:16:24",
       "end_time": "00:16:26",
       "start_seconds": 984,
@@ -7415,9 +7324,9 @@
       "grammar_matches": []
     },
     {
-      "index": 337,
+      "index": 336,
       "text": "だよね",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:16:27",
       "end_time": "00:16:28",
       "start_seconds": 987,
@@ -7427,9 +7336,9 @@
       "grammar_matches": []
     },
     {
-      "index": 338,
+      "index": 337,
       "text": "無理なお願いして ごめん",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:16:29",
       "end_time": "00:16:30",
       "start_seconds": 989,
@@ -7458,9 +7367,9 @@
       "grammar_matches": []
     },
     {
-      "index": 339,
-      "text": "(ひとり)あっ いや そこは!",
-      "translation": "(번역 비활성화)",
+      "index": 338,
+      "text": "あっ いや そこは!",
+      "translation": "",
       "start_time": "00:16:30",
       "end_time": "00:16:32",
       "start_seconds": 990,
@@ -7480,9 +7389,9 @@
       "grammar_matches": []
     },
     {
-      "index": 340,
-      "text": "(虹夏たち)ん?",
-      "translation": "(번역 비활성화)",
+      "index": 339,
+      "text": "ん?",
+      "translation": "",
       "start_time": "00:16:30",
       "end_time": "00:16:32",
       "start_seconds": 990,
@@ -7492,9 +7401,9 @@
       "grammar_matches": []
     },
     {
-      "index": 341,
-      "text": "(ひとり)あっ ほ... 本当に うれしかったんです",
-      "translation": "(번역 비활성화)",
+      "index": 340,
+      "text": "あっ ほ... 本当に うれしかったんです",
+      "translation": "",
       "start_time": "00:16:33",
       "end_time": "00:16:35",
       "start_seconds": 993,
@@ -7514,9 +7423,9 @@
       "grammar_matches": []
     },
     {
-      "index": 342,
+      "index": 341,
       "text": "声かけられて",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:16:35",
       "end_time": "00:16:37",
       "start_seconds": 995,
@@ -7526,9 +7435,9 @@
       "grammar_matches": []
     },
     {
-      "index": 343,
+      "index": 342,
       "text": "バンドは ずっと 組みたいと思ってたから",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:16:37",
       "end_time": "00:16:40",
       "start_seconds": 997,
@@ -7570,9 +7479,9 @@
       ]
     },
     {
-      "index": 344,
+      "index": 343,
       "text": "で... でも メンバー集まらなくて",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:16:40",
       "end_time": "00:16:43",
       "start_seconds": 1000,
@@ -7595,9 +7504,9 @@
       ]
     },
     {
-      "index": 345,
+      "index": 344,
       "text": "だから ふだんは カバー曲 ネットに上げたり",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:16:43",
       "end_time": "00:16:46",
       "start_seconds": 1003,
@@ -7639,9 +7548,9 @@
       ]
     },
     {
-      "index": 346,
+      "index": 345,
       "text": "ふだんは何弾くの?",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:16:46",
       "end_time": "00:16:48",
       "start_seconds": 1006,
@@ -7661,9 +7570,9 @@
       "grammar_matches": []
     },
     {
-      "index": 347,
-      "text": "(ひとり)あっ 結成したとき すぐ対応できるように",
-      "translation": "(번역 비활성화)",
+      "index": 346,
+      "text": "あっ 結成したとき すぐ対応できるように",
+      "translation": "",
       "start_time": "00:16:48",
       "end_time": "00:16:51",
       "start_seconds": 1008,
@@ -7698,9 +7607,9 @@
       ]
     },
     {
-      "index": 348,
+      "index": 347,
       "text": "ここ数年の 売れ線バンドの曲は大体...",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:16:51",
       "end_time": "00:16:54",
       "start_seconds": 1011,
@@ -7747,9 +7656,9 @@
       "grammar_matches": []
     },
     {
-      "index": 349,
+      "index": 348,
       "text": "えっ すご!",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:16:54",
       "end_time": "00:16:54",
       "start_seconds": 1014,
@@ -7759,9 +7668,9 @@
       "grammar_matches": []
     },
     {
-      "index": 350,
-      "text": "(ひとり)いや 全然",
-      "translation": "(번역 비활성화)",
+      "index": 349,
+      "text": "いや 全然",
+      "translation": "",
       "start_time": "00:16:55",
       "end_time": "00:16:56",
       "start_seconds": 1015,
@@ -7781,9 +7690,9 @@
       "grammar_matches": []
     },
     {
-      "index": 351,
+      "index": 350,
       "text": "結局 こんな感じになって",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:16:56",
       "end_time": "00:16:58",
       "start_seconds": 1016,
@@ -7803,9 +7712,9 @@
       "grammar_matches": []
     },
     {
-      "index": 352,
+      "index": 351,
       "text": "やっぱり 私には 誰かとバンド組むなんて...",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:16:59",
       "end_time": "00:17:02",
       "start_seconds": 1019,
@@ -7847,9 +7756,9 @@
       ]
     },
     {
-      "index": 353,
+      "index": 352,
       "text": "売れ線のカバーばっか...",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:17:03",
       "end_time": "00:17:05",
       "start_seconds": 1023,
@@ -7887,9 +7796,9 @@
       "grammar_matches": []
     },
     {
-      "index": 354,
+      "index": 353,
       "text": "なんか ギターヒーローさんみたいだね",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:17:05",
       "end_time": "00:17:07",
       "start_seconds": 1025,
@@ -7924,9 +7833,9 @@
       ]
     },
     {
-      "index": 355,
+      "index": 354,
       "text": "って 知ってる?",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:17:07",
       "end_time": "00:17:08",
       "start_seconds": 1027,
@@ -7946,9 +7855,9 @@
       "grammar_matches": []
     },
     {
-      "index": 356,
-      "text": "(ひとり)ギターヒーロー",
-      "translation": "(번역 비활성화)",
+      "index": 355,
+      "text": "ギターヒーロー",
+      "translation": "",
       "start_time": "00:17:09",
       "end_time": "00:17:11",
       "start_seconds": 1029,
@@ -7958,9 +7867,21 @@
       "grammar_matches": []
     },
     {
-      "index": 357,
+      "index": 356,
       "text": "えっ!",
-      "translation": "(번역 비활성화)",
+      "translation": "",
+      "start_time": "00:17:11",
+      "end_time": "00:17:12",
+      "start_seconds": 1031,
+      "end_seconds": 1032,
+      "has_jlpt": false,
+      "vocab_matches": [],
+      "grammar_matches": []
+    },
+    {
+      "index": 357,
+      "text": "私?",
+      "translation": "",
       "start_time": "00:17:11",
       "end_time": "00:17:12",
       "start_seconds": 1031,
@@ -7971,20 +7892,8 @@
     },
     {
       "index": 358,
-      "text": "私?",
-      "translation": "(번역 비활성화)",
-      "start_time": "00:17:11",
-      "end_time": "00:17:12",
-      "start_seconds": 1031,
-      "end_seconds": 1032,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 359,
-      "text": "(虹夏) 知らないなら あとでURL送るよ",
-      "translation": "(번역 비활성화)",
+      "text": "知らないなら あとでURL送るよ",
+      "translation": "",
       "start_time": "00:17:13",
       "end_time": "00:17:15",
       "start_seconds": 1033,
@@ -8013,9 +7922,9 @@
       "grammar_matches": []
     },
     {
-      "index": 360,
+      "index": 359,
       "text": "もう最高に うまいから 聴いてみて!",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:17:15",
       "end_time": "00:17:18",
       "start_seconds": 1035,
@@ -8044,9 +7953,9 @@
       "grammar_matches": []
     },
     {
-      "index": 361,
-      "text": "(ひとり)最高?",
-      "translation": "(번역 비활성화)",
+      "index": 360,
+      "text": "最高?",
+      "translation": "",
       "start_time": "00:17:18",
       "end_time": "00:17:20",
       "start_seconds": 1038,
@@ -8066,9 +7975,9 @@
       "grammar_matches": []
     },
     {
-      "index": 362,
-      "text": "(リョウ)私も オススメに 何度も上がってくるから",
-      "translation": "(번역 비활성화)",
+      "index": 361,
+      "text": "私も オススメに 何度も上がってくるから",
+      "translation": "",
       "start_time": "00:17:20",
       "end_time": "00:17:22",
       "start_seconds": 1040,
@@ -8097,9 +8006,9 @@
       "grammar_matches": []
     },
     {
-      "index": 363,
+      "index": 362,
       "text": "見たことあるけど すごく うまかった",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:17:22",
       "end_time": "00:17:25",
       "start_seconds": 1042,
@@ -8119,9 +8028,9 @@
       "grammar_matches": []
     },
     {
-      "index": 364,
-      "text": "(虹夏)ねっ!",
-      "translation": "(번역 비활성화)",
+      "index": 363,
+      "text": "ねっ!",
+      "translation": "",
       "start_time": "00:17:25",
       "end_time": "00:17:25",
       "start_seconds": 1045,
@@ -8141,9 +8050,9 @@
       "grammar_matches": []
     },
     {
-      "index": 365,
+      "index": 364,
       "text": "ネーミングセンスは ちょっと痛いけど...",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:17:26",
       "end_time": "00:17:28",
       "start_seconds": 1046,
@@ -8172,9 +8081,9 @@
       "grammar_matches": []
     },
     {
-      "index": 366,
-      "text": "(ひとり)痛いの?",
-      "translation": "(번역 비활성화)",
+      "index": 365,
+      "text": "痛いの?",
+      "translation": "",
       "start_time": "00:17:28",
       "end_time": "00:17:29",
       "start_seconds": 1048,
@@ -8194,9 +8103,9 @@
       "grammar_matches": []
     },
     {
-      "index": 367,
+      "index": 366,
       "text": "あたし フォローして 新着通知もオンにしてるんだ~",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:17:29",
       "end_time": "00:17:33",
       "start_seconds": 1049,
@@ -8216,9 +8125,9 @@
       "grammar_matches": []
     },
     {
-      "index": 368,
+      "index": 367,
       "text": "いつか 一緒に演奏してみたいな",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:17:33",
       "end_time": "00:17:35",
       "start_seconds": 1053,
@@ -8275,9 +8184,9 @@
       ]
     },
     {
-      "index": 369,
-      "text": "(ひとり)今 したんですけどね",
-      "translation": "(번역 비활성화)",
+      "index": 368,
+      "text": "今 したんですけどね",
+      "translation": "",
       "start_time": "00:17:35",
       "end_time": "00:17:37",
       "start_seconds": 1055,
@@ -8287,9 +8196,9 @@
       "grammar_matches": []
     },
     {
-      "index": 370,
+      "index": 369,
       "text": "え~っとね 何が言いたいかっていうと",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:17:37",
       "end_time": "00:17:41",
       "start_seconds": 1057,
@@ -8322,9 +8231,9 @@
       ]
     },
     {
-      "index": 371,
+      "index": 370,
       "text": "うまくて話題の人もね 私たちが見てないところで",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:17:41",
       "end_time": "00:17:44",
       "start_seconds": 1061,
@@ -8369,9 +8278,9 @@
       ]
     },
     {
-      "index": 372,
+      "index": 371,
       "text": "たっくさん たっくさん ギターを弾いてきたんだろうなって",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:17:44",
       "end_time": "00:17:48",
       "start_seconds": 1064,
@@ -8413,9 +8322,9 @@
       ]
     },
     {
-      "index": 373,
+      "index": 372,
       "text": "ハッ",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:17:48",
       "end_time": "00:17:49",
       "start_seconds": 1068,
@@ -8425,9 +8334,9 @@
       "grammar_matches": []
     },
     {
-      "index": 374,
-      "text": "(虹夏)あとで見てみて 動画見てると伝わってくるから",
-      "translation": "(번역 비활성화)",
+      "index": 373,
+      "text": "あとで見てみて 動画見てると伝わってくるから",
+      "translation": "",
       "start_time": "00:17:49",
       "end_time": "00:17:53",
       "start_seconds": 1069,
@@ -8447,9 +8356,9 @@
       "grammar_matches": []
     },
     {
-      "index": 375,
+      "index": 374,
       "text": "あ...",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:17:53",
       "end_time": "00:17:53",
       "start_seconds": 1073,
@@ -8459,9 +8368,9 @@
       "grammar_matches": []
     },
     {
-      "index": 376,
-      "text": "(ひとり)現実世界の人たちは",
-      "translation": "(번역 비활성화)",
+      "index": 375,
+      "text": "現実世界の人たちは",
+      "translation": "",
       "start_time": "00:17:54",
       "end_time": "00:17:56",
       "start_seconds": 1074,
@@ -8481,9 +8390,9 @@
       "grammar_matches": []
     },
     {
-      "index": 377,
+      "index": 376,
       "text": "誰も 私なんか 興味ないと思ってた",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:17:56",
       "end_time": "00:18:00",
       "start_seconds": 1076,
@@ -8528,9 +8437,9 @@
       ]
     },
     {
-      "index": 378,
-      "text": "(虹夏)今日がダメだからって バンド 諦めるのは早いって",
-      "translation": "(번역 비활성화)",
+      "index": 377,
+      "text": "今日がダメだからって バンド 諦めるのは早いって",
+      "translation": "",
       "start_time": "00:18:02",
       "end_time": "00:18:05",
       "start_seconds": 1082,
@@ -8572,9 +8481,9 @@
       ]
     },
     {
-      "index": 379,
+      "index": 378,
       "text": "あたしたちが アレなだけかもだし",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:18:05",
       "end_time": "00:18:08",
       "start_seconds": 1085,
@@ -8584,9 +8493,21 @@
       "grammar_matches": []
     },
     {
+      "index": 379,
+      "text": "アレ?",
+      "translation": "",
+      "start_time": "00:18:08",
+      "end_time": "00:18:09",
+      "start_seconds": 1088,
+      "end_seconds": 1089,
+      "has_jlpt": false,
+      "vocab_matches": [],
+      "grammar_matches": []
+    },
+    {
       "index": 380,
-      "text": "(リョウ)アレ?",
-      "translation": "(번역 비활성화)",
+      "text": "ううっ...",
+      "translation": "",
       "start_time": "00:18:08",
       "end_time": "00:18:09",
       "start_seconds": 1088,
@@ -8597,20 +8518,8 @@
     },
     {
       "index": 381,
-      "text": "(ひとり)ううっ...",
-      "translation": "(번역 비활성화)",
-      "start_time": "00:18:08",
-      "end_time": "00:18:09",
-      "start_seconds": 1088,
-      "end_seconds": 1089,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 382,
       "text": "ひとりちゃん?",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:18:10",
       "end_time": "00:18:11",
       "start_seconds": 1090,
@@ -8620,9 +8529,9 @@
       "grammar_matches": []
     },
     {
-      "index": 383,
-      "text": "(ひとり)けど こんな優しい人が ずっと見ていてくれて",
-      "translation": "(번역 비활성화)",
+      "index": 382,
+      "text": "けど こんな優しい人が ずっと見ていてくれて",
+      "translation": "",
       "start_time": "00:18:11",
       "end_time": "00:18:14",
       "start_seconds": 1091,
@@ -8660,9 +8569,9 @@
       "grammar_matches": []
     },
     {
-      "index": 384,
+      "index": 383,
       "text": "私なんかに声をかけてくれた",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:18:14",
       "end_time": "00:18:17",
       "start_seconds": 1094,
@@ -8704,9 +8613,9 @@
       ]
     },
     {
-      "index": 385,
-      "text": "(虹夏)あっ (リョウ)あっ 立った",
-      "translation": "(번역 비활성화)",
+      "index": 384,
+      "text": "あっ (リョウ)あっ 立った",
+      "translation": "",
       "start_time": "00:18:17",
       "end_time": "00:18:18",
       "start_seconds": 1097,
@@ -8716,9 +8625,9 @@
       "grammar_matches": []
     },
     {
-      "index": 386,
-      "text": "(ひとり) こんな奇跡 多分 一生 起こらない",
-      "translation": "(번역 비활성화)",
+      "index": 385,
+      "text": "こんな奇跡 多分 一生 起こらない",
+      "translation": "",
       "start_time": "00:18:18",
       "end_time": "00:18:21",
       "start_seconds": 1098,
@@ -8751,9 +8660,9 @@
       ]
     },
     {
-      "index": 387,
+      "index": 386,
       "text": "絶対 ムダにしちゃダメだ!",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:18:22",
       "end_time": "00:18:25",
       "start_seconds": 1102,
@@ -8773,9 +8682,9 @@
       "grammar_matches": []
     },
     {
-      "index": 388,
+      "index": 387,
       "text": "わ... 私 その...",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:18:25",
       "end_time": "00:18:27",
       "start_seconds": 1105,
@@ -8785,9 +8694,9 @@
       "grammar_matches": []
     },
     {
-      "index": 389,
+      "index": 388,
       "text": "もしかして 出てくれる気になったとか?",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:18:28",
       "end_time": "00:18:31",
       "start_seconds": 1108,
@@ -8846,9 +8755,9 @@
       ]
     },
     {
-      "index": 390,
-      "text": "(ひとり)うう...",
-      "translation": "(번역 비활성화)",
+      "index": 389,
+      "text": "うう...",
+      "translation": "",
       "start_time": "00:18:31",
       "end_time": "00:18:32",
       "start_seconds": 1111,
@@ -8858,9 +8767,9 @@
       "grammar_matches": []
     },
     {
-      "index": 391,
+      "index": 390,
       "text": "ひ... ひとりちゃん?",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:18:33",
       "end_time": "00:18:34",
       "start_seconds": 1113,
@@ -8880,9 +8789,9 @@
       "grammar_matches": []
     },
     {
-      "index": 392,
-      "text": "(ひとり)頭では分かってる でも やっぱり怖い",
-      "translation": "(번역 비활성화)",
+      "index": 391,
+      "text": "頭では分かってる でも やっぱり怖い",
+      "translation": "",
       "start_time": "00:18:34",
       "end_time": "00:18:37",
       "start_seconds": 1114,
@@ -8902,9 +8811,9 @@
       "grammar_matches": []
     },
     {
-      "index": 393,
+      "index": 392,
       "text": "お客さんの目線も 耐えられるわけが...",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:18:37",
       "end_time": "00:18:40",
       "start_seconds": 1117,
@@ -8937,9 +8846,9 @@
       ]
     },
     {
-      "index": 394,
+      "index": 393,
       "text": "怖いなら これに入って演奏したら?",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:18:40",
       "end_time": "00:18:43",
       "start_seconds": 1120,
@@ -8981,9 +8890,9 @@
       ]
     },
     {
-      "index": 395,
-      "text": "(ひとり)あっ (虹夏)ん?",
-      "translation": "(번역 비활성화)",
+      "index": 394,
+      "text": "あっ (虹夏)ん?",
+      "translation": "",
       "start_time": "00:18:43",
       "end_time": "00:18:44",
       "start_seconds": 1123,
@@ -8993,9 +8902,9 @@
       "grammar_matches": []
     },
     {
-      "index": 396,
-      "text": "(ひとり)いっ い... いつも弾いてる環境と同じです~",
-      "translation": "(번역 비활성화)",
+      "index": 395,
+      "text": "いっ い... いつも弾いてる環境と同じです~",
+      "translation": "",
       "start_time": "00:18:44",
       "end_time": "00:18:48",
       "start_seconds": 1124,
@@ -9055,9 +8964,9 @@
       ]
     },
     {
-      "index": 397,
-      "text": "(虹夏)どんな所に住んでるの?",
-      "translation": "(번역 비활성화)",
+      "index": 396,
+      "text": "どんな所に住んでるの?",
+      "translation": "",
       "start_time": "00:18:49",
       "end_time": "00:18:51",
       "start_seconds": 1129,
@@ -9067,9 +8976,9 @@
       "grammar_matches": []
     },
     {
-      "index": 398,
-      "text": "(ひとり)皆さん 下北 盛り上げていきましょう!",
-      "translation": "(번역 비활성화)",
+      "index": 397,
+      "text": "皆さん 下北 盛り上げていきましょう!",
+      "translation": "",
       "start_time": "00:18:51",
       "end_time": "00:18:54",
       "start_seconds": 1131,
@@ -9089,9 +8998,9 @@
       "grammar_matches": []
     },
     {
-      "index": 399,
-      "text": "(リョウ)少し気が大きくなった",
-      "translation": "(번역 비활성화)",
+      "index": 398,
+      "text": "少し気が大きくなった",
+      "translation": "",
       "start_time": "00:18:54",
       "end_time": "00:18:56",
       "start_seconds": 1134,
@@ -9133,9 +9042,9 @@
       ]
     },
     {
-      "index": 400,
+      "index": 399,
       "text": "そういえば ライブで なんて紹介すればいい?",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:18:56",
       "end_time": "00:18:59",
       "start_seconds": 1136,
@@ -9180,9 +9089,21 @@
       ]
     },
     {
-      "index": 401,
+      "index": 400,
       "text": "ひとりちゃん?",
-      "translation": "(번역 비활성화)",
+      "translation": "",
+      "start_time": "00:18:59",
+      "end_time": "00:19:02",
+      "start_seconds": 1139,
+      "end_seconds": 1142,
+      "has_jlpt": false,
+      "vocab_matches": [],
+      "grammar_matches": []
+    },
+    {
+      "index": 401,
+      "text": "本名でいいかな?",
+      "translation": "",
       "start_time": "00:18:59",
       "end_time": "00:19:02",
       "start_seconds": 1139,
@@ -9193,20 +9114,8 @@
     },
     {
       "index": 402,
-      "text": "本名でいいかな?",
-      "translation": "(번역 비활성화)",
-      "start_time": "00:18:59",
-      "end_time": "00:19:02",
-      "start_seconds": 1139,
-      "end_seconds": 1142,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 403,
       "text": "い... いや それは...",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:19:02",
       "end_time": "00:19:03",
       "start_seconds": 1142,
@@ -9216,9 +9125,9 @@
       "grammar_matches": []
     },
     {
-      "index": 404,
+      "index": 403,
       "text": "じゃあ あだ名とかはないの?",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:19:03",
       "end_time": "00:19:05",
       "start_seconds": 1143,
@@ -9228,9 +9137,9 @@
       "grammar_matches": []
     },
     {
-      "index": 405,
+      "index": 404,
       "text": "ちゅ... 中学では “あの~”とか“おい”とか",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:19:05",
       "end_time": "00:19:09",
       "start_seconds": 1145,
@@ -9250,9 +9159,9 @@
       "grammar_matches": []
     },
     {
-      "index": 406,
+      "index": 405,
       "text": "それ あだ名じゃなくない?",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:19:09",
       "end_time": "00:19:10",
       "start_seconds": 1149,
@@ -9272,9 +9181,9 @@
       "grammar_matches": []
     },
     {
-      "index": 407,
-      "text": "(ひとり) あああ... あだ名で呼び合うほど",
-      "translation": "(번역 비활성화)",
+      "index": 406,
+      "text": "あああ... あだ名で呼び合うほど",
+      "translation": "",
       "start_time": "00:19:10",
       "end_time": "00:19:12",
       "start_seconds": 1150,
@@ -9294,9 +9203,9 @@
       "grammar_matches": []
     },
     {
-      "index": 408,
+      "index": 407,
       "text": "親しい交友関係は 持ったことが...",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:19:12",
       "end_time": "00:19:14",
       "start_seconds": 1152,
@@ -9325,9 +9234,9 @@
       "grammar_matches": []
     },
     {
-      "index": 409,
+      "index": 408,
       "text": "ひとり... ひとりぼっち...",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:19:14",
       "end_time": "00:19:17",
       "start_seconds": 1154,
@@ -9347,9 +9256,9 @@
       "grammar_matches": []
     },
     {
-      "index": 410,
+      "index": 409,
       "text": "ぼっちちゃんは?",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:19:17",
       "end_time": "00:19:19",
       "start_seconds": 1157,
@@ -9369,9 +9278,9 @@
       "grammar_matches": []
     },
     {
-      "index": 411,
+      "index": 410,
       "text": "うっ またデリケートなところを",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:19:19",
       "end_time": "00:19:21",
       "start_seconds": 1159,
@@ -9381,9 +9290,9 @@
       "grammar_matches": []
     },
     {
-      "index": 412,
+      "index": 411,
       "text": "ぼぼぼ... ぼっちです!",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:19:21",
       "end_time": "00:19:23",
       "start_seconds": 1161,
@@ -9403,9 +9312,9 @@
       "grammar_matches": []
     },
     {
-      "index": 413,
-      "text": "(虹夏)喜んでるし",
-      "translation": "(번역 비활성화)",
+      "index": 412,
+      "text": "喜んでるし",
+      "translation": "",
       "start_time": "00:19:23",
       "end_time": "00:19:24",
       "start_seconds": 1163,
@@ -9415,9 +9324,9 @@
       "grammar_matches": []
     },
     {
-      "index": 414,
+      "index": 413,
       "text": "あだ名とか初めてで",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:19:24",
       "end_time": "00:19:26",
       "start_seconds": 1164,
@@ -9427,9 +9336,9 @@
       "grammar_matches": []
     },
     {
-      "index": 415,
+      "index": 414,
       "text": "うう~ なんか 涙出てきた",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:19:26",
       "end_time": "00:19:28",
       "start_seconds": 1166,
@@ -9462,9 +9371,9 @@
       ]
     },
     {
-      "index": 416,
+      "index": 415,
       "text": "あっ まだ バンド名 聞いてなかったです",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:19:28",
       "end_time": "00:19:30",
       "start_seconds": 1168,
@@ -9484,31 +9393,21 @@
       "grammar_matches": []
     },
     {
-      "index": 417,
-      "text": "(虹夏)うっ",
-      "translation": "(번역 비활성화)",
+      "index": 416,
+      "text": "うっ",
+      "translation": "",
       "start_time": "00:19:30",
       "end_time": "00:19:31",
       "start_seconds": 1170,
       "end_seconds": 1171,
-      "has_jlpt": true,
-      "vocab_matches": [
-        {
-          "surface": "打つ",
-          "reading": "うつ",
-          "meaning": "치다",
-          "level": "N3",
-          "surface_in_sentence": "うっ",
-          "base_form": "うつ",
-          "pos": "동사"
-        }
-      ],
+      "has_jlpt": false,
+      "vocab_matches": [],
       "grammar_matches": []
     },
     {
-      "index": 418,
-      "text": "(ひとり)え?",
-      "translation": "(번역 비활성화)",
+      "index": 417,
+      "text": "え?",
+      "translation": "",
       "start_time": "00:19:31",
       "end_time": "00:19:32",
       "start_seconds": 1171,
@@ -9518,9 +9417,9 @@
       "grammar_matches": []
     },
     {
-      "index": 419,
+      "index": 418,
       "text": "結束(けっそく)バンドだよ",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:19:33",
       "end_time": "00:19:34",
       "start_seconds": 1173,
@@ -9530,9 +9429,9 @@
       "grammar_matches": []
     },
     {
-      "index": 420,
-      "text": "(虹夏)ハア~",
-      "translation": "(번역 비활성화)",
+      "index": 419,
+      "text": "ハア~",
+      "translation": "",
       "start_time": "00:19:35",
       "end_time": "00:19:36",
       "start_seconds": 1175,
@@ -9542,9 +9441,9 @@
       "grammar_matches": []
     },
     {
-      "index": 421,
-      "text": "(ひとり)結束バンド...",
-      "translation": "(번역 비활성화)",
+      "index": 420,
+      "text": "結束バンド...",
+      "translation": "",
       "start_time": "00:19:37",
       "end_time": "00:19:38",
       "start_seconds": 1177,
@@ -9554,9 +9453,9 @@
       "grammar_matches": []
     },
     {
-      "index": 422,
+      "index": 421,
       "text": "結束バンド?",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:19:39",
       "end_time": "00:19:40",
       "start_seconds": 1179,
@@ -9566,9 +9465,9 @@
       "grammar_matches": []
     },
     {
-      "index": 423,
-      "text": "(リョウ)プッ 傑作",
-      "translation": "(번역 비활성화)",
+      "index": 422,
+      "text": "プッ 傑作",
+      "translation": "",
       "start_time": "00:19:40",
       "end_time": "00:19:42",
       "start_seconds": 1180,
@@ -9578,9 +9477,9 @@
       "grammar_matches": []
     },
     {
-      "index": 424,
+      "index": 423,
       "text": "寒いし 絶対 変えるから~!",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:19:42",
       "end_time": "00:19:44",
       "start_seconds": 1182,
@@ -9600,9 +9499,21 @@
       "grammar_matches": []
     },
     {
+      "index": 424,
+      "text": "なんで?",
+      "translation": "",
+      "start_time": "00:19:44",
+      "end_time": "00:19:46",
+      "start_seconds": 1184,
+      "end_seconds": 1186,
+      "has_jlpt": false,
+      "vocab_matches": [],
+      "grammar_matches": []
+    },
+    {
       "index": 425,
-      "text": "(リョウ)なんで?",
-      "translation": "(번역 비활성화)",
+      "text": "かわいいよね",
+      "translation": "",
       "start_time": "00:19:44",
       "end_time": "00:19:46",
       "start_seconds": 1184,
@@ -9613,20 +9524,8 @@
     },
     {
       "index": 426,
-      "text": "かわいいよね",
-      "translation": "(번역 비활성화)",
-      "start_time": "00:19:44",
-      "end_time": "00:19:46",
-      "start_seconds": 1184,
-      "end_seconds": 1186,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 427,
-      "text": "(ひとり)あっ はい (虹夏)うああ~!",
-      "translation": "(번역 비활성화)",
+      "text": "あっ はい (虹夏)うああ~!",
+      "translation": "",
       "start_time": "00:19:46",
       "end_time": "00:19:48",
       "start_seconds": 1186,
@@ -9636,9 +9535,9 @@
       "grammar_matches": []
     },
     {
-      "index": 428,
-      "text": "(虹夏)バンド名は後回しで そろそろ出番だよ!",
-      "translation": "(번역 비활성화)",
+      "index": 427,
+      "text": "バンド名は後回しで そろそろ出番だよ!",
+      "translation": "",
       "start_time": "00:19:48",
       "end_time": "00:19:51",
       "start_seconds": 1188,
@@ -9671,9 +9570,9 @@
       ]
     },
     {
-      "index": 429,
-      "text": "(ひとり)あっ ああ~",
-      "translation": "(번역 비활성화)",
+      "index": 428,
+      "text": "あっ ああ~",
+      "translation": "",
       "start_time": "00:19:51",
       "end_time": "00:19:53",
       "start_seconds": 1191,
@@ -9683,9 +9582,9 @@
       "grammar_matches": []
     },
     {
-      "index": 430,
-      "text": "(虹夏)大丈夫 (ひとり)あっ",
-      "translation": "(번역 비활성화)",
+      "index": 429,
+      "text": "大丈夫 (ひとり)あっ",
+      "translation": "",
       "start_time": "00:19:53",
       "end_time": "00:19:54",
       "start_seconds": 1193,
@@ -9695,9 +9594,9 @@
       "grammar_matches": []
     },
     {
-      "index": 431,
+      "index": 430,
       "text": "下手でも 楽しく弾くことだけは 心掛けよう",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:19:54",
       "end_time": "00:19:58",
       "start_seconds": 1194,
@@ -9730,9 +9629,9 @@
       ]
     },
     {
-      "index": 432,
+      "index": 431,
       "text": "音って ものすごく 感情が表れやすいから",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:19:58",
       "end_time": "00:20:01",
       "start_seconds": 1198,
@@ -9755,9 +9654,9 @@
       ]
     },
     {
-      "index": 433,
+      "index": 432,
       "text": "は... はい",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:20:02",
       "end_time": "00:20:03",
       "start_seconds": 1202,
@@ -9767,9 +9666,9 @@
       "grammar_matches": []
     },
     {
-      "index": 434,
+      "index": 433,
       "text": "技術を求めていくのは 次からで 全然いいよ",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:20:03",
       "end_time": "00:20:07",
       "start_seconds": 1203,
@@ -9820,9 +9719,9 @@
       ]
     },
     {
-      "index": 435,
-      "text": "(リョウ)うん",
-      "translation": "(번역 비활성화)",
+      "index": 434,
+      "text": "うん",
+      "translation": "",
       "start_time": "00:20:07",
       "end_time": "00:20:07",
       "start_seconds": 1207,
@@ -9832,9 +9731,9 @@
       "grammar_matches": []
     },
     {
-      "index": 436,
-      "text": "(ひとり)“次”って...",
-      "translation": "(번역 비활성화)",
+      "index": 435,
+      "text": "“次”って...",
+      "translation": "",
       "start_time": "00:20:08",
       "end_time": "00:20:09",
       "start_seconds": 1208,
@@ -9844,9 +9743,21 @@
       "grammar_matches": []
     },
     {
+      "index": 436,
+      "text": "よし 行こう!",
+      "translation": "",
+      "start_time": "00:20:09",
+      "end_time": "00:20:11",
+      "start_seconds": 1209,
+      "end_seconds": 1211,
+      "has_jlpt": false,
+      "vocab_matches": [],
+      "grammar_matches": []
+    },
+    {
       "index": 437,
-      "text": "(虹夏)よし 行こう!",
-      "translation": "(번역 비활성화)",
+      "text": "うん",
+      "translation": "",
       "start_time": "00:20:09",
       "end_time": "00:20:11",
       "start_seconds": 1209,
@@ -9857,20 +9768,8 @@
     },
     {
       "index": 438,
-      "text": "(リョウ)うん",
-      "translation": "(번역 비활성화)",
-      "start_time": "00:20:09",
-      "end_time": "00:20:11",
-      "start_seconds": 1209,
-      "end_seconds": 1211,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 439,
-      "text": "(ひとり)私...",
-      "translation": "(번역 비활성화)",
+      "text": "私...",
+      "translation": "",
       "start_time": "00:20:12",
       "end_time": "00:20:13",
       "start_seconds": 1212,
@@ -9880,9 +9779,9 @@
       "grammar_matches": []
     },
     {
-      "index": 440,
+      "index": 439,
       "text": "次も いていいんだ",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:20:13",
       "end_time": "00:20:15",
       "start_seconds": 1213,
@@ -9892,9 +9791,21 @@
       "grammar_matches": []
     },
     {
-      "index": 441,
+      "index": 440,
       "text": "はじめまして!",
-      "translation": "(번역 비활성화)",
+      "translation": "",
+      "start_time": "00:20:19",
+      "end_time": "00:20:21",
+      "start_seconds": 1219,
+      "end_seconds": 1221,
+      "has_jlpt": false,
+      "vocab_matches": [],
+      "grammar_matches": []
+    },
+    {
+      "index": 441,
+      "text": "結束バンドで~す!",
+      "translation": "",
       "start_time": "00:20:19",
       "end_time": "00:20:21",
       "start_seconds": 1219,
@@ -9905,20 +9816,8 @@
     },
     {
       "index": 442,
-      "text": "結束バンドで~す!",
-      "translation": "(번역 비활성화)",
-      "start_time": "00:20:19",
-      "end_time": "00:20:21",
-      "start_seconds": 1219,
-      "end_seconds": 1221,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 443,
       "text": "今日は みんなも多分 知ってる曲を何曲か やるので",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:20:22",
       "end_time": "00:20:25",
       "start_seconds": 1222,
@@ -9960,9 +9859,9 @@
       ]
     },
     {
-      "index": 444,
+      "index": 443,
       "text": "聴いてください!",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:20:25",
       "end_time": "00:20:26",
       "start_seconds": 1225,
@@ -9972,40 +9871,9 @@
       "grammar_matches": []
     },
     {
-      "index": 445,
-      "text": "(星歌(せいか))んだ?",
-      "translation": "(번역 비활성화)",
-      "start_time": "00:20:26",
-      "end_time": "00:20:27",
-      "start_seconds": 1226,
-      "end_seconds": 1227,
-      "has_jlpt": true,
-      "vocab_matches": [
-        {
-          "surface": "星",
-          "reading": "ほし",
-          "meaning": "별",
-          "level": "N3",
-          "surface_in_sentence": "星",
-          "base_form": "星",
-          "pos": "명사"
-        },
-        {
-          "surface": "歌",
-          "reading": "うた",
-          "meaning": "노래",
-          "level": "N3",
-          "surface_in_sentence": "歌",
-          "base_form": "歌",
-          "pos": "명사"
-        }
-      ],
-      "grammar_matches": []
-    },
-    {
-      "index": 446,
-      "text": "あれ",
-      "translation": "(번역 비활성화)",
+      "index": 444,
+      "text": ")んだ?",
+      "translation": "",
       "start_time": "00:20:26",
       "end_time": "00:20:27",
       "start_seconds": 1226,
@@ -10015,9 +9883,21 @@
       "grammar_matches": []
     },
     {
-      "index": 447,
-      "text": "(ひとり)いつもの実力 出せなくて 最悪だけど",
-      "translation": "(번역 비활성화)",
+      "index": 445,
+      "text": "あれ",
+      "translation": "",
+      "start_time": "00:20:26",
+      "end_time": "00:20:27",
+      "start_seconds": 1226,
+      "end_seconds": 1227,
+      "has_jlpt": false,
+      "vocab_matches": [],
+      "grammar_matches": []
+    },
+    {
+      "index": 446,
+      "text": "いつもの実力 出せなくて 最悪だけど",
+      "translation": "",
       "start_time": "00:20:37",
       "end_time": "00:20:41",
       "start_seconds": 1237,
@@ -10080,9 +9960,9 @@
       ]
     },
     {
-      "index": 448,
+      "index": 447,
       "text": "バンド組んで 誰かと演奏するのって",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:20:41",
       "end_time": "00:20:44",
       "start_seconds": 1241,
@@ -10120,9 +10000,9 @@
       "grammar_matches": []
     },
     {
-      "index": 449,
+      "index": 448,
       "text": "こんな楽しいんだ!",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:20:44",
       "end_time": "00:20:46",
       "start_seconds": 1244,
@@ -10142,9 +10022,9 @@
       "grammar_matches": []
     },
     {
-      "index": 450,
+      "index": 449,
       "text": "私 今日 最高に輝いて...",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:20:48",
       "end_time": "00:20:52",
       "start_seconds": 1248,
@@ -10173,9 +10053,9 @@
       "grammar_matches": []
     },
     {
-      "index": 451,
+      "index": 450,
       "text": "ない!",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:20:52",
       "end_time": "00:20:53",
       "start_seconds": 1252,
@@ -10185,9 +10065,9 @@
       "grammar_matches": []
     },
     {
-      "index": 452,
+      "index": 451,
       "text": "むしろ人生で 一番みじめかも!",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:20:53",
       "end_time": "00:20:56",
       "start_seconds": 1253,
@@ -10207,9 +10087,9 @@
       "grammar_matches": []
     },
     {
-      "index": 453,
+      "index": 452,
       "text": "ミスりまくった~",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:21:00",
       "end_time": "00:21:02",
       "start_seconds": 1260,
@@ -10219,9 +10099,9 @@
       "grammar_matches": []
     },
     {
-      "index": 454,
-      "text": "(リョウ)MC スベってたね (虹夏)エヘッ",
-      "translation": "(번역 비활성화)",
+      "index": 453,
+      "text": "MC スベってたね (虹夏)エヘッ",
+      "translation": "",
       "start_time": "00:21:02",
       "end_time": "00:21:04",
       "start_seconds": 1262,
@@ -10250,9 +10130,21 @@
       "grammar_matches": []
     },
     {
+      "index": 454,
+      "text": "あっ あの!",
+      "translation": "",
+      "start_time": "00:21:04",
+      "end_time": "00:21:05",
+      "start_seconds": 1264,
+      "end_seconds": 1265,
+      "has_jlpt": false,
+      "vocab_matches": [],
+      "grammar_matches": []
+    },
+    {
       "index": 455,
-      "text": "(ひとり)あっ あの!",
-      "translation": "(번역 비활성화)",
+      "text": "ん?",
+      "translation": "",
       "start_time": "00:21:04",
       "end_time": "00:21:05",
       "start_seconds": 1264,
@@ -10263,20 +10155,8 @@
     },
     {
       "index": 456,
-      "text": "(虹夏たち)ん?",
-      "translation": "(번역 비활성화)",
-      "start_time": "00:21:04",
-      "end_time": "00:21:05",
-      "start_seconds": 1264,
-      "end_seconds": 1265,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 457,
-      "text": "(虹夏)何?",
-      "translation": "(번역 비활성화)",
+      "text": "何?",
+      "translation": "",
       "start_time": "00:21:07",
       "end_time": "00:21:08",
       "start_seconds": 1267,
@@ -10286,9 +10166,9 @@
       "grammar_matches": []
     },
     {
-      "index": 458,
-      "text": "(ひとり)つつ つつつ... (虹夏)何?",
-      "translation": "(번역 비활성화)",
+      "index": 457,
+      "text": "つつ つつつ... (虹夏)何?",
+      "translation": "",
       "start_time": "00:21:08",
       "end_time": "00:21:11",
       "start_seconds": 1268,
@@ -10298,9 +10178,9 @@
       "grammar_matches": []
     },
     {
-      "index": 459,
+      "index": 458,
       "text": "怖いんだけど!",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:21:08",
       "end_time": "00:21:11",
       "start_seconds": 1268,
@@ -10320,9 +10200,9 @@
       "grammar_matches": []
     },
     {
-      "index": 460,
+      "index": 459,
       "text": "次のライブまでには クラスメイトに",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:21:12",
       "end_time": "00:21:14",
       "start_seconds": 1272,
@@ -10345,9 +10225,9 @@
       ]
     },
     {
-      "index": 461,
+      "index": 460,
       "text": "挨拶できるくらいには なっておきます!",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:21:14",
       "end_time": "00:21:16",
       "start_seconds": 1274,
@@ -10394,9 +10274,9 @@
       ]
     },
     {
-      "index": 462,
-      "text": "(虹夏)なんの宣言?",
-      "translation": "(번역 비활성화)",
+      "index": 461,
+      "text": "なんの宣言?",
+      "translation": "",
       "start_time": "00:21:17",
       "end_time": "00:21:18",
       "start_seconds": 1277,
@@ -10406,9 +10286,9 @@
       "grammar_matches": []
     },
     {
-      "index": 463,
-      "text": "(リョウ)目覚ましい成長",
-      "translation": "(번역 비활성화)",
+      "index": 462,
+      "text": "目覚ましい成長",
+      "translation": "",
       "start_time": "00:21:18",
       "end_time": "00:21:20",
       "start_seconds": 1278,
@@ -10428,9 +10308,9 @@
       "grammar_matches": []
     },
     {
-      "index": 464,
+      "index": 463,
       "text": "でも そっか... うん!",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:21:20",
       "end_time": "00:21:22",
       "start_seconds": 1280,
@@ -10440,9 +10320,9 @@
       "grammar_matches": []
     },
     {
-      "index": 465,
+      "index": 464,
       "text": "よ~し じゃあ今から",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:21:22",
       "end_time": "00:21:23",
       "start_seconds": 1282,
@@ -10452,9 +10332,9 @@
       "grammar_matches": []
     },
     {
-      "index": 466,
+      "index": 465,
       "text": "ぼっちちゃん歓迎会 兼 ライブの反省会だ~",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:21:23",
       "end_time": "00:21:26",
       "start_seconds": 1283,
@@ -10492,9 +10372,9 @@
       "grammar_matches": []
     },
     {
-      "index": 467,
+      "index": 466,
       "text": "あっ 今日は人と話し過ぎて 疲れたので帰りま~す",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:21:26",
       "end_time": "00:21:30",
       "start_seconds": 1286,
@@ -10559,9 +10439,21 @@
       "grammar_matches": []
     },
     {
+      "index": 467,
+      "text": "え?",
+      "translation": "",
+      "start_time": "00:21:30",
+      "end_time": "00:21:31",
+      "start_seconds": 1290,
+      "end_seconds": 1291,
+      "has_jlpt": false,
+      "vocab_matches": [],
+      "grammar_matches": []
+    },
+    {
       "index": 468,
-      "text": "(虹夏)え?",
-      "translation": "(번역 비활성화)",
+      "text": "ごめん 眠い",
+      "translation": "",
       "start_time": "00:21:30",
       "end_time": "00:21:31",
       "start_seconds": 1290,
@@ -10572,20 +10464,8 @@
     },
     {
       "index": 469,
-      "text": "(リョウ)ごめん 眠い",
-      "translation": "(번역 비활성화)",
-      "start_time": "00:21:30",
-      "end_time": "00:21:31",
-      "start_seconds": 1290,
-      "end_seconds": 1291,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 470,
-      "text": "(虹夏)えっ?",
-      "translation": "(번역 비활성화)",
+      "text": "えっ?",
+      "translation": "",
       "start_time": "00:21:31",
       "end_time": "00:21:32",
       "start_seconds": 1291,
@@ -10595,9 +10475,9 @@
       "grammar_matches": []
     },
     {
-      "index": 471,
-      "text": "(ひとり)しし... 失礼します!",
-      "translation": "(번역 비활성화)",
+      "index": 470,
+      "text": "しし... 失礼します!",
+      "translation": "",
       "start_time": "00:21:32",
       "end_time": "00:21:33",
       "start_seconds": 1292,
@@ -10617,9 +10497,9 @@
       "grammar_matches": []
     },
     {
-      "index": 472,
-      "text": "(走り去る音) (虹夏)あっ... ええっ!",
-      "translation": "(번역 비활성화)",
+      "index": 471,
+      "text": "あっ... ええっ!",
+      "translation": "",
       "start_time": "00:21:33",
       "end_time": "00:21:34",
       "start_seconds": 1293,
@@ -10629,9 +10509,9 @@
       "grammar_matches": []
     },
     {
-      "index": 473,
-      "text": "(虹夏)結束力 全然ないっ!",
-      "translation": "(번역 비활성화)",
+      "index": 472,
+      "text": "結束力 全然ないっ!",
+      "translation": "",
       "start_time": "00:21:38",
       "end_time": "00:21:41",
       "start_seconds": 1298,
@@ -10660,9 +10540,9 @@
       "grammar_matches": []
     },
     {
-      "index": 474,
-      "text": "(ひとり)絶対 コミュ症 治して",
-      "translation": "(번역 비활성화)",
+      "index": 473,
+      "text": "絶対 コミュ症 治して",
+      "translation": "",
       "start_time": "00:21:49",
       "end_time": "00:21:51",
       "start_seconds": 1309,
@@ -10691,9 +10571,9 @@
       "grammar_matches": []
     },
     {
-      "index": 475,
+      "index": 474,
       "text": "ギターヒーローの私としての 力を発揮するんだ",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:21:51",
       "end_time": "00:21:54",
       "start_seconds": 1311,
@@ -10716,9 +10596,9 @@
       ]
     },
     {
-      "index": 476,
+      "index": 475,
       "text": "虹夏ちゃん リョウさん 結束バンドのために!",
-      "translation": "(번역 비활성화)",
+      "translation": "",
       "start_time": "00:21:56",
       "end_time": "00:22:01",
       "start_seconds": 1316,
@@ -10753,9 +10633,21 @@
       ]
     },
     {
+      "index": 476,
+      "text": "すす... すいません!",
+      "translation": "",
+      "start_time": "00:22:02",
+      "end_time": "00:22:04",
+      "start_seconds": 1322,
+      "end_seconds": 1324,
+      "has_jlpt": false,
+      "vocab_matches": [],
+      "grammar_matches": []
+    },
+    {
       "index": 477,
-      "text": "(ひとり)すす... すいません!",
-      "translation": "(번역 비활성화)",
+      "text": "すいません!",
+      "translation": "",
       "start_time": "00:22:02",
       "end_time": "00:22:04",
       "start_seconds": 1322,
@@ -10766,20 +10658,8 @@
     },
     {
       "index": 478,
-      "text": "すいません!",
-      "translation": "(번역 비활성화)",
-      "start_time": "00:22:02",
-      "end_time": "00:22:04",
-      "start_seconds": 1322,
-      "end_seconds": 1324,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 479,
-      "text": "(ひとり)見てください!",
-      "translation": "(번역 비활성화)",
+      "text": "見てください!",
+      "translation": "",
       "start_time": "00:23:38",
       "end_time": "00:23:39",
       "start_seconds": 1418,

@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import re
 import shutil
 from pathlib import Path
 
@@ -14,6 +15,28 @@ INPUT_DIR = BASE_DIR / "input_script"
 SOURCE_DIR = BASE_DIR / "site_src"
 OUTPUT_DIR = BASE_DIR / "site"
 SYNC_OVERRIDES_FILE = BASE_DIR / "web_sync_offsets.json"
+SPEAKER_PREFIX_RE = re.compile(
+    r"^[\s\u3000]*(?:[\(\[（【《〈≪][^)\]）】》〉≫]{1,24}[\)\]）】》〉≫][\s\u3000]*)+"
+)
+
+
+def strip_speaker_prefix(text: str) -> str:
+    cleaned = SPEAKER_PREFIX_RE.sub("", text).strip()
+    return cleaned or text.strip()
+
+
+def clean_translation(text: str) -> str:
+    value = str(text or "").strip()
+    if not value:
+        return ""
+    blocked_markers = [
+        "번역 비활성화",
+        "자동 번역 실패",
+        "ConnectionError",
+    ]
+    if any(marker in value for marker in blocked_markers):
+        return ""
+    return value
 
 
 def load_sync_overrides() -> dict[str, int]:
@@ -73,16 +96,25 @@ def build_show_payload(
 ) -> dict:
     raw_lines = engine.parse_srt(path)
     split_lines = engine.split_sentences(raw_lines)
-    unique_lines = list(dict.fromkeys((line.text, line.start_time, line.end_time) for line in split_lines))
+    cleaned_lines = [
+        engine.SubtitleLine(strip_speaker_prefix(line.text), line.start_time, line.end_time)
+        for line in split_lines
+        if strip_speaker_prefix(line.text)
+    ]
+    unique_lines = list(dict.fromkeys((line.text, line.start_time, line.end_time) for line in cleaned_lines))
     subtitle_lines = [engine.SubtitleLine(text, start, end) for text, start, end in unique_lines]
 
     if translator is None:
-        translation_map = {line.text: "(번역 비활성화)" for line in subtitle_lines}
+        translation_map = {line.text: "" for line in subtitle_lines}
     else:
-        translation_map = engine.translate_sentences(
+        raw_translation_map = engine.translate_sentences(
             [line.text for line in subtitle_lines],
             translator,
         )
+        translation_map = {
+            sentence: clean_translation(translated)
+            for sentence, translated in raw_translation_map.items()
+        }
 
     sentences = []
     relevant_sentence_count = 0
@@ -110,7 +142,7 @@ def build_show_payload(
             {
                 "index": index,
                 "text": line.text,
-                "translation": translation_map.get(line.text, "(번역 없음)"),
+                "translation": clean_translation(translation_map.get(line.text, "")),
                 "start_time": line.start_time,
                 "end_time": line.end_time,
                 "start_seconds": engine.seconds_from_hhmmss(line.start_time),
@@ -126,7 +158,6 @@ def build_show_payload(
         "id": show_id,
         "title": path.stem,
         "file_name": path.name,
-        "base_sync_offset_seconds": int(sync_overrides.get(path.name, sync_overrides.get(show_id, 0))),
         "duration_seconds": max((item["end_seconds"] for item in sentences), default=0),
         "sentence_count": len(sentences),
         "relevant_sentence_count": relevant_sentence_count,
@@ -185,7 +216,6 @@ def build_site(
                 "id": payload["id"],
                 "title": payload["title"],
                 "file_name": payload["file_name"],
-                "base_sync_offset_seconds": payload["base_sync_offset_seconds"],
                 "duration_seconds": payload["duration_seconds"],
                 "sentence_count": payload["sentence_count"],
                 "relevant_sentence_count": payload["relevant_sentence_count"],

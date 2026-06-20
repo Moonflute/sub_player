@@ -18,8 +18,6 @@ const els = {
   seekForward: document.getElementById("seek-forward"),
   rotateToggle: document.getElementById("rotate-toggle"),
   playerStage: document.getElementById("player-stage"),
-  saveSync: document.getElementById("save-sync"),
-  syncInput: document.getElementById("sync-input"),
   showTitle: document.getElementById("show-title"),
   currentTime: document.getElementById("current-time"),
   currentSentence: document.getElementById("current-sentence"),
@@ -31,7 +29,6 @@ const els = {
   timeline: document.getElementById("timeline"),
   timelinePosition: document.getElementById("timeline-position"),
   timelineDuration: document.getElementById("timeline-duration"),
-  saveHint: document.getElementById("save-hint"),
 };
 
 function formatTime(totalSeconds) {
@@ -49,25 +46,8 @@ function escapeHtml(text) {
     .replaceAll(">", "&gt;");
 }
 
-function syncStorageKey(showId) {
-  return `jlpt-subtitle-sync:${showId}`;
-}
-
-function effectiveSyncOffset(show) {
-  if (!show) return 0;
-  const saved = localStorage.getItem(syncStorageKey(show.id));
-  if (saved === null) {
-    return Number(show.base_sync_offset_seconds || 0);
-  }
-  return Number(saved || 0);
-}
-
-function activeSyncOffset(show) {
-  if (!show) return 0;
-  if (state.currentShow?.id === show.id) {
-    return Number(els.syncInput.value || effectiveSyncOffset(show));
-  }
-  return effectiveSyncOffset(show);
+function activeSyncOffset() {
+  return 0;
 }
 
 function setScreen(mode) {
@@ -177,7 +157,7 @@ function findUpcomingPoint(show, currentTime) {
 
 function renderList(container, items, formatter) {
   if (!items || items.length === 0) {
-    container.innerHTML = '<div class="empty-copy">표시할 내용이 없습니다.</div>';
+    container.innerHTML = "";
     return;
   }
   container.innerHTML = items.map(formatter).join("");
@@ -208,8 +188,8 @@ function renderCurrentState() {
     els.nextCountdown.textContent = `${Math.max(0, Math.ceil(secondsLeft))}초 뒤`;
     els.nextPreview.textContent = upcoming.text;
   } else {
-    els.nextCountdown.textContent = "마지막";
-    els.nextPreview.textContent = "이후에는 새 JLPT 포인트가 없습니다.";
+    els.nextCountdown.textContent = "";
+    els.nextPreview.textContent = "";
   }
 }
 
@@ -294,17 +274,6 @@ async function loadShow(showId) {
   const payload = await fetchJson(`./data/shows/${showId}.json`);
   state.currentShow = payload;
   state.currentTime = 0;
-  els.syncInput.value = String(effectiveSyncOffset(payload));
-  els.saveHint.textContent = "이 기기 브라우저에 저장됩니다.";
-  syncTimelineBounds();
-  renderCurrentState();
-}
-
-function saveSync() {
-  if (!state.currentShow) return;
-  const offsetSeconds = Number(els.syncInput.value || 0);
-  localStorage.setItem(syncStorageKey(state.currentShow.id), String(offsetSeconds));
-  els.saveHint.textContent = `${offsetSeconds >= 0 ? "+" : ""}${offsetSeconds}초로 저장했습니다.`;
   syncTimelineBounds();
   renderCurrentState();
 }
@@ -336,22 +305,6 @@ function bindEvents() {
     state.currentTime = Number(els.timeline.value || 0);
     renderCurrentState();
   });
-
-  for (const button of document.querySelectorAll(".sync-adjust")) {
-    button.addEventListener("click", () => {
-      const delta = Number(button.dataset.delta || 0);
-      els.syncInput.value = String(Number(els.syncInput.value || 0) + delta);
-      syncTimelineBounds();
-      renderCurrentState();
-    });
-  }
-
-  els.syncInput.addEventListener("input", () => {
-    syncTimelineBounds();
-    renderCurrentState();
-  });
-
-  els.saveSync.addEventListener("click", saveSync);
 }
 
 async function main() {

@@ -15,8 +15,8 @@
   --radius-lg: 28px;
   --radius-md: 22px;
   --radius-sm: 16px;
-  --font-head: "Segoe UI", "Malgun Gothic", sans-serif;
-  --font-body: "Segoe UI", "Malgun Gothic", sans-serif;
+  --font-head: "BIZ UDPGothic", "Yu Gothic UI", "Hiragino Sans", "Meiryo", "Malgun Gothic", sans-serif;
+  --font-body: "BIZ UDPGothic", "Yu Gothic UI", "Hiragino Sans", "Meiryo", "Malgun Gothic", sans-serif;
 }
 
 * {
@@ -146,12 +146,12 @@ input {
 }
 
 .screen-player {
-  padding: 14px 14px 20px;
+  padding: 10px 10px 16px;
 }
 
 .player-stage {
   min-height: calc(100vh - 28px);
-  padding: 16px;
+  padding: 16px 18px 18px;
   border: 1px solid var(--line);
   border-radius: 34px;
   background: var(--paper);
@@ -235,32 +235,36 @@ input {
   align-content: center;
   justify-items: center;
   text-align: center;
-  gap: 10px;
+  gap: 12px;
   min-height: 0;
 }
 
 .current-sentence {
-  width: min(100%, 920px);
+  width: 100%;
+  max-width: 1560px;
   font-family: var(--font-head);
-  font-size: clamp(2rem, 5vw, 4.2rem);
-  line-height: 1.32;
+  font-size: clamp(1.5rem, 3.6vw, 3rem);
+  line-height: 1.18;
   font-weight: 800;
   letter-spacing: -0.03em;
   white-space: pre-wrap;
+  word-break: keep-all;
+  overflow-wrap: normal;
 }
 
 .current-translation {
-  width: min(100%, 760px);
-  color: #8d9098;
-  font-size: clamp(1.02rem, 2vw, 1.28rem);
-  line-height: 1.7;
+  width: 100%;
+  max-width: 1280px;
+  color: #7d828d;
+  font-size: clamp(0.96rem, 2vw, 1.5rem);
+  line-height: 1.55;
 }
 
 .next-point-inline {
   margin-top: 2px;
-  max-width: 720px;
+  max-width: 980px;
   color: var(--muted-soft);
-  font-size: 0.74rem;
+  font-size: 0.65rem;
   line-height: 1.55;
 }
 
@@ -292,12 +296,13 @@ input {
 .detail-card__content {
   margin-top: 10px;
   display: grid;
-  gap: 12px;
+  gap: 10px;
+  min-height: 1.5rem;
 }
 
 .match-entry {
-  font-size: clamp(1.08rem, 1.9vw, 1.38rem);
-  line-height: 1.6;
+  font-size: clamp(1.22rem, 2vw, 1.58rem);
+  line-height: 1.45;
 }
 
 .controls-wrap {
@@ -377,47 +382,6 @@ input {
   font-size: 0.85rem;
 }
 
-.sync-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-}
-
-.sync-wrap__label {
-  color: var(--muted);
-  font-size: 0.86rem;
-  font-weight: 700;
-}
-
-.sync-adjust,
-.sync-save,
-#sync-input {
-  height: 38px;
-  border-radius: 999px;
-}
-
-.sync-adjust,
-.sync-save {
-  padding: 0 14px;
-  font-weight: 700;
-}
-
-#sync-input {
-  width: 82px;
-  padding: 0 12px;
-  border: 1px solid var(--line);
-  text-align: center;
-  background: #fff;
-}
-
-.save-hint {
-  text-align: center;
-  color: var(--muted-soft);
-  font-size: 0.76rem;
-}
-
 .hl-vocab-n3,
 .hl-vocab-n4,
 .hl-vocab-n5,
@@ -453,6 +417,15 @@ input {
     min-height: calc(100vh - 16px);
     padding: 14px;
     border-radius: 24px;
+  }
+
+  .current-sentence {
+    font-size: clamp(1.35rem, 8vw, 2.1rem);
+    line-height: 1.22;
+  }
+
+  .current-translation {
+    font-size: clamp(0.9rem, 4.8vw, 1.15rem);
   }
 
   .details-grid {
