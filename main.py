@@ -806,7 +806,7 @@ def analyze_sentence(
             if not key:
                 continue
             for entry in vocab_index.get(key, []):
-                dedupe_key = (entry.surface, entry.meaning)
+                dedupe_key = (entry.surface, entry.reading)
                 if dedupe_key in seen_vocab:
                     continue
                 seen_vocab.add(dedupe_key)

@@ -129,15 +129,6 @@
           "surface_in_sentence": "悩ん",
           "base_form": "悩む",
           "pos": "동사"
-        },
-        {
-          "surface": "悩む",
-          "reading": "なやむ",
-          "meaning": "고민하다",
-          "level": "N3",
-          "surface_in_sentence": "悩ん",
-          "base_form": "悩む",
-          "pos": "동사"
         }
       ],
       "grammar_matches": [
@@ -899,15 +890,6 @@
           "surface_in_sentence": "組ん",
           "base_form": "組む",
           "pos": "동사"
-        },
-        {
-          "surface": "組む",
-          "reading": "くむ",
-          "meaning": "짜다",
-          "level": "N3",
-          "surface_in_sentence": "組ん",
-          "base_form": "組む",
-          "pos": "동사"
         }
       ],
       "grammar_matches": []
@@ -1015,15 +997,6 @@
           "surface_in_sentence": "決め",
           "base_form": "決める",
           "pos": "동사"
-        },
-        {
-          "surface": "決める",
-          "reading": "きめる",
-          "meaning": "정하다",
-          "level": "N3",
-          "surface_in_sentence": "決め",
-          "base_form": "決める",
-          "pos": "동사"
         }
       ],
       "grammar_matches": []
@@ -1073,15 +1046,6 @@
           "surface": "組む",
           "reading": "くむ",
           "meaning": "짜다, 끼다",
-          "level": "N3",
-          "surface_in_sentence": "組ん",
-          "base_form": "組む",
-          "pos": "동사"
-        },
-        {
-          "surface": "組む",
-          "reading": "くむ",
-          "meaning": "짜다",
           "level": "N3",
           "surface_in_sentence": "組ん",
           "base_form": "組む",
@@ -1724,15 +1688,6 @@
           "surface_in_sentence": "たつ",
           "base_form": "たつ",
           "pos": "동사"
-        },
-        {
-          "surface": "経つ",
-          "reading": "たつ",
-          "meaning": "(시간이) 지나다",
-          "level": "N3",
-          "surface_in_sentence": "たつ",
-          "base_form": "たつ",
-          "pos": "동사"
         }
       ],
       "grammar_matches": []
@@ -1787,15 +1742,6 @@
           "surface": "最近",
           "reading": "さいきん",
           "meaning": "최근",
-          "level": "N3",
-          "surface_in_sentence": "最近",
-          "base_form": "最近",
-          "pos": "명사"
-        },
-        {
-          "surface": "最近",
-          "reading": "さいきん",
-          "meaning": "요즘, 최근",
           "level": "N3",
           "surface_in_sentence": "最近",
           "base_form": "最近",
@@ -2031,15 +1977,6 @@
           "surface": "組む",
           "reading": "くむ",
           "meaning": "짜다, 끼다",
-          "level": "N3",
-          "surface_in_sentence": "組ん",
-          "base_form": "組む",
-          "pos": "동사"
-        },
-        {
-          "surface": "組む",
-          "reading": "くむ",
-          "meaning": "짜다",
           "level": "N3",
           "surface_in_sentence": "組ん",
           "base_form": "組む",
@@ -3081,15 +3018,6 @@
           "surface_in_sentence": "遅れ",
           "base_form": "遅れる",
           "pos": "동사"
-        },
-        {
-          "surface": "遅れる",
-          "reading": "おくれる",
-          "meaning": "늦다",
-          "level": "N3",
-          "surface_in_sentence": "遅れ",
-          "base_form": "遅れる",
-          "pos": "동사"
         }
       ],
       "grammar_matches": []
@@ -3388,15 +3316,6 @@
           "surface_in_sentence": "いきなり",
           "base_form": "いきなり",
           "pos": "부사"
-        },
-        {
-          "surface": "いきなり",
-          "reading": "いきなり",
-          "meaning": "갑자기, 느닷없이",
-          "level": "N3",
-          "surface_in_sentence": "いきなり",
-          "base_form": "いきなり",
-          "pos": "부사"
         }
       ],
       "grammar_matches": []
@@ -3470,15 +3389,6 @@
           "surface": "いきなり",
           "reading": "いきなり",
           "meaning": "갑자기",
-          "level": "N3",
-          "surface_in_sentence": "いきなり",
-          "base_form": "いきなり",
-          "pos": "부사"
-        },
-        {
-          "surface": "いきなり",
-          "reading": "いきなり",
-          "meaning": "갑자기, 느닷없이",
           "level": "N3",
           "surface_in_sentence": "いきなり",
           "base_form": "いきなり",
@@ -3704,15 +3614,6 @@
           "surface": "暮れ",
           "reading": "くれ",
           "meaning": "해질녘",
-          "level": "N3",
-          "surface_in_sentence": "くれ",
-          "base_form": "くれる",
-          "pos": "동사"
-        },
-        {
-          "surface": "暮れ",
-          "reading": "くれ",
-          "meaning": "연말, 저녁 때",
           "level": "N3",
           "surface_in_sentence": "くれ",
           "base_form": "くれる",
@@ -4097,15 +3998,6 @@
           "surface_in_sentence": "いつも",
           "base_form": "いつも",
           "pos": "부사"
-        },
-        {
-          "surface": "いつも",
-          "reading": "いつも",
-          "meaning": "언제나",
-          "level": "N3",
-          "surface_in_sentence": "いつも",
-          "base_form": "いつも",
-          "pos": "부사"
         }
       ],
       "grammar_matches": [
@@ -4471,27 +4363,9 @@
           "pos": "부사"
         },
         {
-          "surface": "いつも",
-          "reading": "いつも",
-          "meaning": "언제나",
-          "level": "N3",
-          "surface_in_sentence": "いつも",
-          "base_form": "いつも",
-          "pos": "부사"
-        },
-        {
           "surface": "最後",
           "reading": "さいご",
           "meaning": "최후",
-          "level": "N3",
-          "surface_in_sentence": "最後",
-          "base_form": "最後",
-          "pos": "명사"
-        },
-        {
-          "surface": "最後",
-          "reading": "さいご",
-          "meaning": "마지막, 최후",
           "level": "N3",
           "surface_in_sentence": "最後",
           "base_form": "最後",
@@ -4761,15 +4635,6 @@
           "surface_in_sentence": "頼む",
           "base_form": "頼む",
           "pos": "동사"
-        },
-        {
-          "surface": "頼む",
-          "reading": "たのむ",
-          "meaning": "의뢰하다",
-          "level": "N3",
-          "surface_in_sentence": "頼む",
-          "base_form": "頼む",
-          "pos": "동사"
         }
       ],
       "grammar_matches": [
@@ -4810,15 +4675,6 @@
           "surface": "頼む",
           "reading": "たのむ",
           "meaning": "부탁하다",
-          "level": "N3",
-          "surface_in_sentence": "頼む",
-          "base_form": "頼む",
-          "pos": "동사"
-        },
-        {
-          "surface": "頼む",
-          "reading": "たのむ",
-          "meaning": "의뢰하다",
           "level": "N3",
           "surface_in_sentence": "頼む",
           "base_form": "頼む",
@@ -4923,15 +4779,6 @@
           "surface": "落ち着く",
           "reading": "おちつく",
           "meaning": "침착하다",
-          "level": "N3",
-          "surface_in_sentence": "落ち着く",
-          "base_form": "落ち着く",
-          "pos": "동사"
-        },
-        {
-          "surface": "落ち着く",
-          "reading": "おちつく",
-          "meaning": "침착하다, 안정되다",
           "level": "N3",
           "surface_in_sentence": "落ち着く",
           "base_form": "落ち着く",
@@ -6792,24 +6639,6 @@
           "surface_in_sentence": "覚え",
           "base_form": "覚える",
           "pos": "동사"
-        },
-        {
-          "surface": "覚える",
-          "reading": "おぼえる",
-          "meaning": "외우다",
-          "level": "N3",
-          "surface_in_sentence": "覚え",
-          "base_form": "覚える",
-          "pos": "동사"
-        },
-        {
-          "surface": "覚える",
-          "reading": "おぼえる",
-          "meaning": "기억하다, 외우다",
-          "level": "N3",
-          "surface_in_sentence": "覚え",
-          "base_form": "覚える",
-          "pos": "동사"
         }
       ],
       "grammar_matches": [
@@ -7458,15 +7287,6 @@
           "surface_in_sentence": "組み",
           "base_form": "組む",
           "pos": "동사"
-        },
-        {
-          "surface": "組む",
-          "reading": "くむ",
-          "meaning": "짜다",
-          "level": "N3",
-          "surface_in_sentence": "組み",
-          "base_form": "組む",
-          "pos": "동사"
         }
       ],
       "grammar_matches": [
@@ -7641,15 +7461,6 @@
           "pos": "명사"
         },
         {
-          "surface": "大体",
-          "reading": "だいたい",
-          "meaning": "대략, 대개",
-          "level": "N3",
-          "surface_in_sentence": "大体",
-          "base_form": "大体",
-          "pos": "명사"
-        },
-        {
           "surface": "線",
           "reading": "せん",
           "meaning": "선",
@@ -7731,15 +7542,6 @@
           "surface": "組む",
           "reading": "くむ",
           "meaning": "짜다, 끼다",
-          "level": "N3",
-          "surface_in_sentence": "組む",
-          "base_form": "組む",
-          "pos": "동사"
-        },
-        {
-          "surface": "組む",
-          "reading": "くむ",
-          "meaning": "짜다",
           "level": "N3",
           "surface_in_sentence": "組む",
           "base_form": "組む",
@@ -7994,15 +7796,6 @@
           "surface": "上がる",
           "reading": "あがる",
           "meaning": "오르다",
-          "level": "N3",
-          "surface_in_sentence": "上がっ",
-          "base_form": "上がる",
-          "pos": "동사"
-        },
-        {
-          "surface": "上がる",
-          "reading": "あがる",
-          "meaning": "(비가) 그치다",
           "level": "N3",
           "surface_in_sentence": "上がっ",
           "base_form": "上がる",
@@ -8301,15 +8094,6 @@
           "surface_in_sentence": "たっ",
           "base_form": "たつ",
           "pos": "동사"
-        },
-        {
-          "surface": "経つ",
-          "reading": "たつ",
-          "meaning": "(시간이) 지나다",
-          "level": "N3",
-          "surface_in_sentence": "たっ",
-          "base_form": "たつ",
-          "pos": "동사"
         }
       ],
       "grammar_matches": [
@@ -8561,15 +8345,6 @@
           "surface_in_sentence": "くれ",
           "base_form": "くれる",
           "pos": "동사"
-        },
-        {
-          "surface": "暮れ",
-          "reading": "くれ",
-          "meaning": "연말, 저녁 때",
-          "level": "N3",
-          "surface_in_sentence": "くれ",
-          "base_form": "くれる",
-          "pos": "동사"
         }
       ],
       "grammar_matches": []
@@ -8588,15 +8363,6 @@
           "surface": "暮れ",
           "reading": "くれ",
           "meaning": "해질녘",
-          "level": "N3",
-          "surface_in_sentence": "くれ",
-          "base_form": "くれる",
-          "pos": "동사"
-        },
-        {
-          "surface": "暮れ",
-          "reading": "くれ",
-          "meaning": "연말, 저녁 때",
           "level": "N3",
           "surface_in_sentence": "くれ",
           "base_form": "くれる",
@@ -8921,15 +8687,6 @@
           "surface": "いつも",
           "reading": "いつも",
           "meaning": "항상, 늘",
-          "level": "N3",
-          "surface_in_sentence": "いつも",
-          "base_form": "いつも",
-          "pos": "부사"
-        },
-        {
-          "surface": "いつも",
-          "reading": "いつも",
-          "meaning": "언제나",
           "level": "N3",
           "surface_in_sentence": "いつも",
           "base_form": "いつも",
@@ -9920,15 +9677,6 @@
           "pos": "부사"
         },
         {
-          "surface": "いつも",
-          "reading": "いつも",
-          "meaning": "언제나",
-          "level": "N3",
-          "surface_in_sentence": "いつも",
-          "base_form": "いつも",
-          "pos": "부사"
-        },
-        {
           "surface": "実力",
           "reading": "じつりょく",
           "meaning": "실력",
@@ -9988,15 +9736,6 @@
           "surface": "組む",
           "reading": "くむ",
           "meaning": "짜다, 끼다",
-          "level": "N3",
-          "surface_in_sentence": "組ん",
-          "base_form": "組む",
-          "pos": "동사"
-        },
-        {
-          "surface": "組む",
-          "reading": "くむ",
-          "meaning": "짜다",
           "level": "N3",
           "surface_in_sentence": "組ん",
           "base_form": "組む",
@@ -10118,15 +9857,6 @@
           "surface": "種",
           "reading": "たね",
           "meaning": "종자, 씨",
-          "level": "N3",
-          "surface_in_sentence": "たね",
-          "base_form": "たね",
-          "pos": "명사"
-        },
-        {
-          "surface": "種",
-          "reading": "たね",
-          "meaning": "씨",
           "level": "N3",
           "surface_in_sentence": "たね",
           "base_form": "たね",
@@ -10409,15 +10139,6 @@
           "surface": "疲れる",
           "reading": "つかれる",
           "meaning": "지치다",
-          "level": "N3",
-          "surface_in_sentence": "疲れ",
-          "base_form": "疲れる",
-          "pos": "동사"
-        },
-        {
-          "surface": "疲れる",
-          "reading": "つかれる",
-          "meaning": "피로하다",
           "level": "N3",
           "surface_in_sentence": "疲れ",
           "base_form": "疲れる",
