@@ -170,7 +170,7 @@ function buildAnnotations(sentence) {
 
   for (const item of sentence.vocab_matches || []) {
     const anchor = item.surface_in_sentence || item.surface;
-    const key = `v:${anchor}:${item.reading}:${item.meaning}`;
+    const key = `v:${anchor}:${item.surface}:${item.reading}`;
     if (!anchor || seen.has(key)) continue;
     seen.add(key);
     annotations.push({
@@ -182,14 +182,17 @@ function buildAnnotations(sentence) {
     });
   }
 
+  const grammarSeenByAnchor = new Set();
   for (const item of sentence.grammar_matches || []) {
     const anchor = (item.matched_texts && item.matched_texts[0]) || item.label;
-    const key = `g:${anchor}:${item.label}:${item.meaning}`;
-    if (!anchor || seen.has(key)) continue;
+    const normalizedAnchor = String(anchor || "").trim();
+    const key = `g:${normalizedAnchor}`;
+    if (!normalizedAnchor || grammarSeenByAnchor.has(key) || seen.has(key)) continue;
+    grammarSeenByAnchor.add(key);
     seen.add(key);
     annotations.push({
       kind: item.is_pattern ? "pattern" : "grammar",
-      anchor,
+      anchor: normalizedAnchor,
       ruby: "",
       detail: `${item.label} : ${item.meaning}`,
       level: (item.level || "n5").toLowerCase(),
