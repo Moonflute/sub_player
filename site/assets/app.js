@@ -16,15 +16,13 @@ const els = {
   playIcon: document.getElementById("play-icon"),
   seekBackward: document.getElementById("seek-backward"),
   seekForward: document.getElementById("seek-forward"),
-  playerStage: document.getElementById("player-stage"),
   showTitle: document.getElementById("show-title"),
   currentTime: document.getElementById("current-time"),
   currentSentence: document.getElementById("current-sentence"),
   currentTranslation: document.getElementById("current-translation"),
-  currentVocab: document.getElementById("current-vocab"),
-  currentGrammar: document.getElementById("current-grammar"),
   nextCountdown: document.getElementById("next-countdown"),
   nextPreview: document.getElementById("next-preview"),
+  annotationRail: document.getElementById("annotation-rail"),
   timeline: document.getElementById("timeline"),
   timelinePosition: document.getElementById("timeline-position"),
   timelineDuration: document.getElementById("timeline-duration"),
@@ -43,10 +41,6 @@ function escapeHtml(text) {
     .replaceAll("&", "&amp;")
     .replaceAll("<", "&lt;")
     .replaceAll(">", "&gt;");
-}
-
-function activeSyncOffset() {
-  return 0;
 }
 
 function setScreen(mode) {
@@ -85,6 +79,7 @@ function buildHighlightMap(sentence) {
   if (!sentence) return [];
 
   const highlights = [];
+
   for (const item of sentence.vocab_matches || []) {
     const text = item.surface_in_sentence || item.surface;
     if (!text) continue;
@@ -93,6 +88,7 @@ function buildHighlightMap(sentence) {
       className: `hl-vocab-${(item.level || "n5").toLowerCase()}`,
     });
   }
+
   for (const item of sentence.grammar_matches || []) {
     for (const text of item.matched_texts || []) {
       if (!text) continue;
@@ -131,9 +127,7 @@ function buildHighlightRanges(sentence) {
 }
 
 function renderHighlightedSentence(sentence) {
-  if (!sentence) {
-    return "";
-  }
+  if (!sentence) return "";
 
   const text = sentence.text || "";
   const ranges = buildHighlightRanges(sentence);
@@ -158,28 +152,70 @@ function renderHighlightedSentence(sentence) {
 
 function findCurrentSentence(show, currentTime) {
   if (!show) return null;
-  const offset = activeSyncOffset(show);
   return show.sentences.find((sentence) => {
-    const start = sentence.start_seconds + offset;
-    const end = sentence.end_seconds + offset;
-    return currentTime >= start && currentTime <= end;
+    return currentTime >= sentence.start_seconds && currentTime <= sentence.end_seconds;
   }) || null;
 }
 
 function findUpcomingPoint(show, currentTime) {
   if (!show) return null;
-  const offset = activeSyncOffset(show);
-  return show.sentences.find(
-    (sentence) => sentence.has_jlpt && sentence.start_seconds + offset > currentTime,
-  ) || null;
+  return show.sentences.find((sentence) => sentence.has_jlpt && sentence.start_seconds > currentTime) || null;
 }
 
-function renderList(container, items, formatter) {
-  if (!items || items.length === 0) {
-    container.innerHTML = "";
+function buildAnnotations(sentence) {
+  if (!sentence) return [];
+
+  const annotations = [];
+  const seen = new Set();
+
+  for (const item of sentence.vocab_matches || []) {
+    const anchor = item.surface_in_sentence || item.surface;
+    const key = `v:${anchor}:${item.reading}:${item.meaning}`;
+    if (!anchor || seen.has(key)) continue;
+    seen.add(key);
+    annotations.push({
+      kind: "vocab",
+      anchor,
+      ruby: item.reading || "",
+      detail: `${item.surface}${item.reading ? ` (${item.reading})` : ""} : ${item.meaning}`,
+      level: (item.level || "n5").toLowerCase(),
+    });
+  }
+
+  for (const item of sentence.grammar_matches || []) {
+    const anchor = (item.matched_texts && item.matched_texts[0]) || item.label;
+    const key = `g:${anchor}:${item.label}:${item.meaning}`;
+    if (!anchor || seen.has(key)) continue;
+    seen.add(key);
+    annotations.push({
+      kind: item.is_pattern ? "pattern" : "grammar",
+      anchor,
+      ruby: "",
+      detail: `${item.label} : ${item.meaning}`,
+      level: (item.level || "n5").toLowerCase(),
+    });
+  }
+
+  return annotations.slice(0, 6);
+}
+
+function renderAnnotations(sentence) {
+  const annotations = buildAnnotations(sentence);
+  if (annotations.length === 0) {
+    els.annotationRail.innerHTML = "";
     return;
   }
-  container.innerHTML = items.map(formatter).join("");
+
+  els.annotationRail.innerHTML = annotations.map((item) => `
+    <div class="annotation annotation--${item.kind}">
+      <div class="annotation__anchor-wrap">
+        <div class="annotation__ruby ${item.ruby ? "" : "annotation__ruby--empty"}">${escapeHtml(item.ruby || ".")}</div>
+        <div class="annotation__anchor annotation__anchor--${item.kind} annotation__anchor--${item.level}">${escapeHtml(item.anchor)}</div>
+      </div>
+      <div class="annotation__line" aria-hidden="true"></div>
+      <div class="annotation__detail">${escapeHtml(item.detail)}</div>
+    </div>
+  `).join("");
 }
 
 function renderCurrentState() {
@@ -191,19 +227,11 @@ function renderCurrentState() {
   els.timelinePosition.textContent = formatTime(state.currentTime);
   els.currentSentence.innerHTML = renderHighlightedSentence(currentSentence);
   els.currentTranslation.textContent = currentSentence?.translation || "";
-
-  renderList(els.currentVocab, currentSentence?.vocab_matches, (item) => {
-    const reading = item.reading ? ` (${escapeHtml(item.reading)})` : "";
-    return `<div class="match-entry">${escapeHtml(item.surface)}${reading} - ${escapeHtml(item.meaning)}</div>`;
-  });
-
-  renderList(els.currentGrammar, currentSentence?.grammar_matches, (item) => (
-    `<div class="match-entry">${escapeHtml(item.label)} - ${escapeHtml(item.meaning)} | ${escapeHtml(item.category)}</div>`
-  ));
+  renderAnnotations(currentSentence);
 
   const upcoming = findUpcomingPoint(show, state.currentTime);
   if (upcoming) {
-    const secondsLeft = upcoming.start_seconds + activeSyncOffset(show) - state.currentTime;
+    const secondsLeft = upcoming.start_seconds - state.currentTime;
     els.nextCountdown.textContent = `${Math.max(0, Math.ceil(secondsLeft))}초 뒤`;
     els.nextPreview.textContent = upcoming.text;
   } else {
@@ -232,7 +260,7 @@ function renderLibrary() {
 
 function syncTimelineBounds() {
   const show = state.currentShow;
-  const duration = show ? Number(show.duration_seconds || 0) + Math.max(0, activeSyncOffset(show)) : 0;
+  const duration = show ? Number(show.duration_seconds || 0) : 0;
   els.timeline.max = String(duration);
   els.timeline.value = String(Math.floor(state.currentTime));
   els.timelineDuration.textContent = formatTime(duration);
@@ -287,9 +315,11 @@ async function loadLibrary() {
 
 async function loadShow(showId) {
   stopPlayback();
-  els.currentSentence.textContent = "작품 데이터를 불러오는 중입니다.";
   setScreen("player");
   enterPlayerHistory(showId);
+  els.currentSentence.textContent = "";
+  els.currentTranslation.textContent = "";
+  els.annotationRail.innerHTML = "";
 
   const payload = await fetchJson(`./data/shows/${showId}.json`);
   state.currentShow = payload;

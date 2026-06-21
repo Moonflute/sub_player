@@ -35,27 +35,17 @@
           <div class="player-topbar__spacer" aria-hidden="true"></div>
         </header>
 
-        <div class="sentence-panel">
-          <div id="current-sentence" class="current-sentence">작품을 선택하면 문장이 여기 표시됩니다.</div>
+        <section class="sentence-panel">
+          <div id="current-sentence" class="current-sentence"></div>
           <div id="current-translation" class="current-translation"></div>
           <div class="next-point-inline">
-            <span id="next-countdown" class="next-point-inline__time">-</span>
+            <span id="next-countdown" class="next-point-inline__time"></span>
             <span id="next-preview" class="next-point-inline__preview"></span>
           </div>
-        </div>
+          <div id="annotation-rail" class="annotation-rail"></div>
+        </section>
 
-        <div class="details-grid">
-          <section class="detail-card">
-            <div class="detail-card__label">단어</div>
-            <div id="current-vocab" class="detail-card__content"></div>
-          </section>
-          <section class="detail-card">
-            <div class="detail-card__label">문법 / 문형</div>
-            <div id="current-grammar" class="detail-card__content"></div>
-          </section>
-        </div>
-
-        <div class="controls-wrap">
+        <section class="controls-wrap">
           <div class="controls-main">
             <button id="seek-backward" class="transport-button" type="button" aria-label="5초 뒤로">
               <span class="transport-button__icon">↺</span>
@@ -77,7 +67,7 @@
               <span id="timeline-duration">00:00:00</span>
             </div>
           </div>
-        </div>
+        </section>
       </div>
     </section>
   </main>
