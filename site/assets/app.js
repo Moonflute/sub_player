@@ -5,6 +5,7 @@ const state = {
   isPlaying: false,
   isRotated: false,
   tickHandle: null,
+  isPlayerHistoryActive: false,
 };
 
 const els = {
@@ -54,6 +55,26 @@ function setScreen(mode) {
   const isPlayer = mode === "player";
   els.libraryScreen.classList.toggle("is-hidden", isPlayer);
   els.playerScreen.classList.toggle("is-hidden", !isPlayer);
+}
+
+function enterPlayerHistory(showId) {
+  if (state.isPlayerHistoryActive) return;
+  const url = new URL(window.location.href);
+  url.hash = `show-${showId}`;
+  window.history.pushState({ screen: "player", showId }, "", url);
+  state.isPlayerHistoryActive = true;
+}
+
+function leavePlayerHistory() {
+  state.isPlayerHistoryActive = false;
+}
+
+function returnToLibrary() {
+  stopPlayback();
+  setScreen("library");
+  state.currentShow = null;
+  state.currentTime = 0;
+  leavePlayerHistory();
 }
 
 function setPlayVisual(isPlaying) {
@@ -270,6 +291,7 @@ async function loadShow(showId) {
   stopPlayback();
   els.currentSentence.textContent = "작품 데이터를 불러오는 중입니다.";
   setScreen("player");
+  enterPlayerHistory(showId);
 
   const payload = await fetchJson(`./data/shows/${showId}.json`);
   state.currentShow = payload;
@@ -280,8 +302,11 @@ async function loadShow(showId) {
 
 function bindEvents() {
   els.backButton.addEventListener("click", () => {
-    stopPlayback();
-    setScreen("library");
+    if (state.isPlayerHistoryActive) {
+      window.history.back();
+      return;
+    }
+    returnToLibrary();
   });
 
   els.playToggle.addEventListener("click", () => {
@@ -304,6 +329,11 @@ function bindEvents() {
   els.timeline.addEventListener("input", () => {
     state.currentTime = Number(els.timeline.value || 0);
     renderCurrentState();
+  });
+
+  window.addEventListener("popstate", () => {
+    if (!state.currentShow) return;
+    returnToLibrary();
   });
 }
 
