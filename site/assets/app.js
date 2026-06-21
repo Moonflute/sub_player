@@ -3,7 +3,6 @@ const state = {
   currentShow: null,
   currentTime: 0,
   isPlaying: false,
-  isRotated: false,
   tickHandle: null,
   isPlayerHistoryActive: false,
 };
@@ -17,7 +16,6 @@ const els = {
   playIcon: document.getElementById("play-icon"),
   seekBackward: document.getElementById("seek-backward"),
   seekForward: document.getElementById("seek-forward"),
-  rotateToggle: document.getElementById("rotate-toggle"),
   playerStage: document.getElementById("player-stage"),
   showTitle: document.getElementById("show-title"),
   currentTime: document.getElementById("current-time"),
@@ -320,11 +318,6 @@ function bindEvents() {
 
   els.seekBackward.addEventListener("click", () => jumpBy(-5));
   els.seekForward.addEventListener("click", () => jumpBy(5));
-
-  els.rotateToggle.addEventListener("click", () => {
-    state.isRotated = !state.isRotated;
-    els.playerStage.classList.toggle("is-rotated", state.isRotated);
-  });
 
   els.timeline.addEventListener("input", () => {
     state.currentTime = Number(els.timeline.value || 0);

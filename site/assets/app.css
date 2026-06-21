@@ -161,19 +161,16 @@ input {
   gap: 18px;
 }
 
-.player-stage.is-rotated {
-  transform: rotate(90deg);
-  transform-origin: center center;
-  width: min(100vh - 32px, 960px);
-  min-height: min(100vw - 28px, 560px);
-  margin: auto;
-}
-
 .player-topbar {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
   gap: 10px;
+}
+
+.player-topbar__spacer {
+  width: 48px;
+  height: 48px;
 }
 
 .player-topbar__center {
