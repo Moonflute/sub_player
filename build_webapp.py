@@ -30,6 +30,9 @@ SYNC_MATCH_MIN_RATIO = 0.55
 SYNC_OFFSET_OUTLIER_SECONDS = 8.0
 TRANSLATION_OVERLAP_PADDING = 0.45
 TRANSLATION_NEARBY_THRESHOLD = 1.2
+ASS_MATCH_WINDOW_SECONDS = 2.6
+ASS_MATCH_MAX_SPAN = 3
+ASS_MATCH_MIN_SCORE = 0.43
 
 SPEAKER_PREFIX_RE = re.compile(
     r"^[\s\u3000]*(?:[\(\[「『【<＜][^)\]」』】>＞]{1,24}[\)\]」』】>＞][\s\u3000]*)+"
@@ -212,6 +215,10 @@ def normalize_korean_text(text: str) -> str:
     return "".join(KOREAN_TOKEN_RE.findall(text)).lower()
 
 
+def compact_korean_length(text: str) -> int:
+    return len(normalize_korean_text(text))
+
+
 def parse_ass(path: Path) -> list[dict]:
     entries: list[dict] = []
     for raw_line in path.read_text(encoding="utf-8-sig", errors="ignore").splitlines():
@@ -263,18 +270,17 @@ def find_translation_ass_file(source_path: Path) -> Path | None:
 def estimate_ass_sync_offset(
     subtitle_lines: list[engine.SubtitleLine],
     ass_entries: list[dict],
-    translation_enabled: bool,
+    google_translation_map: dict[str, str],
 ) -> float | None:
     sample_lines = subtitle_lines[:SYNC_MATCH_SAMPLE_SIZE]
     scan_entries = ass_entries[:SYNC_MATCH_SCAN_LIMIT]
     if not sample_lines or not scan_entries:
         return None
 
-    sample_translations = build_translation_map([line.text for line in sample_lines], translation_enabled)
     offsets: list[float] = []
 
     for line in sample_lines:
-        translated = clean_translation(sample_translations.get(line.text, ""))
+        translated = clean_translation(google_translation_map.get(line.text, ""))
         normalized_translated = normalize_korean_text(translated)
         if len(normalized_translated) < 4:
             continue
@@ -306,38 +312,129 @@ def estimate_ass_sync_offset(
     return float(median_offset)
 
 
+def build_ass_candidate_spans(
+    ass_entries: list[dict],
+    line_start: float,
+    line_end: float,
+    offset_seconds: float,
+    max_span: int = ASS_MATCH_MAX_SPAN,
+) -> list[dict]:
+    nearby_entries: list[tuple[int, dict, float, float]] = []
+    window_start = line_start - ASS_MATCH_WINDOW_SECONDS
+    window_end = line_end + ASS_MATCH_WINDOW_SECONDS
+
+    for index, entry in enumerate(ass_entries):
+        adjusted_start = float(entry["start_seconds"]) + offset_seconds
+        adjusted_end = float(entry["end_seconds"]) + offset_seconds
+        if adjusted_end < window_start or adjusted_start > window_end:
+            continue
+        nearby_entries.append((index, entry, adjusted_start, adjusted_end))
+
+    spans: list[dict] = []
+    seen: set[tuple[int, int]] = set()
+    for start_pos in range(len(nearby_entries)):
+        for span_size in range(1, max_span + 1):
+            end_pos = start_pos + span_size - 1
+            if end_pos >= len(nearby_entries):
+                break
+            start_index = nearby_entries[start_pos][0]
+            end_index = nearby_entries[end_pos][0]
+            if end_index - start_index != span_size - 1:
+                break
+            if (start_index, end_index) in seen:
+                continue
+            seen.add((start_index, end_index))
+            chunk = nearby_entries[start_pos : end_pos + 1]
+            texts = [str(item[1]["text"]).strip() for item in chunk if str(item[1]["text"]).strip()]
+            if not texts:
+                continue
+            spans.append(
+                {
+                    "start_index": start_index,
+                    "end_index": end_index,
+                    "text": " ".join(dict.fromkeys(texts)),
+                    "start_seconds": chunk[0][2],
+                    "end_seconds": chunk[-1][3],
+                }
+            )
+    return spans
+
+
+def score_ass_span(
+    line_start: float,
+    line_end: float,
+    line_translation: str,
+    candidate_text: str,
+    candidate_start: float,
+    candidate_end: float,
+) -> float:
+    normalized_line = normalize_korean_text(line_translation)
+    normalized_candidate = normalize_korean_text(candidate_text)
+    if len(normalized_candidate) < 2 or len(normalized_line) < 2:
+        return -1.0
+
+    text_similarity = difflib.SequenceMatcher(None, normalized_line, normalized_candidate).ratio()
+    overlap = max(0.0, min(line_end, candidate_end) - max(line_start, candidate_start))
+    line_duration = max(0.1, line_end - line_start)
+    candidate_duration = max(0.1, candidate_end - candidate_start)
+    overlap_ratio = overlap / max(line_duration, min(candidate_duration, line_duration))
+    center_gap = abs(((line_start + line_end) / 2.0) - ((candidate_start + candidate_end) / 2.0))
+
+    line_len = len(normalized_line)
+    candidate_len = len(normalized_candidate)
+    if candidate_len > line_len:
+        length_penalty = min(0.35, ((candidate_len - line_len) / max(1, line_len)) * 0.18)
+    else:
+        length_penalty = min(0.18, ((line_len - candidate_len) / max(1, line_len)) * 0.08)
+
+    score = text_similarity + (overlap_ratio * 0.24) - (center_gap * 0.05) - length_penalty
+    return score
+
+
 def build_translation_map_from_ass(
     subtitle_lines: list[engine.SubtitleLine],
     ass_entries: list[dict],
     offset_seconds: float,
+    google_translation_map: dict[str, str],
 ) -> dict[str, str]:
     translation_map: dict[str, str] = {}
 
     for line in subtitle_lines:
         line_start = engine.seconds_from_hhmmss(line.start_time)
         line_end = engine.seconds_from_hhmmss(line.end_time)
-        matched_texts: list[str] = []
+        line_translation = clean_translation(google_translation_map.get(line.text, ""))
+        spans = build_ass_candidate_spans(ass_entries, line_start, line_end, offset_seconds)
+
+        best_text = ""
+        best_score = -1.0
+        for span in spans:
+            score = score_ass_span(
+                line_start=line_start,
+                line_end=line_end,
+                line_translation=line_translation,
+                candidate_text=str(span["text"]),
+                candidate_start=float(span["start_seconds"]),
+                candidate_end=float(span["end_seconds"]),
+            )
+            if score > best_score:
+                best_score = score
+                best_text = str(span["text"])
+
+        if best_score >= ASS_MATCH_MIN_SCORE and best_text:
+            translation_map[line.text] = clean_translation(best_text)
+            continue
+
         nearest_text = ""
         nearest_gap: float | None = None
-
         for entry in ass_entries:
             adjusted_start = float(entry["start_seconds"]) + offset_seconds
             adjusted_end = float(entry["end_seconds"]) + offset_seconds
-            overlap_start = max(line_start, adjusted_start)
-            overlap_end = min(line_end, adjusted_end)
-            if overlap_end >= overlap_start - TRANSLATION_OVERLAP_PADDING:
-                matched_texts.append(str(entry["text"]))
-                continue
-
             gap = min(abs(adjusted_start - line_start), abs(adjusted_end - line_end))
             if nearest_gap is None or gap < nearest_gap:
                 nearest_gap = gap
                 nearest_text = str(entry["text"])
 
-        if matched_texts:
-            merged = " ".join(dict.fromkeys(text.strip() for text in matched_texts if text.strip()))
-            translation_map[line.text] = clean_translation(merged)
-        elif nearest_gap is not None and nearest_gap <= TRANSLATION_NEARBY_THRESHOLD:
+        if nearest_gap is not None and nearest_gap <= TRANSLATION_NEARBY_THRESHOLD:
             translation_map[line.text] = clean_translation(nearest_text)
         else:
             translation_map[line.text] = ""
@@ -368,20 +465,25 @@ def resolve_translation_map(
         return build_translation_map([line.text for line in subtitle_lines], True), metadata
 
     print(f" -> translation ASS found: {ass_path.name}")
-    offset_seconds = estimate_ass_sync_offset(subtitle_lines, ass_entries, True)
+    google_translation_map = build_translation_map([line.text for line in subtitle_lines], True)
+    offset_seconds = estimate_ass_sync_offset(subtitle_lines, ass_entries, google_translation_map)
     if offset_seconds is None:
         print("    [warn] ASS sync estimation failed; using Google translation only")
-        return build_translation_map([line.text for line in subtitle_lines], True), metadata
+        return google_translation_map, metadata
 
     print(f"    - estimated ASS sync offset: {offset_seconds:+.2f}s")
-    translation_map = build_translation_map_from_ass(subtitle_lines, ass_entries, offset_seconds)
+    translation_map = build_translation_map_from_ass(
+        subtitle_lines,
+        ass_entries,
+        offset_seconds,
+        google_translation_map,
+    )
 
     missing_sentences = [line.text for line in subtitle_lines if not translation_map.get(line.text)]
     if missing_sentences:
         print(f"    - filling missing translations with Google: {len(missing_sentences)} sentences")
-        fallback_map = build_translation_map(missing_sentences, True)
         for sentence in missing_sentences:
-            translation_map[sentence] = clean_translation(fallback_map.get(sentence, ""))
+            translation_map[sentence] = clean_translation(google_translation_map.get(sentence, ""))
 
     metadata = {
         "source": "ass+google-fallback",
