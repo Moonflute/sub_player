@@ -4,7 +4,13 @@
   "file_name": "한자와 나오키 S01E01.srt",
   "duration_seconds": 6362,
   "sentence_count": 1182,
-  "relevant_sentence_count": 746,
+  "relevant_sentence_count": 744,
+  "translation_info": {
+    "source": "google",
+    "translation_file": "",
+    "sync_offset_seconds": null
+  },
+  "manual_sync_offset_seconds": 0,
   "sentences": [
     {
       "index": 1,
@@ -57,8 +63,8 @@
     },
     {
       "index": 2,
-      "text": "いや しかし銀行は うちだけじゃないでしょう",
-      "translation": "아니,하지만 은행은 그냥 혼자가 아닙니다.",
+      "text": "≪(面接官)いや しかし銀行は うちだけじゃないでしょう",
+      "translation": "≪(면접관) 아니 그러나 은행은 우리만이 아닐까요",
       "start_time": "00:00:40",
       "end_time": "00:00:43",
       "start_seconds": 40,
@@ -72,6 +78,15 @@
           "level": "N3",
           "surface_in_sentence": "銀行",
           "base_form": "銀行",
+          "pos": "명사"
+        },
+        {
+          "surface": "面接",
+          "reading": "めんせつ",
+          "meaning": "면접",
+          "level": "N3",
+          "surface_in_sentence": "面接",
+          "base_form": "面接",
           "pos": "명사"
         }
       ],
@@ -776,7 +791,7 @@
     {
       "index": 31,
       "text": "やっぱりね",
-      "translation": "결국",
+      "translation": "역시",
       "start_time": "00:02:49",
       "end_time": "00:02:52",
       "start_seconds": 169,
@@ -1251,8 +1266,8 @@
     },
     {
       "index": 53,
-      "text": "分かってるのか?➡",
-      "translation": "알고 있습니까?➡",
+      "text": "≪(江島)分かってるのか?➡",
+      "translation": "≪(에시마) 알고 있는 것인가?➡",
       "start_time": "00:04:05",
       "end_time": "00:04:07",
       "start_seconds": 245,
@@ -1300,8 +1315,8 @@
     },
     {
       "index": 56,
-      "text": "何だ その目は?➡",
-      "translation": "뭐야 그 눈은?➡",
+      "text": "≪(江島)何だ その目は?➡",
+      "translation": "≪(에지마) 뭐야 그 눈은?➡",
       "start_time": "00:04:17",
       "end_time": "00:04:20",
       "start_seconds": 257,
@@ -1337,8 +1352,8 @@
     },
     {
       "index": 58,
-      "text": "あッ あの...",
-      "translation": "오, 그 ...",
+      "text": "≪(中西)あッ あの...",
+      "translation": "≪(나카니시) 아...",
       "start_time": "00:04:23",
       "end_time": "00:04:25",
       "start_seconds": 263,
@@ -1690,8 +1705,8 @@
     },
     {
       "index": 71,
-      "text": "大口の取引先の 井端工業がつぶれ➡",
-      "translation": "오구치의 거래처의 이바타 공업이 붕괴 ➡",
+      "text": "≪(牧野)大口の取引先の 井端工業がつぶれ➡",
+      "translation": "≪(마키노) 오구치의 거래처의 이바타 공업이 부서져➡",
       "start_time": "00:06:39",
       "end_time": "00:06:43",
       "start_seconds": 399,
@@ -1980,8 +1995,8 @@
     },
     {
       "index": 85,
-      "text": "こんにちは",
-      "translation": "안녕하세요",
+      "text": "≪(従業員達)こんにちは",
+      "translation": "≪(종업원들) 안녕하세요",
       "start_time": "00:07:41",
       "end_time": "00:07:43",
       "start_seconds": 461,
@@ -2004,8 +2019,8 @@
     },
     {
       "index": 87,
-      "text": "どうぞ",
-      "translation": "제발",
+      "text": "≪(牧野)どうぞ",
+      "translation": "≪(마키노) 부디",
       "start_time": "00:08:04",
       "end_time": "00:08:06",
       "start_seconds": 484,
@@ -2658,7 +2673,7 @@
     {
       "index": 116,
       "text": "ありがとうございます",
-      "translation": "감사합니다",
+      "translation": "고마워요",
       "start_time": "00:10:09",
       "end_time": "00:10:11",
       "start_seconds": 609,
@@ -2682,7 +2697,7 @@
     {
       "index": 118,
       "text": "ありがとうございます",
-      "translation": "감사합니다",
+      "translation": "고마워요",
       "start_time": "00:10:17",
       "end_time": "00:10:19",
       "start_seconds": 617,
@@ -2944,7 +2959,7 @@
     {
       "index": 125,
       "text": "ありがとうございます",
-      "translation": "감사합니다",
+      "translation": "고마워요",
       "start_time": "00:10:38",
       "end_time": "00:10:41",
       "start_seconds": 638,
@@ -5276,8 +5291,8 @@
     },
     {
       "index": 201,
-      "text": "なぜ 取ってこなかったのですか?",
-      "translation": "왜 가지고 가지 않았습니까?",
+      "text": "≪(浅野)なぜ 取ってこなかったのですか?",
+      "translation": "≪(아사노) 왜 가지고 오지 않았습니까?",
       "start_time": "00:15:30",
       "end_time": "00:15:33",
       "start_seconds": 930,
@@ -6593,8 +6608,8 @@
     },
     {
       "index": 246,
-      "text": "そんなに工場継ぐの 嫌か?➡》",
-      "translation": "그렇게 공장 잇는 싫어?➡ >>",
+      "text": "《≪(慎之助)そんなに工場継ぐの 嫌か?➡》",
+      "translation": "《≪(신노스케) 그렇게 공장 잇는 싫어?➡》",
       "start_time": "00:18:10",
       "end_time": "00:18:15",
       "start_seconds": 1090,
@@ -6639,8 +6654,8 @@
     },
     {
       "index": 249,
-      "text": "そやけどな 直樹》",
-      "translation": "사소하지만 나오키 >>",
+      "text": "《(慎之助)そやけどな 直樹》",
+      "translation": "《(신노스케)소리지만 나오키》",
       "start_time": "00:18:21",
       "end_time": "00:18:24",
       "start_seconds": 1101,
@@ -6832,7 +6847,7 @@
     {
       "index": 256,
       "text": "《ええか 直樹》",
-      "translation": "《에에나 나오키》",
+      "translation": "《에에카 나오키》",
       "start_time": "00:18:47",
       "end_time": "00:18:49",
       "start_seconds": 1127,
@@ -6954,8 +6969,8 @@
     },
     {
       "index": 261,
-      "text": "それだけは忘れるなよ》",
-      "translation": "그만큼은 잊지 마라 >>",
+      "text": "《≪(慎之助) それだけは忘れるなよ》",
+      "translation": "《≪(신노스케) 그만큼은 잊지 말아》",
       "start_time": "00:19:04",
       "end_time": "00:19:08",
       "start_seconds": 1144,
@@ -7390,14 +7405,24 @@
     },
     {
       "index": 274,
-      "text": "朝一で済まさなきゃ ならないことがあるみたいだ",
-      "translation": "아침에 끝내야 할 일이있는 것 같습니다.",
+      "text": "≪(業務課長)朝一で済まさなきゃ ならないことがあるみたいだ",
+      "translation": "≪(업무 과장) 아사이치에서 끝나야 하는 일이 있는 것 같다",
       "start_time": "00:20:09",
       "end_time": "00:20:13",
       "start_seconds": 1209,
       "end_seconds": 1213,
       "has_jlpt": true,
-      "vocab_matches": [],
+      "vocab_matches": [
+        {
+          "surface": "課長",
+          "reading": "かちょう",
+          "meaning": "과장(님)",
+          "level": "N3",
+          "surface_in_sentence": "課長",
+          "base_form": "課長",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": [
         {
           "label": "〜ことがある",
@@ -7461,8 +7486,8 @@
     },
     {
       "index": 276,
-      "text": "どうかしましたか?",
-      "translation": "어떻게 했니?",
+      "text": "≪(浅野)どうかしましたか?",
+      "translation": "≪ (아사노) 어땠습니까?",
       "start_time": "00:20:23",
       "end_time": "00:20:25",
       "start_seconds": 1223,
@@ -8726,8 +8751,8 @@
     },
     {
       "index": 323,
-      "text": "ふ~ん ならいいけど➡",
-      "translation": "후 ~ 라면 좋지만 ➡",
+      "text": "≪(近藤)ふ~ん ならいいけど➡",
+      "translation": "≪ (콘도) 후 ~ 라면 좋지만 ➡",
       "start_time": "00:26:30",
       "end_time": "00:26:33",
       "start_seconds": 1590,
@@ -10078,8 +10103,8 @@
     },
     {
       "index": 370,
-      "text": "最優良店舗は 大阪西支店➡",
-      "translation": "최우량 점포는 오사카 니시 지점 ➡",
+      "text": "≪(岸川)最優良店舗は 大阪西支店➡",
+      "translation": "≪(기시카와) 최우량 점포는 오사카 니시 지점 ➡",
       "start_time": "00:29:28",
       "end_time": "00:29:32",
       "start_seconds": 1768,
@@ -10150,7 +10175,7 @@
     {
       "index": 374,
       "text": "ありがとうございます",
-      "translation": "감사합니다",
+      "translation": "고마워요",
       "start_time": "00:29:48",
       "end_time": "00:29:50",
       "start_seconds": 1788,
@@ -10161,8 +10186,8 @@
     },
     {
       "index": 375,
-      "text": "これで 浅野支店長も 役員の道が大きく開けたな➡",
-      "translation": "이것으로 아사노 지점장도 임원의 길이 크게 열렸구나➡",
+      "text": "≪(渡真利)これで 浅野支店長も 役員の道が大きく開けたな➡",
+      "translation": "≪(와타마리) 이것으로 아사노 지점장도 임원의 길이 크게 열었구나➡",
       "start_time": "00:29:58",
       "end_time": "00:30:02",
       "start_seconds": 1798,
@@ -10439,8 +10464,8 @@
     },
     {
       "index": 385,
-      "text": "俺達 旧産業中央出身の 出世頭にして➡",
-      "translation": "우리 구 산업 중앙 출신의 출세 머리로 해 ➡",
+      "text": "≪(渡真利)俺達 旧産業中央出身の 出世頭にして➡",
+      "translation": "≪(와타마리) 우리들 구산업 중앙 출신의 출세 머리로 해 ➡",
       "start_time": "00:30:34",
       "end_time": "00:30:37",
       "start_seconds": 1834,
@@ -11030,8 +11055,8 @@
     },
     {
       "index": 412,
-      "text": "強化指定されてる商品が 全く売れてないじゃないか!》",
-      "translation": "강화 지정된 상품이 전혀 팔리지 않습니까! >>",
+      "text": "《(小木曽)強化指定されてる商品が 全く売れてないじゃないか!》",
+      "translation": "《(코기소) 강화 지정되고 있는 상품이 전혀 팔리지 않잖아!》",
       "start_time": "00:32:46",
       "end_time": "00:32:49",
       "start_seconds": 1966,
@@ -11357,8 +11382,8 @@
     },
     {
       "index": 425,
-      "text": "でも 今は いい感じなんだろ?",
-      "translation": "하지만 지금은 좋은 느낌이겠지?",
+      "text": "≪(渡真利)でも 今は いい感じなんだろ?",
+      "translation": "≪(와타마리)에서도 지금은 좋은 느낌이겠지?",
       "start_time": "00:33:28",
       "end_time": "00:33:32",
       "start_seconds": 2008,
@@ -13391,8 +13416,8 @@
     },
     {
       "index": 506,
-      "text": "おっしゃるとおりです",
-      "translation": "말씀하신대로",
+      "text": "≪(江島)おっしゃるとおりです",
+      "translation": "≪(에지마) 말씀하시는 대로입니다",
       "start_time": "00:40:05",
       "end_time": "00:40:08",
       "start_seconds": 2405,
@@ -13568,8 +13593,8 @@
     },
     {
       "index": 515,
-      "text": "あッ あの...",
-      "translation": "오, 그 ...",
+      "text": "≪(中西)あッ あの...",
+      "translation": "≪(나카니시) 아...",
       "start_time": "00:40:33",
       "end_time": "00:40:35",
       "start_seconds": 2433,
@@ -13921,8 +13946,8 @@
     },
     {
       "index": 528,
-      "text": "7月14日に 大阪中央店 難波店 天王寺店と➡",
-      "translation": "7월 14일에 오사카 중앙점 난바점 텐노지점과➡",
+      "text": "≪(美津子)7月14日に 大阪中央店 難波店 天王寺店と➡",
+      "translation": "≪(미쓰코) 7월 14일에 오사카 중앙점 난바점 텐노지점과➡",
       "start_time": "00:43:36",
       "end_time": "00:43:40",
       "start_seconds": 2616,
@@ -14478,8 +14503,8 @@
     },
     {
       "index": 547,
-      "text": "いいわよね?",
-      "translation": "괜찮아?",
+      "text": "≪(沙苗)いいわよね?",
+      "translation": "≪(사나에) 좋지?",
       "start_time": "00:44:38",
       "end_time": "00:44:41",
       "start_seconds": 2678,
@@ -14634,7 +14659,7 @@
     {
       "index": 555,
       "text": "ありがとうございます",
-      "translation": "감사합니다",
+      "translation": "고마워요",
       "start_time": "00:45:09",
       "end_time": "00:45:11",
       "start_seconds": 2709,
@@ -17931,8 +17956,8 @@
     },
     {
       "index": 672,
-      "text": "今ちょうど こっちに着いたところだ ああ",
-      "translation": "지금 그냥 이곳에 도착한 곳이다 아",
+      "text": "≪(浅野)今ちょうど こっちに着いたところだ ああ",
+      "translation": "≪(아사노) 지금 딱 여기에 도착한 곳이다 아",
       "start_time": "00:54:13",
       "end_time": "00:54:17",
       "start_seconds": 3253,
@@ -19611,20 +19636,39 @@
     },
     {
       "index": 728,
-      "text": "》",
-      "translation": ">>",
+      "text": "《(激しく戸を叩く音)》",
+      "translation": "《(격렬하게 문을 두드리는 소리)》",
       "start_time": "00:59:02",
       "end_time": "00:59:05",
       "start_seconds": 3542,
       "end_seconds": 3545,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "激しい",
+          "reading": "はげしい",
+          "meaning": "격심하다",
+          "level": "N3",
+          "surface_in_sentence": "激しく",
+          "base_form": "激しい",
+          "pos": "형용사"
+        },
+        {
+          "surface": "激しい",
+          "reading": "はげしい",
+          "meaning": "격하다",
+          "level": "N3",
+          "surface_in_sentence": "激しく",
+          "base_form": "激しい",
+          "pos": "형용사"
+        }
+      ],
       "grammar_matches": []
     },
     {
       "index": 729,
-      "text": "半沢さんッ 半沢さん!》",
-      "translation": "한자와 산! 한자와 씨! >>",
+      "text": "《≪(男A)半沢さんッ 半沢さん!》",
+      "translation": "《≪(남자 A) 한자와 씨~ 한자와 씨!》",
       "start_time": "00:59:05",
       "end_time": "00:59:08",
       "start_seconds": 3545,
@@ -19635,8 +19679,8 @@
     },
     {
       "index": 730,
-      "text": "何ですねんな こんな時間に》",
-      "translation": "뭐야 이런 시간에 >>",
+      "text": "《≪(慎之助)何ですねんな こんな時間に》",
+      "translation": "《≪(신노스케) 뭐예요 이런 시간에》",
       "start_time": "00:59:08",
       "end_time": "00:59:10",
       "start_seconds": 3548,
@@ -19657,8 +19701,8 @@
     },
     {
       "index": 731,
-      "text": "狛田工業が倒産だよ》",
-      "translation": "고바타 공업이 도산이야 >>",
+      "text": "《≪(A)狛田工業が倒産だよ》",
+      "translation": "《≪(A) 고바다 공업이 도산이야》",
       "start_time": "00:59:10",
       "end_time": "00:59:13",
       "start_seconds": 3550,
@@ -19679,8 +19723,8 @@
     },
     {
       "index": 732,
-      "text": "金策ができなかったんだろ 明日 不渡りは確実だ》",
-      "translation": "금책을 할 수 없었지 내일 부도는 확실하다 >>",
+      "text": "《≪(B)金策ができなかったんだろ 明日 不渡りは確実だ》",
+      "translation": "《≪(B)금책을 할 수 없었겠지 내일 부도는 확실하다》",
       "start_time": "00:59:13",
       "end_time": "00:59:18",
       "start_seconds": 3553,
@@ -19691,8 +19735,8 @@
     },
     {
       "index": 733,
-      "text": "うちの儲けの 半分は狛田工業さんなのよ》",
-      "translation": "우리 돈의 절반은 사바타 공업 씨야 >>",
+      "text": "《≪(美千子)うちの儲けの 半分は狛田工業さんなのよ》",
+      "translation": "《≪(미치코)우리의 돈의 절반은 사바타 공업씨야》",
       "start_time": "00:59:18",
       "end_time": "00:59:22",
       "start_seconds": 3558,
@@ -19713,8 +19757,8 @@
     },
     {
       "index": 734,
-      "text": "「新しい仕事振る」と言うんで 他を断り生産ラインを確保した》",
-      "translation": "\"새로운 일 흔들기\"라고 말해 다른 것을 거절 생산 라인을 확보했다 >>",
+      "text": "《(A)「新しい仕事振る」と言うんで 他を断り生産ラインを確保した》",
+      "translation": "《(A)「새로운 일 흔들기」라고 해서 다른 것을 거절해 생산 라인을 확보했다》",
       "start_time": "00:59:22",
       "end_time": "00:59:27",
       "start_seconds": 3562,
@@ -19780,8 +19824,8 @@
     },
     {
       "index": 735,
-      "text": "うちだってそうだよ どうしてくれるんだ?》",
-      "translation": "우리도 그렇다. 왜 준다? >>",
+      "text": "《(B)うちだってそうだよ どうしてくれるんだ?》",
+      "translation": "\"(B) 우리도 그렇다. 왜 줘?\"",
       "start_time": "00:59:27",
       "end_time": "00:59:31",
       "start_seconds": 3567,
@@ -20045,14 +20089,24 @@
     },
     {
       "index": 742,
-      "text": "期日までに 返済できないときは》",
-      "translation": "마감일까지 상환 할 수없는 경우 >>",
+      "text": "《(銀行員)期日までに 返済できないときは》",
+      "translation": "《(은행원) 기일까지 상환할 수 없는 때는》",
       "start_time": "00:59:52",
       "end_time": "00:59:55",
       "start_seconds": 3592,
       "end_seconds": 3595,
       "has_jlpt": true,
-      "vocab_matches": [],
+      "vocab_matches": [
+        {
+          "surface": "銀行",
+          "reading": "ぎんこう",
+          "meaning": "은행",
+          "level": "N3",
+          "surface_in_sentence": "銀行",
+          "base_form": "銀行",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": [
         {
           "label": "~ないと",
@@ -20422,8 +20476,8 @@
     },
     {
       "index": 752,
-      "text": "お願いします うちは潰れてもよろしいが➡》",
-      "translation": "부탁드립니다 우리는 부서져도 좋지만 ➡ >>",
+      "text": "《≪(慎之助)お願いします うちは潰れてもよろしいが➡》",
+      "translation": "《≪(신노스케) 부탁합니다 우리는 망가져도 좋지만➡》",
       "start_time": "01:00:27",
       "end_time": "01:00:32",
       "start_seconds": 3627,
@@ -20604,8 +20658,8 @@
     },
     {
       "index": 756,
-      "text": "半沢さん いらっしゃいませんか》",
-      "translation": "한자와 씨가 계십니까? >>",
+      "text": "《(飯田)半沢さん いらっしゃいませんか》",
+      "translation": "《(이이다)한자와 씨 계십니까?》",
       "start_time": "01:00:48",
       "end_time": "01:00:50",
       "start_seconds": 3648,
@@ -20724,8 +20778,8 @@
     },
     {
       "index": 762,
-      "text": "銀行に就職するって》 《さっき内定の電話があった》",
-      "translation": "은행에 취업한다고 《《아까 내정의 전화가 있었다》",
+      "text": "《≪(美千子)銀行に就職するって》 《さっき内定の電話があった》",
+      "translation": "《≪(미치코)은행에 취직한다고》 《아까 내정의 전화가 있었다》",
       "start_time": "01:01:50",
       "end_time": "01:01:55",
       "start_seconds": 3710,
@@ -21495,7 +21549,7 @@
     {
       "index": 789,
       "text": "あほんだら!",
-      "translation": "오,!",
+      "translation": "아 혼다라!",
       "start_time": "01:03:48",
       "end_time": "01:03:52",
       "start_seconds": 3828,
@@ -21717,8 +21771,8 @@
     },
     {
       "index": 798,
-      "text": "荷物まとめて帰らんか!",
-      "translation": "짐을 모아서 돌아갈까!",
+      "text": "≪(竹下)荷物まとめて帰らんか!",
+      "translation": "≪ (다케시타) 짐 정리해 돌아갈까!",
       "start_time": "01:04:27",
       "end_time": "01:04:30",
       "start_seconds": 3867,
@@ -22149,8 +22203,8 @@
     },
     {
       "index": 816,
-      "text": "副支店長 君が対応してくれたまえ",
-      "translation": "부지점장 네가 대응해 주었어",
+      "text": "≪(浅野)副支店長 君が対応してくれたまえ",
+      "translation": "≪(아사노) 부지점장 네가 대응해 주었어",
       "start_time": "01:06:21",
       "end_time": "01:06:24",
       "start_seconds": 3981,
@@ -22551,8 +22605,8 @@
     },
     {
       "index": 828,
-      "text": "あの黒崎ってオカマ野郎 気をつけてください➡",
-      "translation": "그 쿠로사키는 오카마 노로 조심하십시오 ➡",
+      "text": "≪(角田)あの黒崎ってオカマ野郎 気をつけてください➡",
+      "translation": "≪(카도다) 그 쿠로사키는 오카마 야로 조심해 주세요 ➡",
       "start_time": "01:07:38",
       "end_time": "01:07:43",
       "start_seconds": 4058,
@@ -22575,8 +22629,8 @@
     },
     {
       "index": 830,
-      "text": "金融庁?",
-      "translation": "금융청?",
+      "text": "≪(垣内)金融庁?",
+      "translation": "≪(가키우치) 금융청?",
       "start_time": "01:07:48",
       "end_time": "01:07:51",
       "start_seconds": 4068,
@@ -22587,8 +22641,8 @@
     },
     {
       "index": 831,
-      "text": "1年前 金融庁監査で➡",
-      "translation": "1년 전 금융청 감사에서➡",
+      "text": "≪(角田)1年前 金融庁監査で➡",
+      "translation": "≪(가쿠다) 1년 전 금융청 감사로➡",
       "start_time": "01:07:48",
       "end_time": "01:07:51",
       "start_seconds": 4068,
@@ -23001,8 +23055,8 @@
     },
     {
       "index": 844,
-      "text": "はッ?",
-      "translation": "헉?",
+      "text": "≪(中西)はッ?",
+      "translation": "≪(나카니시)는?",
       "start_time": "01:08:36",
       "end_time": "01:08:38",
       "start_seconds": 4116,
@@ -23604,8 +23658,8 @@
     },
     {
       "index": 871,
-      "text": "パソコン ≪(中西)はい",
-      "translation": "PC ≪(나카니시) 예",
+      "text": "≪(角田)パソコン ≪(中西)はい",
+      "translation": "≪(카도다) PC ≪(나카니시) 예",
       "start_time": "01:12:42",
       "end_time": "01:12:44",
       "start_seconds": 4362,
@@ -23707,8 +23761,8 @@
     },
     {
       "index": 875,
-      "text": "頼むよ 元技術者",
-      "translation": "묻자 전 기술자",
+      "text": "≪(角田)頼むよ 元技術者",
+      "translation": "≪ (카도다) 부탁해 전 기술자",
       "start_time": "01:12:53",
       "end_time": "01:12:55",
       "start_seconds": 4373,
@@ -24451,8 +24505,8 @@
     },
     {
       "index": 903,
-      "text": "波野さん 波野さ~ん",
-      "translation": "하노 씨 하노 사 ~",
+      "text": "≪(事務員)波野さん 波野さ~ん",
+      "translation": "≪ (사무원) 하노 씨 하노 사 ~",
       "start_time": "01:15:19",
       "end_time": "01:15:23",
       "start_seconds": 4519,
@@ -24463,8 +24517,8 @@
     },
     {
       "index": 904,
-      "text": "ああ~ッ?",
-      "translation": "오~~?",
+      "text": "≪(波野)ああ~ッ?",
+      "translation": "≪(하나) 아~~?",
       "start_time": "01:15:23",
       "end_time": "01:15:26",
       "start_seconds": 4523,
@@ -24509,8 +24563,8 @@
     },
     {
       "index": 907,
-      "text": "分かった こっち持ってきて",
-      "translation": "알았어 이쪽 가져와",
+      "text": "≪(波野)分かった こっち持ってきて",
+      "translation": "≪(하나) 알았어 이쪽 가져와",
       "start_time": "01:15:29",
       "end_time": "01:15:32",
       "start_seconds": 4529,
@@ -25600,8 +25654,8 @@
     },
     {
       "index": 951,
-      "text": "ええか 直樹》",
-      "translation": "에에카 나오키",
+      "text": "《≪(慎之助)ええか 直樹》",
+      "translation": "《≪(신노스케)에에나 나오키》",
       "start_time": "01:18:36",
       "end_time": "01:18:38",
       "start_seconds": 4716,
@@ -25895,7 +25949,7 @@
     {
       "index": 964,
       "text": "半沢 わざわざよかったのに",
-      "translation": "한자와 일부러 좋았지 만",
+      "translation": "한자와 일부러 좋았는데",
       "start_time": "01:22:49",
       "end_time": "01:22:52",
       "start_seconds": 4969,
@@ -27161,33 +27215,14 @@
     },
     {
       "index": 1013,
-      "text": "「雨の日に取り上げる」って",
-      "translation": "\"비오는 날에 다루겠다\"고",
+      "text": "って",
+      "translation": "라고",
       "start_time": "01:30:36",
       "end_time": "01:30:39",
       "start_seconds": 5436,
       "end_seconds": 5439,
-      "has_jlpt": true,
-      "vocab_matches": [
-        {
-          "surface": "取り上げる",
-          "reading": "とりあげる",
-          "meaning": "다루다",
-          "level": "N3",
-          "surface_in_sentence": "取り上げる",
-          "base_form": "取り上げる",
-          "pos": "동사"
-        },
-        {
-          "surface": "雨",
-          "reading": "あめ",
-          "meaning": "비",
-          "level": "N3",
-          "surface_in_sentence": "雨",
-          "base_form": "雨",
-          "pos": "명사"
-        }
-      ],
+      "has_jlpt": false,
+      "vocab_matches": [],
       "grammar_matches": []
     },
     {
@@ -27279,8 +27314,8 @@
     },
     {
       "index": 1018,
-      "text": "未樹 行くぞッ タクシー来い!",
-      "translation": "미키 가자 택시 와라!",
+      "text": "≪(東田)未樹 行くぞッ タクシー来い!",
+      "translation": "«(히가시다) 미키 가자 택시 와라!",
       "start_time": "01:31:08",
       "end_time": "01:31:13",
       "start_seconds": 5468,
@@ -28016,8 +28051,8 @@
     },
     {
       "index": 1049,
-      "text": "慎重に答えたまえ",
-      "translation": "조심스럽게 대답하기 전에",
+      "text": "≪(小木曽)慎重に答えたまえ",
+      "translation": "≪(코기 소) 신중하게 대답하라",
       "start_time": "01:34:41",
       "end_time": "01:34:43",
       "start_seconds": 5681,
@@ -28028,8 +28063,8 @@
     },
     {
       "index": 1050,
-      "text": "なあ半沢 もう何も 余計なこと言うな",
-      "translation": "나하자와 이제는 아무것도 불필요하다고 말하지 마라.",
+      "text": "≪(渡真利)なあ半沢 もう何も 余計なこと言うな",
+      "translation": "≪ (와타마리) 나하자와 이미 아무것도 불필요하다고 말하지 마라.",
       "start_time": "01:34:45",
       "end_time": "01:34:49",
       "start_seconds": 5685,
@@ -28094,8 +28129,8 @@
     },
     {
       "index": 1052,
-      "text": "「はい」「申し訳ありませんでした」 この二つ以外 口にするな",
-      "translation": "\"예\" \"죄송합니다.\"",
+      "text": "この二つ以外 口にするな",
+      "translation": "이 두 가지 이외 입에 넣지 마라.",
       "start_time": "01:34:52",
       "end_time": "01:34:56",
       "start_seconds": 5692,
@@ -29077,24 +29112,14 @@
     },
     {
       "index": 1082,
-      "text": "十分に審査 できなかったにもかかわらず➡",
-      "translation": "충분히 심사할 수 없었음에도 불구하고 ➡",
+      "text": "≪(定岡)十分に審査 できなかったにもかかわらず➡",
+      "translation": "≪(정오카) 충분히 심사할 수 없었음에도 불구하고➡",
       "start_time": "01:39:10",
       "end_time": "01:39:13",
       "start_seconds": 5950,
       "end_seconds": 5953,
-      "has_jlpt": true,
-      "vocab_matches": [
-        {
-          "surface": "十分",
-          "reading": "じゅうぶん",
-          "meaning": "충분히",
-          "level": "N3",
-          "surface_in_sentence": "十分",
-          "base_form": "十分",
-          "pos": "명사"
-        }
-      ],
+      "has_jlpt": false,
+      "vocab_matches": [],
       "grammar_matches": []
     },
     {
@@ -29155,8 +29180,8 @@
     },
     {
       "index": 1086,
-      "text": "あなたの無責任な 審査のせいで➡",
-      "translation": "무책임한 심사 때문에 ➡",
+      "text": "≪(定岡)あなたの無責任な 審査のせいで➡",
+      "translation": "≪(정오카) 당신의 무책임한 심사 탓에➡",
       "start_time": "01:39:21",
       "end_time": "01:39:24",
       "start_seconds": 5961,
@@ -29552,33 +29577,14 @@
     },
     {
       "index": 1104,
-      "text": "「自分が全責任を取る」と",
-      "translation": "\"자신이 모든 책임을 져라\"고",
+      "text": "と",
+      "translation": "그리고",
       "start_time": "01:40:45",
       "end_time": "01:40:47",
       "start_seconds": 6045,
       "end_seconds": 6047,
-      "has_jlpt": true,
-      "vocab_matches": [
-        {
-          "surface": "取る",
-          "reading": "とる",
-          "meaning": "빼앗다",
-          "level": "N3",
-          "surface_in_sentence": "取る",
-          "base_form": "取る",
-          "pos": "동사"
-        },
-        {
-          "surface": "自分",
-          "reading": "じぶん",
-          "meaning": "자신",
-          "level": "N3",
-          "surface_in_sentence": "自分",
-          "base_form": "自分",
-          "pos": "명사"
-        }
-      ],
+      "has_jlpt": false,
+      "vocab_matches": [],
       "grammar_matches": []
     },
     {
@@ -30003,8 +30009,8 @@
     },
     {
       "index": 1120,
-      "text": "いいかげんにしろッ 粉飾を見破れなかったのは",
-      "translation": "좋은 가게에 넣어 가루 장식을 깨뜨리지 못한 것은",
+      "text": "≪(小木曽)いいかげんにしろッ 粉飾を見破れなかったのは",
+      "translation": "≪(코기 소) 좋은 가켄니로롯분식을 깨뜨릴 수 없었던 것은",
       "start_time": "01:41:39",
       "end_time": "01:41:44",
       "start_seconds": 6099,
@@ -31129,7 +31135,7 @@
     {
       "index": 1158,
       "text": "はい 倍返しです",
-      "translation": "네 배반입니다.",
+      "translation": "예 배회입니다.",
       "start_time": "01:44:12",
       "end_time": "01:44:15",
       "start_seconds": 6252,
@@ -31339,8 +31345,8 @@
     },
     {
       "index": 1165,
-      "text": "彼は たしか... ご存じなんですか?",
-      "translation": "그는 확실히 ... 알고 계십니까?",
+      "text": "≪(中野渡)彼は たしか... ご存じなんですか?",
+      "translation": "≪(나카노 와타리) 그는 확실히... 아시나요?",
       "start_time": "01:44:56",
       "end_time": "01:45:00",
       "start_seconds": 6296,

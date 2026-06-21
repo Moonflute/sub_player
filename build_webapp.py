@@ -1,13 +1,14 @@
 from __future__ import annotations
 
 import argparse
+import difflib
 import hashlib
 import json
 import re
 import shutil
+import statistics
 import time
 from pathlib import Path
-from urllib.parse import urlencode
 
 import main as engine
 import requests
@@ -20,16 +21,37 @@ OUTPUT_DIR = BASE_DIR / "site"
 SHOW_DB_DIR = BASE_DIR / "show_db"
 SYNC_OVERRIDES_FILE = BASE_DIR / "web_sync_offsets.json"
 VERSION_FILE = BASE_DIR / "VERSION"
+
 DIRECT_BATCH_MAX_CHARS = 3200
 DIRECT_BATCH_SLEEP_SECONDS = 0.2
+SYNC_MATCH_SAMPLE_SIZE = 140
+SYNC_MATCH_SCAN_LIMIT = 320
+SYNC_MATCH_MIN_RATIO = 0.55
+SYNC_OFFSET_OUTLIER_SECONDS = 8.0
+TRANSLATION_OVERLAP_PADDING = 0.45
+TRANSLATION_NEARBY_THRESHOLD = 1.2
+
 SPEAKER_PREFIX_RE = re.compile(
-    r"^[\s\u3000]*(?:[\(\[（【《〈≪][^)\]）】》〉≫]{1,24}[\)\]）】》〉≫][\s\u3000]*)+"
+    r"^[\s\u3000]*(?:[\(\[「『【<＜][^)\]」』】>＞]{1,24}[\)\]」』】>＞][\s\u3000]*)+"
 )
+ASS_DIALOGUE_RE = re.compile(
+    r"^Dialogue:\s*\d+,(?P<start>\d+:\d{2}:\d{2}\.\d{2}),(?P<end>\d+:\d{2}:\d{2}\.\d{2}),"
+    r"(?P<style>[^,]*),(?P<name>[^,]*),(?P<margin_l>[^,]*),(?P<margin_r>[^,]*),"
+    r"(?P<margin_v>[^,]*),(?P<effect>[^,]*),(?P<text>.*)$"
+)
+ASS_TAG_RE = re.compile(r"\{[^{}]*\}")
+PAREN_CONTENT_RE = re.compile(r"\([^)]*\)|\[[^\]]*\]|【[^】]*】|＜[^＞]*＞|〈[^〉]*〉")
+HANGUL_RE = re.compile(r"[가-힣]")
+KOREAN_TOKEN_RE = re.compile(r"[가-힣A-Za-z0-9]+")
 
 
 def strip_speaker_prefix(text: str) -> str:
     cleaned = SPEAKER_PREFIX_RE.sub("", text).strip()
     return cleaned or text.strip()
+
+
+def strip_parenthetical_content(text: str) -> str:
+    return PAREN_CONTENT_RE.sub("", text)
 
 
 def clean_translation(text: str) -> str:
@@ -125,7 +147,7 @@ def build_sentence_batches(sentences: list[str], max_chars: int = DIRECT_BATCH_M
 def direct_google_translate_batch(sentences: list[str], source: str = "ja", target: str = "ko") -> dict[str, str]:
     translation_map: dict[str, str] = {}
     batches = build_sentence_batches(sentences)
-    print(f" -> direct Google batch fallback: {len(sentences)} sentences / {len(batches)} batches")
+    print(f" -> direct Google batch translation: {len(sentences)} sentences / {len(batches)} batches")
 
     for batch_index, batch in enumerate(batches, start=1):
         try:
@@ -164,6 +186,209 @@ def build_translation_map(sentences: list[str], translation_enabled: bool) -> di
     for sentence in sentences:
         translation_map[sentence] = clean_translation(direct_map.get(sentence, ""))
     return translation_map
+
+
+def hhmmss_centiseconds_to_seconds(value: str) -> float:
+    parts = value.split(":")
+    if len(parts) != 3:
+        return 0.0
+    hours = int(parts[0])
+    minutes = int(parts[1])
+    seconds, centiseconds = parts[2].split(".")
+    return hours * 3600 + minutes * 60 + int(seconds) + int(centiseconds) / 100.0
+
+
+def ass_text_to_plain(text: str) -> str:
+    cleaned = text.lstrip("\ufeff")
+    cleaned = ASS_TAG_RE.sub("", cleaned)
+    cleaned = cleaned.replace("\\N", "\n").replace("\\n", "\n").replace("\\h", " ")
+    cleaned = cleaned.replace("\u200b", " ")
+    cleaned = strip_parenthetical_content(cleaned)
+    cleaned = re.sub(r"\s+", " ", cleaned)
+    return cleaned.strip()
+
+
+def normalize_korean_text(text: str) -> str:
+    return "".join(KOREAN_TOKEN_RE.findall(text)).lower()
+
+
+def parse_ass(path: Path) -> list[dict]:
+    entries: list[dict] = []
+    for raw_line in path.read_text(encoding="utf-8-sig", errors="ignore").splitlines():
+        match = ASS_DIALOGUE_RE.match(raw_line)
+        if not match:
+            continue
+        text = ass_text_to_plain(match.group("text"))
+        if not text or not HANGUL_RE.search(text):
+            continue
+        start_time = match.group("start")
+        end_time = match.group("end")
+        entries.append(
+            {
+                "text": text,
+                "start_time": start_time,
+                "end_time": end_time,
+                "start_seconds": hhmmss_centiseconds_to_seconds(start_time),
+                "end_seconds": hhmmss_centiseconds_to_seconds(end_time),
+            }
+        )
+    return entries
+
+
+def find_translation_ass_file(source_path: Path) -> Path | None:
+    candidates = sorted(INPUT_DIR.glob("*.ass"))
+    if not candidates:
+        return None
+
+    source_stem = re.sub(r"\s+", " ", source_path.stem.lower()).strip()
+    source_tokens = set(re.findall(r"[a-z0-9]+", source_stem))
+    best_match: Path | None = None
+    best_score = -1
+
+    for candidate in candidates:
+        candidate_stem = re.sub(r"\s+", " ", candidate.stem.lower()).strip()
+        candidate_tokens = set(re.findall(r"[a-z0-9]+", candidate_stem))
+        score = len(source_tokens & candidate_tokens)
+        if source_stem and source_stem in candidate_stem:
+            score += 5
+        if "번역" in candidate_stem:
+            score += 2
+        if score > best_score:
+            best_score = score
+            best_match = candidate
+
+    return best_match if best_score >= 5 else None
+
+
+def estimate_ass_sync_offset(
+    subtitle_lines: list[engine.SubtitleLine],
+    ass_entries: list[dict],
+    translation_enabled: bool,
+) -> float | None:
+    sample_lines = subtitle_lines[:SYNC_MATCH_SAMPLE_SIZE]
+    scan_entries = ass_entries[:SYNC_MATCH_SCAN_LIMIT]
+    if not sample_lines or not scan_entries:
+        return None
+
+    sample_translations = build_translation_map([line.text for line in sample_lines], translation_enabled)
+    offsets: list[float] = []
+
+    for line in sample_lines:
+        translated = clean_translation(sample_translations.get(line.text, ""))
+        normalized_translated = normalize_korean_text(translated)
+        if len(normalized_translated) < 4:
+            continue
+
+        best_entry: dict | None = None
+        best_ratio = 0.0
+        for entry in scan_entries:
+            normalized_ass = normalize_korean_text(str(entry["text"]))
+            if len(normalized_ass) < 4:
+                continue
+            ratio = difflib.SequenceMatcher(None, normalized_translated, normalized_ass).ratio()
+            if ratio > best_ratio:
+                best_ratio = ratio
+                best_entry = entry
+
+        if best_entry is None or best_ratio < SYNC_MATCH_MIN_RATIO:
+            continue
+
+        source_seconds = engine.seconds_from_hhmmss(line.start_time)
+        offsets.append(source_seconds - float(best_entry["start_seconds"]))
+
+    if len(offsets) < 3:
+        return None
+
+    median_offset = statistics.median(offsets)
+    filtered = [offset for offset in offsets if abs(offset - median_offset) <= SYNC_OFFSET_OUTLIER_SECONDS]
+    if len(filtered) >= 3:
+        median_offset = statistics.median(filtered)
+    return float(median_offset)
+
+
+def build_translation_map_from_ass(
+    subtitle_lines: list[engine.SubtitleLine],
+    ass_entries: list[dict],
+    offset_seconds: float,
+) -> dict[str, str]:
+    translation_map: dict[str, str] = {}
+
+    for line in subtitle_lines:
+        line_start = engine.seconds_from_hhmmss(line.start_time)
+        line_end = engine.seconds_from_hhmmss(line.end_time)
+        matched_texts: list[str] = []
+        nearest_text = ""
+        nearest_gap: float | None = None
+
+        for entry in ass_entries:
+            adjusted_start = float(entry["start_seconds"]) + offset_seconds
+            adjusted_end = float(entry["end_seconds"]) + offset_seconds
+            overlap_start = max(line_start, adjusted_start)
+            overlap_end = min(line_end, adjusted_end)
+            if overlap_end >= overlap_start - TRANSLATION_OVERLAP_PADDING:
+                matched_texts.append(str(entry["text"]))
+                continue
+
+            gap = min(abs(adjusted_start - line_start), abs(adjusted_end - line_end))
+            if nearest_gap is None or gap < nearest_gap:
+                nearest_gap = gap
+                nearest_text = str(entry["text"])
+
+        if matched_texts:
+            merged = " ".join(dict.fromkeys(text.strip() for text in matched_texts if text.strip()))
+            translation_map[line.text] = clean_translation(merged)
+        elif nearest_gap is not None and nearest_gap <= TRANSLATION_NEARBY_THRESHOLD:
+            translation_map[line.text] = clean_translation(nearest_text)
+        else:
+            translation_map[line.text] = ""
+
+    return translation_map
+
+
+def resolve_translation_map(
+    path: Path,
+    subtitle_lines: list[engine.SubtitleLine],
+    translation_enabled: bool,
+) -> tuple[dict[str, str], dict]:
+    metadata = {
+        "source": "google" if translation_enabled else "disabled",
+        "translation_file": "",
+        "sync_offset_seconds": None,
+    }
+
+    if not translation_enabled:
+        return {line.text: "" for line in subtitle_lines}, metadata
+
+    ass_path = find_translation_ass_file(path)
+    if ass_path is None:
+        return build_translation_map([line.text for line in subtitle_lines], True), metadata
+
+    ass_entries = parse_ass(ass_path)
+    if not ass_entries:
+        return build_translation_map([line.text for line in subtitle_lines], True), metadata
+
+    print(f" -> translation ASS found: {ass_path.name}")
+    offset_seconds = estimate_ass_sync_offset(subtitle_lines, ass_entries, True)
+    if offset_seconds is None:
+        print("    [warn] ASS sync estimation failed; using Google translation only")
+        return build_translation_map([line.text for line in subtitle_lines], True), metadata
+
+    print(f"    - estimated ASS sync offset: {offset_seconds:+.2f}s")
+    translation_map = build_translation_map_from_ass(subtitle_lines, ass_entries, offset_seconds)
+
+    missing_sentences = [line.text for line in subtitle_lines if not translation_map.get(line.text)]
+    if missing_sentences:
+        print(f"    - filling missing translations with Google: {len(missing_sentences)} sentences")
+        fallback_map = build_translation_map(missing_sentences, True)
+        for sentence in missing_sentences:
+            translation_map[sentence] = clean_translation(fallback_map.get(sentence, ""))
+
+    metadata = {
+        "source": "ass+google-fallback",
+        "translation_file": ass_path.name,
+        "sync_offset_seconds": round(offset_seconds, 3),
+    }
+    return translation_map, metadata
 
 
 def read_version() -> str:
@@ -255,7 +480,8 @@ def build_show_payload(
     unique_lines = list(dict.fromkeys((line.text, line.start_time, line.end_time) for line in cleaned_lines))
     subtitle_lines = [engine.SubtitleLine(text, start, end) for text, start, end in unique_lines]
 
-    translation_map = build_translation_map([line.text for line in subtitle_lines], translation_enabled)
+    translation_map, translation_info = resolve_translation_map(path, subtitle_lines, translation_enabled)
+    manual_sync_offset = int(sync_overrides.get(path.name, sync_overrides.get(path.stem, 0)))
 
     sentences = []
     relevant_sentence_count = 0
@@ -279,6 +505,8 @@ def build_show_payload(
             if has_jlpt:
                 relevant_sentence_count += 1
 
+        start_seconds = engine.seconds_from_hhmmss(line.start_time) + manual_sync_offset
+        end_seconds = engine.seconds_from_hhmmss(line.end_time) + manual_sync_offset
         sentences.append(
             {
                 "index": index,
@@ -286,8 +514,8 @@ def build_show_payload(
                 "translation": clean_translation(translation_map.get(line.text, "")),
                 "start_time": line.start_time,
                 "end_time": line.end_time,
-                "start_seconds": engine.seconds_from_hhmmss(line.start_time),
-                "end_seconds": engine.seconds_from_hhmmss(line.end_time),
+                "start_seconds": max(0, start_seconds),
+                "end_seconds": max(0, end_seconds),
                 "has_jlpt": has_jlpt,
                 "vocab_matches": vocab_matches,
                 "grammar_matches": grammar_matches,
@@ -302,6 +530,8 @@ def build_show_payload(
         "duration_seconds": max((item["end_seconds"] for item in sentences), default=0),
         "sentence_count": len(sentences),
         "relevant_sentence_count": relevant_sentence_count,
+        "translation_info": translation_info,
+        "manual_sync_offset_seconds": manual_sync_offset,
         "sentences": sentences,
     }
 
@@ -370,9 +600,8 @@ def write_show_database(
             }
         )
 
-    library_payload = {"items": library_items}
     (db_dir / "library.json").write_text(
-        json.dumps(library_payload, ensure_ascii=False, indent=2),
+        json.dumps({"items": library_items}, ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
     print(f"[done] show db written to {db_dir}")
