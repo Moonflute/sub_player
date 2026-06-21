@@ -15,6 +15,7 @@ INPUT_DIR = BASE_DIR / "input_script"
 SOURCE_DIR = BASE_DIR / "site_src"
 OUTPUT_DIR = BASE_DIR / "site"
 SYNC_OVERRIDES_FILE = BASE_DIR / "web_sync_offsets.json"
+VERSION_FILE = BASE_DIR / "VERSION"
 SPEAKER_PREFIX_RE = re.compile(
     r"^[\s\u3000]*(?:[\(\[（【《〈≪][^)\]）】》〉≫]{1,24}[\)\]）】》〉≫][\s\u3000]*)+"
 )
@@ -37,6 +38,30 @@ def clean_translation(text: str) -> str:
     if any(marker in value for marker in blocked_markers):
         return ""
     return value
+
+
+def read_version() -> str:
+    if not VERSION_FILE.exists():
+        VERSION_FILE.write_text("0.0.1", encoding="utf-8")
+        return "0.0.1"
+    return VERSION_FILE.read_text(encoding="utf-8").strip() or "0.0.1"
+
+
+def bump_version(version: str) -> str:
+    parts = version.split(".")
+    if len(parts) != 3 or not all(part.isdigit() for part in parts):
+        raise ValueError(f"Invalid version format: {version}")
+    major, minor, patch = map(int, parts)
+    return f"{major}.{minor}.{patch + 1}"
+
+
+def resolve_version(keep_version: bool) -> str:
+    current = read_version()
+    if keep_version:
+        return current
+    updated = bump_version(current)
+    VERSION_FILE.write_text(updated, encoding="utf-8")
+    return updated
 
 
 def load_sync_overrides() -> dict[str, int]:
@@ -165,11 +190,19 @@ def build_show_payload(
     }
 
 
-def copy_site_source(output_dir: Path) -> None:
+def copy_site_source(output_dir: Path, version: str) -> None:
     if output_dir.exists():
         shutil.rmtree(output_dir)
     shutil.copytree(SOURCE_DIR, output_dir)
     (output_dir / ".nojekyll").write_text("", encoding="utf-8")
+    for path in output_dir.rglob("*"):
+        if not path.is_file():
+            continue
+        if path.suffix.lower() not in {".html", ".css", ".js", ".json", ".webmanifest", ".txt"}:
+            continue
+        text = path.read_text(encoding="utf-8")
+        if "__APP_VERSION__" in text:
+            path.write_text(text.replace("__APP_VERSION__", version), encoding="utf-8")
 
 
 def build_site(
@@ -177,8 +210,9 @@ def build_site(
     disable_translation: bool,
     rebuild_db: bool,
     only_names: set[str] | None,
+    version: str,
 ) -> None:
-    copy_site_source(output_dir)
+    copy_site_source(output_dir, version)
     data_dir = output_dir / "data" / "shows"
     data_dir.mkdir(parents=True, exist_ok=True)
 
@@ -235,6 +269,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--output-dir", default="site")
     parser.add_argument("--disable-translation", action="store_true")
     parser.add_argument("--rebuild-db", action="store_true")
+    parser.add_argument("--keep-version", action="store_true")
     parser.add_argument("--only", nargs="*", help="Build only selected subtitle filenames or stems")
     return parser.parse_args()
 
@@ -243,11 +278,14 @@ def main() -> int:
     args = parse_args()
     output_dir = (BASE_DIR / args.output_dir).resolve()
     only_names = set(args.only or []) or None
+    version = resolve_version(args.keep_version)
+    print(f"[version] {version}")
     build_site(
         output_dir=output_dir,
         disable_translation=args.disable_translation,
         rebuild_db=args.rebuild_db,
         only_names=only_names,
+        version=version,
     )
     return 0
 
