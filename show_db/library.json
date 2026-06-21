@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "id": "fd908d959f81",
+      "title": "Bocchi the Rock! - S01E01",
+      "file_name": "Bocchi the Rock! - S01E01.srt",
+      "duration_seconds": 1419,
+      "sentence_count": 478,
+      "relevant_sentence_count": 240
+    },
+    {
+      "id": "1dfe205eb960",
+      "title": "한자와 나오키 S01E01",
+      "file_name": "한자와 나오키 S01E01.srt",
+      "duration_seconds": 6362,
+      "sentence_count": 1182,
+      "relevant_sentence_count": 746
+    }
+  ]
+}

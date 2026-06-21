@@ -1,7 +1,7 @@
 {
   "name": "JLPT Subtitle Player",
   "short_name": "JLPT Player",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#f5efdf",

@@ -5,17 +5,23 @@ import hashlib
 import json
 import re
 import shutil
+import time
 from pathlib import Path
+from urllib.parse import urlencode
 
 import main as engine
+import requests
 
 
 BASE_DIR = Path(__file__).resolve().parent
 INPUT_DIR = BASE_DIR / "input_script"
 SOURCE_DIR = BASE_DIR / "site_src"
 OUTPUT_DIR = BASE_DIR / "site"
+SHOW_DB_DIR = BASE_DIR / "show_db"
 SYNC_OVERRIDES_FILE = BASE_DIR / "web_sync_offsets.json"
 VERSION_FILE = BASE_DIR / "VERSION"
+DIRECT_BATCH_MAX_CHARS = 3200
+DIRECT_BATCH_SLEEP_SECONDS = 0.2
 SPEAKER_PREFIX_RE = re.compile(
     r"^[\s\u3000]*(?:[\(\[（【《〈≪][^)\]）】》〉≫]{1,24}[\)\]）】》〉≫][\s\u3000]*)+"
 )
@@ -38,6 +44,126 @@ def clean_translation(text: str) -> str:
     if any(marker in value for marker in blocked_markers):
         return ""
     return value
+
+
+def direct_google_translate(text: str, source: str = "ja", target: str = "ko") -> str:
+    response = requests.get(
+        "https://translate.googleapis.com/translate_a/single",
+        params={
+            "client": "gtx",
+            "sl": source,
+            "tl": target,
+            "dt": "t",
+            "q": text,
+        },
+        timeout=20,
+        headers={
+            "User-Agent": (
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) "
+                "Chrome/126.0.0.0 Safari/537.36"
+            )
+        },
+    )
+    response.raise_for_status()
+    payload = response.json()
+    translated = clean_translation("".join(part[0] for part in payload[0] if part and part[0]))
+    if not translated or translated == text.strip():
+        return ""
+    return translated
+
+
+def segment_marker(index: int) -> str:
+    return f"[[[SEG_{index:04d}]]]"
+
+
+def pack_translation_batch(sentences: list[str]) -> str:
+    return "\n".join(f"{segment_marker(index)}\n{sentence}" for index, sentence in enumerate(sentences))
+
+
+def unpack_translation_batch(translated_text: str, size: int) -> list[str]:
+    normalized = translated_text.replace("\r\n", "\n").replace("\r", "\n")
+    positions: list[tuple[int, int]] = []
+    for index in range(size):
+        marker = segment_marker(index)
+        pos = normalized.find(marker)
+        if pos == -1:
+            return []
+        positions.append((index, pos))
+
+    positions.sort(key=lambda item: item[1])
+    results: list[str] = []
+    for order, (index, start_pos) in enumerate(positions):
+        marker = segment_marker(index)
+        content_start = start_pos + len(marker)
+        if content_start < len(normalized) and normalized[content_start] == "\n":
+            content_start += 1
+        content_end = positions[order + 1][1] if order + 1 < len(positions) else len(normalized)
+        results.append(clean_translation(normalized[content_start:content_end].strip()))
+    return results
+
+
+def build_sentence_batches(sentences: list[str], max_chars: int = DIRECT_BATCH_MAX_CHARS) -> list[list[str]]:
+    batches: list[list[str]] = []
+    current_batch: list[str] = []
+    current_size = 0
+
+    for sentence in sentences:
+        estimated_size = len(sentence) + 24
+        if current_batch and current_size + estimated_size > max_chars:
+            batches.append(current_batch)
+            current_batch = []
+            current_size = 0
+        current_batch.append(sentence)
+        current_size += estimated_size
+
+    if current_batch:
+        batches.append(current_batch)
+    return batches
+
+
+def direct_google_translate_batch(sentences: list[str], source: str = "ja", target: str = "ko") -> dict[str, str]:
+    translation_map: dict[str, str] = {}
+    batches = build_sentence_batches(sentences)
+    print(f" -> direct Google batch fallback: {len(sentences)} sentences / {len(batches)} batches")
+
+    for batch_index, batch in enumerate(batches, start=1):
+        try:
+            packed = pack_translation_batch(batch)
+            translated = direct_google_translate(packed, source=source, target=target)
+            unpacked = unpack_translation_batch(translated, len(batch))
+        except Exception as exc:
+            print(f"    [warn] direct batch request failed {batch_index}/{len(batches)}: {exc.__class__.__name__}")
+            unpacked = []
+
+        if len(unpacked) == len(batch):
+            for sentence, translated_sentence in zip(batch, unpacked):
+                translation_map[sentence] = clean_translation(translated_sentence)
+        else:
+            print(f"    [warn] batch split failed {batch_index}/{len(batches)}; falling back to single requests")
+            for sentence in batch:
+                try:
+                    translation_map[sentence] = direct_google_translate(sentence, source=source, target=target)
+                    time.sleep(DIRECT_BATCH_SLEEP_SECONDS)
+                except Exception as exc:
+                    print(f"    [warn] direct single fallback failed: {exc.__class__.__name__}")
+                    translation_map[sentence] = ""
+            continue
+
+        print(f"    - direct batch progress: {batch_index}/{len(batches)}")
+        time.sleep(DIRECT_BATCH_SLEEP_SECONDS)
+
+    return translation_map
+
+
+def build_translation_map(sentences: list[str], translation_enabled: bool) -> dict[str, str]:
+    if not translation_enabled:
+        return {sentence: "" for sentence in sentences}
+    translation_map = {sentence: "" for sentence in sentences}
+    direct_map = direct_google_translate_batch(sentences)
+    for sentence in sentences:
+        translation_map[sentence] = clean_translation(direct_map.get(sentence, ""))
+    return translation_map
 
 
 def read_version() -> str:
@@ -116,7 +242,7 @@ def build_show_payload(
     vocab_index,
     grammar_entries,
     hackers_reference,
-    translator,
+    translation_enabled: bool,
     sync_overrides: dict[str, int],
 ) -> dict:
     raw_lines = engine.parse_srt(path)
@@ -129,17 +255,7 @@ def build_show_payload(
     unique_lines = list(dict.fromkeys((line.text, line.start_time, line.end_time) for line in cleaned_lines))
     subtitle_lines = [engine.SubtitleLine(text, start, end) for text, start, end in unique_lines]
 
-    if translator is None:
-        translation_map = {line.text: "" for line in subtitle_lines}
-    else:
-        raw_translation_map = engine.translate_sentences(
-            [line.text for line in subtitle_lines],
-            translator,
-        )
-        translation_map = {
-            sentence: clean_translation(translated)
-            for sentence, translated in raw_translation_map.items()
-        }
+    translation_map = build_translation_map([line.text for line in subtitle_lines], translation_enabled)
 
     sentences = []
     relevant_sentence_count = 0
@@ -205,25 +321,23 @@ def copy_site_source(output_dir: Path, version: str) -> None:
             path.write_text(text.replace("__APP_VERSION__", version), encoding="utf-8")
 
 
-def build_site(
-    output_dir: Path,
+def write_show_database(
+    db_dir: Path,
     disable_translation: bool,
     rebuild_db: bool,
     only_names: set[str] | None,
-    version: str,
-) -> None:
-    copy_site_source(output_dir, version)
-    data_dir = output_dir / "data" / "shows"
-    data_dir.mkdir(parents=True, exist_ok=True)
+) -> Path:
+    shows_dir = db_dir / "shows"
+    if db_dir.exists():
+        shutil.rmtree(db_dir)
+    shows_dir.mkdir(parents=True, exist_ok=True)
 
     engine.ensure_reference_database(BASE_DIR, force_rebuild=rebuild_db)
     vocab_index, grammar_entries, hackers_reference = engine.load_reference_data_from_database(BASE_DIR)
 
     from janome.tokenizer import Tokenizer
-    from deep_translator import GoogleTranslator
 
     tokenizer = Tokenizer()
-    translator = None if disable_translation else GoogleTranslator(source="ja", target="ko")
     sync_overrides = load_sync_overrides()
 
     library_items: list[dict] = []
@@ -232,17 +346,17 @@ def build_site(
         subtitle_files = [path for path in subtitle_files if path.name in only_names or path.stem in only_names]
 
     for path in subtitle_files:
-        print(f"[build] {path.name}")
+        print(f"[build-db] {path.name}")
         payload = build_show_payload(
             path=path,
             tokenizer=tokenizer,
             vocab_index=vocab_index,
             grammar_entries=grammar_entries,
             hackers_reference=hackers_reference,
-            translator=translator,
+            translation_enabled=not disable_translation,
             sync_overrides=sync_overrides,
         )
-        show_path = data_dir / f"{payload['id']}.json"
+        show_path = shows_dir / f"{payload['id']}.json"
         show_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
 
         library_items.append(
@@ -257,19 +371,36 @@ def build_site(
         )
 
     library_payload = {"items": library_items}
-    (output_dir / "data" / "library.json").write_text(
+    (db_dir / "library.json").write_text(
         json.dumps(library_payload, ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
+    print(f"[done] show db written to {db_dir}")
+    return db_dir
+
+
+def build_site(
+    output_dir: Path,
+    db_dir: Path,
+    version: str,
+) -> None:
+    copy_site_source(output_dir, version)
+    data_dir = output_dir / "data" / "shows"
+    data_dir.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(db_dir / "library.json", output_dir / "data" / "library.json")
+    for show_json in (db_dir / "shows").glob("*.json"):
+        shutil.copy2(show_json, data_dir / show_json.name)
     print(f"[done] static site written to {output_dir}")
 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Build a static JLPT subtitle web app.")
     parser.add_argument("--output-dir", default="site")
+    parser.add_argument("--db-dir", default="show_db")
     parser.add_argument("--disable-translation", action="store_true")
     parser.add_argument("--rebuild-db", action="store_true")
     parser.add_argument("--keep-version", action="store_true")
+    parser.add_argument("--skip-show-db", action="store_true")
     parser.add_argument("--only", nargs="*", help="Build only selected subtitle filenames or stems")
     return parser.parse_args()
 
@@ -277,14 +408,20 @@ def parse_args() -> argparse.Namespace:
 def main() -> int:
     args = parse_args()
     output_dir = (BASE_DIR / args.output_dir).resolve()
+    db_dir = (BASE_DIR / args.db_dir).resolve()
     only_names = set(args.only or []) or None
     version = resolve_version(args.keep_version)
     print(f"[version] {version}")
+    if not args.skip_show_db:
+        write_show_database(
+            db_dir=db_dir,
+            disable_translation=args.disable_translation,
+            rebuild_db=args.rebuild_db,
+            only_names=only_names,
+        )
     build_site(
         output_dir=output_dir,
-        disable_translation=args.disable_translation,
-        rebuild_db=args.rebuild_db,
-        only_names=only_names,
+        db_dir=db_dir,
         version=version,
     )
     return 0
