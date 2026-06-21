@@ -203,7 +203,7 @@ input {
   align-content: center;
   justify-items: center;
   text-align: center;
-  grid-template-rows: auto auto auto minmax(108px, 124px);
+  grid-template-rows: auto auto auto minmax(24px, auto);
   gap: 8px;
 }
 
@@ -212,12 +212,13 @@ input {
   max-width: 1560px;
   font-family: var(--font-head);
   font-size: clamp(1.45rem, 3.3vw, 2.6rem);
-  line-height: 1.14;
+  line-height: 1.18;
   font-weight: 800;
   letter-spacing: -0.03em;
   word-break: keep-all;
   text-wrap: balance;
-  min-height: 2.4em;
+  min-height: 2.8em;
+  padding: 1.7rem 0 1.65rem;
 }
 
 .current-translation {
@@ -244,67 +245,66 @@ input {
 
 .annotation-rail {
   width: 100%;
-  max-width: 1480px;
-  min-height: 108px;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 8px 14px;
-  align-content: start;
+  max-width: 1180px;
+  min-height: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  align-content: center;
 }
 
-.annotation {
-  min-height: 48px;
-  display: grid;
-  justify-items: center;
-  align-content: start;
-  gap: 3px;
-}
-
-.annotation__anchor-wrap {
-  display: grid;
-  justify-items: center;
-  min-height: 2rem;
-}
-
-.annotation__ruby {
-  font-size: 0.68rem;
-  color: var(--muted);
-  line-height: 1.1;
-  min-height: 0.74rem;
-}
-
-.annotation__ruby--empty {
-  visibility: hidden;
-}
-
-.annotation__anchor {
-  padding-bottom: 2px;
-  border-bottom: 2px solid currentColor;
-  font-size: clamp(0.96rem, 1.28vw, 1.08rem);
-  font-weight: 800;
-  line-height: 1.12;
-}
-
-.annotation__anchor--vocab {
-  color: #1e5dc2;
-}
-
-.annotation__anchor--grammar,
-.annotation__anchor--pattern {
-  color: #99411f;
-}
-
-.annotation__line {
-  width: 1px;
-  height: 12px;
-  background: rgba(24, 34, 47, 0.22);
-}
-
-.annotation__detail {
-  width: 100%;
-  font-size: clamp(0.86rem, 1vw, 0.96rem);
-  line-height: 1.25;
+.annotation-chip {
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(24, 34, 47, 0.08);
+  font-size: 0.8rem;
+  line-height: 1.2;
   color: #243042;
+}
+
+.annotation-chip--grammar,
+.annotation-chip--pattern {
+  color: #7c3417;
+}
+
+.inline-note {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  margin: 0 0.08em;
+}
+
+.inline-note__top {
+  position: absolute;
+  bottom: calc(100% + 0.18rem);
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: clamp(0.62rem, 0.95vw, 0.84rem);
+  line-height: 1;
+  font-weight: 700;
+  color: var(--muted-soft);
+  white-space: nowrap;
+}
+
+.inline-note__anchor {
+  display: inline-block;
+}
+
+.inline-note__bottom {
+  position: absolute;
+  top: calc(100% + 0.22rem);
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: clamp(0.72rem, 1.05vw, 0.94rem);
+  line-height: 1.05;
+  font-weight: 500;
+  color: #243042;
+  white-space: nowrap;
   word-break: keep-all;
 }
 
@@ -435,13 +435,15 @@ input {
   }
 
   .sentence-panel {
-    grid-template-rows: auto auto auto minmax(92px, 104px);
+    grid-template-rows: auto auto auto minmax(20px, auto);
     gap: 7px;
   }
 
   .current-sentence {
     font-size: clamp(1.28rem, 6.2vw, 1.9rem);
     line-height: 1.16;
+    min-height: 3.2em;
+    padding: 1.45rem 0 1.45rem;
   }
 
   .current-translation {
@@ -449,12 +451,19 @@ input {
   }
 
   .annotation-rail {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    min-height: 92px;
-    gap: 8px 10px;
+    min-height: 20px;
+    gap: 6px;
   }
 
-  .annotation__detail {
-    font-size: 0.8rem;
+  .annotation-chip {
+    font-size: 0.72rem;
+  }
+
+  .inline-note__top {
+    font-size: 0.58rem;
+  }
+
+  .inline-note__bottom {
+    font-size: 0.74rem;
   }
 }

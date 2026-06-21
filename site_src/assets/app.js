@@ -79,22 +79,36 @@ function buildHighlightMap(sentence) {
   if (!sentence) return [];
 
   const highlights = [];
+  const seenVocab = new Set();
+  const seenGrammar = new Set();
 
   for (const item of sentence.vocab_matches || []) {
     const text = item.surface_in_sentence || item.surface;
-    if (!text) continue;
+    const key = `${text}:${item.surface}:${item.reading || ""}`;
+    if (!text || seenVocab.has(key)) continue;
+    seenVocab.add(key);
     highlights.push({
+      kind: "vocab",
       text,
+      reading: item.reading || "",
+      meaning: item.meaning || "",
       className: `hl-vocab-${(item.level || "n5").toLowerCase()}`,
+      level: (item.level || "n5").toLowerCase(),
     });
   }
 
   for (const item of sentence.grammar_matches || []) {
     for (const text of item.matched_texts || []) {
-      if (!text) continue;
+      const normalized = String(text || "").trim();
+      if (!normalized || seenGrammar.has(normalized)) continue;
+      seenGrammar.add(normalized);
       highlights.push({
-        text,
+        kind: "grammar",
+        text: normalized,
+        label: item.label || normalized,
+        meaning: item.meaning || "",
         className: `hl-grammar-${(item.level || "n5").toLowerCase()}`,
+        level: (item.level || "n5").toLowerCase(),
       });
     }
   }
@@ -116,7 +130,7 @@ function buildHighlightRanges(sentence) {
       const end = index + mark.text.length;
       const overlaps = ranges.some((range) => !(end <= range.start || index >= range.end));
       if (!overlaps) {
-        ranges.push({ start: index, end, className: mark.className });
+        ranges.push({ start: index, end, ...mark });
       }
       cursor = index + Math.max(1, mark.text.length);
     }
@@ -141,7 +155,18 @@ function renderHighlightedSentence(sentence) {
     if (cursor < range.start) {
       parts.push(escapeHtml(text.slice(cursor, range.start)));
     }
-    parts.push(`<span class="${range.className}">${escapeHtml(text.slice(range.start, range.end))}</span>`);
+    const surface = escapeHtml(text.slice(range.start, range.end));
+    if (range.kind === "vocab") {
+      parts.push(`
+        <span class="inline-note inline-note--vocab inline-note--${range.level}">
+          <span class="inline-note__top">${escapeHtml(range.reading || "")}</span>
+          <span class="inline-note__anchor ${range.className}">${surface}</span>
+          <span class="inline-note__bottom">${escapeHtml(range.meaning || "")}</span>
+        </span>
+      `);
+    } else {
+      parts.push(`<span class="${range.className}">${surface}</span>`);
+    }
     cursor = range.end;
   }
   if (cursor < text.length) {
@@ -168,20 +193,6 @@ function buildAnnotations(sentence) {
   const annotations = [];
   const seen = new Set();
 
-  for (const item of sentence.vocab_matches || []) {
-    const anchor = item.surface_in_sentence || item.surface;
-    const key = `v:${anchor}:${item.surface}:${item.reading}`;
-    if (!anchor || seen.has(key)) continue;
-    seen.add(key);
-    annotations.push({
-      kind: "vocab",
-      anchor,
-      ruby: item.reading || "",
-      detail: `${item.surface}${item.reading ? ` (${item.reading})` : ""} : ${item.meaning}`,
-      level: (item.level || "n5").toLowerCase(),
-    });
-  }
-
   const grammarSeenByAnchor = new Set();
   for (const item of sentence.grammar_matches || []) {
     const anchor = (item.matched_texts && item.matched_texts[0]) || item.label;
@@ -193,13 +204,12 @@ function buildAnnotations(sentence) {
     annotations.push({
       kind: item.is_pattern ? "pattern" : "grammar",
       anchor: normalizedAnchor,
-      ruby: "",
-      detail: `${item.label} : ${item.meaning}`,
+      detail: `${item.label} - ${item.meaning}`,
       level: (item.level || "n5").toLowerCase(),
     });
   }
 
-  return annotations.slice(0, 6);
+  return annotations.slice(0, 3);
 }
 
 function renderAnnotations(sentence) {
@@ -210,13 +220,8 @@ function renderAnnotations(sentence) {
   }
 
   els.annotationRail.innerHTML = annotations.map((item) => `
-    <div class="annotation annotation--${item.kind}">
-      <div class="annotation__anchor-wrap">
-        <div class="annotation__ruby ${item.ruby ? "" : "annotation__ruby--empty"}">${escapeHtml(item.ruby || ".")}</div>
-        <div class="annotation__anchor annotation__anchor--${item.kind} annotation__anchor--${item.level}">${escapeHtml(item.anchor)}</div>
-      </div>
-      <div class="annotation__line" aria-hidden="true"></div>
-      <div class="annotation__detail">${escapeHtml(item.detail)}</div>
+    <div class="annotation-chip annotation-chip--${item.kind} annotation-chip--${item.level}">
+      ${escapeHtml(item.detail)}
     </div>
   `).join("");
 }
