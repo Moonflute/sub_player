@@ -4,7 +4,7 @@
   "file_name": "Bocchi the Rock! - S01E01.srt",
   "duration_seconds": 1419,
   "sentence_count": 478,
-  "relevant_sentence_count": 240,
+  "relevant_sentence_count": 243,
   "translation_info": {
     "source": "ass+google-fallback",
     "translation_file": "Bocchi the Rock! - S01E01 (번역).ass",
@@ -310,6 +310,15 @@
           "surface_in_sentence": "帰宅",
           "base_form": "帰宅",
           "pos": "명사"
+        },
+        {
+          "surface": "部活",
+          "reading": "ぶかつ",
+          "meaning": "동아리 활동, 부활동",
+          "level": "N4",
+          "surface_in_sentence": "部活",
+          "base_form": "部活",
+          "pos": "명사"
         }
       ],
       "grammar_matches": []
@@ -396,8 +405,18 @@
       "end_time": "00:00:46",
       "start_seconds": 43,
       "end_seconds": 46,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "中学",
+          "reading": "ちゅうがく",
+          "meaning": "중학교",
+          "level": "N5",
+          "surface_in_sentence": "中学",
+          "base_form": "中学",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -556,6 +575,15 @@
           "level": "N3",
           "surface_in_sentence": "教室",
           "base_form": "教室",
+          "pos": "명사"
+        },
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "meaning": "학생",
+          "level": "N5",
+          "surface_in_sentence": "学生",
+          "base_form": "学生",
           "pos": "명사"
         }
       ],
@@ -1283,6 +1311,15 @@
           "surface_in_sentence": "終わっ",
           "base_form": "終わる",
           "pos": "동사"
+        },
+        {
+          "surface": "中学",
+          "reading": "ちゅうがく",
+          "meaning": "중학교",
+          "level": "N5",
+          "surface_in_sentence": "中学",
+          "base_form": "中学",
+          "pos": "명사"
         }
       ],
       "grammar_matches": []
@@ -1397,8 +1434,18 @@
       "end_time": "00:04:50",
       "start_seconds": 288,
       "end_seconds": 290,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "高校",
+          "reading": "こうこう",
+          "meaning": "고등학교",
+          "level": "N5",
+          "surface_in_sentence": "高校",
+          "base_form": "高校",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -1418,6 +1465,15 @@
           "level": "N3",
           "surface_in_sentence": "絶対",
           "base_form": "絶対",
+          "pos": "명사"
+        },
+        {
+          "surface": "高校",
+          "reading": "こうこう",
+          "meaning": "고등학교",
+          "level": "N5",
+          "surface_in_sentence": "高校",
+          "base_form": "高校",
           "pos": "명사"
         }
       ],
@@ -1462,6 +1518,15 @@
           "level": "N3",
           "surface_in_sentence": "生活",
           "base_form": "生活",
+          "pos": "명사"
+        },
+        {
+          "surface": "高校",
+          "reading": "こうこう",
+          "meaning": "고등학교",
+          "level": "N5",
+          "surface_in_sentence": "高校",
+          "base_form": "高校",
           "pos": "명사"
         }
       ],
@@ -3347,6 +3412,15 @@
           "surface_in_sentence": "ち",
           "base_form": "ちる",
           "pos": "동사"
+        },
+        {
+          "surface": "高校",
+          "reading": "こうこう",
+          "meaning": "고등학교",
+          "level": "N5",
+          "surface_in_sentence": "高校",
+          "base_form": "高校",
+          "pos": "명사"
         }
       ],
       "grammar_matches": []
@@ -3359,8 +3433,18 @@
       "end_time": "00:09:30",
       "start_seconds": 567,
       "end_seconds": 570,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "高校",
+          "reading": "こうこう",
+          "meaning": "고등학교",
+          "level": "N5",
+          "surface_in_sentence": "高校",
+          "base_form": "高校",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -8917,6 +9001,15 @@
           "surface_in_sentence": "ち",
           "base_form": "ちる",
           "pos": "동사"
+        },
+        {
+          "surface": "中学",
+          "reading": "ちゅうがく",
+          "meaning": "중학교",
+          "level": "N5",
+          "surface_in_sentence": "中学",
+          "base_form": "中学",
+          "pos": "명사"
         }
       ],
       "grammar_matches": []

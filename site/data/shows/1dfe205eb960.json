@@ -4,7 +4,7 @@
   "file_name": "한자와 나오키 S01E01.srt",
   "duration_seconds": 6362,
   "sentence_count": 1182,
-  "relevant_sentence_count": 744,
+  "relevant_sentence_count": 745,
   "translation_info": {
     "source": "google",
     "translation_file": "",
@@ -184,8 +184,18 @@
       "end_time": "00:00:55",
       "start_seconds": 53,
       "end_seconds": 55,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "中学",
+          "reading": "ちゅうがく",
+          "meaning": "중학교",
+          "level": "N5",
+          "surface_in_sentence": "中学",
+          "base_form": "中学",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -4138,7 +4148,7 @@
           "surface": "勉強",
           "reading": "べんきょう",
           "meaning": "공부",
-          "level": "N3",
+          "level": "N5",
           "surface_in_sentence": "勉強",
           "base_form": "勉強",
           "pos": "명사"

@@ -326,6 +326,24 @@ def builtin_grammar() -> list[GrammarEntry]:
     return [GrammarEntry(label, meaning, level, "builtin", regex=regex) for label, meaning, level, regex in raw]
 
 
+def builtin_vocab() -> list[VocabEntry]:
+    raw = [
+        ("学生", "がくせい", "학생", "N5"),
+        ("高校", "こうこう", "고등학교", "N5"),
+        ("中学", "ちゅうがく", "중학교", "N5"),
+        ("部活", "ぶかつ", "동아리 활동, 부활동", "N4"),
+        ("授業", "じゅぎょう", "수업", "N5"),
+        ("勉強", "べんきょう", "공부", "N5"),
+        ("宿題", "しゅくだい", "숙제", "N5"),
+        ("試験", "しけん", "시험", "N4"),
+        ("教科書", "きょうかしょ", "교과서", "N4"),
+        ("先輩", "せんぱい", "선배", "N4"),
+        ("後輩", "こうはい", "후배", "N4"),
+        ("文化祭", "ぶんかさい", "학교 축제, 문화제", "N4"),
+    ]
+    return [VocabEntry(surface, reading, meaning, level, "builtin_vocab") for surface, reading, meaning, level in raw]
+
+
 def grammar_meta(label: str, meaning: str) -> tuple[str, str, str]:
     checks = [
         (("させられる", "사역수동"), "사역수동형", "동사 사역형 + 수동형", "상대에게 강제로 어떤 행동을 하게 되는 형태다."),
@@ -433,6 +451,15 @@ def load_reference_data(base_dir: Path) -> tuple[dict[str, list[VocabEntry]], li
             for key in {surface, compact_japanese(surface), reading, compact_japanese(reading)}:
                 if key:
                     vocab_index.setdefault(key, []).append(entry)
+
+    for entry in builtin_vocab():
+        dedupe_key = (entry.surface, entry.reading)
+        if dedupe_key in seen_vocab:
+            continue
+        seen_vocab.add(dedupe_key)
+        for key in {entry.surface, compact_japanese(entry.surface), entry.reading, compact_japanese(entry.reading)}:
+            if key:
+                vocab_index.setdefault(key, []).append(entry)
 
     grammar_files = [
         (ref_dir / "JLPT N3 문법.csv", "표현", "뜻"),
