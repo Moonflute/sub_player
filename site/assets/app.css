@@ -304,14 +304,14 @@ input {
 
 .controls-wrap {
   display: grid;
-  gap: 14px;
+  gap: 8px;
 }
 
 .controls-main {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 18px;
+  gap: 10px;
 }
 
 .transport-button,
@@ -322,8 +322,8 @@ input {
 }
 
 .transport-button {
-  width: 64px;
-  height: 64px;
+  width: 42px;
+  height: 42px;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.9);
   color: var(--ink);
@@ -333,19 +333,19 @@ input {
 }
 
 .transport-button__icon {
-  font-size: 1.45rem;
+  font-size: 1rem;
   line-height: 1;
 }
 
 .transport-button__meta {
-  margin-top: -2px;
-  font-size: 0.74rem;
+  margin-top: -4px;
+  font-size: 0.56rem;
   color: var(--muted);
 }
 
 .play-button {
-  width: 88px;
-  height: 88px;
+  width: 48px;
+  height: 48px;
   border-radius: 999px;
   background: linear-gradient(180deg, #d9603a 0%, #b53f20 100%);
   color: #fff;
@@ -354,9 +354,9 @@ input {
 }
 
 .play-button__icon {
-  font-size: 2rem;
+  font-size: 1.15rem;
   line-height: 1;
-  transform: translateX(2px);
+  transform: translateX(1px);
 }
 
 .play-button.is-pause .play-button__icon {
@@ -364,7 +364,7 @@ input {
 }
 
 .timeline-wrap {
-  padding: 0 6px;
+  padding: 0 4px;
 }
 
 #timeline {
@@ -430,16 +430,16 @@ input {
   }
 
   .controls-main {
-    gap: 14px;
+    gap: 8px;
   }
 
   .transport-button {
-    width: 58px;
-    height: 58px;
+    width: 40px;
+    height: 40px;
   }
 
   .play-button {
-    width: 80px;
-    height: 80px;
+    width: 46px;
+    height: 46px;
   }
 }
