@@ -113,7 +113,7 @@ function buildHighlightRanges(sentence) {
 
 function renderHighlightedSentence(sentence) {
   if (!sentence) {
-    return "재생할 문장이 없습니다.";
+    return "";
   }
 
   const text = sentence.text || "";
