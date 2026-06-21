@@ -4,7 +4,7 @@
   "file_name": "Bocchi the Rock! - S01E01.srt",
   "duration_seconds": 1419,
   "sentence_count": 478,
-  "relevant_sentence_count": 243,
+  "relevant_sentence_count": 329,
   "translation_info": {
     "source": "ass+google-fallback",
     "translation_file": "Bocchi the Rock! - S01E01 (번역).ass",
@@ -23,13 +23,40 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
+          "surface": "くれる",
+          "reading": "-",
+          "meaning": "(나에게) 주다",
+          "level": "N4",
+          "surface_in_sentence": "くれん",
+          "base_form": "くれる",
+          "pos": "동사"
+        },
+        {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "する",
+          "base_form": "する",
+          "pos": "동사"
+        },
+        {
           "surface": "指",
           "reading": "ゆび",
           "meaning": "손가락",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "指",
           "base_form": "指",
           "pos": "명사"
+        },
+        {
+          "surface": "暮れる",
+          "reading": "くれる",
+          "meaning": "저물다, 해가 지다",
+          "level": "N4",
+          "surface_in_sentence": "くれん",
+          "base_form": "くれる",
+          "pos": "동사"
         }
       ],
       "grammar_matches": []
@@ -42,8 +69,18 @@
       "end_time": "00:00:04",
       "start_seconds": 3,
       "end_seconds": 4,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "やる",
+          "reading": "-",
+          "meaning": "주다, 하다",
+          "level": "N4",
+          "surface_in_sentence": "やる",
+          "base_form": "やる",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -57,10 +94,28 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
+          "surface": "泊まる",
+          "reading": "とまる",
+          "meaning": "묵다",
+          "level": "N3",
+          "surface_in_sentence": "とまっ",
+          "base_form": "とまる",
+          "pos": "동사"
+        },
+        {
+          "surface": "留まる",
+          "reading": "とまる",
+          "meaning": "머무르다, (움직이던 것이) 움직이지 않다",
+          "level": "N3",
+          "surface_in_sentence": "とまっ",
+          "base_form": "とまる",
+          "pos": "동사"
+        },
+        {
           "surface": "指",
           "reading": "ゆび",
           "meaning": "손가락",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "指",
           "base_form": "指",
           "pos": "명사"
@@ -68,17 +123,8 @@
         {
           "surface": "止まる",
           "reading": "とまる",
-          "meaning": "멈추다",
-          "level": "N3",
-          "surface_in_sentence": "とまっ",
-          "base_form": "とまる",
-          "pos": "동사"
-        },
-        {
-          "surface": "泊まる",
-          "reading": "とまる",
-          "meaning": "묵다",
-          "level": "N3",
+          "meaning": "서다, 멈추다",
+          "level": "N4",
           "surface_in_sentence": "とまっ",
           "base_form": "とまる",
           "pos": "동사"
@@ -122,10 +168,28 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
+          "surface": "うち",
+          "reading": "-",
+          "meaning": "집(가족과 함께 사는)",
+          "level": "N4",
+          "surface_in_sentence": "うち",
+          "base_form": "うち",
+          "pos": "명사"
+        },
+        {
+          "surface": "出る",
+          "reading": "でる",
+          "meaning": "나가다, 나오다",
+          "level": "N4",
+          "surface_in_sentence": "でる",
+          "base_form": "でる",
+          "pos": "동사"
+        },
+        {
           "surface": "悩む",
           "reading": "なやむ",
-          "meaning": "괴로워하다",
-          "level": "N3",
+          "meaning": "고민하다",
+          "level": "N4",
           "surface_in_sentence": "悩ん",
           "base_form": "悩む",
           "pos": "동사"
@@ -160,7 +224,7 @@
           "surface": "血",
           "reading": "ち",
           "meaning": "피",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "ち",
           "base_form": "ちる",
           "pos": "동사"
@@ -189,8 +253,18 @@
       "end_time": "00:00:18",
       "start_seconds": 17,
       "end_seconds": 18,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "時",
+          "reading": "とき",
+          "meaning": "때",
+          "level": "N4",
+          "surface_in_sentence": "とき",
+          "base_form": "とき",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -238,15 +312,6 @@
           "pos": "명사"
         },
         {
-          "surface": "先生",
-          "reading": "せんせい",
-          "meaning": "선생님",
-          "level": "N3",
-          "surface_in_sentence": "先生",
-          "base_form": "先生",
-          "pos": "명사"
-        },
-        {
           "surface": "弁当",
           "reading": "べんとう",
           "meaning": "도시락",
@@ -256,10 +321,37 @@
           "pos": "명사"
         },
         {
+          "surface": "いる",
+          "reading": "-",
+          "meaning": "(사람, 동물이) 있다",
+          "level": "N4",
+          "surface_in_sentence": "い",
+          "base_form": "いる",
+          "pos": "동사"
+        },
+        {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "し",
+          "base_form": "する",
+          "pos": "동사"
+        },
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "meaning": "선생님",
+          "level": "N4",
+          "surface_in_sentence": "先生",
+          "base_form": "先生",
+          "pos": "명사"
+        },
+        {
           "surface": "血",
           "reading": "ち",
           "meaning": "피",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "ち",
           "base_form": "ちる",
           "pos": "동사"
@@ -312,6 +404,15 @@
           "pos": "명사"
         },
         {
+          "surface": "入る",
+          "reading": "はいる",
+          "meaning": "들어가다, 들어오다",
+          "level": "N4",
+          "surface_in_sentence": "入ら",
+          "base_form": "入る",
+          "pos": "동사"
+        },
+        {
           "surface": "部活",
           "reading": "ぶかつ",
           "meaning": "동아리 활동, 부활동",
@@ -336,8 +437,8 @@
         {
           "surface": "届く",
           "reading": "とどく",
-          "meaning": "닿다, 도착하다",
-          "level": "N3",
+          "meaning": "도착하다, 도달하다",
+          "level": "N4",
           "surface_in_sentence": "届く",
           "base_form": "届く",
           "pos": "동사"
@@ -381,6 +482,15 @@
           "surface_in_sentence": "親",
           "base_form": "親",
           "pos": "명사"
+        },
+        {
+          "surface": "メッセージ",
+          "reading": "",
+          "meaning": "메시지",
+          "level": "N4",
+          "surface_in_sentence": "メッセージ",
+          "base_form": "メッセージ",
+          "pos": "명사"
         }
       ],
       "grammar_matches": []
@@ -408,6 +518,15 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
+          "surface": "年生",
+          "reading": "ねんせい",
+          "meaning": "학년",
+          "level": "N3",
+          "surface_in_sentence": "年生",
+          "base_form": "年生",
+          "pos": "명사"
+        },
+        {
           "surface": "中学",
           "reading": "ちゅうがく",
           "meaning": "중학교",
@@ -427,8 +546,18 @@
       "end_time": "00:00:48",
       "start_seconds": 47,
       "end_seconds": 48,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "思う",
+          "reading": "おもう",
+          "meaning": "생각하다",
+          "level": "N4",
+          "surface_in_sentence": "思う",
+          "base_form": "思う",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -467,10 +596,19 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
+          "surface": "前",
+          "reading": "まえ",
+          "meaning": "앞, 전",
+          "level": "N4",
+          "surface_in_sentence": "前",
+          "base_form": "前",
+          "pos": "명사"
+        },
+        {
           "surface": "言う",
           "reading": "いう",
           "meaning": "말하다",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "言っ",
           "base_form": "言う",
           "pos": "동사"
@@ -478,8 +616,8 @@
         {
           "surface": "話す",
           "reading": "はなす",
-          "meaning": "말하다",
-          "level": "N3",
+          "meaning": "이야기하다",
+          "level": "N4",
           "surface_in_sentence": "話す",
           "base_form": "話す",
           "pos": "동사"
@@ -508,8 +646,18 @@
       "end_time": "00:00:59",
       "start_seconds": 56,
       "end_seconds": 59,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "目",
+          "reading": "め",
+          "meaning": "눈",
+          "level": "N4",
+          "surface_in_sentence": "目",
+          "base_form": "目",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -525,8 +673,8 @@
         {
           "surface": "合う",
           "reading": "あう",
-          "meaning": "맞다",
-          "level": "N3",
+          "meaning": "맞다, 어울리다",
+          "level": "N4",
           "surface_in_sentence": "合っ",
           "base_form": "合う",
           "pos": "동사"
@@ -542,8 +690,18 @@
       "end_time": "00:01:03",
       "start_seconds": 62,
       "end_seconds": 63,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "見る",
+          "reading": "みる",
+          "meaning": "보다",
+          "level": "N4",
+          "surface_in_sentence": "見",
+          "base_form": "見る",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -569,21 +727,21 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
-          "surface": "教室",
-          "reading": "きょうしつ",
-          "meaning": "교실",
-          "level": "N3",
-          "surface_in_sentence": "教室",
-          "base_form": "教室",
-          "pos": "명사"
-        },
-        {
           "surface": "学生",
           "reading": "がくせい",
           "meaning": "학생",
-          "level": "N5",
+          "level": "N4",
           "surface_in_sentence": "学生",
           "base_form": "学生",
+          "pos": "명사"
+        },
+        {
+          "surface": "教室",
+          "reading": "きょうしつ",
+          "meaning": "교실",
+          "level": "N4",
+          "surface_in_sentence": "教室",
+          "base_form": "教室",
           "pos": "명사"
         }
       ],
@@ -600,10 +758,28 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "し",
+          "base_form": "する",
+          "pos": "동사"
+        },
+        {
+          "surface": "出る",
+          "reading": "でる",
+          "meaning": "나가다, 나오다",
+          "level": "N4",
+          "surface_in_sentence": "でる",
+          "base_form": "でる",
+          "pos": "동사"
+        },
+        {
           "surface": "本",
           "reading": "ほん",
           "meaning": "책",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "本",
           "base_form": "本",
           "pos": "명사"
@@ -612,7 +788,7 @@
           "surface": "読む",
           "reading": "よむ",
           "meaning": "읽다",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "読ん",
           "base_form": "読む",
           "pos": "동사"
@@ -631,10 +807,19 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
+          "surface": "いる",
+          "reading": "-",
+          "meaning": "(사람, 동물이) 있다",
+          "level": "N4",
+          "surface_in_sentence": "い",
+          "base_form": "いる",
+          "pos": "동사"
+        },
+        {
           "surface": "友達",
           "reading": "ともだち",
-          "meaning": "친구",
-          "level": "N3",
+          "meaning": "친구, 벗",
+          "level": "N4",
           "surface_in_sentence": "友達",
           "base_form": "友達",
           "pos": "명사"
@@ -675,8 +860,18 @@
       "end_time": "00:01:14",
       "start_seconds": 73,
       "end_seconds": 74,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "今",
+          "reading": "いま",
+          "meaning": "지금",
+          "level": "N4",
+          "surface_in_sentence": "今",
+          "base_form": "今",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -690,10 +885,19 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
+          "surface": "なる",
+          "reading": "-",
+          "meaning": "(벨 등이) 울리다",
+          "level": "N4",
+          "surface_in_sentence": "なっ",
+          "base_form": "なる",
+          "pos": "동사"
+        },
+        {
           "surface": "人気",
           "reading": "にんき",
           "meaning": "인기",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "人気",
           "base_form": "人気",
           "pos": "명사"
@@ -782,8 +986,27 @@
       "end_time": "00:01:35",
       "start_seconds": 94,
       "end_seconds": 95,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "し",
+          "base_form": "する",
+          "pos": "동사"
+        },
+        {
+          "surface": "どう",
+          "reading": "-",
+          "meaning": "어떻게",
+          "level": "N4",
+          "surface_in_sentence": "どう",
+          "base_form": "どう",
+          "pos": "부사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -797,10 +1020,28 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
+          "surface": "お父さん",
+          "reading": "おとうさん",
+          "meaning": "아버지",
+          "level": "N4",
+          "surface_in_sentence": "お父さん",
+          "base_form": "お父さん",
+          "pos": "명사"
+        },
+        {
+          "surface": "ギター",
+          "reading": "",
+          "meaning": "기타",
+          "level": "N4",
+          "surface_in_sentence": "ギター",
+          "base_form": "ギター",
+          "pos": "명사"
+        },
+        {
           "surface": "貸す",
           "reading": "かす",
-          "meaning": "빌려 주다",
-          "level": "N3",
+          "meaning": "빌려주다",
+          "level": "N4",
           "surface_in_sentence": "貸し",
           "base_form": "貸す",
           "pos": "동사"
@@ -864,10 +1105,28 @@
           "pos": "부사"
         },
         {
+          "surface": "ついに",
+          "reading": "-",
+          "meaning": "드디어",
+          "level": "N3",
+          "surface_in_sentence": "ついに",
+          "base_form": "ついに",
+          "pos": "부사"
+        },
+        {
+          "surface": "ギター",
+          "reading": "",
+          "meaning": "기타",
+          "level": "N4",
+          "surface_in_sentence": "ギター",
+          "base_form": "ギター",
+          "pos": "명사"
+        },
+        {
           "surface": "興味",
           "reading": "きょうみ",
           "meaning": "흥미",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "興味",
           "base_form": "興味",
           "pos": "명사"
@@ -931,7 +1190,17 @@
       "start_seconds": 110,
       "end_seconds": 114,
       "has_jlpt": true,
-      "vocab_matches": [],
+      "vocab_matches": [
+        {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "し",
+          "base_form": "する",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": [
         {
           "label": "しかし",
@@ -1020,8 +1289,8 @@
         {
           "surface": "決める",
           "reading": "きめる",
-          "meaning": "결정하다",
-          "level": "N3",
+          "meaning": "결정하다, 정하다",
+          "level": "N4",
           "surface_in_sentence": "決め",
           "base_form": "決める",
           "pos": "동사"
@@ -1047,6 +1316,33 @@
           "surface_in_sentence": "うまく",
           "base_form": "うまい",
           "pos": "형용사"
+        },
+        {
+          "surface": "うまい",
+          "reading": "-",
+          "meaning": "맛있다, 솜씨가 좋다",
+          "level": "N4",
+          "surface_in_sentence": "うまく",
+          "base_form": "うまい",
+          "pos": "형용사"
+        },
+        {
+          "surface": "なる",
+          "reading": "-",
+          "meaning": "(벨 등이) 울리다",
+          "level": "N4",
+          "surface_in_sentence": "なる",
+          "base_form": "なる",
+          "pos": "동사"
+        },
+        {
+          "surface": "ギター",
+          "reading": "",
+          "meaning": "기타",
+          "level": "N4",
+          "surface_in_sentence": "ギター",
+          "base_form": "ギター",
+          "pos": "명사"
         }
       ],
       "grammar_matches": []
@@ -1062,15 +1358,6 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
-          "surface": "学校",
-          "reading": "がっこう",
-          "meaning": "학교",
-          "level": "N3",
-          "surface_in_sentence": "学校",
-          "base_form": "学校",
-          "pos": "명사"
-        },
-        {
           "surface": "組む",
           "reading": "くむ",
           "meaning": "짜다, 끼다",
@@ -1078,6 +1365,15 @@
           "surface_in_sentence": "組ん",
           "base_form": "組む",
           "pos": "동사"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "meaning": "학교",
+          "level": "N4",
+          "surface_in_sentence": "学校",
+          "base_form": "学校",
+          "pos": "명사"
         }
       ],
       "grammar_matches": []
@@ -1117,7 +1413,7 @@
           "surface": "英語",
           "reading": "えいご",
           "meaning": "영어",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "英語",
           "base_form": "英語",
           "pos": "명사"
@@ -1136,10 +1432,19 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "し",
+          "base_form": "する",
+          "pos": "동사"
+        },
+        {
           "surface": "文化",
           "reading": "ぶんか",
           "meaning": "문화",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "文化",
           "base_form": "文化",
           "pos": "명사"
@@ -1169,7 +1474,26 @@
       "start_seconds": 146,
       "end_seconds": 149,
       "has_jlpt": true,
-      "vocab_matches": [],
+      "vocab_matches": [
+        {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "さ",
+          "base_form": "する",
+          "pos": "동사"
+        },
+        {
+          "surface": "みんな",
+          "reading": "-",
+          "meaning": "모두",
+          "level": "N4",
+          "surface_in_sentence": "みんな",
+          "base_form": "みんな",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": [
         {
           "label": "수동형",
@@ -1227,6 +1551,15 @@
           "surface_in_sentence": "演奏",
           "base_form": "演奏",
           "pos": "명사"
+        },
+        {
+          "surface": "前",
+          "reading": "まえ",
+          "meaning": "앞, 전",
+          "level": "N4",
+          "surface_in_sentence": "前",
+          "base_form": "前",
+          "pos": "명사"
         }
       ],
       "grammar_matches": [
@@ -1258,7 +1591,7 @@
           "surface": "時間",
           "reading": "じかん",
           "meaning": "시간",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "時間",
           "base_form": "時間",
           "pos": "명사"
@@ -1267,7 +1600,7 @@
           "surface": "毎日",
           "reading": "まいにち",
           "meaning": "매일",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "毎日",
           "base_form": "毎日",
           "pos": "명사"
@@ -1276,16 +1609,25 @@
           "surface": "結果",
           "reading": "けっか",
           "meaning": "결과",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "結果",
           "base_form": "結果",
           "pos": "명사"
         },
         {
+          "surface": "続ける",
+          "reading": "つづける",
+          "meaning": "계속하다",
+          "level": "N4",
+          "surface_in_sentence": "続け",
+          "base_form": "続ける",
+          "pos": "동사"
+        },
+        {
           "surface": "練習",
           "reading": "れんしゅう",
           "meaning": "연습",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "練習",
           "base_form": "練習",
           "pos": "명사"
@@ -1304,10 +1646,19 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
+          "surface": "手",
+          "reading": "て",
+          "meaning": "손",
+          "level": "N4",
+          "surface_in_sentence": "て",
+          "base_form": "てる",
+          "pos": "동사"
+        },
+        {
           "surface": "終わる",
           "reading": "おわる",
           "meaning": "끝나다",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "終わっ",
           "base_form": "終わる",
           "pos": "동사"
@@ -1332,8 +1683,18 @@
       "end_time": "00:04:40",
       "start_seconds": 279,
       "end_seconds": 280,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "出る",
+          "reading": "でる",
+          "meaning": "나가다, 나오다",
+          "level": "N4",
+          "surface_in_sentence": "出",
+          "base_form": "出る",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -1350,7 +1711,7 @@
           "surface": "文化",
           "reading": "ぶんか",
           "meaning": "문화",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "文化",
           "base_form": "文化",
           "pos": "명사"
@@ -1372,7 +1733,7 @@
           "surface": "集める",
           "reading": "あつめる",
           "meaning": "모으다",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "集め",
           "base_form": "集める",
           "pos": "동사"
@@ -1403,10 +1764,28 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
+          "surface": "できる",
+          "reading": "-",
+          "meaning": "할 수 있다, 생기다",
+          "level": "N4",
+          "surface_in_sentence": "でき",
+          "base_form": "できる",
+          "pos": "동사"
+        },
+        {
+          "surface": "一",
+          "reading": "いち",
+          "meaning": "1",
+          "level": "N4",
+          "surface_in_sentence": "一",
+          "base_form": "一",
+          "pos": "명사"
+        },
+        {
           "surface": "友達",
           "reading": "ともだち",
-          "meaning": "친구",
-          "level": "N3",
+          "meaning": "친구, 벗",
+          "level": "N4",
           "surface_in_sentence": "友達",
           "base_form": "友達",
           "pos": "명사"
@@ -1440,7 +1819,7 @@
           "surface": "高校",
           "reading": "こうこう",
           "meaning": "고등학교",
-          "level": "N5",
+          "level": "N4",
           "surface_in_sentence": "高校",
           "base_form": "高校",
           "pos": "명사"
@@ -1468,10 +1847,28 @@
           "pos": "명사"
         },
         {
+          "surface": "なる",
+          "reading": "-",
+          "meaning": "(벨 등이) 울리다",
+          "level": "N4",
+          "surface_in_sentence": "なっ",
+          "base_form": "なる",
+          "pos": "동사"
+        },
+        {
+          "surface": "やる",
+          "reading": "-",
+          "meaning": "주다, 하다",
+          "level": "N4",
+          "surface_in_sentence": "やる",
+          "base_form": "やる",
+          "pos": "동사"
+        },
+        {
           "surface": "高校",
           "reading": "こうこう",
           "meaning": "고등학교",
-          "level": "N5",
+          "level": "N4",
           "surface_in_sentence": "高校",
           "base_form": "高校",
           "pos": "명사"
@@ -1503,10 +1900,28 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "し",
+          "base_form": "する",
+          "pos": "동사"
+        },
+        {
+          "surface": "一",
+          "reading": "いち",
+          "meaning": "1",
+          "level": "N4",
+          "surface_in_sentence": "一",
+          "base_form": "一",
+          "pos": "명사"
+        },
+        {
           "surface": "始まる",
           "reading": "はじまる",
-          "meaning": "시작하다",
-          "level": "N3",
+          "meaning": "시작되다",
+          "level": "N4",
           "surface_in_sentence": "始まっ",
           "base_form": "始まる",
           "pos": "동사"
@@ -1515,7 +1930,7 @@
           "surface": "生活",
           "reading": "せいかつ",
           "meaning": "생활",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "生活",
           "base_form": "生活",
           "pos": "명사"
@@ -1524,7 +1939,7 @@
           "surface": "高校",
           "reading": "こうこう",
           "meaning": "고등학교",
-          "level": "N5",
+          "level": "N4",
           "surface_in_sentence": "高校",
           "base_form": "高校",
           "pos": "명사"
@@ -1543,12 +1958,30 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
+          "surface": "ギター",
+          "reading": "",
+          "meaning": "기타",
+          "level": "N4",
+          "surface_in_sentence": "ギター",
+          "base_form": "ギター",
+          "pos": "명사"
+        },
+        {
           "surface": "心",
           "reading": "こころ",
           "meaning": "마음",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "心",
           "base_form": "心",
+          "pos": "명사"
+        },
+        {
+          "surface": "所",
+          "reading": "ところ",
+          "meaning": "곳, 장소",
+          "level": "N4",
+          "surface_in_sentence": "所",
+          "base_form": "所",
           "pos": "명사"
         }
       ],
@@ -1562,8 +1995,18 @@
       "end_time": "00:05:06",
       "start_seconds": 302,
       "end_seconds": 306,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "一",
+          "reading": "いち",
+          "meaning": "1",
+          "level": "N4",
+          "surface_in_sentence": "一",
+          "base_form": "一",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -1618,7 +2061,35 @@
       "start_seconds": 317,
       "end_seconds": 319,
       "has_jlpt": true,
-      "vocab_matches": [],
+      "vocab_matches": [
+        {
+          "surface": "前",
+          "reading": "まえ",
+          "meaning": "앞, 전",
+          "level": "N4",
+          "surface_in_sentence": "前",
+          "base_form": "前",
+          "pos": "명사"
+        },
+        {
+          "surface": "起こす",
+          "reading": "おこす",
+          "meaning": "일으키다, 발생시키다",
+          "level": "N4",
+          "surface_in_sentence": "起こす",
+          "base_form": "起こす",
+          "pos": "동사"
+        },
+        {
+          "surface": "近所",
+          "reading": "きんじょ",
+          "meaning": "근방, 근처",
+          "level": "N4",
+          "surface_in_sentence": "近所",
+          "base_form": "近所",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": [
         {
           "label": "~前に",
@@ -1654,10 +2125,37 @@
           "pos": "명사"
         },
         {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "し",
+          "base_form": "する",
+          "pos": "동사"
+        },
+        {
+          "surface": "アップ",
+          "reading": "",
+          "meaning": "업, 상승",
+          "level": "N4",
+          "surface_in_sentence": "アップ",
+          "base_form": "アップ",
+          "pos": "명사"
+        },
+        {
+          "surface": "カバー",
+          "reading": "",
+          "meaning": "커버, 덮개",
+          "level": "N4",
+          "surface_in_sentence": "カバー",
+          "base_form": "カバー",
+          "pos": "명사"
+        },
+        {
           "surface": "人気",
           "reading": "にんき",
           "meaning": "인기",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "人気",
           "base_form": "人気",
           "pos": "명사"
@@ -1696,6 +2194,15 @@
           "surface_in_sentence": "勧め",
           "base_form": "勧める",
           "pos": "동사"
+        },
+        {
+          "surface": "お父さん",
+          "reading": "おとうさん",
+          "meaning": "아버지",
+          "level": "N4",
+          "surface_in_sentence": "お父さん",
+          "base_form": "お父さん",
+          "pos": "명사"
         }
       ],
       "grammar_matches": []
@@ -1711,12 +2218,48 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
+          "surface": "上げる",
+          "reading": "あげる",
+          "meaning": "올리다",
+          "level": "N3",
+          "surface_in_sentence": "上げ",
+          "base_form": "上げる",
+          "pos": "동사"
+        },
+        {
+          "surface": "ギター",
+          "reading": "",
+          "meaning": "기타",
+          "level": "N4",
+          "surface_in_sentence": "ギター",
+          "base_form": "ギター",
+          "pos": "명사"
+        },
+        {
           "surface": "出す",
           "reading": "だす",
-          "meaning": "내다, 제출하다",
-          "level": "N3",
+          "meaning": "내다",
+          "level": "N4",
           "surface_in_sentence": "だし",
           "base_form": "だす",
+          "pos": "동사"
+        },
+        {
+          "surface": "弾く",
+          "reading": "ひく",
+          "meaning": "연주하다, 치다",
+          "level": "N4",
+          "surface_in_sentence": "弾い",
+          "base_form": "弾く",
+          "pos": "동사"
+        },
+        {
+          "surface": "見る",
+          "reading": "みる",
+          "meaning": "보다",
+          "level": "N4",
+          "surface_in_sentence": "み",
+          "base_form": "みる",
           "pos": "동사"
         }
       ],
@@ -1753,6 +2296,24 @@
           "surface_in_sentence": "たつ",
           "base_form": "たつ",
           "pos": "동사"
+        },
+        {
+          "surface": "建つ",
+          "reading": "たつ",
+          "meaning": "(건물이) 지어지다",
+          "level": "N4",
+          "surface_in_sentence": "たつ",
+          "base_form": "たつ",
+          "pos": "동사"
+        },
+        {
+          "surface": "立つ",
+          "reading": "たつ",
+          "meaning": "서다",
+          "level": "N4",
+          "surface_in_sentence": "たつ",
+          "base_form": "たつ",
+          "pos": "동사"
         }
       ],
       "grammar_matches": []
@@ -1765,8 +2326,18 @@
       "end_time": "00:05:31",
       "start_seconds": 329,
       "end_seconds": 331,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "前",
+          "reading": "まえ",
+          "meaning": "앞, 전",
+          "level": "N4",
+          "surface_in_sentence": "前",
+          "base_form": "前",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -1777,8 +2348,18 @@
       "end_time": "00:05:33",
       "start_seconds": 331,
       "end_seconds": 333,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "もう",
+          "reading": "もう",
+          "meaning": "벌써, 이미",
+          "level": "N4",
+          "surface_in_sentence": "もう",
+          "base_form": "もう",
+          "pos": "부사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -1804,10 +2385,28 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
+          "surface": "ある",
+          "reading": "-",
+          "meaning": "(사물, 식물이) 있다",
+          "level": "N4",
+          "surface_in_sentence": "ある",
+          "base_form": "ある",
+          "pos": "동사"
+        },
+        {
+          "surface": "数",
+          "reading": "かず",
+          "meaning": "수, 숫자",
+          "level": "N4",
+          "surface_in_sentence": "数",
+          "base_form": "数",
+          "pos": "명사"
+        },
+        {
           "surface": "最近",
           "reading": "さいきん",
           "meaning": "최근",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "最近",
           "base_form": "最近",
           "pos": "명사"
@@ -1835,10 +2434,19 @@
           "pos": "형용사"
         },
         {
+          "surface": "うまい",
+          "reading": "-",
+          "meaning": "맛있다, 솜씨가 좋다",
+          "level": "N4",
+          "surface_in_sentence": "うまい",
+          "base_form": "うまい",
+          "pos": "형용사"
+        },
+        {
           "surface": "言う",
           "reading": "いう",
           "meaning": "말하다",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "言わ",
           "base_form": "言う",
           "pos": "동사"
@@ -1873,6 +2481,15 @@
           "surface": "つらい",
           "reading": "つらい",
           "meaning": "괴롭다",
+          "level": "N3",
+          "surface_in_sentence": "つらく",
+          "base_form": "つらい",
+          "pos": "형용사"
+        },
+        {
+          "surface": "つらい",
+          "reading": "-",
+          "meaning": "힘들다, 고통스럽다",
           "level": "N3",
           "surface_in_sentence": "つらく",
           "base_form": "つらい",
@@ -1936,7 +2553,35 @@
       "start_seconds": 343,
       "end_seconds": 345,
       "has_jlpt": true,
-      "vocab_matches": [],
+      "vocab_matches": [
+        {
+          "surface": "くれる",
+          "reading": "-",
+          "meaning": "(나에게) 주다",
+          "level": "N4",
+          "surface_in_sentence": "くれる",
+          "base_form": "くれる",
+          "pos": "동사"
+        },
+        {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "し",
+          "base_form": "する",
+          "pos": "동사"
+        },
+        {
+          "surface": "暮れる",
+          "reading": "くれる",
+          "meaning": "저물다, 해가 지다",
+          "level": "N4",
+          "surface_in_sentence": "くれる",
+          "base_form": "くれる",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": [
         {
           "label": "~てくれる",
@@ -1984,8 +2629,27 @@
       "end_time": "00:05:46",
       "start_seconds": 345,
       "end_seconds": 346,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "いる",
+          "reading": "-",
+          "meaning": "(사람, 동물이) 있다",
+          "level": "N4",
+          "surface_in_sentence": "いる",
+          "base_form": "いる",
+          "pos": "동사"
+        },
+        {
+          "surface": "たくさん",
+          "reading": "-",
+          "meaning": "많이",
+          "level": "N4",
+          "surface_in_sentence": "たくさん",
+          "base_form": "たくさん",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -2015,6 +2679,24 @@
           "surface_in_sentence": "根",
           "base_form": "根",
           "pos": "명사"
+        },
+        {
+          "surface": "溢れる",
+          "reading": "あふれる",
+          "meaning": "넘치다",
+          "level": "N3",
+          "surface_in_sentence": "あふれ",
+          "base_form": "あふれる",
+          "pos": "동사"
+        },
+        {
+          "surface": "暗い",
+          "reading": "くらい",
+          "meaning": "어둡다",
+          "level": "N4",
+          "surface_in_sentence": "暗",
+          "base_form": "暗い",
+          "pos": "형용사"
         }
       ],
       "grammar_matches": []
@@ -2030,15 +2712,6 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
-          "surface": "文化",
-          "reading": "ぶんか",
-          "meaning": "문화",
-          "level": "N3",
-          "surface_in_sentence": "文化",
-          "base_form": "文化",
-          "pos": "명사"
-        },
-        {
           "surface": "組む",
           "reading": "くむ",
           "meaning": "짜다, 끼다",
@@ -2046,6 +2719,24 @@
           "surface_in_sentence": "組ん",
           "base_form": "組む",
           "pos": "동사"
+        },
+        {
+          "surface": "弾く",
+          "reading": "ひく",
+          "meaning": "연주하다, 치다",
+          "level": "N4",
+          "surface_in_sentence": "弾き",
+          "base_form": "弾く",
+          "pos": "동사"
+        },
+        {
+          "surface": "文化",
+          "reading": "ぶんか",
+          "meaning": "문화",
+          "level": "N4",
+          "surface_in_sentence": "文化",
+          "base_form": "文化",
+          "pos": "명사"
         }
       ],
       "grammar_matches": []
@@ -2080,6 +2771,15 @@
           "surface_in_sentence": "努力",
           "base_form": "努力",
           "pos": "명사"
+        },
+        {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "し",
+          "base_form": "する",
+          "pos": "동사"
         }
       ],
       "grammar_matches": [
@@ -2108,13 +2808,40 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
+          "surface": "持つ",
+          "reading": "もつ",
+          "meaning": "들다, 가지다, 지니다",
+          "level": "N4",
+          "surface_in_sentence": "持っ",
+          "base_form": "持つ",
+          "pos": "동사"
+        },
+        {
           "surface": "机",
           "reading": "つくえ",
           "meaning": "책상",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "机",
           "base_form": "机",
           "pos": "명사"
+        },
+        {
+          "surface": "置く",
+          "reading": "おく",
+          "meaning": "두다",
+          "level": "N4",
+          "surface_in_sentence": "置い",
+          "base_form": "置く",
+          "pos": "동사"
+        },
+        {
+          "surface": "行く",
+          "reading": "いく",
+          "meaning": "가다",
+          "level": "N4",
+          "surface_in_sentence": "いっ",
+          "base_form": "いく",
+          "pos": "동사"
         }
       ],
       "grammar_matches": []
@@ -2149,8 +2876,27 @@
       "end_time": "00:06:05",
       "start_seconds": 363,
       "end_seconds": 365,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "し",
+          "base_form": "する",
+          "pos": "동사"
+        },
+        {
+          "surface": "持つ",
+          "reading": "もつ",
+          "meaning": "들다, 가지다, 지니다",
+          "level": "N4",
+          "surface_in_sentence": "持っ",
+          "base_form": "持つ",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -2195,8 +2941,18 @@
       "end_time": "00:06:10",
       "start_seconds": 369,
       "end_seconds": 370,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "次",
+          "reading": "つぎ",
+          "meaning": "다음",
+          "level": "N4",
+          "surface_in_sentence": "次",
+          "base_form": "次",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -2207,8 +2963,27 @@
       "end_time": "00:06:12",
       "start_seconds": 370,
       "end_seconds": 372,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "三",
+          "reading": "さん",
+          "meaning": "3",
+          "level": "N4",
+          "surface_in_sentence": "さん",
+          "base_form": "さん",
+          "pos": "명사"
+        },
+        {
+          "surface": "年",
+          "reading": "とし",
+          "meaning": "나이, 해",
+          "level": "N4",
+          "surface_in_sentence": "年",
+          "base_form": "年",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -2219,8 +2994,18 @@
       "end_time": "00:06:16",
       "start_seconds": 373,
       "end_seconds": 376,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "手",
+          "reading": "て",
+          "meaning": "손",
+          "level": "N4",
+          "surface_in_sentence": "て",
+          "base_form": "てる",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -2231,8 +3016,18 @@
       "end_time": "00:06:18",
       "start_seconds": 376,
       "end_seconds": 378,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "し",
+          "base_form": "する",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -2284,8 +3079,8 @@
         {
           "surface": "忘れる",
           "reading": "わすれる",
-          "meaning": "잊다",
-          "level": "N3",
+          "meaning": "잊다, 잊고 오다",
+          "level": "N4",
           "surface_in_sentence": "忘れろ",
           "base_form": "忘れる",
           "pos": "동사"
@@ -2337,8 +3132,27 @@
       "end_time": "00:06:47",
       "start_seconds": 405,
       "end_seconds": 407,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "ある",
+          "reading": "-",
+          "meaning": "(사물, 식물이) 있다",
+          "level": "N4",
+          "surface_in_sentence": "あっ",
+          "base_form": "ある",
+          "pos": "동사"
+        },
+        {
+          "surface": "手",
+          "reading": "て",
+          "meaning": "손",
+          "level": "N4",
+          "surface_in_sentence": "手",
+          "base_form": "手",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -2387,6 +3201,15 @@
       "end_seconds": 427,
       "has_jlpt": true,
       "vocab_matches": [
+        {
+          "surface": "凄い",
+          "reading": "すごい",
+          "meaning": "굉장하다, 대단하다",
+          "level": "N3",
+          "surface_in_sentence": "すごい",
+          "base_form": "すごい",
+          "pos": "형용사"
+        },
         {
           "surface": "存在",
           "reading": "そんざい",
@@ -2437,6 +3260,24 @@
           "level": "N3",
           "surface_in_sentence": "話しかけ",
           "base_form": "話しかける",
+          "pos": "동사"
+        },
+        {
+          "surface": "くれる",
+          "reading": "-",
+          "meaning": "(나에게) 주다",
+          "level": "N4",
+          "surface_in_sentence": "くれる",
+          "base_form": "くれる",
+          "pos": "동사"
+        },
+        {
+          "surface": "暮れる",
+          "reading": "くれる",
+          "meaning": "저물다, 해가 지다",
+          "level": "N4",
+          "surface_in_sentence": "くれる",
+          "base_form": "くれる",
           "pos": "동사"
         }
       ],
@@ -2490,10 +3331,28 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
+          "surface": "なる",
+          "reading": "-",
+          "meaning": "(벨 등이) 울리다",
+          "level": "N4",
+          "surface_in_sentence": "なる",
+          "base_form": "なる",
+          "pos": "동사"
+        },
+        {
+          "surface": "今年",
+          "reading": "ことし",
+          "meaning": "올해",
+          "level": "N4",
+          "surface_in_sentence": "今年",
+          "base_form": "今年",
+          "pos": "명사"
+        },
+        {
           "surface": "忙しい",
           "reading": "いそがしい",
           "meaning": "바쁘다",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "忙しく",
           "base_form": "忙しい",
           "pos": "형용사"
@@ -2502,7 +3361,7 @@
           "surface": "文化",
           "reading": "ぶんか",
           "meaning": "문화",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "文化",
           "base_form": "文化",
           "pos": "명사"
@@ -2546,21 +3405,30 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
-          "surface": "教室",
-          "reading": "きょうしつ",
-          "meaning": "교실",
-          "level": "N3",
-          "surface_in_sentence": "教室",
-          "base_form": "教室",
-          "pos": "명사"
-        },
-        {
           "surface": "移動",
           "reading": "いどう",
           "meaning": "이동",
           "level": "N3",
           "surface_in_sentence": "移動",
           "base_form": "移動",
+          "pos": "명사"
+        },
+        {
+          "surface": "教室",
+          "reading": "きょうしつ",
+          "meaning": "교실",
+          "level": "N4",
+          "surface_in_sentence": "教室",
+          "base_form": "教室",
+          "pos": "명사"
+        },
+        {
+          "surface": "次",
+          "reading": "つぎ",
+          "meaning": "다음",
+          "level": "N4",
+          "surface_in_sentence": "次",
+          "base_form": "次",
           "pos": "명사"
         }
       ],
@@ -2586,8 +3454,18 @@
       "end_time": "00:07:39",
       "start_seconds": 457,
       "end_seconds": 459,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "後",
+          "reading": "あと",
+          "meaning": "후, 뒤, 나중",
+          "level": "N4",
+          "surface_in_sentence": "あと",
+          "base_form": "あと",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -2625,15 +3503,6 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
-          "surface": "深夜",
-          "reading": "しんや",
-          "meaning": "심야",
-          "level": "N3",
-          "surface_in_sentence": "深夜",
-          "base_form": "深夜",
-          "pos": "명사"
-        },
-        {
           "surface": "過ぎる",
           "reading": "すぎる",
           "meaning": "지나다",
@@ -2641,6 +3510,24 @@
           "surface_in_sentence": "過ぎ",
           "base_form": "過ぎる",
           "pos": "동사"
+        },
+        {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "し",
+          "base_form": "する",
+          "pos": "동사"
+        },
+        {
+          "surface": "深夜",
+          "reading": "しんや",
+          "meaning": "심야",
+          "level": "N4",
+          "surface_in_sentence": "深夜",
+          "base_form": "深夜",
+          "pos": "명사"
         }
       ],
       "grammar_matches": []
@@ -2658,11 +3545,29 @@
         {
           "surface": "出す",
           "reading": "だす",
-          "meaning": "내다, 제출하다",
-          "level": "N3",
+          "meaning": "내다",
+          "level": "N4",
           "surface_in_sentence": "出し",
           "base_form": "出す",
           "pos": "동사"
+        },
+        {
+          "surface": "分かる",
+          "reading": "わかる",
+          "meaning": "알다, 이해하다",
+          "level": "N4",
+          "surface_in_sentence": "分かり",
+          "base_form": "分かる",
+          "pos": "동사"
+        },
+        {
+          "surface": "安い",
+          "reading": "やすい",
+          "meaning": "싸다",
+          "level": "N4",
+          "surface_in_sentence": "やすい",
+          "base_form": "やすい",
+          "pos": "형용사"
         }
       ],
       "grammar_matches": [
@@ -2707,6 +3612,15 @@
           "surface_in_sentence": "話しかけ",
           "base_form": "話しかける",
           "pos": "동사"
+        },
+        {
+          "surface": "来る",
+          "reading": "くる",
+          "meaning": "오다",
+          "level": "N4",
+          "surface_in_sentence": "こ",
+          "base_form": "くる",
+          "pos": "동사"
         }
       ],
       "grammar_matches": [
@@ -2744,8 +3658,18 @@
       "end_time": "00:08:03",
       "start_seconds": 480,
       "end_seconds": 483,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "する",
+          "base_form": "する",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -2766,6 +3690,24 @@
           "surface_in_sentence": "ちょっと",
           "base_form": "ちょっと",
           "pos": "부사"
+        },
+        {
+          "surface": "ちょっと",
+          "reading": "-",
+          "meaning": "조금",
+          "level": "N3",
+          "surface_in_sentence": "ちょっと",
+          "base_form": "ちょっと",
+          "pos": "부사"
+        },
+        {
+          "surface": "見る",
+          "reading": "みる",
+          "meaning": "보다",
+          "level": "N4",
+          "surface_in_sentence": "見",
+          "base_form": "見る",
+          "pos": "동사"
         }
       ],
       "grammar_matches": []
@@ -2778,8 +3720,27 @@
       "end_time": "00:08:06",
       "start_seconds": 484,
       "end_seconds": 486,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "いる",
+          "reading": "-",
+          "meaning": "(사람, 동물이) 있다",
+          "level": "N4",
+          "surface_in_sentence": "い",
+          "base_form": "いる",
+          "pos": "동사"
+        },
+        {
+          "surface": "今",
+          "reading": "いま",
+          "meaning": "지금",
+          "level": "N4",
+          "surface_in_sentence": "今",
+          "base_form": "今",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -2799,6 +3760,24 @@
           "level": "N3",
           "surface_in_sentence": "しまう",
           "base_form": "しまう",
+          "pos": "동사"
+        },
+        {
+          "surface": "しまう",
+          "reading": "-",
+          "meaning": "안에 넣다, 끝내다",
+          "level": "N4",
+          "surface_in_sentence": "しまう",
+          "base_form": "しまう",
+          "pos": "동사"
+        },
+        {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "し",
+          "base_form": "する",
           "pos": "동사"
         }
       ],
@@ -2825,8 +3804,18 @@
       "end_time": "00:08:12",
       "start_seconds": 489,
       "end_seconds": 492,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "いる",
+          "reading": "-",
+          "meaning": "(사람, 동물이) 있다",
+          "level": "N4",
+          "surface_in_sentence": "い",
+          "base_form": "いる",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -2849,21 +3838,30 @@
           "pos": "동사"
         },
         {
-          "surface": "笑う",
-          "reading": "わらう",
-          "meaning": "웃다",
-          "level": "N3",
-          "surface_in_sentence": "笑っ",
-          "base_form": "笑う",
-          "pos": "동사"
-        },
-        {
           "surface": "過ぎる",
           "reading": "すぎる",
           "meaning": "지나다",
           "level": "N3",
           "surface_in_sentence": "過ぎ",
           "base_form": "過ぎる",
+          "pos": "동사"
+        },
+        {
+          "surface": "乾く",
+          "reading": "かわく",
+          "meaning": "마르다, 건조하다",
+          "level": "N4",
+          "surface_in_sentence": "かわい",
+          "base_form": "かわく",
+          "pos": "동사"
+        },
+        {
+          "surface": "笑う",
+          "reading": "わらう",
+          "meaning": "웃다",
+          "level": "N4",
+          "surface_in_sentence": "笑っ",
+          "base_form": "笑う",
           "pos": "동사"
         }
       ],
@@ -2877,8 +3875,18 @@
       "end_time": "00:08:15",
       "start_seconds": 492,
       "end_seconds": 495,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "ギター",
+          "reading": "",
+          "meaning": "기타",
+          "level": "N4",
+          "surface_in_sentence": "ギター",
+          "base_form": "ギター",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -2890,7 +3898,17 @@
       "start_seconds": 492,
       "end_seconds": 495,
       "has_jlpt": true,
-      "vocab_matches": [],
+      "vocab_matches": [
+        {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "さ",
+          "base_form": "する",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": [
         {
           "label": "수동형",
@@ -2950,8 +3968,18 @@
       "end_time": "00:08:26",
       "start_seconds": 505,
       "end_seconds": 506,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "分かる",
+          "reading": "わかる",
+          "meaning": "알다, 이해하다",
+          "level": "N4",
+          "surface_in_sentence": "分かっ",
+          "base_form": "分かる",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -2972,6 +4000,24 @@
           "surface_in_sentence": "うまく",
           "base_form": "うまい",
           "pos": "형용사"
+        },
+        {
+          "surface": "うまい",
+          "reading": "-",
+          "meaning": "맛있다, 솜씨가 좋다",
+          "level": "N4",
+          "surface_in_sentence": "うまく",
+          "base_form": "うまい",
+          "pos": "형용사"
+        },
+        {
+          "surface": "行く",
+          "reading": "いく",
+          "meaning": "가다",
+          "level": "N4",
+          "surface_in_sentence": "いく",
+          "base_form": "いく",
+          "pos": "동사"
         }
       ],
       "grammar_matches": []
@@ -3008,10 +4054,19 @@
           "pos": "부사"
         },
         {
+          "surface": "きっと",
+          "reading": "-",
+          "meaning": "꼭, 반드시, 틀림없이",
+          "level": "N4",
+          "surface_in_sentence": "きっと",
+          "base_form": "きっと",
+          "pos": "부사"
+        },
+        {
           "surface": "家庭",
           "reading": "かてい",
           "meaning": "가정",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "家庭",
           "base_form": "家庭",
           "pos": "명사"
@@ -3069,8 +4124,8 @@
         {
           "surface": "妻",
           "reading": "つま",
-          "meaning": "아내",
-          "level": "N3",
+          "meaning": "처, 아내",
+          "level": "N4",
           "surface_in_sentence": "妻",
           "base_form": "妻",
           "pos": "명사"
@@ -3078,8 +4133,8 @@
         {
           "surface": "遅れる",
           "reading": "おくれる",
-          "meaning": "늦다, 더디다",
-          "level": "N3",
+          "meaning": "늦다, 늦어지다",
+          "level": "N4",
           "surface_in_sentence": "遅れ",
           "base_form": "遅れる",
           "pos": "동사"
@@ -3113,9 +4168,18 @@
           "surface": "家族",
           "reading": "かぞく",
           "meaning": "가족",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "家族",
           "base_form": "家族",
+          "pos": "명사"
+        },
+        {
+          "surface": "絵",
+          "reading": "え",
+          "meaning": "그림",
+          "level": "N4",
+          "surface_in_sentence": "絵",
+          "base_form": "絵",
           "pos": "명사"
         }
       ],
@@ -3135,7 +4199,7 @@
           "surface": "言う",
           "reading": "いう",
           "meaning": "말하다",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "言っ",
           "base_form": "言う",
           "pos": "동사"
@@ -3160,6 +4224,24 @@
           "level": "N3",
           "surface_in_sentence": "登録",
           "base_form": "登録",
+          "pos": "명사"
+        },
+        {
+          "surface": "万",
+          "reading": "まん",
+          "meaning": "만",
+          "level": "N4",
+          "surface_in_sentence": "万",
+          "base_form": "万",
+          "pos": "명사"
+        },
+        {
+          "surface": "数",
+          "reading": "かず",
+          "meaning": "수, 숫자",
+          "level": "N4",
+          "surface_in_sentence": "数",
+          "base_form": "数",
           "pos": "명사"
         }
       ],
@@ -3225,13 +4307,31 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
+          "surface": "もう",
+          "reading": "もう",
+          "meaning": "벌써, 이미",
+          "level": "N4",
+          "surface_in_sentence": "もう",
+          "base_form": "もう",
+          "pos": "부사"
+        },
+        {
           "surface": "学校",
           "reading": "がっこう",
           "meaning": "학교",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "学校",
           "base_form": "学校",
           "pos": "명사"
+        },
+        {
+          "surface": "行く",
+          "reading": "いく",
+          "meaning": "가다",
+          "level": "N4",
+          "surface_in_sentence": "行き",
+          "base_form": "行く",
+          "pos": "동사"
         }
       ],
       "grammar_matches": []
@@ -3268,8 +4368,18 @@
       "end_time": "00:09:09",
       "start_seconds": 547,
       "end_seconds": 549,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "ギター",
+          "reading": "",
+          "meaning": "기타",
+          "level": "N4",
+          "surface_in_sentence": "ギター",
+          "base_form": "ギター",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -3292,8 +4402,18 @@
       "end_time": "00:09:13",
       "start_seconds": 552,
       "end_seconds": 553,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "ギター",
+          "reading": "",
+          "meaning": "기타",
+          "level": "N4",
+          "surface_in_sentence": "ギター",
+          "base_form": "ギター",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -3304,8 +4424,18 @@
       "end_time": "00:09:14",
       "start_seconds": 553,
       "end_seconds": 554,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "夏",
+          "reading": "なつ",
+          "meaning": "여름",
+          "level": "N4",
+          "surface_in_sentence": "夏",
+          "base_form": "夏",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -3316,8 +4446,18 @@
       "end_time": "00:09:16",
       "start_seconds": 554,
       "end_seconds": 556,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "夏",
+          "reading": "なつ",
+          "meaning": "여름",
+          "level": "N4",
+          "surface_in_sentence": "夏",
+          "base_form": "夏",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -3328,8 +4468,18 @@
       "end_time": "00:09:18",
       "start_seconds": 557,
       "end_seconds": 558,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "いる",
+          "reading": "-",
+          "meaning": "(사람, 동물이) 있다",
+          "level": "N4",
+          "surface_in_sentence": "い",
+          "base_form": "いる",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -3352,6 +4502,15 @@
           "pos": "동사"
         },
         {
+          "surface": "しゃべる",
+          "reading": "-",
+          "meaning": "수다 떨다, 말하다",
+          "level": "N3",
+          "surface_in_sentence": "しゃべる",
+          "base_form": "しゃべる",
+          "pos": "동사"
+        },
+        {
           "surface": "過ぎる",
           "reading": "すぎる",
           "meaning": "지나다",
@@ -3359,6 +4518,15 @@
           "surface_in_sentence": "すぎ",
           "base_form": "すぎる",
           "pos": "동사"
+        },
+        {
+          "surface": "声",
+          "reading": "こえ",
+          "meaning": "목소리, 소리",
+          "level": "N4",
+          "surface_in_sentence": "声",
+          "base_form": "声",
+          "pos": "명사"
         }
       ],
       "grammar_matches": []
@@ -3378,6 +4546,15 @@
           "reading": "いきなり",
           "meaning": "갑자기",
           "level": "N3",
+          "surface_in_sentence": "いきなり",
+          "base_form": "いきなり",
+          "pos": "부사"
+        },
+        {
+          "surface": "いきなり",
+          "reading": "-",
+          "meaning": "갑자기",
+          "level": "N4",
           "surface_in_sentence": "いきなり",
           "base_form": "いきなり",
           "pos": "부사"
@@ -3405,10 +4582,46 @@
           "pos": "동사"
         },
         {
+          "surface": "夏",
+          "reading": "なつ",
+          "meaning": "여름",
+          "level": "N4",
+          "surface_in_sentence": "夏",
+          "base_form": "夏",
+          "pos": "명사"
+        },
+        {
+          "surface": "年",
+          "reading": "とし",
+          "meaning": "나이, 해",
+          "level": "N4",
+          "surface_in_sentence": "年",
+          "base_form": "年",
+          "pos": "명사"
+        },
+        {
+          "surface": "木",
+          "reading": "き",
+          "meaning": "나무",
+          "level": "N4",
+          "surface_in_sentence": "き",
+          "base_form": "くる",
+          "pos": "동사"
+        },
+        {
+          "surface": "来る",
+          "reading": "くる",
+          "meaning": "오다",
+          "level": "N4",
+          "surface_in_sentence": "き",
+          "base_form": "くる",
+          "pos": "동사"
+        },
+        {
           "surface": "血",
           "reading": "ち",
           "meaning": "피",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "ち",
           "base_form": "ちる",
           "pos": "동사"
@@ -3417,7 +4630,7 @@
           "surface": "高校",
           "reading": "こうこう",
           "meaning": "고등학교",
-          "level": "N5",
+          "level": "N4",
           "surface_in_sentence": "高校",
           "base_form": "高校",
           "pos": "명사"
@@ -3436,10 +4649,19 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
+          "surface": "年",
+          "reading": "とし",
+          "meaning": "나이, 해",
+          "level": "N4",
+          "surface_in_sentence": "年",
+          "base_form": "年",
+          "pos": "명사"
+        },
+        {
           "surface": "高校",
           "reading": "こうこう",
           "meaning": "고등학교",
-          "level": "N5",
+          "level": "N4",
           "surface_in_sentence": "高校",
           "base_form": "高校",
           "pos": "명사"
@@ -3477,6 +4699,15 @@
           "surface_in_sentence": "いきなり",
           "base_form": "いきなり",
           "pos": "부사"
+        },
+        {
+          "surface": "いきなり",
+          "reading": "-",
+          "meaning": "갑자기",
+          "level": "N4",
+          "surface_in_sentence": "いきなり",
+          "base_form": "いきなり",
+          "pos": "부사"
         }
       ],
       "grammar_matches": []
@@ -3490,7 +4721,17 @@
       "start_seconds": 573,
       "end_seconds": 575,
       "has_jlpt": true,
-      "vocab_matches": [],
+      "vocab_matches": [
+        {
+          "surface": "ギター",
+          "reading": "",
+          "meaning": "기타",
+          "level": "N4",
+          "surface_in_sentence": "ギター",
+          "base_form": "ギター",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": [
         {
           "label": "くらい",
@@ -3550,12 +4791,39 @@
           "pos": "부사"
         },
         {
+          "surface": "ちょっと",
+          "reading": "-",
+          "meaning": "조금",
+          "level": "N3",
+          "surface_in_sentence": "ちょっと",
+          "base_form": "ちょっと",
+          "pos": "부사"
+        },
+        {
           "surface": "困る",
           "reading": "こまる",
           "meaning": "곤란하다",
           "level": "N3",
           "surface_in_sentence": "困っ",
           "base_form": "困る",
+          "pos": "동사"
+        },
+        {
+          "surface": "今",
+          "reading": "いま",
+          "meaning": "지금",
+          "level": "N4",
+          "surface_in_sentence": "今",
+          "base_form": "今",
+          "pos": "명사"
+        },
+        {
+          "surface": "手",
+          "reading": "て",
+          "meaning": "손",
+          "level": "N4",
+          "surface_in_sentence": "て",
+          "base_form": "てる",
           "pos": "동사"
         }
       ],
@@ -3614,6 +4882,15 @@
           "surface_in_sentence": "困っ",
           "base_form": "困る",
           "pos": "동사"
+        },
+        {
+          "surface": "手",
+          "reading": "て",
+          "meaning": "손",
+          "level": "N4",
+          "surface_in_sentence": "て",
+          "base_form": "てる",
+          "pos": "동사"
         }
       ],
       "grammar_matches": []
@@ -3654,7 +4931,7 @@
           "surface": "言う",
           "reading": "いう",
           "meaning": "말하다",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "言っ",
           "base_form": "言う",
           "pos": "동사"
@@ -3702,6 +4979,60 @@
           "surface_in_sentence": "くれ",
           "base_form": "くれる",
           "pos": "동사"
+        },
+        {
+          "surface": "くれる",
+          "reading": "-",
+          "meaning": "(나에게) 주다",
+          "level": "N4",
+          "surface_in_sentence": "くれ",
+          "base_form": "くれる",
+          "pos": "동사"
+        },
+        {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "し",
+          "base_form": "する",
+          "pos": "동사"
+        },
+        {
+          "surface": "ギター",
+          "reading": "",
+          "meaning": "기타",
+          "level": "N4",
+          "surface_in_sentence": "ギター",
+          "base_form": "ギター",
+          "pos": "명사"
+        },
+        {
+          "surface": "サポート",
+          "reading": "",
+          "meaning": "서포트, 지원",
+          "level": "N4",
+          "surface_in_sentence": "サポート",
+          "base_form": "サポート",
+          "pos": "명사"
+        },
+        {
+          "surface": "今日",
+          "reading": "きょう",
+          "meaning": "오늘",
+          "level": "N4",
+          "surface_in_sentence": "今日",
+          "base_form": "今日",
+          "pos": "명사"
+        },
+        {
+          "surface": "暮れる",
+          "reading": "くれる",
+          "meaning": "저물다, 해가 지다",
+          "level": "N4",
+          "surface_in_sentence": "くれ",
+          "base_form": "くれる",
+          "pos": "동사"
         }
       ],
       "grammar_matches": []
@@ -3729,6 +5060,15 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
+          "surface": "これから",
+          "reading": "-",
+          "meaning": "이제부터, 앞으로",
+          "level": "N3",
+          "surface_in_sentence": "これから",
+          "base_form": "これから",
+          "pos": "부사"
+        },
+        {
           "surface": "突然",
           "reading": "とつぜん",
           "meaning": "돌연, 갑자기",
@@ -3745,6 +5085,15 @@
           "surface_in_sentence": "辞め",
           "base_form": "辞める",
           "pos": "동사"
+        },
+        {
+          "surface": "ギター",
+          "reading": "",
+          "meaning": "기타",
+          "level": "N4",
+          "surface_in_sentence": "ギター",
+          "base_form": "ギター",
+          "pos": "명사"
         }
       ],
       "grammar_matches": []
@@ -3757,8 +5106,18 @@
       "end_time": "00:10:04",
       "start_seconds": 601,
       "end_seconds": 604,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "これから",
+          "reading": "-",
+          "meaning": "이제부터, 앞으로",
+          "level": "N3",
+          "surface_in_sentence": "これから",
+          "base_form": "これから",
+          "pos": "부사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -3854,10 +5213,28 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
+          "surface": "まだ",
+          "reading": "-",
+          "meaning": "아직",
+          "level": "N4",
+          "surface_in_sentence": "まだ",
+          "base_form": "まだ",
+          "pos": "부사"
+        },
+        {
+          "surface": "手",
+          "reading": "て",
+          "meaning": "손",
+          "level": "N4",
+          "surface_in_sentence": "て",
+          "base_form": "てる",
+          "pos": "동사"
+        },
+        {
           "surface": "言う",
           "reading": "いう",
           "meaning": "말하다",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "言っ",
           "base_form": "言う",
           "pos": "동사"
@@ -3882,6 +5259,24 @@
           "level": "N3",
           "surface_in_sentence": "しまっ",
           "base_form": "しまう",
+          "pos": "동사"
+        },
+        {
+          "surface": "しまう",
+          "reading": "-",
+          "meaning": "안에 넣다, 끝내다",
+          "level": "N4",
+          "surface_in_sentence": "しまっ",
+          "base_form": "しまう",
+          "pos": "동사"
+        },
+        {
+          "surface": "来る",
+          "reading": "くる",
+          "meaning": "오다",
+          "level": "N4",
+          "surface_in_sentence": "来",
+          "base_form": "来る",
           "pos": "동사"
         }
       ],
@@ -3908,8 +5303,36 @@
       "end_time": "00:10:22",
       "start_seconds": 619,
       "end_seconds": 622,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "よく",
+          "reading": "-",
+          "meaning": "자주, 잘",
+          "level": "N4",
+          "surface_in_sentence": "よく",
+          "base_form": "よく",
+          "pos": "부사"
+        },
+        {
+          "surface": "木",
+          "reading": "き",
+          "meaning": "나무",
+          "level": "N4",
+          "surface_in_sentence": "き",
+          "base_form": "くる",
+          "pos": "동사"
+        },
+        {
+          "surface": "来る",
+          "reading": "くる",
+          "meaning": "오다",
+          "level": "N4",
+          "surface_in_sentence": "き",
+          "base_form": "くる",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -3937,6 +5360,15 @@
         {
           "surface": "わけ",
           "reading": "わけ",
+          "meaning": "이유",
+          "level": "N3",
+          "surface_in_sentence": "わけ",
+          "base_form": "わけ",
+          "pos": "명사"
+        },
+        {
+          "surface": "わけ",
+          "reading": "-",
           "meaning": "이유",
           "level": "N3",
           "surface_in_sentence": "わけ",
@@ -3992,8 +5424,18 @@
       "end_time": "00:10:33",
       "start_seconds": 631,
       "end_seconds": 633,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "夏",
+          "reading": "なつ",
+          "meaning": "여름",
+          "level": "N4",
+          "surface_in_sentence": "夏",
+          "base_form": "夏",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -4019,13 +5461,13 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
-          "surface": "比べる",
-          "reading": "くらべる",
-          "meaning": "비교하다",
+          "surface": "凄い",
+          "reading": "すごい",
+          "meaning": "굉장하다, 대단하다",
           "level": "N3",
-          "surface_in_sentence": "比べ",
-          "base_form": "比べる",
-          "pos": "동사"
+          "surface_in_sentence": "すごい",
+          "base_form": "すごい",
+          "pos": "형용사"
         },
         {
           "surface": "芋",
@@ -4035,6 +5477,15 @@
           "surface_in_sentence": "芋",
           "base_form": "芋",
           "pos": "명사"
+        },
+        {
+          "surface": "比べる",
+          "reading": "くらべる",
+          "meaning": "비교하다",
+          "level": "N4",
+          "surface_in_sentence": "比べ",
+          "base_form": "比べる",
+          "pos": "동사"
         }
       ],
       "grammar_matches": [
@@ -4082,6 +5533,24 @@
           "surface_in_sentence": "いつも",
           "base_form": "いつも",
           "pos": "부사"
+        },
+        {
+          "surface": "いつも",
+          "reading": "-",
+          "meaning": "항상, 보통 때",
+          "level": "N4",
+          "surface_in_sentence": "いつも",
+          "base_form": "いつも",
+          "pos": "부사"
+        },
+        {
+          "surface": "いる",
+          "reading": "-",
+          "meaning": "(사람, 동물이) 있다",
+          "level": "N4",
+          "surface_in_sentence": "いる",
+          "base_form": "いる",
+          "pos": "동사"
         }
       ],
       "grammar_matches": [
@@ -4117,6 +5586,15 @@
           "surface_in_sentence": "におい",
           "base_form": "におい",
           "pos": "명사"
+        },
+        {
+          "surface": "におい",
+          "reading": "-",
+          "meaning": "냄새",
+          "level": "N4",
+          "surface_in_sentence": "におい",
+          "base_form": "におい",
+          "pos": "명사"
         }
       ],
       "grammar_matches": []
@@ -4138,6 +5616,24 @@
           "level": "N3",
           "surface_in_sentence": "におい",
           "base_form": "におい",
+          "pos": "명사"
+        },
+        {
+          "surface": "におい",
+          "reading": "-",
+          "meaning": "냄새",
+          "level": "N4",
+          "surface_in_sentence": "におい",
+          "base_form": "におい",
+          "pos": "명사"
+        },
+        {
+          "surface": "夏",
+          "reading": "なつ",
+          "meaning": "여름",
+          "level": "N4",
+          "surface_in_sentence": "夏",
+          "base_form": "夏",
           "pos": "명사"
         }
       ],
@@ -4164,8 +5660,18 @@
       "end_time": "00:10:53",
       "start_seconds": 652,
       "end_seconds": 653,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "ある",
+          "reading": "-",
+          "meaning": "(사물, 식물이) 있다",
+          "level": "N4",
+          "surface_in_sentence": "ある",
+          "base_form": "ある",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -4212,11 +5718,20 @@
         {
           "surface": "早い",
           "reading": "はやい",
-          "meaning": "이르다",
-          "level": "N3",
+          "meaning": "빠르다, 이르다",
+          "level": "N4",
           "surface_in_sentence": "早い",
           "base_form": "早い",
           "pos": "형용사"
+        },
+        {
+          "surface": "歩く",
+          "reading": "あるく",
+          "meaning": "걷다",
+          "level": "N4",
+          "surface_in_sentence": "歩く",
+          "base_form": "歩く",
+          "pos": "동사"
         }
       ],
       "grammar_matches": []
@@ -4229,8 +5744,18 @@
       "end_time": "00:10:57",
       "start_seconds": 657,
       "end_seconds": 657,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "行く",
+          "reading": "いく",
+          "meaning": "가다",
+          "level": "N4",
+          "surface_in_sentence": "いっ",
+          "base_form": "いく",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -4241,8 +5766,27 @@
       "end_time": "00:10:59",
       "start_seconds": 657,
       "end_seconds": 659,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "する",
+          "base_form": "する",
+          "pos": "동사"
+        },
+        {
+          "surface": "今日",
+          "reading": "きょう",
+          "meaning": "오늘",
+          "level": "N4",
+          "surface_in_sentence": "今日",
+          "base_form": "今日",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -4265,8 +5809,18 @@
       "end_time": "00:11:04",
       "start_seconds": 662,
       "end_seconds": 664,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "する",
+          "base_form": "する",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -4303,7 +5857,17 @@
       "start_seconds": 667,
       "end_seconds": 669,
       "has_jlpt": true,
-      "vocab_matches": [],
+      "vocab_matches": [
+        {
+          "surface": "いる",
+          "reading": "-",
+          "meaning": "(사람, 동물이) 있다",
+          "level": "N4",
+          "surface_in_sentence": "い",
+          "base_form": "いる",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": [
         {
           "label": "なんか",
@@ -4352,7 +5916,35 @@
       "start_seconds": 671,
       "end_seconds": 673,
       "has_jlpt": true,
-      "vocab_matches": [],
+      "vocab_matches": [
+        {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "し",
+          "base_form": "する",
+          "pos": "동사"
+        },
+        {
+          "surface": "バイト",
+          "reading": "",
+          "meaning": "아르바이트(준말)",
+          "level": "N4",
+          "surface_in_sentence": "バイト",
+          "base_form": "バイト",
+          "pos": "명사"
+        },
+        {
+          "surface": "手",
+          "reading": "て",
+          "meaning": "손",
+          "level": "N4",
+          "surface_in_sentence": "て",
+          "base_form": "てる",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": [
         {
           "label": "そこで",
@@ -4391,10 +5983,19 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
+          "surface": "できる",
+          "reading": "-",
+          "meaning": "할 수 있다, 생기다",
+          "level": "N4",
+          "surface_in_sentence": "できる",
+          "base_form": "できる",
+          "pos": "동사"
+        },
+        {
           "surface": "運動",
           "reading": "うんどう",
           "meaning": "운동",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "運動",
           "base_form": "運動",
           "pos": "명사"
@@ -4447,13 +6048,40 @@
           "pos": "부사"
         },
         {
+          "surface": "いつも",
+          "reading": "-",
+          "meaning": "항상, 보통 때",
+          "level": "N4",
+          "surface_in_sentence": "いつも",
+          "base_form": "いつも",
+          "pos": "부사"
+        },
+        {
+          "surface": "なぜ",
+          "reading": "-",
+          "meaning": "왜",
+          "level": "N4",
+          "surface_in_sentence": "なぜ",
+          "base_form": "なぜ",
+          "pos": "부사"
+        },
+        {
           "surface": "最後",
           "reading": "さいご",
-          "meaning": "최후",
-          "level": "N3",
+          "meaning": "최후, 마지막",
+          "level": "N4",
           "surface_in_sentence": "最後",
           "base_form": "最後",
           "pos": "명사"
+        },
+        {
+          "surface": "残る",
+          "reading": "のこる",
+          "meaning": "남다",
+          "level": "N4",
+          "surface_in_sentence": "残っ",
+          "base_form": "残る",
+          "pos": "동사"
         }
       ],
       "grammar_matches": [
@@ -4513,8 +6141,36 @@
       "end_time": "00:11:31",
       "start_seconds": 688,
       "end_seconds": 691,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "なる",
+          "reading": "-",
+          "meaning": "(벨 등이) 울리다",
+          "level": "N4",
+          "surface_in_sentence": "なっ",
+          "base_form": "なる",
+          "pos": "동사"
+        },
+        {
+          "surface": "今",
+          "reading": "いま",
+          "meaning": "지금",
+          "level": "N4",
+          "surface_in_sentence": "今",
+          "base_form": "今",
+          "pos": "명사"
+        },
+        {
+          "surface": "弱気",
+          "reading": "よわき",
+          "meaning": "나약함",
+          "level": "N4",
+          "surface_in_sentence": "弱気",
+          "base_form": "弱気",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -4528,10 +6184,19 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "し",
+          "base_form": "する",
+          "pos": "동사"
+        },
+        {
           "surface": "文化",
           "reading": "ぶんか",
           "meaning": "문화",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "文化",
           "base_form": "文化",
           "pos": "명사"
@@ -4540,7 +6205,7 @@
           "surface": "毎日",
           "reading": "まいにち",
           "meaning": "매일",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "毎日",
           "base_form": "毎日",
           "pos": "명사"
@@ -4593,8 +6258,18 @@
       "end_time": "00:11:40",
       "start_seconds": 698,
       "end_seconds": 700,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "スーパー",
+          "reading": "",
+          "meaning": "슈퍼",
+          "level": "N4",
+          "surface_in_sentence": "スーパー",
+          "base_form": "スーパー",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -4639,6 +6314,24 @@
           "surface_in_sentence": "埋め",
           "base_form": "埋める",
           "pos": "동사"
+        },
+        {
+          "surface": "ぶどう",
+          "reading": "-",
+          "meaning": "포도",
+          "level": "N4",
+          "surface_in_sentence": "ぶどう",
+          "base_form": "ぶどう",
+          "pos": "명사"
+        },
+        {
+          "surface": "女",
+          "reading": "おんな",
+          "meaning": "여자",
+          "level": "N4",
+          "surface_in_sentence": "女",
+          "base_form": "女",
+          "pos": "명사"
         }
       ],
       "grammar_matches": [
@@ -4712,10 +6405,19 @@
           "pos": "명사"
         },
         {
+          "surface": "思う",
+          "reading": "おもう",
+          "meaning": "생각하다",
+          "level": "N4",
+          "surface_in_sentence": "思わ",
+          "base_form": "思う",
+          "pos": "동사"
+        },
+        {
           "surface": "頼む",
           "reading": "たのむ",
-          "meaning": "부탁하다",
-          "level": "N3",
+          "meaning": "주문하다, 부탁하다",
+          "level": "N4",
           "surface_in_sentence": "頼む",
           "base_form": "頼む",
           "pos": "동사"
@@ -4756,10 +6458,19 @@
           "pos": "명사"
         },
         {
+          "surface": "間違える",
+          "reading": "まちがえる",
+          "meaning": "착각하다, 틀리다",
+          "level": "N4",
+          "surface_in_sentence": "間違え",
+          "base_form": "間違える",
+          "pos": "동사"
+        },
+        {
           "surface": "頼む",
           "reading": "たのむ",
-          "meaning": "부탁하다",
-          "level": "N3",
+          "meaning": "주문하다, 부탁하다",
+          "level": "N4",
           "surface_in_sentence": "頼む",
           "base_form": "頼む",
           "pos": "동사"
@@ -4781,7 +6492,7 @@
           "surface": "着く",
           "reading": "つく",
           "meaning": "도착하다",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "着い",
           "base_form": "着く",
           "pos": "동사"
@@ -4821,8 +6532,18 @@
       "end_time": "00:12:05",
       "start_seconds": 723,
       "end_seconds": 725,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "す",
+          "base_form": "する",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -4845,8 +6566,18 @@
       "end_time": "00:12:13",
       "start_seconds": 730,
       "end_seconds": 733,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "暗い",
+          "reading": "くらい",
+          "meaning": "어둡다",
+          "level": "N4",
+          "surface_in_sentence": "暗",
+          "base_form": "暗い",
+          "pos": "형용사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -4891,8 +6622,18 @@
       "end_time": "00:12:18",
       "start_seconds": 737,
       "end_seconds": 738,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "meaning": "집(장소, 공간)",
+          "level": "N4",
+          "surface_in_sentence": "家",
+          "base_form": "家",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -4908,8 +6649,8 @@
         {
           "surface": "違う",
           "reading": "ちがう",
-          "meaning": "다르다",
-          "level": "N3",
+          "meaning": "다르다, 틀리다",
+          "level": "N4",
           "surface_in_sentence": "違う",
           "base_form": "違う",
           "pos": "동사"
@@ -4925,8 +6666,27 @@
       "end_time": "00:12:21",
       "start_seconds": 739,
       "end_seconds": 741,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "三",
+          "reading": "さん",
+          "meaning": "3",
+          "level": "N4",
+          "surface_in_sentence": "さん",
+          "base_form": "さん",
+          "pos": "명사"
+        },
+        {
+          "surface": "今回",
+          "reading": "こんかい",
+          "meaning": "다음 회",
+          "level": "N4",
+          "surface_in_sentence": "今回",
+          "base_form": "今回",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -4937,8 +6697,27 @@
       "end_time": "00:12:22",
       "start_seconds": 741,
       "end_seconds": 742,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "する",
+          "base_form": "する",
+          "pos": "동사"
+        },
+        {
+          "surface": "今日",
+          "reading": "きょう",
+          "meaning": "오늘",
+          "level": "N4",
+          "surface_in_sentence": "今日",
+          "base_form": "今日",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -4977,6 +6756,24 @@
           "surface_in_sentence": "怖",
           "base_form": "怖い",
           "pos": "형용사"
+        },
+        {
+          "surface": "ある",
+          "reading": "-",
+          "meaning": "(사물, 식물이) 있다",
+          "level": "N4",
+          "surface_in_sentence": "ある",
+          "base_form": "ある",
+          "pos": "동사"
+        },
+        {
+          "surface": "イメージ",
+          "reading": "",
+          "meaning": "이미지, 인상",
+          "level": "N4",
+          "surface_in_sentence": "イメージ",
+          "base_form": "イメージ",
+          "pos": "명사"
         }
       ],
       "grammar_matches": [
@@ -5014,8 +6811,18 @@
       "end_time": "00:12:30",
       "start_seconds": 746,
       "end_seconds": 750,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "みんな",
+          "reading": "-",
+          "meaning": "모두",
+          "level": "N4",
+          "surface_in_sentence": "みんな",
+          "base_form": "みんな",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -5035,6 +6842,24 @@
           "level": "N3",
           "surface_in_sentence": "そこ",
           "base_form": "そこ",
+          "pos": "명사"
+        },
+        {
+          "surface": "いる",
+          "reading": "-",
+          "meaning": "(사람, 동물이) 있다",
+          "level": "N4",
+          "surface_in_sentence": "いる",
+          "base_form": "いる",
+          "pos": "동사"
+        },
+        {
+          "surface": "三",
+          "reading": "さん",
+          "meaning": "3",
+          "level": "N4",
+          "surface_in_sentence": "さん",
+          "base_form": "さん",
           "pos": "명사"
         }
       ],
@@ -5063,10 +6888,19 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
+          "surface": "いる",
+          "reading": "-",
+          "meaning": "(사람, 동물이) 있다",
+          "level": "N4",
+          "surface_in_sentence": "い",
+          "base_form": "いる",
+          "pos": "동사"
+        },
+        {
           "surface": "言う",
           "reading": "いう",
           "meaning": "말하다",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "いい",
           "base_form": "いう",
           "pos": "동사"
@@ -5082,8 +6916,27 @@
       "end_time": "00:12:37",
       "start_seconds": 756,
       "end_seconds": 757,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "し",
+          "base_form": "する",
+          "pos": "동사"
+        },
+        {
+          "surface": "どう",
+          "reading": "-",
+          "meaning": "어떻게",
+          "level": "N4",
+          "surface_in_sentence": "どう",
+          "base_form": "どう",
+          "pos": "부사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -5106,12 +6959,48 @@
           "pos": "부사"
         },
         {
+          "surface": "やっと",
+          "reading": "-",
+          "meaning": "겨우, 가까스로",
+          "level": "N3",
+          "surface_in_sentence": "やっと",
+          "base_form": "やっと",
+          "pos": "부사"
+        },
+        {
+          "surface": "夏",
+          "reading": "なつ",
+          "meaning": "여름",
+          "level": "N4",
+          "surface_in_sentence": "夏",
+          "base_form": "夏",
+          "pos": "명사"
+        },
+        {
           "surface": "帰る",
           "reading": "かえる",
-          "meaning": "돌아가다",
-          "level": "N3",
+          "meaning": "돌아가다, 돌아오다",
+          "level": "N4",
           "surface_in_sentence": "帰っ",
           "base_form": "帰る",
+          "pos": "동사"
+        },
+        {
+          "surface": "木",
+          "reading": "き",
+          "meaning": "나무",
+          "level": "N4",
+          "surface_in_sentence": "き",
+          "base_form": "くる",
+          "pos": "동사"
+        },
+        {
+          "surface": "来る",
+          "reading": "くる",
+          "meaning": "오다",
+          "level": "N4",
+          "surface_in_sentence": "き",
+          "base_form": "くる",
           "pos": "동사"
         }
       ],
@@ -5140,10 +7029,19 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
+          "surface": "いる",
+          "reading": "-",
+          "meaning": "(사람, 동물이) 있다",
+          "level": "N4",
+          "surface_in_sentence": "い",
+          "base_form": "いる",
+          "pos": "동사"
+        },
+        {
           "surface": "公園",
           "reading": "こうえん",
           "meaning": "공원",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "公園",
           "base_form": "公園",
           "pos": "명사"
@@ -5205,8 +7103,18 @@
       "end_time": "00:12:51",
       "start_seconds": 769,
       "end_seconds": 771,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "まだ",
+          "reading": "-",
+          "meaning": "아직",
+          "level": "N4",
+          "surface_in_sentence": "まだ",
+          "base_form": "まだ",
+          "pos": "부사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -5251,6 +7159,15 @@
           "surface_in_sentence": "表情",
           "base_form": "表情",
           "pos": "명사"
+        },
+        {
+          "surface": "出る",
+          "reading": "でる",
+          "meaning": "나가다, 나오다",
+          "level": "N4",
+          "surface_in_sentence": "出",
+          "base_form": "出る",
+          "pos": "동사"
         }
       ],
       "grammar_matches": [
@@ -5291,10 +7208,19 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
+          "surface": "喜ぶ",
+          "reading": "よろこぶ",
+          "meaning": "기뻐하다, 즐거워하다",
+          "level": "N4",
+          "surface_in_sentence": "喜ぶ",
+          "base_form": "喜ぶ",
+          "pos": "동사"
+        },
+        {
           "surface": "言う",
           "reading": "いう",
           "meaning": "말하다",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "言っ",
           "base_form": "言う",
           "pos": "동사"
@@ -5329,7 +7255,7 @@
           "surface": "嬉しい",
           "reading": "うれしい",
           "meaning": "기쁘다",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "うれしく",
           "base_form": "うれしい",
           "pos": "형용사"
@@ -5351,7 +7277,7 @@
           "surface": "嬉しい",
           "reading": "うれしい",
           "meaning": "기쁘다",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "うれし",
           "base_form": "うれしい",
           "pos": "형용사"
@@ -5407,10 +7333,28 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
+          "surface": "夏",
+          "reading": "なつ",
+          "meaning": "여름",
+          "level": "N4",
+          "surface_in_sentence": "夏",
+          "base_form": "夏",
+          "pos": "명사"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "meaning": "집(장소, 공간)",
+          "level": "N4",
+          "surface_in_sentence": "いえ",
+          "base_form": "いう",
+          "pos": "동사"
+        },
+        {
           "surface": "店長",
           "reading": "てんちょう",
-          "meaning": "점장",
-          "level": "N3",
+          "meaning": "점장(님)",
+          "level": "N4",
           "surface_in_sentence": "店長",
           "base_form": "店長",
           "pos": "명사"
@@ -5419,7 +7363,7 @@
           "surface": "言う",
           "reading": "いう",
           "meaning": "말하다",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "いえ",
           "base_form": "いう",
           "pos": "동사"
@@ -5451,10 +7395,19 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "し",
+          "base_form": "する",
+          "pos": "동사"
+        },
+        {
           "surface": "時間",
           "reading": "じかん",
           "meaning": "시간",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "時間",
           "base_form": "時間",
           "pos": "명사"
@@ -5463,7 +7416,7 @@
           "surface": "練習",
           "reading": "れんしゅう",
           "meaning": "연습",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "練習",
           "base_form": "練習",
           "pos": "명사"
@@ -5479,8 +7432,27 @@
       "end_time": "00:13:11",
       "start_seconds": 788,
       "end_seconds": 791,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "夏",
+          "reading": "なつ",
+          "meaning": "여름",
+          "level": "N4",
+          "surface_in_sentence": "夏",
+          "base_form": "夏",
+          "pos": "명사"
+        },
+        {
+          "surface": "後",
+          "reading": "あと",
+          "meaning": "후, 뒤, 나중",
+          "level": "N4",
+          "surface_in_sentence": "あと",
+          "base_form": "あと",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -5492,7 +7464,26 @@
       "start_seconds": 791,
       "end_seconds": 793,
       "has_jlpt": true,
-      "vocab_matches": [],
+      "vocab_matches": [
+        {
+          "surface": "怒る",
+          "reading": "おこる",
+          "meaning": "화내다, 꾸짖다",
+          "level": "N4",
+          "surface_in_sentence": "怒り",
+          "base_form": "怒る",
+          "pos": "동사"
+        },
+        {
+          "surface": "行く",
+          "reading": "いく",
+          "meaning": "가다",
+          "level": "N4",
+          "surface_in_sentence": "行っ",
+          "base_form": "行く",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": [
         {
           "label": "〜ながら",
@@ -5528,8 +7519,27 @@
       "end_time": "00:13:16",
       "start_seconds": 793,
       "end_seconds": 796,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "引く",
+          "reading": "ひく",
+          "meaning": "끌다, 빼다, (선을) 긋다",
+          "level": "N4",
+          "surface_in_sentence": "ひい",
+          "base_form": "ひく",
+          "pos": "동사"
+        },
+        {
+          "surface": "弾く",
+          "reading": "ひく",
+          "meaning": "연주하다, 치다",
+          "level": "N4",
+          "surface_in_sentence": "ひい",
+          "base_form": "ひく",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -5543,12 +7553,39 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
+          "surface": "前",
+          "reading": "まえ",
+          "meaning": "앞, 전",
+          "level": "N4",
+          "surface_in_sentence": "前",
+          "base_form": "前",
+          "pos": "명사"
+        },
+        {
           "surface": "帰る",
           "reading": "かえる",
-          "meaning": "돌아가다",
-          "level": "N3",
+          "meaning": "돌아가다, 돌아오다",
+          "level": "N4",
           "surface_in_sentence": "帰っ",
           "base_form": "帰る",
+          "pos": "동사"
+        },
+        {
+          "surface": "来る",
+          "reading": "くる",
+          "meaning": "오다",
+          "level": "N4",
+          "surface_in_sentence": "くる",
+          "base_form": "くる",
+          "pos": "동사"
+        },
+        {
+          "surface": "行く",
+          "reading": "いく",
+          "meaning": "가다",
+          "level": "N4",
+          "surface_in_sentence": "行こ",
+          "base_form": "行く",
           "pos": "동사"
         }
       ],
@@ -5645,10 +7682,46 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
+          "surface": "これから",
+          "reading": "-",
+          "meaning": "이제부터, 앞으로",
+          "level": "N3",
+          "surface_in_sentence": "これから",
+          "base_form": "これから",
+          "pos": "부사"
+        },
+        {
+          "surface": "いる",
+          "reading": "-",
+          "meaning": "(사람, 동물이) 있다",
+          "level": "N4",
+          "surface_in_sentence": "いる",
+          "base_form": "いる",
+          "pos": "동사"
+        },
+        {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "する",
+          "base_form": "する",
+          "pos": "동사"
+        },
+        {
+          "surface": "たくさん",
+          "reading": "-",
+          "meaning": "많이",
+          "level": "N4",
+          "surface_in_sentence": "たくさん",
+          "base_form": "たくさん",
+          "pos": "명사"
+        },
+        {
           "surface": "待つ",
           "reading": "まつ",
           "meaning": "기다리다",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "待っ",
           "base_form": "待つ",
           "pos": "동사"
@@ -5657,7 +7730,7 @@
           "surface": "楽しい",
           "reading": "たのしい",
           "meaning": "즐겁다",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "楽しい",
           "base_form": "楽しい",
           "pos": "형용사"
@@ -5708,6 +7781,24 @@
           "surface_in_sentence": "セット",
           "base_form": "セット",
           "pos": "명사"
+        },
+        {
+          "surface": "セット",
+          "reading": "",
+          "meaning": "세트, 설정",
+          "level": "N4",
+          "surface_in_sentence": "セット",
+          "base_form": "セット",
+          "pos": "명사"
+        },
+        {
+          "surface": "今日",
+          "reading": "きょう",
+          "meaning": "오늘",
+          "level": "N4",
+          "surface_in_sentence": "今日",
+          "base_form": "今日",
+          "pos": "명사"
         }
       ],
       "grammar_matches": []
@@ -5744,8 +7835,18 @@
       "end_time": "00:13:37",
       "start_seconds": 816,
       "end_seconds": 817,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "全員",
+          "reading": "ぜんいん",
+          "meaning": "전원",
+          "level": "N4",
+          "surface_in_sentence": "全員",
+          "base_form": "全員",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -5757,7 +7858,17 @@
       "start_seconds": 817,
       "end_seconds": 819,
       "has_jlpt": true,
-      "vocab_matches": [],
+      "vocab_matches": [
+        {
+          "surface": "今回",
+          "reading": "こんかい",
+          "meaning": "다음 회",
+          "level": "N4",
+          "surface_in_sentence": "今回",
+          "base_form": "今回",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": [
         {
           "label": "だから",
@@ -5805,10 +7916,19 @@
           "pos": "명사"
         },
         {
+          "surface": "いる",
+          "reading": "-",
+          "meaning": "(사람, 동물이) 있다",
+          "level": "N4",
+          "surface_in_sentence": "い",
+          "base_form": "いる",
+          "pos": "동사"
+        },
+        {
           "surface": "頑張る",
           "reading": "がんばる",
-          "meaning": "열심히 하다, 노력하다",
-          "level": "N3",
+          "meaning": "힘내다, 열심히 하다",
+          "level": "N4",
           "surface_in_sentence": "頑張ら",
           "base_form": "頑張る",
           "pos": "동사"
@@ -5847,6 +7967,24 @@
           "surface_in_sentence": "うまい",
           "base_form": "うまい",
           "pos": "형용사"
+        },
+        {
+          "surface": "うまい",
+          "reading": "-",
+          "meaning": "맛있다, 솜씨가 좋다",
+          "level": "N4",
+          "surface_in_sentence": "うまい",
+          "base_form": "うまい",
+          "pos": "형용사"
+        },
+        {
+          "surface": "ギター",
+          "reading": "",
+          "meaning": "기타",
+          "level": "N4",
+          "surface_in_sentence": "ギター",
+          "base_form": "ギター",
+          "pos": "명사"
         }
       ],
       "grammar_matches": [
@@ -5972,7 +8110,7 @@
           "surface": "驚く",
           "reading": "おどろく",
           "meaning": "놀라다",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "驚く",
           "base_form": "驚く",
           "pos": "동사"
@@ -6004,10 +8142,19 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
+          "surface": "評判",
+          "reading": "ひょうばん",
+          "meaning": "평판",
+          "level": "N3",
+          "surface_in_sentence": "評判",
+          "base_form": "評判",
+          "pos": "명사"
+        },
+        {
           "surface": "言う",
           "reading": "いう",
           "meaning": "말하다",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "いい",
           "base_form": "いう",
           "pos": "동사"
@@ -6046,6 +8193,24 @@
           "surface_in_sentence": "登録",
           "base_form": "登録",
           "pos": "명사"
+        },
+        {
+          "surface": "万",
+          "reading": "まん",
+          "meaning": "만",
+          "level": "N4",
+          "surface_in_sentence": "万",
+          "base_form": "万",
+          "pos": "명사"
+        },
+        {
+          "surface": "数",
+          "reading": "かず",
+          "meaning": "수, 숫자",
+          "level": "N4",
+          "surface_in_sentence": "数",
+          "base_form": "数",
+          "pos": "명사"
         }
       ],
       "grammar_matches": []
@@ -6058,8 +8223,18 @@
       "end_time": "00:14:09",
       "start_seconds": 847,
       "end_seconds": 849,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "やる",
+          "reading": "-",
+          "meaning": "주다, 하다",
+          "level": "N4",
+          "surface_in_sentence": "やっ",
+          "base_form": "やる",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -6096,8 +8271,8 @@
         {
           "surface": "降る",
           "reading": "ふる",
-          "meaning": "(눈, 비 등이) 내리다",
-          "level": "N3",
+          "meaning": "(비, 눈 등이) 내리다",
+          "level": "N4",
           "surface_in_sentence": "ふ",
           "base_form": "ふる",
           "pos": "동사"
@@ -6173,8 +8348,18 @@
       "end_time": "00:14:32",
       "start_seconds": 870,
       "end_seconds": 872,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "ギター",
+          "reading": "",
+          "meaning": "기타",
+          "level": "N4",
+          "surface_in_sentence": "ギター",
+          "base_form": "ギター",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -6195,6 +8380,15 @@
           "surface_in_sentence": "登録",
           "base_form": "登録",
           "pos": "명사"
+        },
+        {
+          "surface": "万",
+          "reading": "まん",
+          "meaning": "만",
+          "level": "N4",
+          "surface_in_sentence": "万",
+          "base_form": "万",
+          "pos": "명사"
         }
       ],
       "grammar_matches": []
@@ -6210,10 +8404,19 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "しよ",
+          "base_form": "する",
+          "pos": "동사"
+        },
+        {
           "surface": "説明",
           "reading": "せつめい",
           "meaning": "설명",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "説明",
           "base_form": "説明",
           "pos": "명사"
@@ -6272,6 +8475,15 @@
           "surface_in_sentence": "呼吸",
           "base_form": "呼吸",
           "pos": "명사"
+        },
+        {
+          "surface": "呼吸",
+          "reading": "こきょう",
+          "meaning": "호흡",
+          "level": "N3",
+          "surface_in_sentence": "呼吸",
+          "base_form": "呼吸",
+          "pos": "명사"
         }
       ],
       "grammar_matches": [
@@ -6307,6 +8519,15 @@
           "surface_in_sentence": "合わせ",
           "base_form": "合わせる",
           "pos": "동사"
+        },
+        {
+          "surface": "目",
+          "reading": "め",
+          "meaning": "눈",
+          "level": "N4",
+          "surface_in_sentence": "目",
+          "base_form": "目",
+          "pos": "명사"
         }
       ],
       "grammar_matches": []
@@ -6329,6 +8550,15 @@
           "surface_in_sentence": "演奏",
           "base_form": "演奏",
           "pos": "명사"
+        },
+        {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "する",
+          "base_form": "する",
+          "pos": "동사"
         }
       ],
       "grammar_matches": []
@@ -6341,8 +8571,18 @@
       "end_time": "00:14:47",
       "start_seconds": 886,
       "end_seconds": 887,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "弾く",
+          "reading": "ひく",
+          "meaning": "연주하다, 치다",
+          "level": "N4",
+          "surface_in_sentence": "弾き",
+          "base_form": "弾く",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -6356,10 +8596,19 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
+          "surface": "なる",
+          "reading": "-",
+          "meaning": "(벨 등이) 울리다",
+          "level": "N4",
+          "surface_in_sentence": "なる",
+          "base_form": "なる",
+          "pos": "동사"
+        },
+        {
           "surface": "以下",
           "reading": "いか",
           "meaning": "이하",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "以下",
           "base_form": "以下",
           "pos": "명사"
@@ -6375,8 +8624,18 @@
       "end_time": "00:14:51",
       "start_seconds": 890,
       "end_seconds": 891,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "なる",
+          "reading": "-",
+          "meaning": "(벨 등이) 울리다",
+          "level": "N4",
+          "surface_in_sentence": "なる",
+          "base_form": "なる",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -6388,7 +8647,26 @@
       "start_seconds": 891,
       "end_seconds": 894,
       "has_jlpt": true,
-      "vocab_matches": [],
+      "vocab_matches": [
+        {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "す",
+          "base_form": "する",
+          "pos": "동사"
+        },
+        {
+          "surface": "どうも",
+          "reading": "-",
+          "meaning": "정말로, 참으로",
+          "level": "N4",
+          "surface_in_sentence": "どうも",
+          "base_form": "どうも",
+          "pos": "부사"
+        }
+      ],
       "grammar_matches": [
         {
           "label": "どうも",
@@ -6422,6 +8700,33 @@
           "surface_in_sentence": "売れ",
           "base_form": "売れる",
           "pos": "동사"
+        },
+        {
+          "surface": "出る",
+          "reading": "でる",
+          "meaning": "나가다, 나오다",
+          "level": "N4",
+          "surface_in_sentence": "出",
+          "base_form": "出る",
+          "pos": "동사"
+        },
+        {
+          "surface": "木",
+          "reading": "き",
+          "meaning": "나무",
+          "level": "N4",
+          "surface_in_sentence": "き",
+          "base_form": "くる",
+          "pos": "동사"
+        },
+        {
+          "surface": "来る",
+          "reading": "くる",
+          "meaning": "오다",
+          "level": "N4",
+          "surface_in_sentence": "き",
+          "base_form": "くる",
+          "pos": "동사"
         }
       ],
       "grammar_matches": [
@@ -6447,8 +8752,18 @@
       "end_time": "00:14:59",
       "start_seconds": 897,
       "end_seconds": 899,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "なる",
+          "reading": "-",
+          "meaning": "(벨 등이) 울리다",
+          "level": "N4",
+          "surface_in_sentence": "なり",
+          "base_form": "なる",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -6459,8 +8774,36 @@
       "end_time": "00:15:02",
       "start_seconds": 899,
       "end_seconds": 902,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "もう",
+          "reading": "もう",
+          "meaning": "벌써, 이미",
+          "level": "N4",
+          "surface_in_sentence": "もう",
+          "base_form": "もう",
+          "pos": "부사"
+        },
+        {
+          "surface": "ギター",
+          "reading": "",
+          "meaning": "기타",
+          "level": "N4",
+          "surface_in_sentence": "ギター",
+          "base_form": "ギター",
+          "pos": "명사"
+        },
+        {
+          "surface": "持つ",
+          "reading": "もつ",
+          "meaning": "들다, 가지다, 지니다",
+          "level": "N4",
+          "surface_in_sentence": "持つ",
+          "base_form": "持つ",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -6483,8 +8826,36 @@
       "end_time": "00:15:12",
       "start_seconds": 911,
       "end_seconds": 912,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "出る",
+          "reading": "でる",
+          "meaning": "나가다, 나오다",
+          "level": "N4",
+          "surface_in_sentence": "出",
+          "base_form": "出る",
+          "pos": "동사"
+        },
+        {
+          "surface": "木",
+          "reading": "き",
+          "meaning": "나무",
+          "level": "N4",
+          "surface_in_sentence": "き",
+          "base_form": "くる",
+          "pos": "동사"
+        },
+        {
+          "surface": "来る",
+          "reading": "くる",
+          "meaning": "오다",
+          "level": "N4",
+          "surface_in_sentence": "き",
+          "base_form": "くる",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -6500,8 +8871,8 @@
         {
           "surface": "始まる",
           "reading": "はじまる",
-          "meaning": "시작하다",
-          "level": "N3",
+          "meaning": "시작되다",
+          "level": "N4",
           "surface_in_sentence": "始まっ",
           "base_form": "始まる",
           "pos": "동사"
@@ -6517,8 +8888,27 @@
       "end_time": "00:15:16",
       "start_seconds": 914,
       "end_seconds": 916,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "できる",
+          "reading": "-",
+          "meaning": "할 수 있다, 생기다",
+          "level": "N4",
+          "surface_in_sentence": "でき",
+          "base_form": "できる",
+          "pos": "동사"
+        },
+        {
+          "surface": "やる",
+          "reading": "-",
+          "meaning": "주다, 하다",
+          "level": "N4",
+          "surface_in_sentence": "やっ",
+          "base_form": "やる",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -6548,6 +8938,15 @@
           "reading": "うまい",
           "meaning": "잘하다, 솜씨가 뛰어나다",
           "level": "N3",
+          "surface_in_sentence": "うまく",
+          "base_form": "うまい",
+          "pos": "형용사"
+        },
+        {
+          "surface": "うまい",
+          "reading": "-",
+          "meaning": "맛있다, 솜씨가 좋다",
+          "level": "N4",
           "surface_in_sentence": "うまく",
           "base_form": "うまい",
           "pos": "형용사"
@@ -6583,6 +8982,15 @@
           "reading": "うまい",
           "meaning": "잘하다, 솜씨가 뛰어나다",
           "level": "N3",
+          "surface_in_sentence": "うまい",
+          "base_form": "うまい",
+          "pos": "형용사"
+        },
+        {
+          "surface": "うまい",
+          "reading": "-",
+          "meaning": "맛있다, 솜씨가 좋다",
+          "level": "N4",
           "surface_in_sentence": "うまい",
           "base_form": "うまい",
           "pos": "형용사"
@@ -6642,6 +9050,15 @@
           "surface_in_sentence": "現実",
           "base_form": "現実",
           "pos": "명사"
+        },
+        {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "し",
+          "base_form": "する",
+          "pos": "동사"
         }
       ],
       "grammar_matches": [
@@ -6692,8 +9109,18 @@
       "end_time": "00:15:36",
       "start_seconds": 932,
       "end_seconds": 936,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "持つ",
+          "reading": "もつ",
+          "meaning": "들다, 가지다, 지니다",
+          "level": "N4",
+          "surface_in_sentence": "もっ",
+          "base_form": "もつ",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -6709,8 +9136,8 @@
         {
           "surface": "帰る",
           "reading": "かえる",
-          "meaning": "돌아가다",
-          "level": "N3",
+          "meaning": "돌아가다, 돌아오다",
+          "level": "N4",
           "surface_in_sentence": "帰っ",
           "base_form": "帰る",
           "pos": "동사"
@@ -6718,8 +9145,8 @@
         {
           "surface": "覚える",
           "reading": "おぼえる",
-          "meaning": "기억하다",
-          "level": "N3",
+          "meaning": "외우다, 기억하다",
+          "level": "N4",
           "surface_in_sentence": "覚え",
           "base_form": "覚える",
           "pos": "동사"
@@ -6808,7 +9235,17 @@
       "start_seconds": 943,
       "end_seconds": 947,
       "has_jlpt": true,
-      "vocab_matches": [],
+      "vocab_matches": [
+        {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "する",
+          "base_form": "する",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": [
         {
           "label": "〜たら",
@@ -6832,8 +9269,27 @@
       "end_time": "00:15:50",
       "start_seconds": 947,
       "end_seconds": 950,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "し",
+          "base_form": "する",
+          "pos": "동사"
+        },
+        {
+          "surface": "音",
+          "reading": "おと",
+          "meaning": "소리, 음",
+          "level": "N4",
+          "surface_in_sentence": "音",
+          "base_form": "音",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -6932,15 +9388,6 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
-          "surface": "友達",
-          "reading": "ともだち",
-          "meaning": "친구",
-          "level": "N3",
-          "surface_in_sentence": "友達",
-          "base_form": "友達",
-          "pos": "명사"
-        },
-        {
           "surface": "多分",
           "reading": "たぶん",
           "meaning": "다소",
@@ -6948,6 +9395,42 @@
           "surface_in_sentence": "多分",
           "base_form": "多分",
           "pos": "부사"
+        },
+        {
+          "surface": "うち",
+          "reading": "-",
+          "meaning": "집(가족과 함께 사는)",
+          "level": "N4",
+          "surface_in_sentence": "うち",
+          "base_form": "うち",
+          "pos": "명사"
+        },
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "meaning": "친구, 벗",
+          "level": "N4",
+          "surface_in_sentence": "友達",
+          "base_form": "友達",
+          "pos": "명사"
+        },
+        {
+          "surface": "来る",
+          "reading": "くる",
+          "meaning": "오다",
+          "level": "N4",
+          "surface_in_sentence": "来る",
+          "base_form": "来る",
+          "pos": "동사"
+        },
+        {
+          "surface": "見る",
+          "reading": "みる",
+          "meaning": "보다",
+          "level": "N4",
+          "surface_in_sentence": "見",
+          "base_form": "見る",
+          "pos": "동사"
         }
       ],
       "grammar_matches": [
@@ -7014,10 +9497,19 @@
         {
           "surface": "友達",
           "reading": "ともだち",
-          "meaning": "친구",
-          "level": "N3",
+          "meaning": "친구, 벗",
+          "level": "N4",
           "surface_in_sentence": "友達",
           "base_form": "友達",
+          "pos": "명사"
+        },
+        {
+          "surface": "夏",
+          "reading": "なつ",
+          "meaning": "여름",
+          "level": "N4",
+          "surface_in_sentence": "夏",
+          "base_form": "夏",
           "pos": "명사"
         }
       ],
@@ -7075,6 +9567,15 @@
           "surface_in_sentence": "演奏",
           "base_form": "演奏",
           "pos": "명사"
+        },
+        {
+          "surface": "分かる",
+          "reading": "わかる",
+          "meaning": "알다, 이해하다",
+          "level": "N4",
+          "surface_in_sentence": "分かん",
+          "base_form": "分かる",
+          "pos": "동사"
         }
       ],
       "grammar_matches": []
@@ -7087,8 +9588,27 @@
       "end_time": "00:16:09",
       "start_seconds": 967,
       "end_seconds": 969,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "発言",
+          "reading": "はつげん",
+          "meaning": "발언",
+          "level": "N3",
+          "surface_in_sentence": "発言",
+          "base_form": "発言",
+          "pos": "명사"
+        },
+        {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "し",
+          "base_form": "する",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -7105,7 +9625,7 @@
           "surface": "寝る",
           "reading": "ねる",
           "meaning": "자다",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "ねっ",
           "base_form": "ねる",
           "pos": "동사"
@@ -7122,7 +9642,17 @@
       "start_seconds": 970,
       "end_seconds": 972,
       "has_jlpt": true,
-      "vocab_matches": [],
+      "vocab_matches": [
+        {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "せい",
+          "base_form": "する",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": [
         {
           "label": "だから",
@@ -7152,7 +9682,7 @@
           "surface": "言う",
           "reading": "いう",
           "meaning": "말하다",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "言わ",
           "base_form": "言う",
           "pos": "동사"
@@ -7168,8 +9698,18 @@
       "end_time": "00:16:16",
       "start_seconds": 974,
       "end_seconds": 976,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "分かる",
+          "reading": "わかる",
+          "meaning": "알다, 이해하다",
+          "level": "N4",
+          "surface_in_sentence": "分かる",
+          "base_form": "分かる",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -7202,8 +9742,18 @@
       "end_time": "00:16:21",
       "start_seconds": 979,
       "end_seconds": 981,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "喜ぶ",
+          "reading": "よろこぶ",
+          "meaning": "기뻐하다, 즐거워하다",
+          "level": "N4",
+          "surface_in_sentence": "喜ぶ",
+          "base_form": "喜ぶ",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -7238,8 +9788,18 @@
       "end_time": "00:16:26",
       "start_seconds": 984,
       "end_seconds": 986,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "する",
+          "base_form": "する",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -7281,6 +9841,15 @@
           "surface_in_sentence": "無理",
           "base_form": "無理",
           "pos": "명사"
+        },
+        {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "し",
+          "base_form": "する",
+          "pos": "동사"
         }
       ],
       "grammar_matches": []
@@ -7333,7 +9902,7 @@
           "surface": "嬉しい",
           "reading": "うれしい",
           "meaning": "기쁘다",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "うれしかっ",
           "base_form": "うれしい",
           "pos": "형용사"
@@ -7349,8 +9918,36 @@
       "end_time": "00:16:37",
       "start_seconds": 995,
       "end_seconds": 997,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "駆ける",
+          "reading": "かける",
+          "meaning": "달리다, 뛰다",
+          "level": "N3",
+          "surface_in_sentence": "かけ",
+          "base_form": "かける",
+          "pos": "동사"
+        },
+        {
+          "surface": "かける",
+          "reading": "-",
+          "meaning": "(안경을) 쓰다, (전화 등을) 걸다",
+          "level": "N4",
+          "surface_in_sentence": "かけ",
+          "base_form": "かける",
+          "pos": "동사"
+        },
+        {
+          "surface": "声",
+          "reading": "こえ",
+          "meaning": "목소리, 소리",
+          "level": "N4",
+          "surface_in_sentence": "声",
+          "base_form": "声",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -7370,6 +9967,33 @@
           "level": "N3",
           "surface_in_sentence": "組み",
           "base_form": "組む",
+          "pos": "동사"
+        },
+        {
+          "surface": "ずっと",
+          "reading": "-",
+          "meaning": "쭉, 계속",
+          "level": "N4",
+          "surface_in_sentence": "ずっと",
+          "base_form": "ずっと",
+          "pos": "부사"
+        },
+        {
+          "surface": "思う",
+          "reading": "おもう",
+          "meaning": "생각하다",
+          "level": "N4",
+          "surface_in_sentence": "思っ",
+          "base_form": "思う",
+          "pos": "동사"
+        },
+        {
+          "surface": "手",
+          "reading": "て",
+          "meaning": "손",
+          "level": "N4",
+          "surface_in_sentence": "て",
+          "base_form": "てる",
           "pos": "동사"
         }
       ],
@@ -7397,7 +10021,17 @@
       "start_seconds": 1000,
       "end_seconds": 1003,
       "has_jlpt": true,
-      "vocab_matches": [],
+      "vocab_matches": [
+        {
+          "surface": "集まる",
+          "reading": "あつまる",
+          "meaning": "모이다",
+          "level": "N4",
+          "surface_in_sentence": "集まら",
+          "base_form": "集まる",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": [
         {
           "label": "~なくて",
@@ -7433,12 +10067,30 @@
           "pos": "명사"
         },
         {
+          "surface": "上げる",
+          "reading": "あげる",
+          "meaning": "올리다",
+          "level": "N3",
+          "surface_in_sentence": "上げ",
+          "base_form": "上げる",
+          "pos": "동사"
+        },
+        {
           "surface": "普段",
           "reading": "ふだん",
           "meaning": "평소",
           "level": "N3",
           "surface_in_sentence": "ふだん",
           "base_form": "ふだん",
+          "pos": "명사"
+        },
+        {
+          "surface": "カバー",
+          "reading": "",
+          "meaning": "커버, 덮개",
+          "level": "N4",
+          "surface_in_sentence": "カバー",
+          "base_form": "カバー",
           "pos": "명사"
         }
       ],
@@ -7475,6 +10127,15 @@
           "surface_in_sentence": "ふだん",
           "base_form": "ふだん",
           "pos": "명사"
+        },
+        {
+          "surface": "弾く",
+          "reading": "ひく",
+          "meaning": "연주하다, 치다",
+          "level": "N4",
+          "surface_in_sentence": "弾く",
+          "base_form": "弾く",
+          "pos": "동사"
         }
       ],
       "grammar_matches": []
@@ -7488,7 +10149,44 @@
       "start_seconds": 1008,
       "end_seconds": 1011,
       "has_jlpt": true,
-      "vocab_matches": [],
+      "vocab_matches": [
+        {
+          "surface": "すぐ",
+          "reading": "-",
+          "meaning": "곧, 바로",
+          "level": "N4",
+          "surface_in_sentence": "すぐ",
+          "base_form": "すぐ",
+          "pos": "부사"
+        },
+        {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "し",
+          "base_form": "する",
+          "pos": "동사"
+        },
+        {
+          "surface": "できる",
+          "reading": "-",
+          "meaning": "할 수 있다, 생기다",
+          "level": "N4",
+          "surface_in_sentence": "できる",
+          "base_form": "できる",
+          "pos": "동사"
+        },
+        {
+          "surface": "時",
+          "reading": "とき",
+          "meaning": "때",
+          "level": "N4",
+          "surface_in_sentence": "とき",
+          "base_form": "とき",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": [
         {
           "label": "できる (3그룹)",
@@ -7552,6 +10250,24 @@
           "surface_in_sentence": "線",
           "base_form": "線",
           "pos": "명사"
+        },
+        {
+          "surface": "年",
+          "reading": "とし",
+          "meaning": "나이, 해",
+          "level": "N4",
+          "surface_in_sentence": "年",
+          "base_form": "年",
+          "pos": "명사"
+        },
+        {
+          "surface": "数",
+          "reading": "かず",
+          "meaning": "수, 숫자",
+          "level": "N4",
+          "surface_in_sentence": "数",
+          "base_form": "数",
+          "pos": "명사"
         }
       ],
       "grammar_matches": []
@@ -7564,8 +10280,18 @@
       "end_time": "00:16:54",
       "start_seconds": 1014,
       "end_seconds": 1014,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "凄い",
+          "reading": "すごい",
+          "meaning": "굉장하다, 대단하다",
+          "level": "N3",
+          "surface_in_sentence": "すご",
+          "base_form": "すごい",
+          "pos": "형용사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -7608,6 +10334,15 @@
           "surface_in_sentence": "結局",
           "base_form": "結局",
           "pos": "명사"
+        },
+        {
+          "surface": "なる",
+          "reading": "-",
+          "meaning": "(벨 등이) 울리다",
+          "level": "N4",
+          "surface_in_sentence": "なっ",
+          "base_form": "なる",
+          "pos": "동사"
         }
       ],
       "grammar_matches": []
@@ -7683,6 +10418,15 @@
           "surface_in_sentence": "線",
           "base_form": "線",
           "pos": "명사"
+        },
+        {
+          "surface": "カバー",
+          "reading": "",
+          "meaning": "커버, 덮개",
+          "level": "N4",
+          "surface_in_sentence": "カバー",
+          "base_form": "カバー",
+          "pos": "명사"
         }
       ],
       "grammar_matches": []
@@ -7696,7 +10440,26 @@
       "start_seconds": 1025,
       "end_seconds": 1027,
       "has_jlpt": true,
-      "vocab_matches": [],
+      "vocab_matches": [
+        {
+          "surface": "ギター",
+          "reading": "",
+          "meaning": "기타",
+          "level": "N4",
+          "surface_in_sentence": "ギター",
+          "base_form": "ギター",
+          "pos": "명사"
+        },
+        {
+          "surface": "三",
+          "reading": "さん",
+          "meaning": "3",
+          "level": "N4",
+          "surface_in_sentence": "さん",
+          "base_form": "さん",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": [
         {
           "label": "なんか",
@@ -7738,7 +10501,7 @@
           "surface": "知る",
           "reading": "しる",
           "meaning": "알다",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "知っ",
           "base_form": "知る",
           "pos": "동사"
@@ -7754,8 +10517,18 @@
       "end_time": "00:17:11",
       "start_seconds": 1029,
       "end_seconds": 1031,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "ギター",
+          "reading": "",
+          "meaning": "기타",
+          "level": "N4",
+          "surface_in_sentence": "ギター",
+          "base_form": "ギター",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -7793,10 +10566,19 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
+          "surface": "後",
+          "reading": "あと",
+          "meaning": "후, 뒤, 나중",
+          "level": "N4",
+          "surface_in_sentence": "あと",
+          "base_form": "あと",
+          "pos": "명사"
+        },
+        {
           "surface": "知る",
           "reading": "しる",
           "meaning": "알다",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "知ら",
           "base_form": "知る",
           "pos": "동사"
@@ -7805,7 +10587,7 @@
           "surface": "送る",
           "reading": "おくる",
           "meaning": "보내다",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "送る",
           "base_form": "送る",
           "pos": "동사"
@@ -7840,6 +10622,33 @@
           "surface_in_sentence": "最高",
           "base_form": "最高",
           "pos": "명사"
+        },
+        {
+          "surface": "うまい",
+          "reading": "-",
+          "meaning": "맛있다, 솜씨가 좋다",
+          "level": "N4",
+          "surface_in_sentence": "うまい",
+          "base_form": "うまい",
+          "pos": "형용사"
+        },
+        {
+          "surface": "もう",
+          "reading": "もう",
+          "meaning": "벌써, 이미",
+          "level": "N4",
+          "surface_in_sentence": "もう",
+          "base_form": "もう",
+          "pos": "부사"
+        },
+        {
+          "surface": "見る",
+          "reading": "みる",
+          "meaning": "보다",
+          "level": "N4",
+          "surface_in_sentence": "み",
+          "base_form": "みる",
+          "pos": "동사"
         }
       ],
       "grammar_matches": []
@@ -7879,10 +10688,19 @@
         {
           "surface": "上がる",
           "reading": "あがる",
-          "meaning": "오르다",
-          "level": "N3",
+          "meaning": "오르다, 올라가다",
+          "level": "N4",
           "surface_in_sentence": "上がっ",
           "base_form": "上がる",
+          "pos": "동사"
+        },
+        {
+          "surface": "来る",
+          "reading": "くる",
+          "meaning": "오다",
+          "level": "N4",
+          "surface_in_sentence": "くる",
+          "base_form": "くる",
           "pos": "동사"
         }
       ],
@@ -7906,6 +10724,42 @@
           "surface_in_sentence": "うまかっ",
           "base_form": "うまい",
           "pos": "형용사"
+        },
+        {
+          "surface": "凄い",
+          "reading": "すごい",
+          "meaning": "굉장하다, 대단하다",
+          "level": "N3",
+          "surface_in_sentence": "すごく",
+          "base_form": "すごい",
+          "pos": "형용사"
+        },
+        {
+          "surface": "ある",
+          "reading": "-",
+          "meaning": "(사물, 식물이) 있다",
+          "level": "N4",
+          "surface_in_sentence": "ある",
+          "base_form": "ある",
+          "pos": "동사"
+        },
+        {
+          "surface": "うまい",
+          "reading": "-",
+          "meaning": "맛있다, 솜씨가 좋다",
+          "level": "N4",
+          "surface_in_sentence": "うまかっ",
+          "base_form": "うまい",
+          "pos": "형용사"
+        },
+        {
+          "surface": "見る",
+          "reading": "みる",
+          "meaning": "보다",
+          "level": "N4",
+          "surface_in_sentence": "見",
+          "base_form": "見る",
+          "pos": "동사"
         }
       ],
       "grammar_matches": []
@@ -7924,7 +10778,7 @@
           "surface": "寝る",
           "reading": "ねる",
           "meaning": "자다",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "ねっ",
           "base_form": "ねる",
           "pos": "동사"
@@ -7945,6 +10799,15 @@
         {
           "surface": "ちょっと",
           "reading": "ちょっと",
+          "meaning": "조금",
+          "level": "N3",
+          "surface_in_sentence": "ちょっと",
+          "base_form": "ちょっと",
+          "pos": "부사"
+        },
+        {
+          "surface": "ちょっと",
+          "reading": "-",
           "meaning": "조금",
           "level": "N3",
           "surface_in_sentence": "ちょっと",
@@ -8003,6 +10866,15 @@
           "surface_in_sentence": "通知",
           "base_form": "通知",
           "pos": "명사"
+        },
+        {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "し",
+          "base_form": "する",
+          "pos": "동사"
         }
       ],
       "grammar_matches": []
@@ -8025,6 +10897,33 @@
           "surface_in_sentence": "演奏",
           "base_form": "演奏",
           "pos": "명사"
+        },
+        {
+          "surface": "いつか",
+          "reading": "-",
+          "meaning": "언젠가",
+          "level": "N4",
+          "surface_in_sentence": "いつか",
+          "base_form": "いつか",
+          "pos": "명사"
+        },
+        {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "し",
+          "base_form": "する",
+          "pos": "동사"
+        },
+        {
+          "surface": "見る",
+          "reading": "みる",
+          "meaning": "보다",
+          "level": "N4",
+          "surface_in_sentence": "み",
+          "base_form": "みる",
+          "pos": "동사"
         }
       ],
       "grammar_matches": [
@@ -8074,8 +10973,27 @@
       "end_time": "00:17:37",
       "start_seconds": 1055,
       "end_seconds": 1057,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "し",
+          "base_form": "する",
+          "pos": "동사"
+        },
+        {
+          "surface": "今",
+          "reading": "いま",
+          "meaning": "지금",
+          "level": "N4",
+          "surface_in_sentence": "今",
+          "base_form": "今",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -8092,7 +11010,7 @@
           "surface": "言う",
           "reading": "いう",
           "meaning": "말하다",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "言い",
           "base_form": "言う",
           "pos": "동사"
@@ -8131,6 +11049,42 @@
           "surface_in_sentence": "うまく",
           "base_form": "うまい",
           "pos": "형용사"
+        },
+        {
+          "surface": "うまい",
+          "reading": "-",
+          "meaning": "맛있다, 솜씨가 좋다",
+          "level": "N4",
+          "surface_in_sentence": "うまく",
+          "base_form": "うまい",
+          "pos": "형용사"
+        },
+        {
+          "surface": "所",
+          "reading": "ところ",
+          "meaning": "곳, 장소",
+          "level": "N4",
+          "surface_in_sentence": "ところ",
+          "base_form": "ところ",
+          "pos": "명사"
+        },
+        {
+          "surface": "手",
+          "reading": "て",
+          "meaning": "손",
+          "level": "N4",
+          "surface_in_sentence": "て",
+          "base_form": "てる",
+          "pos": "동사"
+        },
+        {
+          "surface": "見る",
+          "reading": "みる",
+          "meaning": "보다",
+          "level": "N4",
+          "surface_in_sentence": "見",
+          "base_form": "見る",
+          "pos": "동사"
         }
       ],
       "grammar_matches": [
@@ -8175,6 +11129,69 @@
           "reading": "たつ",
           "meaning": "경과하다",
           "level": "N3",
+          "surface_in_sentence": "たっ",
+          "base_form": "たつ",
+          "pos": "동사"
+        },
+        {
+          "surface": "なる",
+          "reading": "-",
+          "meaning": "(벨 등이) 울리다",
+          "level": "N4",
+          "surface_in_sentence": "なっ",
+          "base_form": "なる",
+          "pos": "동사"
+        },
+        {
+          "surface": "ギター",
+          "reading": "",
+          "meaning": "기타",
+          "level": "N4",
+          "surface_in_sentence": "ギター",
+          "base_form": "ギター",
+          "pos": "명사"
+        },
+        {
+          "surface": "建つ",
+          "reading": "たつ",
+          "meaning": "(건물이) 지어지다",
+          "level": "N4",
+          "surface_in_sentence": "たっ",
+          "base_form": "たつ",
+          "pos": "동사"
+        },
+        {
+          "surface": "弾く",
+          "reading": "ひく",
+          "meaning": "연주하다, 치다",
+          "level": "N4",
+          "surface_in_sentence": "弾い",
+          "base_form": "弾く",
+          "pos": "동사"
+        },
+        {
+          "surface": "木",
+          "reading": "き",
+          "meaning": "나무",
+          "level": "N4",
+          "surface_in_sentence": "き",
+          "base_form": "くる",
+          "pos": "동사"
+        },
+        {
+          "surface": "来る",
+          "reading": "くる",
+          "meaning": "오다",
+          "level": "N4",
+          "surface_in_sentence": "き",
+          "base_form": "くる",
+          "pos": "동사"
+        },
+        {
+          "surface": "立つ",
+          "reading": "たつ",
+          "meaning": "서다",
+          "level": "N4",
           "surface_in_sentence": "たっ",
           "base_form": "たつ",
           "pos": "동사"
@@ -8225,6 +11242,33 @@
           "surface_in_sentence": "伝わっ",
           "base_form": "伝わる",
           "pos": "동사"
+        },
+        {
+          "surface": "後",
+          "reading": "あと",
+          "meaning": "후, 뒤, 나중",
+          "level": "N4",
+          "surface_in_sentence": "あと",
+          "base_form": "あと",
+          "pos": "명사"
+        },
+        {
+          "surface": "来る",
+          "reading": "くる",
+          "meaning": "오다",
+          "level": "N4",
+          "surface_in_sentence": "くる",
+          "base_form": "くる",
+          "pos": "동사"
+        },
+        {
+          "surface": "見る",
+          "reading": "みる",
+          "meaning": "보다",
+          "level": "N4",
+          "surface_in_sentence": "見",
+          "base_form": "見る",
+          "pos": "동사"
         }
       ],
       "grammar_matches": []
@@ -8259,6 +11303,15 @@
           "surface_in_sentence": "現実",
           "base_form": "現実",
           "pos": "명사"
+        },
+        {
+          "surface": "世界",
+          "reading": "せかい",
+          "meaning": "세계",
+          "level": "N4",
+          "surface_in_sentence": "世界",
+          "base_form": "世界",
+          "pos": "명사"
         }
       ],
       "grammar_matches": []
@@ -8274,10 +11327,28 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
+          "surface": "思う",
+          "reading": "おもう",
+          "meaning": "생각하다",
+          "level": "N4",
+          "surface_in_sentence": "思っ",
+          "base_form": "思う",
+          "pos": "동사"
+        },
+        {
+          "surface": "手",
+          "reading": "て",
+          "meaning": "손",
+          "level": "N4",
+          "surface_in_sentence": "て",
+          "base_form": "てる",
+          "pos": "동사"
+        },
+        {
           "surface": "興味",
           "reading": "きょうみ",
           "meaning": "흥미",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "興味",
           "base_form": "興味",
           "pos": "명사"
@@ -8321,15 +11392,6 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
-          "surface": "早い",
-          "reading": "はやい",
-          "meaning": "이르다",
-          "level": "N3",
-          "surface_in_sentence": "早い",
-          "base_form": "早い",
-          "pos": "형용사"
-        },
-        {
           "surface": "諦める",
           "reading": "あきらめる",
           "meaning": "포기하다",
@@ -8337,6 +11399,24 @@
           "surface_in_sentence": "諦める",
           "base_form": "諦める",
           "pos": "동사"
+        },
+        {
+          "surface": "今日",
+          "reading": "きょう",
+          "meaning": "오늘",
+          "level": "N4",
+          "surface_in_sentence": "今日",
+          "base_form": "今日",
+          "pos": "명사"
+        },
+        {
+          "surface": "早い",
+          "reading": "はやい",
+          "meaning": "빠르다, 이르다",
+          "level": "N4",
+          "surface_in_sentence": "早い",
+          "base_form": "早い",
+          "pos": "형용사"
         }
       ],
       "grammar_matches": [
@@ -8386,8 +11466,18 @@
       "end_time": "00:18:09",
       "start_seconds": 1088,
       "end_seconds": 1089,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "売る",
+          "reading": "うる",
+          "meaning": "팔다",
+          "level": "N4",
+          "surface_in_sentence": "うっ",
+          "base_form": "うる",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -8429,6 +11519,51 @@
           "surface_in_sentence": "くれ",
           "base_form": "くれる",
           "pos": "동사"
+        },
+        {
+          "surface": "いる",
+          "reading": "-",
+          "meaning": "(사람, 동물이) 있다",
+          "level": "N4",
+          "surface_in_sentence": "い",
+          "base_form": "いる",
+          "pos": "동사"
+        },
+        {
+          "surface": "くれる",
+          "reading": "-",
+          "meaning": "(나에게) 주다",
+          "level": "N4",
+          "surface_in_sentence": "くれ",
+          "base_form": "くれる",
+          "pos": "동사"
+        },
+        {
+          "surface": "ずっと",
+          "reading": "-",
+          "meaning": "쭉, 계속",
+          "level": "N4",
+          "surface_in_sentence": "ずっと",
+          "base_form": "ずっと",
+          "pos": "부사"
+        },
+        {
+          "surface": "暮れる",
+          "reading": "くれる",
+          "meaning": "저물다, 해가 지다",
+          "level": "N4",
+          "surface_in_sentence": "くれ",
+          "base_form": "くれる",
+          "pos": "동사"
+        },
+        {
+          "surface": "見る",
+          "reading": "みる",
+          "meaning": "보다",
+          "level": "N4",
+          "surface_in_sentence": "見",
+          "base_form": "見る",
+          "pos": "동사"
         }
       ],
       "grammar_matches": []
@@ -8448,6 +11583,51 @@
           "reading": "くれ",
           "meaning": "해질녘",
           "level": "N3",
+          "surface_in_sentence": "くれ",
+          "base_form": "くれる",
+          "pos": "동사"
+        },
+        {
+          "surface": "駆ける",
+          "reading": "かける",
+          "meaning": "달리다, 뛰다",
+          "level": "N3",
+          "surface_in_sentence": "かけ",
+          "base_form": "かける",
+          "pos": "동사"
+        },
+        {
+          "surface": "かける",
+          "reading": "-",
+          "meaning": "(안경을) 쓰다, (전화 등을) 걸다",
+          "level": "N4",
+          "surface_in_sentence": "かけ",
+          "base_form": "かける",
+          "pos": "동사"
+        },
+        {
+          "surface": "くれる",
+          "reading": "-",
+          "meaning": "(나에게) 주다",
+          "level": "N4",
+          "surface_in_sentence": "くれ",
+          "base_form": "くれる",
+          "pos": "동사"
+        },
+        {
+          "surface": "声",
+          "reading": "こえ",
+          "meaning": "목소리, 소리",
+          "level": "N4",
+          "surface_in_sentence": "声",
+          "base_form": "声",
+          "pos": "명사"
+        },
+        {
+          "surface": "暮れる",
+          "reading": "くれる",
+          "meaning": "저물다, 해가 지다",
+          "level": "N4",
           "surface_in_sentence": "くれ",
           "base_form": "くれる",
           "pos": "동사"
@@ -8476,8 +11656,18 @@
       "end_time": "00:18:18",
       "start_seconds": 1097,
       "end_seconds": 1098,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "立つ",
+          "reading": "たつ",
+          "meaning": "서다",
+          "level": "N4",
+          "surface_in_sentence": "立っ",
+          "base_form": "立つ",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -8498,6 +11688,15 @@
           "surface_in_sentence": "多分",
           "base_form": "多分",
           "pos": "부사"
+        },
+        {
+          "surface": "起こる",
+          "reading": "おこる",
+          "meaning": "일어나다, 발생하다",
+          "level": "N4",
+          "surface_in_sentence": "起こら",
+          "base_form": "起こる",
+          "pos": "동사"
         }
       ],
       "grammar_matches": [
@@ -8533,6 +11732,15 @@
           "surface_in_sentence": "絶対",
           "base_form": "絶対",
           "pos": "명사"
+        },
+        {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "し",
+          "base_form": "する",
+          "pos": "동사"
         }
       ],
       "grammar_matches": []
@@ -8558,7 +11766,44 @@
       "start_seconds": 1108,
       "end_seconds": 1111,
       "has_jlpt": true,
-      "vocab_matches": [],
+      "vocab_matches": [
+        {
+          "surface": "くれる",
+          "reading": "-",
+          "meaning": "(나에게) 주다",
+          "level": "N4",
+          "surface_in_sentence": "くれる",
+          "base_form": "くれる",
+          "pos": "동사"
+        },
+        {
+          "surface": "なる",
+          "reading": "-",
+          "meaning": "(벨 등이) 울리다",
+          "level": "N4",
+          "surface_in_sentence": "なっ",
+          "base_form": "なる",
+          "pos": "동사"
+        },
+        {
+          "surface": "出る",
+          "reading": "でる",
+          "meaning": "나가다, 나오다",
+          "level": "N4",
+          "surface_in_sentence": "出",
+          "base_form": "出る",
+          "pos": "동사"
+        },
+        {
+          "surface": "暮れる",
+          "reading": "くれる",
+          "meaning": "저물다, 해가 지다",
+          "level": "N4",
+          "surface_in_sentence": "くれる",
+          "base_form": "くれる",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": [
         {
           "label": "~てくれる",
@@ -8633,10 +11878,19 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
+          "surface": "日",
+          "reading": "ひ",
+          "meaning": "날, 날짜",
+          "level": "N4",
+          "surface_in_sentence": "ひ",
+          "base_form": "ひる",
+          "pos": "동사"
+        },
+        {
           "surface": "昼",
           "reading": "ひる",
           "meaning": "낮",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "ひ",
           "base_form": "ひる",
           "pos": "동사"
@@ -8662,6 +11916,24 @@
           "surface_in_sentence": "怖い",
           "base_form": "怖い",
           "pos": "형용사"
+        },
+        {
+          "surface": "分かる",
+          "reading": "わかる",
+          "meaning": "알다, 이해하다",
+          "level": "N4",
+          "surface_in_sentence": "分かっ",
+          "base_form": "分かる",
+          "pos": "동사"
+        },
+        {
+          "surface": "頭",
+          "reading": "あたま",
+          "meaning": "머리",
+          "level": "N4",
+          "surface_in_sentence": "頭",
+          "base_form": "頭",
+          "pos": "명사"
         }
       ],
       "grammar_matches": []
@@ -8683,6 +11955,24 @@
           "level": "N3",
           "surface_in_sentence": "わけ",
           "base_form": "わけ",
+          "pos": "명사"
+        },
+        {
+          "surface": "わけ",
+          "reading": "-",
+          "meaning": "이유",
+          "level": "N3",
+          "surface_in_sentence": "わけ",
+          "base_form": "わけ",
+          "pos": "명사"
+        },
+        {
+          "surface": "三",
+          "reading": "さん",
+          "meaning": "3",
+          "level": "N4",
+          "surface_in_sentence": "さん",
+          "base_form": "さん",
           "pos": "명사"
         }
       ],
@@ -8728,6 +12018,24 @@
           "surface_in_sentence": "演奏",
           "base_form": "演奏",
           "pos": "명사"
+        },
+        {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "し",
+          "base_form": "する",
+          "pos": "동사"
+        },
+        {
+          "surface": "入る",
+          "reading": "はいる",
+          "meaning": "들어가다, 들어오다",
+          "level": "N4",
+          "surface_in_sentence": "入っ",
+          "base_form": "入る",
+          "pos": "동사"
         }
       ],
       "grammar_matches": [
@@ -8753,8 +12061,18 @@
       "end_time": "00:18:44",
       "start_seconds": 1123,
       "end_seconds": 1124,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "夏",
+          "reading": "なつ",
+          "meaning": "여름",
+          "level": "N4",
+          "surface_in_sentence": "夏",
+          "base_form": "夏",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -8786,10 +12104,37 @@
           "pos": "명사"
         },
         {
+          "surface": "いつも",
+          "reading": "-",
+          "meaning": "항상, 보통 때",
+          "level": "N4",
+          "surface_in_sentence": "いつも",
+          "base_form": "いつも",
+          "pos": "부사"
+        },
+        {
+          "surface": "いる",
+          "reading": "-",
+          "meaning": "(사람, 동물이) 있다",
+          "level": "N4",
+          "surface_in_sentence": "い",
+          "base_form": "いる",
+          "pos": "동사"
+        },
+        {
+          "surface": "弾く",
+          "reading": "ひく",
+          "meaning": "연주하다, 치다",
+          "level": "N4",
+          "surface_in_sentence": "弾い",
+          "base_form": "弾く",
+          "pos": "동사"
+        },
+        {
           "surface": "言う",
           "reading": "いう",
           "meaning": "말하다",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "いっ",
           "base_form": "いう",
           "pos": "동사"
@@ -8818,8 +12163,36 @@
       "end_time": "00:18:51",
       "start_seconds": 1129,
       "end_seconds": 1131,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "住む",
+          "reading": "すむ",
+          "meaning": "살다",
+          "level": "N4",
+          "surface_in_sentence": "住ん",
+          "base_form": "住む",
+          "pos": "동사"
+        },
+        {
+          "surface": "出る",
+          "reading": "でる",
+          "meaning": "나가다, 나오다",
+          "level": "N4",
+          "surface_in_sentence": "でる",
+          "base_form": "でる",
+          "pos": "동사"
+        },
+        {
+          "surface": "所",
+          "reading": "ところ",
+          "meaning": "곳, 장소",
+          "level": "N4",
+          "surface_in_sentence": "所",
+          "base_form": "所",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -8840,6 +12213,15 @@
           "surface_in_sentence": "いき",
           "base_form": "いく",
           "pos": "동사"
+        },
+        {
+          "surface": "行く",
+          "reading": "いく",
+          "meaning": "가다",
+          "level": "N4",
+          "surface_in_sentence": "いき",
+          "base_form": "いく",
+          "pos": "동사"
         }
       ],
       "grammar_matches": []
@@ -8855,10 +12237,19 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
+          "surface": "なる",
+          "reading": "-",
+          "meaning": "(벨 등이) 울리다",
+          "level": "N4",
+          "surface_in_sentence": "なっ",
+          "base_form": "なる",
+          "pos": "동사"
+        },
+        {
           "surface": "大きい",
           "reading": "おおきい",
           "meaning": "크다",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "大きく",
           "base_form": "大きい",
           "pos": "형용사"
@@ -8866,8 +12257,8 @@
         {
           "surface": "少し",
           "reading": "すこし",
-          "meaning": "조금, 약간",
-          "level": "N3",
+          "meaning": "조금",
+          "level": "N4",
           "surface_in_sentence": "少し",
           "base_form": "少し",
           "pos": "부사"
@@ -8899,10 +12290,37 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "すれ",
+          "base_form": "する",
+          "pos": "동사"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "meaning": "집(장소, 공간)",
+          "level": "N4",
+          "surface_in_sentence": "いえ",
+          "base_form": "いう",
+          "pos": "동사"
+        },
+        {
+          "surface": "紹介",
+          "reading": "しょうかい",
+          "meaning": "소개",
+          "level": "N4",
+          "surface_in_sentence": "紹介",
+          "base_form": "紹介",
+          "pos": "명사"
+        },
+        {
           "surface": "言う",
           "reading": "いう",
           "meaning": "말하다",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "いえ",
           "base_form": "いう",
           "pos": "동사"
@@ -8967,8 +12385,18 @@
       "end_time": "00:19:03",
       "start_seconds": 1142,
       "end_seconds": 1143,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "いる",
+          "reading": "-",
+          "meaning": "(사람, 동물이) 있다",
+          "level": "N4",
+          "surface_in_sentence": "い",
+          "base_form": "いる",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -8997,7 +12425,7 @@
           "surface": "血",
           "reading": "ち",
           "meaning": "피",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "ち",
           "base_form": "ちる",
           "pos": "동사"
@@ -9032,6 +12460,15 @@
           "surface_in_sentence": "なく",
           "base_form": "ない",
           "pos": "형용사"
+        },
+        {
+          "surface": "鳴く",
+          "reading": "なく",
+          "meaning": "(동물이) 울다",
+          "level": "N4",
+          "surface_in_sentence": "なく",
+          "base_form": "ない",
+          "pos": "형용사"
         }
       ],
       "grammar_matches": []
@@ -9049,10 +12486,19 @@
         {
           "surface": "合う",
           "reading": "あう",
-          "meaning": "맞다",
-          "level": "N3",
+          "meaning": "맞다, 어울리다",
+          "level": "N4",
           "surface_in_sentence": "合う",
           "base_form": "合う",
+          "pos": "동사"
+        },
+        {
+          "surface": "呼ぶ",
+          "reading": "よぶ",
+          "meaning": "부르다",
+          "level": "N4",
+          "surface_in_sentence": "呼び",
+          "base_form": "呼ぶ",
           "pos": "동사"
         }
       ],
@@ -9078,10 +12524,19 @@
           "pos": "형용사"
         },
         {
+          "surface": "持つ",
+          "reading": "もつ",
+          "meaning": "들다, 가지다, 지니다",
+          "level": "N4",
+          "surface_in_sentence": "持っ",
+          "base_form": "持つ",
+          "pos": "동사"
+        },
+        {
           "surface": "関係",
           "reading": "かんけい",
           "meaning": "관계",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "関係",
           "base_form": "関係",
           "pos": "명사"
@@ -9103,7 +12558,7 @@
           "surface": "血",
           "reading": "ち",
           "meaning": "피",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "ち",
           "base_form": "ちる",
           "pos": "동사"
@@ -9125,7 +12580,7 @@
           "surface": "血",
           "reading": "ち",
           "meaning": "피",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "ち",
           "base_form": "ちる",
           "pos": "동사"
@@ -9141,8 +12596,27 @@
       "end_time": "00:19:21",
       "start_seconds": 1159,
       "end_seconds": 1161,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "売る",
+          "reading": "うる",
+          "meaning": "팔다",
+          "level": "N4",
+          "surface_in_sentence": "うっ",
+          "base_form": "うる",
+          "pos": "동사"
+        },
+        {
+          "surface": "所",
+          "reading": "ところ",
+          "meaning": "곳, 장소",
+          "level": "N4",
+          "surface_in_sentence": "ところ",
+          "base_form": "ところ",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -9159,7 +12633,7 @@
           "surface": "血",
           "reading": "ち",
           "meaning": "피",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "ち",
           "base_form": "ちる",
           "pos": "동사"
@@ -9175,8 +12649,27 @@
       "end_time": "00:19:24",
       "start_seconds": 1163,
       "end_seconds": 1164,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "出る",
+          "reading": "でる",
+          "meaning": "나가다, 나오다",
+          "level": "N4",
+          "surface_in_sentence": "でる",
+          "base_form": "でる",
+          "pos": "동사"
+        },
+        {
+          "surface": "喜ぶ",
+          "reading": "よろこぶ",
+          "meaning": "기뻐하다, 즐거워하다",
+          "level": "N4",
+          "surface_in_sentence": "喜ん",
+          "base_form": "喜ぶ",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -9187,8 +12680,18 @@
       "end_time": "00:19:26",
       "start_seconds": 1164,
       "end_seconds": 1166,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "初めて",
+          "reading": "はじめて",
+          "meaning": "처음으로",
+          "level": "N3",
+          "surface_in_sentence": "初めて",
+          "base_form": "初めて",
+          "pos": "부사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -9209,6 +12712,33 @@
           "surface_in_sentence": "涙",
           "base_form": "涙",
           "pos": "명사"
+        },
+        {
+          "surface": "出る",
+          "reading": "でる",
+          "meaning": "나가다, 나오다",
+          "level": "N4",
+          "surface_in_sentence": "出",
+          "base_form": "出る",
+          "pos": "동사"
+        },
+        {
+          "surface": "木",
+          "reading": "き",
+          "meaning": "나무",
+          "level": "N4",
+          "surface_in_sentence": "き",
+          "base_form": "くる",
+          "pos": "동사"
+        },
+        {
+          "surface": "来る",
+          "reading": "くる",
+          "meaning": "오다",
+          "level": "N4",
+          "surface_in_sentence": "き",
+          "base_form": "くる",
+          "pos": "동사"
         }
       ],
       "grammar_matches": [
@@ -9237,10 +12767,28 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
+          "surface": "まだ",
+          "reading": "-",
+          "meaning": "아직",
+          "level": "N4",
+          "surface_in_sentence": "まだ",
+          "base_form": "まだ",
+          "pos": "부사"
+        },
+        {
+          "surface": "手",
+          "reading": "て",
+          "meaning": "손",
+          "level": "N4",
+          "surface_in_sentence": "て",
+          "base_form": "てる",
+          "pos": "동사"
+        },
+        {
           "surface": "聞く",
           "reading": "きく",
-          "meaning": "듣다",
-          "level": "N3",
+          "meaning": "듣다, 묻다",
+          "level": "N4",
           "surface_in_sentence": "聞い",
           "base_form": "聞く",
           "pos": "동사"
@@ -9256,8 +12804,18 @@
       "end_time": "00:19:31",
       "start_seconds": 1170,
       "end_seconds": 1171,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "売る",
+          "reading": "うる",
+          "meaning": "팔다",
+          "level": "N4",
+          "surface_in_sentence": "うっ",
+          "base_form": "うる",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -9350,6 +12908,24 @@
           "surface_in_sentence": "絶対",
           "base_form": "絶対",
           "pos": "명사"
+        },
+        {
+          "surface": "変える",
+          "reading": "かえる",
+          "meaning": "바꾸다",
+          "level": "N4",
+          "surface_in_sentence": "変える",
+          "base_form": "変える",
+          "pos": "동사"
+        },
+        {
+          "surface": "寒い",
+          "reading": "さむい",
+          "meaning": "춥다",
+          "level": "N4",
+          "surface_in_sentence": "寒い",
+          "base_form": "寒い",
+          "pos": "형용사"
         }
       ],
       "grammar_matches": []
@@ -9374,8 +12950,18 @@
       "end_time": "00:19:46",
       "start_seconds": 1184,
       "end_seconds": 1186,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "かわいい",
+          "reading": "-",
+          "meaning": "귀엽다",
+          "level": "N4",
+          "surface_in_sentence": "かわいい",
+          "base_form": "かわいい",
+          "pos": "형용사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -9386,8 +12972,18 @@
       "end_time": "00:19:48",
       "start_seconds": 1186,
       "end_seconds": 1188,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "夏",
+          "reading": "なつ",
+          "meaning": "여름",
+          "level": "N4",
+          "surface_in_sentence": "夏",
+          "base_form": "夏",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -9403,6 +12999,15 @@
         {
           "surface": "そろそろ",
           "reading": "そろそろ",
+          "meaning": "슬슬, 이제",
+          "level": "N3",
+          "surface_in_sentence": "そろそろ",
+          "base_form": "そろそろ",
+          "pos": "부사"
+        },
+        {
+          "surface": "そろそろ",
+          "reading": "-",
           "meaning": "슬슬, 이제",
           "level": "N3",
           "surface_in_sentence": "そろそろ",
@@ -9460,10 +13065,19 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
+          "surface": "弾く",
+          "reading": "ひく",
+          "meaning": "연주하다, 치다",
+          "level": "N4",
+          "surface_in_sentence": "弾く",
+          "base_form": "弾く",
+          "pos": "동사"
+        },
+        {
           "surface": "楽しい",
           "reading": "たのしい",
           "meaning": "즐겁다",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "楽しく",
           "base_form": "楽しい",
           "pos": "형용사"
@@ -9493,7 +13107,26 @@
       "start_seconds": 1198,
       "end_seconds": 1201,
       "has_jlpt": true,
-      "vocab_matches": [],
+      "vocab_matches": [
+        {
+          "surface": "安い",
+          "reading": "やすい",
+          "meaning": "싸다",
+          "level": "N4",
+          "surface_in_sentence": "やすい",
+          "base_form": "やすい",
+          "pos": "형용사"
+        },
+        {
+          "surface": "音",
+          "reading": "おと",
+          "meaning": "소리, 음",
+          "level": "N4",
+          "surface_in_sentence": "音",
+          "base_form": "音",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": [
         {
           "label": "~やすい",
@@ -9541,21 +13174,39 @@
           "pos": "부사"
         },
         {
-          "surface": "技術",
-          "reading": "ぎじゅつ",
-          "meaning": "기술",
-          "level": "N3",
-          "surface_in_sentence": "技術",
-          "base_form": "技術",
-          "pos": "명사"
-        },
-        {
           "surface": "求める",
           "reading": "もとめる",
           "meaning": "바라다",
           "level": "N3",
           "surface_in_sentence": "求め",
           "base_form": "求める",
+          "pos": "동사"
+        },
+        {
+          "surface": "技術",
+          "reading": "ぎじゅつ",
+          "meaning": "기술",
+          "level": "N4",
+          "surface_in_sentence": "技術",
+          "base_form": "技術",
+          "pos": "명사"
+        },
+        {
+          "surface": "次",
+          "reading": "つぎ",
+          "meaning": "다음",
+          "level": "N4",
+          "surface_in_sentence": "次",
+          "base_form": "次",
+          "pos": "명사"
+        },
+        {
+          "surface": "行く",
+          "reading": "いく",
+          "meaning": "가다",
+          "level": "N4",
+          "surface_in_sentence": "いく",
+          "base_form": "いく",
           "pos": "동사"
         }
       ],
@@ -9594,8 +13245,18 @@
       "end_time": "00:20:09",
       "start_seconds": 1208,
       "end_seconds": 1209,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "次",
+          "reading": "つぎ",
+          "meaning": "다음",
+          "level": "N4",
+          "surface_in_sentence": "次",
+          "base_form": "次",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -9606,8 +13267,18 @@
       "end_time": "00:20:11",
       "start_seconds": 1209,
       "end_seconds": 1211,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "行く",
+          "reading": "いく",
+          "meaning": "가다",
+          "level": "N4",
+          "surface_in_sentence": "行こ",
+          "base_form": "行く",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -9642,8 +13313,27 @@
       "end_time": "00:20:15",
       "start_seconds": 1213,
       "end_seconds": 1215,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "いる",
+          "reading": "-",
+          "meaning": "(사람, 동물이) 있다",
+          "level": "N4",
+          "surface_in_sentence": "い",
+          "base_form": "いる",
+          "pos": "동사"
+        },
+        {
+          "surface": "次",
+          "reading": "つぎ",
+          "meaning": "다음",
+          "level": "N4",
+          "surface_in_sentence": "次",
+          "base_form": "次",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -9666,8 +13356,18 @@
       "end_time": "00:20:21",
       "start_seconds": 1219,
       "end_seconds": 1221,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "す",
+          "base_form": "する",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -9690,10 +13390,37 @@
           "pos": "부사"
         },
         {
+          "surface": "みんな",
+          "reading": "-",
+          "meaning": "모두",
+          "level": "N4",
+          "surface_in_sentence": "みんな",
+          "base_form": "みんな",
+          "pos": "명사"
+        },
+        {
+          "surface": "やる",
+          "reading": "-",
+          "meaning": "주다, 하다",
+          "level": "N4",
+          "surface_in_sentence": "やる",
+          "base_form": "やる",
+          "pos": "동사"
+        },
+        {
+          "surface": "今日",
+          "reading": "きょう",
+          "meaning": "오늘",
+          "level": "N4",
+          "surface_in_sentence": "今日",
+          "base_form": "今日",
+          "pos": "명사"
+        },
+        {
           "surface": "知る",
           "reading": "しる",
           "meaning": "알다",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "知っ",
           "base_form": "知る",
           "pos": "동사"
@@ -9777,6 +13504,15 @@
           "surface_in_sentence": "実力",
           "base_form": "実力",
           "pos": "명사"
+        },
+        {
+          "surface": "いつも",
+          "reading": "-",
+          "meaning": "항상, 보통 때",
+          "level": "N4",
+          "surface_in_sentence": "いつも",
+          "base_form": "いつも",
+          "pos": "부사"
         }
       ],
       "grammar_matches": [
@@ -9833,6 +13569,15 @@
           "surface_in_sentence": "組ん",
           "base_form": "組む",
           "pos": "동사"
+        },
+        {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "する",
+          "base_form": "する",
+          "pos": "동사"
         }
       ],
       "grammar_matches": []
@@ -9851,7 +13596,7 @@
           "surface": "楽しい",
           "reading": "たのしい",
           "meaning": "즐겁다",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "楽しい",
           "base_form": "楽しい",
           "pos": "형용사"
@@ -9886,6 +13631,15 @@
           "surface_in_sentence": "輝い",
           "base_form": "輝く",
           "pos": "동사"
+        },
+        {
+          "surface": "今日",
+          "reading": "きょう",
+          "meaning": "오늘",
+          "level": "N4",
+          "surface_in_sentence": "今日",
+          "base_form": "今日",
+          "pos": "명사"
         }
       ],
       "grammar_matches": []
@@ -9915,8 +13669,8 @@
         {
           "surface": "一番",
           "reading": "いちばん",
-          "meaning": "가장",
-          "level": "N3",
+          "meaning": "가장, 제일",
+          "level": "N4",
           "surface_in_sentence": "一番",
           "base_form": "一番",
           "pos": "명사"
@@ -9953,6 +13707,15 @@
           "level": "N3",
           "surface_in_sentence": "たね",
           "base_form": "たね",
+          "pos": "명사"
+        },
+        {
+          "surface": "夏",
+          "reading": "なつ",
+          "meaning": "여름",
+          "level": "N4",
+          "surface_in_sentence": "夏",
+          "base_form": "夏",
           "pos": "명사"
         }
       ],
@@ -10002,8 +13765,18 @@
       "end_time": "00:21:11",
       "start_seconds": 1268,
       "end_seconds": 1271,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "夏",
+          "reading": "なつ",
+          "meaning": "여름",
+          "level": "N4",
+          "surface_in_sentence": "夏",
+          "base_form": "夏",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -10037,7 +13810,17 @@
       "start_seconds": 1272,
       "end_seconds": 1274,
       "has_jlpt": true,
-      "vocab_matches": [],
+      "vocab_matches": [
+        {
+          "surface": "次",
+          "reading": "つぎ",
+          "meaning": "다음",
+          "level": "N4",
+          "surface_in_sentence": "次",
+          "base_form": "次",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": [
         {
           "label": "までに",
@@ -10062,7 +13845,35 @@
       "start_seconds": 1274,
       "end_seconds": 1276,
       "has_jlpt": true,
-      "vocab_matches": [],
+      "vocab_matches": [
+        {
+          "surface": "できる",
+          "reading": "-",
+          "meaning": "할 수 있다, 생기다",
+          "level": "N4",
+          "surface_in_sentence": "できる",
+          "base_form": "できる",
+          "pos": "동사"
+        },
+        {
+          "surface": "なる",
+          "reading": "-",
+          "meaning": "(벨 등이) 울리다",
+          "level": "N4",
+          "surface_in_sentence": "なっ",
+          "base_form": "なる",
+          "pos": "동사"
+        },
+        {
+          "surface": "置く",
+          "reading": "おく",
+          "meaning": "두다",
+          "level": "N4",
+          "surface_in_sentence": "おき",
+          "base_form": "おく",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": [
         {
           "label": "くらい",
@@ -10128,7 +13939,7 @@
           "surface": "成長",
           "reading": "せいちょう",
           "meaning": "성장",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "成長",
           "base_form": "成長",
           "pos": "명사"
@@ -10156,8 +13967,27 @@
       "end_time": "00:21:23",
       "start_seconds": 1282,
       "end_seconds": 1283,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "し",
+          "base_form": "する",
+          "pos": "동사"
+        },
+        {
+          "surface": "今",
+          "reading": "いま",
+          "meaning": "지금",
+          "level": "N4",
+          "surface_in_sentence": "今",
+          "base_form": "今",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -10192,7 +14022,7 @@
           "surface": "血",
           "reading": "ち",
           "meaning": "피",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "ち",
           "base_form": "ちる",
           "pos": "동사"
@@ -10211,15 +14041,6 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
-          "surface": "帰る",
-          "reading": "かえる",
-          "meaning": "돌아가다",
-          "level": "N3",
-          "surface_in_sentence": "帰り",
-          "base_form": "帰る",
-          "pos": "동사"
-        },
-        {
           "surface": "疲れ",
           "reading": "つかれ",
           "meaning": "피로",
@@ -10229,10 +14050,46 @@
           "pos": "동사"
         },
         {
+          "surface": "過ぎる",
+          "reading": "すぎる",
+          "meaning": "지나다",
+          "level": "N3",
+          "surface_in_sentence": "過ぎ",
+          "base_form": "過ぎる",
+          "pos": "동사"
+        },
+        {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "す",
+          "base_form": "する",
+          "pos": "동사"
+        },
+        {
+          "surface": "今日",
+          "reading": "きょう",
+          "meaning": "오늘",
+          "level": "N4",
+          "surface_in_sentence": "今日",
+          "base_form": "今日",
+          "pos": "명사"
+        },
+        {
+          "surface": "帰る",
+          "reading": "かえる",
+          "meaning": "돌아가다, 돌아오다",
+          "level": "N4",
+          "surface_in_sentence": "帰り",
+          "base_form": "帰る",
+          "pos": "동사"
+        },
+        {
           "surface": "疲れる",
           "reading": "つかれる",
-          "meaning": "지치다",
-          "level": "N3",
+          "meaning": "지치다, 피곤해지다",
+          "level": "N4",
           "surface_in_sentence": "疲れ",
           "base_form": "疲れる",
           "pos": "동사"
@@ -10240,19 +14097,10 @@
         {
           "surface": "話す",
           "reading": "はなす",
-          "meaning": "말하다",
-          "level": "N3",
+          "meaning": "이야기하다",
+          "level": "N4",
           "surface_in_sentence": "話し",
           "base_form": "話す",
-          "pos": "동사"
-        },
-        {
-          "surface": "過ぎる",
-          "reading": "すぎる",
-          "meaning": "지나다",
-          "level": "N3",
-          "surface_in_sentence": "過ぎ",
-          "base_form": "過ぎる",
           "pos": "동사"
         }
       ],
@@ -10278,8 +14126,18 @@
       "end_time": "00:21:31",
       "start_seconds": 1290,
       "end_seconds": 1291,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "眠い",
+          "reading": "ねむい",
+          "meaning": "졸리다",
+          "level": "N4",
+          "surface_in_sentence": "眠い",
+          "base_form": "眠い",
+          "pos": "형용사"
+        }
+      ],
       "grammar_matches": []
     },
     {
@@ -10305,10 +14163,19 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "し",
+          "base_form": "する",
+          "pos": "동사"
+        },
+        {
           "surface": "失礼",
           "reading": "しつれい",
           "meaning": "실례",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "失礼",
           "base_form": "失礼",
           "pos": "명사"
@@ -10348,10 +14215,19 @@
           "pos": "부사"
         },
         {
+          "surface": "力",
+          "reading": "ちから",
+          "meaning": "힘",
+          "level": "N4",
+          "surface_in_sentence": "力",
+          "base_form": "力",
+          "pos": "명사"
+        },
+        {
           "surface": "言う",
           "reading": "いう",
           "meaning": "말하다",
-          "level": "N3",
+          "level": "N4",
           "surface_in_sentence": "いっ",
           "base_form": "いう",
           "pos": "동사"
@@ -10370,15 +14246,6 @@
       "has_jlpt": true,
       "vocab_matches": [
         {
-          "surface": "治す",
-          "reading": "なおす",
-          "meaning": "치료하다",
-          "level": "N3",
-          "surface_in_sentence": "治し",
-          "base_form": "治す",
-          "pos": "동사"
-        },
-        {
           "surface": "絶対",
           "reading": "ぜったい",
           "meaning": "절대",
@@ -10386,6 +14253,15 @@
           "surface_in_sentence": "絶対",
           "base_form": "絶対",
           "pos": "명사"
+        },
+        {
+          "surface": "治す",
+          "reading": "なおす",
+          "meaning": "치료하다, 고치다",
+          "level": "N4",
+          "surface_in_sentence": "治し",
+          "base_form": "治す",
+          "pos": "동사"
         }
       ],
       "grammar_matches": []
@@ -10399,7 +14275,35 @@
       "start_seconds": 1311,
       "end_seconds": 1314,
       "has_jlpt": true,
-      "vocab_matches": [],
+      "vocab_matches": [
+        {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "する",
+          "base_form": "する",
+          "pos": "동사"
+        },
+        {
+          "surface": "ギター",
+          "reading": "",
+          "meaning": "기타",
+          "level": "N4",
+          "surface_in_sentence": "ギター",
+          "base_form": "ギター",
+          "pos": "명사"
+        },
+        {
+          "surface": "力",
+          "reading": "ちから",
+          "meaning": "힘",
+          "level": "N4",
+          "surface_in_sentence": "力",
+          "base_form": "力",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": [
         {
           "label": "~として",
@@ -10424,7 +14328,26 @@
       "start_seconds": 1316,
       "end_seconds": 1321,
       "has_jlpt": true,
-      "vocab_matches": [],
+      "vocab_matches": [
+        {
+          "surface": "三",
+          "reading": "さん",
+          "meaning": "3",
+          "level": "N4",
+          "surface_in_sentence": "さん",
+          "base_form": "さん",
+          "pos": "명사"
+        },
+        {
+          "surface": "夏",
+          "reading": "なつ",
+          "meaning": "여름",
+          "level": "N4",
+          "surface_in_sentence": "夏",
+          "base_form": "夏",
+          "pos": "명사"
+        }
+      ],
       "grammar_matches": [
         {
           "label": "~ために",
@@ -10484,8 +14407,18 @@
       "end_time": "00:23:39",
       "start_seconds": 1418,
       "end_seconds": 1419,
-      "has_jlpt": false,
-      "vocab_matches": [],
+      "has_jlpt": true,
+      "vocab_matches": [
+        {
+          "surface": "見る",
+          "reading": "みる",
+          "meaning": "보다",
+          "level": "N4",
+          "surface_in_sentence": "見",
+          "base_form": "見る",
+          "pos": "동사"
+        }
+      ],
       "grammar_matches": []
     }
   ]

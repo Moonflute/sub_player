@@ -344,6 +344,35 @@ def builtin_vocab() -> list[VocabEntry]:
     return [VocabEntry(surface, reading, meaning, level, "builtin_vocab") for surface, reading, meaning, level in raw]
 
 
+def load_txt_vocab_reference(base_dir: Path) -> list[VocabEntry]:
+    ref_dir = base_dir / "_N3"
+    txt_path = next((path for path in ref_dir.glob("*.txt") if "N345" in path.name), None)
+    if txt_path is None:
+        return []
+
+    entries: list[VocabEntry] = []
+    seen: set[tuple[str, str]] = set()
+    lines = txt_path.read_text(encoding="utf-8-sig").splitlines()
+    for row in csv.reader(lines[4:], delimiter="\t"):
+        if len(row) < 13:
+            continue
+        surface = normalize_text(row[1])
+        reading = normalize_text(row[2])
+        meaning = normalize_text(row[4])
+        tags = normalize_text(row[12])
+        if not surface or not meaning:
+            continue
+        if len(compact_japanese(surface)) < 2 and HIRAGANA_KATAKANA_RE.fullmatch(surface):
+            continue
+        level = "N3" if "#N3" in tags else "N4"
+        dedupe_key = (surface, reading)
+        if dedupe_key in seen:
+            continue
+        seen.add(dedupe_key)
+        entries.append(VocabEntry(surface, reading, meaning, level, txt_path.name))
+    return entries
+
+
 def grammar_meta(label: str, meaning: str) -> tuple[str, str, str]:
     checks = [
         (("させられる", "사역수동"), "사역수동형", "동사 사역형 + 수동형", "상대에게 강제로 어떤 행동을 하게 되는 형태다."),
@@ -452,6 +481,15 @@ def load_reference_data(base_dir: Path) -> tuple[dict[str, list[VocabEntry]], li
                 if key:
                     vocab_index.setdefault(key, []).append(entry)
 
+    for entry in load_txt_vocab_reference(base_dir):
+        dedupe_key = (entry.surface, entry.reading)
+        if dedupe_key in seen_vocab:
+            continue
+        seen_vocab.add(dedupe_key)
+        for key in {entry.surface, compact_japanese(entry.surface), entry.reading, compact_japanese(entry.reading)}:
+            if key:
+                vocab_index.setdefault(key, []).append(entry)
+
     for entry in builtin_vocab():
         dedupe_key = (entry.surface, entry.reading)
         if dedupe_key in seen_vocab:
@@ -490,7 +528,7 @@ def load_reference_data(base_dir: Path) -> tuple[dict[str, list[VocabEntry]], li
 
 def load_hackers_grammar_reference(base_dir: Path) -> dict[str, GrammarReference]:
     ref_dir = base_dir / "_N3"
-    txt_files = [path for path in ref_dir.iterdir() if path.suffix.lower() == ".txt"]
+    txt_files = [path for path in ref_dir.iterdir() if path.suffix.lower() == ".txt" and "해커스" in path.name]
     references: dict[str, GrammarReference] = {}
     if not txt_files:
         return references
