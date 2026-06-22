@@ -284,7 +284,7 @@ def canonical_show_title(path: Path) -> str:
     stem = normalize_title_stem(path.stem)
     season, episode = extract_episode_key(stem)
     if season is not None and episode is not None:
-        prefix = re.split(r"\s*-\s*S\d{1,2}E\d{1,3}\b", stem, maxsplit=1, flags=re.IGNORECASE)[0].strip()
+        prefix = re.sub(r"\s*-?\s*S\d{1,2}E\d{1,3}\b.*$", "", stem, flags=re.IGNORECASE).strip()
         if prefix:
             return f"{prefix} - S{season:02d}E{episode:02d}"
     return stem
