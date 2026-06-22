@@ -134,6 +134,39 @@ input {
   display: grid;
   grid-template-rows: auto 1fr auto;
   gap: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.sentence-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 46px;
+  height: 72px;
+  border: 1px solid rgba(24, 34, 47, 0.08);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.82);
+  color: var(--ink);
+  box-shadow: var(--shadow);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  z-index: 4;
+}
+
+.sentence-nav--prev {
+  left: 10px;
+}
+
+.sentence-nav--next {
+  right: 10px;
+}
+
+.sentence-nav__icon {
+  font-size: 1.35rem;
+  line-height: 1;
+  font-weight: 800;
 }
 
 .player-topbar {
@@ -432,6 +465,19 @@ input {
     padding: 12px 12px 14px;
     border-radius: 24px;
     gap: 8px;
+  }
+
+  .sentence-nav {
+    width: 40px;
+    height: 64px;
+  }
+
+  .sentence-nav--prev {
+    left: 6px;
+  }
+
+  .sentence-nav--next {
+    right: 6px;
   }
 
   .sentence-panel {

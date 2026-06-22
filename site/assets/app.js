@@ -12,6 +12,8 @@ const els = {
   playerScreen: document.getElementById("player-screen"),
   libraryList: document.getElementById("library-list"),
   backButton: document.getElementById("back-button"),
+  sentencePrev: document.getElementById("sentence-prev"),
+  sentenceNext: document.getElementById("sentence-next"),
   playToggle: document.getElementById("play-toggle"),
   playIcon: document.getElementById("play-icon"),
   seekBackward: document.getElementById("seek-backward"),
@@ -187,6 +189,37 @@ function findUpcomingPoint(show, currentTime) {
   return show.sentences.find((sentence) => sentence.has_jlpt && sentence.start_seconds > currentTime) || null;
 }
 
+function jumpToSentence(direction) {
+  const show = state.currentShow;
+  if (!show || !Array.isArray(show.sentences) || show.sentences.length === 0) return;
+
+  const currentIndex = show.sentences.findIndex((sentence) => {
+    return state.currentTime >= sentence.start_seconds && state.currentTime <= sentence.end_seconds;
+  });
+
+  let target = null;
+  if (direction < 0) {
+    if (currentIndex > 0) {
+      target = show.sentences[currentIndex - 1];
+    } else {
+      target = [...show.sentences]
+        .reverse()
+        .find((sentence) => sentence.start_seconds < state.currentTime - 0.05) || show.sentences[0];
+    }
+  } else {
+    if (currentIndex >= 0 && currentIndex < show.sentences.length - 1) {
+      target = show.sentences[currentIndex + 1];
+    } else {
+      target = show.sentences.find((sentence) => sentence.start_seconds > state.currentTime + 0.05) || show.sentences[show.sentences.length - 1];
+    }
+  }
+
+  if (!target) return;
+  state.currentTime = Number(target.start_seconds || 0);
+  els.timeline.value = String(Math.floor(state.currentTime));
+  renderCurrentState();
+}
+
 function buildAnnotations(sentence) {
   if (!sentence) return [];
 
@@ -356,6 +389,8 @@ function bindEvents() {
 
   els.seekBackward.addEventListener("click", () => jumpBy(-5));
   els.seekForward.addEventListener("click", () => jumpBy(5));
+  els.sentencePrev.addEventListener("click", () => jumpToSentence(-1));
+  els.sentenceNext.addEventListener("click", () => jumpToSentence(1));
 
   els.timeline.addEventListener("input", () => {
     state.currentTime = Number(els.timeline.value || 0);
