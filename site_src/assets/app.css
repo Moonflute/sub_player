@@ -246,7 +246,7 @@ input {
   max-width: 1560px;
   font-family: var(--font-head);
   font-size: clamp(1.45rem, 3.3vw, 2.6rem);
-  line-height: 1.26;
+  line-height: 1.21;
   font-weight: 800;
   letter-spacing: -0.03em;
   word-break: keep-all;
@@ -330,13 +330,13 @@ input {
   justify-content: center;
   vertical-align: middle;
   margin: 0 0.08em;
-  padding-top: 0.5em;
-  padding-bottom: 0.62em;
+  padding-top: 0.22em;
+  padding-bottom: 0.32em;
 }
 
 .inline-note__top {
   position: absolute;
-  bottom: calc(100% + 0.08rem);
+  bottom: calc(100% + 0.01rem);
   left: 50%;
   transform: translateX(-50%);
   font-size: clamp(0.62rem, 0.95vw, 0.84rem);
@@ -352,7 +352,7 @@ input {
 
 .inline-note__bottom {
   position: absolute;
-  top: calc(100% + 0.1rem);
+  top: calc(100% + 0.02rem);
   left: 50%;
   transform: translateX(-50%);
   font-size: clamp(0.72rem, 1.05vw, 0.94rem);
@@ -519,7 +519,7 @@ input {
 
   .current-sentence {
     font-size: clamp(1.28rem, 6.2vw, 1.9rem);
-    line-height: 1.24;
+    line-height: 1.18;
     min-height: 3.2em;
     padding: 1.45rem 0 1.45rem;
   }
