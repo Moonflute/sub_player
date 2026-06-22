@@ -259,7 +259,7 @@ input {
   width: 100%;
   max-width: 1280px;
   color: #7d828d;
-  font-size: clamp(0.94rem, 1.7vw, 1.3rem);
+  font-size: clamp(1.06rem, 1.95vw, 1.48rem);
   line-height: 1.45;
   min-height: 1.45em;
 }
@@ -280,7 +280,8 @@ input {
   max-width: 980px;
   min-height: 2.5em;
   display: grid;
-  gap: 2px;
+  margin-top: 0.38rem;
+  gap: 4px;
   justify-items: center;
 }
 
@@ -288,7 +289,7 @@ input {
 .next-preview-translation {
   width: 100%;
   color: #8d93a0;
-  font-size: clamp(0.7rem, 1.1vw, 0.98rem);
+  font-size: clamp(0.82rem, 1.28vw, 1.08rem);
   line-height: 1.35;
 }
 
@@ -525,7 +526,7 @@ input {
   }
 
   .current-translation {
-    font-size: clamp(0.88rem, 3.8vw, 1.05rem);
+    font-size: clamp(0.98rem, 4.2vw, 1.14rem);
   }
 
   .next-countdown-badge {
@@ -536,7 +537,7 @@ input {
 
   .next-preview-text,
   .next-preview-translation {
-    font-size: 0.64rem;
+    font-size: 0.74rem;
   }
 
   .annotation-rail {
