@@ -1,14 +1,14 @@
 {
-  "id": "fd908d959f81",
+  "id": "2a4ed343b732",
   "title": "Bocchi the Rock! - S01E01",
-  "file_name": "Bocchi the Rock! - S01E01.srt",
+  "file_name": "Bocchi the Rock!/Bocchi the Rock! - S01E01.srt",
   "duration_seconds": 1419,
-  "sentence_count": 478,
-  "relevant_sentence_count": 329,
+  "sentence_count": 384,
+  "relevant_sentence_count": 301,
   "translation_info": {
     "source": "ass+google-fallback",
     "translation_file": "Bocchi the Rock! - S01E01 (번역).ass",
-    "sync_offset_seconds": -0.52
+    "sync_offset_seconds": -0.73
   },
   "manual_sync_offset_seconds": 0,
   "sentences": [
@@ -63,33 +63,11 @@
     },
     {
       "index": 2,
-      "text": "やる~!",
-      "translation": "-할래~!",
+      "text": "やる~! 私なんかが あの指に とまっていいのかな...",
+      "translation": "-할래~! 나 같은 게... 저 손가락에 붙어도 되는 걸까...",
       "start_time": "00:00:03",
-      "end_time": "00:00:04",
-      "start_seconds": 3,
-      "end_seconds": 4,
-      "has_jlpt": true,
-      "vocab_matches": [
-        {
-          "surface": "やる",
-          "reading": "-",
-          "meaning": "주다, 하다",
-          "level": "N4",
-          "surface_in_sentence": "やる",
-          "base_form": "やる",
-          "pos": "동사"
-        }
-      ],
-      "grammar_matches": []
-    },
-    {
-      "index": 3,
-      "text": "私なんかが あの指に とまっていいのかな...",
-      "translation": "나 같은 게... 저 손가락에 붙어도 되는 걸까...",
-      "start_time": "00:00:04",
       "end_time": "00:00:08",
-      "start_seconds": 4,
+      "start_seconds": 3,
       "end_seconds": 8,
       "has_jlpt": true,
       "vocab_matches": [
@@ -109,6 +87,15 @@
           "level": "N3",
           "surface_in_sentence": "とまっ",
           "base_form": "とまる",
+          "pos": "동사"
+        },
+        {
+          "surface": "やる",
+          "reading": "-",
+          "meaning": "주다, 하다",
+          "level": "N4",
+          "surface_in_sentence": "やる",
+          "base_form": "やる",
           "pos": "동사"
         },
         {
@@ -146,7 +133,7 @@
       ]
     },
     {
-      "index": 4,
+      "index": 3,
       "text": "私も~!",
       "translation": "저 손가락에 붙어도 되는 걸까...",
       "start_time": "00:00:08",
@@ -158,7 +145,7 @@
       "grammar_matches": []
     },
     {
-      "index": 5,
+      "index": 4,
       "text": "そう悩んでるうちに乗り遅れて",
       "translation": "그렇게 고민하는 새에 붙을 타이밍을 놓쳐서...",
       "start_time": "00:00:10",
@@ -211,7 +198,7 @@
       ]
     },
     {
-      "index": 6,
+      "index": 5,
       "text": "気付いたら ひとりぼっちな子",
       "translation": "정신이 들고 보면 떨거지처럼 혼자만 남는 아이...",
       "start_time": "00:00:13",
@@ -246,7 +233,7 @@
       ]
     },
     {
-      "index": 7,
+      "index": 6,
       "text": "遠足のときに...",
       "translation": "소풍 때...",
       "start_time": "00:00:17",
@@ -268,33 +255,8 @@
       "grammar_matches": []
     },
     {
-      "index": 8,
-      "text": "どうぞ",
-      "translation": "소풍 때...",
-      "start_time": "00:00:19",
-      "end_time": "00:00:19",
-      "start_seconds": 19,
-      "end_seconds": 19,
-      "has_jlpt": true,
-      "vocab_matches": [],
-      "grammar_matches": [
-        {
-          "label": "どうぞ",
-          "meaning": "어서",
-          "level": "N3",
-          "category": "부사",
-          "structure": "どうぞ",
-          "note": "어서",
-          "matched_texts": [
-            "どうぞ"
-          ],
-          "is_pattern": false
-        }
-      ]
-    },
-    {
-      "index": 9,
-      "text": "先生とお弁当のおかずを 交換していた ひとりぼっちな子",
+      "index": 7,
+      "text": "どうぞ 先生とお弁当のおかずを 交換していた ひとりぼっちな子",
       "translation": "선생님이랑 도시락 반찬을 바꿔 먹던 외톨이 아이",
       "start_time": "00:00:19",
       "end_time": "00:00:24",
@@ -302,6 +264,15 @@
       "end_seconds": 24,
       "has_jlpt": true,
       "vocab_matches": [
+        {
+          "surface": "どうぞ",
+          "reading": "どうぞ",
+          "meaning": "부디, 아무쪼록",
+          "level": "N3",
+          "surface_in_sentence": "どうぞ",
+          "base_form": "どうぞ",
+          "pos": "부사"
+        },
         {
           "surface": "交換",
           "reading": "こうかん",
@@ -339,6 +310,15 @@
           "pos": "동사"
         },
         {
+          "surface": "どうぞ",
+          "reading": "-",
+          "meaning": "어서, 부디 (권유나 부탁)",
+          "level": "N4",
+          "surface_in_sentence": "どうぞ",
+          "base_form": "どうぞ",
+          "pos": "부사"
+        },
+        {
           "surface": "先生",
           "reading": "せんせい",
           "meaning": "선생님",
@@ -359,6 +339,18 @@
       ],
       "grammar_matches": [
         {
+          "label": "どうぞ",
+          "meaning": "어서",
+          "level": "N3",
+          "category": "부사",
+          "structure": "どうぞ",
+          "note": "어서",
+          "matched_texts": [
+            "どうぞ"
+          ],
+          "is_pattern": false
+        },
+        {
           "label": "〜ている",
           "meaning": "~하고 있다 / ~해 있다",
           "level": "N5",
@@ -373,24 +365,12 @@
       ]
     },
     {
-      "index": 10,
-      "text": "ただいま",
-      "translation": "다녀왔습니다",
-      "start_time": "00:00:28",
-      "end_time": "00:00:29",
-      "start_seconds": 28,
-      "end_seconds": 29,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 11,
-      "text": "部活も入らず 放課後は即帰宅",
+      "index": 8,
+      "text": "ただいま 部活も入らず 放課後は即帰宅",
       "translation": "부활동에 들지도 않고 방과 후에는 바로 집에 옴",
-      "start_time": "00:00:30",
+      "start_time": "00:00:28",
       "end_time": "00:00:33",
-      "start_seconds": 30,
+      "start_seconds": 28,
       "end_seconds": 33,
       "has_jlpt": true,
       "vocab_matches": [
@@ -404,6 +384,15 @@
           "pos": "명사"
         },
         {
+          "surface": "今",
+          "reading": "いま",
+          "meaning": "지금",
+          "level": "N4",
+          "surface_in_sentence": "いま",
+          "base_form": "いま",
+          "pos": "명사"
+        },
+        {
           "surface": "入る",
           "reading": "はいる",
           "meaning": "들어가다, 들어오다",
@@ -411,6 +400,15 @@
           "surface_in_sentence": "入ら",
           "base_form": "入る",
           "pos": "동사"
+        },
+        {
+          "surface": "居間",
+          "reading": "いま",
+          "meaning": "거실",
+          "level": "N4",
+          "surface_in_sentence": "いま",
+          "base_form": "いま",
+          "pos": "명사"
         },
         {
           "surface": "部活",
@@ -425,34 +423,12 @@
       "grammar_matches": []
     },
     {
-      "index": 12,
-      "text": "スマホに届くのは",
-      "translation": "스마트폰에 오는 거라곤",
+      "index": 9,
+      "text": "スマホに届くのは 親からのメッセージか クーポンのお知らせだけ",
+      "translation": "스마트폰에 오는 거라곤 부모님이 보낸 메시지나 쿠폰 알림이 끝",
       "start_time": "00:00:35",
-      "end_time": "00:00:36",
-      "start_seconds": 35,
-      "end_seconds": 36,
-      "has_jlpt": true,
-      "vocab_matches": [
-        {
-          "surface": "届く",
-          "reading": "とどく",
-          "meaning": "도착하다, 도달하다",
-          "level": "N4",
-          "surface_in_sentence": "届く",
-          "base_form": "届く",
-          "pos": "동사"
-        }
-      ],
-      "grammar_matches": []
-    },
-    {
-      "index": 13,
-      "text": "親からのメッセージか クーポンのお知らせだけ",
-      "translation": "부모님이 보낸 메시지나 쿠폰 알림이 끝",
-      "start_time": "00:00:37",
       "end_time": "00:00:41",
-      "start_seconds": 37,
+      "start_seconds": 35,
       "end_seconds": 41,
       "has_jlpt": true,
       "vocab_matches": [
@@ -491,29 +467,26 @@
           "surface_in_sentence": "メッセージ",
           "base_form": "メッセージ",
           "pos": "명사"
+        },
+        {
+          "surface": "届く",
+          "reading": "とどく",
+          "meaning": "도착하다, 도달하다",
+          "level": "N4",
+          "surface_in_sentence": "届く",
+          "base_form": "届く",
+          "pos": "동사"
         }
       ],
       "grammar_matches": []
     },
     {
-      "index": 14,
-      "text": "それが私",
-      "translation": "그게 바로 나",
-      "start_time": "00:00:41",
-      "end_time": "00:00:42",
-      "start_seconds": 41,
-      "end_seconds": 42,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 15,
-      "text": "後藤(ごとう)ひとり 中学1年生",
+      "index": 10,
+      "text": "それが私 後藤(ごとう)ひとり 中学1年生",
       "translation": "고토 히토리 중학교 1학년",
-      "start_time": "00:00:43",
+      "start_time": "00:00:41",
       "end_time": "00:00:46",
-      "start_seconds": 43,
+      "start_seconds": 41,
       "end_seconds": 46,
       "has_jlpt": true,
       "vocab_matches": [
@@ -539,13 +512,13 @@
       "grammar_matches": []
     },
     {
-      "index": 16,
-      "text": "たま~に思う",
-      "translation": "가~끔 이런 생각이 들곤 해",
+      "index": 11,
+      "text": "たま~に思う このままで いいんだろうかって",
+      "translation": "가~끔 이런 생각이 들곤 해 이대로 살아도 괜찮은 걸까, 하고",
       "start_time": "00:00:47",
-      "end_time": "00:00:48",
+      "end_time": "00:00:51",
       "start_seconds": 47,
-      "end_seconds": 48,
+      "end_seconds": 51,
       "has_jlpt": true,
       "vocab_matches": [
         {
@@ -558,18 +531,6 @@
           "pos": "동사"
         }
       ],
-      "grammar_matches": []
-    },
-    {
-      "index": 17,
-      "text": "このままで いいんだろうかって",
-      "translation": "이대로 살아도 괜찮은 걸까, 하고",
-      "start_time": "00:00:49",
-      "end_time": "00:00:51",
-      "start_seconds": 49,
-      "end_seconds": 51,
-      "has_jlpt": true,
-      "vocab_matches": [],
       "grammar_matches": [
         {
           "label": "~だろう",
@@ -586,7 +547,7 @@
       ]
     },
     {
-      "index": 18,
+      "index": 12,
       "text": "でも 私 話す前に “あっ”って言っちゃうし",
       "translation": "하지만 나는... 말 붙이기도 전에 「앗」하고 말이나 더듬고",
       "start_time": "00:00:52",
@@ -639,7 +600,7 @@
       ]
     },
     {
-      "index": 19,
+      "index": 13,
       "text": "目 合わすのも苦手だし",
       "translation": "눈 마주치는 것도 어려운데다",
       "start_time": "00:00:56",
@@ -661,7 +622,7 @@
       "grammar_matches": []
     },
     {
-      "index": 20,
+      "index": 14,
       "text": "“THE 陰キャ”のような日々が 身の丈に合って...",
       "translation": "The 아싸 캐릭같은 나날이 내 주제에 잘 맞긴 해서...",
       "start_time": "00:00:59",
@@ -683,13 +644,13 @@
       "grammar_matches": []
     },
     {
-      "index": 21,
-      "text": "これ見てる?",
+      "index": 15,
+      "text": "これ見てる? ううん",
       "translation": "이거 보고 있니?",
       "start_time": "00:01:02",
-      "end_time": "00:01:03",
+      "end_time": "00:01:05",
       "start_seconds": 62,
-      "end_seconds": 63,
+      "end_seconds": 65,
       "has_jlpt": true,
       "vocab_matches": [
         {
@@ -705,19 +666,7 @@
       "grammar_matches": []
     },
     {
-      "index": 22,
-      "text": "ううん",
-      "translation": "아니~",
-      "start_time": "00:01:04",
-      "end_time": "00:01:05",
-      "start_seconds": 64,
-      "end_seconds": 65,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 23,
+      "index": 16,
       "text": "学生のころは 教室の隅っこで",
       "translation": "학창 시절 때는...",
       "start_time": "00:01:06",
@@ -748,7 +697,7 @@
       "grammar_matches": []
     },
     {
-      "index": 24,
+      "index": 17,
       "text": "本読んでるふりしてるヤツでした",
       "translation": "교실 구석에서 책 읽는 척이나 하는 놈이었죠",
       "start_time": "00:01:09",
@@ -797,13 +746,13 @@
       "grammar_matches": []
     },
     {
-      "index": 25,
-      "text": "友達いなくて",
+      "index": 18,
+      "text": "友達いなくて あっ",
       "translation": "친구도 없고...",
       "start_time": "00:01:11",
-      "end_time": "00:01:12",
+      "end_time": "00:01:13",
       "start_seconds": 71,
-      "end_seconds": 72,
+      "end_seconds": 73,
       "has_jlpt": true,
       "vocab_matches": [
         {
@@ -841,46 +790,12 @@
       ]
     },
     {
-      "index": 26,
-      "text": "あっ",
-      "translation": "그래서 있지!",
+      "index": 19,
+      "text": "それが今では 若者に絶大な人気を誇る バンドになったと",
+      "translation": "그런 분께서 지금은! 젊은이들한테 절대적인 인기를 자랑하는 밴드가 되셨군요! 뭐...",
       "start_time": "00:01:13",
-      "end_time": "00:01:13",
-      "start_seconds": 73,
-      "end_seconds": 73,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 27,
-      "text": "それが今では",
-      "translation": "그런 분께서 지금은!",
-      "start_time": "00:01:13",
-      "end_time": "00:01:14",
-      "start_seconds": 73,
-      "end_seconds": 74,
-      "has_jlpt": true,
-      "vocab_matches": [
-        {
-          "surface": "今",
-          "reading": "いま",
-          "meaning": "지금",
-          "level": "N4",
-          "surface_in_sentence": "今",
-          "base_form": "今",
-          "pos": "명사"
-        }
-      ],
-      "grammar_matches": []
-    },
-    {
-      "index": 28,
-      "text": "若者に絶大な人気を誇る バンドになったと",
-      "translation": "젊은이들한테 절대적인 인기를 자랑하는 밴드가 되셨군요! 뭐...",
-      "start_time": "00:01:15",
       "end_time": "00:01:18",
-      "start_seconds": 75,
+      "start_seconds": 73,
       "end_seconds": 78,
       "has_jlpt": true,
       "vocab_matches": [
@@ -901,12 +816,21 @@
           "surface_in_sentence": "人気",
           "base_form": "人気",
           "pos": "명사"
+        },
+        {
+          "surface": "今",
+          "reading": "いま",
+          "meaning": "지금",
+          "level": "N4",
+          "surface_in_sentence": "今",
+          "base_form": "今",
+          "pos": "명사"
         }
       ],
       "grammar_matches": []
     },
     {
-      "index": 29,
+      "index": 20,
       "text": "まあ バンドは陰キャでも輝けるんで",
       "translation": "뭐... 밴드는 아싸라도 빛날 수 있는 곳이라",
       "start_time": "00:01:18",
@@ -918,7 +842,7 @@
       "grammar_matches": []
     },
     {
-      "index": 30,
+      "index": 21,
       "text": "そうなんですね~!",
       "translation": "그렇군요~!",
       "start_time": "00:01:21",
@@ -930,7 +854,7 @@
       "grammar_matches": []
     },
     {
-      "index": 31,
+      "index": 22,
       "text": "それでは お聴きください",
       "translation": "그럼, 들어주시죠",
       "start_time": "00:01:24",
@@ -967,7 +891,7 @@
       ]
     },
     {
-      "index": 32,
+      "index": 23,
       "text": "インストームスで“引き金”",
       "translation": "「In Storms」가 부릅니다",
       "start_time": "00:01:26",
@@ -979,15 +903,24 @@
       "grammar_matches": []
     },
     {
-      "index": 33,
-      "text": "おっ どうした?",
-      "translation": "어우... 왜 그러니?",
+      "index": 24,
+      "text": "おっ どうした? お... お父さん ギター貸して",
+      "translation": "어우... 왜 그러니? 아, 아빠! 기타 빌려줘!",
       "start_time": "00:01:34",
-      "end_time": "00:01:35",
+      "end_time": "00:01:38",
       "start_seconds": 94,
-      "end_seconds": 95,
+      "end_seconds": 98,
       "has_jlpt": true,
       "vocab_matches": [
+        {
+          "surface": "お父さん",
+          "reading": "おとうさん",
+          "meaning": "아버지",
+          "level": "N4",
+          "surface_in_sentence": "お父さん",
+          "base_form": "お父さん",
+          "pos": "명사"
+        },
         {
           "surface": "する",
           "reading": "-",
@@ -1005,28 +938,6 @@
           "surface_in_sentence": "どう",
           "base_form": "どう",
           "pos": "부사"
-        }
-      ],
-      "grammar_matches": []
-    },
-    {
-      "index": 34,
-      "text": "お... お父さん ギター貸して",
-      "translation": "아, 아빠! 기타 빌려줘!",
-      "start_time": "00:01:36",
-      "end_time": "00:01:38",
-      "start_seconds": 96,
-      "end_seconds": 98,
-      "has_jlpt": true,
-      "vocab_matches": [
-        {
-          "surface": "お父さん",
-          "reading": "おとうさん",
-          "meaning": "아버지",
-          "level": "N4",
-          "surface_in_sentence": "お父さん",
-          "base_form": "お父さん",
-          "pos": "명사"
         },
         {
           "surface": "ギター",
@@ -1050,49 +961,25 @@
       "grammar_matches": []
     },
     {
-      "index": 35,
-      "text": "えっ?",
-      "translation": "시시실례하겠습니다!",
+      "index": 25,
+      "text": "えっ? いいよ あ... ありがとう!",
+      "translation": "어...? 괜찮지... 고..고마워!!",
       "start_time": "00:01:38",
-      "end_time": "00:01:39",
-      "start_seconds": 98,
-      "end_seconds": 99,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 36,
-      "text": "いいよ",
-      "translation": "어...? 괜찮지...",
-      "start_time": "00:01:38",
-      "end_time": "00:01:39",
-      "start_seconds": 98,
-      "end_seconds": 99,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 37,
-      "text": "あ... ありがとう!",
-      "translation": "고..고마워!!",
-      "start_time": "00:01:40",
       "end_time": "00:01:41",
-      "start_seconds": 100,
+      "start_seconds": 98,
       "end_seconds": 101,
       "has_jlpt": false,
       "vocab_matches": [],
       "grammar_matches": []
     },
     {
-      "index": 38,
-      "text": "そうか ひとりも ついにギターに興味を",
+      "index": 26,
+      "text": "そうか ひとりも ついにギターに興味を ん?",
       "translation": "그렇구나~ 히토리도 마침내 기타에 흥미를~",
       "start_time": "00:01:43",
-      "end_time": "00:01:46",
+      "end_time": "00:01:47",
       "start_seconds": 103,
-      "end_seconds": 106,
+      "end_seconds": 107,
       "has_jlpt": true,
       "vocab_matches": [
         {
@@ -1148,25 +1035,13 @@
       ]
     },
     {
-      "index": 39,
-      "text": "ん?",
-      "translation": "에헤...",
-      "start_time": "00:01:46",
-      "end_time": "00:01:47",
-      "start_seconds": 106,
-      "end_seconds": 107,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 40,
-      "text": "バンド組んだら",
-      "translation": "밴드를 결성하면...",
+      "index": 27,
+      "text": "バンド組んだら 私みたいな人間でも もしかしたら 輝ける?",
+      "translation": "밴드를 결성하면... 나 같은 인간이라도... 혹시 반짝일 수 있나!?",
       "start_time": "00:01:49",
-      "end_time": "00:01:50",
+      "end_time": "00:01:54",
       "start_seconds": 109,
-      "end_seconds": 110,
+      "end_seconds": 114,
       "has_jlpt": true,
       "vocab_matches": [
         {
@@ -1177,20 +1052,7 @@
           "surface_in_sentence": "組ん",
           "base_form": "組む",
           "pos": "동사"
-        }
-      ],
-      "grammar_matches": []
-    },
-    {
-      "index": 41,
-      "text": "私みたいな人間でも もしかしたら 輝ける?",
-      "translation": "나 같은 인간이라도... 혹시 반짝일 수 있나!?",
-      "start_time": "00:01:50",
-      "end_time": "00:01:54",
-      "start_seconds": 110,
-      "end_seconds": 114,
-      "has_jlpt": true,
-      "vocab_matches": [
+        },
         {
           "surface": "する",
           "reading": "-",
@@ -1234,14 +1096,14 @@
           "structure": "동사 ます형 어간 + たい",
           "note": "말하는 사람의 바람이나 의지를 나타낸다.",
           "matched_texts": [
-            "私みたい"
+            "バンド組んだら私みたい"
           ],
           "is_pattern": true
         }
       ]
     },
     {
-      "index": 42,
+      "index": 28,
       "text": "んっ ん...",
       "translation": "흠...",
       "start_time": "00:01:58",
@@ -1253,7 +1115,7 @@
       "grammar_matches": []
     },
     {
-      "index": 43,
+      "index": 29,
       "text": "おお~",
       "translation": "오~",
       "start_time": "00:02:03",
@@ -1265,7 +1127,7 @@
       "grammar_matches": []
     },
     {
-      "index": 44,
+      "index": 30,
       "text": "あは~",
       "translation": "아하~",
       "start_time": "00:02:06",
@@ -1277,7 +1139,7 @@
       "grammar_matches": []
     },
     {
-      "index": 45,
+      "index": 31,
       "text": "決めた!",
       "translation": "결심했어!",
       "start_time": "00:02:08",
@@ -1299,7 +1161,7 @@
       "grammar_matches": []
     },
     {
-      "index": 46,
+      "index": 32,
       "text": "ギターうまくなる!",
       "translation": "기타 잘 치게 될 거야!",
       "start_time": "00:02:08",
@@ -1348,7 +1210,7 @@
       "grammar_matches": []
     },
     {
-      "index": 47,
+      "index": 33,
       "text": "で 学校でバンド組んで...",
       "translation": "그래서 학교에서 밴드 결성하고~",
       "start_time": "00:02:11",
@@ -1379,24 +1241,12 @@
       "grammar_matches": []
     },
     {
-      "index": 48,
-      "text": "“E A G”...",
-      "translation": "\"E A G\"...",
-      "start_time": "00:02:14",
-      "end_time": "00:02:17",
-      "start_seconds": 134,
-      "end_seconds": 137,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 49,
-      "text": "なんで突然 英語?",
+      "index": 34,
+      "text": "“E A G”... なんで突然 英語?",
       "translation": "왜 갑자기 영어가 튀어나옴...??",
-      "start_time": "00:02:17",
+      "start_time": "00:02:14",
       "end_time": "00:02:18",
-      "start_seconds": 137,
+      "start_seconds": 134,
       "end_seconds": 138,
       "has_jlpt": true,
       "vocab_matches": [
@@ -1422,7 +1272,7 @@
       "grammar_matches": []
     },
     {
-      "index": 50,
+      "index": 35,
       "text": "それで 文化祭でライブして",
       "translation": "그래서 문화제에서 라이브도 하고...",
       "start_time": "00:02:23",
@@ -1466,7 +1316,7 @@
       ]
     },
     {
-      "index": 51,
+      "index": 36,
       "text": "みんなから ちやほやされるんだ!",
       "translation": "모두한테 찬양받는 거야~!",
       "start_time": "00:02:26",
@@ -1510,7 +1360,7 @@
       ]
     },
     {
-      "index": 52,
+      "index": 37,
       "text": "はあ...",
       "translation": "하아...",
       "start_time": "00:02:31",
@@ -1522,7 +1372,7 @@
       "grammar_matches": []
     },
     {
-      "index": 53,
+      "index": 38,
       "text": "ちや... ほや?",
       "translation": "찬양.. 어디...?",
       "start_time": "00:02:52",
@@ -1534,7 +1384,7 @@
       "grammar_matches": []
     },
     {
-      "index": 54,
+      "index": 39,
       "text": "♪ 人様の前で演奏出来るように",
       "translation": "남들 앞에서 연주할 수 있게",
       "start_time": "00:04:29",
@@ -1578,7 +1428,7 @@
       ]
     },
     {
-      "index": 55,
+      "index": 40,
       "text": "♪ 毎日6時間練習を続けた結果...",
       "translation": "매일매일 6시간 연습을 계속한 결과아♪",
       "start_time": "00:04:31",
@@ -1636,7 +1486,7 @@
       "grammar_matches": []
     },
     {
-      "index": 56,
+      "index": 41,
       "text": "♪ いつの間にか中学終わってた!",
       "translation": "어느샌가 중학교 끝나 있더라아♪",
       "start_time": "00:04:35",
@@ -1676,7 +1526,7 @@
       "grammar_matches": []
     },
     {
-      "index": 57,
+      "index": 42,
       "text": "♪ ライブ出れなかった",
       "translation": "라이브에 못 나갔던...!",
       "start_time": "00:04:39",
@@ -1698,13 +1548,13 @@
       "grammar_matches": []
     },
     {
-      "index": 58,
-      "text": "文化祭!",
-      "translation": "문화제~♪",
+      "index": 43,
+      "text": "文化祭! ♪ 集められなかった",
+      "translation": "문화제~♪ 모으지 못했다...",
       "start_time": "00:04:40",
-      "end_time": "00:04:41",
+      "end_time": "00:04:43",
       "start_seconds": 280,
-      "end_seconds": 281,
+      "end_seconds": 283,
       "has_jlpt": true,
       "vocab_matches": [
         {
@@ -1715,20 +1565,7 @@
           "surface_in_sentence": "文化",
           "base_form": "文化",
           "pos": "명사"
-        }
-      ],
-      "grammar_matches": []
-    },
-    {
-      "index": 59,
-      "text": "♪ 集められなかった",
-      "translation": "모으지 못했다...",
-      "start_time": "00:04:41",
-      "end_time": "00:04:43",
-      "start_seconds": 281,
-      "end_seconds": 283,
-      "has_jlpt": true,
-      "vocab_matches": [
+        },
         {
           "surface": "集める",
           "reading": "あつめる",
@@ -1742,24 +1579,12 @@
       "grammar_matches": []
     },
     {
-      "index": 60,
-      "text": "バンドメンバー!",
-      "translation": "밴드 멤버~♪",
+      "index": 44,
+      "text": "バンドメンバー! ♪ そもそも友達 一人もできなかった",
+      "translation": "밴드 멤버~♪ 애초에 친구 한 명도 안 생겼어어!",
       "start_time": "00:04:43",
-      "end_time": "00:04:44",
-      "start_seconds": 283,
-      "end_seconds": 284,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 61,
-      "text": "♪ そもそも友達 一人もできなかった",
-      "translation": "애초에 친구 한 명도 안 생겼어어!",
-      "start_time": "00:04:44",
       "end_time": "00:04:47",
-      "start_seconds": 284,
+      "start_seconds": 283,
       "end_seconds": 287,
       "has_jlpt": true,
       "vocab_matches": [
@@ -1794,24 +1619,12 @@
       "grammar_matches": []
     },
     {
-      "index": 62,
-      "text": "3年間!",
-      "translation": "3년간~♪",
+      "index": 45,
+      "text": "3年間! ♪ 高校こそは...",
+      "translation": "3년간~♪ 고등학교야말로오...",
       "start_time": "00:04:47",
-      "end_time": "00:04:48",
-      "start_seconds": 287,
-      "end_seconds": 288,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 63,
-      "text": "♪ 高校こそは...",
-      "translation": "고등학교야말로오...",
-      "start_time": "00:04:48",
       "end_time": "00:04:50",
-      "start_seconds": 288,
+      "start_seconds": 287,
       "end_seconds": 290,
       "has_jlpt": true,
       "vocab_matches": [
@@ -1828,7 +1641,7 @@
       "grammar_matches": []
     },
     {
-      "index": 64,
+      "index": 46,
       "text": "♪ 高校になったら 絶対バンドやるんだぁ!",
       "translation": "고등학교 들어가면 죽어도 밴드할 꺼야!",
       "start_time": "00:04:50",
@@ -1890,7 +1703,7 @@
       ]
     },
     {
-      "index": 65,
+      "index": 47,
       "text": "♪ と 決意した高校生活も 始まって早一ヵ月",
       "translation": "..라고 결의했던 고교 생활도 시작되고 어느덧 1개월",
       "start_time": "00:04:56",
@@ -1948,7 +1761,7 @@
       "grammar_matches": []
     },
     {
-      "index": 66,
+      "index": 48,
       "text": "♪ 心の拠(よ)り所はギターだけ",
       "translation": "마음 기댈 곳은 기타뿐~",
       "start_time": "00:05:00",
@@ -1988,7 +1801,7 @@
       "grammar_matches": []
     },
     {
-      "index": 67,
+      "index": 49,
       "text": "♪ ひきこもり一歩手前ですぅー",
       "translation": "방구석 폐인~ 한 발짝~",
       "start_time": "00:05:02",
@@ -2010,7 +1823,7 @@
       "grammar_matches": []
     },
     {
-      "index": 68,
+      "index": 50,
       "text": "作詞作曲 私 “押し入れより愛をこめて”",
       "translation": "작사 & 작곡 by 나 「벽장 속에서 사랑을 담아」",
       "start_time": "00:05:08",
@@ -2041,7 +1854,7 @@
       "grammar_matches": []
     },
     {
-      "index": 69,
+      "index": 51,
       "text": "って 真夜中に 私のクソなオリジナル曲で",
       "translation": "오..오밤중에 내 개똥같은 오리지널 곡으로",
       "start_time": "00:05:14",
@@ -2053,7 +1866,7 @@
       "grammar_matches": []
     },
     {
-      "index": 70,
+      "index": 52,
       "text": "ご近所トラブル起こす前に",
       "translation": "이웃간에 싸움 날 일 만들기 전에",
       "start_time": "00:05:17",
@@ -2106,7 +1919,7 @@
       ]
     },
     {
-      "index": 71,
+      "index": 53,
       "text": "人気バンドのカバー動画 アップしなきゃ",
       "translation": "인기밴드의 커버 영상이나 올려야지...",
       "start_time": "00:05:19",
@@ -2177,7 +1990,7 @@
       ]
     },
     {
-      "index": 72,
+      "index": 54,
       "text": "お父さんに勧められて",
       "translation": "아빠가 권해서...",
       "start_time": "00:05:22",
@@ -2208,7 +2021,7 @@
       "grammar_matches": []
     },
     {
-      "index": 73,
+      "index": 55,
       "text": "ギターヒーロー名義で 弾いてみた動画 上げだして",
       "translation": "「기타 히어로」란 명의로 영상 올리기 시작하고",
       "start_time": "00:05:24",
@@ -2279,7 +2092,7 @@
       ]
     },
     {
-      "index": 74,
+      "index": 56,
       "text": "結構たつけど",
       "translation": "꽤 지나긴 했는데...",
       "start_time": "00:05:27",
@@ -2319,7 +2132,7 @@
       "grammar_matches": []
     },
     {
-      "index": 75,
+      "index": 57,
       "text": "あっ この前の動画",
       "translation": "애시드 『하루노유키』 기타히어로 고등학생이 되고 사생활이 너무 충실해져서 투고를 좀처럼 못했다~! 이번에는 친구들이랑 노래방에서 자주 부르는 곡을 연주해봤어!",
       "start_time": "00:05:29",
@@ -2341,9 +2154,9 @@
       "grammar_matches": []
     },
     {
-      "index": 76,
+      "index": 58,
       "text": "もう こんな コメントついてる",
-      "translation": "저번 영상... 벌써 이렇게 코멘트 달렸어~",
+      "translation": "하이라이트에서 뽕 차는 거 좋다",
       "start_time": "00:05:31",
       "end_time": "00:05:33",
       "start_seconds": 331,
@@ -2363,7 +2176,7 @@
       "grammar_matches": []
     },
     {
-      "index": 77,
+      "index": 59,
       "text": "フッ... フフフフ",
       "translation": "흐흐헤헤헤...",
       "start_time": "00:05:34",
@@ -2375,7 +2188,7 @@
       "grammar_matches": []
     },
     {
-      "index": 78,
+      "index": 60,
       "text": "最近は再生数も結構あるし",
       "translation": "요즘은 재생수도 좀 나오고...",
       "start_time": "00:05:35",
@@ -2415,7 +2228,7 @@
       "grammar_matches": []
     },
     {
-      "index": 79,
+      "index": 61,
       "text": "うまいって言われるし",
       "translation": "잘 친단 소리도 듣는데...",
       "start_time": "00:05:38",
@@ -2468,7 +2281,7 @@
       ]
     },
     {
-      "index": 80,
+      "index": 62,
       "text": "そうだよ 現実が つらくても大丈夫",
       "translation": "맞아... 현실이 좀 괴로워도 괜찮아~",
       "start_time": "00:05:40",
@@ -2545,7 +2358,7 @@
       ]
     },
     {
-      "index": 81,
+      "index": 63,
       "text": "ネットには 私に反応してくれる人が",
       "translation": "인터넷에는 나한테 반응해주는 사람들이 잔뜩 있는걸~",
       "start_time": "00:05:43",
@@ -2622,43 +2435,12 @@
       ]
     },
     {
-      "index": 82,
-      "text": "たくさん いるもん",
-      "translation": "인터넷에는 나한테 반응해주는 사람들이 잔뜩 있는걸~",
-      "start_time": "00:05:45",
-      "end_time": "00:05:46",
-      "start_seconds": 345,
-      "end_seconds": 346,
-      "has_jlpt": true,
-      "vocab_matches": [
-        {
-          "surface": "いる",
-          "reading": "-",
-          "meaning": "(사람, 동물이) 있다",
-          "level": "N4",
-          "surface_in_sentence": "いる",
-          "base_form": "いる",
-          "pos": "동사"
-        },
-        {
-          "surface": "たくさん",
-          "reading": "-",
-          "meaning": "많이",
-          "level": "N4",
-          "surface_in_sentence": "たくさん",
-          "base_form": "たくさん",
-          "pos": "명사"
-        }
-      ],
-      "grammar_matches": []
-    },
-    {
-      "index": 83,
-      "text": "ここには 私と同じ 根暗コミュ症が あふれて...",
+      "index": 64,
+      "text": "たくさん いるもん ここには 私と同じ 根暗コミュ症が あふれて...",
       "translation": "여기에는 나랑 똑같이 성격 어두운 커뮤장애 녀석들이 넘쳐나~",
-      "start_time": "00:05:46",
+      "start_time": "00:05:45",
       "end_time": "00:05:49",
-      "start_seconds": 346,
+      "start_seconds": 345,
       "end_seconds": 349,
       "has_jlpt": true,
       "vocab_matches": [
@@ -2690,6 +2472,24 @@
           "pos": "동사"
         },
         {
+          "surface": "いる",
+          "reading": "-",
+          "meaning": "(사람, 동물이) 있다",
+          "level": "N4",
+          "surface_in_sentence": "いる",
+          "base_form": "いる",
+          "pos": "동사"
+        },
+        {
+          "surface": "たくさん",
+          "reading": "-",
+          "meaning": "많이",
+          "level": "N4",
+          "surface_in_sentence": "たくさん",
+          "base_form": "たくさん",
+          "pos": "명사"
+        },
+        {
           "surface": "暗い",
           "reading": "くらい",
           "meaning": "어둡다",
@@ -2702,13 +2502,13 @@
       "grammar_matches": []
     },
     {
-      "index": 84,
-      "text": "“この曲 バンド組んで文化祭で弾きま”...",
-      "translation": "이 곡, 밴드 결성해서 문화제 때 쳐봤―!",
+      "index": 65,
+      "text": "“この曲 バンド組んで文化祭で弾きま”... ぐっ!",
+      "translation": "이 곡, 밴드 결성해서 문화제 때 쳐봤―! 끏...!",
       "start_time": "00:05:50",
-      "end_time": "00:05:51",
+      "end_time": "00:05:52",
       "start_seconds": 350,
-      "end_seconds": 351,
+      "end_seconds": 352,
       "has_jlpt": true,
       "vocab_matches": [
         {
@@ -2742,19 +2542,7 @@
       "grammar_matches": []
     },
     {
-      "index": 85,
-      "text": "ぐっ!",
-      "translation": "끏...!",
-      "start_time": "00:05:51",
-      "end_time": "00:05:52",
-      "start_seconds": 351,
-      "end_seconds": 352,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 86,
+      "index": 66,
       "text": "私だって努力はした",
       "translation": "나도 노력은 해봤거든...",
       "start_time": "00:05:56",
@@ -2798,7 +2586,7 @@
       ]
     },
     {
-      "index": 87,
+      "index": 67,
       "text": "CD持っていって 机に置いたり",
       "translation": "CD 가져가서 책상 위에 올려놔보거나...",
       "start_time": "00:05:58",
@@ -2847,7 +2635,7 @@
       "grammar_matches": []
     },
     {
-      "index": 88,
+      "index": 68,
       "text": "話しかけて...",
       "translation": "말 걸어줘~",
       "start_time": "00:06:01",
@@ -2869,7 +2657,7 @@
       "grammar_matches": []
     },
     {
-      "index": 89,
+      "index": 69,
       "text": "バンドグッズ持って アピールしたり",
       "translation": "밴드 굿즈 달고 어필해보거나...",
       "start_time": "00:06:03",
@@ -2900,13 +2688,13 @@
       "grammar_matches": []
     },
     {
-      "index": 90,
-      "text": "話しかけて~",
-      "translation": "말 좀 걸어줘~",
+      "index": 70,
+      "text": "話しかけて~ お昼のリクエストソングで...",
+      "translation": "말 좀 걸어줘~ 점심 시간 리퀘스트 송 코너에서...",
       "start_time": "00:06:05",
-      "end_time": "00:06:06",
+      "end_time": "00:06:09",
       "start_seconds": 365,
-      "end_seconds": 366,
+      "end_seconds": 369,
       "has_jlpt": true,
       "vocab_matches": [
         {
@@ -2922,46 +2710,12 @@
       "grammar_matches": []
     },
     {
-      "index": 91,
-      "text": "お昼のリクエストソングで...",
-      "translation": "점심 시간 리퀘스트 송 코너에서...",
-      "start_time": "00:06:07",
-      "end_time": "00:06:09",
-      "start_seconds": 367,
-      "end_seconds": 369,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 92,
-      "text": "次の曲は",
+      "index": 71,
+      "text": "次の曲は 2年A組 後藤さんの リクエストです",
       "translation": "다음 곡은 2학년 A반 고토 양의 리퀘스트입니다!",
       "start_time": "00:06:09",
-      "end_time": "00:06:10",
-      "start_seconds": 369,
-      "end_seconds": 370,
-      "has_jlpt": true,
-      "vocab_matches": [
-        {
-          "surface": "次",
-          "reading": "つぎ",
-          "meaning": "다음",
-          "level": "N4",
-          "surface_in_sentence": "次",
-          "base_form": "次",
-          "pos": "명사"
-        }
-      ],
-      "grammar_matches": []
-    },
-    {
-      "index": 93,
-      "text": "2年A組 後藤さんの リクエストです",
-      "translation": "다음 곡은 2학년 A반 고토 양의 리퀘스트입니다!",
-      "start_time": "00:06:10",
       "end_time": "00:06:12",
-      "start_seconds": 370,
+      "start_seconds": 369,
       "end_seconds": 372,
       "has_jlpt": true,
       "vocab_matches": [
@@ -2982,12 +2736,21 @@
           "surface_in_sentence": "年",
           "base_form": "年",
           "pos": "명사"
+        },
+        {
+          "surface": "次",
+          "reading": "つぎ",
+          "meaning": "다음",
+          "level": "N4",
+          "surface_in_sentence": "次",
+          "base_form": "次",
+          "pos": "명사"
         }
       ],
       "grammar_matches": []
     },
     {
-      "index": 94,
+      "index": 72,
       "text": "当時 ハマってた デスメタル 流して...",
       "translation": "당시 빠져 있던 데스메탈 틀었다가...",
       "start_time": "00:06:13",
@@ -3009,7 +2772,7 @@
       "grammar_matches": []
     },
     {
-      "index": 95,
+      "index": 73,
       "text": "♪ お前の頭蓋骨を粉砕して",
       "translation": "네놈의…! 두개골을 분쇄해!!",
       "start_time": "00:06:16",
@@ -3031,31 +2794,19 @@
       "grammar_matches": []
     },
     {
-      "index": 96,
-      "text": "ぼえええ~!",
+      "index": 74,
+      "text": "ぼえええ~! クン クウ~ン",
       "translation": "붸아아아아아앍!!",
       "start_time": "00:06:18",
-      "end_time": "00:06:19",
-      "start_seconds": 378,
-      "end_seconds": 379,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 97,
-      "text": "クン クウ~ン",
-      "translation": "끄아...!",
-      "start_time": "00:06:20",
       "end_time": "00:06:21",
-      "start_seconds": 380,
+      "start_seconds": 378,
       "end_seconds": 381,
       "has_jlpt": false,
       "vocab_matches": [],
       "grammar_matches": []
     },
     {
-      "index": 98,
+      "index": 75,
       "text": "フラッシュバックが~!",
       "translation": "플래시백이이이!",
       "start_time": "00:06:22",
@@ -3067,7 +2818,7 @@
       "grammar_matches": []
     },
     {
-      "index": 99,
+      "index": 76,
       "text": "ぐうっ 忘れろ 忘れろ!",
       "translation": "플래시백이이이!",
       "start_time": "00:06:23",
@@ -3089,7 +2840,7 @@
       "grammar_matches": []
     },
     {
-      "index": 100,
+      "index": 77,
       "text": "ぐっ... ハア",
       "translation": "잊어버려어!!",
       "start_time": "00:06:25",
@@ -3101,7 +2852,7 @@
       "grammar_matches": []
     },
     {
-      "index": 101,
+      "index": 78,
       "text": "いいな... ライブ",
       "translation": "좋겠다~ 라이브...",
       "start_time": "00:06:33",
@@ -3113,24 +2864,12 @@
       "grammar_matches": []
     },
     {
-      "index": 102,
-      "text": "そっ...",
-      "translation": "그...!",
+      "index": 79,
+      "text": "そっ... その手があったか!",
+      "translation": "그...! 그런 수가 있었나!!",
       "start_time": "00:06:44",
-      "end_time": "00:06:45",
-      "start_seconds": 404,
-      "end_seconds": 405,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 103,
-      "text": "その手があったか!",
-      "translation": "그런 수가 있었나!!",
-      "start_time": "00:06:45",
       "end_time": "00:06:47",
-      "start_seconds": 405,
+      "start_seconds": 404,
       "end_seconds": 407,
       "has_jlpt": true,
       "vocab_matches": [
@@ -3156,7 +2895,7 @@
       "grammar_matches": []
     },
     {
-      "index": 104,
+      "index": 80,
       "text": "かっ... かっこいい~!",
       "translation": "존머어어엇!!",
       "start_time": "00:06:59",
@@ -3168,7 +2907,7 @@
       "grammar_matches": []
     },
     {
-      "index": 105,
+      "index": 81,
       "text": "一気にバンド女子だ",
       "translation": "단숨에 밴드녀가 됐네...!",
       "start_time": "00:07:02",
@@ -3180,24 +2919,12 @@
       "grammar_matches": []
     },
     {
-      "index": 106,
-      "text": "ただ者じゃない感が半端ない",
-      "translation": "보통내기가 아닌 느낌이 물씬 풍겨!",
+      "index": 82,
+      "text": "ただ者じゃない感が半端ない 存在感すごい!",
+      "translation": "보통내기가 아닌 느낌이 물씬 풍겨! 존재감 엄청나당~♥",
       "start_time": "00:07:04",
-      "end_time": "00:07:06",
-      "start_seconds": 424,
-      "end_seconds": 426,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 107,
-      "text": "存在感すごい!",
-      "translation": "존재감 엄청나당~♥",
-      "start_time": "00:07:06",
       "end_time": "00:07:07",
-      "start_seconds": 426,
+      "start_seconds": 424,
       "end_seconds": 427,
       "has_jlpt": true,
       "vocab_matches": [
@@ -3223,7 +2950,7 @@
       "grammar_matches": []
     },
     {
-      "index": 108,
+      "index": 83,
       "text": "これは...",
       "translation": "이렇게까지 했는데...",
       "start_time": "00:07:09",
@@ -3235,7 +2962,7 @@
       "grammar_matches": []
     },
     {
-      "index": 109,
+      "index": 84,
       "text": "絶対 誰か話しかけてくれるはず",
       "translation": "분명 누군가 말을 걸어주겠지...♪",
       "start_time": "00:07:11",
@@ -3321,7 +3048,7 @@
       ]
     },
     {
-      "index": 110,
+      "index": 85,
       "text": "今年の文化祭は忙しくなるぞ!",
       "translation": "올해 문화제는~ 바빠질 거야~!!",
       "start_time": "00:07:14",
@@ -3370,7 +3097,7 @@
       "grammar_matches": []
     },
     {
-      "index": 111,
+      "index": 86,
       "text": "だから そのコギ尻が...",
       "translation": "그러니까 그 코기 엉덩이가~",
       "start_time": "00:07:33",
@@ -3395,7 +3122,7 @@
       ]
     },
     {
-      "index": 112,
+      "index": 87,
       "text": "次 移動教室?",
       "translation": "다음 시간 이동 교실이었나?",
       "start_time": "00:07:35",
@@ -3435,7 +3162,7 @@
       "grammar_matches": []
     },
     {
-      "index": 113,
+      "index": 88,
       "text": "理科室B",
       "translation": "과학실B",
       "start_time": "00:07:35",
@@ -3447,7 +3174,7 @@
       "grammar_matches": []
     },
     {
-      "index": 114,
+      "index": 89,
       "text": "このあとさ~ カラオケとかさ",
       "translation": "이 다음에 말야~ 노래방이라든가~",
       "start_time": "00:07:37",
@@ -3469,9 +3196,9 @@
       "grammar_matches": []
     },
     {
-      "index": 115,
+      "index": 90,
       "text": "フフッ それいいね",
-      "translation": "아, 응 그거 괜찮겠네~",
+      "translation": "너 진짜~",
       "start_time": "00:07:39",
       "end_time": "00:07:41",
       "start_seconds": 459,
@@ -3481,7 +3208,7 @@
       "grammar_matches": []
     },
     {
-      "index": 116,
+      "index": 91,
       "text": "あれ~?",
       "translation": "어",
       "start_time": "00:07:46",
@@ -3493,7 +3220,7 @@
       "grammar_matches": []
     },
     {
-      "index": 117,
+      "index": 92,
       "text": "深夜テンションのまま 暴走し過ぎた?",
       "translation": "심야 감성 그대로 너무 폭주해버렸나...?",
       "start_time": "00:07:51",
@@ -3533,7 +3260,7 @@
       "grammar_matches": []
     },
     {
-      "index": 118,
+      "index": 93,
       "text": "こんなに分かりやすいほど バンド少女感 出してるのに",
       "translation": "이렇게 딱 보일 정도로 밴드 소녀 삘을 내고 있는데...",
       "start_time": "00:07:54",
@@ -3586,7 +3313,7 @@
       ]
     },
     {
-      "index": 119,
+      "index": 94,
       "text": "あっ あえて 話しかけてこない という可能性は...",
       "translation": "앗...! 일부러 말을 안 걸었을 가능성은...!",
       "start_time": "00:07:57",
@@ -3651,7 +3378,7 @@
       ]
     },
     {
-      "index": 120,
+      "index": 95,
       "text": "ないないない 精神崩壊する!",
       "translation": "정신 붕괴해버려~!",
       "start_time": "00:08:00",
@@ -3673,7 +3400,7 @@
       "grammar_matches": []
     },
     {
-      "index": 121,
+      "index": 96,
       "text": "うわっ ちょっと 見て見て!",
       "translation": "우와~! 저거 좀 봐, 봐!",
       "start_time": "00:08:03",
@@ -3713,7 +3440,7 @@
       "grammar_matches": []
     },
     {
-      "index": 122,
+      "index": 97,
       "text": "い... 今 笑われようものなら",
       "translation": "지...!",
       "start_time": "00:08:04",
@@ -3744,7 +3471,7 @@
       "grammar_matches": []
     },
     {
-      "index": 123,
+      "index": 98,
       "text": "精神崩壊どころか 消滅してしまう~!",
       "translation": "지금 비웃음까지 사버리면 정신붕괴는커녕 소멸해버려어얽!!",
       "start_time": "00:08:06",
@@ -3797,7 +3524,7 @@
       ]
     },
     {
-      "index": 124,
+      "index": 99,
       "text": "ヤバい!",
       "translation": "너무 귀여워서 나도 모르게 웃어버려~",
       "start_time": "00:08:09",
@@ -3819,7 +3546,7 @@
       "grammar_matches": []
     },
     {
-      "index": 125,
+      "index": 100,
       "text": "かわい過ぎて笑っちゃう",
       "translation": "너무 귀여워서 나도 모르게 웃어버려~",
       "start_time": "00:08:09",
@@ -3868,7 +3595,7 @@
       "grammar_matches": []
     },
     {
-      "index": 126,
+      "index": 101,
       "text": ")ギター?",
       "translation": "기타...?",
       "start_time": "00:08:12",
@@ -3890,7 +3617,7 @@
       "grammar_matches": []
     },
     {
-      "index": 127,
+      "index": 102,
       "text": "癒やされる~",
       "translation": "기타...?",
       "start_time": "00:08:12",
@@ -3925,31 +3652,19 @@
       ]
     },
     {
-      "index": 128,
-      "text": "ね~ 喜多ちゃん",
-      "translation": "있지, 키타쨩!",
+      "index": 103,
+      "text": "ね~ 喜多ちゃん 喜多ちゃん?",
+      "translation": "있지, 키타쨩! 키타쨩?",
       "start_time": "00:08:15",
-      "end_time": "00:08:16",
-      "start_seconds": 495,
-      "end_seconds": 496,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 129,
-      "text": "喜多ちゃん?",
-      "translation": "키타쨩?",
-      "start_time": "00:08:17",
       "end_time": "00:08:17",
-      "start_seconds": 497,
+      "start_seconds": 495,
       "end_seconds": 497,
       "has_jlpt": false,
       "vocab_matches": [],
       "grammar_matches": []
     },
     {
-      "index": 130,
+      "index": 104,
       "text": "あっ ごめんごめん なになに?",
       "translation": "미안, 미안! 뭔데, 뭔데~?",
       "start_time": "00:08:17",
@@ -3961,7 +3676,7 @@
       "grammar_matches": []
     },
     {
-      "index": 131,
+      "index": 105,
       "text": "いや 分かってますよ",
       "translation": "아니... 알고야 있었습죠",
       "start_time": "00:08:25",
@@ -3983,7 +3698,7 @@
       "grammar_matches": []
     },
     {
-      "index": 132,
+      "index": 106,
       "text": "他力本願で 物事うまくいくはずないって",
       "translation": "남한테 기대기만 해놓고 일이 잘 될 리가 없단 건",
       "start_time": "00:08:27",
@@ -4023,7 +3738,7 @@
       "grammar_matches": []
     },
     {
-      "index": 133,
+      "index": 107,
       "text": "ここに集う人たちは 私と同じで 孤独を抱えてるんだ",
       "translation": "여기 모이는 사람들은 나랑 똑같이 고독을 끌어안고 있구나~",
       "start_time": "00:08:33",
@@ -4035,7 +3750,7 @@
       "grammar_matches": []
     },
     {
-      "index": 134,
+      "index": 108,
       "text": "あの人は きっと家庭内別...",
       "translation": "저 사람은 분명 가정에서도...",
       "start_time": "00:08:37",
@@ -4088,36 +3803,12 @@
       ]
     },
     {
-      "index": 135,
-      "text": "パパ!",
-      "translation": "아빠!",
+      "index": 109,
+      "text": "パパ! え? エヘッ (妻)ごめんね 遅れちゃって",
+      "translation": "아빠! 엩… 미안해! 늦어버려서!",
       "start_time": "00:08:39",
-      "end_time": "00:08:40",
-      "start_seconds": 519,
-      "end_seconds": 520,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 136,
-      "text": "え?",
-      "translation": "미안, 졸려",
-      "start_time": "00:08:39",
-      "end_time": "00:08:40",
-      "start_seconds": 519,
-      "end_seconds": 520,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 137,
-      "text": "エヘッ (妻)ごめんね 遅れちゃって",
-      "translation": "엩… 미안해! 늦어버려서!",
-      "start_time": "00:08:41",
       "end_time": "00:08:43",
-      "start_seconds": 521,
+      "start_seconds": 519,
       "end_seconds": 523,
       "has_jlpt": true,
       "vocab_matches": [
@@ -4143,24 +3834,12 @@
       "grammar_matches": []
     },
     {
-      "index": 138,
-      "text": "いいって いいって",
-      "translation": "아니, 뭐 이런 걸로~",
-      "start_time": "00:08:43",
-      "end_time": "00:08:44",
-      "start_seconds": 523,
-      "end_seconds": 524,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 139,
-      "text": "絵に描いたような家族団欒(だんらん)!",
+      "index": 110,
+      "text": "いいって いいって 絵に描いたような家族団欒(だんらん)!",
       "translation": "한 폭의 그림 같은 가족단란!!!",
-      "start_time": "00:08:44",
+      "start_time": "00:08:43",
       "end_time": "00:08:48",
-      "start_seconds": 524,
+      "start_seconds": 523,
       "end_seconds": 528,
       "has_jlpt": true,
       "vocab_matches": [
@@ -4186,7 +3865,7 @@
       "grammar_matches": []
     },
     {
-      "index": 140,
+      "index": 111,
       "text": "すいません 勝手に“私と同じ”とか言って",
       "translation": "졔성함다~ 맘대로 저랑 같다고 그래서~",
       "start_time": "00:08:48",
@@ -4208,7 +3887,7 @@
       "grammar_matches": []
     },
     {
-      "index": 141,
+      "index": 112,
       "text": "あ... 登録者数3万 超えてる",
       "translation": "아... 구독자수 3만 넘겼네...",
       "start_time": "00:08:53",
@@ -4248,7 +3927,7 @@
       "grammar_matches": []
     },
     {
-      "index": 142,
+      "index": 113,
       "text": "うん そうだよ 私の居場所はネットだけ",
       "translation": "응...! 그렇다구~ 내가 지낼 곳은 인터넷뿐!",
       "start_time": "00:08:57",
@@ -4297,7 +3976,7 @@
       ]
     },
     {
-      "index": 143,
+      "index": 114,
       "text": "もう 学校 行きたくないな...",
       "translation": "이제 학교 다니기 싫다... 아아!?",
       "start_time": "00:09:02",
@@ -4337,36 +4016,12 @@
       "grammar_matches": []
     },
     {
-      "index": 144,
-      "text": ")あっ!",
-      "translation": "아아!?",
+      "index": 115,
+      "text": ")あっ! ハッ ギター!",
+      "translation": "아아!? 기타아아아!!",
       "start_time": "00:09:06",
-      "end_time": "00:09:07",
-      "start_seconds": 546,
-      "end_seconds": 547,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 145,
-      "text": "ハッ",
-      "translation": "기타를 쳐 왔겠지 ..라는 소리!",
-      "start_time": "00:09:06",
-      "end_time": "00:09:07",
-      "start_seconds": 546,
-      "end_seconds": 547,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 146,
-      "text": "ギター!",
-      "translation": "기타아아아!!",
-      "start_time": "00:09:07",
       "end_time": "00:09:09",
-      "start_seconds": 547,
+      "start_seconds": 546,
       "end_seconds": 549,
       "has_jlpt": true,
       "vocab_matches": [
@@ -4383,24 +4038,12 @@
       "grammar_matches": []
     },
     {
-      "index": 147,
-      "text": "うわああ...",
-      "translation": "으아아...!",
-      "start_time": "00:09:11",
-      "end_time": "00:09:12",
-      "start_seconds": 551,
-      "end_seconds": 552,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 148,
-      "text": "それ ギターだよね?",
+      "index": 116,
+      "text": "うわああ... それ ギターだよね?",
       "translation": "그거, 기타 맞지?",
-      "start_time": "00:09:12",
+      "start_time": "00:09:11",
       "end_time": "00:09:13",
-      "start_seconds": 552,
+      "start_seconds": 551,
       "end_seconds": 553,
       "has_jlpt": true,
       "vocab_matches": [
@@ -4417,9 +4060,9 @@
       "grammar_matches": []
     },
     {
-      "index": 149,
+      "index": 117,
       "text": "あっ あっ... (虹夏)弾けるの?",
-      "translation": "칠 줄 알아!?",
+      "translation": "어...!",
       "start_time": "00:09:13",
       "end_time": "00:09:14",
       "start_seconds": 553,
@@ -4439,9 +4082,9 @@
       "grammar_matches": []
     },
     {
-      "index": 150,
+      "index": 118,
       "text": "あっ ああっ (虹夏)あ...",
-      "translation": "어어억...!",
+      "translation": "어...!",
       "start_time": "00:09:14",
       "end_time": "00:09:16",
       "start_seconds": 554,
@@ -4461,34 +4104,12 @@
       "grammar_matches": []
     },
     {
-      "index": 151,
-      "text": "お~い?",
-      "translation": "여보세요~?",
-      "start_time": "00:09:17",
-      "end_time": "00:09:18",
-      "start_seconds": 557,
-      "end_seconds": 558,
-      "has_jlpt": true,
-      "vocab_matches": [
-        {
-          "surface": "いる",
-          "reading": "-",
-          "meaning": "(사람, 동물이) 있다",
-          "level": "N4",
-          "surface_in_sentence": "い",
-          "base_form": "いる",
-          "pos": "동사"
-        }
-      ],
-      "grammar_matches": []
-    },
-    {
-      "index": 152,
-      "text": "しゃ... しゃべるの 久しぶりすぎて 声が...",
+      "index": 119,
+      "text": "お~い? しゃ... しゃべるの 久しぶりすぎて 声が...",
       "translation": "말하는 게 너무 오랜만이라 목소리가...!",
-      "start_time": "00:09:18",
+      "start_time": "00:09:17",
       "end_time": "00:09:21",
-      "start_seconds": 558,
+      "start_seconds": 557,
       "end_seconds": 561,
       "has_jlpt": true,
       "vocab_matches": [
@@ -4520,6 +4141,15 @@
           "pos": "동사"
         },
         {
+          "surface": "いる",
+          "reading": "-",
+          "meaning": "(사람, 동물이) 있다",
+          "level": "N4",
+          "surface_in_sentence": "い",
+          "base_form": "いる",
+          "pos": "동사"
+        },
+        {
           "surface": "声",
           "reading": "こえ",
           "meaning": "목소리, 소리",
@@ -4532,7 +4162,7 @@
       "grammar_matches": []
     },
     {
-      "index": 153,
+      "index": 120,
       "text": "あっ いきなり ごめんね",
       "translation": "느닷없이 말 걸어서 미안해!",
       "start_time": "00:09:21",
@@ -4563,7 +4193,7 @@
       "grammar_matches": []
     },
     {
-      "index": 154,
+      "index": 121,
       "text": "あたし 下北沢(しもきたざわ)高校2年 伊地知(いじち)虹夏",
       "translation": "난 시모키타자와 고교 2학년, 이지치 니지카!",
       "start_time": "00:09:23",
@@ -4639,7 +4269,7 @@
       "grammar_matches": []
     },
     {
-      "index": 155,
+      "index": 122,
       "text": "あっ 後藤ひとり 秀華(しゅうか)高校1年です",
       "translation": "아... 고토 히토리 슈카 고교 1학녀님미다...",
       "start_time": "00:09:27",
@@ -4670,7 +4300,7 @@
       "grammar_matches": []
     },
     {
-      "index": 156,
+      "index": 123,
       "text": "ちなみに ひとりちゃんはさ...",
       "translation": "궁금해서 그런데 히토리쨩은 말야~",
       "start_time": "00:09:30",
@@ -4682,7 +4312,7 @@
       "grammar_matches": []
     },
     {
-      "index": 157,
+      "index": 124,
       "text": "いきなり名前呼び!",
       "translation": "느닷없이 말 놓네!?",
       "start_time": "00:09:31",
@@ -4713,7 +4343,7 @@
       "grammar_matches": []
     },
     {
-      "index": 158,
+      "index": 125,
       "text": "ギター どのくらい弾ける?",
       "translation": "기타 얼마나 칠 줄 알아?",
       "start_time": "00:09:33",
@@ -4748,7 +4378,7 @@
       ]
     },
     {
-      "index": 159,
+      "index": 126,
       "text": "あっ そこそこかと",
       "translation": "아, 그럭저럭 칠 거 같긴 한데...",
       "start_time": "00:09:35",
@@ -4760,24 +4390,12 @@
       "grammar_matches": []
     },
     {
-      "index": 160,
-      "text": "そっか!",
+      "index": 127,
+      "text": "そっか! あ... あのさ ちょっと今 困ってて",
       "translation": "그렇구나!",
       "start_time": "00:09:37",
-      "end_time": "00:09:38",
-      "start_seconds": 577,
-      "end_seconds": 578,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 161,
-      "text": "あ... あのさ ちょっと今 困ってて",
-      "translation": "저..저기 말야! 지금 좀 곤란한 상황이라...",
-      "start_time": "00:09:38",
       "end_time": "00:09:41",
-      "start_seconds": 578,
+      "start_seconds": 577,
       "end_seconds": 581,
       "has_jlpt": true,
       "vocab_matches": [
@@ -4830,7 +4448,7 @@
       "grammar_matches": []
     },
     {
-      "index": 162,
+      "index": 128,
       "text": "無理だったら 大丈夫なんだけど",
       "translation": "안 되겠다면 괜찮긴 한데~",
       "start_time": "00:09:41",
@@ -4865,7 +4483,7 @@
       ]
     },
     {
-      "index": 163,
+      "index": 129,
       "text": "大丈夫なんだけど 困ってて...",
       "translation": "괜찮긴 한데에 진짜 곤란해서어~",
       "start_time": "00:09:43",
@@ -4896,7 +4514,7 @@
       "grammar_matches": []
     },
     {
-      "index": 164,
+      "index": 130,
       "text": "絶対 だいじょばないやつ!",
       "translation": "딱 봐도 안 괜찮은 거~",
       "start_time": "00:09:45",
@@ -4918,9 +4536,9 @@
       "grammar_matches": []
     },
     {
-      "index": 165,
+      "index": 131,
       "text": "うん 思い切って言っちゃおう!",
-      "translation": "응!",
+      "translation": "미친 척 하고 말해버리자!",
       "start_time": "00:09:47",
       "end_time": "00:09:49",
       "start_seconds": 587,
@@ -4940,13 +4558,13 @@
       "grammar_matches": []
     },
     {
-      "index": 166,
-      "text": "お願い!",
-      "translation": "부탁이야!!",
+      "index": 132,
+      "text": "お願い! あたしのバンドで 今日だけ サポートギターしてくれないかな!",
+      "translation": "내 밴드에서! 오늘만 서포트 기타 뛰어주면 안 될까~!?",
       "start_time": "00:09:50",
-      "end_time": "00:09:50",
+      "end_time": "00:09:55",
       "start_seconds": 590,
-      "end_seconds": 590,
+      "end_seconds": 595,
       "has_jlpt": true,
       "vocab_matches": [
         {
@@ -4957,20 +4575,7 @@
           "surface_in_sentence": "お願い",
           "base_form": "お願い",
           "pos": "명사"
-        }
-      ],
-      "grammar_matches": []
-    },
-    {
-      "index": 167,
-      "text": "あたしのバンドで 今日だけ サポートギターしてくれないかな!",
-      "translation": "내 밴드에서! 오늘만 서포트 기타 뛰어주면 안 될까~!?",
-      "start_time": "00:09:51",
-      "end_time": "00:09:55",
-      "start_seconds": 591,
-      "end_seconds": 595,
-      "has_jlpt": true,
-      "vocab_matches": [
+        },
         {
           "surface": "暮れ",
           "reading": "くれ",
@@ -5038,24 +4643,12 @@
       "grammar_matches": []
     },
     {
-      "index": 168,
-      "text": "バンド?",
-      "translation": "밴드...?",
+      "index": 133,
+      "text": "バンド? これからライブなのに ギターの子が突然 辞めちゃって",
+      "translation": "밴드...? 이제 곧 라이브 있는데 기타 애가 갑자기 관둬버려서~!",
       "start_time": "00:09:56",
-      "end_time": "00:09:57",
-      "start_seconds": 596,
-      "end_seconds": 597,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 169,
-      "text": "これからライブなのに ギターの子が突然 辞めちゃって",
-      "translation": "이제 곧 라이브 있는데 기타 애가 갑자기 관둬버려서~!",
-      "start_time": "00:09:57",
       "end_time": "00:10:01",
-      "start_seconds": 597,
+      "start_seconds": 596,
       "end_seconds": 601,
       "has_jlpt": true,
       "vocab_matches": [
@@ -5099,9 +4692,9 @@
       "grammar_matches": []
     },
     {
-      "index": 170,
+      "index": 134,
       "text": "ある程度 弾ける人なら... (ひとり)これから?",
-      "translation": "어느 정도 칠 줄만 알면 바로 할 수 있는 곡이니까~! 지금부터!? 라이브???!",
+      "translation": "지금부터!?",
       "start_time": "00:10:01",
       "end_time": "00:10:04",
       "start_seconds": 601,
@@ -5121,7 +4714,7 @@
       "grammar_matches": []
     },
     {
-      "index": 171,
+      "index": 135,
       "text": "ライブ?",
       "translation": "라이브???!",
       "start_time": "00:10:01",
@@ -5133,31 +4726,19 @@
       "grammar_matches": []
     },
     {
-      "index": 172,
-      "text": "なにとぞ~",
-      "translation": "아무쪼록~!",
-      "start_time": "00:10:04",
-      "end_time": "00:10:05",
-      "start_seconds": 604,
-      "end_seconds": 605,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 173,
-      "text": "あっ や...",
+      "index": 136,
+      "text": "なにとぞ~ あっ や...",
       "translation": "으에에에엒ㄲㄲ!",
-      "start_time": "00:10:06",
+      "start_time": "00:10:04",
       "end_time": "00:10:07",
-      "start_seconds": 606,
+      "start_seconds": 604,
       "end_seconds": 607,
       "has_jlpt": false,
       "vocab_matches": [],
       "grammar_matches": []
     },
     {
-      "index": 174,
+      "index": 137,
       "text": "ええ~っ!",
       "translation": "어어어어째서!!?",
       "start_time": "00:10:07",
@@ -5169,7 +4750,7 @@
       "grammar_matches": []
     },
     {
-      "index": 175,
+      "index": 138,
       "text": "ありがとう!",
       "translation": "고맙고~!",
       "start_time": "00:10:10",
@@ -5181,7 +4762,7 @@
       "grammar_matches": []
     },
     {
-      "index": 176,
+      "index": 139,
       "text": "早速 ライブハウスへ ゴー!",
       "translation": "당장 라이브 하우스로 GO!!",
       "start_time": "00:10:10",
@@ -5203,7 +4784,7 @@
       "grammar_matches": []
     },
     {
-      "index": 177,
+      "index": 140,
       "text": "まだ何も言ってない!",
       "translation": "아직 아무 말도 안 했어!!",
       "start_time": "00:10:13",
@@ -5243,7 +4824,7 @@
       "grammar_matches": []
     },
     {
-      "index": 178,
+      "index": 141,
       "text": "来てしまった...",
       "translation": "와버리고 말았다...",
       "start_time": "00:10:17",
@@ -5296,7 +4877,7 @@
       ]
     },
     {
-      "index": 179,
+      "index": 142,
       "text": "ひとりちゃんは下北(しもきた)は よく来る?",
       "translation": "히토리쨩은 시모키타 자주 와~?",
       "start_time": "00:10:19",
@@ -5336,24 +4917,12 @@
       "grammar_matches": []
     },
     {
-      "index": 180,
-      "text": "あっ いや...",
-      "translation": "에!?",
+      "index": 143,
+      "text": "あっ いや... こんな 個性みなぎる おしゃれタウンに 来れるわけない",
+      "translation": "아, 아니...",
       "start_time": "00:10:22",
-      "end_time": "00:10:23",
-      "start_seconds": 622,
-      "end_seconds": 623,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 181,
-      "text": "こんな 個性みなぎる おしゃれタウンに 来れるわけない",
-      "translation": "이런 개성 넘치는 멋쟁이 타운에 올 수 있을 리가 없지...",
-      "start_time": "00:10:23",
       "end_time": "00:10:27",
-      "start_seconds": 623,
+      "start_seconds": 622,
       "end_seconds": 627,
       "has_jlpt": true,
       "vocab_matches": [
@@ -5392,7 +4961,7 @@
       ]
     },
     {
-      "index": 182,
+      "index": 144,
       "text": "ライブハウス もうちょいだから",
       "translation": "라이브 하우스는 좀만 가면 도착하니까!",
       "start_time": "00:10:27",
@@ -5417,7 +4986,7 @@
       ]
     },
     {
-      "index": 183,
+      "index": 145,
       "text": "虹夏ちゃんは おしゃれだな~",
       "translation": "니지카쨩은 참 멋쟁이네...",
       "start_time": "00:10:31",
@@ -5439,7 +5008,7 @@
       "grammar_matches": []
     },
     {
-      "index": 184,
+      "index": 146,
       "text": "これこそバンド女子って感じ",
       "translation": "이거야말로 딱 밴드녀란 느낌",
       "start_time": "00:10:33",
@@ -5451,7 +5020,7 @@
       "grammar_matches": []
     },
     {
-      "index": 185,
+      "index": 147,
       "text": "それに比べて私は 芋ジャージだし クマすごいし 猫背だし...",
       "translation": "그에 비해 나는 고구마 츄리닝에 다크서클 오지는데다 등까지 굽어서...",
       "start_time": "00:10:36",
@@ -5516,7 +5085,7 @@
       ]
     },
     {
-      "index": 186,
+      "index": 148,
       "text": "あっ 私 かび臭いかも いつも押し入れにいるから",
       "translation": "아...! 나, 곰팡내 날지도... 항상 벽장에서 지내니까...",
       "start_time": "00:10:41",
@@ -5569,7 +5138,7 @@
       ]
     },
     {
-      "index": 187,
+      "index": 149,
       "text": "いや 防虫剤のにおいだ",
       "translation": "아니, 방충제 냄새네",
       "start_time": "00:10:45",
@@ -5600,7 +5169,7 @@
       "grammar_matches": []
     },
     {
-      "index": 188,
+      "index": 150,
       "text": "それにひきかえ 虹夏ちゃん めっちゃ いいにおい",
       "translation": "그에 비해 니지카쨩 냄새 열라 좋다~",
       "start_time": "00:10:48",
@@ -5653,34 +5222,12 @@
       ]
     },
     {
-      "index": 189,
-      "text": "本来あるべき",
+      "index": 151,
+      "text": "本来あるべき 女子高生の香りだ~",
       "translation": "원래 여고생이 지녀야 할 향기다~",
       "start_time": "00:10:52",
-      "end_time": "00:10:53",
-      "start_seconds": 652,
-      "end_seconds": 653,
-      "has_jlpt": true,
-      "vocab_matches": [
-        {
-          "surface": "ある",
-          "reading": "-",
-          "meaning": "(사물, 식물이) 있다",
-          "level": "N4",
-          "surface_in_sentence": "ある",
-          "base_form": "ある",
-          "pos": "동사"
-        }
-      ],
-      "grammar_matches": []
-    },
-    {
-      "index": 190,
-      "text": "女子高生の香りだ~",
-      "translation": "원래 여고생이 지녀야 할 향기다~",
-      "start_time": "00:10:53",
       "end_time": "00:10:55",
-      "start_seconds": 653,
+      "start_seconds": 652,
       "end_seconds": 655,
       "has_jlpt": true,
       "vocab_matches": [
@@ -5701,18 +5248,27 @@
           "surface_in_sentence": "香り",
           "base_form": "香り",
           "pos": "명사"
+        },
+        {
+          "surface": "ある",
+          "reading": "-",
+          "meaning": "(사물, 식물이) 있다",
+          "level": "N4",
+          "surface_in_sentence": "ある",
+          "base_form": "ある",
+          "pos": "동사"
         }
       ],
       "grammar_matches": []
     },
     {
-      "index": 191,
-      "text": "歩くペース早い?",
-      "translation": "걷는 페이스가 빨랐나?",
+      "index": 152,
+      "text": "歩くペース早い? いっ... いえ",
+      "translation": "걷는 페이스가 빨랐나? 아, 아뇹",
       "start_time": "00:10:55",
-      "end_time": "00:10:56",
+      "end_time": "00:10:57",
       "start_seconds": 655,
-      "end_seconds": 656,
+      "end_seconds": 657,
       "has_jlpt": true,
       "vocab_matches": [
         {
@@ -5732,34 +5288,21 @@
           "surface_in_sentence": "歩く",
           "base_form": "歩く",
           "pos": "동사"
-        }
-      ],
-      "grammar_matches": []
-    },
-    {
-      "index": 192,
-      "text": "いっ... いえ",
-      "translation": "아, 아뇹",
-      "start_time": "00:10:57",
-      "end_time": "00:10:57",
-      "start_seconds": 657,
-      "end_seconds": 657,
-      "has_jlpt": true,
-      "vocab_matches": [
+        },
         {
-          "surface": "行く",
-          "reading": "いく",
-          "meaning": "가다",
+          "surface": "言う",
+          "reading": "いう",
+          "meaning": "말하다",
           "level": "N4",
           "surface_in_sentence": "いっ",
-          "base_form": "いく",
+          "base_form": "いう",
           "pos": "동사"
         }
       ],
       "grammar_matches": []
     },
     {
-      "index": 193,
+      "index": 153,
       "text": "今日 出演するライブハウスは",
       "translation": "아, 아뇹 오늘 출연할 라이브 하우스는 「STARRY」라고 하는데 말야!",
       "start_time": "00:10:57",
@@ -5790,7 +5333,7 @@
       "grammar_matches": []
     },
     {
-      "index": 194,
+      "index": 154,
       "text": "STARRY(スターリー)っていうんだけどね",
       "translation": "오늘 출연할 라이브 하우스는 「STARRY」라고 하는데 말야!",
       "start_time": "00:10:59",
@@ -5802,7 +5345,7 @@
       "grammar_matches": []
     },
     {
-      "index": 195,
+      "index": 155,
       "text": "あたしのお姉ちゃんが... (ひとり)出演するライブハウス",
       "translation": "출연할 라이브 하우스...",
       "start_time": "00:11:02",
@@ -5824,7 +5367,7 @@
       "grammar_matches": []
     },
     {
-      "index": 196,
+      "index": 156,
       "text": "なんか ぽい響き",
       "translation": "뭔가 그럴싸한 어감...",
       "start_time": "00:11:04",
@@ -5849,7 +5392,7 @@
       ]
     },
     {
-      "index": 197,
+      "index": 157,
       "text": "あれ なんか心臓ヤバい",
       "translation": "어라? 어째 심장이 큰일났...",
       "start_time": "00:11:07",
@@ -5884,36 +5427,12 @@
       ]
     },
     {
-      "index": 198,
-      "text": "でね!",
-      "translation": "그래서 있지!",
+      "index": 158,
+      "text": "でね! あっ あたし そこでバイトしてて...",
+      "translation": "그래서 있지! 내가 거기서 알바 하는데~",
       "start_time": "00:11:09",
-      "end_time": "00:11:10",
-      "start_seconds": 669,
-      "end_seconds": 670,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 199,
-      "text": "あっ",
-      "translation": "그래서 있지!",
-      "start_time": "00:11:09",
-      "end_time": "00:11:10",
-      "start_seconds": 669,
-      "end_seconds": 670,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 200,
-      "text": "あたし そこでバイトしてて...",
-      "translation": "내가 거기서 알바 하는데~",
-      "start_time": "00:11:11",
       "end_time": "00:11:13",
-      "start_seconds": 671,
+      "start_seconds": 669,
       "end_seconds": 673,
       "has_jlpt": true,
       "vocab_matches": [
@@ -5961,24 +5480,12 @@
       ]
     },
     {
-      "index": 201,
-      "text": "あ...",
-      "translation": "영상을 보면 전해져 올 테니까!",
+      "index": 159,
+      "text": "あ... ひとりちゃん 実は結構 運動できる?",
+      "translation": "아뇻...!",
       "start_time": "00:11:14",
-      "end_time": "00:11:15",
-      "start_seconds": 674,
-      "end_seconds": 675,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 202,
-      "text": "ひとりちゃん 実は結構 運動できる?",
-      "translation": "히토리쨩 사실 운동 좀 잘 하고 그래?",
-      "start_time": "00:11:16",
       "end_time": "00:11:19",
-      "start_seconds": 676,
+      "start_seconds": 674,
       "end_seconds": 679,
       "has_jlpt": true,
       "vocab_matches": [
@@ -6017,9 +5524,9 @@
       ]
     },
     {
-      "index": 203,
+      "index": 160,
       "text": "いえ あっ でも ドッジボールだけは",
-      "translation": "아뇻...!",
+      "translation": "아, 그..그래도...",
       "start_time": "00:11:19",
       "end_time": "00:11:21",
       "start_seconds": 679,
@@ -6029,7 +5536,7 @@
       "grammar_matches": []
     },
     {
-      "index": 204,
+      "index": 161,
       "text": "なぜか いつも 最後まで残ってました",
       "translation": "피구만큼은 어째선지 항상 마지막까지 남곤 했어요...",
       "start_time": "00:11:21",
@@ -6100,24 +5607,12 @@
       ]
     },
     {
-      "index": 205,
-      "text": "そ... そっか",
-      "translation": "그, 그렇구나...",
+      "index": 162,
+      "text": "そ... そっか 私がライブハウスで演奏",
+      "translation": "그, 그렇구나... 내가 라이브 하우스에서 연주를...?",
       "start_time": "00:11:24",
-      "end_time": "00:11:25",
-      "start_seconds": 684,
-      "end_seconds": 685,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 206,
-      "text": "私がライブハウスで演奏",
-      "translation": "내가 라이브 하우스에서 연주를...?",
-      "start_time": "00:11:25",
       "end_time": "00:11:28",
-      "start_seconds": 685,
+      "start_seconds": 684,
       "end_seconds": 688,
       "has_jlpt": true,
       "vocab_matches": [
@@ -6134,7 +5629,7 @@
       "grammar_matches": []
     },
     {
-      "index": 207,
+      "index": 163,
       "text": "あっ ああ... ダメダメ 今 弱気になっちゃ",
       "translation": "아, 아아아...! 안 되지, 안 돼! 지금 약한 먹으면!",
       "start_time": "00:11:28",
@@ -6174,7 +5669,7 @@
       "grammar_matches": []
     },
     {
-      "index": 208,
+      "index": 164,
       "text": "思い出せ 妄想で毎日した文化祭ライブを!",
       "translation": "망상에서 매일같이 해왔던 문화제 라이브를...!",
       "start_time": "00:11:32",
@@ -6214,7 +5709,7 @@
       "grammar_matches": []
     },
     {
-      "index": 209,
+      "index": 165,
       "text": "そして 初のワンマン",
       "translation": "그리고 첫 원맨 라이브!",
       "start_time": "00:11:36",
@@ -6239,20 +5734,8 @@
       ]
     },
     {
-      "index": 210,
-      "text": "Zepp(ゼップ)!",
-      "translation": "슈퍼 아레나~!",
-      "start_time": "00:11:38",
-      "end_time": "00:11:38",
-      "start_seconds": 698,
-      "end_seconds": 698,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 211,
-      "text": "スーパーアリーナ!",
+      "index": 166,
+      "text": "Zepp(ゼップ)! スーパーアリーナ!",
       "translation": "슈퍼 아레나~!",
       "start_time": "00:11:38",
       "end_time": "00:11:40",
@@ -6273,7 +5756,7 @@
       "grammar_matches": []
     },
     {
-      "index": 212,
+      "index": 167,
       "text": "ひとり!",
       "translation": "-히토리, 히토리, 히토리…!!",
       "start_time": "00:11:40",
@@ -6285,7 +5768,7 @@
       "grammar_matches": []
     },
     {
-      "index": 213,
+      "index": 168,
       "text": "ひとり...",
       "translation": "-히토리, 히토리, 히토리…!!",
       "start_time": "00:11:40",
@@ -6297,7 +5780,7 @@
       "grammar_matches": []
     },
     {
-      "index": 214,
+      "index": 169,
       "text": "私は武道館(ぶどうかん)をも埋めた女...",
       "translation": "나는 무도관조차 가득 채웠던 여자...!",
       "start_time": "00:11:44",
@@ -6350,9 +5833,9 @@
       ]
     },
     {
-      "index": 215,
+      "index": 170,
       "text": "えっ?",
-      "translation": "시시실례하겠습니다!",
+      "translation": "구독자도 3만 찍었는데...?",
       "start_time": "00:11:46",
       "end_time": "00:11:48",
       "start_seconds": 706,
@@ -6362,7 +5845,7 @@
       "grammar_matches": []
     },
     {
-      "index": 216,
+      "index": 171,
       "text": "あっ いや...",
       "translation": "에!?",
       "start_time": "00:11:46",
@@ -6374,24 +5857,12 @@
       "grammar_matches": []
     },
     {
-      "index": 217,
-      "text": "アハハ...",
-      "translation": "아, 아뇨...",
+      "index": 172,
+      "text": "アハハ... 頼む相手 間違った って思われてませんように!",
+      "translation": "아, 아뇨... 부탁할 상대를 잘못 골랐다고 생각하지 않기를~!",
       "start_time": "00:11:48",
-      "end_time": "00:11:49",
-      "start_seconds": 708,
-      "end_seconds": 709,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 218,
-      "text": "頼む相手 間違った って思われてませんように!",
-      "translation": "부탁할 상대를 잘못 골랐다고 생각하지 않기를~!",
-      "start_time": "00:11:49",
       "end_time": "00:11:53",
-      "start_seconds": 709,
+      "start_seconds": 708,
       "end_seconds": 713,
       "has_jlpt": true,
       "vocab_matches": [
@@ -6439,7 +5910,7 @@
       ]
     },
     {
-      "index": 219,
+      "index": 173,
       "text": "頼む相手 間違えたか?",
       "translation": "부탁할 상대를 잘못 골랐나...?",
       "start_time": "00:11:53",
@@ -6479,7 +5950,7 @@
       "grammar_matches": []
     },
     {
-      "index": 220,
+      "index": 174,
       "text": "着いた!",
       "translation": "여기양~♪",
       "start_time": "00:11:56",
@@ -6501,7 +5972,7 @@
       "grammar_matches": []
     },
     {
-      "index": 221,
+      "index": 175,
       "text": "ここだよ~",
       "translation": "여기양~♪",
       "start_time": "00:11:56",
@@ -6513,9 +5984,9 @@
       "grammar_matches": []
     },
     {
-      "index": 222,
+      "index": 176,
       "text": "ま... 魔境?",
-      "translation": "마... 마경...?",
+      "translation": "마경...?",
       "start_time": "00:12:00",
       "end_time": "00:12:02",
       "start_seconds": 720,
@@ -6525,7 +5996,7 @@
       "grammar_matches": []
     },
     {
-      "index": 223,
+      "index": 177,
       "text": "おっはようございま~す!",
       "translation": "좋은 아침입니다~",
       "start_time": "00:12:03",
@@ -6547,7 +6018,7 @@
       "grammar_matches": []
     },
     {
-      "index": 224,
+      "index": 178,
       "text": "初ライブハウス",
       "translation": "첫 라이브 하우스...",
       "start_time": "00:12:08",
@@ -6559,7 +6030,7 @@
       "grammar_matches": []
     },
     {
-      "index": 225,
+      "index": 179,
       "text": "この暗さ 圧迫感...",
       "translation": "이 어둑함... 압박감...!",
       "start_time": "00:12:10",
@@ -6581,7 +6052,7 @@
       "grammar_matches": []
     },
     {
-      "index": 226,
+      "index": 180,
       "text": "お... 落ち着く~",
       "translation": "아, 차분해진다~!",
       "start_time": "00:12:13",
@@ -6603,7 +6074,7 @@
       "grammar_matches": []
     },
     {
-      "index": 227,
+      "index": 181,
       "text": "ひとりちゃん 大丈夫?",
       "translation": "히토리쨩, 괜찮아?",
       "start_time": "00:12:16",
@@ -6615,13 +6086,13 @@
       "grammar_matches": []
     },
     {
-      "index": 228,
-      "text": "わ... 私の家",
-      "translation": "아, 우리집이다~",
+      "index": 182,
+      "text": "わ... 私の家 違うよ?",
+      "translation": "아, 우리집이다~ 아닌데!?",
       "start_time": "00:12:17",
-      "end_time": "00:12:18",
+      "end_time": "00:12:19",
       "start_seconds": 737,
-      "end_seconds": 738,
+      "end_seconds": 739,
       "has_jlpt": true,
       "vocab_matches": [
         {
@@ -6632,20 +6103,7 @@
           "surface_in_sentence": "家",
           "base_form": "家",
           "pos": "명사"
-        }
-      ],
-      "grammar_matches": []
-    },
-    {
-      "index": 229,
-      "text": "違うよ?",
-      "translation": "아, 우리집이다~",
-      "start_time": "00:12:19",
-      "end_time": "00:12:19",
-      "start_seconds": 739,
-      "end_seconds": 739,
-      "has_jlpt": true,
-      "vocab_matches": [
+        },
         {
           "surface": "違う",
           "reading": "ちがう",
@@ -6659,7 +6117,7 @@
       "grammar_matches": []
     },
     {
-      "index": 230,
+      "index": 183,
       "text": "今回もPAさんに...",
       "translation": "이번에도 PA 씨네한테 영상 부탁할까~?",
       "start_time": "00:12:19",
@@ -6690,7 +6148,7 @@
       "grammar_matches": []
     },
     {
-      "index": 231,
+      "index": 184,
       "text": "今日 共演する...",
       "translation": "오늘 같이 공연할 밴드구나!",
       "start_time": "00:12:21",
@@ -6721,7 +6179,7 @@
       "grammar_matches": []
     },
     {
-      "index": 232,
+      "index": 185,
       "text": "バンドって どうしても 怖そうなイメージあるけど",
       "translation": "밴드라고 하면 어째 꼭 무섭단 이미지가 있는데",
       "start_time": "00:12:22",
@@ -6792,7 +6250,7 @@
       ]
     },
     {
-      "index": 233,
+      "index": 186,
       "text": "所詮 インドアの集まり",
       "translation": "쟤네가 끝나면 우리 리허설이니까!",
       "start_time": "00:12:25",
@@ -6804,7 +6262,7 @@
       "grammar_matches": []
     },
     {
-      "index": 234,
+      "index": 187,
       "text": "影の者 陰キャの集団 みんな 私と同じ",
       "translation": "어둠의 자식들! 아싸 집단! 다들 나랑 똑같이...",
       "start_time": "00:12:26",
@@ -6826,7 +6284,7 @@
       "grammar_matches": []
     },
     {
-      "index": 235,
+      "index": 188,
       "text": "そこにいるのがPAさん",
       "translation": "저기 있는 게~ PA 씨",
       "start_time": "00:12:30",
@@ -6866,9 +6324,9 @@
       "grammar_matches": []
     },
     {
-      "index": 236,
+      "index": 189,
       "text": "おはようございます",
-      "translation": "기재 파손 원인이 되오니 드링크 등은 절대 흩뿌리지 마세요!!",
+      "translation": "까까까깝쳐서 죄송해요옵...",
       "start_time": "00:12:33",
       "end_time": "00:12:34",
       "start_seconds": 753,
@@ -6878,7 +6336,7 @@
       "grammar_matches": []
     },
     {
-      "index": 237,
+      "index": 190,
       "text": "いいい... イキって すみません",
       "translation": "까까까깝쳐서 죄송해요옵...",
       "start_time": "00:12:34",
@@ -6909,43 +6367,12 @@
       "grammar_matches": []
     },
     {
-      "index": 238,
-      "text": "急に どうした!",
-      "translation": "갑자기 왜 그려!?",
+      "index": 191,
+      "text": "急に どうした! やっと帰ってきた (虹夏)おっ リョウ",
+      "translation": "갑자기 왜 그려!? 이제야 돌아왔네 료~!",
       "start_time": "00:12:36",
-      "end_time": "00:12:37",
-      "start_seconds": 756,
-      "end_seconds": 757,
-      "has_jlpt": true,
-      "vocab_matches": [
-        {
-          "surface": "する",
-          "reading": "-",
-          "meaning": "하다",
-          "level": "N4",
-          "surface_in_sentence": "し",
-          "base_form": "する",
-          "pos": "동사"
-        },
-        {
-          "surface": "どう",
-          "reading": "-",
-          "meaning": "어떻게",
-          "level": "N4",
-          "surface_in_sentence": "どう",
-          "base_form": "どう",
-          "pos": "부사"
-        }
-      ],
-      "grammar_matches": []
-    },
-    {
-      "index": 239,
-      "text": "やっと帰ってきた (虹夏)おっ リョウ",
-      "translation": "이제야 돌아왔네 료~!",
-      "start_time": "00:12:38",
       "end_time": "00:12:40",
-      "start_seconds": 758,
+      "start_seconds": 756,
       "end_seconds": 760,
       "has_jlpt": true,
       "vocab_matches": [
@@ -6965,6 +6392,24 @@
           "level": "N3",
           "surface_in_sentence": "やっと",
           "base_form": "やっと",
+          "pos": "부사"
+        },
+        {
+          "surface": "する",
+          "reading": "-",
+          "meaning": "하다",
+          "level": "N4",
+          "surface_in_sentence": "し",
+          "base_form": "する",
+          "pos": "동사"
+        },
+        {
+          "surface": "どう",
+          "reading": "-",
+          "meaning": "어떻게",
+          "level": "N4",
+          "surface_in_sentence": "どう",
+          "base_form": "どう",
           "pos": "부사"
         },
         {
@@ -7007,7 +6452,7 @@
       "grammar_matches": []
     },
     {
-      "index": 240,
+      "index": 192,
       "text": "この子 後藤ひとりちゃん",
       "translation": "얘는 고토 히토리쨩!",
       "start_time": "00:12:41",
@@ -7019,7 +6464,7 @@
       "grammar_matches": []
     },
     {
-      "index": 241,
+      "index": 193,
       "text": "奇跡的に公園にいた ギタリストだよ",
       "translation": "기적적으로 공원에 있던 기타리스트야~",
       "start_time": "00:12:43",
@@ -7050,24 +6495,12 @@
       "grammar_matches": []
     },
     {
-      "index": 242,
-      "text": "へえ~",
-      "translation": "헤에...",
+      "index": 194,
+      "text": "へえ~ 怖っ!",
+      "translation": "헤에... 무섭...!",
       "start_time": "00:12:46",
-      "end_time": "00:12:47",
-      "start_seconds": 766,
-      "end_seconds": 767,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 243,
-      "text": "怖っ!",
-      "translation": "무섭...!",
-      "start_time": "00:12:47",
       "end_time": "00:12:49",
-      "start_seconds": 767,
+      "start_seconds": 766,
       "end_seconds": 769,
       "has_jlpt": true,
       "vocab_matches": [
@@ -7084,7 +6517,7 @@
       "grammar_matches": []
     },
     {
-      "index": 244,
+      "index": 195,
       "text": "にらまれてる?",
       "translation": "무섭...!",
       "start_time": "00:12:47",
@@ -7096,7 +6529,7 @@
       "grammar_matches": []
     },
     {
-      "index": 245,
+      "index": 196,
       "text": "この子は ベースの山田(やまだ)リョウだよ",
       "translation": "얘는 베이스를 맡고 있는 야마다 료야~",
       "start_time": "00:12:49",
@@ -7118,7 +6551,7 @@
       "grammar_matches": []
     },
     {
-      "index": 246,
+      "index": 197,
       "text": "ごご... 後藤ひとりです 大変 申し訳ございません!",
       "translation": "고고고토 히토리입니다! 대단히 죄송합니다!!",
       "start_time": "00:12:51",
@@ -7130,24 +6563,12 @@
       "grammar_matches": []
     },
     {
-      "index": 247,
-      "text": "えっ ちょっ...",
-      "translation": "어, 잠깐...!",
+      "index": 198,
+      "text": "えっ ちょっ... 大丈夫だから リョウは表情が出にくいだけ",
+      "translation": "어, 잠깐...! 괜찮다니까~ 료는 표정이 잘 안 드러나는 것뿐!",
       "start_time": "00:12:54",
-      "end_time": "00:12:55",
-      "start_seconds": 774,
-      "end_seconds": 775,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 248,
-      "text": "大丈夫だから リョウは表情が出にくいだけ",
-      "translation": "괜찮다니까~ 료는 표정이 잘 안 드러나는 것뿐!",
-      "start_time": "00:12:55",
       "end_time": "00:12:59",
-      "start_seconds": 775,
+      "start_seconds": 774,
       "end_seconds": 779,
       "has_jlpt": true,
       "vocab_matches": [
@@ -7198,7 +6619,7 @@
       ]
     },
     {
-      "index": 249,
+      "index": 199,
       "text": "“変人”って言ったら喜ぶよ~",
       "translation": "괴짜라고 하면 기뻐한다~?",
       "start_time": "00:12:59",
@@ -7242,7 +6663,7 @@
       ]
     },
     {
-      "index": 250,
+      "index": 200,
       "text": "うれしくないし",
       "translation": "하나도 안 기쁘거든~",
       "start_time": "00:13:01",
@@ -7264,15 +6685,24 @@
       "grammar_matches": []
     },
     {
-      "index": 251,
-      "text": "うれしそうだ",
-      "translation": "기뻐 보이네...",
+      "index": 201,
+      "text": "うれしそうだ そういえば 店長が... (虹夏)えっ?",
+      "translation": "기뻐 보이네... 그러고 보니 점장님이... 어!?",
       "start_time": "00:13:03",
-      "end_time": "00:13:04",
+      "end_time": "00:13:06",
       "start_seconds": 783,
-      "end_seconds": 784,
+      "end_seconds": 786,
       "has_jlpt": true,
       "vocab_matches": [
+        {
+          "surface": "夏",
+          "reading": "なつ",
+          "meaning": "여름",
+          "level": "N4",
+          "surface_in_sentence": "夏",
+          "base_form": "夏",
+          "pos": "명사"
+        },
         {
           "surface": "嬉しい",
           "reading": "うれしい",
@@ -7281,6 +6711,33 @@
           "surface_in_sentence": "うれし",
           "base_form": "うれしい",
           "pos": "형용사"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "meaning": "집(장소, 공간)",
+          "level": "N4",
+          "surface_in_sentence": "いえ",
+          "base_form": "いう",
+          "pos": "동사"
+        },
+        {
+          "surface": "店長",
+          "reading": "てんちょう",
+          "meaning": "점장(님)",
+          "level": "N4",
+          "surface_in_sentence": "店長",
+          "base_form": "店長",
+          "pos": "명사"
+        },
+        {
+          "surface": "言う",
+          "reading": "いう",
+          "meaning": "말하다",
+          "level": "N4",
+          "surface_in_sentence": "いえ",
+          "base_form": "いう",
+          "pos": "동사"
         }
       ],
       "grammar_matches": [
@@ -7319,57 +6776,7 @@
             "そうだ"
           ],
           "is_pattern": false
-        }
-      ]
-    },
-    {
-      "index": 252,
-      "text": "そういえば 店長が... (虹夏)えっ?",
-      "translation": "그러고 보니 점장님이... 어!?",
-      "start_time": "00:13:04",
-      "end_time": "00:13:06",
-      "start_seconds": 784,
-      "end_seconds": 786,
-      "has_jlpt": true,
-      "vocab_matches": [
-        {
-          "surface": "夏",
-          "reading": "なつ",
-          "meaning": "여름",
-          "level": "N4",
-          "surface_in_sentence": "夏",
-          "base_form": "夏",
-          "pos": "명사"
         },
-        {
-          "surface": "家",
-          "reading": "いえ",
-          "meaning": "집(장소, 공간)",
-          "level": "N4",
-          "surface_in_sentence": "いえ",
-          "base_form": "いう",
-          "pos": "동사"
-        },
-        {
-          "surface": "店長",
-          "reading": "てんちょう",
-          "meaning": "점장(님)",
-          "level": "N4",
-          "surface_in_sentence": "店長",
-          "base_form": "店長",
-          "pos": "명사"
-        },
-        {
-          "surface": "言う",
-          "reading": "いう",
-          "meaning": "말하다",
-          "level": "N4",
-          "surface_in_sentence": "いえ",
-          "base_form": "いう",
-          "pos": "동사"
-        }
-      ],
-      "grammar_matches": [
         {
           "label": "〜ば",
           "meaning": "~하면",
@@ -7378,16 +6785,16 @@
           "structure": "동사/형용사 ば형",
           "note": "조건이 성립하면 뒤 문장이 이어지는 구조다.",
           "matched_texts": [
-            "そういえば"
+            "うれしそうだそういえば"
           ],
           "is_pattern": true
         }
       ]
     },
     {
-      "index": 253,
+      "index": 202,
       "text": "時間まで練習しとけって",
-      "translation": "어!? 공연 시간까지 연습해두래",
+      "translation": "공연 시간까지 연습해두래",
       "start_time": "00:13:06",
       "end_time": "00:13:08",
       "start_seconds": 786,
@@ -7425,7 +6832,7 @@
       "grammar_matches": []
     },
     {
-      "index": 254,
+      "index": 203,
       "text": "あと 虹夏が勝手に ライブハウス抜け出したこと",
       "translation": "그리고 니지카가 멋대로 라이브 하우스 뛰쳐나간 걸",
       "start_time": "00:13:08",
@@ -7456,7 +6863,7 @@
       "grammar_matches": []
     },
     {
-      "index": 255,
+      "index": 204,
       "text": "怒りながら買い出し行った",
       "translation": "화내면서 물건 사러 나갔어",
       "start_time": "00:13:11",
@@ -7512,7 +6919,7 @@
       ]
     },
     {
-      "index": 256,
+      "index": 205,
       "text": "ひい~ ウソ!",
       "translation": "히익, 거짓말!!",
       "start_time": "00:13:13",
@@ -7543,7 +6950,7 @@
       "grammar_matches": []
     },
     {
-      "index": 257,
+      "index": 206,
       "text": "帰ってくる前に スタジオ行こう",
       "translation": "돌아오기 전에 스튜디오로 가자...!",
       "start_time": "00:13:13",
@@ -7605,7 +7012,7 @@
       ]
     },
     {
-      "index": 258,
+      "index": 207,
       "text": "ひとりちゃんも (ひとり)あっ",
       "translation": "히토리쨩도~",
       "start_time": "00:13:17",
@@ -7617,39 +7024,36 @@
       "grammar_matches": []
     },
     {
-      "index": 259,
-      "text": "ほら!",
-      "translation": "얼른!",
+      "index": 208,
+      "text": "ほら! は... はい!",
+      "translation": "얼른! 아, 네...!",
       "start_time": "00:13:18",
-      "end_time": "00:13:19",
-      "start_seconds": 798,
-      "end_seconds": 799,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 260,
-      "text": "は... はい!",
-      "translation": "아, 네...!",
-      "start_time": "00:13:20",
       "end_time": "00:13:21",
-      "start_seconds": 800,
+      "start_seconds": 798,
       "end_seconds": 801,
       "has_jlpt": false,
       "vocab_matches": [],
       "grammar_matches": []
     },
     {
-      "index": 261,
-      "text": "現実は怖い",
-      "translation": "현실은 무섭다...",
+      "index": 209,
+      "text": "現実は怖い でも これから楽しいことが たくさん待っている気がする",
+      "translation": "현실은 무섭다... 하지만... 앞으로 즐거운 일들이 잔뜩 기다리고 있을 것만 같아...!",
       "start_time": "00:13:22",
-      "end_time": "00:13:23",
+      "end_time": "00:13:29",
       "start_seconds": 802,
-      "end_seconds": 803,
+      "end_seconds": 809,
       "has_jlpt": true,
       "vocab_matches": [
+        {
+          "surface": "これから",
+          "reading": "-",
+          "meaning": "이제부터, 앞으로",
+          "level": "N3",
+          "surface_in_sentence": "これから",
+          "base_form": "これから",
+          "pos": "부사"
+        },
         {
           "surface": "怖い",
           "reading": "こわい",
@@ -7667,28 +7071,6 @@
           "surface_in_sentence": "現実",
           "base_form": "現実",
           "pos": "명사"
-        }
-      ],
-      "grammar_matches": []
-    },
-    {
-      "index": 262,
-      "text": "でも これから楽しいことが たくさん待っている気がする",
-      "translation": "하지만... 앞으로 즐거운 일들이 잔뜩 기다리고 있을 것만 같아...!",
-      "start_time": "00:13:24",
-      "end_time": "00:13:29",
-      "start_seconds": 804,
-      "end_seconds": 809,
-      "has_jlpt": true,
-      "vocab_matches": [
-        {
-          "surface": "これから",
-          "reading": "-",
-          "meaning": "이제부터, 앞으로",
-          "level": "N3",
-          "surface_in_sentence": "これから",
-          "base_form": "これから",
-          "pos": "부사"
         },
         {
           "surface": "いる",
@@ -7764,7 +7146,7 @@
       ]
     },
     {
-      "index": 263,
+      "index": 210,
       "text": "これ 今日のセットリストとスコア",
       "translation": "받아! 오늘 세트 리스트랑 악보!",
       "start_time": "00:13:30",
@@ -7804,58 +7186,24 @@
       "grammar_matches": []
     },
     {
-      "index": 264,
-      "text": "あっ あの...",
-      "translation": "아, 저기...",
+      "index": 211,
+      "text": "あっ あの... バンドメンバーは?",
+      "translation": "아, 저기... 밴드 멤버는...?",
       "start_time": "00:13:33",
-      "end_time": "00:13:34",
-      "start_seconds": 813,
-      "end_seconds": 814,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 265,
-      "text": "バンドメンバーは?",
-      "translation": "밴드 멤버는...?",
-      "start_time": "00:13:34",
       "end_time": "00:13:36",
-      "start_seconds": 814,
+      "start_seconds": 813,
       "end_seconds": 816,
       "has_jlpt": false,
       "vocab_matches": [],
       "grammar_matches": []
     },
     {
-      "index": 266,
-      "text": "これで全員だよ",
-      "translation": "이걸로 끝이야~",
+      "index": 212,
+      "text": "これで全員だよ あたしたち 今回は インストバンドだから",
+      "translation": "이걸로 끝이야~ 우리는 이번에 Inst. 밴드니까!",
       "start_time": "00:13:36",
-      "end_time": "00:13:37",
-      "start_seconds": 816,
-      "end_seconds": 817,
-      "has_jlpt": true,
-      "vocab_matches": [
-        {
-          "surface": "全員",
-          "reading": "ぜんいん",
-          "meaning": "전원",
-          "level": "N4",
-          "surface_in_sentence": "全員",
-          "base_form": "全員",
-          "pos": "명사"
-        }
-      ],
-      "grammar_matches": []
-    },
-    {
-      "index": 267,
-      "text": "あたしたち 今回は インストバンドだから",
-      "translation": "우리는 이번에 Inst. 밴드니까!",
-      "start_time": "00:13:37",
       "end_time": "00:13:39",
-      "start_seconds": 817,
+      "start_seconds": 816,
       "end_seconds": 819,
       "has_jlpt": true,
       "vocab_matches": [
@@ -7866,6 +7214,15 @@
           "level": "N4",
           "surface_in_sentence": "今回",
           "base_form": "今回",
+          "pos": "명사"
+        },
+        {
+          "surface": "全員",
+          "reading": "ぜんいん",
+          "meaning": "전원",
+          "level": "N4",
+          "surface_in_sentence": "全員",
+          "base_form": "全員",
           "pos": "명사"
         }
       ],
@@ -7885,7 +7242,7 @@
       ]
     },
     {
-      "index": 268,
+      "index": 213,
       "text": "うん この曲ならいける",
       "translation": "응...! 이 곡이라면 할 수 있겠어!",
       "start_time": "00:13:40",
@@ -7897,7 +7254,7 @@
       "grammar_matches": []
     },
     {
-      "index": 269,
+      "index": 214,
       "text": "でも ボーカルいない分 演奏 頑張らないと",
       "translation": "하지만 보컬이 없는만큼 연주를 열심히 해야 할 텐데...",
       "start_time": "00:13:43",
@@ -7950,7 +7307,7 @@
       ]
     },
     {
-      "index": 270,
+      "index": 215,
       "text": "私 ギターうまいらしいし",
       "translation": "난 기타 잘 친다고들 하니까 할 수 있어...!",
       "start_time": "00:13:47",
@@ -8027,7 +7384,7 @@
       ]
     },
     {
-      "index": 271,
+      "index": 216,
       "text": "やれる やれるはず!",
       "translation": "할 수 있을걸...!",
       "start_time": "00:13:48",
@@ -8052,9 +7409,9 @@
       ]
     },
     {
-      "index": 272,
+      "index": 217,
       "text": "フンフン フンフン フン...",
-      "translation": "할 수 있을걸...!",
+      "translation": "고릴라...?",
       "start_time": "00:13:50",
       "end_time": "00:13:53",
       "start_seconds": 830,
@@ -8064,8 +7421,8 @@
       "grammar_matches": []
     },
     {
-      "index": 273,
-      "text": "ゴリラ?",
+      "index": 218,
+      "text": "ゴリラ? フンフン!",
       "translation": "고릴라...?",
       "start_time": "00:13:53",
       "end_time": "00:13:54",
@@ -8076,19 +7433,7 @@
       "grammar_matches": []
     },
     {
-      "index": 274,
-      "text": "フンフン!",
-      "translation": "고릴라...?",
-      "start_time": "00:13:53",
-      "end_time": "00:13:54",
-      "start_seconds": 833,
-      "end_seconds": 834,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 275,
+      "index": 219,
       "text": "演奏聴いたら 2人とも驚くかも",
       "translation": "연주를 들으면 둘 다 깜짝 놀랄지도~",
       "start_time": "00:13:57",
@@ -8132,7 +7477,7 @@
       ]
     },
     {
-      "index": 276,
+      "index": 220,
       "text": "だって ネットだと結構... いや わりと評判いいし",
       "translation": "그야 인터넷에서는 꽤나... 아니, 제법 평가 좋으니깐...?",
       "start_time": "00:14:00",
@@ -8176,7 +7521,7 @@
       ]
     },
     {
-      "index": 277,
+      "index": 221,
       "text": "登録者数3万人だし",
       "translation": "구독자수 3만도 찍었구...!",
       "start_time": "00:14:05",
@@ -8216,13 +7561,13 @@
       "grammar_matches": []
     },
     {
-      "index": 278,
-      "text": "よし やってやる!",
-      "translation": "그 다음에 서서히 손에 익히는 느낌으로~",
+      "index": 222,
+      "text": "よし やってやる! それじゃ いくよ!",
+      "translation": "해주마~! 그럼, 간다♪",
       "start_time": "00:14:07",
-      "end_time": "00:14:09",
+      "end_time": "00:14:10",
       "start_seconds": 847,
-      "end_seconds": 849,
+      "end_seconds": 850,
       "has_jlpt": true,
       "vocab_matches": [
         {
@@ -8238,19 +7583,7 @@
       "grammar_matches": []
     },
     {
-      "index": 279,
-      "text": "それじゃ いくよ!",
-      "translation": "그럼, 간다♪",
-      "start_time": "00:14:09",
-      "end_time": "00:14:10",
-      "start_seconds": 849,
-      "end_seconds": 850,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 280,
+      "index": 223,
       "text": "ふ~ん",
       "translation": "후~",
       "start_time": "00:14:21",
@@ -8281,31 +7614,19 @@
       "grammar_matches": []
     },
     {
-      "index": 281,
-      "text": "うん",
-      "translation": "좋아, 가자!",
-      "start_time": "00:14:24",
-      "end_time": "00:14:25",
-      "start_seconds": 864,
-      "end_seconds": 865,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 282,
-      "text": "ド下手だ (リョウ)プッ",
+      "index": 224,
+      "text": "うん ド下手だ (リョウ)プッ",
       "translation": "졸라 못 친다...!",
-      "start_time": "00:14:26",
+      "start_time": "00:14:24",
       "end_time": "00:14:27",
-      "start_seconds": 866,
+      "start_seconds": 864,
       "end_seconds": 867,
       "has_jlpt": false,
       "vocab_matches": [],
       "grammar_matches": []
     },
     {
-      "index": 283,
+      "index": 225,
       "text": "ええ~っ!",
       "translation": "어어어어째서!!?",
       "start_time": "00:14:27",
@@ -8317,7 +7638,7 @@
       "grammar_matches": []
     },
     {
-      "index": 284,
+      "index": 226,
       "text": "ななな... なんで?",
       "translation": "어어어어째서!!?",
       "start_time": "00:14:29",
@@ -8329,24 +7650,12 @@
       "grammar_matches": []
     },
     {
-      "index": 285,
-      "text": "あっ ウソウソ",
+      "index": 227,
+      "text": "あっ ウソウソ 私 ギターヒーローなのに",
       "translation": "어어어어째서!!?",
       "start_time": "00:14:29",
-      "end_time": "00:14:30",
-      "start_seconds": 869,
-      "end_seconds": 870,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 286,
-      "text": "私 ギターヒーローなのに",
-      "translation": "어어어어째서!!?",
-      "start_time": "00:14:30",
       "end_time": "00:14:32",
-      "start_seconds": 870,
+      "start_seconds": 869,
       "end_seconds": 872,
       "has_jlpt": true,
       "vocab_matches": [
@@ -8363,9 +7672,9 @@
       "grammar_matches": []
     },
     {
-      "index": 287,
+      "index": 228,
       "text": "登録者3万人なのに~?",
-      "translation": "구독자도 3만 찍었는데...?",
+      "translation": "내가 기타 히어로인데!?",
       "start_time": "00:14:32",
       "end_time": "00:14:34",
       "start_seconds": 872,
@@ -8394,7 +7703,7 @@
       "grammar_matches": []
     },
     {
-      "index": 288,
+      "index": 229,
       "text": "説明しよう!",
       "translation": "설명하지이!!",
       "start_time": "00:14:34",
@@ -8425,9 +7734,9 @@
       "grammar_matches": []
     },
     {
-      "index": 289,
+      "index": 230,
       "text": "えっ?",
-      "translation": "시시실례하겠습니다!",
+      "translation": "구독자도 3만 찍었는데...?",
       "start_time": "00:14:34",
       "end_time": "00:14:36",
       "start_seconds": 874,
@@ -8437,7 +7746,7 @@
       "grammar_matches": []
     },
     {
-      "index": 290,
+      "index": 231,
       "text": "バンドは 生身の人間と",
       "translation": "~기타오의 알기 쉬운 히토리 강좌~",
       "start_time": "00:14:36",
@@ -8449,7 +7758,7 @@
       "grammar_matches": []
     },
     {
-      "index": 291,
+      "index": 232,
       "text": "呼吸を合わせることが とっても重要だけど",
       "translation": "밴드는 살아 있는 인간이랑 호흡을 맞추는 게 정말 중요한데~",
       "start_time": "00:14:38",
@@ -8502,7 +7811,7 @@
       ]
     },
     {
-      "index": 292,
+      "index": 233,
       "text": "コミュ症の ひとりは 目すら合わせられないので",
       "translation": "커뮤장애인 히토리는 눈조차 못 마주치니까",
       "start_time": "00:14:41",
@@ -8533,7 +7842,7 @@
       "grammar_matches": []
     },
     {
-      "index": 293,
+      "index": 234,
       "text": "突っ走る演奏をする!",
       "translation": "독불장군같은 연주를 하지!",
       "start_time": "00:14:43",
@@ -8564,7 +7873,7 @@
       "grammar_matches": []
     },
     {
-      "index": 294,
+      "index": 235,
       "text": "ソロ弾きは最強でも",
       "translation": "솔로로 칠 때는 최강이어도~",
       "start_time": "00:14:46",
@@ -8586,7 +7895,7 @@
       "grammar_matches": []
     },
     {
-      "index": 295,
+      "index": 236,
       "text": "バンドになるとミジンコ以下",
       "translation": "밴드가 되면 물벼룩 이하!",
       "start_time": "00:14:47",
@@ -8617,34 +7926,12 @@
       "grammar_matches": []
     },
     {
-      "index": 296,
-      "text": "最弱になるのだ!",
-      "translation": "최약이 되는 것이다!!",
+      "index": 237,
+      "text": "最弱になるのだ! どうも プランクトン後藤で~す",
+      "translation": "최약이 되는 것이다!! 안녕하십쇼 플랑크톤 고토입니돠아...",
       "start_time": "00:14:50",
-      "end_time": "00:14:51",
-      "start_seconds": 890,
-      "end_seconds": 891,
-      "has_jlpt": true,
-      "vocab_matches": [
-        {
-          "surface": "なる",
-          "reading": "-",
-          "meaning": "(벨 등이) 울리다",
-          "level": "N4",
-          "surface_in_sentence": "なる",
-          "base_form": "なる",
-          "pos": "동사"
-        }
-      ],
-      "grammar_matches": []
-    },
-    {
-      "index": 297,
-      "text": "どうも プランクトン後藤で~す",
-      "translation": "안녕하십쇼 플랑크톤 고토입니돠아...",
-      "start_time": "00:14:51",
       "end_time": "00:14:54",
-      "start_seconds": 891,
+      "start_seconds": 890,
       "end_seconds": 894,
       "has_jlpt": true,
       "vocab_matches": [
@@ -8665,6 +7952,15 @@
           "surface_in_sentence": "どうも",
           "base_form": "どうも",
           "pos": "부사"
+        },
+        {
+          "surface": "なる",
+          "reading": "-",
+          "meaning": "(벨 등이) 울리다",
+          "level": "N4",
+          "surface_in_sentence": "なる",
+          "base_form": "なる",
+          "pos": "동사"
         }
       ],
       "grammar_matches": [
@@ -8683,7 +7979,7 @@
       ]
     },
     {
-      "index": 298,
+      "index": 238,
       "text": "売れないお笑い芸人みたいな人 出てきた!",
       "translation": "안 팔리는 개그맨같은 사람이 나타났다!!",
       "start_time": "00:14:54",
@@ -8745,7 +8041,7 @@
       ]
     },
     {
-      "index": 299,
+      "index": 239,
       "text": "こうして 後藤ひとりは灰となり",
       "translation": "이리 하여 고토 히토리는 잿더미가 되어",
       "start_time": "00:14:57",
@@ -8767,7 +8063,7 @@
       "grammar_matches": []
     },
     {
-      "index": 300,
+      "index": 240,
       "text": "もう二度とギターを持つことは なかったのでした",
       "translation": "다시는 기타를 쥐는 일이 없었답니다...",
       "start_time": "00:14:59",
@@ -8807,7 +8103,7 @@
       "grammar_matches": []
     },
     {
-      "index": 301,
+      "index": 241,
       "text": "ちょちょ... ちょちょ!",
       "translation": "자자자자잠깐 잠깐, 잠깐만!",
       "start_time": "00:15:09",
@@ -8819,13 +8115,13 @@
       "grammar_matches": []
     },
     {
-      "index": 302,
-      "text": "ねえ 出てきて~",
-      "translation": "제발 좀 나와봐~!",
+      "index": 242,
+      "text": "ねえ 出てきて~ 本番 始まっちゃうよ",
+      "translation": "제발 좀 나와봐~! 공연 시작하겠어...!",
       "start_time": "00:15:11",
-      "end_time": "00:15:12",
+      "end_time": "00:15:14",
       "start_seconds": 911,
-      "end_seconds": 912,
+      "end_seconds": 914,
       "has_jlpt": true,
       "vocab_matches": [
         {
@@ -8835,6 +8131,15 @@
           "level": "N4",
           "surface_in_sentence": "出",
           "base_form": "出る",
+          "pos": "동사"
+        },
+        {
+          "surface": "始まる",
+          "reading": "はじまる",
+          "meaning": "시작되다",
+          "level": "N4",
+          "surface_in_sentence": "始まっ",
+          "base_form": "始まる",
           "pos": "동사"
         },
         {
@@ -8859,31 +8164,9 @@
       "grammar_matches": []
     },
     {
-      "index": 303,
-      "text": "本番 始まっちゃうよ",
-      "translation": "여...",
-      "start_time": "00:15:12",
-      "end_time": "00:15:14",
-      "start_seconds": 912,
-      "end_seconds": 914,
-      "has_jlpt": true,
-      "vocab_matches": [
-        {
-          "surface": "始まる",
-          "reading": "はじまる",
-          "meaning": "시작되다",
-          "level": "N4",
-          "surface_in_sentence": "始まっ",
-          "base_form": "始まる",
-          "pos": "동사"
-        }
-      ],
-      "grammar_matches": []
-    },
-    {
-      "index": 304,
+      "index": 243,
       "text": "やっ ややや... やっぱり できません!",
-      "translation": "여여여역시 못하겠어요!",
+      "translation": "여...",
       "start_time": "00:15:14",
       "end_time": "00:15:16",
       "start_seconds": 914,
@@ -8912,7 +8195,7 @@
       "grammar_matches": []
     },
     {
-      "index": 305,
+      "index": 244,
       "text": "しょうがないよ 即席バンドなんだし",
       "translation": "어쩔 수 없잖아 즉석 밴드인데!",
       "start_time": "00:15:16",
@@ -8924,7 +8207,7 @@
       "grammar_matches": []
     },
     {
-      "index": 306,
+      "index": 245,
       "text": "あたしだって そんな うまくないし",
       "translation": "나도 그닥 잘 치진 못하니까!",
       "start_time": "00:15:19",
@@ -8968,13 +8251,13 @@
       ]
     },
     {
-      "index": 307,
-      "text": "私は うまい",
-      "translation": "난 잘 치지!",
+      "index": 246,
+      "text": "私は うまい ヘッ... ヘヘヘヘ",
+      "translation": "난 잘 치지! 헤, 헤헤헤...",
       "start_time": "00:15:21",
-      "end_time": "00:15:22",
+      "end_time": "00:15:24",
       "start_seconds": 921,
-      "end_seconds": 922,
+      "end_seconds": 924,
       "has_jlpt": true,
       "vocab_matches": [
         {
@@ -8999,19 +8282,7 @@
       "grammar_matches": []
     },
     {
-      "index": 308,
-      "text": "ヘッ... ヘヘヘヘ",
-      "translation": "헤, 헤헤헤...",
-      "start_time": "00:15:22",
-      "end_time": "00:15:24",
-      "start_seconds": 922,
-      "end_seconds": 924,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 309,
+      "index": 247,
       "text": "とりあえず こっち向いて!",
       "translation": "아무튼 여기 좀 보자~!",
       "start_time": "00:15:24",
@@ -9033,7 +8304,7 @@
       "grammar_matches": []
     },
     {
-      "index": 310,
+      "index": 248,
       "text": "現実逃避しないで~",
       "translation": "현실도피 하지 말고~!",
       "start_time": "00:15:26",
@@ -9077,7 +8348,7 @@
       ]
     },
     {
-      "index": 311,
+      "index": 249,
       "text": "あっ エ... MCでも 全くお役に立てないですし",
       "translation": "에..MC에서도 전혀 도움이 안 될 텐데...",
       "start_time": "00:15:27",
@@ -9102,7 +8373,7 @@
       ]
     },
     {
-      "index": 312,
+      "index": 250,
       "text": "ア... アハハハ 私の命をもって ハラキリショーでも...",
       "translation": "아..아하하하하!! 제 목숨으로 할복 쇼라도~!!",
       "start_time": "00:15:32",
@@ -9124,7 +8395,7 @@
       "grammar_matches": []
     },
     {
-      "index": 313,
+      "index": 251,
       "text": "バ... バンド名くらい 覚えて帰ってもらえるはず...",
       "translation": "배..밴드 이름 정도는 다들 외우고 가주실지도...",
       "start_time": "00:15:36",
@@ -9168,7 +8439,7 @@
       ]
     },
     {
-      "index": 314,
+      "index": 252,
       "text": "ド下手で すみません!",
       "translation": "존나 못 쳐서 죄송합니다!!",
       "start_time": "00:15:39",
@@ -9180,13 +8451,13 @@
       "grammar_matches": []
     },
     {
-      "index": 315,
-      "text": "ロックすぎる!",
-      "translation": "존나 못 쳐서 죄송합니다!!",
+      "index": 253,
+      "text": "ロックすぎる! 大丈夫",
+      "translation": "걱정 마",
       "start_time": "00:15:40",
-      "end_time": "00:15:41",
+      "end_time": "00:15:43",
       "start_seconds": 940,
-      "end_seconds": 941,
+      "end_seconds": 943,
       "has_jlpt": true,
       "vocab_matches": [
         {
@@ -9215,19 +8486,7 @@
       ]
     },
     {
-      "index": 316,
-      "text": "大丈夫",
-      "translation": "걱정 마",
-      "start_time": "00:15:41",
-      "end_time": "00:15:43",
-      "start_seconds": 941,
-      "end_seconds": 943,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 317,
+      "index": 254,
       "text": "ひとりがヤジられたら 私がベースで ポムッてするから",
       "translation": "히토리가 야유받으면 내가 베이스로",
       "start_time": "00:15:43",
@@ -9262,7 +8521,7 @@
       ]
     },
     {
-      "index": 318,
+      "index": 255,
       "text": "べ... ベース そんなファンシーな音しますかね",
       "translation": "베..베이스가... 그런 깜찍한 소리가 나오려나요...",
       "start_time": "00:15:47",
@@ -9293,7 +8552,7 @@
       "grammar_matches": []
     },
     {
-      "index": 319,
+      "index": 256,
       "text": "流血沙汰もロックだから",
       "translation": "유혈 사태가 벌어지는 것도 Rock하니까",
       "start_time": "00:15:50",
@@ -9318,37 +8577,12 @@
       ]
     },
     {
-      "index": 320,
-      "text": "ロックだから",
+      "index": 257,
+      "text": "ロックだから ロック 免罪符すぎる!",
       "translation": "Rock이니까",
       "start_time": "00:15:52",
-      "end_time": "00:15:53",
-      "start_seconds": 952,
-      "end_seconds": 953,
-      "has_jlpt": true,
-      "vocab_matches": [],
-      "grammar_matches": [
-        {
-          "label": "だから",
-          "meaning": "그러니까",
-          "level": "N3",
-          "category": "접속사",
-          "structure": "だから",
-          "note": "그러니까",
-          "matched_texts": [
-            "だから"
-          ],
-          "is_pattern": false
-        }
-      ]
-    },
-    {
-      "index": 321,
-      "text": "ロック 免罪符すぎる!",
-      "translation": "Rock이 너무 만능 면죄부인데!?",
-      "start_time": "00:15:53",
       "end_time": "00:15:55",
-      "start_seconds": 953,
+      "start_seconds": 952,
       "end_seconds": 955,
       "has_jlpt": true,
       "vocab_matches": [
@@ -9374,11 +8608,23 @@
             "すぎる"
           ],
           "is_pattern": true
+        },
+        {
+          "label": "だから",
+          "meaning": "그러니까",
+          "level": "N3",
+          "category": "접속사",
+          "structure": "だから",
+          "note": "그러니까",
+          "matched_texts": [
+            "だから"
+          ],
+          "is_pattern": false
         }
       ]
     },
     {
-      "index": 322,
+      "index": 258,
       "text": "それに うちのバンド見に来るの 多分 あたしの友達だけだし",
       "translation": "게다가~! 우리 밴드를 보러 오는 건 아마 내 친구밖에 없을 테니까!",
       "start_time": "00:15:55",
@@ -9473,20 +8719,8 @@
       ]
     },
     {
-      "index": 323,
-      "text": "え?",
-      "translation": "미안, 졸려",
-      "start_time": "00:16:00",
-      "end_time": "00:16:00",
-      "start_seconds": 960,
-      "end_seconds": 960,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 324,
-      "text": "私 友達 虹夏だけだから",
+      "index": 259,
+      "text": "え? 私 友達 虹夏だけだから",
       "translation": "에...? 난 친구가 니지카밖에 없으니까",
       "start_time": "00:16:00",
       "end_time": "00:16:03",
@@ -9541,7 +8775,7 @@
       ]
     },
     {
-      "index": 325,
+      "index": 260,
       "text": "普通の女子高生に 演奏の よしあしとか 分かんないって",
       "translation": "평범한 여고생이 연주를 잘하니 못하니~",
       "start_time": "00:16:03",
@@ -9581,7 +8815,7 @@
       "grammar_matches": []
     },
     {
-      "index": 326,
+      "index": 261,
       "text": "炎上しそうな発言",
       "translation": "불판날 거 같은 발언...",
       "start_time": "00:16:07",
@@ -9612,7 +8846,7 @@
       "grammar_matches": []
     },
     {
-      "index": 327,
+      "index": 262,
       "text": "ねっ?",
       "translation": "알겠지?",
       "start_time": "00:16:10",
@@ -9634,7 +8868,7 @@
       "grammar_matches": []
     },
     {
-      "index": 328,
+      "index": 263,
       "text": "だから安心せい!",
       "translation": "그러니까 안심하셔~!",
       "start_time": "00:16:10",
@@ -9669,7 +8903,7 @@
       ]
     },
     {
-      "index": 329,
+      "index": 264,
       "text": "と... 言われても",
       "translation": "그렇게 말씀하셔도...",
       "start_time": "00:16:13",
@@ -9691,7 +8925,7 @@
       "grammar_matches": []
     },
     {
-      "index": 330,
+      "index": 265,
       "text": "私は よしあし分かるけど",
       "translation": "난 좋은지 나쁜지 알 수 있지만!",
       "start_time": "00:16:14",
@@ -9713,7 +8947,7 @@
       "grammar_matches": []
     },
     {
-      "index": 331,
+      "index": 266,
       "text": "リョウは普通じゃないから (リョウ)えっ... エヘヘヘヘ",
       "translation": "료는 정상이 아니니까 헤... 에헤헤헤...",
       "start_time": "00:16:16",
@@ -9735,7 +8969,7 @@
       "grammar_matches": []
     },
     {
-      "index": 332,
+      "index": 267,
       "text": "いや 喜ぶな 喜ぶな",
       "translation": "아니, 기뻐하지 마 기뻐하지 마...",
       "start_time": "00:16:19",
@@ -9757,7 +8991,7 @@
       "grammar_matches": []
     },
     {
-      "index": 333,
+      "index": 268,
       "text": "ごめんなさい",
       "translation": "죄송해요...",
       "start_time": "00:16:21",
@@ -9769,24 +9003,12 @@
       "grammar_matches": []
     },
     {
-      "index": 334,
-      "text": "けど...",
-      "translation": "그래도...!",
+      "index": 269,
+      "text": "けど... 無理強いするもんじゃない",
+      "translation": "그래도...! 강요할 일은 아니지",
       "start_time": "00:16:23",
-      "end_time": "00:16:24",
-      "start_seconds": 983,
-      "end_seconds": 984,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 335,
-      "text": "無理強いするもんじゃない",
-      "translation": "강요할 일은 아니지",
-      "start_time": "00:16:24",
       "end_time": "00:16:26",
-      "start_seconds": 984,
+      "start_seconds": 983,
       "end_seconds": 986,
       "has_jlpt": true,
       "vocab_matches": [
@@ -9803,24 +9025,12 @@
       "grammar_matches": []
     },
     {
-      "index": 336,
-      "text": "だよね",
-      "translation": "그러네...",
-      "start_time": "00:16:27",
-      "end_time": "00:16:28",
-      "start_seconds": 987,
-      "end_seconds": 988,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 337,
-      "text": "無理なお願いして ごめん",
+      "index": 270,
+      "text": "だよね 無理なお願いして ごめん",
       "translation": "억지로 부탁해서 미안해!",
-      "start_time": "00:16:29",
+      "start_time": "00:16:27",
       "end_time": "00:16:30",
-      "start_seconds": 989,
+      "start_seconds": 987,
       "end_seconds": 990,
       "has_jlpt": true,
       "vocab_matches": [
@@ -9855,7 +9065,7 @@
       "grammar_matches": []
     },
     {
-      "index": 338,
+      "index": 271,
       "text": "あっ いや そこは!",
       "translation": "아, 아니 그 부분은...!",
       "start_time": "00:16:30",
@@ -9877,9 +9087,9 @@
       "grammar_matches": []
     },
     {
-      "index": 339,
+      "index": 272,
       "text": "ん?",
-      "translation": "에헤...",
+      "translation": "아, 아니 그 부분은...!",
       "start_time": "00:16:30",
       "end_time": "00:16:32",
       "start_seconds": 990,
@@ -9889,7 +9099,7 @@
       "grammar_matches": []
     },
     {
-      "index": 340,
+      "index": 273,
       "text": "あっ ほ... 本当に うれしかったんです",
       "translation": "저..정말로 기뻤어요... 말 걸어주셔서...",
       "start_time": "00:16:33",
@@ -9911,7 +9121,7 @@
       "grammar_matches": []
     },
     {
-      "index": 341,
+      "index": 274,
       "text": "声かけられて",
       "translation": "저..정말로 기뻤어요... 말 걸어주셔서...",
       "start_time": "00:16:35",
@@ -9951,7 +9161,7 @@
       "grammar_matches": []
     },
     {
-      "index": 342,
+      "index": 275,
       "text": "バンドは ずっと 組みたいと思ってたから",
       "translation": "밴드는 쭉 결성하고 싶다고 생각했었으니까...",
       "start_time": "00:16:37",
@@ -10013,7 +9223,7 @@
       ]
     },
     {
-      "index": 343,
+      "index": 276,
       "text": "で... でも メンバー集まらなくて",
       "translation": "아, 그..그래도 메..멤버가 안 모여서...",
       "start_time": "00:16:40",
@@ -10048,7 +9258,7 @@
       ]
     },
     {
-      "index": 344,
+      "index": 277,
       "text": "だから ふだんは カバー曲 ネットに上げたり",
       "translation": "그래서, 평소에는 커버곡을 인터넷에 올리거나...",
       "start_time": "00:16:43",
@@ -10110,7 +9320,7 @@
       ]
     },
     {
-      "index": 345,
+      "index": 278,
       "text": "ふだんは何弾くの?",
       "translation": "평소에는 뭘 치는데? 아...",
       "start_time": "00:16:46",
@@ -10141,7 +9351,7 @@
       "grammar_matches": []
     },
     {
-      "index": 346,
+      "index": 279,
       "text": "あっ 結成したとき すぐ対応できるように",
       "translation": "결성했을 때 바로 대응할 수 있게...",
       "start_time": "00:16:48",
@@ -10215,7 +9425,7 @@
       ]
     },
     {
-      "index": 347,
+      "index": 280,
       "text": "ここ数年の 売れ線バンドの曲は大体...",
       "translation": "요 몇 년간 히트 친 밴드 곡은 대충 다... 헐, 쩔어!",
       "start_time": "00:16:51",
@@ -10273,15 +9483,24 @@
       "grammar_matches": []
     },
     {
-      "index": 348,
-      "text": "えっ すご!",
-      "translation": "요 몇 년간 히트 친 밴드 곡은 대충 다...",
+      "index": 281,
+      "text": "えっ すご! いや 全然",
+      "translation": "헐, 쩔어! 아뇨, 전혀...",
       "start_time": "00:16:54",
-      "end_time": "00:16:54",
+      "end_time": "00:16:56",
       "start_seconds": 1014,
-      "end_seconds": 1014,
+      "end_seconds": 1016,
       "has_jlpt": true,
       "vocab_matches": [
+        {
+          "surface": "全然",
+          "reading": "ぜんぜん",
+          "meaning": "전혀",
+          "level": "N3",
+          "surface_in_sentence": "全然",
+          "base_form": "全然",
+          "pos": "부사"
+        },
         {
           "surface": "凄い",
           "reading": "すごい",
@@ -10295,29 +9514,7 @@
       "grammar_matches": []
     },
     {
-      "index": 349,
-      "text": "いや 全然",
-      "translation": "아뇨, 전혀...",
-      "start_time": "00:16:55",
-      "end_time": "00:16:56",
-      "start_seconds": 1015,
-      "end_seconds": 1016,
-      "has_jlpt": true,
-      "vocab_matches": [
-        {
-          "surface": "全然",
-          "reading": "ぜんぜん",
-          "meaning": "전혀",
-          "level": "N3",
-          "surface_in_sentence": "全然",
-          "base_form": "全然",
-          "pos": "부사"
-        }
-      ],
-      "grammar_matches": []
-    },
-    {
-      "index": 350,
+      "index": 282,
       "text": "結局 こんな感じになって",
       "translation": "결국 이런 꼬라지라...",
       "start_time": "00:16:56",
@@ -10348,7 +9545,7 @@
       "grammar_matches": []
     },
     {
-      "index": 351,
+      "index": 283,
       "text": "やっぱり 私には 誰かとバンド組むなんて...",
       "translation": "역시 저로서는 누군가랑 밴드를 한다는 건...",
       "start_time": "00:16:59",
@@ -10383,7 +9580,7 @@
       ]
     },
     {
-      "index": 352,
+      "index": 284,
       "text": "売れ線のカバーばっか...",
       "translation": "팔리는 곡 커버만 쳤다니...",
       "start_time": "00:17:03",
@@ -10432,7 +9629,7 @@
       "grammar_matches": []
     },
     {
-      "index": 353,
+      "index": 285,
       "text": "なんか ギターヒーローさんみたいだね",
       "translation": "어째 기타 히어로 씨 같다?",
       "start_time": "00:17:05",
@@ -10488,15 +9685,24 @@
       ]
     },
     {
-      "index": 354,
-      "text": "って 知ってる?",
+      "index": 286,
+      "text": "って 知ってる? ギターヒーロー",
       "translation": "근데, 알아?",
       "start_time": "00:17:07",
-      "end_time": "00:17:08",
+      "end_time": "00:17:11",
       "start_seconds": 1027,
-      "end_seconds": 1028,
+      "end_seconds": 1031,
       "has_jlpt": true,
       "vocab_matches": [
+        {
+          "surface": "ギター",
+          "reading": "",
+          "meaning": "기타",
+          "level": "N4",
+          "surface_in_sentence": "ギター",
+          "base_form": "ギター",
+          "pos": "명사"
+        },
         {
           "surface": "知る",
           "reading": "しる",
@@ -10510,58 +9716,12 @@
       "grammar_matches": []
     },
     {
-      "index": 355,
-      "text": "ギターヒーロー",
-      "translation": "기타 히어로...?",
-      "start_time": "00:17:09",
-      "end_time": "00:17:11",
-      "start_seconds": 1029,
-      "end_seconds": 1031,
-      "has_jlpt": true,
-      "vocab_matches": [
-        {
-          "surface": "ギター",
-          "reading": "",
-          "meaning": "기타",
-          "level": "N4",
-          "surface_in_sentence": "ギター",
-          "base_form": "ギター",
-          "pos": "명사"
-        }
-      ],
-      "grammar_matches": []
-    },
-    {
-      "index": 356,
-      "text": "えっ!",
-      "translation": "어, 나!?",
+      "index": 287,
+      "text": "えっ! 私? 知らないなら あとでURL送るよ",
+      "translation": "어, 나!? 모른다면 나중에 URL 보내줄게!",
       "start_time": "00:17:11",
-      "end_time": "00:17:12",
-      "start_seconds": 1031,
-      "end_seconds": 1032,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 357,
-      "text": "私?",
-      "translation": "어, 나!?",
-      "start_time": "00:17:11",
-      "end_time": "00:17:12",
-      "start_seconds": 1031,
-      "end_seconds": 1032,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 358,
-      "text": "知らないなら あとでURL送るよ",
-      "translation": "모른다면 나중에 URL 보내줄게!",
-      "start_time": "00:17:13",
       "end_time": "00:17:15",
-      "start_seconds": 1033,
+      "start_seconds": 1031,
       "end_seconds": 1035,
       "has_jlpt": true,
       "vocab_matches": [
@@ -10596,7 +9756,7 @@
       "grammar_matches": []
     },
     {
-      "index": 359,
+      "index": 288,
       "text": "もう最高に うまいから 聴いてみて!",
       "translation": "진짜 최고로 잘 치니까 꼭 들어봐!",
       "start_time": "00:17:15",
@@ -10654,7 +9814,7 @@
       "grammar_matches": []
     },
     {
-      "index": 360,
+      "index": 289,
       "text": "最高?",
       "translation": "최고오오~?",
       "start_time": "00:17:18",
@@ -10676,7 +9836,7 @@
       "grammar_matches": []
     },
     {
-      "index": 361,
+      "index": 290,
       "text": "私も オススメに 何度も上がってくるから",
       "translation": "나도 추천 영상으로 계속 올라오니까 본 적 있는데",
       "start_time": "00:17:20",
@@ -10707,9 +9867,9 @@
       "grammar_matches": []
     },
     {
-      "index": 362,
+      "index": 291,
       "text": "見たことあるけど すごく うまかった",
-      "translation": "엄청 잘 쳤어",
+      "translation": "그치!?",
       "start_time": "00:17:22",
       "end_time": "00:17:25",
       "start_seconds": 1042,
@@ -10765,34 +9925,12 @@
       "grammar_matches": []
     },
     {
-      "index": 363,
-      "text": "ねっ!",
-      "translation": "엄청 잘 쳤어",
-      "start_time": "00:17:25",
-      "end_time": "00:17:25",
-      "start_seconds": 1045,
-      "end_seconds": 1045,
-      "has_jlpt": true,
-      "vocab_matches": [
-        {
-          "surface": "寝る",
-          "reading": "ねる",
-          "meaning": "자다",
-          "level": "N4",
-          "surface_in_sentence": "ねっ",
-          "base_form": "ねる",
-          "pos": "동사"
-        }
-      ],
-      "grammar_matches": []
-    },
-    {
-      "index": 364,
-      "text": "ネーミングセンスは ちょっと痛いけど...",
+      "index": 292,
+      "text": "ねっ! ネーミングセンスは ちょっと痛いけど...",
       "translation": "네이밍 센스는 좀 안습하지만~",
-      "start_time": "00:17:26",
+      "start_time": "00:17:25",
       "end_time": "00:17:28",
-      "start_seconds": 1046,
+      "start_seconds": 1045,
       "end_seconds": 1048,
       "has_jlpt": true,
       "vocab_matches": [
@@ -10822,18 +9960,27 @@
           "surface_in_sentence": "痛い",
           "base_form": "痛い",
           "pos": "형용사"
+        },
+        {
+          "surface": "寝る",
+          "reading": "ねる",
+          "meaning": "자다",
+          "level": "N4",
+          "surface_in_sentence": "ねっ",
+          "base_form": "ねる",
+          "pos": "동사"
         }
       ],
       "grammar_matches": []
     },
     {
-      "index": 365,
-      "text": "痛いの?",
-      "translation": "안습해...?",
+      "index": 293,
+      "text": "痛いの? あたし フォローして 新着通知もオンにしてるんだ~",
+      "translation": "안습해...? 타는 쓰레기 나, 팔로우해서 알림도 켜뒀거든~",
       "start_time": "00:17:28",
-      "end_time": "00:17:29",
+      "end_time": "00:17:33",
       "start_seconds": 1048,
-      "end_seconds": 1049,
+      "end_seconds": 1053,
       "has_jlpt": true,
       "vocab_matches": [
         {
@@ -10844,20 +9991,7 @@
           "surface_in_sentence": "痛い",
           "base_form": "痛い",
           "pos": "형용사"
-        }
-      ],
-      "grammar_matches": []
-    },
-    {
-      "index": 366,
-      "text": "あたし フォローして 新着通知もオンにしてるんだ~",
-      "translation": "나, 팔로우해서 알림도 켜뒀거든~",
-      "start_time": "00:17:29",
-      "end_time": "00:17:33",
-      "start_seconds": 1049,
-      "end_seconds": 1053,
-      "has_jlpt": true,
-      "vocab_matches": [
+        },
         {
           "surface": "通知",
           "reading": "つうち",
@@ -10880,7 +10014,7 @@
       "grammar_matches": []
     },
     {
-      "index": 367,
+      "index": 294,
       "text": "いつか 一緒に演奏してみたいな",
       "translation": "언젠가 같이 연주해보고 싶다~",
       "start_time": "00:17:33",
@@ -10966,9 +10100,9 @@
       ]
     },
     {
-      "index": 368,
+      "index": 295,
       "text": "今 したんですけどね",
-      "translation": "타는 쓰레기",
+      "translation": "방금 하셨는데 말이죠~",
       "start_time": "00:17:35",
       "end_time": "00:17:37",
       "start_seconds": 1055,
@@ -10997,7 +10131,7 @@
       "grammar_matches": []
     },
     {
-      "index": 369,
+      "index": 296,
       "text": "え~っとね 何が言いたいかっていうと",
       "translation": "무슨 말을 하고 싶은 거냐면...",
       "start_time": "00:17:37",
@@ -11032,7 +10166,7 @@
       ]
     },
     {
-      "index": 370,
+      "index": 297,
       "text": "うまくて話題の人もね 私たちが見てないところで",
       "translation": "잘 치고 화제가 되는 사람도 말야 우리가 안 보는 데서 잔뜩, 잔~뜩!",
       "start_time": "00:17:41",
@@ -11115,7 +10249,7 @@
       ]
     },
     {
-      "index": 371,
+      "index": 298,
       "text": "たっくさん たっくさん ギターを弾いてきたんだろうなって",
       "translation": "기타를 쳐 왔겠지 ..라는 소리!",
       "start_time": "00:17:44",
@@ -11213,24 +10347,12 @@
       ]
     },
     {
-      "index": 372,
-      "text": "ハッ",
-      "translation": "기타를 쳐 왔겠지 ..라는 소리!",
+      "index": 299,
+      "text": "ハッ あとで見てみて 動画見てると伝わってくるから",
+      "translation": "영상을 보면 전해져 올 테니까!",
       "start_time": "00:17:48",
-      "end_time": "00:17:49",
-      "start_seconds": 1068,
-      "end_seconds": 1069,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 373,
-      "text": "あとで見てみて 動画見てると伝わってくるから",
-      "translation": "나중에 한 번 봐봐! 영상을 보면 전해져 올 테니까!",
-      "start_time": "00:17:49",
       "end_time": "00:17:53",
-      "start_seconds": 1069,
+      "start_seconds": 1068,
       "end_seconds": 1073,
       "has_jlpt": true,
       "vocab_matches": [
@@ -11274,24 +10396,12 @@
       "grammar_matches": []
     },
     {
-      "index": 374,
-      "text": "あ...",
-      "translation": "영상을 보면 전해져 올 테니까!",
-      "start_time": "00:17:53",
-      "end_time": "00:17:53",
-      "start_seconds": 1073,
-      "end_seconds": 1073,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 375,
-      "text": "現実世界の人たちは",
+      "index": 300,
+      "text": "あ... 現実世界の人たちは",
       "translation": "현실 세계의 사람들은...",
-      "start_time": "00:17:54",
+      "start_time": "00:17:53",
       "end_time": "00:17:56",
-      "start_seconds": 1074,
+      "start_seconds": 1073,
       "end_seconds": 1076,
       "has_jlpt": true,
       "vocab_matches": [
@@ -11317,7 +10427,7 @@
       "grammar_matches": []
     },
     {
-      "index": 376,
+      "index": 301,
       "text": "誰も 私なんか 興味ないと思ってた",
       "translation": "아무도 나 따위한테는 흥미 없을 줄 알았어...",
       "start_time": "00:17:56",
@@ -11382,7 +10492,7 @@
       ]
     },
     {
-      "index": 377,
+      "index": 302,
       "text": "今日がダメだからって バンド 諦めるのは早いって",
       "translation": "오늘 실패했다고 해서 밴드 포기하긴 이르다니까!",
       "start_time": "00:18:02",
@@ -11435,7 +10545,7 @@
       ]
     },
     {
-      "index": 378,
+      "index": 303,
       "text": "あたしたちが アレなだけかもだし",
       "translation": "우리가 좀 거시기 했을 뿐이었을지도 모르고...",
       "start_time": "00:18:05",
@@ -11447,20 +10557,8 @@
       "grammar_matches": []
     },
     {
-      "index": 379,
-      "text": "アレ?",
-      "translation": "거시기?",
-      "start_time": "00:18:08",
-      "end_time": "00:18:09",
-      "start_seconds": 1088,
-      "end_seconds": 1089,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 380,
-      "text": "ううっ...",
+      "index": 304,
+      "text": "アレ? ううっ...",
       "translation": "거시기?",
       "start_time": "00:18:08",
       "end_time": "00:18:09",
@@ -11481,24 +10579,12 @@
       "grammar_matches": []
     },
     {
-      "index": 381,
-      "text": "ひとりちゃん?",
-      "translation": "히토리쨩?",
+      "index": 305,
+      "text": "ひとりちゃん? けど こんな優しい人が ずっと見ていてくれて",
+      "translation": "히토리쨩? 그래도, 이렇게 다정한 사람이 계속 지켜봐줬고",
       "start_time": "00:18:10",
-      "end_time": "00:18:11",
-      "start_seconds": 1090,
-      "end_seconds": 1091,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 382,
-      "text": "けど こんな優しい人が ずっと見ていてくれて",
-      "translation": "그래도, 이렇게 다정한 사람이 계속 지켜봐줬고",
-      "start_time": "00:18:11",
       "end_time": "00:18:14",
-      "start_seconds": 1091,
+      "start_seconds": 1090,
       "end_seconds": 1094,
       "has_jlpt": true,
       "vocab_matches": [
@@ -11569,7 +10655,7 @@
       "grammar_matches": []
     },
     {
-      "index": 383,
+      "index": 306,
       "text": "私なんかに声をかけてくれた",
       "translation": "나 같은 거한테 말까지 걸어줬잖아!",
       "start_time": "00:18:14",
@@ -11649,7 +10735,7 @@
       ]
     },
     {
-      "index": 384,
+      "index": 307,
       "text": "あっ (リョウ)あっ 立った",
       "translation": "어, 일어섰다",
       "start_time": "00:18:17",
@@ -11671,7 +10757,7 @@
       "grammar_matches": []
     },
     {
-      "index": 385,
+      "index": 308,
       "text": "こんな奇跡 多分 一生 起こらない",
       "translation": "이런 기적...! 아마 평생 안 일어날 거야...!",
       "start_time": "00:18:18",
@@ -11715,7 +10801,7 @@
       ]
     },
     {
-      "index": 386,
+      "index": 309,
       "text": "絶対 ムダにしちゃダメだ!",
       "translation": "절대 날려먹어선 안 돼...!",
       "start_time": "00:18:22",
@@ -11746,7 +10832,7 @@
       "grammar_matches": []
     },
     {
-      "index": 387,
+      "index": 310,
       "text": "わ... 私 その...",
       "translation": "저..저, 그게...!",
       "start_time": "00:18:25",
@@ -11758,7 +10844,7 @@
       "grammar_matches": []
     },
     {
-      "index": 388,
+      "index": 311,
       "text": "もしかして 出てくれる気になったとか?",
       "translation": "혹시 나가줄 생각이 들었다든가...?",
       "start_time": "00:18:28",
@@ -11856,24 +10942,12 @@
       ]
     },
     {
-      "index": 389,
-      "text": "うう...",
-      "translation": "혹시 나가줄 생각이 들었다든가...?",
-      "start_time": "00:18:31",
-      "end_time": "00:18:32",
-      "start_seconds": 1111,
-      "end_seconds": 1112,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 390,
-      "text": "ひ... ひとりちゃん?",
+      "index": 312,
+      "text": "うう... ひ... ひとりちゃん?",
       "translation": "히, 히토리쨩?",
-      "start_time": "00:18:33",
+      "start_time": "00:18:31",
       "end_time": "00:18:34",
-      "start_seconds": 1113,
+      "start_seconds": 1111,
       "end_seconds": 1114,
       "has_jlpt": true,
       "vocab_matches": [
@@ -11899,7 +10973,7 @@
       "grammar_matches": []
     },
     {
-      "index": 391,
+      "index": 313,
       "text": "頭では分かってる でも やっぱり怖い",
       "translation": "머리로는 알고 있어! 하지만 역시 무서워~!",
       "start_time": "00:18:34",
@@ -11939,7 +11013,7 @@
       "grammar_matches": []
     },
     {
-      "index": 392,
+      "index": 314,
       "text": "お客さんの目線も 耐えられるわけが...",
       "translation": "관객들의 시선도 견딜 수 있을 리가~",
       "start_time": "00:18:37",
@@ -11992,7 +11066,7 @@
       ]
     },
     {
-      "index": 393,
+      "index": 315,
       "text": "怖いなら これに入って演奏したら?",
       "translation": "무섭다면 여기 들어가서 연주하든가?",
       "start_time": "00:18:40",
@@ -12054,34 +11128,12 @@
       ]
     },
     {
-      "index": 394,
-      "text": "あっ (虹夏)ん?",
-      "translation": "완숙 망고",
+      "index": 316,
+      "text": "あっ (虹夏)ん? いっ い... いつも弾いてる環境と同じです~",
+      "translation": "평소 치는 환경이랑 똑같아요오오",
       "start_time": "00:18:43",
-      "end_time": "00:18:44",
-      "start_seconds": 1123,
-      "end_seconds": 1124,
-      "has_jlpt": true,
-      "vocab_matches": [
-        {
-          "surface": "夏",
-          "reading": "なつ",
-          "meaning": "여름",
-          "level": "N4",
-          "surface_in_sentence": "夏",
-          "base_form": "夏",
-          "pos": "명사"
-        }
-      ],
-      "grammar_matches": []
-    },
-    {
-      "index": 395,
-      "text": "いっ い... いつも弾いてる環境と同じです~",
-      "translation": "완숙 망고",
-      "start_time": "00:18:44",
       "end_time": "00:18:48",
-      "start_seconds": 1124,
+      "start_seconds": 1123,
       "end_seconds": 1128,
       "has_jlpt": true,
       "vocab_matches": [
@@ -12122,6 +11174,15 @@
           "pos": "동사"
         },
         {
+          "surface": "夏",
+          "reading": "なつ",
+          "meaning": "여름",
+          "level": "N4",
+          "surface_in_sentence": "夏",
+          "base_form": "夏",
+          "pos": "명사"
+        },
+        {
           "surface": "弾く",
           "reading": "ひく",
           "meaning": "연주하다, 치다",
@@ -12156,7 +11217,7 @@
       ]
     },
     {
-      "index": 396,
+      "index": 317,
       "text": "どんな所に住んでるの?",
       "translation": "어떤 데서 살길래...? 여러분~!",
       "start_time": "00:18:49",
@@ -12196,7 +11257,7 @@
       "grammar_matches": []
     },
     {
-      "index": 397,
+      "index": 318,
       "text": "皆さん 下北 盛り上げていきましょう!",
       "translation": "여러분~! 시모키타를 뜨겁게 달궈봅시다~!",
       "start_time": "00:18:51",
@@ -12227,7 +11288,7 @@
       "grammar_matches": []
     },
     {
-      "index": 398,
+      "index": 319,
       "text": "少し気が大きくなった",
       "translation": "조금 배짱이 커졌다...",
       "start_time": "00:18:54",
@@ -12280,7 +11341,7 @@
       ]
     },
     {
-      "index": 399,
+      "index": 320,
       "text": "そういえば ライブで なんて紹介すればいい?",
       "translation": "그러고 보니까 라이브에서 뭐라고 소개하면 돼?",
       "start_time": "00:18:56",
@@ -12354,7 +11415,7 @@
       ]
     },
     {
-      "index": 400,
+      "index": 321,
       "text": "ひとりちゃん?",
       "translation": "히토리쨩?",
       "start_time": "00:18:59",
@@ -12366,7 +11427,7 @@
       "grammar_matches": []
     },
     {
-      "index": 401,
+      "index": 322,
       "text": "本名でいいかな?",
       "translation": "히토리쨩?",
       "start_time": "00:18:59",
@@ -12378,7 +11439,7 @@
       "grammar_matches": []
     },
     {
-      "index": 402,
+      "index": 323,
       "text": "い... いや それは...",
       "translation": "아..아니, 그건...",
       "start_time": "00:19:02",
@@ -12400,7 +11461,7 @@
       "grammar_matches": []
     },
     {
-      "index": 403,
+      "index": 324,
       "text": "じゃあ あだ名とかはないの?",
       "translation": "그럼 별명 같은 건 없어?",
       "start_time": "00:19:03",
@@ -12412,7 +11473,7 @@
       "grammar_matches": []
     },
     {
-      "index": 404,
+      "index": 325,
       "text": "ちゅ... 中学では “あの~”とか“おい”とか",
       "translation": "주..중학교 때는 \"저기~\" 라든가 \"어이\"라든가...",
       "start_time": "00:19:05",
@@ -12443,7 +11504,7 @@
       "grammar_matches": []
     },
     {
-      "index": 405,
+      "index": 326,
       "text": "それ あだ名じゃなくない?",
       "translation": "그건 별명이 아니지 않아!?",
       "start_time": "00:19:09",
@@ -12474,7 +11535,7 @@
       "grammar_matches": []
     },
     {
-      "index": 406,
+      "index": 327,
       "text": "あああ... あだ名で呼び合うほど",
       "translation": "벼..별명으로 부를만큼 친한 교우관계는 가져본 적이~",
       "start_time": "00:19:10",
@@ -12505,7 +11566,7 @@
       "grammar_matches": []
     },
     {
-      "index": 407,
+      "index": 328,
       "text": "親しい交友関係は 持ったことが...",
       "translation": "벼..별명으로 부를만큼 친한 교우관계는 가져본 적이~",
       "start_time": "00:19:12",
@@ -12545,7 +11606,7 @@
       "grammar_matches": []
     },
     {
-      "index": 408,
+      "index": 329,
       "text": "ひとり... ひとりぼっち...",
       "translation": "히토리봇치...",
       "start_time": "00:19:14",
@@ -12567,7 +11628,7 @@
       "grammar_matches": []
     },
     {
-      "index": 409,
+      "index": 330,
       "text": "ぼっちちゃんは?",
       "translation": "봇치쨩은 어때?",
       "start_time": "00:19:17",
@@ -12589,9 +11650,9 @@
       "grammar_matches": []
     },
     {
-      "index": 410,
+      "index": 331,
       "text": "うっ またデリケートなところを",
-      "translation": "보...",
+      "translation": "보, 보...",
       "start_time": "00:19:19",
       "end_time": "00:19:21",
       "start_seconds": 1159,
@@ -12620,9 +11681,9 @@
       "grammar_matches": []
     },
     {
-      "index": 411,
+      "index": 332,
       "text": "ぼぼぼ... ぼっちです!",
-      "translation": "보, 보...",
+      "translation": "보, 보, 보...",
       "start_time": "00:19:21",
       "end_time": "00:19:23",
       "start_seconds": 1161,
@@ -12642,15 +11703,24 @@
       "grammar_matches": []
     },
     {
-      "index": 412,
-      "text": "喜んでるし",
-      "translation": "기뻐하는데, 뭐",
+      "index": 333,
+      "text": "喜んでるし あだ名とか初めてで",
+      "translation": "기뻐하는데, 뭐 별명으로 불리는 건 처음이라~",
       "start_time": "00:19:23",
-      "end_time": "00:19:24",
+      "end_time": "00:19:26",
       "start_seconds": 1163,
-      "end_seconds": 1164,
+      "end_seconds": 1166,
       "has_jlpt": true,
       "vocab_matches": [
+        {
+          "surface": "初めて",
+          "reading": "はじめて",
+          "meaning": "처음으로",
+          "level": "N3",
+          "surface_in_sentence": "初めて",
+          "base_form": "初めて",
+          "pos": "부사"
+        },
         {
           "surface": "出る",
           "reading": "でる",
@@ -12673,29 +11743,7 @@
       "grammar_matches": []
     },
     {
-      "index": 413,
-      "text": "あだ名とか初めてで",
-      "translation": "별명으로 불리는 건 처음이라~",
-      "start_time": "00:19:24",
-      "end_time": "00:19:26",
-      "start_seconds": 1164,
-      "end_seconds": 1166,
-      "has_jlpt": true,
-      "vocab_matches": [
-        {
-          "surface": "初めて",
-          "reading": "はじめて",
-          "meaning": "처음으로",
-          "level": "N3",
-          "surface_in_sentence": "初めて",
-          "base_form": "初めて",
-          "pos": "부사"
-        }
-      ],
-      "grammar_matches": []
-    },
-    {
-      "index": 414,
+      "index": 334,
       "text": "うう~ なんか 涙出てきた",
       "translation": "왠지 눈에 습기 차기 시작했어...",
       "start_time": "00:19:26",
@@ -12757,7 +11805,7 @@
       ]
     },
     {
-      "index": 415,
+      "index": 335,
       "text": "あっ まだ バンド名 聞いてなかったです",
       "translation": "아, 아직 밴드명을 못 들었네요",
       "start_time": "00:19:28",
@@ -12797,13 +11845,13 @@
       "grammar_matches": []
     },
     {
-      "index": 416,
-      "text": "うっ",
+      "index": 336,
+      "text": "うっ え?",
       "translation": "으윽...!",
       "start_time": "00:19:30",
-      "end_time": "00:19:31",
+      "end_time": "00:19:32",
       "start_seconds": 1170,
-      "end_seconds": 1171,
+      "end_seconds": 1172,
       "has_jlpt": true,
       "vocab_matches": [
         {
@@ -12819,19 +11867,7 @@
       "grammar_matches": []
     },
     {
-      "index": 417,
-      "text": "え?",
-      "translation": "미안, 졸려",
-      "start_time": "00:19:31",
-      "end_time": "00:19:32",
-      "start_seconds": 1171,
-      "end_seconds": 1172,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 418,
+      "index": 337,
       "text": "結束(けっそく)バンドだよ",
       "translation": "결속 밴드야",
       "start_time": "00:19:33",
@@ -12843,55 +11879,31 @@
       "grammar_matches": []
     },
     {
-      "index": 419,
-      "text": "ハア~",
-      "translation": "하아~",
-      "start_time": "00:19:35",
-      "end_time": "00:19:36",
-      "start_seconds": 1175,
-      "end_seconds": 1176,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 420,
-      "text": "結束バンド...",
+      "index": 338,
+      "text": "ハア~ 結束バンド...",
       "translation": "결속 밴드...",
-      "start_time": "00:19:37",
+      "start_time": "00:19:35",
       "end_time": "00:19:38",
-      "start_seconds": 1177,
+      "start_seconds": 1175,
       "end_seconds": 1178,
       "has_jlpt": false,
       "vocab_matches": [],
       "grammar_matches": []
     },
     {
-      "index": 421,
-      "text": "結束バンド?",
+      "index": 339,
+      "text": "結束バンド? プッ 傑作",
       "translation": "결속 밴드...",
       "start_time": "00:19:39",
-      "end_time": "00:19:40",
-      "start_seconds": 1179,
-      "end_seconds": 1180,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 422,
-      "text": "プッ 傑作",
-      "translation": "푸흡~ 걸작이야...",
-      "start_time": "00:19:40",
       "end_time": "00:19:42",
-      "start_seconds": 1180,
+      "start_seconds": 1179,
       "end_seconds": 1182,
       "has_jlpt": false,
       "vocab_matches": [],
       "grammar_matches": []
     },
     {
-      "index": 423,
+      "index": 340,
       "text": "寒いし 絶対 変えるから~!",
       "translation": "하나도 안 재밌거든!",
       "start_time": "00:19:42",
@@ -12931,7 +11943,7 @@
       "grammar_matches": []
     },
     {
-      "index": 424,
+      "index": 341,
       "text": "なんで?",
       "translation": "왜? 귀엽지?",
       "start_time": "00:19:44",
@@ -12943,7 +11955,7 @@
       "grammar_matches": []
     },
     {
-      "index": 425,
+      "index": 342,
       "text": "かわいいよね",
       "translation": "왜? 귀엽지?",
       "start_time": "00:19:44",
@@ -12965,7 +11977,7 @@
       "grammar_matches": []
     },
     {
-      "index": 426,
+      "index": 343,
       "text": "あっ はい (虹夏)うああ~!",
       "translation": "아, 네...",
       "start_time": "00:19:46",
@@ -12987,9 +11999,9 @@
       "grammar_matches": []
     },
     {
-      "index": 427,
+      "index": 344,
       "text": "バンド名は後回しで そろそろ出番だよ!",
-      "translation": "아, 네... 밴드명은 나중에 생각하고! 슬슬 나가자구!",
+      "translation": "밴드명은 나중에 생각하고! 슬슬 나가자구!",
       "start_time": "00:19:48",
       "end_time": "00:19:51",
       "start_seconds": 1188,
@@ -13031,9 +12043,9 @@
       ]
     },
     {
-      "index": 428,
+      "index": 345,
       "text": "あっ ああ~",
-      "translation": "아아~",
+      "translation": "괜찮아!",
       "start_time": "00:19:51",
       "end_time": "00:19:53",
       "start_seconds": 1191,
@@ -13043,7 +12055,7 @@
       "grammar_matches": []
     },
     {
-      "index": 429,
+      "index": 346,
       "text": "大丈夫 (ひとり)あっ",
       "translation": "괜찮아!",
       "start_time": "00:19:53",
@@ -13055,7 +12067,7 @@
       "grammar_matches": []
     },
     {
-      "index": 430,
+      "index": 347,
       "text": "下手でも 楽しく弾くことだけは 心掛けよう",
       "translation": "실력은 좀 안 돼도... 즐겁게 치자는 것만은 명심하자!",
       "start_time": "00:19:54",
@@ -13099,7 +12111,7 @@
       ]
     },
     {
-      "index": 431,
+      "index": 348,
       "text": "音って ものすごく 感情が表れやすいから",
       "translation": "사운드란 건 굉장히 감정이 드러나기 쉬우니까",
       "start_time": "00:19:58",
@@ -13143,24 +12155,12 @@
       ]
     },
     {
-      "index": 432,
-      "text": "は... はい",
-      "translation": "아, 네...",
+      "index": 349,
+      "text": "は... はい 技術を求めていくのは 次からで 全然いいよ",
+      "translation": "아, 네... 기술을 추구하는 건 다음부터 해도 완전 괜찮아!",
       "start_time": "00:20:02",
-      "end_time": "00:20:03",
-      "start_seconds": 1202,
-      "end_seconds": 1203,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 433,
-      "text": "技術を求めていくのは 次からで 全然いいよ",
-      "translation": "기술을 추구하는 건 다음부터 해도 완전 괜찮아!",
-      "start_time": "00:20:03",
       "end_time": "00:20:07",
-      "start_seconds": 1203,
+      "start_seconds": 1202,
       "end_seconds": 1207,
       "has_jlpt": true,
       "vocab_matches": [
@@ -13226,24 +12226,12 @@
       ]
     },
     {
-      "index": 434,
-      "text": "うん",
-      "translation": "좋아, 가자!",
-      "start_time": "00:20:07",
-      "end_time": "00:20:07",
-      "start_seconds": 1207,
-      "end_seconds": 1207,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 435,
-      "text": "“次”って...",
+      "index": 350,
+      "text": "うん “次”って...",
       "translation": "\"다음\"이라니...?",
-      "start_time": "00:20:08",
+      "start_time": "00:20:07",
       "end_time": "00:20:09",
-      "start_seconds": 1208,
+      "start_seconds": 1207,
       "end_seconds": 1209,
       "has_jlpt": true,
       "vocab_matches": [
@@ -13260,7 +12248,7 @@
       "grammar_matches": []
     },
     {
-      "index": 436,
+      "index": 351,
       "text": "よし 行こう!",
       "translation": "좋아, 가자!",
       "start_time": "00:20:09",
@@ -13282,9 +12270,9 @@
       "grammar_matches": []
     },
     {
-      "index": 437,
+      "index": 352,
       "text": "うん",
-      "translation": "좋아, 가자!",
+      "translation": "응",
       "start_time": "00:20:09",
       "end_time": "00:20:11",
       "start_seconds": 1209,
@@ -13294,24 +12282,12 @@
       "grammar_matches": []
     },
     {
-      "index": 438,
-      "text": "私...",
-      "translation": "나...",
+      "index": 353,
+      "text": "私... 次も いていいんだ",
+      "translation": "나... 다음에도 있어도 되는구나...!",
       "start_time": "00:20:12",
-      "end_time": "00:20:13",
-      "start_seconds": 1212,
-      "end_seconds": 1213,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 439,
-      "text": "次も いていいんだ",
-      "translation": "다음에도 있어도 되는구나...!",
-      "start_time": "00:20:13",
       "end_time": "00:20:15",
-      "start_seconds": 1213,
+      "start_seconds": 1212,
       "end_seconds": 1215,
       "has_jlpt": true,
       "vocab_matches": [
@@ -13337,7 +12313,7 @@
       "grammar_matches": []
     },
     {
-      "index": 440,
+      "index": 354,
       "text": "はじめまして!",
       "translation": "처음 뵙겠습니다~!",
       "start_time": "00:20:19",
@@ -13349,7 +12325,7 @@
       "grammar_matches": []
     },
     {
-      "index": 441,
+      "index": 355,
       "text": "結束バンドで~す!",
       "translation": "결속 밴드입니다~!",
       "start_time": "00:20:19",
@@ -13371,7 +12347,7 @@
       "grammar_matches": []
     },
     {
-      "index": 442,
+      "index": 356,
       "text": "今日は みんなも多分 知ってる曲を何曲か やるので",
       "translation": "오늘은 여러분도 아마 알고 있을 곡을 몇 곡인가 칠 테니까",
       "start_time": "00:20:22",
@@ -13442,43 +12418,19 @@
       ]
     },
     {
-      "index": 443,
-      "text": "聴いてください!",
+      "index": 357,
+      "text": "聴いてください! )んだ? あれ",
       "translation": "들어주세요!",
       "start_time": "00:20:25",
-      "end_time": "00:20:26",
+      "end_time": "00:20:27",
       "start_seconds": 1225,
-      "end_seconds": 1226,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 444,
-      "text": ")んだ?",
-      "translation": "저건 또 누군데?",
-      "start_time": "00:20:26",
-      "end_time": "00:20:27",
-      "start_seconds": 1226,
       "end_seconds": 1227,
       "has_jlpt": false,
       "vocab_matches": [],
       "grammar_matches": []
     },
     {
-      "index": 445,
-      "text": "あれ",
-      "translation": "저건 또 누군데?",
-      "start_time": "00:20:26",
-      "end_time": "00:20:27",
-      "start_seconds": 1226,
-      "end_seconds": 1227,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 446,
+      "index": 358,
       "text": "いつもの実力 出せなくて 最悪だけど",
       "translation": "평소 실력도 못 내서 최악이지만...",
       "start_time": "00:20:37",
@@ -13543,7 +12495,7 @@
       ]
     },
     {
-      "index": 447,
+      "index": 359,
       "text": "バンド組んで 誰かと演奏するのって",
       "translation": "밴드 결성해서 누군가랑 연주하는 게...!",
       "start_time": "00:20:41",
@@ -13583,7 +12535,7 @@
       "grammar_matches": []
     },
     {
-      "index": 448,
+      "index": 360,
       "text": "こんな楽しいんだ!",
       "translation": "이렇게나 즐거웠구나!!",
       "start_time": "00:20:44",
@@ -13605,7 +12557,7 @@
       "grammar_matches": []
     },
     {
-      "index": 449,
+      "index": 361,
       "text": "私 今日 最高に輝いて...",
       "translation": "나, 오늘 최고로 빛나―!",
       "start_time": "00:20:48",
@@ -13645,24 +12597,12 @@
       "grammar_matches": []
     },
     {
-      "index": 450,
-      "text": "ない!",
-      "translation": "..지 않잖아!!",
-      "start_time": "00:20:52",
-      "end_time": "00:20:53",
-      "start_seconds": 1252,
-      "end_seconds": 1253,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 451,
-      "text": "むしろ人生で 一番みじめかも!",
+      "index": 362,
+      "text": "ない! むしろ人生で 一番みじめかも!",
       "translation": "오히려 인생에서 제일 비참할지도오오!",
-      "start_time": "00:20:53",
+      "start_time": "00:20:52",
       "end_time": "00:20:56",
-      "start_seconds": 1253,
+      "start_seconds": 1252,
       "end_seconds": 1256,
       "has_jlpt": true,
       "vocab_matches": [
@@ -13679,7 +12619,7 @@
       "grammar_matches": []
     },
     {
-      "index": 452,
+      "index": 363,
       "text": "ミスりまくった~",
       "translation": "싹 다 틀려먹었네~!",
       "start_time": "00:21:00",
@@ -13691,9 +12631,9 @@
       "grammar_matches": []
     },
     {
-      "index": 453,
+      "index": 364,
       "text": "MC スベってたね (虹夏)エヘッ",
-      "translation": "MC까지 조졌지",
+      "translation": "에헤...",
       "start_time": "00:21:02",
       "end_time": "00:21:04",
       "start_seconds": 1262,
@@ -13722,9 +12662,9 @@
       "grammar_matches": []
     },
     {
-      "index": 454,
-      "text": "あっ あの!",
-      "translation": "에헤...",
+      "index": 365,
+      "text": "あっ あの! ん?",
+      "translation": "저..저기!",
       "start_time": "00:21:04",
       "end_time": "00:21:05",
       "start_seconds": 1264,
@@ -13734,36 +12674,12 @@
       "grammar_matches": []
     },
     {
-      "index": 455,
-      "text": "ん?",
-      "translation": "에헤...",
-      "start_time": "00:21:04",
-      "end_time": "00:21:05",
-      "start_seconds": 1264,
-      "end_seconds": 1265,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 456,
-      "text": "何?",
-      "translation": "뭔데...!?",
-      "start_time": "00:21:07",
-      "end_time": "00:21:08",
-      "start_seconds": 1267,
-      "end_seconds": 1268,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 457,
-      "text": "つつ つつつ... (虹夏)何?",
+      "index": 366,
+      "text": "何? つつ つつつ... (虹夏)何?",
       "translation": "뭐야!? 무서운데요...!",
-      "start_time": "00:21:08",
+      "start_time": "00:21:07",
       "end_time": "00:21:11",
-      "start_seconds": 1268,
+      "start_seconds": 1267,
       "end_seconds": 1271,
       "has_jlpt": true,
       "vocab_matches": [
@@ -13780,7 +12696,7 @@
       "grammar_matches": []
     },
     {
-      "index": 458,
+      "index": 367,
       "text": "怖いんだけど!",
       "translation": "뭐야!? 무서운데요...!",
       "start_time": "00:21:08",
@@ -13802,7 +12718,7 @@
       "grammar_matches": []
     },
     {
-      "index": 459,
+      "index": 368,
       "text": "次のライブまでには クラスメイトに",
       "translation": "다음 라이브 때까지는",
       "start_time": "00:21:12",
@@ -13837,7 +12753,7 @@
       ]
     },
     {
-      "index": 460,
+      "index": 369,
       "text": "挨拶できるくらいには なっておきます!",
       "translation": "반 애들한테 인사할 수 있을 정도는 돼서 올게요!!",
       "start_time": "00:21:14",
@@ -13914,24 +12830,12 @@
       ]
     },
     {
-      "index": 461,
-      "text": "なんの宣言?",
-      "translation": "뭔 선언임??",
+      "index": 370,
+      "text": "なんの宣言? 目覚ましい成長",
+      "translation": "뭔 선언임?? 눈부신 성장이구나~",
       "start_time": "00:21:17",
-      "end_time": "00:21:18",
-      "start_seconds": 1277,
-      "end_seconds": 1278,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 462,
-      "text": "目覚ましい成長",
-      "translation": "눈부신 성장이구나~",
-      "start_time": "00:21:18",
       "end_time": "00:21:20",
-      "start_seconds": 1278,
+      "start_seconds": 1277,
       "end_seconds": 1280,
       "has_jlpt": true,
       "vocab_matches": [
@@ -13948,7 +12852,7 @@
       "grammar_matches": []
     },
     {
-      "index": 463,
+      "index": 371,
       "text": "でも そっか... うん!",
       "translation": "그래도 그렇구나... 응!",
       "start_time": "00:21:20",
@@ -13960,7 +12864,7 @@
       "grammar_matches": []
     },
     {
-      "index": 464,
+      "index": 372,
       "text": "よ~し じゃあ今から",
       "translation": "좋아~ 그럼 지금부터 봇치쨩 환영회 겸",
       "start_time": "00:21:22",
@@ -13991,7 +12895,7 @@
       "grammar_matches": []
     },
     {
-      "index": 465,
+      "index": 373,
       "text": "ぼっちちゃん歓迎会 兼 ライブの反省会だ~",
       "translation": "그럼 지금부터 봇치쨩 환영회 겸 라이브 반성회다~!",
       "start_time": "00:21:23",
@@ -14031,7 +12935,7 @@
       "grammar_matches": []
     },
     {
-      "index": 466,
+      "index": 374,
       "text": "あっ 今日は人と話し過ぎて 疲れたので帰りま~す",
       "translation": "아... 오늘은 사람들이랑 말 너무 많이 해서 피곤하니까 돌아가겠습니다아",
       "start_time": "00:21:26",
@@ -14107,25 +13011,13 @@
       "grammar_matches": []
     },
     {
-      "index": 467,
-      "text": "え?",
-      "translation": "미안, 졸려",
+      "index": 375,
+      "text": "え? ごめん 眠い えっ?",
+      "translation": "미안, 졸려 에!?",
       "start_time": "00:21:30",
-      "end_time": "00:21:31",
+      "end_time": "00:21:32",
       "start_seconds": 1290,
-      "end_seconds": 1291,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 468,
-      "text": "ごめん 眠い",
-      "translation": "미안, 졸려",
-      "start_time": "00:21:30",
-      "end_time": "00:21:31",
-      "start_seconds": 1290,
-      "end_seconds": 1291,
+      "end_seconds": 1292,
       "has_jlpt": true,
       "vocab_matches": [
         {
@@ -14141,19 +13033,7 @@
       "grammar_matches": []
     },
     {
-      "index": 469,
-      "text": "えっ?",
-      "translation": "시시실례하겠습니다!",
-      "start_time": "00:21:31",
-      "end_time": "00:21:32",
-      "start_seconds": 1291,
-      "end_seconds": 1292,
-      "has_jlpt": false,
-      "vocab_matches": [],
-      "grammar_matches": []
-    },
-    {
-      "index": 470,
+      "index": 376,
       "text": "しし... 失礼します!",
       "translation": "시시실례하겠습니다!",
       "start_time": "00:21:32",
@@ -14184,7 +13064,7 @@
       "grammar_matches": []
     },
     {
-      "index": 471,
+      "index": 377,
       "text": "あっ... ええっ!",
       "translation": "시시실례하겠습니다!",
       "start_time": "00:21:33",
@@ -14196,7 +13076,7 @@
       "grammar_matches": []
     },
     {
-      "index": 472,
+      "index": 378,
       "text": "結束力 全然ないっ!",
       "translation": "결속력이 전혀 없어!!",
       "start_time": "00:21:38",
@@ -14236,7 +13116,7 @@
       "grammar_matches": []
     },
     {
-      "index": 473,
+      "index": 379,
       "text": "絶対 コミュ症 治して",
       "translation": "기필코 커뮤장애 고쳐서...",
       "start_time": "00:21:49",
@@ -14267,7 +13147,7 @@
       "grammar_matches": []
     },
     {
-      "index": 474,
+      "index": 380,
       "text": "ギターヒーローの私としての 力を発揮するんだ",
       "translation": "「기타 히어로」인 나로서의 힘을 발휘하는 거야!",
       "start_time": "00:21:51",
@@ -14320,7 +13200,7 @@
       ]
     },
     {
-      "index": 475,
+      "index": 381,
       "text": "虹夏ちゃん リョウさん 結束バンドのために!",
       "translation": "니지카쨩, 료 씨... 결속 밴드를 위해서!",
       "start_time": "00:21:56",
@@ -14376,7 +13256,7 @@
       ]
     },
     {
-      "index": 476,
+      "index": 382,
       "text": "すす... すいません!",
       "translation": "죄, 죄...! 죄송합니다...! 죄송해요...!",
       "start_time": "00:22:02",
@@ -14388,7 +13268,7 @@
       "grammar_matches": []
     },
     {
-      "index": 477,
+      "index": 383,
       "text": "すいません!",
       "translation": "죄, 죄...!",
       "start_time": "00:22:02",
@@ -14400,9 +13280,9 @@
       "grammar_matches": []
     },
     {
-      "index": 478,
+      "index": 384,
       "text": "見てください!",
-      "translation": "내일 또 봐",
+      "translation": "봐주세요...!",
       "start_time": "00:23:38",
       "end_time": "00:23:39",
       "start_seconds": 1418,

@@ -1,20 +1,100 @@
 {
   "items": [
     {
-      "id": "fd908d959f81",
+      "id": "2a4ed343b732",
       "title": "Bocchi the Rock! - S01E01",
-      "file_name": "Bocchi the Rock! - S01E01.srt",
+      "file_name": "Bocchi the Rock!/Bocchi the Rock! - S01E01.srt",
       "duration_seconds": 1419,
-      "sentence_count": 478,
-      "relevant_sentence_count": 329
+      "sentence_count": 384,
+      "relevant_sentence_count": 301
     },
     {
-      "id": "1dfe205eb960",
-      "title": "한자와 나오키 S01E01",
-      "file_name": "한자와 나오키 S01E01.srt",
-      "duration_seconds": 6362,
-      "sentence_count": 1182,
-      "relevant_sentence_count": 954
+      "id": "9259c5420aad",
+      "title": "Bocchi the Rock! - S01E02",
+      "file_name": "Bocchi the Rock!/[Recluse] Bocchi the Rock! - S01E02 (BD 1080p HEVC Opus) [7965BF08].srt",
+      "duration_seconds": 1419,
+      "sentence_count": 407,
+      "relevant_sentence_count": 326
+    },
+    {
+      "id": "ab1c4cda35db",
+      "title": "Bocchi the Rock! - S01E03",
+      "file_name": "Bocchi the Rock!/[Recluse] Bocchi the Rock! - S01E03 (BD 1080p HEVC Opus) [ED48F53B].srt",
+      "duration_seconds": 1420,
+      "sentence_count": 421,
+      "relevant_sentence_count": 328
+    },
+    {
+      "id": "b0b3921ab7b2",
+      "title": "Bocchi the Rock! - S01E04",
+      "file_name": "Bocchi the Rock!/[Recluse] Bocchi the Rock! - S01E04 (BD 1080p HEVC Opus) [A1C7F858].srt",
+      "duration_seconds": 1419,
+      "sentence_count": 396,
+      "relevant_sentence_count": 321
+    },
+    {
+      "id": "bea5b8deabb3",
+      "title": "Bocchi the Rock! - S01E05",
+      "file_name": "Bocchi the Rock!/[Recluse] Bocchi the Rock! - S01E05 (BD 1080p HEVC Opus) [8F682F72].srt",
+      "duration_seconds": 1420,
+      "sentence_count": 380,
+      "relevant_sentence_count": 302
+    },
+    {
+      "id": "e13488052520",
+      "title": "Bocchi the Rock! - S01E06",
+      "file_name": "Bocchi the Rock!/[Recluse] Bocchi the Rock! - S01E06 (BD 1080p HEVC Opus) [7B3DE702].srt",
+      "duration_seconds": 1419,
+      "sentence_count": 389,
+      "relevant_sentence_count": 292
+    },
+    {
+      "id": "0ac0257a83e5",
+      "title": "Bocchi the Rock! - S01E07",
+      "file_name": "Bocchi the Rock!/[Recluse] Bocchi the Rock! - S01E07 (BD 1080p HEVC Opus) [A50E596B].srt",
+      "duration_seconds": 1419,
+      "sentence_count": 430,
+      "relevant_sentence_count": 316
+    },
+    {
+      "id": "bd56fa66d18d",
+      "title": "Bocchi the Rock! - S01E08",
+      "file_name": "Bocchi the Rock!/[Recluse] Bocchi the Rock! - S01E08 (BD 1080p HEVC Opus) [C937F2EB].srt",
+      "duration_seconds": 1419,
+      "sentence_count": 400,
+      "relevant_sentence_count": 310
+    },
+    {
+      "id": "e256144238b3",
+      "title": "Bocchi the Rock! - S01E09",
+      "file_name": "Bocchi the Rock!/[Recluse] Bocchi the Rock! - S01E09 (BD 1080p HEVC Opus) [E84DDE4C].srt",
+      "duration_seconds": 1419,
+      "sentence_count": 403,
+      "relevant_sentence_count": 342
+    },
+    {
+      "id": "7baf7af32e3d",
+      "title": "Bocchi the Rock! - S01E10",
+      "file_name": "Bocchi the Rock!/[Recluse] Bocchi the Rock! - S01E10 (BD 1080p HEVC Opus) [72D5954F].srt",
+      "duration_seconds": 1419,
+      "sentence_count": 418,
+      "relevant_sentence_count": 333
+    },
+    {
+      "id": "dc753fc2483e",
+      "title": "Bocchi the Rock! - S01E11",
+      "file_name": "Bocchi the Rock!/[Recluse] Bocchi the Rock! - S01E11 (BD 1080p HEVC Opus) [891AE40A].srt",
+      "duration_seconds": 1419,
+      "sentence_count": 379,
+      "relevant_sentence_count": 293
+    },
+    {
+      "id": "3bb2f719ecf7",
+      "title": "Bocchi the Rock! - S01E12",
+      "file_name": "Bocchi the Rock!/[Recluse] Bocchi the Rock! - S01E12 (BD 1080p HEVC Opus) [810D1B2C].srt",
+      "duration_seconds": 1418,
+      "sentence_count": 365,
+      "relevant_sentence_count": 288
     }
   ]
 }

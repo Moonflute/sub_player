@@ -33,6 +33,10 @@ TRANSLATION_NEARBY_THRESHOLD = 1.2
 ASS_MATCH_WINDOW_SECONDS = 2.6
 ASS_MATCH_MAX_SPAN = 3
 ASS_MATCH_MIN_SCORE = 0.43
+SHORT_SUBTITLE_MIN_SECONDS = 1.0
+SHORT_SUBTITLE_MAX_CHARS = 8
+SHORT_SUBTITLE_MERGE_GAP_SECONDS = 1.0
+SHORT_SUBTITLE_MERGE_MAX_SPAN_SECONDS = 10.0
 
 SPEAKER_PREFIX_RE = re.compile(
     r"^[\s\u3000]*(?:[\(\[「『【<＜][^)\]」』】>＞]{1,24}[\)\]」』】>＞][\s\u3000]*)+"
@@ -46,6 +50,15 @@ ASS_TAG_RE = re.compile(r"\{[^{}]*\}")
 PAREN_CONTENT_RE = re.compile(r"\([^)]*\)|\[[^\]]*\]|【[^】]*】|＜[^＞]*＞|〈[^〉]*〉")
 HANGUL_RE = re.compile(r"[가-힣]")
 KOREAN_TOKEN_RE = re.compile(r"[가-힣A-Za-z0-9]+")
+
+
+EPISODE_TOKEN_RE = re.compile(r"(?:S(?P<season>\d{1,2})E(?P<episode>\d{1,3})|(?P<episode_kr>\d{1,3})화)", re.IGNORECASE)
+TITLE_CLEANUP_PATTERNS = [
+    re.compile(r"^\[[^\]]+\]\s*"),
+    re.compile(r"\s*\(BD [^)]+\)", re.IGNORECASE),
+    re.compile(r"\s*\[[0-9A-F]{6,8}\]\s*$", re.IGNORECASE),
+    re.compile(r"\s*\(번역\)\s*$"),
+]
 
 
 def strip_speaker_prefix(text: str) -> str:
@@ -242,29 +255,119 @@ def parse_ass(path: Path) -> list[dict]:
     return entries
 
 
+def relative_input_path(path: Path) -> Path:
+    try:
+        return path.relative_to(INPUT_DIR)
+    except ValueError:
+        return path
+
+
+def extract_episode_key(text: str) -> tuple[int | None, int | None]:
+    match = EPISODE_TOKEN_RE.search(text or "")
+    if not match:
+        return None, None
+    if match.group("episode_kr"):
+        return 1, int(match.group("episode_kr"))
+    season = int(match.group("season")) if match.group("season") else 1
+    episode = int(match.group("episode")) if match.group("episode") else None
+    return season, episode
+
+
+def normalize_title_stem(stem: str) -> str:
+    value = stem.strip()
+    for pattern in TITLE_CLEANUP_PATTERNS:
+        value = pattern.sub("", value).strip()
+    return re.sub(r"\s+", " ", value).strip()
+
+
+def canonical_show_title(path: Path) -> str:
+    stem = normalize_title_stem(path.stem)
+    season, episode = extract_episode_key(stem)
+    if season is not None and episode is not None:
+        prefix = re.split(r"\s*-\s*S\d{1,2}E\d{1,3}\b", stem, maxsplit=1, flags=re.IGNORECASE)[0].strip()
+        if prefix:
+            return f"{prefix} - S{season:02d}E{episode:02d}"
+    return stem
+
+
+def subtitle_sort_key(path: Path) -> tuple[str, int, int, str]:
+    title = canonical_show_title(path)
+    season, episode = extract_episode_key(title)
+    series = re.sub(r"\s*-\s*S\d{2}E\d{2}$", "", title, flags=re.IGNORECASE)
+    return (series.lower(), season or 999, episode or 999, title.lower())
+
+
+def subtitle_candidate_priority(path: Path) -> tuple[int, int, int]:
+    relative = relative_input_path(path)
+    depth = len(relative.parts)
+    has_local_ass = 1 if any(path.parent.glob("*.ass")) else 0
+    return (depth, has_local_ass, -len(path.name))
+
+
+def discover_subtitle_files(only_names: set[str] | None) -> list[Path]:
+    subtitle_files = sorted(INPUT_DIR.rglob("*.srt"))
+    if only_names:
+        filtered: list[Path] = []
+        for path in subtitle_files:
+            relative = str(relative_input_path(path)).replace("\\", "/")
+            candidates = {
+                path.name,
+                path.stem,
+                relative,
+                relative.rsplit(".", 1)[0],
+            }
+            parent_match = any(
+                relative == name or relative.startswith(f"{name}/")
+                for name in only_names
+            )
+            if candidates & only_names or parent_match:
+                filtered.append(path)
+        subtitle_files = filtered
+
+    deduped: dict[str, Path] = {}
+    for path in subtitle_files:
+        key = canonical_show_title(path)
+        current = deduped.get(key)
+        if current is None or subtitle_candidate_priority(path) > subtitle_candidate_priority(current):
+            deduped[key] = path
+
+    return sorted(deduped.values(), key=subtitle_sort_key)
+
+
 def find_translation_ass_file(source_path: Path) -> Path | None:
-    candidates = sorted(INPUT_DIR.glob("*.ass"))
+    candidates = sorted(source_path.parent.glob("*.ass"))
+    if not candidates:
+        candidates = sorted(INPUT_DIR.glob("*.ass"))
     if not candidates:
         return None
 
-    source_stem = re.sub(r"\s+", " ", source_path.stem.lower()).strip()
-    source_tokens = set(re.findall(r"[a-z0-9]+", source_stem))
+    source_stem = normalize_title_stem(source_path.stem).lower()
+    source_tokens = set(re.findall(r"[0-9a-z가-힣]+", source_stem))
+    source_episode = extract_episode_key(source_stem)
+    source_parent = source_path.parent.name.lower()
     best_match: Path | None = None
     best_score = -1
 
     for candidate in candidates:
-        candidate_stem = re.sub(r"\s+", " ", candidate.stem.lower()).strip()
-        candidate_tokens = set(re.findall(r"[a-z0-9]+", candidate_stem))
+        candidate_stem = normalize_title_stem(candidate.stem).lower()
+        candidate_tokens = set(re.findall(r"[0-9a-z가-힣]+", candidate_stem))
+        candidate_episode = extract_episode_key(candidate_stem)
         score = len(source_tokens & candidate_tokens)
         if source_stem and source_stem in candidate_stem:
             score += 5
+        if source_episode != (None, None) and source_episode == candidate_episode:
+            score += 8
+        if candidate.parent == source_path.parent:
+            score += 4
+        if source_parent and source_parent == candidate.parent.name.lower():
+            score += 2
         if "번역" in candidate_stem:
             score += 2
         if score > best_score:
             best_score = score
             best_match = candidate
 
-    return best_match if best_score >= 5 else None
+    return best_match if best_score >= 4 else None
 
 
 def estimate_ass_sync_offset(
@@ -535,7 +638,7 @@ def load_sync_overrides() -> dict[str, int]:
 
 
 def show_id_for(path: Path) -> str:
-    return hashlib.sha1(path.name.encode("utf-8")).hexdigest()[:12]
+    return hashlib.sha1(str(relative_input_path(path)).encode("utf-8")).hexdigest()[:12]
 
 
 def serialize_vocab(match: engine.VocabMatch) -> dict:
@@ -563,6 +666,79 @@ def serialize_grammar(match: engine.GrammarMatch) -> dict:
     }
 
 
+def line_seconds(line: engine.SubtitleLine) -> tuple[float, float]:
+    start = float(engine.seconds_from_hhmmss(line.start_time))
+    end = float(engine.seconds_from_hhmmss(line.end_time))
+    return start, end
+
+
+def line_duration_seconds(line: engine.SubtitleLine) -> float:
+    start, end = line_seconds(line)
+    return max(0.0, end - start)
+
+
+def compact_display_text(text: str) -> str:
+    return engine.compact_japanese(strip_speaker_prefix(text))
+
+
+def should_merge_short_line(line: engine.SubtitleLine) -> bool:
+    compact = compact_display_text(line.text)
+    duration = line_duration_seconds(line)
+    return duration < SHORT_SUBTITLE_MIN_SECONDS or (
+        duration <= SHORT_SUBTITLE_MIN_SECONDS and len(compact) <= SHORT_SUBTITLE_MAX_CHARS
+    )
+
+
+def can_merge_lines(left: engine.SubtitleLine, right: engine.SubtitleLine) -> bool:
+    left_start, left_end = line_seconds(left)
+    right_start, right_end = line_seconds(right)
+    gap = right_start - left_end
+    combined_span = right_end - left_start
+    return gap <= SHORT_SUBTITLE_MERGE_GAP_SECONDS and combined_span <= SHORT_SUBTITLE_MERGE_MAX_SPAN_SECONDS
+
+
+def merge_line_group(lines: list[engine.SubtitleLine]) -> engine.SubtitleLine:
+    merged_text = " ".join(part.text.strip() for part in lines if part.text.strip())
+    return engine.SubtitleLine(
+        text=merged_text.strip(),
+        start_time=lines[0].start_time,
+        end_time=lines[-1].end_time,
+    )
+
+
+def merge_short_subtitle_lines(lines: list[engine.SubtitleLine]) -> list[engine.SubtitleLine]:
+    if not lines:
+        return []
+
+    merged: list[engine.SubtitleLine] = []
+    index = 0
+
+    while index < len(lines):
+        current = lines[index]
+        if should_merge_short_line(current):
+            next_line = lines[index + 1] if index + 1 < len(lines) else None
+            prev_line = merged[-1] if merged else None
+
+            if next_line and can_merge_lines(current, next_line):
+                combined = merge_line_group([current, next_line])
+                index += 2
+                while index < len(lines) and should_merge_short_line(combined) and can_merge_lines(combined, lines[index]):
+                    combined = merge_line_group([combined, lines[index]])
+                    index += 1
+                merged.append(combined)
+                continue
+
+            if prev_line and can_merge_lines(prev_line, current):
+                merged[-1] = merge_line_group([prev_line, current])
+                index += 1
+                continue
+
+        merged.append(current)
+        index += 1
+
+    return merged
+
+
 def build_show_payload(
     path: Path,
     tokenizer,
@@ -579,7 +755,8 @@ def build_show_payload(
         for line in split_lines
         if strip_speaker_prefix(line.text)
     ]
-    unique_lines = list(dict.fromkeys((line.text, line.start_time, line.end_time) for line in cleaned_lines))
+    merged_lines = merge_short_subtitle_lines(cleaned_lines)
+    unique_lines = list(dict.fromkeys((line.text, line.start_time, line.end_time) for line in merged_lines))
     subtitle_lines = [engine.SubtitleLine(text, start, end) for text, start, end in unique_lines]
 
     translation_map, translation_info = resolve_translation_map(path, subtitle_lines, translation_enabled)
@@ -627,8 +804,8 @@ def build_show_payload(
     show_id = show_id_for(path)
     return {
         "id": show_id,
-        "title": path.stem,
-        "file_name": path.name,
+        "title": canonical_show_title(path),
+        "file_name": str(relative_input_path(path)).replace("\\", "/"),
         "duration_seconds": max((item["end_seconds"] for item in sentences), default=0),
         "sentence_count": len(sentences),
         "relevant_sentence_count": relevant_sentence_count,
@@ -673,9 +850,7 @@ def write_show_database(
     sync_overrides = load_sync_overrides()
 
     library_items: list[dict] = []
-    subtitle_files = sorted(INPUT_DIR.glob("*.srt"))
-    if only_names:
-        subtitle_files = [path for path in subtitle_files if path.name in only_names or path.stem in only_names]
+    subtitle_files = discover_subtitle_files(only_names)
 
     for path in subtitle_files:
         print(f"[build-db] {path.name}")
