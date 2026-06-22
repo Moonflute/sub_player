@@ -301,14 +301,30 @@ function renderCurrentState() {
 }
 
 function renderLibrary() {
-  els.libraryList.innerHTML = state.library.map((item) => `
-    <button class="show-item" data-show-id="${item.id}" type="button">
-      <span class="show-title">${escapeHtml(item.title)}</span>
-      <span class="show-meta">
-        <span>문장 ${item.sentence_count || 0}</span>
-        <span>포인트 ${item.relevant_sentence_count || 0}</span>
-      </span>
-    </button>
+  const groups = new Map();
+  for (const item of state.library) {
+    const seriesName = item.title.replace(/\s*-\s*S\d{2}E\d{2}$/i, "").trim() || item.title;
+    if (!groups.has(seriesName)) {
+      groups.set(seriesName, []);
+    }
+    groups.get(seriesName).push(item);
+  }
+
+  els.libraryList.innerHTML = [...groups.entries()].map(([seriesName, items]) => `
+    <section class="series-group">
+      <h2 class="series-group__title">${escapeHtml(seriesName)}</h2>
+      <div class="series-group__items">
+        ${items.map((item) => `
+          <button class="show-item" data-show-id="${item.id}" type="button">
+            <span class="show-title">${escapeHtml(item.title)}</span>
+            <span class="show-meta">
+              <span>문장 ${item.sentence_count || 0}</span>
+              <span>포인트 ${item.relevant_sentence_count || 0}</span>
+            </span>
+          </button>
+        `).join("")}
+      </div>
+    </section>
   `).join("");
 
   for (const button of els.libraryList.querySelectorAll("[data-show-id]")) {

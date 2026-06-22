@@ -77,12 +77,32 @@ input {
   max-width: 860px;
   margin: 0 auto;
   display: grid;
-  gap: 14px;
+  gap: 16px;
+}
+
+.series-group {
+  display: grid;
+  gap: 8px;
+}
+
+.series-group__title {
+  margin: 0;
+  padding: 0 4px;
+  color: var(--accent);
+  font-family: var(--font-head);
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.series-group__items {
+  display: grid;
+  gap: 8px;
 }
 
 .show-item {
   width: 100%;
-  padding: 20px;
+  padding: 13px 15px;
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
   background: rgba(255, 255, 255, 0.8);
@@ -93,17 +113,17 @@ input {
 
 .show-title {
   display: block;
-  font-size: 1.15rem;
+  font-size: 0.98rem;
   font-weight: 800;
 }
 
 .show-meta {
-  margin-top: 10px;
+  margin-top: 6px;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 0.78rem;
 }
 
 .version-badge {
