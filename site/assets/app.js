@@ -177,11 +177,24 @@ function renderHighlightedSentence(sentence) {
   return parts.join("");
 }
 
+function findCurrentSentenceIndex(show, currentTime) {
+  if (!show || !Array.isArray(show.sentences)) return -1;
+  let bestIndex = -1;
+  let bestStart = -Infinity;
+  show.sentences.forEach((sentence, index) => {
+    if (currentTime >= sentence.start_seconds && currentTime <= sentence.end_seconds) {
+      if (sentence.start_seconds >= bestStart) {
+        bestStart = sentence.start_seconds;
+        bestIndex = index;
+      }
+    }
+  });
+  return bestIndex;
+}
+
 function findCurrentSentence(show, currentTime) {
-  if (!show) return null;
-  return show.sentences.find((sentence) => {
-    return currentTime >= sentence.start_seconds && currentTime <= sentence.end_seconds;
-  }) || null;
+  const index = findCurrentSentenceIndex(show, currentTime);
+  return index >= 0 ? show.sentences[index] : null;
 }
 
 function findUpcomingPoint(show, currentTime) {
@@ -193,9 +206,7 @@ function jumpToSentence(direction) {
   const show = state.currentShow;
   if (!show || !Array.isArray(show.sentences) || show.sentences.length === 0) return;
 
-  const currentIndex = show.sentences.findIndex((sentence) => {
-    return state.currentTime >= sentence.start_seconds && state.currentTime <= sentence.end_seconds;
-  });
+  const currentIndex = findCurrentSentenceIndex(show, state.currentTime);
 
   let target = null;
   if (direction < 0) {
@@ -215,7 +226,7 @@ function jumpToSentence(direction) {
   }
 
   if (!target) return;
-  state.currentTime = Number(target.start_seconds || 0);
+  state.currentTime = Number(target.start_seconds || 0) + 0.01;
   els.timeline.value = String(Math.floor(state.currentTime));
   renderCurrentState();
 }
