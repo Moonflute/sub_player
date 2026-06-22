@@ -279,7 +279,7 @@ input {
 .annotation-rail {
   width: 100%;
   max-width: 1180px;
-  min-height: 24px;
+  min-height: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -339,6 +339,16 @@ input {
   color: #243042;
   white-space: nowrap;
   word-break: keep-all;
+}
+
+.inline-note--grammar {
+  margin: 0 0.1em;
+}
+
+.inline-note__bottom--grammar {
+  color: #7c3417;
+  font-weight: 700;
+  font-size: clamp(0.66rem, 0.98vw, 0.88rem);
 }
 
 .controls-wrap {

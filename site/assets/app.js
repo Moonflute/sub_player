@@ -102,8 +102,9 @@ function buildHighlightMap(sentence) {
   for (const item of sentence.grammar_matches || []) {
     for (const text of item.matched_texts || []) {
       const normalized = String(text || "").trim();
-      if (!normalized || seenGrammar.has(normalized)) continue;
-      seenGrammar.add(normalized);
+      const key = `${normalized}:${item.label || ""}:${item.meaning || ""}`;
+      if (!normalized || seenGrammar.has(key)) continue;
+      seenGrammar.add(key);
       highlights.push({
         kind: "grammar",
         text: normalized,
@@ -167,7 +168,12 @@ function renderHighlightedSentence(sentence) {
         </span>
       `);
     } else {
-      parts.push(`<span class="${range.className}">${surface}</span>`);
+      parts.push(`
+        <span class="inline-note inline-note--grammar inline-note--${range.level}">
+          <span class="inline-note__anchor ${range.className}">${surface}</span>
+          <span class="inline-note__bottom inline-note__bottom--grammar">${escapeHtml(range.meaning || range.label || "")}</span>
+        </span>
+      `);
     }
     cursor = range.end;
   }
@@ -257,17 +263,7 @@ function buildAnnotations(sentence) {
 }
 
 function renderAnnotations(sentence) {
-  const annotations = buildAnnotations(sentence);
-  if (annotations.length === 0) {
-    els.annotationRail.innerHTML = "";
-    return;
-  }
-
-  els.annotationRail.innerHTML = annotations.map((item) => `
-    <div class="annotation-chip annotation-chip--${item.kind} annotation-chip--${item.level}">
-      ${escapeHtml(item.detail)}
-    </div>
-  `).join("");
+  els.annotationRail.innerHTML = "";
 }
 
 function renderCurrentState() {
