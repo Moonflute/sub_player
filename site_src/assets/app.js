@@ -24,6 +24,7 @@ const els = {
   currentTranslation: document.getElementById("current-translation"),
   nextCountdown: document.getElementById("next-countdown"),
   nextPreview: document.getElementById("next-preview"),
+  nextPreviewTranslation: document.getElementById("next-preview-translation"),
   annotationRail: document.getElementById("annotation-rail"),
   timeline: document.getElementById("timeline"),
   timelinePosition: document.getElementById("timeline-position"),
@@ -208,6 +209,15 @@ function findUpcomingPoint(show, currentTime) {
   return show.sentences.find((sentence) => sentence.has_jlpt && sentence.start_seconds > currentTime) || null;
 }
 
+function findNextSentence(show, currentTime) {
+  if (!show || !Array.isArray(show.sentences)) return null;
+  const currentIndex = findCurrentSentenceIndex(show, currentTime);
+  if (currentIndex >= 0 && currentIndex < show.sentences.length - 1) {
+    return show.sentences[currentIndex + 1];
+  }
+  return show.sentences.find((sentence) => sentence.start_seconds > currentTime + 0.05) || null;
+}
+
 function jumpToSentence(direction) {
   const show = state.currentShow;
   if (!show || !Array.isArray(show.sentences) || show.sentences.length === 0) return;
@@ -277,14 +287,16 @@ function renderCurrentState() {
   els.currentTranslation.textContent = currentSentence?.translation || "";
   renderAnnotations(currentSentence);
 
-  const upcoming = findUpcomingPoint(show, state.currentTime);
-  if (upcoming) {
-    const secondsLeft = upcoming.start_seconds - state.currentTime;
+  const nextSentence = findNextSentence(show, state.currentTime);
+  if (nextSentence) {
+    const secondsLeft = nextSentence.start_seconds - state.currentTime;
     els.nextCountdown.textContent = `${Math.max(0, Math.ceil(secondsLeft))}초 뒤`;
-    els.nextPreview.textContent = upcoming.text;
+    els.nextPreview.textContent = nextSentence.text || "";
+    els.nextPreviewTranslation.textContent = nextSentence.translation || "";
   } else {
     els.nextCountdown.textContent = "";
     els.nextPreview.textContent = "";
+    els.nextPreviewTranslation.textContent = "";
   }
 }
 

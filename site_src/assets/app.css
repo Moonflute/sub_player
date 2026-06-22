@@ -231,6 +231,7 @@ input {
 }
 
 .sentence-panel {
+  position: relative;
   min-height: 0;
   display: grid;
   align-content: center;
@@ -263,17 +264,36 @@ input {
   min-height: 1.45em;
 }
 
-.next-point-inline {
-  max-width: 980px;
+.next-countdown-badge {
+  position: absolute;
+  top: -0.35rem;
+  right: 0;
+  min-height: 1.2em;
   color: var(--muted-soft);
-  font-size: 0.63rem;
-  line-height: 1.45;
-  min-height: 1.45em;
+  font-size: 0.68rem;
+  font-weight: 800;
+  line-height: 1.2;
 }
 
-.next-point-inline__time {
-  font-weight: 800;
-  margin-right: 6px;
+.next-preview-block {
+  width: 100%;
+  max-width: 980px;
+  min-height: 2.5em;
+  display: grid;
+  gap: 2px;
+  justify-items: center;
+}
+
+.next-preview-text,
+.next-preview-translation {
+  width: 100%;
+  color: #8d93a0;
+  font-size: clamp(0.7rem, 1.1vw, 0.98rem);
+  line-height: 1.35;
+}
+
+.next-preview-translation {
+  color: #a1a7b3;
 }
 
 .annotation-rail {
@@ -504,6 +524,17 @@ input {
 
   .current-translation {
     font-size: clamp(0.88rem, 3.8vw, 1.05rem);
+  }
+
+  .next-countdown-badge {
+    top: -0.1rem;
+    right: 0.15rem;
+    font-size: 0.6rem;
+  }
+
+  .next-preview-text,
+  .next-preview-translation {
+    font-size: 0.64rem;
   }
 
   .annotation-rail {
