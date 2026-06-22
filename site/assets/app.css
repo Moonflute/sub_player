@@ -162,8 +162,8 @@ input {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 46px;
-  height: 72px;
+  width: 38px;
+  height: 60px;
   border: 1px solid rgba(24, 34, 47, 0.08);
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.82);
@@ -184,7 +184,7 @@ input {
 }
 
 .sentence-nav__icon {
-  font-size: 1.35rem;
+  font-size: 1.12rem;
   line-height: 1;
   font-weight: 800;
 }
@@ -521,8 +521,8 @@ input {
   }
 
   .sentence-nav {
-    width: 40px;
-    height: 64px;
+    width: 34px;
+    height: 52px;
   }
 
   .sentence-nav--prev {
