@@ -124,7 +124,18 @@ def has_segment_translations(track: dict) -> bool:
 
 
 def write_index(index_payload: dict) -> None:
-    LISTENING_INDEX.write_text(json.dumps(index_payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    tmp_path = LISTENING_INDEX.with_suffix(".json.tmp")
+    tmp_path.write_text(json.dumps(index_payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    tmp_path.replace(LISTENING_INDEX)
+
+
+def count_complete_tracks(index_payload: dict) -> int:
+    return sum(
+        1
+        for section in index_payload.get("sections", [])
+        for track in section.get("tracks", [])
+        if track.get("transcript_status") == "complete" and track.get("segments")
+    )
 
 
 def main() -> int:
@@ -150,7 +161,8 @@ def main() -> int:
     if args.only_id:
         tracks = [track for track in tracks if track["id"] == args.only_id]
 
-    for track in tracks:
+    total_tracks = len(tracks)
+    for order, track in enumerate(tracks, start=1):
         out_path = TRANSCRIPT_DIR / f"{track['id']}.json"
         if (
             out_path.exists()
@@ -158,22 +170,30 @@ def main() -> int:
             and has_segment_translations(track)
             and not args.overwrite
         ):
-            print(f"[skip] {track['id']} already complete")
+            completed = count_complete_tracks(index_payload)
+            remaining = max(0, total_tracks - completed)
+            percent = completed / total_tracks * 100 if total_tracks else 100
+            print(f"[skip] {order}/{total_tracks} {track['id']} already complete | done={completed} remaining={remaining} {percent:.1f}%")
             continue
 
         if out_path.exists() and not args.overwrite:
             transcript = json.loads(out_path.read_text(encoding="utf-8"))
-            print(f"[cached] {track['id']} <- {out_path}")
+            print(f"[cached] {order}/{total_tracks} {track['id']} <- {out_path}")
         else:
+            print(f"[start] {order}/{total_tracks} {track['id']}")
             transcript = transcribe_track(model, track, args.language)
-            print(f"[transcribed] {track['id']}")
+            print(f"[transcribed] {order}/{total_tracks} {track['id']} segments={len(transcript.get('segments', []))}")
 
         transcript["model"] = args.model
         transcript["segments"] = analyze_segments(transcript.get("segments", []), translate=not args.no_translate)
         out_path.write_text(json.dumps(transcript, ensure_ascii=False, indent=2), encoding="utf-8")
         merge_track_transcript(track, transcript)
         write_index(index_payload)
-        print(f"[merged] {track['id']} -> {out_path}")
+        completed = count_complete_tracks(index_payload)
+        remaining = max(0, total_tracks - completed)
+        percent = completed / total_tracks * 100 if total_tracks else 100
+        print(f"[merged] {order}/{total_tracks} {track['id']} -> {out_path}")
+        print(f"[progress] done={completed}/{total_tracks} remaining={remaining} {percent:.1f}%")
 
     return 0
 
