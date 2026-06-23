@@ -2,10 +2,11 @@ const state = {
   library: [],
   readingLibrary: [],
   listeningLibrary: [],
-  libraryMode: "video",
+  libraryMode: "",
   currentShow: null,
   currentReading: null,
   currentListeningTrack: null,
+  currentListeningIndex: 0,
   currentReadingIndex: 0,
   currentTime: 0,
   isPlaying: false,
@@ -19,7 +20,12 @@ const els = {
   readingScreen: document.getElementById("reading-screen"),
   listeningScreen: document.getElementById("listening-screen"),
   libraryList: document.getElementById("library-list"),
-  modeTabs: document.querySelectorAll("[data-library-mode]"),
+  homeMenu: document.getElementById("home-menu"),
+  homeButtons: document.querySelectorAll("[data-library-mode]"),
+  libraryListHeader: document.getElementById("library-list-header"),
+  libraryListTitle: document.getElementById("library-list-title"),
+  libraryBackButton: document.getElementById("library-back-button"),
+  versionBadge: document.querySelector(".version-badge"),
   backButton: document.getElementById("back-button"),
   readingBackButton: document.getElementById("reading-back-button"),
   readingTitle: document.getElementById("reading-title"),
@@ -34,8 +40,14 @@ const els = {
   listeningTitle: document.getElementById("listening-title"),
   listeningSection: document.getElementById("listening-section"),
   listeningTrackTitle: document.getElementById("listening-track-title"),
+  listeningProgress: document.getElementById("listening-progress"),
+  listeningSentence: document.getElementById("listening-sentence"),
+  listeningTranslation: document.getElementById("listening-translation"),
+  listeningSegmentPlay: document.getElementById("listening-segment-play"),
   listeningAudio: document.getElementById("listening-audio"),
   listeningLoopToggle: document.getElementById("listening-loop-toggle"),
+  listeningPrev: document.getElementById("listening-prev"),
+  listeningNext: document.getElementById("listening-next"),
   sentencePrev: document.getElementById("sentence-prev"),
   sentenceNext: document.getElementById("sentence-next"),
   playToggle: document.getElementById("play-toggle"),
@@ -98,6 +110,7 @@ function returnToLibrary() {
   state.currentShow = null;
   state.currentReading = null;
   state.currentListeningTrack = null;
+  state.currentListeningIndex = 0;
   els.listeningAudio.pause();
   els.listeningAudio.removeAttribute("src");
   state.currentTime = 0;
@@ -336,10 +349,49 @@ function renderCurrentState() {
   }
 }
 
+function modeTitle(mode) {
+  return { video: "자막", reading: "독해", listening: "청해" }[mode] || "";
+}
+
+function setLibraryHome() {
+  state.libraryMode = "";
+  els.homeMenu.classList.remove("is-hidden");
+  els.libraryListHeader.classList.add("is-hidden");
+  els.libraryList.innerHTML = "";
+  window.history.replaceState({ screen: "home" }, "", window.location.pathname + window.location.search);
+}
+
+function openLibraryMode(mode, pushHistory = true) {
+  state.libraryMode = mode;
+  if (pushHistory) {
+    window.history.pushState({ screen: "library", mode }, "", `#${mode}`);
+  }
+  renderLibrary();
+}
+
+function episodeLabel(title, index) {
+  const match = String(title || "").match(/S(\d{2})E(\d{2})/i);
+  if (match) return `${match[2]}번`;
+  return `${String(index + 1).padStart(2, "0")}번`;
+}
+
+function trackLabel(track, index) {
+  const match = String(track?.title || "").match(/(\d+)\s*번/);
+  if (match) return `${String(Number(match[1])).padStart(2, "0")}번`;
+  return `${String(index + 1).padStart(2, "0")}번`;
+}
+
 function renderLibrary() {
-  els.modeTabs.forEach((button) => {
-    button.classList.toggle("is-active", button.dataset.libraryMode === state.libraryMode);
-  });
+  const isHome = !state.libraryMode;
+  els.homeMenu.classList.toggle("is-hidden", !isHome);
+  els.libraryListHeader.classList.toggle("is-hidden", isHome);
+  els.versionBadge.classList.toggle("is-hidden", !isHome);
+  els.libraryListTitle.textContent = modeTitle(state.libraryMode);
+
+  if (isHome) {
+    els.libraryList.innerHTML = "";
+    return;
+  }
 
   if (state.libraryMode === "reading") {
     renderReadingLibrary();
@@ -363,13 +415,12 @@ function renderLibrary() {
   els.libraryList.innerHTML = [...groups.entries()].map(([seriesName, items]) => `
     <section class="series-group">
       <h2 class="series-group__title">${escapeHtml(seriesName)}</h2>
-      <div class="series-group__items">
-        ${items.map((item) => `
-          <button class="show-item" data-show-id="${item.id}" type="button">
-            <span class="show-title">${escapeHtml(item.title)}</span>
+      <div class="series-group__items series-group__items--compact">
+        ${items.map((item, index) => `
+          <button class="show-item show-item--tile" data-show-id="${item.id}" type="button" title="${escapeHtml(item.title)}">
+            <span class="show-title">${escapeHtml(episodeLabel(item.title, index))}</span>
             <span class="show-meta">
-              <span>문장 ${item.sentence_count || 0}</span>
-              <span>포인트 ${item.relevant_sentence_count || 0}</span>
+              <span>${item.relevant_sentence_count || 0}문장</span>
             </span>
           </button>
         `).join("")}
@@ -385,39 +436,70 @@ function renderLibrary() {
 }
 
 function renderReadingLibrary() {
-  els.libraryList.innerHTML = state.readingLibrary.map((item) => `
+  const sections = state.readingLibrary.flatMap((item) => buildReadingParts(item));
+  els.libraryList.innerHTML = sections.map((section) => `
     <section class="series-group">
-      <h2 class="series-group__title">독해</h2>
-      <div class="series-group__items">
-        <button class="show-item" data-reading-id="${item.id}" type="button">
-          <span class="show-title">${escapeHtml(item.title)}</span>
-          <span class="show-meta">
-            <span>문장 ${item.sentence_count || 0}</span>
-            <span>${escapeHtml(item.level || "N3")}</span>
-          </span>
-        </button>
+      <h2 class="series-group__title">${escapeHtml(section.title)}</h2>
+      <div class="series-group__items series-group__items--compact">
+        ${section.parts.map((part, index) => `
+          <button class="show-item show-item--tile" data-reading-id="${section.readingId}" data-reading-index="${part.startIndex}" type="button">
+            <span class="show-title">${escapeHtml(part.label || `${String(index + 1).padStart(2, "0")}번`)}</span>
+            <span class="show-meta">
+              <span>${part.count}문장</span>
+            </span>
+          </button>
+        `).join("")}
       </div>
     </section>
   `).join("");
 
   for (const button of els.libraryList.querySelectorAll("[data-reading-id]")) {
     button.addEventListener("click", async () => {
-      await loadReading(button.dataset.readingId);
+      await loadReading(button.dataset.readingId, Number(button.dataset.readingIndex || 0));
     });
   }
+}
+
+function buildReadingParts(reading) {
+  const items = reading?.items || [];
+  const groups = [];
+  let current = null;
+
+  items.forEach((item, index) => {
+    const text = item.text || "";
+    const match = text.match(/問題\s*(\d+)/);
+    if (match || !current) {
+      current = {
+        title: match ? `問題 ${match[1]}` : reading.title,
+        startIndex: index,
+        count: 0,
+      };
+      groups.push(current);
+    }
+    current.count += 1;
+  });
+
+  const parts = groups.length ? groups : [{ title: reading.title || "독해", startIndex: 0, count: items.length }];
+  return parts.map((part, index) => ({
+    readingId: reading.id,
+    title: part.title || `독해 ${index + 1}`,
+    parts: [{
+      ...part,
+      label: `${String(index + 1).padStart(2, "0")}번`,
+    }],
+  }));
 }
 
 function renderListeningLibrary() {
   els.libraryList.innerHTML = state.listeningLibrary.map((section) => `
     <section class="series-group">
       <h2 class="series-group__title">${escapeHtml(section.title)}</h2>
-      <div class="series-group__items">
-        ${(section.tracks || []).map((track) => `
-          <button class="show-item show-item--compact" data-listening-id="${track.id}" type="button" ${track.site_audio ? "" : "disabled"}>
-            <span class="show-title">${escapeHtml(track.title)}</span>
+      <div class="series-group__items series-group__items--compact">
+        ${(section.tracks || []).map((track, index) => `
+          <button class="show-item show-item--tile" data-listening-id="${track.id}" type="button" ${track.site_audio ? "" : "disabled"} title="${escapeHtml(track.title)}">
+            <span class="show-title">${escapeHtml(trackLabel(track, index))}</span>
             <span class="show-meta">
-              <span>${escapeHtml(section.title)}</span>
-              <span>${Math.round((track.compressed_file_size || track.file_size || 0) / 1024 / 1024 * 10) / 10}MB</span>
+              <span>${(track.segments || []).length || 0}문장</span>
             </span>
           </button>
         `).join("")}
@@ -443,6 +525,59 @@ function renderReadingState() {
   els.readingPanel.classList.toggle("is-revealed", reveal);
   els.readingSentence.innerHTML = renderHighlightedSentence(item);
   els.readingTranslation.textContent = item?.translation || "";
+}
+
+function getListeningSegments() {
+  return state.currentListeningTrack?.segments || [];
+}
+
+function renderListeningState() {
+  const track = state.currentListeningTrack;
+  const segments = getListeningSegments();
+  const segment = segments[state.currentListeningIndex] || null;
+
+  els.listeningTrackTitle.textContent = track?.title || "";
+  els.listeningProgress.textContent = segments.length ? `${state.currentListeningIndex + 1} / ${segments.length}` : "전사 대기";
+  els.listeningSentence.innerHTML = segment ? renderHighlightedSentence(segment) : escapeHtml(track?.text || "");
+  els.listeningTranslation.textContent = segment?.translation || "";
+  els.listeningPrev.disabled = state.currentListeningIndex <= 0 || segments.length === 0;
+  els.listeningNext.disabled = state.currentListeningIndex >= segments.length - 1 || segments.length === 0;
+  els.listeningSegmentPlay.disabled = segments.length === 0;
+}
+
+function syncListeningSegmentFromTime() {
+  const segments = getListeningSegments();
+  if (!segments.length) return;
+
+  const currentTime = els.listeningAudio.currentTime;
+  const index = segments.findIndex((segment) => currentTime >= segment.start_seconds && currentTime < segment.end_seconds);
+  if (index >= 0 && index !== state.currentListeningIndex) {
+    state.currentListeningIndex = index;
+    renderListeningState();
+  }
+
+  const current = segments[state.currentListeningIndex];
+  if (els.listeningLoopToggle.checked && current && currentTime >= current.end_seconds) {
+    els.listeningAudio.currentTime = current.start_seconds;
+    els.listeningAudio.play();
+  }
+}
+
+function jumpListening(direction) {
+  const segments = getListeningSegments();
+  if (!segments.length) return;
+  state.currentListeningIndex = Math.max(0, Math.min(segments.length - 1, state.currentListeningIndex + direction));
+  const segment = segments[state.currentListeningIndex];
+  els.listeningAudio.currentTime = segment.start_seconds;
+  renderListeningState();
+}
+
+function playListeningSegment() {
+  const segment = getListeningSegments()[state.currentListeningIndex];
+  if (!segment) return;
+  els.listeningAudio.currentTime = segment.start_seconds;
+  els.listeningAudio.play();
+  renderListeningState();
 }
 
 function findListeningTrack(trackId) {
@@ -537,12 +672,12 @@ async function loadShow(showId) {
   renderCurrentState();
 }
 
-async function loadReading(readingId) {
+async function loadReading(readingId, startIndex = 0) {
   const item = state.readingLibrary.find((entry) => entry.id === readingId);
   if (!item) return;
   stopPlayback();
   state.currentReading = item;
-  state.currentReadingIndex = 0;
+  state.currentReadingIndex = Math.max(0, Math.min((item.items || []).length - 1, startIndex));
   els.readingRevealToggle.checked = false;
   setScreen("reading");
   renderReadingState();
@@ -554,13 +689,14 @@ function loadListeningTrack(trackId) {
 
   stopPlayback();
   state.currentListeningTrack = result.track;
+  state.currentListeningIndex = 0;
   els.listeningTitle.textContent = "청해";
   els.listeningSection.textContent = result.section.title || "";
-  els.listeningTrackTitle.textContent = result.track.title || "";
   els.listeningLoopToggle.checked = false;
   els.listeningAudio.loop = false;
   els.listeningAudio.src = result.track.site_audio;
   setScreen("listening");
+  renderListeningState();
 }
 
 function jumpReading(direction) {
@@ -571,12 +707,12 @@ function jumpReading(direction) {
 }
 
 function bindEvents() {
-  els.modeTabs.forEach((button) => {
+  els.homeButtons.forEach((button) => {
     button.addEventListener("click", () => {
-      state.libraryMode = button.dataset.libraryMode || "video";
-      renderLibrary();
+      openLibraryMode(button.dataset.libraryMode || "video");
     });
   });
+  els.libraryBackButton.addEventListener("click", setLibraryHome);
 
   els.backButton.addEventListener("click", () => {
     if (state.isPlayerHistoryActive) {
@@ -592,8 +728,12 @@ function bindEvents() {
   els.readingNext.addEventListener("click", () => jumpReading(1));
   els.listeningBackButton.addEventListener("click", returnToLibrary);
   els.listeningLoopToggle.addEventListener("change", () => {
-    els.listeningAudio.loop = els.listeningLoopToggle.checked;
+    els.listeningAudio.loop = false;
   });
+  els.listeningPrev.addEventListener("click", () => jumpListening(-1));
+  els.listeningNext.addEventListener("click", () => jumpListening(1));
+  els.listeningSegmentPlay.addEventListener("click", playListeningSegment);
+  els.listeningAudio.addEventListener("timeupdate", syncListeningSegmentFromTime);
 
   els.playToggle.addEventListener("click", () => {
     if (!state.currentShow) return;
@@ -615,8 +755,13 @@ function bindEvents() {
   });
 
   window.addEventListener("popstate", () => {
-    if (!state.currentShow) return;
-    returnToLibrary();
+    if (state.currentShow || state.currentReading || state.currentListeningTrack) {
+      returnToLibrary();
+      return;
+    }
+    if (state.libraryMode) {
+      setLibraryHome();
+    }
   });
 }
 
@@ -624,6 +769,12 @@ async function main() {
   setPlayVisual(false);
   bindEvents();
   await loadLibrary();
+  if (window.location.hash) {
+    const mode = window.location.hash.replace("#", "");
+    if (["video", "reading", "listening"].includes(mode)) {
+      openLibraryMode(mode, false);
+    }
+  }
 }
 
 main().catch((error) => {

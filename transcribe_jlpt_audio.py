@@ -2,16 +2,33 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
+import shutil
 from pathlib import Path
 
+import main as engine
+from build_webapp import build_translation_map, clean_translation, serialize_grammar, serialize_vocab
 
 BASE_DIR = Path(__file__).resolve().parent
 REFINED_DIR = BASE_DIR / "_jlpt source refined"
 LISTENING_INDEX = REFINED_DIR / "listening" / "n3_listening_review_index.json"
 TRANSCRIPT_DIR = REFINED_DIR / "listening" / "transcripts"
+WHISPER_MODEL_DIR = BASE_DIR / ".whisper_models"
 
 
 def load_whisper():
+    try:
+        import imageio_ffmpeg
+
+        ffmpeg_path = Path(imageio_ffmpeg.get_ffmpeg_exe())
+        WHISPER_MODEL_DIR.mkdir(parents=True, exist_ok=True)
+        ffmpeg_alias = WHISPER_MODEL_DIR / "ffmpeg.exe"
+        if not ffmpeg_alias.exists():
+            shutil.copy2(ffmpeg_path, ffmpeg_alias)
+        os.environ["PATH"] = f"{ffmpeg_alias.parent}{os.pathsep}{ffmpeg_path.parent}{os.pathsep}{os.environ.get('PATH', '')}"
+    except Exception:
+        pass
+
     try:
         import whisper
     except ImportError as exc:
@@ -30,6 +47,38 @@ def iter_tracks(index_payload: dict, limit: int | None):
             count += 1
             if limit is not None and count >= limit:
                 return
+
+
+def analyze_segments(segments: list[dict], translate: bool) -> list[dict]:
+    sentences = [segment["text"] for segment in segments if segment.get("text")]
+    translation_map = build_translation_map(sentences, translate) if translate else {sentence: "" for sentence in sentences}
+
+    engine.ensure_reference_database(BASE_DIR)
+    vocab_index, grammar_entries, hackers_reference = engine.load_reference_data_from_database(BASE_DIR)
+
+    from janome.tokenizer import Tokenizer
+
+    tokenizer = Tokenizer()
+    enriched: list[dict] = []
+    for segment in segments:
+        text = segment.get("text", "")
+        analysis = engine.analyze_sentence(
+            text,
+            translation_map,
+            tokenizer,
+            vocab_index,
+            grammar_entries,
+            hackers_reference,
+        )
+        enriched.append(
+            {
+                **segment,
+                "translation": clean_translation(translation_map.get(text, "")),
+                "vocab_matches": [serialize_vocab(item) for item in analysis.vocab_matches] if analysis else [],
+                "grammar_matches": [serialize_grammar(item) for item in analysis.grammar_matches] if analysis else [],
+            }
+        )
+    return enriched
 
 
 def transcribe_track(model, track: dict, language: str) -> dict:
@@ -59,19 +108,41 @@ def transcribe_track(model, track: dict, language: str) -> dict:
     }
 
 
+def merge_track_transcript(track: dict, transcript: dict) -> None:
+    transcript_file = f"listening/transcripts/{track['id']}.json"
+    track["transcript_status"] = "complete"
+    track["transcript_file"] = transcript_file
+    track["transcript_model"] = transcript.get("model", "")
+    track["language"] = transcript.get("language", "ja")
+    track["text"] = transcript.get("text", "")
+    track["segments"] = transcript.get("segments", [])
+
+
+def has_segment_translations(track: dict) -> bool:
+    segments = track.get("segments", [])
+    return bool(segments) and all(segment.get("translation") for segment in segments)
+
+
+def write_index(index_payload: dict) -> None:
+    LISTENING_INDEX.write_text(json.dumps(index_payload, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Transcribe refined JLPT listening audio with Whisper.")
     parser.add_argument("--model", default="small", choices=["small", "medium"])
     parser.add_argument("--language", default="ja")
     parser.add_argument("--limit", type=int, default=None)
     parser.add_argument("--only-id", default="")
+    parser.add_argument("--no-translate", action="store_true")
+    parser.add_argument("--overwrite", action="store_true")
     args = parser.parse_args()
 
     if not LISTENING_INDEX.exists():
         raise SystemExit("Listening index is missing. Run refine_jlpt_sources.py first.")
 
     whisper = load_whisper()
-    model = whisper.load_model(args.model)
+    WHISPER_MODEL_DIR.mkdir(parents=True, exist_ok=True)
+    model = whisper.load_model(args.model, download_root=str(WHISPER_MODEL_DIR))
     TRANSCRIPT_DIR.mkdir(parents=True, exist_ok=True)
 
     index_payload = json.loads(LISTENING_INDEX.read_text(encoding="utf-8"))
@@ -80,10 +151,29 @@ def main() -> int:
         tracks = [track for track in tracks if track["id"] == args.only_id]
 
     for track in tracks:
-        transcript = transcribe_track(model, track, args.language)
         out_path = TRANSCRIPT_DIR / f"{track['id']}.json"
+        if (
+            out_path.exists()
+            and track.get("transcript_status") == "complete"
+            and has_segment_translations(track)
+            and not args.overwrite
+        ):
+            print(f"[skip] {track['id']} already complete")
+            continue
+
+        if out_path.exists() and not args.overwrite:
+            transcript = json.loads(out_path.read_text(encoding="utf-8"))
+            print(f"[cached] {track['id']} <- {out_path}")
+        else:
+            transcript = transcribe_track(model, track, args.language)
+            print(f"[transcribed] {track['id']}")
+
+        transcript["model"] = args.model
+        transcript["segments"] = analyze_segments(transcript.get("segments", []), translate=not args.no_translate)
         out_path.write_text(json.dumps(transcript, ensure_ascii=False, indent=2), encoding="utf-8")
-        print(f"[transcribed] {track['id']} -> {out_path}")
+        merge_track_transcript(track, transcript)
+        write_index(index_payload)
+        print(f"[merged] {track['id']} -> {out_path}")
 
     return 0
 
