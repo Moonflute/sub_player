@@ -1,0 +1,9 @@
+{
+  "reading_sentence_count": 119,
+  "listening_track_count": 216,
+  "outputs": [
+    "reading/n3_official_workbook_reading.json",
+    "reading/n3_official_workbook_raw_pages.json",
+    "listening/n3_listening_review_index.json"
+  ]
+}

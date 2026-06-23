@@ -19,6 +19,7 @@ INPUT_DIR = BASE_DIR / "input_script"
 SOURCE_DIR = BASE_DIR / "site_src"
 OUTPUT_DIR = BASE_DIR / "site"
 SHOW_DB_DIR = BASE_DIR / "show_db"
+JLPT_REFINED_DIR = BASE_DIR / "_jlpt source refined"
 SYNC_OVERRIDES_FILE = BASE_DIR / "web_sync_offsets.json"
 VERSION_FILE = BASE_DIR / "VERSION"
 
@@ -896,6 +897,15 @@ def build_site(
     shutil.copy2(db_dir / "library.json", output_dir / "data" / "library.json")
     for show_json in (db_dir / "shows").glob("*.json"):
         shutil.copy2(show_json, data_dir / show_json.name)
+    if JLPT_REFINED_DIR.exists():
+        jlpt_data_dir = output_dir / "data" / "jlpt"
+        if jlpt_data_dir.exists():
+            shutil.rmtree(jlpt_data_dir)
+        shutil.copytree(
+            JLPT_REFINED_DIR,
+            jlpt_data_dir,
+            ignore=shutil.ignore_patterns("*.mp3", "transcripts"),
+        )
     print(f"[done] static site written to {output_dir}")
 
 

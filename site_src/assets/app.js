@@ -1,6 +1,11 @@
 const state = {
   library: [],
+  readingLibrary: [],
+  listeningLibrary: [],
+  libraryMode: "video",
   currentShow: null,
+  currentReading: null,
+  currentReadingIndex: 0,
   currentTime: 0,
   isPlaying: false,
   tickHandle: null,
@@ -10,8 +15,18 @@ const state = {
 const els = {
   libraryScreen: document.getElementById("library-screen"),
   playerScreen: document.getElementById("player-screen"),
+  readingScreen: document.getElementById("reading-screen"),
   libraryList: document.getElementById("library-list"),
+  modeTabs: document.querySelectorAll("[data-library-mode]"),
   backButton: document.getElementById("back-button"),
+  readingBackButton: document.getElementById("reading-back-button"),
+  readingTitle: document.getElementById("reading-title"),
+  readingProgress: document.getElementById("reading-progress"),
+  readingRevealToggle: document.getElementById("reading-reveal-toggle"),
+  readingPrev: document.getElementById("reading-prev"),
+  readingNext: document.getElementById("reading-next"),
+  readingSentence: document.getElementById("reading-sentence"),
+  readingTranslation: document.getElementById("reading-translation"),
   sentencePrev: document.getElementById("sentence-prev"),
   sentenceNext: document.getElementById("sentence-next"),
   playToggle: document.getElementById("play-toggle"),
@@ -48,8 +63,10 @@ function escapeHtml(text) {
 
 function setScreen(mode) {
   const isPlayer = mode === "player";
-  els.libraryScreen.classList.toggle("is-hidden", isPlayer);
+  const isReading = mode === "reading";
+  els.libraryScreen.classList.toggle("is-hidden", isPlayer || isReading);
   els.playerScreen.classList.toggle("is-hidden", !isPlayer);
+  els.readingScreen.classList.toggle("is-hidden", !isReading);
 }
 
 function enterPlayerHistory(showId) {
@@ -68,6 +85,7 @@ function returnToLibrary() {
   stopPlayback();
   setScreen("library");
   state.currentShow = null;
+  state.currentReading = null;
   state.currentTime = 0;
   leavePlayerHistory();
 }
@@ -182,6 +200,10 @@ function renderHighlightedSentence(sentence) {
     parts.push(escapeHtml(text.slice(cursor)));
   }
   return parts.join("");
+}
+
+function renderPlainSentence(sentence) {
+  return escapeHtml(sentence?.text || "");
 }
 
 function findCurrentSentenceIndex(show, currentTime) {
@@ -301,6 +323,20 @@ function renderCurrentState() {
 }
 
 function renderLibrary() {
+  els.modeTabs.forEach((button) => {
+    button.classList.toggle("is-active", button.dataset.libraryMode === state.libraryMode);
+  });
+
+  if (state.libraryMode === "reading") {
+    renderReadingLibrary();
+    return;
+  }
+
+  if (state.libraryMode === "listening") {
+    renderListeningLibrary();
+    return;
+  }
+
   const groups = new Map();
   for (const item of state.library) {
     const seriesName = item.title.replace(/\s*-\s*S\d{2}E\d{2}$/i, "").trim() || item.title;
@@ -332,6 +368,60 @@ function renderLibrary() {
       await loadShow(button.dataset.showId);
     });
   }
+}
+
+function renderReadingLibrary() {
+  els.libraryList.innerHTML = state.readingLibrary.map((item) => `
+    <section class="series-group">
+      <h2 class="series-group__title">독해</h2>
+      <div class="series-group__items">
+        <button class="show-item" data-reading-id="${item.id}" type="button">
+          <span class="show-title">${escapeHtml(item.title)}</span>
+          <span class="show-meta">
+            <span>문장 ${item.sentence_count || 0}</span>
+            <span>${escapeHtml(item.level || "N3")}</span>
+          </span>
+        </button>
+      </div>
+    </section>
+  `).join("");
+
+  for (const button of els.libraryList.querySelectorAll("[data-reading-id]")) {
+    button.addEventListener("click", async () => {
+      await loadReading(button.dataset.readingId);
+    });
+  }
+}
+
+function renderListeningLibrary() {
+  els.libraryList.innerHTML = state.listeningLibrary.map((section) => `
+    <section class="series-group">
+      <h2 class="series-group__title">${escapeHtml(section.title)}</h2>
+      <div class="series-group__items">
+        ${(section.tracks || []).map((track) => `
+          <button class="show-item show-item--compact" type="button" disabled>
+            <span class="show-title">${escapeHtml(track.title)}</span>
+            <span class="show-meta">
+              <span>전사 ${escapeHtml(track.transcript_status || "pending")}</span>
+              <span>${Math.round((track.file_size || 0) / 1024 / 1024 * 10) / 10}MB</span>
+            </span>
+          </button>
+        `).join("")}
+      </div>
+    </section>
+  `).join("");
+}
+
+function renderReadingState() {
+  const reading = state.currentReading;
+  const items = reading?.items || [];
+  const item = items[state.currentReadingIndex] || null;
+  const reveal = Boolean(els.readingRevealToggle.checked);
+
+  els.readingTitle.textContent = reading ? reading.title : "독해";
+  els.readingProgress.textContent = items.length ? `${state.currentReadingIndex + 1} / ${items.length}` : "0 / 0";
+  els.readingSentence.innerHTML = reveal ? renderHighlightedSentence(item) : renderPlainSentence(item);
+  els.readingTranslation.textContent = reveal ? item?.translation || "" : "";
 }
 
 function syncTimelineBounds() {
@@ -386,6 +476,18 @@ async function fetchJson(url) {
 async function loadLibrary() {
   const payload = await fetchJson("./data/library.json");
   state.library = payload.items || [];
+  try {
+    const reading = await fetchJson("./data/jlpt/reading/n3_official_workbook_reading.json");
+    state.readingLibrary = [reading];
+  } catch {
+    state.readingLibrary = [];
+  }
+  try {
+    const listening = await fetchJson("./data/jlpt/listening/n3_listening_review_index.json");
+    state.listeningLibrary = listening.sections || [];
+  } catch {
+    state.listeningLibrary = [];
+  }
   renderLibrary();
 }
 
@@ -404,7 +506,32 @@ async function loadShow(showId) {
   renderCurrentState();
 }
 
+async function loadReading(readingId) {
+  const item = state.readingLibrary.find((entry) => entry.id === readingId);
+  if (!item) return;
+  stopPlayback();
+  state.currentReading = item;
+  state.currentReadingIndex = 0;
+  els.readingRevealToggle.checked = false;
+  setScreen("reading");
+  renderReadingState();
+}
+
+function jumpReading(direction) {
+  const items = state.currentReading?.items || [];
+  if (!items.length) return;
+  state.currentReadingIndex = Math.max(0, Math.min(items.length - 1, state.currentReadingIndex + direction));
+  renderReadingState();
+}
+
 function bindEvents() {
+  els.modeTabs.forEach((button) => {
+    button.addEventListener("click", () => {
+      state.libraryMode = button.dataset.libraryMode || "video";
+      renderLibrary();
+    });
+  });
+
   els.backButton.addEventListener("click", () => {
     if (state.isPlayerHistoryActive) {
       window.history.back();
@@ -412,6 +539,11 @@ function bindEvents() {
     }
     returnToLibrary();
   });
+
+  els.readingBackButton.addEventListener("click", returnToLibrary);
+  els.readingRevealToggle.addEventListener("change", renderReadingState);
+  els.readingPrev.addEventListener("click", () => jumpReading(-1));
+  els.readingNext.addEventListener("click", () => jumpReading(1));
 
   els.playToggle.addEventListener("click", () => {
     if (!state.currentShow) return;
