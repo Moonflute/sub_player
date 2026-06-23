@@ -904,7 +904,7 @@ def build_site(
         shutil.copytree(
             JLPT_REFINED_DIR,
             jlpt_data_dir,
-            ignore=shutil.ignore_patterns("*.mp3", "transcripts"),
+            ignore=shutil.ignore_patterns("transcripts"),
         )
     print(f"[done] static site written to {output_dir}")
 

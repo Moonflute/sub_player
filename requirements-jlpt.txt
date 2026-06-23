@@ -1,2 +1,3 @@
 pdfplumber
+imageio-ffmpeg
 openai-whisper

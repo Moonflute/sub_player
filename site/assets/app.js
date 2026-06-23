@@ -5,6 +5,7 @@ const state = {
   libraryMode: "video",
   currentShow: null,
   currentReading: null,
+  currentListeningTrack: null,
   currentReadingIndex: 0,
   currentTime: 0,
   isPlaying: false,
@@ -16,6 +17,7 @@ const els = {
   libraryScreen: document.getElementById("library-screen"),
   playerScreen: document.getElementById("player-screen"),
   readingScreen: document.getElementById("reading-screen"),
+  listeningScreen: document.getElementById("listening-screen"),
   libraryList: document.getElementById("library-list"),
   modeTabs: document.querySelectorAll("[data-library-mode]"),
   backButton: document.getElementById("back-button"),
@@ -27,6 +29,12 @@ const els = {
   readingNext: document.getElementById("reading-next"),
   readingSentence: document.getElementById("reading-sentence"),
   readingTranslation: document.getElementById("reading-translation"),
+  listeningBackButton: document.getElementById("listening-back-button"),
+  listeningTitle: document.getElementById("listening-title"),
+  listeningSection: document.getElementById("listening-section"),
+  listeningTrackTitle: document.getElementById("listening-track-title"),
+  listeningAudio: document.getElementById("listening-audio"),
+  listeningLoopToggle: document.getElementById("listening-loop-toggle"),
   sentencePrev: document.getElementById("sentence-prev"),
   sentenceNext: document.getElementById("sentence-next"),
   playToggle: document.getElementById("play-toggle"),
@@ -64,9 +72,11 @@ function escapeHtml(text) {
 function setScreen(mode) {
   const isPlayer = mode === "player";
   const isReading = mode === "reading";
-  els.libraryScreen.classList.toggle("is-hidden", isPlayer || isReading);
+  const isListening = mode === "listening";
+  els.libraryScreen.classList.toggle("is-hidden", isPlayer || isReading || isListening);
   els.playerScreen.classList.toggle("is-hidden", !isPlayer);
   els.readingScreen.classList.toggle("is-hidden", !isReading);
+  els.listeningScreen.classList.toggle("is-hidden", !isListening);
 }
 
 function enterPlayerHistory(showId) {
@@ -86,6 +96,9 @@ function returnToLibrary() {
   setScreen("library");
   state.currentShow = null;
   state.currentReading = null;
+  state.currentListeningTrack = null;
+  els.listeningAudio.pause();
+  els.listeningAudio.removeAttribute("src");
   state.currentTime = 0;
   leavePlayerHistory();
 }
@@ -399,17 +412,23 @@ function renderListeningLibrary() {
       <h2 class="series-group__title">${escapeHtml(section.title)}</h2>
       <div class="series-group__items">
         ${(section.tracks || []).map((track) => `
-          <button class="show-item show-item--compact" type="button" disabled>
+          <button class="show-item show-item--compact" data-listening-id="${track.id}" type="button" ${track.site_audio ? "" : "disabled"}>
             <span class="show-title">${escapeHtml(track.title)}</span>
             <span class="show-meta">
-              <span>전사 ${escapeHtml(track.transcript_status || "pending")}</span>
-              <span>${Math.round((track.file_size || 0) / 1024 / 1024 * 10) / 10}MB</span>
+              <span>${escapeHtml(section.title)}</span>
+              <span>${Math.round((track.compressed_file_size || track.file_size || 0) / 1024 / 1024 * 10) / 10}MB</span>
             </span>
           </button>
         `).join("")}
       </div>
     </section>
   `).join("");
+
+  for (const button of els.libraryList.querySelectorAll("[data-listening-id]")) {
+    button.addEventListener("click", () => {
+      loadListeningTrack(button.dataset.listeningId);
+    });
+  }
 }
 
 function renderReadingState() {
@@ -422,6 +441,16 @@ function renderReadingState() {
   els.readingProgress.textContent = items.length ? `${state.currentReadingIndex + 1} / ${items.length}` : "0 / 0";
   els.readingSentence.innerHTML = reveal ? renderHighlightedSentence(item) : renderPlainSentence(item);
   els.readingTranslation.textContent = reveal ? item?.translation || "" : "";
+}
+
+function findListeningTrack(trackId) {
+  for (const section of state.listeningLibrary) {
+    const track = (section.tracks || []).find((item) => item.id === trackId);
+    if (track) {
+      return { section, track };
+    }
+  }
+  return null;
 }
 
 function syncTimelineBounds() {
@@ -517,6 +546,21 @@ async function loadReading(readingId) {
   renderReadingState();
 }
 
+function loadListeningTrack(trackId) {
+  const result = findListeningTrack(trackId);
+  if (!result || !result.track.site_audio) return;
+
+  stopPlayback();
+  state.currentListeningTrack = result.track;
+  els.listeningTitle.textContent = "청해";
+  els.listeningSection.textContent = result.section.title || "";
+  els.listeningTrackTitle.textContent = result.track.title || "";
+  els.listeningLoopToggle.checked = false;
+  els.listeningAudio.loop = false;
+  els.listeningAudio.src = result.track.site_audio;
+  setScreen("listening");
+}
+
 function jumpReading(direction) {
   const items = state.currentReading?.items || [];
   if (!items.length) return;
@@ -544,6 +588,10 @@ function bindEvents() {
   els.readingRevealToggle.addEventListener("change", renderReadingState);
   els.readingPrev.addEventListener("click", () => jumpReading(-1));
   els.readingNext.addEventListener("click", () => jumpReading(1));
+  els.listeningBackButton.addEventListener("click", returnToLibrary);
+  els.listeningLoopToggle.addEventListener("change", () => {
+    els.listeningAudio.loop = els.listeningLoopToggle.checked;
+  });
 
   els.playToggle.addEventListener("click", () => {
     if (!state.currentShow) return;

@@ -23,7 +23,7 @@
         <button class="mode-tab" data-library-mode="listening" type="button">청해</button>
       </div>
       <div id="library-list" class="library-list"></div>
-      <div class="version-badge">v 0.0.16</div>
+      <div class="version-badge">v 0.0.18</div>
     </section>
 
     <section id="player-screen" class="screen screen-player is-hidden">
@@ -109,6 +109,32 @@
           </button>
           <div id="reading-sentence" class="current-sentence reading-sentence"></div>
           <div id="reading-translation" class="current-translation reading-extra"></div>
+        </section>
+      </div>
+    </section>
+
+    <section id="listening-screen" class="screen screen-player is-hidden">
+      <div class="player-stage listening-stage">
+        <header class="player-topbar">
+          <button id="listening-back-button" class="icon-button text-button" type="button" aria-label="목록으로 돌아가기">
+            <span class="icon-button__icon">←</span>
+            <span class="text-button__label">목록</span>
+          </button>
+          <div class="player-topbar__center">
+            <div id="listening-title" class="player-title">청해</div>
+            <div id="listening-section" class="player-time"></div>
+          </div>
+          <label class="reveal-toggle">
+            <input id="listening-loop-toggle" type="checkbox">
+            <span>반복</span>
+          </label>
+        </header>
+
+        <section class="listening-panel">
+          <div class="listening-card">
+            <div id="listening-track-title" class="listening-track-title"></div>
+            <audio id="listening-audio" class="listening-audio" controls preload="metadata"></audio>
+          </div>
         </section>
       </div>
     </section>

@@ -262,6 +262,35 @@ input {
   min-height: 2.9em;
 }
 
+.listening-stage {
+  overflow: hidden;
+}
+
+.listening-panel {
+  display: grid;
+  place-items: center;
+  min-height: 0;
+}
+
+.listening-card {
+  width: min(720px, 100%);
+  display: grid;
+  gap: 18px;
+  text-align: center;
+}
+
+.listening-track-title {
+  color: var(--ink);
+  font-family: var(--font-head);
+  font-size: clamp(1.25rem, 2.4vw, 2rem);
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.listening-audio {
+  width: 100%;
+}
+
 .player-topbar {
   display: grid;
   grid-template-columns: auto 1fr auto;

@@ -21,7 +21,12 @@
           "file_size": 2397574,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_01_001.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_01_001.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 269170
         },
         {
           "id": "listening_01_002",
@@ -34,7 +39,12 @@
           "file_size": 2548039,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_01_002.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_01_002.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 297382
         },
         {
           "id": "listening_01_003",
@@ -47,7 +57,12 @@
           "file_size": 2966835,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_01_003.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_01_003.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 375906
         },
         {
           "id": "listening_01_004",
@@ -60,7 +75,12 @@
           "file_size": 2922531,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_01_004.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_01_004.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 367599
         },
         {
           "id": "listening_01_005",
@@ -73,7 +93,12 @@
           "file_size": 3088043,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_01_005.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_01_005.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 398633
         },
         {
           "id": "listening_01_006",
@@ -86,7 +111,12 @@
           "file_size": 2716895,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_01_006.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_01_006.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 329042
         },
         {
           "id": "listening_01_007",
@@ -99,7 +129,12 @@
           "file_size": 2409277,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_01_007.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_01_007.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 271364
         },
         {
           "id": "listening_01_008",
@@ -112,7 +147,12 @@
           "file_size": 2638319,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_01_008.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_01_008.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 314309
         },
         {
           "id": "listening_01_009",
@@ -125,7 +165,12 @@
           "file_size": 2594015,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_01_009.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_01_009.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 306002
         },
         {
           "id": "listening_01_010",
@@ -138,7 +183,12 @@
           "file_size": 3098075,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_01_010.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_01_010.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 400514
         },
         {
           "id": "listening_01_011",
@@ -151,7 +201,12 @@
           "file_size": 3552814,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_01_011.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_01_011.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 485778
         },
         {
           "id": "listening_01_012",
@@ -164,7 +219,12 @@
           "file_size": 3665663,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_01_012.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_01_012.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 506937
         },
         {
           "id": "listening_01_013",
@@ -177,7 +237,12 @@
           "file_size": 3312906,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_01_013.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_01_013.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 440795
         },
         {
           "id": "listening_01_014",
@@ -190,7 +255,12 @@
           "file_size": 3267766,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_01_014.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_01_014.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 432332
         },
         {
           "id": "listening_01_015",
@@ -203,7 +273,12 @@
           "file_size": 3295351,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_01_015.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_01_015.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 437504
         },
         {
           "id": "listening_01_016",
@@ -216,7 +291,12 @@
           "file_size": 3517706,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_01_016.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_01_016.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 479195
         },
         {
           "id": "listening_01_017",
@@ -229,7 +309,12 @@
           "file_size": 3350522,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_01_017.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_01_017.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 447848
         },
         {
           "id": "listening_01_018",
@@ -242,7 +327,12 @@
           "file_size": 3177487,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_01_018.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_01_018.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 415404
         },
         {
           "id": "listening_01_019",
@@ -255,7 +345,12 @@
           "file_size": 3615508,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_01_019.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_01_019.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 497533
         },
         {
           "id": "listening_01_020",
@@ -268,7 +363,12 @@
           "file_size": 3883002,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_01_020.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_01_020.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 547688
         },
         {
           "id": "listening_01_021",
@@ -281,7 +381,12 @@
           "file_size": 3114793,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_01_021.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_01_021.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 403649
         },
         {
           "id": "listening_01_022",
@@ -294,7 +399,12 @@
           "file_size": 3520214,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_01_022.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_01_022.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 479665
         },
         {
           "id": "listening_01_023",
@@ -307,7 +417,12 @@
           "file_size": 3259407,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_01_023.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_01_023.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 430764
         },
         {
           "id": "listening_01_024",
@@ -320,7 +435,12 @@
           "file_size": 3527737,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_01_024.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_01_024.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 481076
         },
         {
           "id": "listening_01_025",
@@ -333,7 +453,12 @@
           "file_size": 3221791,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_01_025.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_01_025.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 423711
         },
         {
           "id": "listening_01_026",
@@ -346,7 +471,12 @@
           "file_size": 3437458,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_01_026.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_01_026.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 464149
         },
         {
           "id": "listening_01_027",
@@ -359,7 +489,12 @@
           "file_size": 2904978,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_01_027.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_01_027.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 364309
         },
         {
           "id": "listening_01_028",
@@ -372,7 +507,12 @@
           "file_size": 3243525,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_01_028.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_01_028.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 427786
         }
       ]
     },
@@ -392,7 +532,12 @@
           "file_size": 3542783,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_02_001.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_02_001.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 483897
         },
         {
           "id": "listening_02_002",
@@ -405,7 +550,12 @@
           "file_size": 3541111,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_02_002.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_02_002.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 483584
         },
         {
           "id": "listening_02_003",
@@ -418,7 +568,12 @@
           "file_size": 3551978,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_02_003.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_02_003.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 485621
         },
         {
           "id": "listening_02_004",
@@ -431,7 +586,12 @@
           "file_size": 3645601,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_02_004.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_02_004.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 503176
         },
         {
           "id": "listening_02_005",
@@ -444,7 +604,12 @@
           "file_size": 3463371,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_02_005.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_02_005.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 469007
         },
         {
           "id": "listening_02_006",
@@ -457,7 +622,12 @@
           "file_size": 3607985,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_02_006.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_02_006.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 496123
         },
         {
           "id": "listening_02_007",
@@ -470,7 +640,12 @@
           "file_size": 3703280,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_02_007.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_02_007.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 513990
         },
         {
           "id": "listening_02_008",
@@ -483,7 +658,12 @@
           "file_size": 4164707,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_02_008.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_02_008.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 600508
         },
         {
           "id": "listening_02_009",
@@ -496,7 +676,12 @@
           "file_size": 3166620,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_02_009.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_02_009.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 413367
         },
         {
           "id": "listening_02_010",
@@ -509,7 +694,12 @@
           "file_size": 3152409,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_02_010.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_02_010.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 410702
         },
         {
           "id": "listening_02_011",
@@ -522,7 +712,12 @@
           "file_size": 3751763,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_02_011.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_02_011.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 523081
         },
         {
           "id": "listening_02_012",
@@ -535,7 +730,12 @@
           "file_size": 3501823,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_02_012.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_02_012.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 476217
         },
         {
           "id": "listening_02_013",
@@ -548,7 +748,12 @@
           "file_size": 3976625,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_02_013.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_02_013.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 565243
         },
         {
           "id": "listening_02_014",
@@ -561,7 +766,12 @@
           "file_size": 3566189,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_02_014.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_02_014.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 488286
         },
         {
           "id": "listening_02_015",
@@ -574,7 +784,12 @@
           "file_size": 3941516,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_02_015.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_02_015.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 558660
         },
         {
           "id": "listening_02_016",
@@ -587,7 +802,12 @@
           "file_size": 4506597,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_02_016.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_02_016.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 664612
         },
         {
           "id": "listening_02_017",
@@ -600,7 +820,12 @@
           "file_size": 3877151,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_02_017.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_02_017.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 546591
         },
         {
           "id": "listening_02_018",
@@ -613,7 +838,12 @@
           "file_size": 3597118,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_02_018.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_02_018.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 494085
         },
         {
           "id": "listening_02_019",
@@ -626,7 +856,12 @@
           "file_size": 4236596,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_02_019.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_02_019.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 613987
         },
         {
           "id": "listening_02_020",
@@ -639,7 +874,12 @@
           "file_size": 3952383,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_02_020.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_02_020.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 560697
         },
         {
           "id": "listening_02_021",
@@ -652,7 +892,12 @@
           "file_size": 4321859,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_02_021.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_02_021.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 629974
         },
         {
           "id": "listening_02_022",
@@ -665,7 +910,12 @@
           "file_size": 3999195,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_02_022.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_02_022.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 569474
         },
         {
           "id": "listening_02_023",
@@ -678,7 +928,12 @@
           "file_size": 4490715,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_02_023.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_02_023.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 661634
         },
         {
           "id": "listening_02_024",
@@ -691,7 +946,12 @@
           "file_size": 4948798,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_02_024.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_02_024.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 747525
         },
         {
           "id": "listening_02_025",
@@ -704,7 +964,12 @@
           "file_size": 4443067,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_02_025.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_02_025.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 652701
         },
         {
           "id": "listening_02_026",
@@ -717,7 +982,12 @@
           "file_size": 4041827,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_02_026.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_02_026.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 577468
         },
         {
           "id": "listening_02_027",
@@ -730,7 +1000,12 @@
           "file_size": 4018421,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_02_027.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_02_027.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 573079
         },
         {
           "id": "listening_02_028",
@@ -743,7 +1018,12 @@
           "file_size": 3941516,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_02_028.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_02_028.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 558660
         }
       ]
     },
@@ -763,7 +1043,12 @@
           "file_size": 3460027,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_03_001.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_03_001.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 468381
         },
         {
           "id": "listening_03_002",
@@ -776,7 +1061,12 @@
           "file_size": 3143214,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_03_002.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_03_002.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 408978
         },
         {
           "id": "listening_03_003",
@@ -789,7 +1079,12 @@
           "file_size": 3438294,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_03_003.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_03_003.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 464305
         },
         {
           "id": "listening_03_004",
@@ -802,7 +1097,12 @@
           "file_size": 3493464,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_03_004.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_03_004.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 474650
         },
         {
           "id": "listening_03_005",
@@ -815,7 +1115,12 @@
           "file_size": 3284485,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_03_005.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_03_005.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 435466
         },
         {
           "id": "listening_03_006",
@@ -828,7 +1133,12 @@
           "file_size": 3559502,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_03_006.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_03_006.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 487032
         },
         {
           "id": "listening_03_007",
@@ -841,7 +1151,12 @@
           "file_size": 3785200,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_03_007.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_03_007.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 529350
         },
         {
           "id": "listening_03_008",
@@ -854,7 +1169,12 @@
           "file_size": 3144886,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_03_008.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_03_008.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 409292
         },
         {
           "id": "listening_03_009",
@@ -867,7 +1187,12 @@
           "file_size": 3386467,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_03_009.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_03_009.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 454588
         },
         {
           "id": "listening_03_010",
@@ -880,7 +1205,12 @@
           "file_size": 3154081,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_03_010.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_03_010.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 411016
         },
         {
           "id": "listening_03_011",
@@ -893,7 +1223,12 @@
           "file_size": 4091146,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_03_011.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_03_011.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 586715
         },
         {
           "id": "listening_03_012",
@@ -906,7 +1241,12 @@
           "file_size": 3823652,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_03_012.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_03_012.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 536560
         },
         {
           "id": "listening_03_013",
@@ -919,7 +1259,12 @@
           "file_size": 4365327,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_03_013.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_03_013.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 638124
         },
         {
           "id": "listening_03_014",
@@ -932,7 +1277,12 @@
           "file_size": 3875479,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_03_014.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_03_014.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 546278
         },
         {
           "id": "listening_03_015",
@@ -945,7 +1295,12 @@
           "file_size": 4034303,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_03_015.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_03_015.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 576057
         },
         {
           "id": "listening_03_016",
@@ -958,7 +1313,12 @@
           "file_size": 4282571,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_03_016.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_03_016.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 622607
         },
         {
           "id": "listening_03_017",
@@ -971,7 +1331,12 @@
           "file_size": 4340249,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_03_017.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_03_017.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 633422
         },
         {
           "id": "listening_03_018",
@@ -984,7 +1349,12 @@
           "file_size": 4306813,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_03_018.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_03_018.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 627153
         },
         {
           "id": "listening_03_019",
@@ -997,7 +1367,12 @@
           "file_size": 4494894,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_03_019.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_03_019.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 662418
         }
       ]
     },
@@ -1017,7 +1392,12 @@
           "file_size": 1867603,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_04_001.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_04_001.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 169801
         },
         {
           "id": "listening_04_002",
@@ -1030,7 +1410,12 @@
           "file_size": 1845869,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_04_002.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_04_002.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 165726
         },
         {
           "id": "listening_04_003",
@@ -1043,7 +1428,12 @@
           "file_size": 1762277,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_04_003.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_04_003.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 150052
         },
         {
           "id": "listening_04_004",
@@ -1056,7 +1446,12 @@
           "file_size": 1792370,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_04_004.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_04_004.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 155695
         },
         {
           "id": "listening_04_005",
@@ -1069,7 +1464,12 @@
           "file_size": 1985467,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_04_005.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_04_005.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 191901
         },
         {
           "id": "listening_04_006",
@@ -1082,7 +1482,12 @@
           "file_size": 1748903,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_04_006.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_04_006.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 147545
         },
         {
           "id": "listening_04_007",
@@ -1095,7 +1500,12 @@
           "file_size": 1778996,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_04_007.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_04_007.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 153187
         },
         {
           "id": "listening_04_008",
@@ -1108,7 +1518,12 @@
           "file_size": 1758098,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_04_008.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_04_008.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 149269
         },
         {
           "id": "listening_04_009",
@@ -1121,7 +1536,12 @@
           "file_size": 2065716,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_04_009.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_04_009.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 206947
         },
         {
           "id": "listening_04_010",
@@ -1134,7 +1554,12 @@
           "file_size": 2158503,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_04_010.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_04_010.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 224345
         },
         {
           "id": "listening_04_011",
@@ -1147,7 +1572,12 @@
           "file_size": 2140112,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_04_011.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_04_011.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 220896
         },
         {
           "id": "listening_04_012",
@@ -1160,7 +1590,12 @@
           "file_size": 2094973,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_04_012.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_04_012.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 212433
         },
         {
           "id": "listening_04_013",
@@ -1173,7 +1608,12 @@
           "file_size": 2124230,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_04_013.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_04_013.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 217919
         },
         {
           "id": "listening_04_014",
@@ -1186,7 +1626,12 @@
           "file_size": 1964569,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_04_014.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_04_014.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 187982
         },
         {
           "id": "listening_04_015",
@@ -1199,7 +1644,12 @@
           "file_size": 1974600,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_04_015.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_04_015.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 189863
         },
         {
           "id": "listening_04_016",
@@ -1212,7 +1662,12 @@
           "file_size": 2142620,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_04_016.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_04_016.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 221367
         },
         {
           "id": "listening_04_017",
@@ -1225,7 +1680,12 @@
           "file_size": 2143456,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_04_017.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_04_017.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 221523
         },
         {
           "id": "listening_04_018",
@@ -1238,7 +1698,12 @@
           "file_size": 2164354,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_04_018.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_04_018.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 225442
         },
         {
           "id": "listening_04_019",
@@ -1251,7 +1716,12 @@
           "file_size": 2248782,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_04_019.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_04_019.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 241272
         },
         {
           "id": "listening_04_020",
@@ -1264,7 +1734,12 @@
           "file_size": 2080762,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_04_020.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_04_020.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 209768
         }
       ]
     },
@@ -1284,7 +1759,12 @@
           "file_size": 1772308,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_05_001.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_05_001.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 151933
         },
         {
           "id": "listening_05_002",
@@ -1297,7 +1777,12 @@
           "file_size": 1701255,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_05_002.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_05_002.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 138611
         },
         {
           "id": "listening_05_003",
@@ -1310,7 +1795,12 @@
           "file_size": 1809925,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_05_003.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_05_003.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 158986
         },
         {
           "id": "listening_05_004",
@@ -1323,7 +1813,12 @@
           "file_size": 1697911,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_05_004.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_05_004.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 137984
         },
         {
           "id": "listening_05_005",
@@ -1336,7 +1831,12 @@
           "file_size": 1749739,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_05_005.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_05_005.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 147702
         },
         {
           "id": "listening_05_006",
@@ -1349,7 +1849,12 @@
           "file_size": 1700420,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_05_006.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_05_006.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 138455
         },
         {
           "id": "listening_05_007",
@@ -1362,7 +1867,12 @@
           "file_size": 1585899,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_05_007.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_05_007.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 116982
         },
         {
           "id": "listening_05_008",
@@ -1375,7 +1885,12 @@
           "file_size": 1710451,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_05_008.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_05_008.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 140336
         },
         {
           "id": "listening_05_009",
@@ -1388,7 +1903,12 @@
           "file_size": 1624352,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_05_009.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_05_009.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 124192
         },
         {
           "id": "listening_05_010",
@@ -1401,7 +1921,12 @@
           "file_size": 1601782,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_05_010.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_05_010.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 119960
         },
         {
           "id": "listening_05_011",
@@ -1414,7 +1939,12 @@
           "file_size": 1909400,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_05_011.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_05_011.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 177639
         },
         {
           "id": "listening_05_012",
@@ -1427,7 +1957,12 @@
           "file_size": 1926118,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_05_012.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_05_012.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 180773
         },
         {
           "id": "listening_05_013",
@@ -1440,7 +1975,12 @@
           "file_size": 1875963,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_05_013.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_05_013.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 171369
         },
         {
           "id": "listening_05_014",
@@ -1453,7 +1993,12 @@
           "file_size": 1821628,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_05_014.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_05_014.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 161182
         },
         {
           "id": "listening_05_015",
@@ -1466,7 +2011,12 @@
           "file_size": 1907728,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_05_015.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_05_015.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 177325
         },
         {
           "id": "listening_05_016",
@@ -1479,7 +2029,12 @@
           "file_size": 1886830,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_05_016.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_05_016.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 173407
         },
         {
           "id": "listening_05_017",
@@ -1492,7 +2047,12 @@
           "file_size": 1855065,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_05_017.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_05_017.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 167451
         },
         {
           "id": "listening_05_018",
@@ -1505,7 +2065,12 @@
           "file_size": 2023085,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_05_018.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_05_018.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 198955
         },
         {
           "id": "listening_05_019",
@@ -1518,7 +2083,12 @@
           "file_size": 1918595,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_05_019.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_05_019.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 179363
         },
         {
           "id": "listening_05_020",
@@ -1531,7 +2101,12 @@
           "file_size": 1888502,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_05_020.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_05_020.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 173720
         },
         {
           "id": "listening_05_021",
@@ -1544,7 +2119,12 @@
           "file_size": 1946180,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_05_021.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_05_021.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 184535
         },
         {
           "id": "listening_05_022",
@@ -1557,7 +2137,12 @@
           "file_size": 1918595,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_05_022.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_05_022.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 179363
         },
         {
           "id": "listening_05_023",
@@ -1570,7 +2155,12 @@
           "file_size": 1900205,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_05_023.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_05_023.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 175915
         },
         {
           "id": "listening_05_024",
@@ -1583,7 +2173,12 @@
           "file_size": 1850050,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_05_024.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_05_024.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 166511
         },
         {
           "id": "listening_05_025",
@@ -1596,7 +2191,12 @@
           "file_size": 1977109,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_05_025.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_05_025.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 190334
         },
         {
           "id": "listening_05_026",
@@ -1609,7 +2209,12 @@
           "file_size": 1913579,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_05_026.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_05_026.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 178422
         },
         {
           "id": "listening_05_027",
@@ -1622,7 +2227,12 @@
           "file_size": 1957047,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_05_027.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_05_027.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 186573
         },
         {
           "id": "listening_05_028",
@@ -1635,7 +2245,12 @@
           "file_size": 1982961,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_05_028.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_05_028.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 191431
         },
         {
           "id": "listening_05_029",
@@ -1648,7 +2263,12 @@
           "file_size": 1961227,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_05_029.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_05_029.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 187356
         },
         {
           "id": "listening_05_030",
@@ -1661,7 +2281,12 @@
           "file_size": 2071568,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_05_030.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_05_030.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 208045
         },
         {
           "id": "listening_05_031",
@@ -1674,7 +2299,12 @@
           "file_size": 1986304,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_05_031.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_05_031.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 192058
         },
         {
           "id": "listening_05_032",
@@ -1687,7 +2317,12 @@
           "file_size": 1828316,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_05_032.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_05_032.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 162435
         },
         {
           "id": "listening_05_033",
@@ -1700,7 +2335,12 @@
           "file_size": 1948688,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_05_033.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_05_033.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 185005
         },
         {
           "id": "listening_05_034",
@@ -1713,7 +2353,12 @@
           "file_size": 1956211,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_05_034.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_05_034.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 186416
         },
         {
           "id": "listening_05_035",
@@ -1726,7 +2371,12 @@
           "file_size": 2089122,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_05_035.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_05_035.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 211337
         },
         {
           "id": "listening_05_036",
@@ -1739,7 +2389,12 @@
           "file_size": 1947016,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_05_036.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_05_036.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 184692
         },
         {
           "id": "listening_05_037",
@@ -1752,7 +2407,12 @@
           "file_size": 2059029,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_05_037.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_05_037.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 205694
         }
       ]
     },
@@ -1772,7 +2432,12 @@
           "file_size": 3184474,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_06_001.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_06_001.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 468382
         },
         {
           "id": "listening_06_002",
@@ -1785,7 +2450,12 @@
           "file_size": 3477882,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_06_002.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_06_002.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 523395
         },
         {
           "id": "listening_06_003",
@@ -1798,7 +2468,12 @@
           "file_size": 2886887,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_06_003.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_06_003.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 412584
         },
         {
           "id": "listening_06_004",
@@ -1811,7 +2486,12 @@
           "file_size": 2931191,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_06_004.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_06_004.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 420891
         },
         {
           "id": "listening_06_005",
@@ -1824,7 +2504,12 @@
           "file_size": 3023978,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_06_005.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_06_005.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 438288
         },
         {
           "id": "listening_06_006",
@@ -1837,7 +2522,12 @@
           "file_size": 3200357,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_06_006.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_06_006.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 471360
         },
         {
           "id": "listening_06_007",
@@ -1850,7 +2540,12 @@
           "file_size": 3978597,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_06_007.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_06_007.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 617280
         },
         {
           "id": "listening_06_008",
@@ -1863,7 +2558,12 @@
           "file_size": 3675158,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_06_008.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_06_008.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 560385
         },
         {
           "id": "listening_06_009",
@@ -1876,7 +2576,12 @@
           "file_size": 3777141,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_06_009.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_06_009.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 579506
         },
         {
           "id": "listening_06_010",
@@ -1889,7 +2594,12 @@
           "file_size": 3706923,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_06_010.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_06_010.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 566341
         },
         {
           "id": "listening_06_011",
@@ -1902,7 +2612,12 @@
           "file_size": 3456984,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_06_011.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_06_011.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 519477
         },
         {
           "id": "listening_06_012",
@@ -1915,7 +2630,12 @@
           "file_size": 3874107,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_06_012.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_06_012.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 597688
         },
         {
           "id": "listening_06_013",
@@ -1928,7 +2648,12 @@
           "file_size": 3754571,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_06_013.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_06_013.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 575275
         },
         {
           "id": "listening_06_014",
@@ -1941,7 +2666,12 @@
           "file_size": 4096461,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_06_014.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_06_014.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 639379
         },
         {
           "id": "listening_06_015",
@@ -1954,7 +2684,12 @@
           "file_size": 3829803,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_06_015.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_06_015.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 589381
         },
         {
           "id": "listening_06_016",
@@ -1967,7 +2702,12 @@
           "file_size": 1862052,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_06_016.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_06_016.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 220427
         },
         {
           "id": "listening_06_017",
@@ -1980,7 +2720,12 @@
           "file_size": 1774280,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_06_017.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_06_017.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 203970
         },
         {
           "id": "listening_06_018",
@@ -1993,7 +2738,12 @@
           "file_size": 1875426,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_06_018.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_06_018.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 222935
         },
         {
           "id": "listening_06_019",
@@ -2006,7 +2756,12 @@
           "file_size": 1830287,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_06_019.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_06_019.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 214471
         },
         {
           "id": "listening_06_020",
@@ -2019,7 +2774,12 @@
           "file_size": 1655580,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_06_020.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_06_020.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 181714
         },
         {
           "id": "listening_06_021",
@@ -2032,7 +2792,12 @@
           "file_size": 1689852,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_06_021.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_06_021.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 188140
         },
         {
           "id": "listening_06_022",
@@ -2045,7 +2810,12 @@
           "file_size": 1702391,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_06_022.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_06_022.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 190491
         },
         {
           "id": "listening_06_023",
@@ -2058,7 +2828,12 @@
           "file_size": 1626323,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_06_023.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_06_023.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 176228
         },
         {
           "id": "listening_06_024",
@@ -2071,7 +2846,12 @@
           "file_size": 1617963,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_06_024.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_06_024.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 174661
         },
         {
           "id": "listening_06_025",
@@ -2084,7 +2864,12 @@
           "file_size": 1740843,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_06_025.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_06_025.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 197701
         },
         {
           "id": "listening_06_026",
@@ -2097,7 +2882,12 @@
           "file_size": 1615456,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_06_026.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_06_026.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 174191
         },
         {
           "id": "listening_06_027",
@@ -2110,7 +2900,12 @@
           "file_size": 1688181,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_06_027.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_06_027.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 187826
         },
         {
           "id": "listening_06_028",
@@ -2123,7 +2918,12 @@
           "file_size": 1614620,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_06_028.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_06_028.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 174034
         }
       ]
     },
@@ -2143,7 +2943,12 @@
           "file_size": 2862646,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_07_001.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_07_001.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 408039
         },
         {
           "id": "listening_07_002",
@@ -2156,7 +2961,12 @@
           "file_size": 3060758,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_07_002.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_07_002.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 445185
         },
         {
           "id": "listening_07_003",
@@ -2169,7 +2979,12 @@
           "file_size": 3008096,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_07_003.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_07_003.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 435311
         },
         {
           "id": "listening_07_004",
@@ -2182,7 +2997,12 @@
           "file_size": 3083328,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_07_004.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_07_004.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 449417
         },
         {
           "id": "listening_07_005",
@@ -2195,7 +3015,12 @@
           "file_size": 2858466,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_07_005.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_07_005.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 407255
         },
         {
           "id": "listening_07_006",
@@ -2208,7 +3033,12 @@
           "file_size": 2733078,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_07_006.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_07_006.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 383745
         },
         {
           "id": "listening_07_007",
@@ -2221,7 +3051,12 @@
           "file_size": 3659276,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_07_007.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_07_007.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 557407
         },
         {
           "id": "listening_07_008",
@@ -2234,7 +3069,12 @@
           "file_size": 3543919,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_07_008.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_07_008.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 535777
         },
         {
           "id": "listening_07_009",
@@ -2247,7 +3087,12 @@
           "file_size": 3838998,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_07_009.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_07_009.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 591105
         },
         {
           "id": "listening_07_010",
@@ -2260,7 +3105,12 @@
           "file_size": 4129062,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_07_010.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_07_010.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 645492
         },
         {
           "id": "listening_07_011",
@@ -2273,7 +3123,12 @@
           "file_size": 3854881,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_07_011.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_07_011.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 594083
         },
         {
           "id": "listening_07_012",
@@ -2286,7 +3141,12 @@
           "file_size": 3752063,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_07_012.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_07_012.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 574804
         },
         {
           "id": "listening_07_013",
@@ -2299,7 +3159,12 @@
           "file_size": 3484569,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_07_013.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_07_013.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 524649
         },
         {
           "id": "listening_07_014",
@@ -2312,7 +3177,12 @@
           "file_size": 4136585,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_07_014.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_07_014.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 646902
         },
         {
           "id": "listening_07_015",
@@ -2325,7 +3195,12 @@
           "file_size": 3854045,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_07_015.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_07_015.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 593926
         },
         {
           "id": "listening_07_016",
@@ -2338,7 +3213,12 @@
           "file_size": 1624651,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_07_016.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_07_016.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 175915
         },
         {
           "id": "listening_07_017",
@@ -2351,7 +3231,12 @@
           "file_size": 1723289,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_07_017.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_07_017.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 194409
         },
         {
           "id": "listening_07_018",
@@ -2364,7 +3249,12 @@
           "file_size": 1635518,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_07_018.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_07_018.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 177952
         },
         {
           "id": "listening_07_019",
@@ -2377,7 +3267,12 @@
           "file_size": 1864559,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_07_019.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_07_019.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 220897
         },
         {
           "id": "listening_07_020",
@@ -2390,7 +3285,12 @@
           "file_size": 1561957,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_07_020.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_07_020.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 164160
         },
         {
           "id": "listening_07_021",
@@ -2403,7 +3303,12 @@
           "file_size": 1581183,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_07_021.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_07_021.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 167764
         },
         {
           "id": "listening_07_022",
@@ -2416,7 +3321,12 @@
           "file_size": 1676478,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_07_022.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_07_022.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 185632
         },
         {
           "id": "listening_07_023",
@@ -2429,7 +3339,12 @@
           "file_size": 1524341,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_07_023.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_07_023.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 157106
         },
         {
           "id": "listening_07_024",
@@ -2442,7 +3357,12 @@
           "file_size": 1645549,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_07_024.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_07_024.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 179833
         },
         {
           "id": "listening_07_025",
@@ -2455,7 +3375,12 @@
           "file_size": 1497591,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_07_025.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_07_025.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 152091
         },
         {
           "id": "listening_07_026",
@@ -2468,7 +3393,12 @@
           "file_size": 1529356,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_07_026.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_07_026.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 158047
         },
         {
           "id": "listening_07_027",
@@ -2481,7 +3411,12 @@
           "file_size": 1509294,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_07_027.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_07_027.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 154285
         },
         {
           "id": "listening_07_028",
@@ -2494,7 +3429,12 @@
           "file_size": 1631338,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_07_028.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_07_028.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 177168
         }
       ]
     },
@@ -2514,7 +3454,12 @@
           "file_size": 3133483,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_08_001.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_08_001.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 458821
         },
         {
           "id": "listening_08_002",
@@ -2527,7 +3472,12 @@
           "file_size": 3213732,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_08_002.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_08_002.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 473867
         },
         {
           "id": "listening_08_003",
@@ -2540,7 +3490,12 @@
           "file_size": 2835896,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_08_003.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_08_003.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 403023
         },
         {
           "id": "listening_08_004",
@@ -2553,7 +3508,12 @@
           "file_size": 2986362,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_08_004.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_08_004.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 431235
         },
         {
           "id": "listening_08_005",
@@ -2566,7 +3526,12 @@
           "file_size": 2789921,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_08_005.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_08_005.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 394403
         },
         {
           "id": "listening_08_006",
@@ -2579,7 +3544,12 @@
           "file_size": 3319893,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_08_006.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_08_006.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 493773
         },
         {
           "id": "listening_08_007",
@@ -2592,7 +3562,12 @@
           "file_size": 3860732,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_08_007.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_08_007.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 595180
         },
         {
           "id": "listening_08_008",
@@ -2605,7 +3580,12 @@
           "file_size": 3832311,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_08_008.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_08_008.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 589851
         },
         {
           "id": "listening_08_009",
@@ -2618,7 +3598,12 @@
           "file_size": 3549771,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_08_009.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_08_009.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 536875
         },
         {
           "id": "listening_08_010",
@@ -2631,7 +3616,12 @@
           "file_size": 3688533,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_08_010.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_08_010.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 562893
         },
         {
           "id": "listening_08_011",
@@ -2644,7 +3634,12 @@
           "file_size": 3720298,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_08_011.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_08_011.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 568848
         },
         {
           "id": "listening_08_012",
@@ -2657,7 +3652,12 @@
           "file_size": 3593238,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_08_012.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_08_012.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 545025
         },
         {
           "id": "listening_08_013",
@@ -2670,7 +3670,12 @@
           "file_size": 3595746,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_08_013.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_08_013.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 545495
         },
         {
           "id": "listening_08_014",
@@ -2683,7 +3688,12 @@
           "file_size": 3811413,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_08_014.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_08_014.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 585933
         },
         {
           "id": "listening_08_015",
@@ -2696,7 +3706,12 @@
           "file_size": 4033767,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_08_015.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_08_015.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 627624
         },
         {
           "id": "listening_08_016",
@@ -2709,7 +3724,12 @@
           "file_size": 1699047,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_08_016.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_08_016.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 189864
         },
         {
           "id": "listening_08_017",
@@ -2722,7 +3742,12 @@
           "file_size": 2045954,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_08_017.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_08_017.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 254909
         },
         {
           "id": "listening_08_018",
@@ -2735,7 +3760,12 @@
           "file_size": 1873754,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_08_018.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_08_018.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 222622
         },
         {
           "id": "listening_08_019",
@@ -2748,7 +3778,12 @@
           "file_size": 1719110,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_08_019.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_08_019.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 193626
         },
         {
           "id": "listening_08_020",
@@ -2761,7 +3796,12 @@
           "file_size": 1601245,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_08_020.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_08_020.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 171526
         },
         {
           "id": "listening_08_021",
@@ -2774,7 +3814,12 @@
           "file_size": 1709078,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_08_021.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_08_021.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 191745
         },
         {
           "id": "listening_08_022",
@@ -2787,7 +3832,12 @@
           "file_size": 1657252,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_08_022.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_08_022.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 182027
         },
         {
           "id": "listening_08_023",
@@ -2800,7 +3850,12 @@
           "file_size": 1497591,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_08_023.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_08_023.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 152091
         },
         {
           "id": "listening_08_024",
@@ -2813,7 +3868,12 @@
           "file_size": 1641369,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_08_024.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_08_024.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 179049
         },
         {
           "id": "listening_08_025",
@@ -2826,7 +3886,12 @@
           "file_size": 1639697,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_08_025.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_08_025.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 178736
         },
         {
           "id": "listening_08_026",
@@ -2839,7 +3904,12 @@
           "file_size": 1739172,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_08_026.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_08_026.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 197387
         },
         {
           "id": "listening_08_027",
@@ -2852,7 +3922,12 @@
           "file_size": 1595394,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_08_027.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_08_027.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 170429
         },
         {
           "id": "listening_08_028",
@@ -2865,9 +3940,17 @@
           "file_size": 1571988,
           "transcript_status": "pending",
           "transcript_file": "",
-          "segments": []
+          "segments": [],
+          "compressed_audio": "listening/audio/listening_08_028.mp3",
+          "site_audio": "data/jlpt/listening/audio/listening_08_028.mp3",
+          "compressed_bitrate": "48k",
+          "compressed_sample_rate": 22050,
+          "compressed_file_size": 166040
         }
       ]
     }
-  ]
+  ],
+  "compressed_audio_bitrate": "48k",
+  "compressed_audio_sample_rate": 22050,
+  "compressed_audio_total_size": 77773419
 }
