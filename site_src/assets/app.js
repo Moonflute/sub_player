@@ -27,6 +27,7 @@ const els = {
   readingRevealToggle: document.getElementById("reading-reveal-toggle"),
   readingPrev: document.getElementById("reading-prev"),
   readingNext: document.getElementById("reading-next"),
+  readingPanel: document.querySelector(".reading-panel"),
   readingSentence: document.getElementById("reading-sentence"),
   readingTranslation: document.getElementById("reading-translation"),
   listeningBackButton: document.getElementById("listening-back-button"),
@@ -439,8 +440,9 @@ function renderReadingState() {
 
   els.readingTitle.textContent = reading ? reading.title : "독해";
   els.readingProgress.textContent = items.length ? `${state.currentReadingIndex + 1} / ${items.length}` : "0 / 0";
-  els.readingSentence.innerHTML = reveal ? renderHighlightedSentence(item) : renderPlainSentence(item);
-  els.readingTranslation.textContent = reveal ? item?.translation || "" : "";
+  els.readingPanel.classList.toggle("is-revealed", reveal);
+  els.readingSentence.innerHTML = renderHighlightedSentence(item);
+  els.readingTranslation.textContent = item?.translation || "";
 }
 
 function findListeningTrack(trackId) {

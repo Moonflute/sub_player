@@ -260,6 +260,28 @@ input {
 
 .reading-extra {
   min-height: 2.9em;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.12s ease;
+}
+
+.reading-panel.is-revealed .reading-extra {
+  visibility: visible;
+  opacity: 1;
+}
+
+.reading-panel:not(.is-revealed) .inline-note__top,
+.reading-panel:not(.is-revealed) .inline-note__bottom {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.reading-panel:not(.is-revealed) .inline-note__anchor {
+  color: inherit;
+  background: transparent;
+  box-shadow: none;
+  border-bottom-color: transparent;
+  text-decoration: none;
 }
 
 .listening-stage {
