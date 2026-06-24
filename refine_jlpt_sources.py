@@ -14,6 +14,10 @@ SOURCE_DIR = BASE_DIR / "_jlpt source"
 REFINED_DIR = BASE_DIR / "_jlpt source refined"
 READING_SOURCE = SOURCE_DIR / "N3 reading official workbook.pdf"
 LISTENING_SOURCE_DIR = SOURCE_DIR / "jlpt_n3_listening_review"
+MANUAL_READING_TRANSLATIONS = {
+    "４ 温かい物も買える販売機があれば喜ばれるだろうと、飲料会社の社長が考えたから": "4 따뜻한 것도 살 수 있는 판매기가 있으면 사람들이 좋아할 것이라고 음료 회사 사장이 생각했기 때문에",
+    "４ 会社の支出は増えるが、利用者や環境に優しいサービスだから": "4 회사의 지출은 늘어나지만 이용자와 환경에 좋은 서비스이기 때문에",
+}
 
 JAPANESE_SENTENCE_RE = re.compile(r"[^。！？\n]*(?:[。！？]|$)")
 CID_RE = re.compile(r"\(cid:\d+\)")
@@ -78,14 +82,40 @@ def split_reading_sentences(text: str) -> list[str]:
     return sentences
 
 
-def analyze_reading_sentences(sentences: list[str], translate: bool) -> list[dict]:
+def load_existing_reading_translations() -> dict[str, str]:
+    path = REFINED_DIR / "reading" / "n3_official_workbook_reading.json"
+    if not path.exists():
+        return {}
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+    return {
+        item.get("text", ""): item.get("translation", "")
+        for item in payload.get("items", [])
+        if item.get("text") and item.get("translation")
+    }
+
+
+def analyze_reading_sentences(
+    sentences: list[str],
+    translate: bool,
+    existing_translations: dict[str, str] | None = None,
+) -> list[dict]:
     engine.ensure_reference_database(BASE_DIR)
     vocab_index, grammar_entries, hackers_reference = engine.load_reference_data_from_database(BASE_DIR)
 
     from janome.tokenizer import Tokenizer
 
     tokenizer = Tokenizer()
-    translation_map = build_translation_map(sentences, translate) if translate else {sentence: "" for sentence in sentences}
+    existing_translations = existing_translations or {}
+    existing_translations = {**MANUAL_READING_TRANSLATIONS, **existing_translations}
+    translation_map = {sentence: clean_translation(existing_translations.get(sentence, "")) for sentence in sentences}
+    missing_sentences = [sentence for sentence in sentences if not translation_map.get(sentence)]
+    if translate and missing_sentences:
+        translation_map.update(build_translation_map(missing_sentences, True))
+    elif not translate:
+        translation_map.update({sentence: "" for sentence in missing_sentences})
 
     items: list[dict] = []
     for index, sentence in enumerate(sentences, start=1):
@@ -109,17 +139,147 @@ def analyze_reading_sentences(sentences: list[str], translate: bool) -> list[dic
     return items
 
 
+WORKBOOK_PASSAGE_PAGE_SPECS = [
+    {
+        "id": "workbook_short_01",
+        "section_title": "단문 독해",
+        "title": "문제4-1 대설로 인한 휴강 안내",
+        "pages": [1],
+    },
+    {
+        "id": "workbook_short_02",
+        "section_title": "단문 독해",
+        "title": "문제4-2 휴대전화",
+        "pages": [2],
+    },
+    {
+        "id": "workbook_short_03",
+        "section_title": "단문 독해",
+        "title": "문제4-3 자동판매기",
+        "pages": [3],
+    },
+    {
+        "id": "workbook_short_04",
+        "section_title": "단문 독해",
+        "title": "문제4-4 과장 메모",
+        "pages": [4],
+    },
+    {
+        "id": "workbook_mid_01",
+        "section_title": "중문 독해",
+        "title": "문제5-1 책을 사는 실수",
+        "pages": [5, 6],
+    },
+    {
+        "id": "workbook_mid_02",
+        "section_title": "중문 독해",
+        "title": "문제5-2 대여 우산",
+        "pages": [7],
+    },
+    {
+        "id": "workbook_long_01",
+        "section_title": "장문 독해",
+        "title": "문제6 택시 회사 서비스",
+        "pages": [9, 10],
+    },
+    {
+        "id": "workbook_info_01",
+        "section_title": "정보 검색",
+        "title": "문제7 동물원 포스터",
+        "pages": [11, 12],
+    },
+]
+
+
+def build_workbook_passages(pages: list[dict], translate: bool) -> tuple[list[dict], list[dict], list[dict]]:
+    page_map = {page["page"]: page.get("text", "") for page in pages}
+    existing_translations = load_existing_reading_translations()
+    passage_sentence_records: list[dict] = []
+
+    for passage_order, spec in enumerate(WORKBOOK_PASSAGE_PAGE_SPECS, start=1):
+        text = "\n".join(page_map.get(page_number, "") for page_number in spec["pages"]).strip()
+        sentences = split_reading_sentences(text)
+        for sentence_order, sentence in enumerate(sentences, start=1):
+            passage_sentence_records.append(
+                {
+                    "text": sentence,
+                    "passage_id": spec["id"],
+                    "passage_title": spec["title"],
+                    "passage_order": passage_order,
+                    "passage_sentence_index": sentence_order,
+                    "section_title": spec["section_title"],
+                    "section_order": ["단문 독해", "중문 독해", "장문 독해", "정보 검색"].index(spec["section_title"]) + 1,
+                }
+            )
+
+    analyzed_items = analyze_reading_sentences(
+        [record["text"] for record in passage_sentence_records],
+        translate,
+        existing_translations=existing_translations,
+    )
+
+    for record, item in zip(passage_sentence_records, analyzed_items):
+        item.update(
+            {
+                "passage_id": record["passage_id"],
+                "passage_title": record["passage_title"],
+                "passage_order": record["passage_order"],
+                "passage_sentence_index": record["passage_sentence_index"],
+                "section_title": record["section_title"],
+                "section_order": record["section_order"],
+            }
+        )
+
+    sections: list[dict] = []
+    passages: list[dict] = []
+    for section_order, section_title in enumerate(["단문 독해", "중문 독해", "장문 독해", "정보 검색"], start=1):
+        section_passages = []
+        for spec in WORKBOOK_PASSAGE_PAGE_SPECS:
+            if spec["section_title"] != section_title:
+                continue
+            passage_items = [item for item in analyzed_items if item.get("passage_id") == spec["id"]]
+            if not passage_items:
+                continue
+            passage = {
+                "id": spec["id"],
+                "order": len(passages) + 1,
+                "section_order": section_order,
+                "section_title": section_title,
+                "title": spec["title"],
+                "pages": spec["pages"],
+                "start_index": passage_items[0]["index"] - 1,
+                "sentence_count": len(passage_items),
+                "text": "\n".join(item["text"] for item in passage_items),
+                "translation": "\n".join(item.get("translation", "") for item in passage_items if item.get("translation")),
+                "items": passage_items,
+            }
+            passages.append(passage)
+            section_passages.append(passage)
+        sections.append(
+            {
+                "order": section_order,
+                "title": section_title,
+                "passage_count": len(section_passages),
+                "passages": section_passages,
+            }
+        )
+
+    return sections, passages, analyzed_items
+
+
 def build_reading_refined(translate: bool) -> dict:
     raw_text, pages = extract_pdf_text(READING_SOURCE)
-    sentences = split_reading_sentences(raw_text)
-    items = analyze_reading_sentences(sentences, translate)
+    sections, passages, items = build_workbook_passages(pages, translate)
     payload = {
         "id": "n3_official_workbook_reading",
         "mode": "reading",
         "level": "N3",
-        "title": "N3 Reading Official Workbook",
+        "title": "N3 워크북",
         "source_file": str(READING_SOURCE.relative_to(BASE_DIR)).replace("\\", "/"),
         "sentence_count": len(items),
+        "passage_count": len(passages),
+        "sections": sections,
+        "passages": passages,
         "items": items,
     }
 

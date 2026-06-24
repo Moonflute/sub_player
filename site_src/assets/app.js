@@ -490,7 +490,7 @@ function buildReadingParts(reading) {
   if (Array.isArray(reading.sections) && reading.sections.length) {
     return reading.sections.map((section) => ({
       readingId: reading.id,
-      title: section.title,
+      title: `${reading.title || "독해"} - ${section.title}`,
       parts: (section.passages || []).map((passage, index) => ({
         title: passage.title,
         label: `${String(index + 1).padStart(2, "0")}번`,
