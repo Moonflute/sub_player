@@ -636,21 +636,33 @@ function setListeningLoopEnabled(enabled) {
   els.listeningLoopToggle.classList.toggle("is-active", enabled);
 }
 
+function restartCurrentListeningSegment() {
+  const segment = getListeningSegments()[state.currentListeningIndex];
+  if (!segment) return;
+  els.listeningAudio.currentTime = Number(segment.start_seconds || 0);
+  els.listeningAudio.play();
+}
+
 function syncListeningSegmentFromTime() {
   const segments = getListeningSegments();
   if (!segments.length) return;
 
   const currentTime = els.listeningAudio.currentTime;
+  const current = segments[state.currentListeningIndex];
+
+  if (isListeningLoopEnabled() && current) {
+    const start = Number(current.start_seconds || 0);
+    const end = Number(current.end_seconds || start);
+    if (currentTime >= Math.max(start, end - 0.04) || currentTime < start - 0.08) {
+      restartCurrentListeningSegment();
+    }
+    return;
+  }
+
   const index = segments.findIndex((segment) => currentTime >= segment.start_seconds && currentTime < segment.end_seconds);
   if (index >= 0 && index !== state.currentListeningIndex) {
     state.currentListeningIndex = index;
     renderListeningState();
-  }
-
-  const current = segments[state.currentListeningIndex];
-  if (isListeningLoopEnabled() && current && currentTime >= current.end_seconds) {
-    els.listeningAudio.currentTime = current.start_seconds;
-    els.listeningAudio.play();
   }
 }
 
@@ -834,6 +846,11 @@ function bindEvents() {
   els.listeningNext.addEventListener("click", () => jumpListening(1));
   els.listeningSegmentPlay.addEventListener("click", playListeningSegment);
   els.listeningAudio.addEventListener("timeupdate", syncListeningSegmentFromTime);
+  els.listeningAudio.addEventListener("ended", () => {
+    if (isListeningLoopEnabled()) {
+      restartCurrentListeningSegment();
+    }
+  });
 
   els.playToggle.addEventListener("click", () => {
     if (!state.currentShow) return;
