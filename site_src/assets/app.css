@@ -336,6 +336,17 @@ input {
   min-width: 78px;
 }
 
+.loop-toggle {
+  cursor: pointer;
+}
+
+.loop-toggle.is-active,
+.loop-toggle[aria-pressed="true"] {
+  border-color: rgba(197, 74, 41, 0.42);
+  background: rgba(197, 74, 41, 0.14);
+  color: var(--accent-deep);
+}
+
 .reading-panel {
   position: relative;
   min-height: 0;

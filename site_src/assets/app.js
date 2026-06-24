@@ -627,6 +627,16 @@ function renderListeningState() {
   els.listeningPrev.disabled = state.currentListeningIndex <= 0 || segments.length === 0;
   els.listeningNext.disabled = state.currentListeningIndex >= segments.length - 1 || segments.length === 0;
   els.listeningSegmentPlay.disabled = segments.length === 0;
+  els.listeningLoopToggle.disabled = segments.length === 0;
+}
+
+function isListeningLoopEnabled() {
+  return els.listeningLoopToggle.getAttribute("aria-pressed") === "true";
+}
+
+function setListeningLoopEnabled(enabled) {
+  els.listeningLoopToggle.setAttribute("aria-pressed", enabled ? "true" : "false");
+  els.listeningLoopToggle.classList.toggle("is-active", enabled);
 }
 
 function syncListeningSegmentFromTime() {
@@ -641,7 +651,7 @@ function syncListeningSegmentFromTime() {
   }
 
   const current = segments[state.currentListeningIndex];
-  if (els.listeningLoopToggle.checked && current && currentTime >= current.end_seconds) {
+  if (isListeningLoopEnabled() && current && currentTime >= current.end_seconds) {
     els.listeningAudio.currentTime = current.start_seconds;
     els.listeningAudio.play();
   }
@@ -783,7 +793,7 @@ function loadListeningTrack(trackId) {
   state.currentListeningIndex = 0;
   els.listeningTitle.textContent = "청해";
   els.listeningSection.textContent = result.section.title || "";
-  els.listeningLoopToggle.checked = false;
+  setListeningLoopEnabled(false);
   els.listeningAudio.loop = false;
   els.listeningAudio.src = result.track.site_audio;
   setScreen("listening");
@@ -819,7 +829,8 @@ function bindEvents() {
   els.readingPrev.addEventListener("click", () => jumpReading(-1));
   els.readingNext.addEventListener("click", () => jumpReading(1));
   els.listeningBackButton.addEventListener("click", returnToLibrary);
-  els.listeningLoopToggle.addEventListener("change", () => {
+  els.listeningLoopToggle.addEventListener("click", () => {
+    setListeningLoopEnabled(!isListeningLoopEnabled());
     els.listeningAudio.loop = false;
   });
   els.listeningPrev.addEventListener("click", () => jumpListening(-1));
