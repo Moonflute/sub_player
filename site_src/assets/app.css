@@ -283,6 +283,10 @@ input {
   accent-color: var(--accent);
 }
 
+.reveal-toggle--view {
+  min-width: 150px;
+}
+
 .reading-panel {
   position: relative;
   min-height: 0;
@@ -295,6 +299,54 @@ input {
 
 .reading-sentence {
   max-width: 1380px;
+}
+
+.reading-panel.is-full-view {
+  align-content: start;
+  overflow: auto;
+  padding: 12px 58px;
+}
+
+.reading-panel.is-full-view .reading-sentence {
+  max-width: 980px;
+  min-height: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.reading-full {
+  width: 100%;
+  display: grid;
+  gap: 0.45rem;
+  font-size: clamp(1rem, 2vw, 1.28rem);
+  line-height: 1.72;
+  letter-spacing: -0.01em;
+}
+
+.reading-full__title {
+  margin: 0 0 0.35rem;
+  color: var(--accent-deep);
+  font-size: clamp(1.2rem, 2.4vw, 1.65rem);
+}
+
+.reading-full__question {
+  margin: 0 0 0.5rem;
+  padding: 0.65rem 0.85rem;
+  border-radius: 16px;
+  background: rgba(197, 74, 41, 0.08);
+  color: #6f341f;
+  font-weight: 800;
+}
+
+.reading-full__sentence {
+  margin: 0.15rem 0;
+}
+
+.reading-full__translation {
+  margin: -0.2rem 0 0.35rem;
+  color: var(--muted);
+  font-size: 0.92em;
+  line-height: 1.5;
 }
 
 .reading-extra {

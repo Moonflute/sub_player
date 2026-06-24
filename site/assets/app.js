@@ -31,6 +31,7 @@ const els = {
   readingTitle: document.getElementById("reading-title"),
   readingProgress: document.getElementById("reading-progress"),
   readingRevealToggle: document.getElementById("reading-reveal-toggle"),
+  readingFullToggle: document.getElementById("reading-full-toggle"),
   readingPrev: document.getElementById("reading-prev"),
   readingNext: document.getElementById("reading-next"),
   readingPanel: document.querySelector(".reading-panel"),
@@ -461,6 +462,19 @@ function renderReadingLibrary() {
 }
 
 function buildReadingParts(reading) {
+  if (Array.isArray(reading.sections) && reading.sections.length) {
+    return reading.sections.map((section) => ({
+      readingId: reading.id,
+      title: section.title,
+      parts: (section.passages || []).map((passage, index) => ({
+        title: passage.title,
+        label: `${String(index + 1).padStart(2, "0")}번`,
+        startIndex: passage.start_index || 0,
+        count: passage.sentence_count || (passage.items || []).length || 0,
+      })),
+    }));
+  }
+
   const items = reading?.items || [];
   const groups = [];
   let current = null;
@@ -519,12 +533,53 @@ function renderReadingState() {
   const items = reading?.items || [];
   const item = items[state.currentReadingIndex] || null;
   const reveal = Boolean(els.readingRevealToggle.checked);
+  const isFull = Boolean(els.readingFullToggle.checked);
 
   els.readingTitle.textContent = reading ? reading.title : "독해";
   els.readingProgress.textContent = items.length ? `${state.currentReadingIndex + 1} / ${items.length}` : "0 / 0";
-  els.readingPanel.classList.toggle("is-revealed", reveal);
+  els.readingPanel.classList.toggle("is-revealed", reveal || isFull);
+  els.readingPanel.classList.toggle("is-full-view", isFull);
+  els.readingPrev.classList.toggle("is-hidden", isFull);
+  els.readingNext.classList.toggle("is-hidden", isFull);
+
+  if (isFull) {
+    const passageItems = getCurrentReadingPassageItems();
+    els.readingSentence.innerHTML = renderReadingFullView(passageItems, reveal);
+    els.readingTranslation.textContent = "";
+    return;
+  }
+
   els.readingSentence.innerHTML = renderHighlightedSentence(item);
   els.readingTranslation.textContent = item?.translation || "";
+}
+
+function getCurrentReadingPassageItems() {
+  const items = state.currentReading?.items || [];
+  const item = items[state.currentReadingIndex] || null;
+  if (!item?.passage_id) return item ? [item] : [];
+  return items.filter((entry) => entry.passage_id === item.passage_id);
+}
+
+function renderReadingFullView(items, reveal) {
+  if (!items.length) return "";
+  const title = items[0].passage_title || "";
+  const question = findCurrentReadingPassage()?.question || "";
+  return `
+    <article class="reading-full">
+      <h3 class="reading-full__title">${escapeHtml(title)}</h3>
+      ${question ? `<p class="reading-full__question">${escapeHtml(question)}</p>` : ""}
+      ${items.map((item) => `
+        <p class="reading-full__sentence">${renderHighlightedSentence(item)}</p>
+        ${reveal ? `<p class="reading-full__translation">${escapeHtml(item.translation || "")}</p>` : ""}
+      `).join("")}
+    </article>
+  `;
+}
+
+function findCurrentReadingPassage() {
+  const item = (state.currentReading?.items || [])[state.currentReadingIndex] || null;
+  if (!item?.passage_id) return null;
+  return (state.currentReading?.passages || []).find((passage) => passage.id === item.passage_id) || null;
 }
 
 function getListeningSegments() {
@@ -644,9 +699,15 @@ async function loadLibrary() {
   state.library = payload.items || [];
   try {
     const reading = await fetchJson("./data/jlpt/reading/n3_official_workbook_reading.json");
-    state.readingLibrary = [reading];
+    const customReading = await fetchJson("./data/jlpt/reading/n3_custom_reading.json");
+    state.readingLibrary = [customReading, reading];
   } catch {
-    state.readingLibrary = [];
+    try {
+      const reading = await fetchJson("./data/jlpt/reading/n3_official_workbook_reading.json");
+      state.readingLibrary = [reading];
+    } catch {
+      state.readingLibrary = [];
+    }
   }
   try {
     const listening = await fetchJson("./data/jlpt/listening/n3_listening_review_index.json");
@@ -679,6 +740,7 @@ async function loadReading(readingId, startIndex = 0) {
   state.currentReading = item;
   state.currentReadingIndex = Math.max(0, Math.min((item.items || []).length - 1, startIndex));
   els.readingRevealToggle.checked = false;
+  els.readingFullToggle.checked = false;
   setScreen("reading");
   renderReadingState();
 }
@@ -724,6 +786,7 @@ function bindEvents() {
 
   els.readingBackButton.addEventListener("click", returnToLibrary);
   els.readingRevealToggle.addEventListener("change", renderReadingState);
+  els.readingFullToggle.addEventListener("change", renderReadingState);
   els.readingPrev.addEventListener("click", () => jumpReading(-1));
   els.readingNext.addEventListener("click", () => jumpReading(1));
   els.listeningBackButton.addEventListener("click", returnToLibrary);
