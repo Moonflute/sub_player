@@ -533,9 +533,9 @@ function renderListeningLibrary() {
       ${groupListeningTracks(section).map((group) => `
         <section class="subseries-group">
           <h3 class="subseries-group__title">${escapeHtml(group.title)}</h3>
-          <div class="series-group__items series-group__items--compact series-group__items--tiny series-group__items--study">
+          <div class="series-group__items series-group__items--compact series-group__items--study">
             ${group.tracks.map((track, index) => `
-              <button class="show-item show-item--tile show-item--tiny" data-listening-id="${track.id}" type="button" ${track.site_audio ? "" : "disabled"} title="${escapeHtml(track.title)}">
+              <button class="show-item show-item--tile show-item--study" data-listening-id="${track.id}" type="button" ${track.site_audio ? "" : "disabled"} title="${escapeHtml(track.title)}">
                 <span class="show-title">${escapeHtml(trackLabel(track, index))}</span>
               </button>
             `).join("")}

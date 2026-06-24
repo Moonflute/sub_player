@@ -158,8 +158,8 @@ input {
 }
 
 .series-group__items--study {
-  grid-template-columns: repeat(auto-fill, minmax(58px, 1fr));
-  gap: 6px;
+  grid-template-columns: repeat(auto-fill, minmax(42px, 1fr));
+  gap: 5px;
 }
 
 .subseries-group {
@@ -211,9 +211,9 @@ input {
 }
 
 .show-item--study {
-  min-height: 50px;
-  padding: 7px 6px;
-  border-radius: 16px;
+  min-height: 38px;
+  padding: 5px 4px;
+  border-radius: 14px;
 }
 
 .show-item--tiny {
@@ -223,7 +223,7 @@ input {
 }
 
 .show-item--study .show-title {
-  font-size: 0.86rem;
+  font-size: 0.78rem;
 }
 
 .show-item--tiny .show-title {
