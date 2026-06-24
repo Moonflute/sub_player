@@ -569,8 +569,10 @@ function renderReadingFullView(items, reveal) {
       <h3 class="reading-full__title">${escapeHtml(title)}</h3>
       ${question ? `<p class="reading-full__question">${escapeHtml(question)}</p>` : ""}
       ${items.map((item) => `
-        <p class="reading-full__sentence">${renderHighlightedSentence(item)}</p>
-        ${reveal ? `<p class="reading-full__translation">${escapeHtml(item.translation || "")}</p>` : ""}
+        <section class="reading-full__item">
+          <p class="reading-full__sentence">${renderHighlightedSentence(item)}</p>
+          ${reveal ? `<p class="reading-full__translation">${escapeHtml(item.translation || "")}</p>` : ""}
+        </section>
       `).join("")}
     </article>
   `;
