@@ -4,6 +4,7 @@ import argparse
 import json
 import os
 import shutil
+import time
 from pathlib import Path
 
 import main as engine
@@ -125,8 +126,21 @@ def has_segment_translations(track: dict) -> bool:
 
 def write_index(index_payload: dict) -> None:
     tmp_path = LISTENING_INDEX.with_suffix(".json.tmp")
-    tmp_path.write_text(json.dumps(index_payload, ensure_ascii=False, indent=2), encoding="utf-8")
-    tmp_path.replace(LISTENING_INDEX)
+    content = json.dumps(index_payload, ensure_ascii=False, indent=2)
+    tmp_path.write_text(content, encoding="utf-8")
+    for attempt in range(1, 6):
+        try:
+            tmp_path.replace(LISTENING_INDEX)
+            return
+        except PermissionError:
+            if attempt == 5:
+                LISTENING_INDEX.write_text(content, encoding="utf-8")
+                try:
+                    tmp_path.unlink(missing_ok=True)
+                except OSError:
+                    pass
+                return
+            time.sleep(0.4 * attempt)
 
 
 def count_complete_tracks(index_payload: dict) -> int:
@@ -138,12 +152,17 @@ def count_complete_tracks(index_payload: dict) -> int:
     )
 
 
+def count_complete_selected_tracks(tracks: list[dict]) -> int:
+    return sum(1 for track in tracks if track.get("transcript_status") == "complete" and track.get("segments"))
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Transcribe refined JLPT listening audio with Whisper.")
     parser.add_argument("--model", default="small", choices=["small", "medium"])
     parser.add_argument("--language", default="ja")
     parser.add_argument("--limit", type=int, default=None)
     parser.add_argument("--only-id", default="")
+    parser.add_argument("--only-prefix", default="")
     parser.add_argument("--no-translate", action="store_true")
     parser.add_argument("--overwrite", action="store_true")
     args = parser.parse_args()
@@ -160,6 +179,8 @@ def main() -> int:
     tracks = list(iter_tracks(index_payload, args.limit))
     if args.only_id:
         tracks = [track for track in tracks if track["id"] == args.only_id]
+    if args.only_prefix:
+        tracks = [track for track in tracks if str(track.get("id", "")).startswith(args.only_prefix)]
 
     total_tracks = len(tracks)
     for order, track in enumerate(tracks, start=1):
@@ -170,7 +191,7 @@ def main() -> int:
             and has_segment_translations(track)
             and not args.overwrite
         ):
-            completed = count_complete_tracks(index_payload)
+            completed = count_complete_selected_tracks(tracks)
             remaining = max(0, total_tracks - completed)
             percent = completed / total_tracks * 100 if total_tracks else 100
             print(f"[skip] {order}/{total_tracks} {track['id']} already complete | done={completed} remaining={remaining} {percent:.1f}%")
@@ -189,7 +210,7 @@ def main() -> int:
         out_path.write_text(json.dumps(transcript, ensure_ascii=False, indent=2), encoding="utf-8")
         merge_track_transcript(track, transcript)
         write_index(index_payload)
-        completed = count_complete_tracks(index_payload)
+        completed = count_complete_selected_tracks(tracks)
         remaining = max(0, total_tracks - completed)
         percent = completed / total_tracks * 100 if total_tracks else 100
         print(f"[merged] {order}/{total_tracks} {track['id']} -> {out_path}")

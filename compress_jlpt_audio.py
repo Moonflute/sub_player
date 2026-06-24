@@ -68,6 +68,7 @@ def main() -> int:
     parser.add_argument("--bitrate", default="48k")
     parser.add_argument("--sample-rate", type=int, default=22050)
     parser.add_argument("--limit", type=int, default=None)
+    parser.add_argument("--only-prefix", default="")
     parser.add_argument("--overwrite", action="store_true")
     args = parser.parse_args()
 
@@ -82,6 +83,9 @@ def main() -> int:
     for section in payload.get("sections", []):
         new_tracks = []
         for track in section.get("tracks", []):
+            if args.only_prefix and not str(track.get("id", "")).startswith(args.only_prefix):
+                new_tracks.append(track)
+                continue
             if args.limit is not None and processed >= args.limit:
                 new_tracks.append(track)
                 continue

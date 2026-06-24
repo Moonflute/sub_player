@@ -136,33 +136,34 @@ def gemini_request(prompt: str, model: str, api_key: str, retries: int, sleep_se
 def build_prompt(kind: str, title: str, section_title: str, entries: list[dict[str, str]]) -> str:
     source_blob = json.dumps(entries, ensure_ascii=False, indent=2)
     return f"""
-당신은 JLPT N3 학습 콘텐츠의 일본어-한국어 번역을 다듬는 편집자입니다.
+You are editing Korean translations for JLPT N3 study material.
 
-작업 종류: {kind}
-섹션: {section_title}
-문항/자료 제목: {title}
+Task kind: {kind}
+Section: {section_title}
+Item title: {title}
 
-아래 JSON 배열에는 문장별 일본어 원문 ja와 기존 한국어 번역 ko가 있습니다.
-전체 맥락을 먼저 읽고, 한국어 번역만 자연스럽게 다듬어 주세요.
+The JSON array below contains Japanese text in "ja" and the current Korean translation in "ko".
+Read the whole context first, then produce natural Korean translations.
+If "ko" is empty, translate "ja" into natural Korean from scratch.
 
-규칙:
-- id는 반드시 그대로 유지합니다.
-- 입력 항목 수와 출력 항목 수를 반드시 동일하게 유지합니다.
-- ja는 바꾸지 말고 의미 판단용으로만 참고합니다.
-- 한국어 번역은 원문보다 의미를 추가하거나 삭제하지 않습니다.
-- 앞뒤 맥락에 맞게 존댓말/반말, 설명문/대화문 어투를 통일합니다.
-- JLPT 문제 지시문과 선택지는 시험지 한국어처럼 간결하게 씁니다.
-- Whisper 전사 때문에 원문이 어색해도, 임의로 큰 내용을 새로 만들지 말고 자연스러운 범위에서만 보정합니다.
-- 출력은 JSON 객체 하나만 반환합니다.
+Rules:
+- Keep every id exactly as given.
+- Return exactly the same number of items as the input.
+- Use ja only as the source/reference text.
+- Do not add or remove meaning.
+- Make tone consistent across the whole problem: honorific/plain, explanation/dialogue, question/choice.
+- JLPT instructions and choices should sound like concise Korean test text.
+- Whisper transcripts can be fragmented or awkward; do not invent large missing content, but make each Korean line natural within the context.
+- Return only one JSON object.
 
-출력 형식:
+Output format:
 {{
   "items": [
-    {{"id": "입력 id", "ko": "다듬은 한국어 번역"}}
+    {{"id": "input id", "ko": "polished Korean translation"}}
   ]
 }}
 
-입력:
+Input:
 {source_blob}
 """.strip()
 
@@ -204,7 +205,31 @@ def polish_entries(
     if set(output) != set(expected_ids):
         missing = sorted(set(expected_ids) - set(output))
         extra = sorted(set(output) - set(expected_ids))
-        raise ValueError(f"{group_id}: id mismatch, missing={missing[:5]}, extra={extra[:5]}")
+        if missing:
+            entries_by_id = {entry["id"]: entry for entry in entries}
+            print(f"  [warn] {group_id}: retrying missing ids individually: {missing[:8]}", flush=True)
+            for missing_id in missing:
+                single_entry = entries_by_id.get(missing_id)
+                if not single_entry:
+                    continue
+                single_prompt = build_prompt(kind, title, section_title, [single_entry])
+                single_response = gemini_request(single_prompt, model, api_key, retries, sleep_seconds)
+                single_items = single_response.get("items", [])
+                if not isinstance(single_items, list):
+                    continue
+                for item in single_items:
+                    if not isinstance(item, dict):
+                        continue
+                    item_id = compact_spaces(item.get("id"))
+                    if item_id == missing_id:
+                        output[missing_id] = compact_spaces(item.get("ko"))
+                        break
+                time.sleep(sleep_seconds)
+
+        if set(output) != set(expected_ids):
+            missing = sorted(set(expected_ids) - set(output))
+            extra = sorted(set(output) - set(expected_ids))
+            raise ValueError(f"{group_id}: id mismatch, missing={missing[:5]}, extra={extra[:5]}")
 
     original_by_id = {entry["id"]: compact_spaces(entry.get("ko", "")) for entry in entries}
     ordered_output = {item_id: output[item_id] or original_by_id.get(item_id, "") for item_id in expected_ids}
@@ -252,6 +277,7 @@ def polish_reading_file(
     progress_offset: int = 0,
     progress_total: int | None = None,
     only_id: str | None = None,
+    only_prefix: str | None = None,
 ) -> int:
     payload = load_json(path)
     groups_done = 0
@@ -265,6 +291,8 @@ def polish_reading_file(
     for section in payload.get("sections", []):
         for passage in section.get("passages", []):
             if only_id and passage.get("id") != only_id:
+                continue
+            if only_prefix and not str(passage.get("id", "")).startswith(only_prefix):
                 continue
             if limit is not None and groups_done >= limit:
                 break
@@ -343,6 +371,7 @@ def polish_listening_file(
     progress_offset: int = 0,
     progress_total: int | None = None,
     only_id: str | None = None,
+    only_prefix: str | None = None,
 ) -> int:
     payload = load_json(path)
     groups_done = 0
@@ -354,6 +383,8 @@ def polish_listening_file(
     for section in payload.get("sections", []):
         for track in section.get("tracks", []):
             if only_id and track.get("id") != only_id:
+                continue
+            if only_prefix and not str(track.get("id", "")).startswith(only_prefix):
                 continue
             if limit is not None and groups_done >= limit:
                 break
@@ -422,6 +453,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--listening", action="store_true", help="Polish listening DB.")
     parser.add_argument("--limit", type=int, help="Limit processed groups for smoke tests.")
     parser.add_argument("--only-id", help="Process only one passage id or listening track id.")
+    parser.add_argument("--only-prefix", help="Process only passage/track ids that start with this prefix.")
     parser.add_argument("--dry-run", action="store_true", help="Validate grouping without calling Gemini or writing files.")
     parser.add_argument("--model", default=os.getenv("GEMINI_MODEL", "gemini-3.1-flash-lite-preview"))
     parser.add_argument("--retries", type=int, default=4)
@@ -475,6 +507,7 @@ def main() -> int:
                     progress_offset=progress_offset,
                     progress_total=total_groups,
                     only_id=args.only_id,
+                    only_prefix=args.only_prefix,
                 )
                 progress_offset += count_reading_groups(path)
     if do_listening and LISTENING_FILE.exists():
@@ -490,6 +523,7 @@ def main() -> int:
             progress_offset=progress_offset,
             progress_total=total_groups,
             only_id=args.only_id,
+            only_prefix=args.only_prefix,
         )
 
     print(json.dumps({"changed_translations": total_changed, "model": args.model, "dry_run": args.dry_run}, ensure_ascii=False))

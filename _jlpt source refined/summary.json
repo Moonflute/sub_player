@@ -1,12 +1,13 @@
 {
   "reading_sentence_count": 119,
-  "listening_track_count": 216,
+  "listening_track_count": 356,
   "outputs": [
     "reading/n3_official_workbook_reading.json",
     "reading/n3_official_workbook_raw_pages.json",
     "listening/n3_listening_review_index.json"
   ],
   "compressed_audio_bitrate": "48k",
-  "compressed_audio_track_count": 216,
-  "compressed_audio_total_size": 77773419
+  "compressed_audio_track_count": 356,
+  "compressed_audio_total_size": 124251250,
+  "mocktest_listening_track_count": 140
 }
