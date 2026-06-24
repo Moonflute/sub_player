@@ -466,13 +466,10 @@ function renderReadingLibrary() {
   els.libraryList.innerHTML = sections.map((section) => `
     <section class="series-group">
       <h2 class="series-group__title">${escapeHtml(section.title)}</h2>
-      <div class="series-group__items series-group__items--compact">
+      <div class="series-group__items series-group__items--compact series-group__items--study">
         ${section.parts.map((part, index) => `
-          <button class="show-item show-item--tile" data-reading-id="${section.readingId}" data-reading-index="${part.startIndex}" type="button">
+          <button class="show-item show-item--tile show-item--study" data-reading-id="${section.readingId}" data-reading-index="${part.startIndex}" type="button">
             <span class="show-title">${escapeHtml(part.label || `${String(index + 1).padStart(2, "0")}번`)}</span>
-            <span class="show-meta">
-              <span>${part.count}문장</span>
-            </span>
           </button>
         `).join("")}
       </div>
@@ -536,7 +533,7 @@ function renderListeningLibrary() {
       ${groupListeningTracks(section).map((group) => `
         <section class="subseries-group">
           <h3 class="subseries-group__title">${escapeHtml(group.title)}</h3>
-          <div class="series-group__items series-group__items--compact series-group__items--tiny">
+          <div class="series-group__items series-group__items--compact series-group__items--tiny series-group__items--study">
             ${group.tracks.map((track, index) => `
               <button class="show-item show-item--tile show-item--tiny" data-listening-id="${track.id}" type="button" ${track.site_audio ? "" : "disabled"} title="${escapeHtml(track.title)}">
                 <span class="show-title">${escapeHtml(trackLabel(track, index))}</span>

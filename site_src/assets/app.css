@@ -153,7 +153,12 @@ input {
 }
 
 .series-group__items--tiny {
-  grid-template-columns: repeat(auto-fill, minmax(54px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(44px, 1fr));
+  gap: 5px;
+}
+
+.series-group__items--study {
+  grid-template-columns: repeat(auto-fill, minmax(58px, 1fr));
   gap: 6px;
 }
 
@@ -205,14 +210,24 @@ input {
   justify-items: center;
 }
 
-.show-item--tiny {
-  min-height: 48px;
+.show-item--study {
+  min-height: 50px;
   padding: 7px 6px;
   border-radius: 16px;
 }
 
-.show-item--tiny .show-title {
+.show-item--tiny {
+  min-height: 40px;
+  padding: 5px 4px;
+  border-radius: 14px;
+}
+
+.show-item--study .show-title {
   font-size: 0.86rem;
+}
+
+.show-item--tiny .show-title {
+  font-size: 0.78rem;
 }
 
 .show-title {
