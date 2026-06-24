@@ -152,13 +152,11 @@ function updateBookmarkButtons() {
   const readingActive = Boolean(readingInfo && state.readingBookmarks.some((item) => item.key === readingInfo.key));
   els.readingBookmarkToggle.classList.toggle("is-active", readingActive);
   els.readingBookmarkToggle.setAttribute("aria-pressed", readingActive ? "true" : "false");
-  els.readingBookmarkToggle.textContent = readingActive ? "★" : "☆";
 
   const listeningInfo = getCurrentListeningBookmarkInfo();
   const listeningActive = Boolean(listeningInfo && state.listeningBookmarks.some((item) => item.key === listeningInfo.key));
   els.listeningBookmarkToggle.classList.toggle("is-active", listeningActive);
   els.listeningBookmarkToggle.setAttribute("aria-pressed", listeningActive ? "true" : "false");
-  els.listeningBookmarkToggle.textContent = listeningActive ? "★" : "☆";
 }
 
 function setScreen(mode) {
