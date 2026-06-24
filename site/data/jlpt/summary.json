@@ -1,7 +1,10 @@
 {
-  "reading_sentence_count": 119,
+  "reading_sentence_count": 227,
+  "custom_reading_sentence_count": 108,
+  "custom_reading_passage_count": 24,
   "listening_track_count": 356,
   "outputs": [
+    "reading/n3_custom_reading.json",
     "reading/n3_official_workbook_reading.json",
     "reading/n3_official_workbook_raw_pages.json",
     "listening/n3_listening_review_index.json"
