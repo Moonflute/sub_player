@@ -1,11 +1,13 @@
 output_pdf/
 sync check/
 __pycache__/
+.env
 web_data/
 _N3/jlpt_n3_cache.sqlite3
 .codex-remote-attachments/
 _jlpt source/
 _jlpt source refined/listening/audio/
 _jlpt source refined/listening/transcripts/
+_jlpt source refined/gemini_translation_polish_cache.json
 .whisper_models/
 transcribe_listening*.log

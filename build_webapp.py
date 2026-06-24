@@ -904,7 +904,7 @@ def build_site(
         shutil.copytree(
             JLPT_REFINED_DIR,
             jlpt_data_dir,
-            ignore=shutil.ignore_patterns("transcripts"),
+            ignore=shutil.ignore_patterns("transcripts", "gemini_translation_polish_cache.json"),
         )
     print(f"[done] static site written to {output_dir}")
 
