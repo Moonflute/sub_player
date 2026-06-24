@@ -44,7 +44,6 @@ const els = {
   listeningProgress: document.getElementById("listening-progress"),
   listeningSentence: document.getElementById("listening-sentence"),
   listeningTranslation: document.getElementById("listening-translation"),
-  listeningSegmentPlay: document.getElementById("listening-segment-play"),
   listeningAudio: document.getElementById("listening-audio"),
   listeningLoopToggle: document.getElementById("listening-loop-toggle"),
   listeningPrev: document.getElementById("listening-prev"),
@@ -623,7 +622,6 @@ function renderListeningState() {
   els.listeningTranslation.textContent = segment?.translation || "";
   els.listeningPrev.disabled = state.currentListeningIndex <= 0 || segments.length === 0;
   els.listeningNext.disabled = state.currentListeningIndex >= segments.length - 1 || segments.length === 0;
-  els.listeningSegmentPlay.disabled = segments.length === 0;
   els.listeningLoopToggle.disabled = segments.length === 0;
 }
 
@@ -672,14 +670,6 @@ function jumpListening(direction) {
   state.currentListeningIndex = Math.max(0, Math.min(segments.length - 1, state.currentListeningIndex + direction));
   const segment = segments[state.currentListeningIndex];
   els.listeningAudio.currentTime = segment.start_seconds;
-  renderListeningState();
-}
-
-function playListeningSegment() {
-  const segment = getListeningSegments()[state.currentListeningIndex];
-  if (!segment) return;
-  els.listeningAudio.currentTime = segment.start_seconds;
-  els.listeningAudio.play();
   renderListeningState();
 }
 
@@ -844,7 +834,6 @@ function bindEvents() {
   });
   els.listeningPrev.addEventListener("click", () => jumpListening(-1));
   els.listeningNext.addEventListener("click", () => jumpListening(1));
-  els.listeningSegmentPlay.addEventListener("click", playListeningSegment);
   els.listeningAudio.addEventListener("timeupdate", syncListeningSegmentFromTime);
   els.listeningAudio.addEventListener("ended", () => {
     if (isListeningLoopEnabled()) {

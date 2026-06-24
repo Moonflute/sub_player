@@ -513,12 +513,6 @@ input {
   min-height: 1.8em;
 }
 
-.listening-segment-play {
-  width: 56px;
-  height: 56px;
-  font-size: 1.15rem;
-}
-
 .listening-audio {
   width: min(760px, 100%);
 }
