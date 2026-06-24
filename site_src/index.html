@@ -109,16 +109,7 @@
             <div id="reading-title" class="player-title">독해</div>
             <div id="reading-progress" class="player-time">0 / 0</div>
           </div>
-          <div class="reading-actions">
-            <label class="reveal-toggle">
-              <input id="reading-reveal-toggle" type="checkbox">
-              <span>주석</span>
-            </label>
-            <label class="reveal-toggle reveal-toggle--view">
-              <input id="reading-full-toggle" type="checkbox">
-              <span>전문</span>
-            </label>
-          </div>
+          <button id="reading-bookmark-toggle" class="bookmark-toggle" type="button" aria-pressed="false" aria-label="현재 독해 문장 북마크">☆</button>
         </header>
 
         <section class="reading-panel">
@@ -131,6 +122,16 @@
           <div id="reading-sentence" class="current-sentence reading-sentence"></div>
           <div id="reading-translation" class="current-translation reading-extra"></div>
         </section>
+        <div class="floating-actions reading-actions">
+          <label class="reveal-toggle">
+            <input id="reading-reveal-toggle" type="checkbox">
+            <span>주석</span>
+          </label>
+          <label class="reveal-toggle reveal-toggle--view">
+            <input id="reading-full-toggle" type="checkbox">
+            <span>전문</span>
+          </label>
+        </div>
       </div>
     </section>
 
@@ -145,9 +146,7 @@
             <div id="listening-title" class="player-title">청해</div>
             <div id="listening-section" class="player-time"></div>
           </div>
-          <button id="listening-loop-toggle" class="reveal-toggle loop-toggle" type="button" aria-pressed="false">
-            <span>반복</span>
-          </button>
+          <button id="listening-bookmark-toggle" class="bookmark-toggle" type="button" aria-pressed="false" aria-label="현재 청해 문장 북마크">☆</button>
         </header>
 
         <section class="listening-panel">
@@ -165,6 +164,11 @@
             <audio id="listening-audio" class="listening-audio" controls preload="metadata"></audio>
           </div>
         </section>
+        <div class="floating-actions listening-actions">
+          <button id="listening-loop-toggle" class="reveal-toggle loop-toggle" type="button" aria-pressed="false">
+            <span>반복</span>
+          </button>
+        </div>
       </div>
     </section>
   </main>

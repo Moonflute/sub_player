@@ -7,7 +7,12 @@ const state = {
   currentReading: null,
   currentListeningTrack: null,
   currentListeningIndex: 0,
+  currentListeningSectionTitle: "",
   currentReadingIndex: 0,
+  readingBookmarks: [],
+  listeningBookmarks: [],
+  isReadingBookmarkMode: false,
+  isListeningBookmarkMode: false,
   currentTime: 0,
   isPlaying: false,
   tickHandle: null,
@@ -32,6 +37,7 @@ const els = {
   readingProgress: document.getElementById("reading-progress"),
   readingRevealToggle: document.getElementById("reading-reveal-toggle"),
   readingFullToggle: document.getElementById("reading-full-toggle"),
+  readingBookmarkToggle: document.getElementById("reading-bookmark-toggle"),
   readingPrev: document.getElementById("reading-prev"),
   readingNext: document.getElementById("reading-next"),
   readingPanel: document.querySelector(".reading-panel"),
@@ -46,6 +52,7 @@ const els = {
   listeningTranslation: document.getElementById("listening-translation"),
   listeningAudio: document.getElementById("listening-audio"),
   listeningLoopToggle: document.getElementById("listening-loop-toggle"),
+  listeningBookmarkToggle: document.getElementById("listening-bookmark-toggle"),
   listeningPrev: document.getElementById("listening-prev"),
   listeningNext: document.getElementById("listening-next"),
   sentencePrev: document.getElementById("sentence-prev"),
@@ -82,6 +89,78 @@ function escapeHtml(text) {
     .replaceAll(">", "&gt;");
 }
 
+const BOOKMARK_STORAGE_KEY = "jlpt-study-bookmarks-v1";
+
+function loadBookmarks() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(BOOKMARK_STORAGE_KEY) || "{}");
+    state.readingBookmarks = Array.isArray(saved.reading) ? saved.reading : [];
+    state.listeningBookmarks = Array.isArray(saved.listening) ? saved.listening : [];
+  } catch {
+    state.readingBookmarks = [];
+    state.listeningBookmarks = [];
+  }
+}
+
+function saveBookmarks() {
+  localStorage.setItem(BOOKMARK_STORAGE_KEY, JSON.stringify({
+    reading: state.readingBookmarks,
+    listening: state.listeningBookmarks,
+  }));
+}
+
+function readingBookmarkKey(readingId, itemIndex) {
+  return `${readingId}:${itemIndex}`;
+}
+
+function listeningBookmarkKey(trackId, segmentIndex) {
+  return `${trackId}:${segmentIndex}`;
+}
+
+function getCurrentReadingBookmarkInfo() {
+  const item = (state.currentReading?.items || [])[state.currentReadingIndex] || null;
+  if (!item) return null;
+  const readingId = item.__bookmarkReadingId || state.currentReading?.id;
+  const itemIndex = item.__bookmarkItemIndex || item.index;
+  if (!readingId || itemIndex == null) return null;
+  return {
+    key: readingBookmarkKey(readingId, itemIndex),
+    readingId,
+    itemIndex,
+    title: state.currentReading?.title || "독해",
+  };
+}
+
+function getCurrentListeningBookmarkInfo() {
+  const segment = getListeningSegments()[state.currentListeningIndex] || null;
+  const track = state.currentListeningTrack;
+  if (!segment || !track) return null;
+  const trackId = segment.__bookmarkTrackId || track.id;
+  const segmentIndex = segment.__bookmarkSegmentIndex || segment.index;
+  if (!trackId || segmentIndex == null) return null;
+  return {
+    key: listeningBookmarkKey(trackId, segmentIndex),
+    trackId,
+    segmentIndex,
+    title: segment.__trackTitle || track.title || "청해",
+    sectionTitle: segment.__sectionTitle || state.currentListeningSectionTitle || "",
+  };
+}
+
+function updateBookmarkButtons() {
+  const readingInfo = getCurrentReadingBookmarkInfo();
+  const readingActive = Boolean(readingInfo && state.readingBookmarks.some((item) => item.key === readingInfo.key));
+  els.readingBookmarkToggle.classList.toggle("is-active", readingActive);
+  els.readingBookmarkToggle.setAttribute("aria-pressed", readingActive ? "true" : "false");
+  els.readingBookmarkToggle.textContent = readingActive ? "★" : "☆";
+
+  const listeningInfo = getCurrentListeningBookmarkInfo();
+  const listeningActive = Boolean(listeningInfo && state.listeningBookmarks.some((item) => item.key === listeningInfo.key));
+  els.listeningBookmarkToggle.classList.toggle("is-active", listeningActive);
+  els.listeningBookmarkToggle.setAttribute("aria-pressed", listeningActive ? "true" : "false");
+  els.listeningBookmarkToggle.textContent = listeningActive ? "★" : "☆";
+}
+
 function setScreen(mode) {
   const isPlayer = mode === "player";
   const isReading = mode === "reading";
@@ -111,6 +190,9 @@ function returnToLibrary() {
   state.currentReading = null;
   state.currentListeningTrack = null;
   state.currentListeningIndex = 0;
+  state.currentListeningSectionTitle = "";
+  state.isReadingBookmarkMode = false;
+  state.isListeningBookmarkMode = false;
   els.listeningAudio.pause();
   els.listeningAudio.removeAttribute("src");
   state.currentTime = 0;
@@ -406,6 +488,46 @@ function groupListeningTracks(section) {
   return groups;
 }
 
+function buildReadingBookmarkEntries() {
+  const entries = [];
+  const seen = new Set();
+  for (const bookmark of state.readingBookmarks) {
+    if (!bookmark?.readingId || bookmark.itemIndex == null || seen.has(bookmark.key)) continue;
+    seen.add(bookmark.key);
+    const reading = state.readingLibrary.find((item) => item.id === bookmark.readingId);
+    const sourceItem = (reading?.items || []).find((item) => String(item.index) === String(bookmark.itemIndex));
+    if (!reading || !sourceItem) continue;
+    entries.push({
+      ...sourceItem,
+      __bookmarkReadingId: reading.id,
+      __bookmarkItemIndex: sourceItem.index,
+      __bookmarkSourceTitle: reading.title,
+    });
+  }
+  return entries;
+}
+
+function buildListeningBookmarkEntries() {
+  const entries = [];
+  const seen = new Set();
+  for (const bookmark of state.listeningBookmarks) {
+    if (!bookmark?.trackId || bookmark.segmentIndex == null || seen.has(bookmark.key)) continue;
+    seen.add(bookmark.key);
+    const result = findListeningTrack(bookmark.trackId);
+    const segment = (result?.track?.segments || []).find((item) => String(item.index) === String(bookmark.segmentIndex));
+    if (!result || !segment || !result.track.site_audio) continue;
+    entries.push({
+      ...segment,
+      __bookmarkTrackId: result.track.id,
+      __bookmarkSegmentIndex: segment.index,
+      __trackTitle: result.track.title,
+      __sectionTitle: result.section.title || "",
+      __siteAudio: result.track.site_audio,
+    });
+  }
+  return entries;
+}
+
 function renderLibrary() {
   const isHome = !state.libraryMode;
   els.homeMenu.classList.toggle("is-hidden", !isHome);
@@ -462,7 +584,18 @@ function renderLibrary() {
 
 function renderReadingLibrary() {
   const sections = state.readingLibrary.flatMap((item) => buildReadingParts(item));
-  els.libraryList.innerHTML = sections.map((section) => `
+  const bookmarkCount = buildReadingBookmarkEntries().length;
+  const bookmarkSection = `
+    <section class="series-group bookmark-entry">
+      <h2 class="series-group__title">북마크</h2>
+      <div class="series-group__items series-group__items--compact series-group__items--study">
+        <button class="show-item show-item--tile show-item--study" data-reading-bookmarks type="button" ${bookmarkCount ? "" : "disabled"}>
+          <span class="show-title">${bookmarkCount ? "보기" : "없음"}</span>
+        </button>
+      </div>
+    </section>
+  `;
+  els.libraryList.innerHTML = bookmarkSection + sections.map((section) => `
     <section class="series-group">
       <h2 class="series-group__title">${escapeHtml(section.title)}</h2>
       <div class="series-group__items series-group__items--compact series-group__items--study">
@@ -480,6 +613,8 @@ function renderReadingLibrary() {
       await loadReading(button.dataset.readingId, Number(button.dataset.readingIndex || 0));
     });
   }
+  const bookmarkButton = els.libraryList.querySelector("[data-reading-bookmarks]");
+  bookmarkButton?.addEventListener("click", loadReadingBookmarks);
 }
 
 function buildReadingParts(reading) {
@@ -526,7 +661,18 @@ function buildReadingParts(reading) {
 }
 
 function renderListeningLibrary() {
-  els.libraryList.innerHTML = state.listeningLibrary.map((section) => `
+  const bookmarkCount = buildListeningBookmarkEntries().length;
+  const bookmarkSection = `
+    <section class="series-group bookmark-entry">
+      <h2 class="series-group__title">북마크</h2>
+      <div class="series-group__items series-group__items--compact series-group__items--study">
+        <button class="show-item show-item--tile show-item--study" data-listening-bookmarks type="button" ${bookmarkCount ? "" : "disabled"}>
+          <span class="show-title">${bookmarkCount ? "보기" : "없음"}</span>
+        </button>
+      </div>
+    </section>
+  `;
+  els.libraryList.innerHTML = bookmarkSection + state.listeningLibrary.map((section) => `
     <section class="series-group">
       <h2 class="series-group__title">${escapeHtml(section.title)}</h2>
       ${groupListeningTracks(section).map((group) => `
@@ -549,6 +695,8 @@ function renderListeningLibrary() {
       loadListeningTrack(button.dataset.listeningId);
     });
   }
+  const bookmarkButton = els.libraryList.querySelector("[data-listening-bookmarks]");
+  bookmarkButton?.addEventListener("click", loadListeningBookmarks);
 }
 
 function renderReadingState() {
@@ -556,10 +704,11 @@ function renderReadingState() {
   const items = reading?.items || [];
   const item = items[state.currentReadingIndex] || null;
   const reveal = Boolean(els.readingRevealToggle.checked);
-  const isFull = Boolean(els.readingFullToggle.checked);
+  const isFull = !state.isReadingBookmarkMode && Boolean(els.readingFullToggle.checked);
 
   els.readingTitle.textContent = reading ? reading.title : "독해";
   els.readingProgress.textContent = items.length ? `${state.currentReadingIndex + 1} / ${items.length}` : "0 / 0";
+  els.readingFullToggle.disabled = state.isReadingBookmarkMode;
   els.readingPanel.classList.toggle("is-revealed", reveal || isFull);
   els.readingPanel.classList.toggle("is-full-view", isFull);
   els.readingPrev.classList.toggle("is-hidden", isFull);
@@ -574,6 +723,7 @@ function renderReadingState() {
 
   els.readingSentence.innerHTML = renderHighlightedSentence(item);
   els.readingTranslation.textContent = item?.translation || "";
+  updateBookmarkButtons();
 }
 
 function getCurrentReadingPassageItems() {
@@ -616,13 +766,15 @@ function renderListeningState() {
   const segments = getListeningSegments();
   const segment = segments[state.currentListeningIndex] || null;
 
-  els.listeningTrackTitle.textContent = track?.title || "";
+  els.listeningTrackTitle.textContent = segment?.__trackTitle || track?.title || "";
   els.listeningProgress.textContent = segments.length ? `${state.currentListeningIndex + 1} / ${segments.length}` : "전사 대기";
   els.listeningSentence.innerHTML = segment ? renderHighlightedSentence(segment) : escapeHtml(track?.text || "");
   els.listeningTranslation.textContent = segment?.translation || "";
   els.listeningPrev.disabled = state.currentListeningIndex <= 0 || segments.length === 0;
   els.listeningNext.disabled = state.currentListeningIndex >= segments.length - 1 || segments.length === 0;
   els.listeningLoopToggle.disabled = segments.length === 0;
+  updateListeningBookmarkAudio();
+  updateBookmarkButtons();
 }
 
 function isListeningLoopEnabled() {
@@ -632,6 +784,26 @@ function isListeningLoopEnabled() {
 function setListeningLoopEnabled(enabled) {
   els.listeningLoopToggle.setAttribute("aria-pressed", enabled ? "true" : "false");
   els.listeningLoopToggle.classList.toggle("is-active", enabled);
+}
+
+function updateListeningBookmarkAudio() {
+  if (!state.isListeningBookmarkMode) return;
+  const segment = getListeningSegments()[state.currentListeningIndex];
+  if (!segment?.__siteAudio) return;
+  const audioUrl = segment.__siteAudio;
+  const wasPlaying = !els.listeningAudio.paused;
+  if (els.listeningAudio.getAttribute("src") !== audioUrl) {
+    els.listeningAudio.src = audioUrl;
+    els.listeningAudio.currentTime = Number(segment.start_seconds || 0);
+  }
+  const start = Number(segment.start_seconds || 0);
+  const end = Number(segment.end_seconds || start);
+  if (els.listeningAudio.currentTime < start - 0.08 || els.listeningAudio.currentTime >= end) {
+    els.listeningAudio.currentTime = start;
+  }
+  if (wasPlaying) {
+    els.listeningAudio.play();
+  }
 }
 
 function restartCurrentListeningSegment() {
@@ -647,6 +819,24 @@ function syncListeningSegmentFromTime() {
 
   const currentTime = els.listeningAudio.currentTime;
   const current = segments[state.currentListeningIndex];
+
+  if (state.isListeningBookmarkMode && current) {
+    const start = Number(current.start_seconds || 0);
+    const end = Number(current.end_seconds || start);
+    if (currentTime < start - 0.08) {
+      els.listeningAudio.currentTime = start;
+      return;
+    }
+    if (currentTime >= Math.max(start, end - 0.04)) {
+      if (isListeningLoopEnabled()) {
+        restartCurrentListeningSegment();
+      } else {
+        els.listeningAudio.pause();
+        els.listeningAudio.currentTime = start;
+      }
+    }
+    return;
+  }
 
   if (isListeningLoopEnabled() && current) {
     const start = Number(current.start_seconds || 0);
@@ -777,8 +967,29 @@ async function loadReading(readingId, startIndex = 0) {
   stopPlayback();
   state.currentReading = item;
   state.currentReadingIndex = Math.max(0, Math.min((item.items || []).length - 1, startIndex));
+  state.isReadingBookmarkMode = false;
   els.readingRevealToggle.checked = false;
   els.readingFullToggle.checked = false;
+  els.readingFullToggle.disabled = false;
+  setScreen("reading");
+  renderReadingState();
+}
+
+function loadReadingBookmarks() {
+  const items = buildReadingBookmarkEntries();
+  if (!items.length) return;
+  stopPlayback();
+  state.currentReading = {
+    id: "reading-bookmarks",
+    title: "독해 북마크",
+    items,
+    isBookmarkList: true,
+  };
+  state.currentReadingIndex = 0;
+  state.isReadingBookmarkMode = true;
+  els.readingRevealToggle.checked = true;
+  els.readingFullToggle.checked = false;
+  els.readingFullToggle.disabled = true;
   setScreen("reading");
   renderReadingState();
 }
@@ -790,6 +1001,8 @@ function loadListeningTrack(trackId) {
   stopPlayback();
   state.currentListeningTrack = result.track;
   state.currentListeningIndex = 0;
+  state.currentListeningSectionTitle = result.section.title || "";
+  state.isListeningBookmarkMode = false;
   els.listeningTitle.textContent = "청해";
   els.listeningSection.textContent = result.section.title || "";
   setListeningLoopEnabled(false);
@@ -799,11 +1012,82 @@ function loadListeningTrack(trackId) {
   renderListeningState();
 }
 
+function loadListeningBookmarks() {
+  const segments = buildListeningBookmarkEntries();
+  if (!segments.length) return;
+  stopPlayback();
+  state.currentListeningTrack = {
+    id: "listening-bookmarks",
+    title: "청해 북마크",
+    site_audio: segments[0].__siteAudio,
+    segments,
+  };
+  state.currentListeningIndex = 0;
+  state.currentListeningSectionTitle = "북마크";
+  state.isListeningBookmarkMode = true;
+  els.listeningTitle.textContent = "청해 북마크";
+  els.listeningSection.textContent = "북마크";
+  setListeningLoopEnabled(false);
+  els.listeningAudio.loop = false;
+  els.listeningAudio.src = segments[0].__siteAudio;
+  els.listeningAudio.currentTime = Number(segments[0].start_seconds || 0);
+  setScreen("listening");
+  renderListeningState();
+}
+
 function jumpReading(direction) {
   const items = state.currentReading?.items || [];
   if (!items.length) return;
   state.currentReadingIndex = Math.max(0, Math.min(items.length - 1, state.currentReadingIndex + direction));
   renderReadingState();
+}
+
+function toggleReadingBookmark() {
+  const info = getCurrentReadingBookmarkInfo();
+  if (!info) return;
+  const existingIndex = state.readingBookmarks.findIndex((item) => item.key === info.key);
+  if (existingIndex >= 0) {
+    state.readingBookmarks.splice(existingIndex, 1);
+  } else {
+    state.readingBookmarks.push(info);
+  }
+  saveBookmarks();
+  if (state.isReadingBookmarkMode && existingIndex >= 0) {
+    const items = buildReadingBookmarkEntries();
+    if (!items.length) {
+      returnToLibrary();
+      renderLibrary();
+      return;
+    }
+    state.currentReading.items = items;
+    state.currentReadingIndex = Math.min(state.currentReadingIndex, items.length - 1);
+  }
+  renderReadingState();
+  if (state.libraryMode === "reading") renderLibrary();
+}
+
+function toggleListeningBookmark() {
+  const info = getCurrentListeningBookmarkInfo();
+  if (!info) return;
+  const existingIndex = state.listeningBookmarks.findIndex((item) => item.key === info.key);
+  if (existingIndex >= 0) {
+    state.listeningBookmarks.splice(existingIndex, 1);
+  } else {
+    state.listeningBookmarks.push(info);
+  }
+  saveBookmarks();
+  if (state.isListeningBookmarkMode && existingIndex >= 0) {
+    const segments = buildListeningBookmarkEntries();
+    if (!segments.length) {
+      returnToLibrary();
+      renderLibrary();
+      return;
+    }
+    state.currentListeningTrack.segments = segments;
+    state.currentListeningIndex = Math.min(state.currentListeningIndex, segments.length - 1);
+  }
+  renderListeningState();
+  if (state.libraryMode === "listening") renderLibrary();
 }
 
 function bindEvents() {
@@ -825,9 +1109,11 @@ function bindEvents() {
   els.readingBackButton.addEventListener("click", returnToLibrary);
   els.readingRevealToggle.addEventListener("change", renderReadingState);
   els.readingFullToggle.addEventListener("change", renderReadingState);
+  els.readingBookmarkToggle.addEventListener("click", toggleReadingBookmark);
   els.readingPrev.addEventListener("click", () => jumpReading(-1));
   els.readingNext.addEventListener("click", () => jumpReading(1));
   els.listeningBackButton.addEventListener("click", returnToLibrary);
+  els.listeningBookmarkToggle.addEventListener("click", toggleListeningBookmark);
   els.listeningLoopToggle.addEventListener("click", () => {
     setListeningLoopEnabled(!isListeningLoopEnabled());
     els.listeningAudio.loop = false;
@@ -873,6 +1159,7 @@ function bindEvents() {
 
 async function main() {
   setPlayVisual(false);
+  loadBookmarks();
   bindEvents();
   await loadLibrary();
   if (window.location.hash) {

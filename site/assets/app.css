@@ -245,6 +245,16 @@ input {
   font-size: 0.78rem;
 }
 
+.bookmark-entry {
+  margin-bottom: 2px;
+}
+
+.bookmark-empty {
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
 .version-badge {
   position: fixed;
   left: 50%;
@@ -323,6 +333,40 @@ input {
   justify-content: flex-end;
   align-items: center;
   gap: 6px;
+}
+
+.floating-actions {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  z-index: 5;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 6px;
+}
+
+.bookmark-toggle {
+  width: 48px;
+  height: 48px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.84);
+  color: var(--muted);
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  display: grid;
+  place-items: center;
+  font-size: 1.38rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.bookmark-toggle.is-active,
+.bookmark-toggle[aria-pressed="true"] {
+  border-color: rgba(197, 74, 41, 0.48);
+  background: rgba(197, 74, 41, 0.16);
+  color: var(--accent-deep);
 }
 
 .reveal-toggle {
@@ -890,6 +934,17 @@ input {
 
   .reading-actions {
     gap: 4px;
+  }
+
+  .floating-actions {
+    right: 12px;
+    bottom: 12px;
+  }
+
+  .bookmark-toggle {
+    width: 42px;
+    height: 42px;
+    font-size: 1.18rem;
   }
 
   .reading-panel.is-full-view {
