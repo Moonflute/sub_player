@@ -714,7 +714,7 @@ function renderReadingState() {
 
   if (isFull) {
     const passageItems = getCurrentReadingPassageItems();
-    els.readingSentence.innerHTML = renderReadingFullView(passageItems, reveal);
+    els.readingSentence.innerHTML = renderReadingFullView(passageItems);
     els.readingTranslation.textContent = "";
     return;
   }
@@ -731,7 +731,7 @@ function getCurrentReadingPassageItems() {
   return items.filter((entry) => entry.passage_id === item.passage_id);
 }
 
-function renderReadingFullView(items, reveal) {
+function renderReadingFullView(items) {
   if (!items.length) return "";
   const title = items[0].passage_title || "";
   const question = findCurrentReadingPassage()?.question || "";
@@ -742,7 +742,7 @@ function renderReadingFullView(items, reveal) {
       ${items.map((item) => `
         <section class="reading-full__item">
           <p class="reading-full__sentence">${renderHighlightedSentence(item)}</p>
-          ${reveal ? `<p class="reading-full__translation">${escapeHtml(item.translation || "")}</p>` : ""}
+          <p class="reading-full__translation">${escapeHtml(item.translation || "")}</p>
         </section>
       `).join("")}
     </article>
