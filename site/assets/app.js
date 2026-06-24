@@ -382,6 +382,31 @@ function trackLabel(track, index) {
   return `${String(index + 1).padStart(2, "0")}번`;
 }
 
+function listeningProblemGroupTitle(track) {
+  const title = String(track?.title || "");
+  const drill = title.match(/실력다지기/);
+  if (drill) return "문제1";
+  const test = title.match(/실전테스트\s*(\d+)/);
+  if (test) return `문제${Number(test[1]) + 1}`;
+  const n = title.match(/문제\s*(\d+)/);
+  return n ? `문제${Number(n[1])}` : "문제";
+}
+
+function groupListeningTracks(section) {
+  const groups = [];
+  const byTitle = new Map();
+  for (const track of section.tracks || []) {
+    const groupTitle = listeningProblemGroupTitle(track);
+    if (!byTitle.has(groupTitle)) {
+      const group = { title: groupTitle, tracks: [] };
+      byTitle.set(groupTitle, group);
+      groups.push(group);
+    }
+    byTitle.get(groupTitle).tracks.push(track);
+  }
+  return groups;
+}
+
 function renderLibrary() {
   const isHome = !state.libraryMode;
   els.homeMenu.classList.toggle("is-hidden", !isHome);
@@ -508,16 +533,18 @@ function renderListeningLibrary() {
   els.libraryList.innerHTML = state.listeningLibrary.map((section) => `
     <section class="series-group">
       <h2 class="series-group__title">${escapeHtml(section.title)}</h2>
-      <div class="series-group__items series-group__items--compact">
-        ${(section.tracks || []).map((track, index) => `
-          <button class="show-item show-item--tile" data-listening-id="${track.id}" type="button" ${track.site_audio ? "" : "disabled"} title="${escapeHtml(track.title)}">
-            <span class="show-title">${escapeHtml(trackLabel(track, index))}</span>
-            <span class="show-meta">
-              <span>${(track.segments || []).length || 0}문장</span>
-            </span>
-          </button>
+      ${groupListeningTracks(section).map((group) => `
+        <section class="subseries-group">
+          <h3 class="subseries-group__title">${escapeHtml(group.title)}</h3>
+          <div class="series-group__items series-group__items--compact series-group__items--tiny">
+            ${group.tracks.map((track, index) => `
+              <button class="show-item show-item--tile show-item--tiny" data-listening-id="${track.id}" type="button" ${track.site_audio ? "" : "disabled"} title="${escapeHtml(track.title)}">
+                <span class="show-title">${escapeHtml(trackLabel(track, index))}</span>
+              </button>
+            `).join("")}
+          </div>
+        </section>
         `).join("")}
-      </div>
     </section>
   `).join("");
 
