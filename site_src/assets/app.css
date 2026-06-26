@@ -611,6 +611,14 @@ input {
   text-align: center;
 }
 
+.grammar-number {
+  color: var(--muted-soft);
+  font-size: clamp(0.72rem, 1.1vw, 0.92rem);
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  min-height: 1.1em;
+}
+
 .grammar-section {
   color: var(--accent-deep);
   font-size: clamp(0.82rem, 1.25vw, 1rem);

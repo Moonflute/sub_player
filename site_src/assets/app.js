@@ -12,6 +12,7 @@ const state = {
   currentGrammarSet: null,
   currentGrammarIndex: 0,
   selectedGrammarChoice: null,
+  grammarMistakes: [],
   currentReadingIndex: 0,
   readingBookmarks: [],
   listeningBookmarks: [],
@@ -63,6 +64,7 @@ const els = {
   grammarBackButton: document.getElementById("grammar-back-button"),
   grammarTitle: document.getElementById("grammar-title"),
   grammarProgress: document.getElementById("grammar-progress"),
+  grammarNumber: document.getElementById("grammar-number"),
   grammarSection: document.getElementById("grammar-section"),
   grammarQuestion: document.getElementById("grammar-question"),
   grammarTranslation: document.getElementById("grammar-translation"),
@@ -111,6 +113,7 @@ function loadBookmarks() {
     const saved = JSON.parse(localStorage.getItem(BOOKMARK_STORAGE_KEY) || "{}");
     state.readingBookmarks = Array.isArray(saved.reading) ? saved.reading : [];
     state.listeningBookmarks = Array.isArray(saved.listening) ? saved.listening : [];
+    state.grammarMistakes = Array.isArray(saved.grammar) ? saved.grammar : [];
   } catch {
     state.readingBookmarks = [];
     state.listeningBookmarks = [];
@@ -683,6 +686,34 @@ function buildReadingParts(reading) {
   }));
 }
 
+function grammarMistakeKey(question) {
+  return question?.id || "";
+}
+
+function shuffleItems(items) {
+  const copy = [...items];
+  for (let index = copy.length - 1; index > 0; index -= 1) {
+    const swapIndex = Math.floor(Math.random() * (index + 1));
+    [copy[index], copy[swapIndex]] = [copy[swapIndex], copy[index]];
+  }
+  return copy;
+}
+
+function getAllGrammarQuestions() {
+  const entries = [];
+  for (const section of state.grammarLibrary?.sections || []) {
+    for (const question of section.questions || []) {
+      entries.push({ ...question, __sectionTitle: section.title || "문법" });
+    }
+  }
+  return entries;
+}
+
+function buildGrammarMistakeEntries() {
+  const mistakeKeys = new Set(state.grammarMistakes);
+  return getAllGrammarQuestions().filter((question) => mistakeKeys.has(grammarMistakeKey(question)));
+}
+
 function renderGrammarLibrary() {
   const sections = state.grammarLibrary?.sections || [];
   if (!sections.length) {
@@ -690,7 +721,19 @@ function renderGrammarLibrary() {
     return;
   }
 
-  els.libraryList.innerHTML = sections.map((section, index) => `
+  const mistakeCount = buildGrammarMistakeEntries().length;
+  const mistakeSection = `
+    <section class="series-group bookmark-entry">
+      <h2 class="series-group__title">오답</h2>
+      <div class="series-group__items series-group__items--compact series-group__items--study grammar-library-grid">
+        <button class="show-item show-item--tile show-item--study grammar-set-button" data-grammar-mistakes type="button" ${mistakeCount ? "" : "disabled"}>
+          <span class="show-title">${mistakeCount ? "오답만" : "없음"}</span>
+        </button>
+      </div>
+    </section>
+  `;
+
+  els.libraryList.innerHTML = mistakeSection + sections.map((section, index) => `
     <section class="series-group">
       <h2 class="series-group__title">${escapeHtml(section.title || "문법")}</h2>
       <div class="series-group__items series-group__items--compact series-group__items--study grammar-library-grid">
@@ -706,6 +749,7 @@ function renderGrammarLibrary() {
       loadGrammarSet(Number(button.dataset.grammarSectionIndex || 0));
     });
   }
+  els.libraryList.querySelector("[data-grammar-mistakes]")?.addEventListener("click", loadGrammarMistakes);
 }
 
 function getGrammarQuestions() {
@@ -719,12 +763,42 @@ function loadGrammarSet(sectionIndex) {
   state.currentGrammarSet = {
     id: section.id || `grammar-${sectionIndex}`,
     title: section.title || "문법",
-    questions: section.questions,
+    questions: shuffleItems(section.questions.map((question) => ({ ...question, __sectionTitle: section.title || "문법" }))),
+    isMistakeReview: false,
   };
   state.currentGrammarIndex = 0;
   state.selectedGrammarChoice = null;
   setScreen("grammar");
   renderGrammarState();
+}
+
+function loadGrammarMistakes() {
+  const questions = buildGrammarMistakeEntries();
+  if (!questions.length) return;
+  stopPlayback();
+  state.currentGrammarSet = {
+    id: "grammar-mistakes",
+    title: "문법 오답",
+    questions: shuffleItems(questions),
+    isMistakeReview: true,
+  };
+  state.currentGrammarIndex = 0;
+  state.selectedGrammarChoice = null;
+  setScreen("grammar");
+  renderGrammarState();
+}
+
+function recordGrammarAnswer(question, selected, answer) {
+  const key = grammarMistakeKey(question);
+  if (!key) return;
+  const existingIndex = state.grammarMistakes.indexOf(key);
+  if (selected === answer) {
+    if (existingIndex >= 0) state.grammarMistakes.splice(existingIndex, 1);
+  } else if (existingIndex < 0) {
+    state.grammarMistakes.push(key);
+  }
+  saveBookmarks();
+  if (state.libraryMode === "grammar") renderLibrary();
 }
 
 function renderGrammarState() {
@@ -736,6 +810,7 @@ function renderGrammarState() {
   els.grammarNext.disabled = state.currentGrammarIndex >= questions.length - 1 || !questions.length;
 
   if (!question) {
+    els.grammarNumber.textContent = "";
     els.grammarSection.textContent = "";
     els.grammarQuestion.textContent = "";
     els.grammarTranslation.textContent = "";
@@ -747,8 +822,9 @@ function renderGrammarState() {
   const answer = Number(question.answer ?? -1);
   const selected = state.selectedGrammarChoice;
   const isAnswered = selected !== null;
-  els.grammarSection.textContent = question.point ? `문법 포인트: ${question.point}` : "";
-  els.grammarQuestion.innerHTML = escapeHtml(question.question || "").replaceAll("（　）", "<span class=\"grammar-blank\">（　）</span>");
+  els.grammarNumber.textContent = question.number ? `No. ${String(question.number).padStart(3, "0")}` : `No. ${String(state.currentGrammarIndex + 1).padStart(3, "0")}`;
+  els.grammarSection.textContent = isAnswered && question.point ? `문법 포인트: ${question.point}` : "";
+  els.grammarQuestion.innerHTML = escapeHtml(question.question || "").replaceAll("（　）", '<span class="grammar-blank">（　）</span>');
   els.grammarTranslation.textContent = isAnswered ? (question.translation || "") : "";
   els.grammarOptions.innerHTML = (question.options || []).map((option, index) => {
     const classes = ["grammar-option"];
@@ -775,6 +851,7 @@ function renderGrammarState() {
   for (const button of els.grammarOptions.querySelectorAll("[data-grammar-choice]")) {
     button.addEventListener("click", () => {
       state.selectedGrammarChoice = Number(button.dataset.grammarChoice);
+      recordGrammarAnswer(question, state.selectedGrammarChoice, answer);
       renderGrammarState();
     });
   }

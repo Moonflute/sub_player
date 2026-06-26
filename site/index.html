@@ -17,21 +17,21 @@
         <h1 class="library-title">JLPT study</h1>
       </header>
       <div id="home-menu" class="home-menu" aria-label="학습 분류">
-        <button class="home-card" data-library-mode="video" type="button">
-          <span class="home-card__title">자막</span>
-          <span class="home-card__meta">영상 자막 문장 학습</span>
+        <button class="home-card" data-library-mode="grammar" type="button">
+          <span class="home-card__title">문법</span>
+          <span class="home-card__meta">빈칸 선택 문형 연습</span>
         </button>
         <button class="home-card" data-library-mode="reading" type="button">
           <span class="home-card__title">독해</span>
           <span class="home-card__meta">문장 단위 독해 연습</span>
         </button>
-        <button class="home-card" data-library-mode="grammar" type="button">
-          <span class="home-card__title">??</span>
-          <span class="home-card__meta">?? ?? ?? ??</span>
-        </button>
         <button class="home-card" data-library-mode="listening" type="button">
           <span class="home-card__title">청해</span>
           <span class="home-card__meta">음성 구간 반복 학습</span>
+        </button>
+        <button class="home-card" data-library-mode="video" type="button">
+          <span class="home-card__title">자막</span>
+          <span class="home-card__meta">영상 자막 문장 학습</span>
         </button>
       </div>
       <div id="library-list-header" class="library-list-header is-hidden">
@@ -42,7 +42,7 @@
         <h2 id="library-list-title" class="library-list-title"></h2>
       </div>
       <div id="library-list" class="library-list"></div>
-      <div class="version-badge">v 0.1.16</div>
+      <div class="version-badge">v 0.1.17</div>
     </section>
 
     <section id="player-screen" class="screen screen-player is-hidden">
@@ -178,25 +178,26 @@
     <section id="grammar-screen" class="screen screen-player is-hidden">
       <div class="player-stage grammar-stage">
         <header class="player-topbar">
-          <button id="grammar-back-button" class="icon-button text-button" type="button" aria-label="???? ????">
+          <button id="grammar-back-button" class="icon-button text-button" type="button" aria-label="목록으로 돌아가기">
             <span class="icon-button__icon">?</span>
-            <span class="text-button__label">??</span>
+            <span class="text-button__label">목록</span>
           </button>
           <div class="player-topbar__center">
-            <div id="grammar-title" class="player-title">??</div>
+            <div id="grammar-title" class="player-title">문법</div>
             <div id="grammar-progress" class="player-time">0 / 0</div>
           </div>
           <div class="player-topbar__spacer" aria-hidden="true"></div>
         </header>
 
         <section class="grammar-panel">
-          <button id="grammar-prev" class="sentence-nav sentence-nav--prev grammar-nav" type="button" aria-label="?? ??">
+          <button id="grammar-prev" class="sentence-nav sentence-nav--prev grammar-nav" type="button" aria-label="이전 문제">
             <span class="sentence-nav__icon">&lt;</span>
           </button>
-          <button id="grammar-next" class="sentence-nav sentence-nav--next grammar-nav" type="button" aria-label="?? ??">
+          <button id="grammar-next" class="sentence-nav sentence-nav--next grammar-nav" type="button" aria-label="다음 문제">
             <span class="sentence-nav__icon">&gt;</span>
           </button>
           <div class="grammar-card">
+            <div id="grammar-number" class="grammar-number"></div>
             <div id="grammar-section" class="grammar-section"></div>
             <div id="grammar-question" class="grammar-question"></div>
             <div id="grammar-translation" class="grammar-translation"></div>
