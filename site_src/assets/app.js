@@ -2,12 +2,16 @@ const state = {
   library: [],
   readingLibrary: [],
   listeningLibrary: [],
+  grammarLibrary: null,
   libraryMode: "",
   currentShow: null,
   currentReading: null,
   currentListeningTrack: null,
   currentListeningIndex: 0,
   currentListeningSectionTitle: "",
+  currentGrammarSet: null,
+  currentGrammarIndex: 0,
+  selectedGrammarChoice: null,
   currentReadingIndex: 0,
   readingBookmarks: [],
   listeningBookmarks: [],
@@ -24,6 +28,7 @@ const els = {
   playerScreen: document.getElementById("player-screen"),
   readingScreen: document.getElementById("reading-screen"),
   listeningScreen: document.getElementById("listening-screen"),
+  grammarScreen: document.getElementById("grammar-screen"),
   libraryList: document.getElementById("library-list"),
   homeMenu: document.getElementById("home-menu"),
   homeButtons: document.querySelectorAll("[data-library-mode]"),
@@ -55,6 +60,16 @@ const els = {
   listeningBookmarkToggle: document.getElementById("listening-bookmark-toggle"),
   listeningPrev: document.getElementById("listening-prev"),
   listeningNext: document.getElementById("listening-next"),
+  grammarBackButton: document.getElementById("grammar-back-button"),
+  grammarTitle: document.getElementById("grammar-title"),
+  grammarProgress: document.getElementById("grammar-progress"),
+  grammarSection: document.getElementById("grammar-section"),
+  grammarQuestion: document.getElementById("grammar-question"),
+  grammarTranslation: document.getElementById("grammar-translation"),
+  grammarOptions: document.getElementById("grammar-options"),
+  grammarFeedback: document.getElementById("grammar-feedback"),
+  grammarPrev: document.getElementById("grammar-prev"),
+  grammarNext: document.getElementById("grammar-next"),
   sentencePrev: document.getElementById("sentence-prev"),
   sentenceNext: document.getElementById("sentence-next"),
   playToggle: document.getElementById("play-toggle"),
@@ -163,10 +178,12 @@ function setScreen(mode) {
   const isPlayer = mode === "player";
   const isReading = mode === "reading";
   const isListening = mode === "listening";
-  els.libraryScreen.classList.toggle("is-hidden", isPlayer || isReading || isListening);
+  const isGrammar = mode === "grammar";
+  els.libraryScreen.classList.toggle("is-hidden", isPlayer || isReading || isListening || isGrammar);
   els.playerScreen.classList.toggle("is-hidden", !isPlayer);
   els.readingScreen.classList.toggle("is-hidden", !isReading);
   els.listeningScreen.classList.toggle("is-hidden", !isListening);
+  els.grammarScreen.classList.toggle("is-hidden", !isGrammar);
 }
 
 function enterPlayerHistory(showId) {
@@ -189,6 +206,9 @@ function returnToLibrary() {
   state.currentListeningTrack = null;
   state.currentListeningIndex = 0;
   state.currentListeningSectionTitle = "";
+  state.currentGrammarSet = null;
+  state.currentGrammarIndex = 0;
+  state.selectedGrammarChoice = null;
   state.isReadingBookmarkMode = false;
   state.isListeningBookmarkMode = false;
   els.listeningAudio.pause();
@@ -430,7 +450,7 @@ function renderCurrentState() {
 }
 
 function modeTitle(mode) {
-  return { video: "자막", reading: "독해", listening: "청해" }[mode] || "";
+  return { video: "자막", reading: "독해", listening: "청해", grammar: "문법" }[mode] || "";
 }
 
 function setLibraryHome() {
@@ -548,6 +568,11 @@ function renderLibrary() {
     return;
   }
 
+  if (state.libraryMode === "grammar") {
+    renderGrammarLibrary();
+    return;
+  }
+
   const groups = new Map();
   for (const item of state.library) {
     const seriesName = item.title.replace(/\s*-\s*S\d{2}E\d{2}$/i, "").trim() || item.title;
@@ -656,6 +681,111 @@ function buildReadingParts(reading) {
       label: `${String(index + 1).padStart(2, "0")}번`,
     }],
   }));
+}
+
+function renderGrammarLibrary() {
+  const sections = state.grammarLibrary?.sections || [];
+  if (!sections.length) {
+    els.libraryList.innerHTML = `<p class="bookmark-empty">문법 문제 데이터가 아직 없습니다.</p>`;
+    return;
+  }
+
+  els.libraryList.innerHTML = sections.map((section, index) => `
+    <section class="series-group">
+      <h2 class="series-group__title">${escapeHtml(section.title || "문법")}</h2>
+      <div class="series-group__items series-group__items--compact series-group__items--study grammar-library-grid">
+        <button class="show-item show-item--tile show-item--study grammar-set-button" data-grammar-section-index="${index}" type="button">
+          <span class="show-title">연습</span>
+        </button>
+      </div>
+    </section>
+  `).join("");
+
+  for (const button of els.libraryList.querySelectorAll("[data-grammar-section-index]")) {
+    button.addEventListener("click", () => {
+      loadGrammarSet(Number(button.dataset.grammarSectionIndex || 0));
+    });
+  }
+}
+
+function getGrammarQuestions() {
+  return state.currentGrammarSet?.questions || [];
+}
+
+function loadGrammarSet(sectionIndex) {
+  const section = (state.grammarLibrary?.sections || [])[sectionIndex];
+  if (!section || !Array.isArray(section.questions) || !section.questions.length) return;
+  stopPlayback();
+  state.currentGrammarSet = {
+    id: section.id || `grammar-${sectionIndex}`,
+    title: section.title || "문법",
+    questions: section.questions,
+  };
+  state.currentGrammarIndex = 0;
+  state.selectedGrammarChoice = null;
+  setScreen("grammar");
+  renderGrammarState();
+}
+
+function renderGrammarState() {
+  const questions = getGrammarQuestions();
+  const question = questions[state.currentGrammarIndex] || null;
+  els.grammarTitle.textContent = state.currentGrammarSet?.title || "문법";
+  els.grammarProgress.textContent = questions.length ? `${state.currentGrammarIndex + 1} / ${questions.length}` : "0 / 0";
+  els.grammarPrev.disabled = state.currentGrammarIndex <= 0 || !questions.length;
+  els.grammarNext.disabled = state.currentGrammarIndex >= questions.length - 1 || !questions.length;
+
+  if (!question) {
+    els.grammarSection.textContent = "";
+    els.grammarQuestion.textContent = "";
+    els.grammarTranslation.textContent = "";
+    els.grammarOptions.innerHTML = "";
+    els.grammarFeedback.textContent = "";
+    return;
+  }
+
+  const answer = Number(question.answer ?? -1);
+  const selected = state.selectedGrammarChoice;
+  const isAnswered = selected !== null;
+  els.grammarSection.textContent = question.point ? `문법 포인트: ${question.point}` : "";
+  els.grammarQuestion.innerHTML = escapeHtml(question.question || "").replaceAll("（　）", "<span class=\"grammar-blank\">（　）</span>");
+  els.grammarTranslation.textContent = isAnswered ? (question.translation || "") : "";
+  els.grammarOptions.innerHTML = (question.options || []).map((option, index) => {
+    const classes = ["grammar-option"];
+    if (isAnswered && index === answer) classes.push("is-correct");
+    if (isAnswered && index === selected && index !== answer) classes.push("is-wrong");
+    return `
+      <button class="${classes.join(" ")}" data-grammar-choice="${index}" type="button" ${isAnswered ? "disabled" : ""}>
+        <span class="grammar-option__number">${index + 1}</span>
+        <span class="grammar-option__text">${escapeHtml(option)}</span>
+      </button>
+    `;
+  }).join("");
+
+  if (isAnswered) {
+    const prefix = selected === answer ? "정답" : `오답 · 정답 ${answer + 1}번`;
+    els.grammarFeedback.innerHTML = `
+      <strong>${escapeHtml(prefix)}</strong>
+      <span>${escapeHtml(question.explanation || "")}</span>
+    `;
+  } else {
+    els.grammarFeedback.textContent = "";
+  }
+
+  for (const button of els.grammarOptions.querySelectorAll("[data-grammar-choice]")) {
+    button.addEventListener("click", () => {
+      state.selectedGrammarChoice = Number(button.dataset.grammarChoice);
+      renderGrammarState();
+    });
+  }
+}
+
+function jumpGrammar(direction) {
+  const questions = getGrammarQuestions();
+  if (!questions.length) return;
+  state.currentGrammarIndex = Math.max(0, Math.min(questions.length - 1, state.currentGrammarIndex + direction));
+  state.selectedGrammarChoice = null;
+  renderGrammarState();
 }
 
 function renderListeningLibrary() {
@@ -941,6 +1071,11 @@ async function loadLibrary() {
   } catch {
     state.listeningLibrary = [];
   }
+  try {
+    state.grammarLibrary = await fetchJson("./data/jlpt/grammar/n3_grammar_quiz.json");
+  } catch {
+    state.grammarLibrary = null;
+  }
   renderLibrary();
 }
 
@@ -1118,6 +1253,9 @@ function bindEvents() {
   });
   els.listeningPrev.addEventListener("click", () => jumpListening(-1));
   els.listeningNext.addEventListener("click", () => jumpListening(1));
+  els.grammarBackButton.addEventListener("click", returnToLibrary);
+  els.grammarPrev.addEventListener("click", () => jumpGrammar(-1));
+  els.grammarNext.addEventListener("click", () => jumpGrammar(1));
   els.listeningAudio.addEventListener("timeupdate", syncListeningSegmentFromTime);
   els.listeningAudio.addEventListener("ended", () => {
     if (isListeningLoopEnabled()) {
@@ -1145,7 +1283,7 @@ function bindEvents() {
   });
 
   window.addEventListener("popstate", () => {
-    if (state.currentShow || state.currentReading || state.currentListeningTrack) {
+    if (state.currentShow || state.currentReading || state.currentListeningTrack || state.currentGrammarSet) {
       returnToLibrary();
       return;
     }
@@ -1162,7 +1300,7 @@ async function main() {
   await loadLibrary();
   if (window.location.hash) {
     const mode = window.location.hash.replace("#", "");
-    if (["video", "reading", "listening"].includes(mode)) {
+    if (["video", "reading", "listening", "grammar"].includes(mode)) {
       openLibraryMode(mode, false);
     }
   }
