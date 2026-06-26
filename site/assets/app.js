@@ -801,6 +801,14 @@ function recordGrammarAnswer(question, selected, answer) {
   if (state.libraryMode === "grammar") renderLibrary();
 }
 
+function renderGrammarOptionDetails(question) {
+  const details = Array.isArray(question.option_explanations) ? question.option_explanations : [];
+  if (!details.length) return "";
+  const rows = details.map((item, index) =>
+    `<div class="grammar-option-detail"><strong>${index + 1}. ${escapeHtml(item.option || "")}</strong><span>${escapeHtml(item.meaning || "")}</span></div>`
+  ).join("");
+  return `<div class="grammar-option-details">${rows}</div>`;
+}
 function renderGrammarState() {
   const questions = getGrammarQuestions();
   const question = questions[state.currentGrammarIndex] || null;
@@ -843,6 +851,7 @@ function renderGrammarState() {
     els.grammarFeedback.innerHTML = `
       <strong>${escapeHtml(prefix)}</strong>
       <span>${escapeHtml(question.explanation || "")}</span>
+      ${renderGrammarOptionDetails(question)}
     `;
   } else {
     els.grammarFeedback.textContent = "";
