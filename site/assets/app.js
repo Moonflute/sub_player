@@ -13,6 +13,7 @@ const state = {
   currentGrammarIndex: 0,
   selectedGrammarChoice: null,
   grammarMistakes: [],
+  grammarBookmarks: [],
   currentReadingIndex: 0,
   readingBookmarks: [],
   listeningBookmarks: [],
@@ -70,6 +71,7 @@ const els = {
   grammarTranslation: document.getElementById("grammar-translation"),
   grammarOptions: document.getElementById("grammar-options"),
   grammarFeedback: document.getElementById("grammar-feedback"),
+  grammarBookmarkToggle: document.getElementById("grammar-bookmark-toggle"),
   grammarPrev: document.getElementById("grammar-prev"),
   grammarNext: document.getElementById("grammar-next"),
   sentencePrev: document.getElementById("sentence-prev"),
@@ -114,9 +116,12 @@ function loadBookmarks() {
     state.readingBookmarks = Array.isArray(saved.reading) ? saved.reading : [];
     state.listeningBookmarks = Array.isArray(saved.listening) ? saved.listening : [];
     state.grammarMistakes = Array.isArray(saved.grammar) ? saved.grammar : [];
+    state.grammarBookmarks = Array.isArray(saved.grammarBookmarks) ? saved.grammarBookmarks : [];
   } catch {
     state.readingBookmarks = [];
     state.listeningBookmarks = [];
+    state.grammarMistakes = [];
+    state.grammarBookmarks = [];
   }
 }
 
@@ -124,6 +129,8 @@ function saveBookmarks() {
   localStorage.setItem(BOOKMARK_STORAGE_KEY, JSON.stringify({
     reading: state.readingBookmarks,
     listening: state.listeningBookmarks,
+    grammar: state.grammarMistakes,
+    grammarBookmarks: state.grammarBookmarks,
   }));
 }
 
@@ -133,6 +140,10 @@ function readingBookmarkKey(readingId, itemIndex) {
 
 function listeningBookmarkKey(trackId, segmentIndex) {
   return `${trackId}:${segmentIndex}`;
+}
+
+function grammarBookmarkKey(question) {
+  return question?.id || "";
 }
 
 function getCurrentReadingBookmarkInfo() {
@@ -160,8 +171,21 @@ function getCurrentListeningBookmarkInfo() {
     key: listeningBookmarkKey(trackId, segmentIndex),
     trackId,
     segmentIndex,
-    title: segment.__trackTitle || track.title || "청해",
+    title: segment.__trackTitle || track.title || "\uCCAD\uD574",
     sectionTitle: segment.__sectionTitle || state.currentListeningSectionTitle || "",
+  };
+}
+
+function getCurrentGrammarBookmarkInfo() {
+  const question = getGrammarQuestions()[state.currentGrammarIndex] || null;
+  if (!question) return null;
+  const key = grammarBookmarkKey(question);
+  if (!key) return null;
+  return {
+    key,
+    questionId: key,
+    title: state.currentGrammarSet?.title || "\uBB38\uBC95",
+    sectionTitle: question.__sectionTitle || question.section || "\uBB38\uBC95",
   };
 }
 
@@ -175,6 +199,14 @@ function updateBookmarkButtons() {
   const listeningActive = Boolean(listeningInfo && state.listeningBookmarks.some((item) => item.key === listeningInfo.key));
   els.listeningBookmarkToggle.classList.toggle("is-active", listeningActive);
   els.listeningBookmarkToggle.setAttribute("aria-pressed", listeningActive ? "true" : "false");
+
+  const grammarInfo = getCurrentGrammarBookmarkInfo();
+  const grammarActive = Boolean(grammarInfo && state.grammarBookmarks.some((item) => item.key === grammarInfo.key));
+  if (els.grammarBookmarkToggle) {
+    els.grammarBookmarkToggle.classList.toggle("is-active", grammarActive);
+    els.grammarBookmarkToggle.setAttribute("aria-pressed", grammarActive ? "true" : "false");
+    els.grammarBookmarkToggle.disabled = !grammarInfo;
+  }
 }
 
 function setScreen(mode) {
@@ -555,6 +587,7 @@ function renderLibrary() {
   els.libraryListHeader.classList.toggle("is-hidden", isHome);
   els.versionBadge.classList.toggle("is-hidden", !isHome);
   els.libraryListTitle.textContent = modeTitle(state.libraryMode);
+  els.libraryList.classList.toggle("library-list--grammar", state.libraryMode === "grammar");
 
   if (isHome) {
     els.libraryList.innerHTML = "";
@@ -714,35 +747,38 @@ function buildGrammarMistakeEntries() {
   return getAllGrammarQuestions().filter((question) => mistakeKeys.has(grammarMistakeKey(question)));
 }
 
+function buildGrammarBookmarkEntries() {
+  const bookmarkKeys = new Set(state.grammarBookmarks.map((item) => item?.key || item?.questionId || item).filter(Boolean));
+  return getAllGrammarQuestions().filter((question) => bookmarkKeys.has(grammarBookmarkKey(question)));
+}
+
 function renderGrammarLibrary() {
   const sections = state.grammarLibrary?.sections || [];
   if (!sections.length) {
-    els.libraryList.innerHTML = `<p class="bookmark-empty">문법 문제 데이터가 아직 없습니다.</p>`;
+    els.libraryList.innerHTML = `<p class="bookmark-empty">\uBB38\uBC95 \uBB38\uC81C \uB370\uC774\uD130\uAC00 \uC544\uC9C1 \uC5C6\uC2B5\uB2C8\uB2E4.</p>`;
     return;
   }
 
   const mistakeCount = buildGrammarMistakeEntries().length;
-  const mistakeSection = `
-    <section class="series-group bookmark-entry">
-      <h2 class="series-group__title">오답</h2>
-      <div class="series-group__items series-group__items--compact series-group__items--study grammar-library-grid">
-        <button class="show-item show-item--tile show-item--study grammar-set-button" data-grammar-mistakes type="button" ${mistakeCount ? "" : "disabled"}>
-          <span class="show-title">${mistakeCount ? "오답만" : "없음"}</span>
-        </button>
+  const bookmarkCount = buildGrammarBookmarkEntries().length;
+
+  els.libraryList.innerHTML = `
+    <section class="grammar-library">
+      <div class="grammar-part-grid">
+        ${sections.map((section, index) => `
+          <button class="grammar-part-button" data-grammar-section-index="${index}" type="button">
+            <span class="grammar-part-title">${escapeHtml(section.title || "\uBB38\uBC95")}</span>
+          </button>
+        `).join("")}
+      </div>
+      <div class="grammar-action-divider" aria-hidden="true"></div>
+      <div class="grammar-action-grid">
+        <button class="grammar-action-button" data-grammar-mistakes type="button" ${mistakeCount ? "" : "disabled"}>\uC624\uB2F5</button>
+        <button class="grammar-action-button" data-grammar-bookmarks type="button" ${bookmarkCount ? "" : "disabled"}>\uBD81\uB9C8\uD06C</button>
+        <button class="grammar-action-button" data-grammar-random type="button">\uB79C\uB364\uD480\uAE30</button>
       </div>
     </section>
   `;
-
-  els.libraryList.innerHTML = mistakeSection + sections.map((section, index) => `
-    <section class="series-group">
-      <h2 class="series-group__title">${escapeHtml(section.title || "문법")}</h2>
-      <div class="series-group__items series-group__items--compact series-group__items--study grammar-library-grid">
-        <button class="show-item show-item--tile show-item--study grammar-set-button" data-grammar-section-index="${index}" type="button">
-          <span class="show-title">연습</span>
-        </button>
-      </div>
-    </section>
-  `).join("");
 
   for (const button of els.libraryList.querySelectorAll("[data-grammar-section-index]")) {
     button.addEventListener("click", () => {
@@ -750,6 +786,8 @@ function renderGrammarLibrary() {
     });
   }
   els.libraryList.querySelector("[data-grammar-mistakes]")?.addEventListener("click", loadGrammarMistakes);
+  els.libraryList.querySelector("[data-grammar-bookmarks]")?.addEventListener("click", loadGrammarBookmarks);
+  els.libraryList.querySelector("[data-grammar-random]")?.addEventListener("click", loadGrammarRandom);
 }
 
 function getGrammarQuestions() {
@@ -762,9 +800,10 @@ function loadGrammarSet(sectionIndex) {
   stopPlayback();
   state.currentGrammarSet = {
     id: section.id || `grammar-${sectionIndex}`,
-    title: section.title || "문법",
-    questions: shuffleItems(section.questions.map((question) => ({ ...question, __sectionTitle: section.title || "문법" }))),
+    title: section.title || "\uBB38\uBC95",
+    questions: shuffleItems(section.questions.map((question) => ({ ...question, __sectionTitle: section.title || "\uBB38\uBC95" }))),
     isMistakeReview: false,
+    isBookmarkReview: false,
   };
   state.currentGrammarIndex = 0;
   state.selectedGrammarChoice = null;
@@ -778,14 +817,96 @@ function loadGrammarMistakes() {
   stopPlayback();
   state.currentGrammarSet = {
     id: "grammar-mistakes",
-    title: "문법 오답",
+    title: "\uBB38\uBC95 \uC624\uB2F5",
     questions: shuffleItems(questions),
     isMistakeReview: true,
+    isBookmarkReview: false,
   };
   state.currentGrammarIndex = 0;
   state.selectedGrammarChoice = null;
   setScreen("grammar");
   renderGrammarState();
+}
+
+function loadGrammarBookmarks() {
+  const questions = buildGrammarBookmarkEntries();
+  if (!questions.length) return;
+  stopPlayback();
+  state.currentGrammarSet = {
+    id: "grammar-bookmarks",
+    title: "\uBB38\uBC95 \uBD81\uB9C8\uD06C",
+    questions,
+    isMistakeReview: false,
+    isBookmarkReview: true,
+  };
+  state.currentGrammarIndex = 0;
+  state.selectedGrammarChoice = null;
+  setScreen("grammar");
+  renderGrammarState();
+}
+
+function buildBalancedGrammarRandomQuestions(limit) {
+  const buckets = (state.grammarLibrary?.sections || [])
+    .map((section) => shuffleItems((section.questions || []).map((question) => ({ ...question, __sectionTitle: section.title || "\uBB38\uBC95" }))))
+    .filter((bucket) => bucket.length);
+  const total = buckets.reduce((sum, bucket) => sum + bucket.length, 0);
+  const target = Math.max(1, Math.min(Number(limit) || 1, total));
+  const result = [];
+  let cursor = 0;
+  while (result.length < target && buckets.some((bucket) => bucket.length)) {
+    const bucket = buckets[cursor % buckets.length];
+    if (bucket.length) result.push(bucket.shift());
+    cursor += 1;
+  }
+  return result;
+}
+
+function loadGrammarRandom() {
+  const total = getAllGrammarQuestions().length;
+  if (!total) return;
+  const input = window.prompt(`\uBA87 \uBB38\uC81C\uB97C \uD480\uAE4C\uC694? (1-${total})`, "30");
+  if (input === null) return;
+  const count = Math.floor(Number(input));
+  if (!Number.isFinite(count) || count <= 0) return;
+  const questions = buildBalancedGrammarRandomQuestions(count);
+  if (!questions.length) return;
+  stopPlayback();
+  state.currentGrammarSet = {
+    id: "grammar-random",
+    title: "\uBB38\uBC95 \uB79C\uB364\uD480\uAE30",
+    questions,
+    isMistakeReview: false,
+    isBookmarkReview: false,
+  };
+  state.currentGrammarIndex = 0;
+  state.selectedGrammarChoice = null;
+  setScreen("grammar");
+  renderGrammarState();
+}
+
+function toggleGrammarBookmark() {
+  const info = getCurrentGrammarBookmarkInfo();
+  if (!info) return;
+  const index = state.grammarBookmarks.findIndex((item) => item.key === info.key);
+  if (index >= 0) {
+    state.grammarBookmarks.splice(index, 1);
+    if (state.currentGrammarSet?.isBookmarkReview) {
+      const questions = buildGrammarBookmarkEntries();
+      if (!questions.length) {
+        saveBookmarks();
+        returnToLibrary();
+        renderLibrary();
+        return;
+      }
+      state.currentGrammarSet.questions = questions;
+      state.currentGrammarIndex = Math.min(state.currentGrammarIndex, questions.length - 1);
+    }
+  } else {
+    state.grammarBookmarks.push(info);
+  }
+  saveBookmarks();
+  updateBookmarkButtons();
+  if (state.libraryMode === "grammar") renderLibrary();
 }
 
 function recordGrammarAnswer(question, selected, answer) {
@@ -831,8 +952,8 @@ function renderGrammarState() {
   const selected = state.selectedGrammarChoice;
   const isAnswered = selected !== null;
   els.grammarNumber.textContent = question.number ? `No. ${String(question.number).padStart(3, "0")}` : `No. ${String(state.currentGrammarIndex + 1).padStart(3, "0")}`;
-  els.grammarSection.textContent = isAnswered && question.point ? `문법 포인트: ${question.point}` : "";
-  els.grammarQuestion.innerHTML = escapeHtml(question.question || "").replaceAll("（　）", '<span class="grammar-blank">（　）</span>');
+  els.grammarSection.textContent = isAnswered && question.point ? `\uBB38\uBC95 \uD3EC\uC778\uD2B8: ${question.point}` : "";
+  els.grammarQuestion.innerHTML = escapeHtml(question.question || "").replaceAll("\uFF3F\uFF3F\uFF3F", '<span class="grammar-blank">\uFF3F\uFF3F\uFF3F</span>');
   els.grammarTranslation.textContent = isAnswered ? (question.translation || "") : "";
   els.grammarOptions.innerHTML = (question.options || []).map((option, index) => {
     const classes = ["grammar-option"];
@@ -847,7 +968,7 @@ function renderGrammarState() {
   }).join("");
 
   if (isAnswered) {
-    const prefix = selected === answer ? "정답" : `오답 · 정답 ${answer + 1}번`;
+    const prefix = selected === answer ? "\uC815\uB2F5" : `\uC624\uB2F5 \u00B7 \uC815\uB2F5 ${answer + 1}\uBC88`;
     els.grammarFeedback.innerHTML = `
       <strong>${escapeHtml(prefix)}</strong>
       <span>${escapeHtml(question.explanation || "")}</span>
@@ -856,6 +977,8 @@ function renderGrammarState() {
   } else {
     els.grammarFeedback.textContent = "";
   }
+
+  updateBookmarkButtons();
 
   for (const button of els.grammarOptions.querySelectorAll("[data-grammar-choice]")) {
     button.addEventListener("click", () => {
@@ -1340,6 +1463,7 @@ function bindEvents() {
   els.listeningPrev.addEventListener("click", () => jumpListening(-1));
   els.listeningNext.addEventListener("click", () => jumpListening(1));
   els.grammarBackButton.addEventListener("click", returnToLibrary);
+  els.grammarBookmarkToggle?.addEventListener("click", toggleGrammarBookmark);
   els.grammarPrev.addEventListener("click", () => jumpGrammar(-1));
   els.grammarNext.addEventListener("click", () => jumpGrammar(1));
   els.listeningAudio.addEventListener("timeupdate", syncListeningSegmentFromTime);
