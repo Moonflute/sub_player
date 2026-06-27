@@ -545,6 +545,35 @@ function groupListeningTracks(section) {
   return groups;
 }
 
+function listeningCategoryGroups() {
+  const groups = [
+    { title: "\uCCAD\uD574", items: [] },
+    { title: "\uBAA8\uC758\uACE0\uC0AC", items: [] },
+  ];
+
+  (state.listeningLibrary || []).forEach((section, index) => {
+    const title = String(section.title || "");
+    let label = title;
+    let target = groups[0];
+    const mock = title.match(/^\uC2E4\uC804\uBAA8\uC758\uACE0\uC0AC\s*(\d+)/u);
+    const hackers = title.match(/^\uD574\uCEE4\uC2A4\s*N3\s*\uC2E4\uC804\uBAA8\uC758\uACE0\uC0AC\s*(\d+)\uD68C/u);
+
+    if (title.startsWith("\uCCAD\uD574")) {
+      label = title.replace(/^\uCCAD\uD574\s*/u, "");
+    } else if (mock) {
+      target = groups[1];
+      label = `${String(Number(mock[1])).padStart(2, "0")}\uD68C`;
+    } else if (hackers) {
+      target = groups[1];
+      label = `${String(Number(hackers[1]) + 3).padStart(2, "0")}\uD68C (H)`;
+    }
+
+    target.items.push({ section, index, label });
+  });
+
+  return groups.filter((group) => group.items.length);
+}
+
 function buildReadingBookmarkEntries() {
   const entries = [];
   const seen = new Set();
@@ -1020,17 +1049,18 @@ function renderListeningLibrary() {
 
   if (!selectedSection) {
     els.libraryListTitle.textContent = modeTitle("listening");
-    els.libraryList.innerHTML = bookmarkSection + `
+    els.libraryList.innerHTML = bookmarkSection + listeningCategoryGroups().map((group) => `
       <section class="series-group listening-category-entry">
+        <h2 class="series-group__title listening-category-heading">${group.title}</h2>
         <div class="listening-category-grid">
-          ${(state.listeningLibrary || []).map((section, index) => `
-            <button class="show-item show-item--tile listening-category-button" data-listening-section-index="${index}" type="button" title="${escapeHtml(section.title || "")}">
-              <span class="show-title">${escapeHtml(section.title || "\uCCAD\uD574")}</span>
+          ${group.items.map((item) => `
+            <button class="show-item show-item--tile listening-category-button" data-listening-section-index="${item.index}" type="button" title="${escapeHtml(item.section.title || "")}">
+              <span class="show-title">${escapeHtml(item.label || "\uCCAD\uD574")}</span>
             </button>
           `).join("")}
         </div>
       </section>
-    `;
+    `).join("");
 
     for (const button of els.libraryList.querySelectorAll("[data-listening-section-index]")) {
       button.addEventListener("click", () => {
