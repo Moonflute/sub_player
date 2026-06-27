@@ -1160,6 +1160,33 @@ function renderReadingQuiz(passage) {
   `;
 }
 
+function renderReadingFullNotes(item) {
+  const ranges = buildHighlightRanges(item);
+  const seen = new Set();
+  const notes = [];
+  for (const range of ranges) {
+    const surface = (item?.text || "").slice(range.start, range.end);
+    const reading = range.kind === "vocab" ? (range.reading || "") : "";
+    const meaning = range.meaning || range.label || "";
+    const key = `${surface}:${reading}:${meaning}`;
+    if (!surface || !meaning || seen.has(key)) continue;
+    seen.add(key);
+    notes.push({ surface, reading, meaning, kind: range.kind });
+  }
+  if (!notes.length) return "";
+  return `
+    <div class="reading-full__notes">
+      ${notes.slice(0, 18).map((note) => `
+        <span class="reading-full__note reading-full__note--${note.kind}">
+          <strong>${escapeHtml(note.surface)}</strong>
+          ${note.reading && note.reading !== "-" ? `<em>${escapeHtml(note.reading)}</em>` : ""}
+          <span>${escapeHtml(note.meaning)}</span>
+        </span>
+      `).join("")}
+    </div>
+  `;
+}
+
 function renderReadingFullView(items) {
   if (!items.length) return "";
   const title = items[0].passage_title || "";
@@ -1172,6 +1199,7 @@ function renderReadingFullView(items) {
       ${items.map((item) => `
         <section class="reading-full__item">
           <p class="reading-full__sentence">${renderHighlightedSentence(item)}</p>
+          ${renderReadingFullNotes(item)}
           <p class="reading-full__translation">${escapeHtml(item.translation || "")}</p>
         </section>
       `).join("")}
