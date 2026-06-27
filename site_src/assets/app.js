@@ -9,6 +9,7 @@ const state = {
   currentListeningTrack: null,
   currentListeningIndex: 0,
   currentListeningSectionTitle: "",
+  selectedListeningSectionIndex: null,
   currentGrammarSet: null,
   currentGrammarIndex: 0,
   selectedGrammarChoice: null,
@@ -241,6 +242,7 @@ function returnToLibrary() {
   state.currentListeningTrack = null;
   state.currentListeningIndex = 0;
   state.currentListeningSectionTitle = "";
+  state.selectedListeningSectionIndex = null;
   state.currentGrammarSet = null;
   state.currentGrammarIndex = 0;
   state.selectedGrammarChoice = null;
@@ -485,11 +487,12 @@ function renderCurrentState() {
 }
 
 function modeTitle(mode) {
-  return { video: "자막", reading: "독해", listening: "청해", grammar: "문법" }[mode] || "";
+  return { video: "\uC790\uB9C9", reading: "\uB3C5\uD574", listening: "\uCCAD\uD574", grammar: "\uBB38\uBC95" }[mode] || "";
 }
 
 function setLibraryHome() {
   state.libraryMode = "";
+  state.selectedListeningSectionIndex = null;
   els.homeMenu.classList.remove("is-hidden");
   els.libraryListHeader.classList.add("is-hidden");
   els.libraryList.innerHTML = "";
@@ -498,6 +501,7 @@ function setLibraryHome() {
 
 function openLibraryMode(mode, pushHistory = true) {
   state.libraryMode = mode;
+  state.selectedListeningSectionIndex = null;
   if (pushHistory) {
     window.history.pushState({ screen: "library", mode }, "", `#${mode}`);
   }
@@ -1001,18 +1005,47 @@ function renderListeningLibrary() {
   const bookmarkCount = buildListeningBookmarkEntries().length;
   const bookmarkSection = `
     <section class="series-group bookmark-entry">
-      <h2 class="series-group__title">북마크</h2>
+      <h2 class="series-group__title">\uBD81\uB9C8\uD06C</h2>
       <div class="series-group__items series-group__items--compact series-group__items--study">
         <button class="show-item show-item--tile show-item--study" data-listening-bookmarks type="button" ${bookmarkCount ? "" : "disabled"}>
-          <span class="show-title">${bookmarkCount ? "보기" : "없음"}</span>
+          <span class="show-title">${bookmarkCount ? "\uBCF4\uAE30" : "\uC5C6\uC74C"}</span>
         </button>
       </div>
     </section>
   `;
-  els.libraryList.innerHTML = bookmarkSection + state.listeningLibrary.map((section) => `
-    <section class="series-group">
-      <h2 class="series-group__title">${escapeHtml(section.title)}</h2>
-      ${groupListeningTracks(section).map((group) => `
+
+  const selectedSection = state.selectedListeningSectionIndex === null
+    ? null
+    : (state.listeningLibrary || [])[state.selectedListeningSectionIndex];
+
+  if (!selectedSection) {
+    els.libraryListTitle.textContent = modeTitle("listening");
+    els.libraryList.innerHTML = bookmarkSection + `
+      <section class="series-group listening-category-entry">
+        <div class="listening-category-grid">
+          ${(state.listeningLibrary || []).map((section, index) => `
+            <button class="show-item show-item--tile listening-category-button" data-listening-section-index="${index}" type="button" title="${escapeHtml(section.title || "")}">
+              <span class="show-title">${escapeHtml(section.title || "\uCCAD\uD574")}</span>
+            </button>
+          `).join("")}
+        </div>
+      </section>
+    `;
+
+    for (const button of els.libraryList.querySelectorAll("[data-listening-section-index]")) {
+      button.addEventListener("click", () => {
+        state.selectedListeningSectionIndex = Number(button.dataset.listeningSectionIndex || 0);
+        renderLibrary();
+      });
+    }
+    els.libraryList.querySelector("[data-listening-bookmarks]")?.addEventListener("click", loadListeningBookmarks);
+    return;
+  }
+
+  els.libraryListTitle.textContent = selectedSection.title || modeTitle("listening");
+  els.libraryList.innerHTML = bookmarkSection + `
+    <section class="series-group listening-track-entry">
+      ${groupListeningTracks(selectedSection).map((group) => `
         <section class="subseries-group">
           <h3 class="subseries-group__title">${escapeHtml(group.title)}</h3>
           <div class="series-group__items series-group__items--compact series-group__items--study">
@@ -1023,17 +1056,16 @@ function renderListeningLibrary() {
             `).join("")}
           </div>
         </section>
-        `).join("")}
+      `).join("")}
     </section>
-  `).join("");
+  `;
 
   for (const button of els.libraryList.querySelectorAll("[data-listening-id]")) {
     button.addEventListener("click", () => {
       loadListeningTrack(button.dataset.listeningId);
     });
   }
-  const bookmarkButton = els.libraryList.querySelector("[data-listening-bookmarks]");
-  bookmarkButton?.addEventListener("click", loadListeningBookmarks);
+  els.libraryList.querySelector("[data-listening-bookmarks]")?.addEventListener("click", loadListeningBookmarks);
 }
 
 function renderReadingState() {
@@ -1438,7 +1470,15 @@ function bindEvents() {
       openLibraryMode(button.dataset.libraryMode || "video");
     });
   });
-  els.libraryBackButton.addEventListener("click", setLibraryHome);
+  els.libraryBackButton.addEventListener("click", () => {
+    if (state.libraryMode === "listening" && state.selectedListeningSectionIndex !== null) {
+      state.selectedListeningSectionIndex = null;
+      els.libraryListTitle.textContent = modeTitle("listening");
+      renderLibrary();
+      return;
+    }
+    setLibraryHome();
+  });
 
   els.backButton.addEventListener("click", () => {
     if (state.isPlayerHistoryActive) {
