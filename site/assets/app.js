@@ -1132,10 +1132,39 @@ function getCurrentReadingPassageItems() {
   return items.filter((entry) => entry.passage_id === item.passage_id);
 }
 
+function renderReadingQuiz(passage) {
+  const quiz = passage?.reading_quiz || passage?.quiz || null;
+  if (!quiz?.question) return "";
+  const options = Array.isArray(quiz.options) ? quiz.options : [];
+  const hasAnswer = Number.isInteger(quiz.answer) && quiz.answer >= 0 && quiz.answer < options.length;
+  const fallback = "\uC9C0\uBB38 \uADFC\uAC70\uC640 \uBCF4\uAE30\uB97C \uB300\uC870\uD574 \uD655\uC778\uD569\uB2C8\uB2E4.";
+  return `
+    <section class="reading-full__quiz">
+      <div class="reading-full__quiz-label">JLPT N3 \uB3C5\uD574 \uBB38\uC81C</div>
+      <p class="reading-full__quiz-question">${escapeHtml(quiz.question)}</p>
+      ${options.length ? `
+        <ol class="reading-full__quiz-options">
+          ${options.map((option, index) => `
+            <li class="${hasAnswer && index === quiz.answer ? "is-answer" : ""}">
+              <span class="reading-full__quiz-number">${index + 1}</span>
+              <span>${escapeHtml(option)}</span>
+            </li>
+          `).join("")}
+        </ol>
+      ` : ""}
+      <details class="reading-full__quiz-answer">
+        <summary>${hasAnswer ? "\uC815\uB2F5/\uD574\uC124 \uBCF4\uAE30" : "\uD480\uC774 \uD3EC\uC778\uD2B8 \uBCF4\uAE30"}</summary>
+        ${hasAnswer ? `<p><strong>\uC815\uB2F5 ${quiz.answer + 1}\uBC88.</strong> ${escapeHtml(quiz.explanation || fallback)}</p>` : `<p>${escapeHtml(quiz.explanation || fallback)}</p>`}
+      </details>
+    </section>
+  `;
+}
+
 function renderReadingFullView(items) {
   if (!items.length) return "";
   const title = items[0].passage_title || "";
-  const question = findCurrentReadingPassage()?.question || "";
+  const passage = findCurrentReadingPassage();
+  const question = passage?.question || "";
   return `
     <article class="reading-full">
       <h3 class="reading-full__title">${escapeHtml(title)}</h3>
@@ -1146,6 +1175,7 @@ function renderReadingFullView(items) {
           <p class="reading-full__translation">${escapeHtml(item.translation || "")}</p>
         </section>
       `).join("")}
+      ${renderReadingQuiz(passage || items[0])}
     </article>
   `;
 }
