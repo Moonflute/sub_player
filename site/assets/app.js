@@ -10,6 +10,7 @@ const state = {
   currentListeningIndex: 0,
   currentListeningSectionTitle: "",
   selectedListeningSectionIndex: null,
+  selectedListeningSectionLabel: "",
   currentGrammarSet: null,
   currentGrammarIndex: 0,
   selectedGrammarChoice: null,
@@ -553,6 +554,7 @@ function modeTitle(mode) {
 function setLibraryHome() {
   state.libraryMode = "";
   state.selectedListeningSectionIndex = null;
+  state.selectedListeningSectionLabel = "";
   els.homeMenu.classList.remove("is-hidden");
   els.libraryListHeader.classList.add("is-hidden");
   els.libraryList.innerHTML = "";
@@ -562,6 +564,7 @@ function setLibraryHome() {
 function openLibraryMode(mode, pushHistory = true) {
   state.libraryMode = mode;
   state.selectedListeningSectionIndex = null;
+  state.selectedListeningSectionLabel = "";
   if (pushHistory) {
     window.history.pushState({ screen: "library", mode }, "", `#${mode}`);
   }
@@ -1128,7 +1131,7 @@ function renderListeningLibrary() {
         <h2 class="series-group__title listening-category-heading">${group.title}</h2>
         <div class="listening-category-grid">
           ${group.items.map((item) => `
-            <button class="show-item show-item--tile listening-category-button" data-listening-section-index="${item.index}" type="button" title="${escapeHtml(item.section.title || "")}">
+            <button class="show-item show-item--tile listening-category-button" data-listening-section-index="${item.index}" data-listening-section-label="${escapeHtml(item.label || "\uCCAD\uD574")}" type="button" title="${escapeHtml(item.section.title || "")}">
               <span class="show-title">${escapeHtml(item.label || "\uCCAD\uD574")}</span>
             </button>
           `).join("")}
@@ -1139,6 +1142,7 @@ function renderListeningLibrary() {
     for (const button of els.libraryList.querySelectorAll("[data-listening-section-index]")) {
       button.addEventListener("click", () => {
         state.selectedListeningSectionIndex = Number(button.dataset.listeningSectionIndex || 0);
+        state.selectedListeningSectionLabel = button.dataset.listeningSectionLabel || "";
         renderLibrary();
       });
     }
@@ -1146,7 +1150,7 @@ function renderListeningLibrary() {
     return;
   }
 
-  els.libraryListTitle.textContent = selectedSection.title || modeTitle("listening");
+  els.libraryListTitle.textContent = state.selectedListeningSectionLabel || selectedSection.title || modeTitle("listening");
   els.libraryList.innerHTML = bookmarkSection + `
     <section class="series-group listening-track-entry">
       ${groupListeningTracks(selectedSection).map((group) => `
@@ -1673,6 +1677,7 @@ function bindEvents() {
   els.libraryBackButton.addEventListener("click", () => {
     if (state.libraryMode === "listening" && state.selectedListeningSectionIndex !== null) {
       state.selectedListeningSectionIndex = null;
+      state.selectedListeningSectionLabel = "";
       els.libraryListTitle.textContent = modeTitle("listening");
       renderLibrary();
       return;
