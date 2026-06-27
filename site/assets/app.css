@@ -351,6 +351,54 @@ input {
   gap: 6px;
 }
 
+
+.topbar-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.seen-toggle {
+  width: 48px;
+  height: 48px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.84);
+  color: var(--muted);
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  display: grid;
+  place-items: center;
+  font-size: 1.2rem;
+  font-weight: 950;
+  line-height: 1;
+}
+
+.seen-toggle.is-active,
+.seen-toggle[aria-pressed="true"] {
+  border-color: rgba(47, 123, 92, 0.48);
+  background: rgba(47, 123, 92, 0.16);
+  color: #1f6f52;
+}
+
+.seen-toggle:disabled {
+  cursor: default;
+  opacity: 0.42;
+}
+
+.show-item--study.is-seen {
+  border-color: rgba(47, 123, 92, 0.26);
+  background: linear-gradient(145deg, rgba(234, 248, 240, 0.96), rgba(255, 255, 255, 0.82));
+  box-shadow: 0 12px 24px rgba(47, 123, 92, 0.1);
+}
+
+.show-item--study.is-seen .show-title::after {
+  content: "\2713";
+  margin-left: 0.28rem;
+  color: #1f6f52;
+  font-weight: 950;
+}
+
 .bookmark-toggle {
   width: 48px;
   height: 48px;
@@ -1478,4 +1526,17 @@ input {
 
 .reading-full__quiz-answer p {
   margin: 0.45rem 0 0;
+}
+
+
+@media (max-width: 760px) {
+  .topbar-actions {
+    gap: 6px;
+  }
+
+  .seen-toggle {
+    width: 42px;
+    height: 42px;
+    font-size: 1.05rem;
+  }
 }

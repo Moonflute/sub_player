@@ -18,6 +18,8 @@ const state = {
   currentReadingIndex: 0,
   readingBookmarks: [],
   listeningBookmarks: [],
+  readingSeen: [],
+  listeningSeen: [],
   isReadingBookmarkMode: false,
   isListeningBookmarkMode: false,
   currentTime: 0,
@@ -46,6 +48,7 @@ const els = {
   readingRevealToggle: document.getElementById("reading-reveal-toggle"),
   readingFullToggle: document.getElementById("reading-full-toggle"),
   readingBookmarkToggle: document.getElementById("reading-bookmark-toggle"),
+  readingSeenToggle: document.getElementById("reading-seen-toggle"),
   readingPrev: document.getElementById("reading-prev"),
   readingNext: document.getElementById("reading-next"),
   readingPanel: document.querySelector(".reading-panel"),
@@ -61,6 +64,7 @@ const els = {
   listeningAudio: document.getElementById("listening-audio"),
   listeningLoopToggle: document.getElementById("listening-loop-toggle"),
   listeningBookmarkToggle: document.getElementById("listening-bookmark-toggle"),
+  listeningSeenToggle: document.getElementById("listening-seen-toggle"),
   listeningPrev: document.getElementById("listening-prev"),
   listeningNext: document.getElementById("listening-next"),
   grammarBackButton: document.getElementById("grammar-back-button"),
@@ -118,11 +122,15 @@ function loadBookmarks() {
     state.listeningBookmarks = Array.isArray(saved.listening) ? saved.listening : [];
     state.grammarMistakes = Array.isArray(saved.grammar) ? saved.grammar : [];
     state.grammarBookmarks = Array.isArray(saved.grammarBookmarks) ? saved.grammarBookmarks : [];
+    state.readingSeen = Array.isArray(saved.readingSeen) ? saved.readingSeen : [];
+    state.listeningSeen = Array.isArray(saved.listeningSeen) ? saved.listeningSeen : [];
   } catch {
     state.readingBookmarks = [];
     state.listeningBookmarks = [];
     state.grammarMistakes = [];
     state.grammarBookmarks = [];
+    state.readingSeen = [];
+    state.listeningSeen = [];
   }
 }
 
@@ -132,6 +140,8 @@ function saveBookmarks() {
     listening: state.listeningBookmarks,
     grammar: state.grammarMistakes,
     grammarBookmarks: state.grammarBookmarks,
+    readingSeen: state.readingSeen,
+    listeningSeen: state.listeningSeen,
   }));
 }
 
@@ -141,6 +151,40 @@ function readingBookmarkKey(readingId, itemIndex) {
 
 function listeningBookmarkKey(trackId, segmentIndex) {
   return `${trackId}:${segmentIndex}`;
+}
+
+function readingSeenKey(readingId, passageId, startIndex) {
+  if (!readingId) return "";
+  return `${readingId}:${passageId || `index-${startIndex || 0}`}`;
+}
+
+function listeningSeenKey(trackId) {
+  return trackId || "";
+}
+
+function getReadingPartSeenKey(readingId, part) {
+  return readingSeenKey(readingId, part?.passageId || part?.id || "", part?.startIndex || 0);
+}
+
+function isReadingSeenKey(key) {
+  return Boolean(key && state.readingSeen.includes(key));
+}
+
+function isListeningSeenKey(key) {
+  return Boolean(key && state.listeningSeen.includes(key));
+}
+
+function getCurrentReadingSeenKey() {
+  const item = (state.currentReading?.items || [])[state.currentReadingIndex] || null;
+  if (!item) return "";
+  const readingId = item.__bookmarkReadingId || state.currentReading?.id;
+  if (!readingId || readingId === "reading-bookmarks") return "";
+  return readingSeenKey(readingId, item.passage_id || "", item.passage_sentence_index ? state.currentReadingIndex : item.index);
+}
+
+function getCurrentListeningSeenKey() {
+  if (!state.currentListeningTrack || state.currentListeningTrack.id === "listening-bookmarks") return "";
+  return listeningSeenKey(state.currentListeningTrack.id);
 }
 
 function grammarBookmarkKey(question) {
@@ -200,6 +244,22 @@ function updateBookmarkButtons() {
   const listeningActive = Boolean(listeningInfo && state.listeningBookmarks.some((item) => item.key === listeningInfo.key));
   els.listeningBookmarkToggle.classList.toggle("is-active", listeningActive);
   els.listeningBookmarkToggle.setAttribute("aria-pressed", listeningActive ? "true" : "false");
+
+  const readingSeenKeyValue = getCurrentReadingSeenKey();
+  const readingSeenActive = isReadingSeenKey(readingSeenKeyValue);
+  if (els.readingSeenToggle) {
+    els.readingSeenToggle.classList.toggle("is-active", readingSeenActive);
+    els.readingSeenToggle.setAttribute("aria-pressed", readingSeenActive ? "true" : "false");
+    els.readingSeenToggle.disabled = !readingSeenKeyValue;
+  }
+
+  const listeningSeenKeyValue = getCurrentListeningSeenKey();
+  const listeningSeenActive = isListeningSeenKey(listeningSeenKeyValue);
+  if (els.listeningSeenToggle) {
+    els.listeningSeenToggle.classList.toggle("is-active", listeningSeenActive);
+    els.listeningSeenToggle.setAttribute("aria-pressed", listeningSeenActive ? "true" : "false");
+    els.listeningSeenToggle.disabled = !listeningSeenKeyValue;
+  }
 
   const grammarInfo = getCurrentGrammarBookmarkInfo();
   const grammarActive = Boolean(grammarInfo && state.grammarBookmarks.some((item) => item.key === grammarInfo.key));
@@ -685,10 +745,10 @@ function renderReadingLibrary() {
   const bookmarkCount = buildReadingBookmarkEntries().length;
   const bookmarkSection = `
     <section class="series-group bookmark-entry">
-      <h2 class="series-group__title">북마크</h2>
+      <h2 class="series-group__title">\uBD81\uB9C8\uD06C</h2>
       <div class="series-group__items series-group__items--compact series-group__items--study">
         <button class="show-item show-item--tile show-item--study" data-reading-bookmarks type="button" ${bookmarkCount ? "" : "disabled"}>
-          <span class="show-title">${bookmarkCount ? "보기" : "없음"}</span>
+          <span class="show-title">${bookmarkCount ? "\uBCF4\uAE30" : "\uC5C6\uC74C"}</span>
         </button>
       </div>
     </section>
@@ -697,11 +757,15 @@ function renderReadingLibrary() {
     <section class="series-group">
       <h2 class="series-group__title">${escapeHtml(section.title)}</h2>
       <div class="series-group__items series-group__items--compact series-group__items--study">
-        ${section.parts.map((part, index) => `
-          <button class="show-item show-item--tile show-item--study" data-reading-id="${section.readingId}" data-reading-index="${part.startIndex}" type="button">
-            <span class="show-title">${escapeHtml(part.label || `${String(index + 1).padStart(2, "0")}번`)}</span>
-          </button>
-        `).join("")}
+        ${section.parts.map((part, index) => {
+          const seenKey = getReadingPartSeenKey(section.readingId, part);
+          const seenClass = isReadingSeenKey(seenKey) ? " is-seen" : "";
+          return `
+            <button class="show-item show-item--tile show-item--study${seenClass}" data-reading-id="${section.readingId}" data-reading-index="${part.startIndex}" type="button">
+              <span class="show-title">${escapeHtml(part.label || `${String(index + 1).padStart(2, "0")}\uBC88`)}</span>
+            </button>
+          `;
+        }).join("")}
       </div>
     </section>
   `).join("");
@@ -719,10 +783,12 @@ function buildReadingParts(reading) {
   if (Array.isArray(reading.sections) && reading.sections.length) {
     return reading.sections.map((section) => ({
       readingId: reading.id,
-      title: `${reading.title || "독해"} - ${section.title}`,
+      title: `${reading.title || "\uB3C5\uD574"} - ${section.title}`,
       parts: (section.passages || []).map((passage, index) => ({
+        id: passage.id,
+        passageId: passage.id,
         title: passage.title,
-        label: `${String(index + 1).padStart(2, "0")}번`,
+        label: `${String(index + 1).padStart(2, "0")}\uBC88`,
         startIndex: passage.start_index || 0,
         count: passage.sentence_count || (passage.items || []).length || 0,
       })),
@@ -735,10 +801,12 @@ function buildReadingParts(reading) {
 
   items.forEach((item, index) => {
     const text = item.text || "";
-    const match = text.match(/問題\s*(\d+)/);
+    const match = text.match(/\u554F\u984C\s*(\d+)/);
     if (match || !current) {
       current = {
-        title: match ? `問題 ${match[1]}` : reading.title,
+        id: item.passage_id || `part-${groups.length}`,
+        passageId: item.passage_id || "",
+        title: match ? `\u554F\u984C ${match[1]}` : reading.title,
         startIndex: index,
         count: 0,
       };
@@ -747,13 +815,13 @@ function buildReadingParts(reading) {
     current.count += 1;
   });
 
-  const parts = groups.length ? groups : [{ title: reading.title || "독해", startIndex: 0, count: items.length }];
+  const parts = groups.length ? groups : [{ id: "part-0", passageId: "", title: reading.title || "\uB3C5\uD574", startIndex: 0, count: items.length }];
   return parts.map((part, index) => ({
     readingId: reading.id,
-    title: part.title || `독해 ${index + 1}`,
+    title: part.title || `\uB3C5\uD574 ${index + 1}`,
     parts: [{
       ...part,
-      label: `${String(index + 1).padStart(2, "0")}번`,
+      label: `${String(index + 1).padStart(2, "0")}\uBC88`,
     }],
   }));
 }
@@ -1085,11 +1153,14 @@ function renderListeningLibrary() {
         <section class="subseries-group">
           <h3 class="subseries-group__title">${escapeHtml(group.title)}</h3>
           <div class="series-group__items series-group__items--compact series-group__items--study">
-            ${group.tracks.map((track, index) => `
-              <button class="show-item show-item--tile show-item--study" data-listening-id="${track.id}" type="button" ${track.site_audio ? "" : "disabled"} title="${escapeHtml(track.title)}">
-                <span class="show-title">${escapeHtml(trackLabel(track, index))}</span>
-              </button>
-            `).join("")}
+            ${group.tracks.map((track, index) => {
+              const seenClass = isListeningSeenKey(listeningSeenKey(track.id)) ? " is-seen" : "";
+              return `
+                <button class="show-item show-item--tile show-item--study${seenClass}" data-listening-id="${track.id}" type="button" ${track.site_audio ? "" : "disabled"} title="${escapeHtml(track.title)}">
+                  <span class="show-title">${escapeHtml(trackLabel(track, index))}</span>
+                </button>
+              `;
+            }).join("")}
           </div>
         </section>
       `).join("")}
@@ -1123,6 +1194,7 @@ function renderReadingState() {
     const passageItems = getCurrentReadingPassageItems();
     els.readingSentence.innerHTML = renderReadingFullView(passageItems);
     els.readingTranslation.textContent = "";
+    updateBookmarkButtons();
     return;
   }
 
@@ -1564,6 +1636,34 @@ function toggleListeningBookmark() {
   if (state.libraryMode === "listening") renderLibrary();
 }
 
+function toggleReadingSeen() {
+  const key = getCurrentReadingSeenKey();
+  if (!key) return;
+  const index = state.readingSeen.indexOf(key);
+  if (index >= 0) {
+    state.readingSeen.splice(index, 1);
+  } else {
+    state.readingSeen.push(key);
+  }
+  saveBookmarks();
+  updateBookmarkButtons();
+  if (state.libraryMode === "reading") renderLibrary();
+}
+
+function toggleListeningSeen() {
+  const key = getCurrentListeningSeenKey();
+  if (!key) return;
+  const index = state.listeningSeen.indexOf(key);
+  if (index >= 0) {
+    state.listeningSeen.splice(index, 1);
+  } else {
+    state.listeningSeen.push(key);
+  }
+  saveBookmarks();
+  updateBookmarkButtons();
+  if (state.libraryMode === "listening") renderLibrary();
+}
+
 function bindEvents() {
   els.homeButtons.forEach((button) => {
     button.addEventListener("click", () => {
@@ -1592,10 +1692,12 @@ function bindEvents() {
   els.readingRevealToggle.addEventListener("change", renderReadingState);
   els.readingFullToggle.addEventListener("change", renderReadingState);
   els.readingBookmarkToggle.addEventListener("click", toggleReadingBookmark);
+  els.readingSeenToggle?.addEventListener("click", toggleReadingSeen);
   els.readingPrev.addEventListener("click", () => jumpReading(-1));
   els.readingNext.addEventListener("click", () => jumpReading(1));
   els.listeningBackButton.addEventListener("click", returnToLibrary);
   els.listeningBookmarkToggle.addEventListener("click", toggleListeningBookmark);
+  els.listeningSeenToggle?.addEventListener("click", toggleListeningSeen);
   els.listeningLoopToggle.addEventListener("click", () => {
     setListeningLoopEnabled(!isListeningLoopEnabled());
     els.listeningAudio.loop = false;
