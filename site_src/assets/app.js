@@ -1371,14 +1371,20 @@ function jumpBy(delta) {
   renderCurrentState();
 }
 
+function cacheBustedUrl(url) {
+  const versionText = els.versionBadge?.textContent || "";
+  const version = versionText.replace(/[^0-9.]/g, "") || String(Date.now());
+  const separator = url.includes("?") ? "&" : "?";
+  return `${url}${separator}v=${encodeURIComponent(version)}`;
+}
+
 async function fetchJson(url) {
-  const response = await fetch(url);
+  const response = await fetch(cacheBustedUrl(url), { cache: "no-store" });
   if (!response.ok) {
-    throw new Error(`데이터를 불러오지 못했습니다: ${url}`);
+    throw new Error(`Failed to load data: ${url}`);
   }
   return await response.json();
 }
-
 async function loadLibrary() {
   const payload = await fetchJson("./data/library.json");
   state.library = payload.items || [];
