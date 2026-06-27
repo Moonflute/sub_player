@@ -2,7 +2,7 @@
   "reading_sentence_count": 227,
   "custom_reading_sentence_count": 108,
   "custom_reading_passage_count": 24,
-  "listening_track_count": 356,
+  "listening_track_count": 468,
   "outputs": [
     "reading/n3_custom_reading.json",
     "reading/n3_official_workbook_reading.json",
@@ -10,7 +10,8 @@
     "listening/n3_listening_review_index.json"
   ],
   "compressed_audio_bitrate": "48k",
-  "compressed_audio_track_count": 356,
-  "compressed_audio_total_size": 124251250,
-  "mocktest_listening_track_count": 140
+  "compressed_audio_track_count": 468,
+  "compressed_audio_total_size": 168447311,
+  "mocktest_listening_track_count": 140,
+  "mocktest_d_listening_track_count": 112
 }

@@ -550,6 +550,7 @@ function listeningCategoryGroups() {
     { title: "\uCCAD\uD574", items: [] },
     { title: "\uBAA8\uC758\uACE0\uC0AC", items: [] },
   ];
+  let dMockCount = 0;
 
   (state.listeningLibrary || []).forEach((section, index) => {
     const title = String(section.title || "");
@@ -557,6 +558,7 @@ function listeningCategoryGroups() {
     let target = groups[0];
     const mock = title.match(/^\uC2E4\uC804\uBAA8\uC758\uACE0\uC0AC\s*(\d+)/u);
     const hackers = title.match(/^\uD574\uCEE4\uC2A4\s*N3\s*\uC2E4\uC804\uBAA8\uC758\uACE0\uC0AC\s*(\d+)\uD68C/u);
+    const dMock = title.match(/^\uD55C\uB05D\s*N3\s*(?:\uC2E4\uC804|\uC628\uB77C\uC778)\s*\uBAA8\uC758\uACE0\uC0AC\s*(\d+)\uD68C\s*\(D\)/u);
 
     if (title.startsWith("\uCCAD\uD574")) {
       label = title.replace(/^\uCCAD\uD574\s*/u, "");
@@ -566,6 +568,10 @@ function listeningCategoryGroups() {
     } else if (hackers) {
       target = groups[1];
       label = `${String(Number(hackers[1]) + 3).padStart(2, "0")}\uD68C (H)`;
+    } else if (dMock) {
+      target = groups[1];
+      dMockCount += 1;
+      label = `${String(dMockCount + 8).padStart(2, "0")}\uD68C (D)`;
     }
 
     target.items.push({ section, index, label });
