@@ -16,6 +16,7 @@ const state = {
   selectedGrammarChoice: null,
   grammarMistakes: [],
   grammarBookmarks: [],
+  grammarSeen: [],
   currentReadingIndex: 0,
   readingBookmarks: [],
   listeningBookmarks: [],
@@ -123,6 +124,7 @@ function loadBookmarks() {
     state.listeningBookmarks = Array.isArray(saved.listening) ? saved.listening : [];
     state.grammarMistakes = Array.isArray(saved.grammar) ? saved.grammar : [];
     state.grammarBookmarks = Array.isArray(saved.grammarBookmarks) ? saved.grammarBookmarks : [];
+    state.grammarSeen = Array.isArray(saved.grammarSeen) ? saved.grammarSeen : [];
     state.readingSeen = Array.isArray(saved.readingSeen) ? saved.readingSeen : [];
     state.listeningSeen = Array.isArray(saved.listeningSeen) ? saved.listeningSeen : [];
   } catch {
@@ -130,6 +132,7 @@ function loadBookmarks() {
     state.listeningBookmarks = [];
     state.grammarMistakes = [];
     state.grammarBookmarks = [];
+    state.grammarSeen = [];
     state.readingSeen = [];
     state.listeningSeen = [];
   }
@@ -141,6 +144,7 @@ function saveBookmarks() {
     listening: state.listeningBookmarks,
     grammar: state.grammarMistakes,
     grammarBookmarks: state.grammarBookmarks,
+    grammarSeen: state.grammarSeen,
     readingSeen: state.readingSeen,
     listeningSeen: state.listeningSeen,
   }));
@@ -833,6 +837,16 @@ function grammarMistakeKey(question) {
   return question?.id || "";
 }
 
+function grammarSeenKey(question) {
+  return question?.id || "";
+}
+
+function recordGrammarSeen(question) {
+  const key = grammarSeenKey(question);
+  if (!key || state.grammarSeen.includes(key)) return;
+  state.grammarSeen.push(key);
+}
+
 function shuffleItems(items) {
   const copy = [...items];
   for (let index = copy.length - 1; index > 0; index -= 1) {
@@ -956,8 +970,14 @@ function loadGrammarBookmarks() {
 }
 
 function buildBalancedGrammarRandomQuestions(limit) {
+  const seenKeys = new Set(state.grammarSeen);
   const buckets = (state.grammarLibrary?.sections || [])
-    .map((section) => shuffleItems((section.questions || []).map((question) => ({ ...question, __sectionTitle: section.title || "\uBB38\uBC95" }))))
+    .map((section) => {
+      const questions = (section.questions || []).map((question) => ({ ...question, __sectionTitle: section.title || "\uBB38\uBC95" }));
+      const unseen = shuffleItems(questions.filter((question) => !seenKeys.has(grammarSeenKey(question))));
+      const seen = shuffleItems(questions.filter((question) => seenKeys.has(grammarSeenKey(question))));
+      return [...unseen, ...seen];
+    })
     .filter((bucket) => bucket.length);
   const total = buckets.reduce((sum, bucket) => sum + bucket.length, 0);
   const target = Math.max(1, Math.min(Number(limit) || 1, total));
@@ -1022,6 +1042,7 @@ function toggleGrammarBookmark() {
 function recordGrammarAnswer(question, selected, answer) {
   const key = grammarMistakeKey(question);
   if (!key) return;
+  recordGrammarSeen(question);
   const existingIndex = state.grammarMistakes.indexOf(key);
   if (selected === answer) {
     if (existingIndex >= 0) state.grammarMistakes.splice(existingIndex, 1);
