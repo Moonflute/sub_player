@@ -169,13 +169,155 @@ def candidate_surfaces(row: dict) -> list[str]:
     for token in more:
         if token and token not in candidates:
             candidates.append(token)
+    for token in list(candidates):
+        for variant in inflected_surface_variants(token):
+            if variant and variant not in candidates:
+                candidates.append(variant)
     return sorted(candidates, key=len, reverse=True)
+
+
+def inflected_surface_variants(surface: str) -> list[str]:
+    """Return common N3 example-form variants for a grammar surface."""
+    variants: list[str] = []
+    token = clean_text(surface).replace("\u301c", "~")
+    token = token.replace("\uff5e", "").replace("~", "").strip()
+    if not token:
+        return variants
+
+    def add(value: str) -> None:
+        if value and value not in variants:
+            variants.append(value)
+
+    add(token)
+    if token.endswith("\u3059\u308b"):
+        stem = token[:-2]
+        for end in ["\u3057\u307e\u3059", "\u3057\u305f", "\u3057\u3066", "\u3057", "\u3059\u308b"]:
+            add(stem + end)
+    if token.endswith("\u306b\u306a\u308b"):
+        stem = token[:-3]
+        for end in ["\u306b\u306a\u3063\u305f", "\u306b\u306a\u308a\u307e\u3059", "\u306b\u306a\u308a\u307e\u3057\u305f", "\u306b\u306a\u308b"]:
+            add(stem + end)
+    if token.endswith("\u306b\u3059\u308b"):
+        stem = token[:-3]
+        for end in ["\u306b\u3057\u307e\u3059", "\u306b\u3057\u305f", "\u306b\u3057\u3066", "\u306b\u3059\u308b"]:
+            add(stem + end)
+    if token.endswith("\u306a\u3044"):
+        add(token[:-2] + "\u306a\u304b\u3063\u305f")
+        add(token[:-2] + "\u3042\u308a\u307e\u305b\u3093")
+    if token.endswith("\u308b"):
+        stem = token[:-1]
+        for end in ["\u305f", "\u3066", "\u307e\u3059", "\u307e\u3057\u305f", "\u305f\u3044", "\u3088\u3046"]:
+            add(stem + end)
+    if token.endswith("\u3046"):
+        stem = token[:-1]
+        for end in ["\u3044\u307e\u3059", "\u3044\u307e\u3057\u305f", "\u3063\u3066", "\u3063\u305f"]:
+            add(stem + end)
+    if token.endswith("\u3059"):
+        stem = token[:-1]
+        for end in ["\u3057\u307e\u3059", "\u3057\u307e\u3057\u305f", "\u3057\u3066", "\u3057\u305f"]:
+            add(stem + end)
+    if token.endswith("\u304f"):
+        stem = token[:-1]
+        for end in ["\u3044\u3066", "\u3044\u305f", "\u304d\u307e\u3059", "\u304d\u307e\u3057\u305f"]:
+            add(stem + end)
+    if token.endswith("\u3080") or token.endswith("\u3076") or token.endswith("\u306c"):
+        stem = token[:-1]
+        for end in ["\u3093\u3067", "\u3093\u3060", "\u307f\u307e\u3059", "\u307f\u307e\u3057\u305f"]:
+            add(stem + end)
+
+    replacements = {
+        "\u3066\u3044\u304f": ["\u3066\u3044\u304d\u307e\u3059", "\u3066\u3044\u3063\u305f", "\u3066\u3044\u304d\u307e\u3057\u305f"],
+        "\u3066\u304f\u308b": ["\u3066\u304d\u307e\u3059", "\u3066\u304d\u305f", "\u3066\u304d\u307e\u3057\u305f"],
+        "\u3066\u3057\u307e\u3046": ["\u3066\u3057\u307e\u3044\u307e\u3057\u305f", "\u3066\u3057\u307e\u3063\u305f", "\u3061\u3083\u3044\u307e\u3057\u305f", "\u3061\u3083\u3063\u305f"],
+        "\u3066\u3082\u304b\u307e\u308f\u306a\u3044": ["\u3066\u3082\u304b\u307e\u3044\u307e\u305b\u3093", "\u3066\u3082\u304b\u307e\u308f\u306a\u3044"],
+        "\u3053\u3068\u306b\u3059\u308b": ["\u3053\u3068\u306b\u3057\u305f", "\u3053\u3068\u306b\u3057\u307e\u3059", "\u3053\u3068\u306b\u3057\u3066\u3044\u308b"],
+        "\u3053\u3068\u306b\u306a\u308b": ["\u3053\u3068\u306b\u306a\u308a\u307e\u3057\u305f", "\u3053\u3068\u306b\u306a\u3063\u305f", "\u3053\u3068\u306b\u306a\u308a\u307e\u3059"],
+        "\u3088\u3046\u3068\u601d\u3046": ["\u3088\u3046\u3068\u601d\u3063\u3066\u3044\u308b", "\u3088\u3046\u3068\u601d\u3044\u307e\u3059", "\u3088\u3046\u3068\u601d\u3063\u305f"],
+        "\u3088\u3046\u3068\u3059\u308b": ["\u3088\u3046\u3068\u3057\u305f", "\u3088\u3046\u3068\u3057\u3066\u3044\u308b", "\u3088\u3046\u3068\u3057\u307e\u3059"],
+        "\u3088\u3046\u306b\u3059\u308b": ["\u3088\u3046\u306b\u3057\u307e\u3059", "\u3088\u3046\u306b\u3057\u3066\u3044\u308b", "\u3088\u3046\u306b\u3057\u305f"],
+        "\u3088\u3046\u306b\u306a\u308b": ["\u3088\u3046\u306b\u306a\u3063\u305f", "\u3088\u3046\u306b\u306a\u308a\u307e\u3057\u305f", "\u3088\u3046\u306b\u306a\u308a\u307e\u3059"],
+        "\u308f\u3051\u306b\u306f\u3044\u304b\u306a\u3044": ["\u308f\u3051\u306b\u306f\u3044\u304d\u307e\u305b\u3093", "\u308f\u3051\u306b\u306f\u3044\u304b\u306a\u3044"],
+        "\u307b\u304b\u306a\u3044": ["\u307b\u304b\u3042\u308a\u307e\u305b\u3093", "\u307b\u304b\u306a\u3044"],
+        "\u3068\u306f\u9650\u3089\u306a\u3044": ["\u3068\u306f\u9650\u308a\u307e\u305b\u3093", "\u3068\u306f\u9650\u3089\u306a\u3044"],
+        "\u306a\u304f\u3066\u306f\u306a\u3089\u306a\u3044": ["\u306a\u304f\u3061\u3083", "\u306a\u304f\u3066\u306f\u306a\u3089\u306a\u3044", "\u306a\u3051\u308c\u3070\u306a\u3089\u306a\u3044"],
+        "\u306f\u305a\u3060": ["\u306f\u305a\u3067\u3059", "\u306f\u305a\u3060"],
+        "\u304f\u3060\u3055\u308b": ["\u304f\u3060\u3055\u3044\u307e\u3057\u305f", "\u304f\u3060\u3055\u3063\u305f", "\u304f\u3060\u3055\u308b"],
+        "\u3044\u305f\u3060\u304f": ["\u3044\u305f\u3060\u304d\u307e\u3057\u305f", "\u3044\u305f\u3060\u304d\u307e\u3059", "\u3044\u305f\u3060\u3044\u305f"],
+        "\u3055\u305b\u3066\u3044\u305f\u3060\u304f": ["\u3055\u305b\u3066\u3044\u305f\u3060\u304d\u307e\u3059", "\u3055\u305b\u3066\u3044\u305f\u3060\u3044\u305f"],
+        "\u3054\u89a7\u306b\u306a\u308b": ["\u3054\u89a7\u306b\u306a\u308a\u307e\u3057\u305f", "\u3054\u89a7\u306b\u306a\u308a\u307e\u3059", "\u3054\u89a7\u306b\u306a\u3063\u305f"],
+        "\u304a\u4f11\u307f\u306b\u306a\u308b": ["\u304a\u4f11\u307f\u306b\u306a\u308a\u307e\u3057\u305f", "\u304a\u4f11\u307f\u306b\u306a\u308a\u307e\u3059"],
+    }
+    for key, values in replacements.items():
+        if token == key or token.endswith(key):
+            prefix = token[: -len(key)] if token != key else ""
+            for value in values:
+                add(prefix + value)
+    return variants
+
+
+SPECIAL_BLANK_PATTERNS = {
+    "A\u307b\u3069\uff5eB\u306f\u306a\u3044": ("\u307b\u3069\u304a\u3044\u3057\u3044\u3082\u306e\u306f\u306a\u3044", f"{BLANK}\u304a\u3044\u3057\u3044\u3082\u306e\u306f\u306a\u3044", "\u307b\u3069\u306f\u306a\u3044"),
+    "\uff5e\u305f\u308a\uff5e\u305f\u308a\u3059\u308b": ("\u305f\u308a\u53cb\u9054\u3068\u98df\u4e8b\u3092\u3057\u305f\u308a\u3059\u308b", f"{BLANK}\u53cb\u9054\u3068\u98df\u4e8b\u3092\u3057\u305f{BLANK}", "\u305f\u308a\u305f\u308a\u3059\u308b"),
+    "\uff5e\u3070\uff5e\u307b\u3069": ("\u308c\u3070\u8003\u3048\u308b\u307b\u3069", f"\u308c\u3070\u8003\u3048\u308b{BLANK}", "\u3070\u307b\u3069"),
+    "\uff5e\u3055\u3048\uff5e\u3070": ("\u3055\u3048\u3059\u308c\u3070", f"{BLANK}", "\u3055\u3048\u3070"),
+    "\uff5e\u3042\u3044\u3060": ("\u5b66\u6821\u306b\u3044\u308b\u9593", f"\u5b66\u6821\u306b\u3044\u308b{BLANK}", "\u3042\u3044\u3060"),
+    "\uff5e\u3042\u3044\u3060\u306b": ("\u590f\u4f11\u307f\u306e\u9593\u306b", f"\u590f\u4f11\u307f\u306e{BLANK}", "\u3042\u3044\u3060\u306b"),
+    "\uff5e\u3046\u3061\u306b": ("\u5fd8\u308c\u306a\u3044\u3046\u3061\u306b", f"\u5fd8\u308c\u306a\u3044{BLANK}", "\u3046\u3061\u306b"),
+    "\u3042\u307e\u308a\u301c\u306a\u3044": ("\u3042\u307e\u308a\u98df\u3079\u306a\u3044", f"{BLANK}\u98df\u3079\u306a\u3044", "\u3042\u307e\u308a\u301c\u306a\u3044"),
+    "\u5c11\u3057\u3082\u301c\u306a\u3044": ("\u5c11\u3057\u3082\u77e5\u3089\u306a\u3044", f"{BLANK}\u77e5\u3089\u306a\u3044", "\u5c11\u3057\u3082\u301c\u306a\u3044"),
+    "\u3081\u3063\u305f\u306b\u301c\u306a\u3044": ("\u3081\u3063\u305f\u306b\u4f1a\u308f\u306a\u3044", f"{BLANK}\u4f1a\u308f\u306a\u3044", "\u3081\u3063\u305f\u306b\u301c\u306a\u3044"),
+    "\u3082\u3046\u301c\u306a\u3044": ("\u3082\u3046\u884c\u304b\u306a\u3044", f"{BLANK}\u884c\u304b\u306a\u3044", "\u3082\u3046\u301c\u306a\u3044"),
+    "\u5fc5\u305a\u3057\u3082\u301c\u306a\u3044": ("\u5fc5\u305a\u3057\u3082\u6b63\u3057\u304f\u306a\u3044", f"{BLANK}\u6b63\u3057\u304f\u306a\u3044", "\u5fc5\u305a\u3057\u3082\u301c\u306a\u3044"),
+    "\uff5e\u7d42\u308f\u308b": ("\u898b\u7d42\u308f\u3063\u305f", f"\u898b{BLANK}", "\u7d42\u308f\u3063\u305f"),
+    "\uff5e\u308f\u3051\u3060": ("\u308f\u3051\u304c\u306a\u3044", f"{BLANK}", "\u308f\u3051\u304c\u306a\u3044"),
+    "\uff5e\u305f\u3089": ("__FULL__", f"\u96e8\u304c\u964d\u3063{BLANK}\u3001\u8a66\u5408\u306f\u4e2d\u6b62\u3067\u3059\u3002", "\u305f\u3089"),
+    "\uff5e\u304c\u308b": ("__FULL__", f"\u5b50\u4f9b\u306f\u65b0\u3057\u3044\u30b2\u30fc\u30e0\u3092\u6b32\u3057{BLANK}\u3002", "\u304c\u308b"),
+    "\uff5e\u306b\u884c\u304f": ("__FULL__", f"\u30b3\u30f3\u30d3\u30cb\u306b\u30d1\u30f3\u3092\u8cb7\u3044{BLANK}\u3002", "\u306b\u884c\u304f"),
+    "\u304a / \u3054 + \u307e\u3059\u5f62 + \u306b\u306a\u308b": ("__FULL__", f"\u90e8\u9577\u306f\u3082\u3046\u304a\u5e30\u308a{BLANK}\u3002", "\u306b\u306a\u308a\u307e\u3057\u305f"),
+    "\u304a / \u3054 + \u307e\u3059\u5f62 + \u304f\u3060\u3055\u3044": ("__FULL__", f"\u5c11\u3005\u304a\u5f85\u3061{BLANK}\u3002", "\u304f\u3060\u3055\u3044"),
+    "\uff5e\u3055\u305b\u3066\u304f\u3060\u3055\u308b": ("__FULL__", f"\u6628\u65e5\u3001\u4f11\u307e\u305b\u3066{BLANK}\u3002", "\u304f\u3060\u3055\u3063\u305f"),
+    "\u304a / \u3054 + \u307e\u3059\u5f62 + \u3059\u308b (\u3044\u305f\u3059)": ("__FULL__", f"\u79c1\u304c\u3054\u8aac\u660e{BLANK}\u3002", "\u3044\u305f\u3057\u307e\u3059"),
+    "\u304a\u76ee\u306b\u304b\u304b\u308b": ("__FULL__", f"\u793e\u9577\u306b{BLANK}\u305f\u3044\u3067\u3059\u3002", "\u304a\u76ee\u306b\u304b\u304b\u308a"),
+    "\u3044\u3089\u3063\u3057\u3083\u308b (1)": ("__FULL__", f"\u5148\u751f\u306f\u3082\u3046{BLANK}\u304b\u3002", "\u3044\u3089\u3063\u3057\u3083\u3044\u307e\u3057\u305f"),
+    "\u3044\u3089\u3063\u3057\u3083\u308b (2)": ("__FULL__", f"\u5965\u69d8\u306f{BLANK}\u304b\u3002", "\u3044\u3089\u3063\u3057\u3083\u3044\u307e\u3059"),
+    "\u53c2\u308b": ("__FULL__", f"\u660e\u65e5\u3001\u305d\u3061\u3089\u306b{BLANK}\u3002", "\u53c2\u308a\u307e\u3059"),
+    "\u304a\u308b": ("__FULL__", f"\u6bcd\u306f\u4eca\u3001\u5bb6\u306b{BLANK}\u3002", "\u304a\u308a\u307e\u3059"),
+    "\u3054\u5b58\u3058\u3060": ("__FULL__", f"\u305d\u306e\u30cb\u30e5\u30fc\u30b9\u3001{BLANK}\u3067\u3059\u304b\u3002", "\u3054\u5b58\u3058"),
+    "\u5b58\u3058\u3066\u3044\u308b": ("__FULL__", f"\u306f\u3044\u3001{BLANK}\u304a\u308a\u307e\u3059\u3002", "\u5b58\u3058\u3066"),
+    "\u306a\u3055\u308b": ("__FULL__", f"\u9031\u672b\u306f\u4f55\u3092{BLANK}\u307e\u3057\u305f\u304b\u3002", "\u306a\u3055\u3044"),
+    "\u304a\u3063\u3057\u3083\u308b": ("__FULL__", f"\u793e\u9577\u304c\u305d\u3046{BLANK}\u3002", "\u304a\u3063\u3057\u3083\u3044\u307e\u3057\u305f"),
+    "\u4f3a\u3046 (\u3046\u304b\u304c\u3046) (1)": ("__FULL__", f"\u304a\u8a71\u3092{BLANK}\u305f\u3044\u3067\u3059\u3002", "\u4f3a\u3044"),
+    "\u53ec\u3057\u4e0a\u304c\u308b": ("__FULL__", f"\u3069\u3046\u305e\u3001{BLANK}\u304f\u3060\u3055\u3044\u3002", "\u53ec\u3057\u4e0a\u304c\u3063\u3066"),
+    "\u304a\u8d8a(\u3053)\u3057\u306b\u306a\u308b": ("__FULL__", f"\u308f\u3056\u308f\u3056{BLANK}\u3001\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3059\u3002", "\u304a\u8d8a\u3057\u306b\u306a\u308a"),
+}
+
+
+def decode_escaped_text(value: str) -> str:
+    if "\\u" in value or "\\U" in value or "\\x" in value:
+        return value.encode("utf-8").decode("unicode_escape")
+    return value
+
+
+SPECIAL_BLANK_PATTERNS = {
+    decode_escaped_text(key): tuple(decode_escaped_text(part) for part in value)
+    for key, value in SPECIAL_BLANK_PATTERNS.items()
+}
+SPECIAL_BLANK_PATTERNS["お / ご + ます형 + になる"] = SPECIAL_BLANK_PATTERNS["お / ご + ます形 + になる"]
+SPECIAL_BLANK_PATTERNS["お / ご + ます형 + ください"] = SPECIAL_BLANK_PATTERNS["お / ご + ます形 + ください"]
+SPECIAL_BLANK_PATTERNS["お / ご + ます형 + する (いたす)"] = SPECIAL_BLANK_PATTERNS["お / ご + ます形 + する (いたす)"]
 
 
 def blank_example(row: dict) -> tuple[str, str]:
     jp = row["jp_example"]
     if not jp:
         return "", option_surface(row["expr"])
+    special = SPECIAL_BLANK_PATTERNS.get(row["expr"])
+    if special:
+        before, after, answer = special
+        if before == "__FULL__":
+            return after, answer
+        if before in jp:
+            return jp.replace(before, after, 1), answer
     for candidate in candidate_surfaces(row):
         if candidate and candidate in jp:
             return jp.replace(candidate, BLANK, 1), candidate
