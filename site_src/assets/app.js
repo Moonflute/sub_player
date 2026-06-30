@@ -179,6 +179,11 @@ function isListeningSeenKey(key) {
   return Boolean(key && state.listeningSeen.includes(key));
 }
 
+function isListeningSectionComplete(section) {
+  const tracks = (section?.tracks || []).filter((track) => track?.id && track?.site_audio);
+  return Boolean(tracks.length && tracks.every((track) => isListeningSeenKey(listeningSeenKey(track.id))));
+}
+
 function getCurrentReadingSeenKey() {
   const item = (state.currentReading?.items || [])[state.currentReadingIndex] || null;
   if (!item) return "";
@@ -1151,11 +1156,14 @@ function renderListeningLibrary() {
       <section class="series-group listening-category-entry">
         <h2 class="series-group__title listening-category-heading">${group.title}</h2>
         <div class="listening-category-grid">
-          ${group.items.map((item) => `
-            <button class="show-item show-item--tile listening-category-button" data-listening-section-index="${item.index}" data-listening-section-label="${escapeHtml(item.label || "\uCCAD\uD574")}" type="button" title="${escapeHtml(item.section.title || "")}">
-              <span class="show-title">${escapeHtml(item.label || "\uCCAD\uD574")}</span>
-            </button>
-          `).join("")}
+          ${group.items.map((item) => {
+            const seenClass = isListeningSectionComplete(item.section) ? " is-seen" : "";
+            return `
+              <button class="show-item show-item--tile listening-category-button${seenClass}" data-listening-section-index="${item.index}" data-listening-section-label="${escapeHtml(item.label || "\uCCAD\uD574")}" type="button" title="${escapeHtml(item.section.title || "")}">
+                <span class="show-title">${escapeHtml(item.label || "\uCCAD\uD574")}</span>
+              </button>
+            `;
+          }).join("")}
         </div>
       </section>
     `).join("");
