@@ -28,6 +28,7 @@ const state = {
   isPlaying: false,
   tickHandle: null,
   isPlayerHistoryActive: false,
+  isListeningHistoryActive: false,
 };
 
 const els = {
@@ -304,7 +305,25 @@ function leavePlayerHistory() {
   state.isPlayerHistoryActive = false;
 }
 
+function enterListeningHistory(trackId) {
+  if (state.isListeningHistoryActive) return;
+  const url = new URL(window.location.href);
+  url.hash = `listening-${trackId || "track"}`;
+  window.history.pushState({ screen: "listening", trackId }, "", url);
+  state.isListeningHistoryActive = true;
+}
+
+function leaveListeningHistory() {
+  state.isListeningHistoryActive = false;
+}
+
 function returnToLibrary() {
+  const keepListeningSection = Boolean(
+    state.currentListeningTrack
+      && !state.isListeningBookmarkMode
+      && state.libraryMode === "listening"
+      && state.selectedListeningSectionIndex !== null
+  );
   stopPlayback();
   setScreen("library");
   state.currentShow = null;
@@ -312,7 +331,10 @@ function returnToLibrary() {
   state.currentListeningTrack = null;
   state.currentListeningIndex = 0;
   state.currentListeningSectionTitle = "";
-  state.selectedListeningSectionIndex = null;
+  if (!keepListeningSection) {
+    state.selectedListeningSectionIndex = null;
+    state.selectedListeningSectionLabel = "";
+  }
   state.currentGrammarSet = null;
   state.currentGrammarIndex = 0;
   state.selectedGrammarChoice = null;
@@ -322,6 +344,8 @@ function returnToLibrary() {
   els.listeningAudio.removeAttribute("src");
   state.currentTime = 0;
   leavePlayerHistory();
+  leaveListeningHistory();
+  renderLibrary();
 }
 
 function setPlayVisual(isPlaying) {
@@ -1588,6 +1612,7 @@ function loadListeningTrack(trackId) {
   els.listeningAudio.loop = false;
   els.listeningAudio.src = result.track.site_audio;
   setScreen("listening");
+  enterListeningHistory(trackId);
   renderListeningState();
 }
 
@@ -1611,6 +1636,7 @@ function loadListeningBookmarks() {
   els.listeningAudio.src = segments[0].__siteAudio;
   els.listeningAudio.currentTime = Number(segments[0].start_seconds || 0);
   setScreen("listening");
+  enterListeningHistory("bookmarks");
   renderListeningState();
 }
 
@@ -1729,7 +1755,13 @@ function bindEvents() {
   els.readingSeenToggle?.addEventListener("click", toggleReadingSeen);
   els.readingPrev.addEventListener("click", () => jumpReading(-1));
   els.readingNext.addEventListener("click", () => jumpReading(1));
-  els.listeningBackButton.addEventListener("click", returnToLibrary);
+  els.listeningBackButton.addEventListener("click", () => {
+    if (state.isListeningHistoryActive) {
+      window.history.back();
+      return;
+    }
+    returnToLibrary();
+  });
   els.listeningBookmarkToggle.addEventListener("click", toggleListeningBookmark);
   els.listeningSeenToggle?.addEventListener("click", toggleListeningSeen);
   els.listeningLoopToggle.addEventListener("click", () => {
